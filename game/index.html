@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="bg">
+<meta charset="utf-8">
+<title>Fight Now — Street Combat</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#0b0a10">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Russo+One&family=Rubik:wght@400;600&display=swap">
+<style>
+  /* Еднотемен „аркаден“ вид: тъмен асфалт, натриево жълто, неоново червено. */
+  :root {
+    --asphalt: #0b0a10; --sodium: #ffd23d; --neon: #ff3b5c; --steel: #2a2633; --chalk: #f2efe8;
+    --font-d: "Russo One", Impact, "Arial Black", sans-serif; --font-b: "Rubik", "Segoe UI", Arial, sans-serif;
+    color-scheme: dark;
+  }
+  html, body { height: 100%; }
+  body { margin: 0; background: var(--asphalt); color: var(--chalk); font-family: var(--font-b); overflow: hidden; touch-action: none; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
+  #wrap { position: fixed; inset: 0; display: grid; place-items: center; }
+  #c { display: block; background: #000; image-rendering: auto; }
+  #loading { position: fixed; inset: 0; display: grid; place-items: center; font-family: var(--font-d); color: var(--sodium); font-size: 28px; letter-spacing: 0.08em; }
+  #touch { position: fixed; inset: 0; pointer-events: none; z-index: 5; }
+  #stick { position: absolute; left: calc(env(safe-area-inset-left, 0px) + 24px); bottom: calc(env(safe-area-inset-bottom, 0px) + 20px); width: 150px; height: 150px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,255,255,0.08), rgba(255,255,255,0.03)); border: 2px solid rgba(255,255,255,0.25); pointer-events: auto; touch-action: none; }
+  #knob { position: absolute; left: 50%; top: 50%; width: 64px; height: 64px; margin: -32px 0 0 -32px; border-radius: 50%; background: rgba(255,210,61,0.55); border: 2px solid rgba(255,255,255,0.6); }
+  #btns { position: absolute; right: calc(env(safe-area-inset-right, 0px) + 18px); bottom: calc(env(safe-area-inset-bottom, 0px) + 16px); display: grid; grid-template-columns: repeat(3, 66px); gap: 10px; pointer-events: auto; }
+  #btns button, #finBtn, #pauseBtn { width: 66px; height: 66px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.5); color: #fff; font-family: var(--font-d); font-size: 11px; letter-spacing: 0.02em; touch-action: none; padding: 0; }
+  #btns button { background: rgba(42,38,51,0.6); }
+  #btns button[data-k="lp"], #btns button[data-k="hp"] { background: rgba(59,130,246,0.45); }
+  #btns button[data-k="lk"], #btns button[data-k="hk"] { background: rgba(239,68,68,0.45); }
+  #btns button[data-k="sp"] { background: rgba(255,210,61,0.5); color: #0b0a10; }
+  #btns button.on, #finBtn.on { transform: scale(0.92); filter: brightness(1.6); }
+  #pauseBtn { position: absolute; top: calc(env(safe-area-inset-top, 0px) + 8px); left: 50%; margin-left: -22px; width: 44px; height: 44px; background: rgba(0,0,0,0.4); pointer-events: auto; font-size: 14px; }
+  #finBtn { position: absolute; left: 50%; top: 58%; width: 150px; height: 64px; margin-left: -75px; border-radius: 12px; background: var(--neon); font-size: 20px; pointer-events: auto; animation: pulse 0.6s infinite alternate; }
+  @keyframes pulse { to { transform: scale(1.08); } }
+  @media (prefers-reduced-motion: reduce) { #finBtn { animation: none; } }
+  #rotate { display: none; position: fixed; inset: 0; z-index: 10; background: var(--asphalt); place-items: center; text-align: center; font-family: var(--font-d); color: var(--sodium); font-size: 22px; padding: 24px; }
+  body.portrait #rotate { display: grid; }
+  @media (max-height: 420px) { #stick { width: 124px; height: 124px; } #btns { grid-template-columns: repeat(3, 56px); gap: 8px; } #btns button { width: 56px; height: 56px; font-size: 10px; } }
+</style>
+
+<div id="wrap"><canvas id="c" width="960" height="540"></canvas></div>
+<div id="loading">FIGHT NOW…</div>
+<div id="touch" hidden>
+  <div id="stick"><div id="knob"></div></div>
+  <div id="btns">
+    <button data-k="lp" aria-label="Удар">УДАР</button>
+    <button data-k="hp" aria-label="Силен удар">СИЛЕН<br>УДАР</button>
+    <button data-k="sp" aria-label="Специален">СПЕЦ</button>
+    <button data-k="lk" aria-label="Ритник">РИТНИК</button>
+    <button data-k="hk" aria-label="Силен ритник">СИЛЕН<br>РИТНИК</button>
+    <button data-k="bl" aria-label="Блок">БЛОК</button>
+  </div>
+  <button id="pauseBtn" aria-label="Пауза">II</button>
+  <button id="finBtn" data-k="fin" hidden>FINALE!</button>
+</div>
+<div id="rotate">Завърти телефона хоризонтално,<br>за да се биеш.</div>
+
+<script src="js/core.js"></script>
+<script src="js/battle-music.js"></script>
+<script src="js/data.js"></script>
+<script src="js/character-art-data.js"></script>
+<script src="js/character-art.js"></script>
+<script src="js/render.js"></script>
+<script src="js/arena-art-data.js"></script>
+<script src="js/arena-art.js"></script>
+<script src="js/arenas.js"></script>
+<script src="js/fight.js"></script>
+<script src="js/finishers.js"></script>
+<script>window.Fighters3DReady = new Promise(resolve => window.resolveFighters3D = resolve);</script>
+<script type="importmap">{"imports":{"three":"./vendor/three/three.module.js","three/addons/":"./vendor/three/addons/"}}</script>
+<script type="module" src="js/fighters-3d.js"></script>
+<script src="js/main.js"></script>
