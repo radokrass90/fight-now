@@ -1,6 +1,6 @@
 const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
 const root=require('node:path').resolve(__dirname,'../game');
-const sandbox={console,window:{},document:{documentElement:{dataset:{}}},Image:class{set src(v){this.onload?.();}},D2R:Math.PI/180};
+const sandbox={console,setTimeout,clearTimeout,window:{},document:{documentElement:{dataset:{}}},Image:class{set src(v){this.onload?.();}},D2R:Math.PI/180};
 vm.createContext(sandbox);
 for(const file of ['data','character-art-data','extra-pose-data','character-art','fight'])vm.runInContext(fs.readFileSync(root+'/js/'+file+'.js','utf8'),sandbox);
 vm.runInContext(`

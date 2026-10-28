@@ -24,8 +24,12 @@ const BattleMusic = {
       if (this.current) { this.current.pause(); this.current.currentTime = 0; }
       this.track = index;
       if (!this.cache.has(index)) {
-        const audio = new Audio('assets/audio/' + BATTLE_TRACKS[index].file);
-        audio.loop = true; audio.preload = 'auto'; this.cache.set(index, audio);
+        // Reuse the user-activated media element on iOS and bound its cache.
+        const reused = typeof MOBILE !== 'undefined' && MOBILE && this.cache.values().next().value;
+        const audio = reused || new Audio();
+        if (reused) this.cache.clear();
+        audio.src = 'assets/audio/' + BATTLE_TRACKS[index].file;
+        audio.loop = true; audio.preload = 'metadata'; this.cache.set(index, audio);
         audio.hidden = true; audio.dataset.battleTrack = String(index);
         document.body.appendChild(audio);
       }

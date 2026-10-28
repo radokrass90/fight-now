@@ -3,22 +3,41 @@
 // Sprite timing follows the same move segments used by collision/damage logic.
 const CharacterArt = (() => {
   const entries = new Map();
+  const mobile = typeof MOBILE !== 'undefined' && MOBILE;
   function loadImage(entry, key, src) {
-    return new Promise(resolve => {
+    if (entry[key + 'Promise']) return entry[key + 'Promise'];
+    return entry[key + 'Promise'] = new Promise(resolve => {
       const image = new Image(); entry[key] = image;
-      image.onload = () => { entry[key + 'Loaded'] = true; resolve(); };
-      image.onerror = () => { console.warn('Character art unavailable:', src); resolve(); };
+      const timer = setTimeout(() => resolve(false), 12000);
+      image.onload = () => { clearTimeout(timer); entry[key + 'Loaded'] = true; resolve(true); };
+      image.onerror = () => { clearTimeout(timer); console.warn('Character art unavailable:', src); resolve(false); };
       image.src = src;
     });
   }
   const extraData = typeof EXTRA_POSE_DATA === 'undefined' ? null : EXTRA_POSE_DATA;
-  const ready = Promise.all(CHARACTER_ART_DATA.characters.flatMap(data => {
+  const ready = Promise.all(CHARACTER_ART_DATA.characters.map(data => {
     const entry = { data, extraData: extraData?.characters.find(c => c.id === data.id) };
     entries.set(data.id, entry);
-    const jobs = [loadImage(entry, 'image', 'assets/characters-hd/' + data.id + '/spritesheet.webp')];
-    if (entry.extraData) jobs.push(loadImage(entry, 'extra', 'assets/characters-hd/' + data.id + '/extra-20.webp'));
-    return jobs;
+    return loadImage(entry, 'portrait', 'assets/characters-hd/' + data.id + '/portrait.webp');
   })).then(() => { document.documentElement.dataset.renderer = 'painted-30'; });
+  function release(entry) {
+    for (const key of ['image', 'extra']) {
+      if (entry[key]) { entry[key].onload = entry[key].onerror = null; entry[key].src = ''; }
+      delete entry[key]; delete entry[key + 'Promise']; entry[key + 'Loaded'] = false;
+    }
+  }
+  async function prepare(ids) {
+    const active = new Set(ids);
+    for (const [id, entry] of entries) if (!active.has(id)) release(entry);
+    const suffix = mobile ? '-mobile' : '';
+    await Promise.all([...active].flatMap(id => {
+      const entry = entries.get(id); if (!entry) return [];
+      const base = 'assets/characters-hd/' + id + '/';
+      return [loadImage(entry, 'image', base + 'spritesheet' + suffix + '.webp'),
+        ...(entry.extraData ? [loadImage(entry, 'extra', base + 'extra-20' + suffix + '.webp')] : [])];
+    }));
+    document.documentElement.dataset.residentFighters = String([...entries.values()].filter(e => e.imageLoaded).length);
+  }
 
   // 0–9: the ten approved original sprites. 10–29: twenty new poses.
   const poseFrames = {
@@ -113,19 +132,20 @@ const CharacterArt = (() => {
     else if (f.strip) ctx.filter = 'brightness(1.3) saturate(0.2)';
     if (f.state === 'idle') ctx.scale(1, 1 + Math.sin((f.st || 0) * .09) * .003);
     ctx.imageSmoothingEnabled = true;
-    ctx.drawImage(image, frame.x, frame.y, 512, 512, -220 * size, -464 * size + (index === 3 ? 40 * size : 0), 512 * size, 512 * size);
+    const ratio = (image.naturalWidth || 2560) / 2560;
+    ctx.drawImage(image, frame.x * ratio, frame.y * ratio, 512 * ratio, 512 * ratio, -220 * size, -464 * size + (index === 3 ? 40 * size : 0), 512 * size, 512 * size);
     ctx.restore();
     return { sk, hip };
   }
   function portrait(ctx, c, x, y, w, h, facing) {
     const entry = entries.get(c.id);
-    if (!entry?.imageLoaded) return false;
+    if (!entry?.portraitLoaded) return false;
     const b = entry.data.frames[0].bounds;
     const cropH = b.h * .73, cropW = b.w, scale = Math.max(w / cropW, h / cropH);
     ctx.save(); ctx.beginPath(); ctx.rect(x, y, w, h); ctx.clip();
     ctx.translate(x + w / 2, y + h / 2); ctx.scale(facing, 1);
-    ctx.drawImage(entry.image, b.x, b.y, cropW, cropH, -cropW * scale / 2, -cropH * scale / 2, cropW * scale, cropH * scale);
+    ctx.drawImage(entry.portrait, b.x / 2, b.y / 2, cropW / 2, cropH / 2, -cropW * scale / 2, -cropH * scale / 2, cropW * scale, cropH * scale);
     ctx.restore(); return true;
   }
-  return { ready, draw, portrait, frameFor, entries };
+  return { ready, prepare, draw, portrait, frameFor, entries };
 })();

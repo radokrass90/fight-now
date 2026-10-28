@@ -194,12 +194,13 @@ const ARENAS = [
 // кешира статичния фон
 const ArenaCache = {};
 function arenaCanvas(i) {
+  const art = typeof ArenaArt !== 'undefined' && ArenaArt.imageFor(i);
+  if (art) return art;
   if (ArenaCache[i]) return ArenaCache[i];
   const cv = document.createElement('canvas'); cv.width = W; cv.height = H;
   const ctx = cv.getContext('2d');
-  const art = typeof ArenaArt !== 'undefined' && ArenaArt.imageFor(i);
-  if (art) ctx.drawImage(art, 0, 0, W, H);
-  else ARENAS[i].build(ctx, seeded(1000 + i * 77));
+  ARENAS[i].build(ctx, seeded(1000 + i * 77));
+  if (Object.keys(ArenaCache).length >= 2) delete ArenaCache[Object.keys(ArenaCache)[0]];
   ArenaCache[i] = cv; return cv;
 }
 function invalidateArenas() { for (const k in ArenaCache) delete ArenaCache[k]; }
@@ -207,7 +208,7 @@ function invalidateArenas() { for (const k in ArenaCache) delete ArenaCache[k]; 
 // анимирани слоеве (неон, дъжд, сняг, мъгла, дим)
 const Weather = { parts: [] };
 function drawArenaBack(ctx, i, T) {
-  ctx.drawImage(arenaCanvas(i), 0, 0);
+  ctx.drawImage(arenaCanvas(i), 0, 0, W, H);
   // Generated scenes contain their own lights and props. Avoid painting the
   // old geometric signs/fixtures over them; weather still renders in front.
   if (typeof ArenaArt !== 'undefined' && ArenaArt.imageFor(i)) return;

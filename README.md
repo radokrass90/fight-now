@@ -40,7 +40,11 @@ PNG frames. `tools/build-extra-poses.cjs` packs their silhouettes into atlases;
 | Pause | Escape or P |
 
 The Controls screen lists the separate keyboard layouts for two players.
-Touch controls appear on phones; use landscape orientation. Music can be
+Touch controls appear automatically on phones. Portrait and landscape both work.
+Phone menus use large native buttons and scrollable fighter/arena grids. The left
+stick and right buttons support simultaneous fingers and clear on cancellation,
+rotation or app switching. Returning from another app leaves the fight paused.
+Music can be
 disabled separately in the pause menu. A browser may require a key or tap to
 start sound. The six MP3 files are served with the game and loop as full tracks.
 
@@ -81,3 +85,16 @@ to redistribute them. Third-party Three.js retains its own MIT license.
 This is a browser arcade game with painted fighters and illustrated backgrounds,
 not a fully navigable 3D world. The earlier raw generations, large ZIP archives,
 temporary files and local account/browser data are excluded from the repository.
+
+## Mobile performance
+
+Mobile browsers load 256px portraits and 320px arena thumbnails for menus, then
+only the two selected fighters and one 960px arena for the match. Mobile sprite
+atlases use 256px cells with the same thirty poses and timing. Replacing the
+opponent releases the previous pair. Fighter atlas memory is about 15 MiB for
+the active mobile pair, compared with 450 MiB when all full-size casts were
+preloaded. The mobile layout accounts for browser viewport changes and safe areas.
+
+Run `tools/check-mobile.cjs` for multi-pointer ownership/cancellation and asset
+loading/eviction checks. `tools/build-mobile-assets.cjs` produces the smaller WebP
+files from the approved original art.

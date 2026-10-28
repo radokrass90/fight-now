@@ -5,38 +5,44 @@ const G = { screen: 'title', T: 0, sel: 0, mode: 'versus', diff: store.get('diff
 
 // ---------- мащабиране ----------
 function fit() {
-  const wr = innerWidth / innerHeight, s = wr > W / H ? innerHeight / H : innerWidth / W;
-  cv.style.width = Math.floor(W * s) + 'px'; cv.style.height = Math.floor(H * s) + 'px';
-  document.body.classList.toggle('portrait', innerHeight > innerWidth && Touch.active);
+  const viewport = window.visualViewport;
+  const width = viewport?.width || innerWidth, height = viewport?.height || innerHeight;
+  const playing = Touch.active && G.screen === 'fight';
+  const portrait = height > width;
+  const safe=getComputedStyle(document.getElementById('wrap'));
+  const left=parseFloat(safe.paddingLeft)||0,right=parseFloat(safe.paddingRight)||0,bottom=parseFloat(safe.paddingBottom)||0;
+  const top=(parseFloat(safe.paddingTop)||0)+(playing?44:0), dock=playing&&portrait?204:0;
+  const areaW=Math.max(100,width-left-right),areaH=Math.max(100,height-top-bottom-dock);
+  const scale = Math.min(areaW / W, areaH / H);
+  cv.style.width = Math.floor(W * scale) + 'px'; cv.style.height = Math.floor(H * scale) + 'px';
+  cv.style.position = 'absolute';cv.style.left = Math.floor(left+(areaW-W*scale)/2)+'px';
+  cv.style.top = Math.floor(top+(areaH-H*scale)/2)+'px';
+  document.body.classList.toggle('mobile', Touch.active);
+  document.body.classList.toggle('portrait', portrait);
+  document.body.classList.toggle('playing', playing);
 }
-addEventListener('resize', fit); fit();
-
+addEventListener('resize', fit);window.visualViewport?.addEventListener('resize',fit);fit();
 function toCanvas(e) { const r = cv.getBoundingClientRect(); return [(e.clientX - r.left) * W / r.width, (e.clientY - r.top) * H / r.height]; }
-cv.addEventListener('pointerdown', e => { Snd.init(); const p = toCanvas(e); MenuIn.clicks.push(p); G.mouse = p; });
-cv.addEventListener('pointermove', e => { G.mouse = toCanvas(e); G.mouseMoved = true; });
+cv.addEventListener('pointerdown', e => { Snd.init(); const p = toCanvas(e); if(G.screen!=='fight'||G.match?.paused)MenuIn.clicks.push(p); G.mouse = p; });
+cv.addEventListener('pointermove', e => { if(e.pointerType==='touch')return;G.mouse = toCanvas(e); G.mouseMoved = true; });
 
 // ---------- тъч контроли ----------
 const touchEl = document.getElementById('touch'), stick = document.getElementById('stick'), knob = document.getElementById('knob'), finBtn = document.getElementById('finBtn');
-addEventListener('touchstart', () => { if (!Touch.active) { Touch.active = true; fit(); } }, { passive: true });
-let stickId = null, stickO = [0, 0];
-stick.addEventListener('pointerdown', e => { stickId = e.pointerId; stick.setPointerCapture(e.pointerId); const r = stick.getBoundingClientRect(); stickO = [r.left + r.width / 2, r.top + r.height / 2]; moveStick(e); Snd.init(); });
-stick.addEventListener('pointermove', e => { if (e.pointerId === stickId) moveStick(e); });
-const endStick = e => { if (e.pointerId !== stickId) return; stickId = null; Touch.l = Touch.r = Touch.u = Touch.d = 0; knob.style.transform = ''; };
-stick.addEventListener('pointerup', endStick); stick.addEventListener('pointercancel', endStick);
-function moveStick(e) {
-  let dx = e.clientX - stickO[0], dy = e.clientY - stickO[1]; const r = stick.offsetWidth / 2, len = Math.hypot(dx, dy);
-  if (len > r) { dx *= r / len; dy *= r / len; }
-  knob.style.transform = `translate(${dx}px, ${dy}px)`;
-  const dz = r * 0.3;
-  Touch.l = dx < -dz; Touch.r = dx > dz; Touch.u = dy < -dz * 1.4; Touch.d = dy > dz * 1.2;
+const touchControls=bindTouchControls(stick,knob,document.querySelectorAll('#btns button, #finBtn'),()=>Snd.init());
+addEventListener('pointerdown',e=>{if(e.pointerType==='touch'&&!Touch.active){Touch.active=true;fit();}},{passive:true});
+function suspendGame(){
+  touchControls.reset();MenuIn.clicks.length=0;
+  if(G.screen==='fight'&&G.match&&!G.match.paused){G.match.paused=true;G.sel=0;BattleMusic.paused=true;BattleMusic.apply();}
+  acc=0;last=performance.now();
 }
-document.querySelectorAll('#btns button, #finBtn').forEach(b => {
-  const k = b.dataset.k;
-  b.addEventListener('pointerdown', e => { e.preventDefault(); b.setPointerCapture(e.pointerId); Touch[k] = 1; Touch.pressed.add(k); b.classList.add('on'); Snd.init(); });
-  const up = () => { Touch[k] = 0; b.classList.remove('on'); };
-  b.addEventListener('pointerup', up); b.addEventListener('pointercancel', up); b.addEventListener('lostpointercapture', up);
+addEventListener('blur',suspendGame);addEventListener('pagehide',suspendGame);
+document.addEventListener('visibilitychange',()=>{if(document.hidden)suspendGame();});
+addEventListener('orientationchange',()=>{suspendGame();fit();});
+document.getElementById('pauseBtn').addEventListener('pointerdown',e=>{e.preventDefault();togglePause();});
+document.getElementById('mobilePause').addEventListener('click',()=>togglePause());
+document.getElementById('fullscreen').addEventListener('click',async()=>{
+  Snd.init();try{if(document.fullscreenElement)await document.exitFullscreen();else if(document.documentElement.requestFullscreen){await document.documentElement.requestFullscreen();await screen.orientation?.lock?.('landscape').catch(()=>{});}}catch(e){}fit();
 });
-document.getElementById('pauseBtn').addEventListener('pointerdown', e => { e.preventDefault(); togglePause(); });
 document.addEventListener('contextmenu', e => e.preventDefault());
 
 // ---------- помощни за менюта ----------
@@ -67,7 +73,7 @@ function menuList(items, x, y, gap, inp, size = 28) {
   });
   if (inp.ok) { Snd.ok(); items[G.sel].fn(); }
 }
-function go(screen) { G.screen = screen; G.sel = 0; G.T0 = G.T; if (!['fight', 'result'].includes(screen)) Snd.stopMusic(); }
+function go(screen) { touchControls.reset(); MenuIn.clicks.length=0; G.screen = screen; G.sel = 0; G.T0 = G.T; if (!['fight', 'result'].includes(screen)) Snd.stopMusic(); fit(); }
 const DIFF_NAMES = { easy: 'ЛЕСНО', normal: 'НОРМАЛНО', hard: 'ТРУДНО' };
 
 // ---------- екрани ----------
@@ -172,12 +178,12 @@ function selectScreen(inp) {
   btn(pvp ? 'НАПРЕД' : 'ИЗБЕРИ', 574, helpY + 48, 130, () => { if (pvp) { G.ready = [true, true]; } else confirmPick(); });
   if (inp.back) { if (G.selStep === 1) G.selStep = 0; else go('title'); }
   if (pvp && G.ready[0] && G.ready[1]) { G.ready = [false, false]; go('stage'); }
-  function confirmPick() {
-    Snd.ok(); store.set('lastPick', G.pick[0]);
-    if (G.mode === 'arcade') return startArcade();
-    if (G.selStep === 0) { G.selStep = 1; if (G.pick[1] === G.pick[0]) G.pick[1] = (G.pick[0] + 7) % 15; return; }
-    go('stage');
-  }
+}
+function confirmPick() {
+  Snd.ok(); store.set('lastPick', G.pick[0]);
+  if (G.mode === 'arcade') return startArcade();
+  if (G.selStep === 0) { G.selStep = 1; if (G.pick[1] === G.pick[0]) G.pick[1] = (G.pick[0] + 7) % 15; return; }
+  go('stage');
 }
 
 function stageScreen(inp) {
@@ -223,7 +229,9 @@ function startFight(arena, lvl) {
   const human1 = { type: 'human', map: G.mode === 'pvp' ? 'p1' : 'solo', touch: true, pad: 0 };
   const ctrl2 = G.mode === 'pvp' ? { type: 'human', map: 'p2', touch: false, pad: 1 } : G.mode === 'training' ? { type: 'dummy' } : { type: 'cpu', level: lvl || G.diff };
   G.matchOpts = { mode: G.mode, arena, c1, c2, ctrl1: human1, ctrl2 };
-  G.vsT = 0; go('vs'); Snd.say(c1.name + ' gegen ' + c2.name);
+  G.assetsReady=false;const request=G.assetRequest=(G.assetRequest||0)+1;
+  Promise.all([CharacterArt.prepare([c1.id,c2.id]),ArenaArt.prepare(arena)]).then(()=>{if(G.assetRequest===request)G.assetsReady=true;});
+  G.vsT = 0; go('vs'); if(Touch.active)Snd.startMusic(arena); Snd.say(c1.name + ' gegen ' + c2.name);
 }
 
 function vsScreen(inp) {
@@ -238,12 +246,13 @@ function vsScreen(inp) {
   const s = 1 + Math.max(0, 1 - (t - 20) / 12) * 2; ctx.save(); ctx.translate(W / 2, H / 2); ctx.scale(s, s); outlineText(ctx, 'VS', 0, 0, 90, '#ffd23d', 'center', 10); ctx.restore();
   txt(ARENAS[o.arena].name.toUpperCase() + ' · ' + ARENAS[o.arena].city, W / 2, H - 30, 16, '#fff', 'center', FONT_B);
   if (G.mode === 'arcade') txt('БОЙ ' + (G.arcade.i + 1) + ' / 7', W / 2, 40, 22, '#ffd23d');
-  if (t > 150 || (t > 30 && (inp.ok || inp.click))) { G.match = new Match(o); go('fight'); Snd.startMusic(o.arena); }
+  if(!G.assetsReady)txt('ЗАРЕЖДАНЕ НА БОЙЦИТЕ…',W/2,40,18,'#ffd23d');
+  if (G.assetsReady && (t > 150 || (t > 30 && (inp.ok || inp.click)))) { G.match = new Match(o); go('fight'); Snd.startMusic(o.arena); }
 }
 
 function togglePause() {
   if (G.screen !== 'fight' || !G.match) return;
-  G.match.paused = !G.match.paused; G.sel = 0; Snd.ui();
+  touchControls.reset();G.match.paused = !G.match.paused; G.sel = 0; Snd.init();Snd.ui();
   BattleMusic.paused = G.match.paused; BattleMusic.apply();
 }
 function fightScreen(inp) {
@@ -331,7 +340,7 @@ function frame(now) {
     if (G.screen !== 'fight' || (G.match && G.match.paused)) { if (handleClicks(inp)) inp.ok = false; }
     ctx.setTransform(1, 0, 0, 1, 0, 0);
     ctx.clearRect(0, 0, W, H);
-    switch (G.screen) {
+    if(!(Touch.active && typeof MobileUI!=='undefined' && MobileUI.ownsMenu())) switch (G.screen) {
       case 'title': titleScreen(inp); break;
       case 'controls': controlsScreen(inp); break;
       case 'select': selectScreen(inp); break;
@@ -341,6 +350,7 @@ function frame(now) {
       case 'result': resultScreen(inp); break;
       case 'moves': movesScreen(inp); break;
     }
+    if(typeof MobileUI!=='undefined')MobileUI.sync();
     touchEl.hidden = !(Touch.active && G.screen === 'fight' && G.match && !G.match.paused && G.match.phase !== 'matchOver');
     endInputFrame();
   }
@@ -348,7 +358,7 @@ function frame(now) {
 }
 function boot() {
   const ld = document.getElementById('loading'); if (ld) ld.remove();
-  invalidateArenas();
+  invalidateArenas();ArenaArt.prepare(0);
   requestAnimationFrame(frame);
 }
 const fontsReady = document.fonts && document.fonts.load

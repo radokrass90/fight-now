@@ -1,17 +1,25 @@
 'use strict';
-
 const ArenaArt = (() => {
   const entries = new Map();
-  const ready = Promise.all(ARENA_ART_DATA.map(data => new Promise(resolve => {
-    const image = new Image(), entry = { data, image, loaded: false };
-    entries.set(data.index, entry);
-    image.onload = () => { entry.loaded = true; resolve(); };
-    image.onerror = () => { console.warn('Arena art unavailable:', data.id); resolve(); };
-    image.src = 'assets/arenas-hd/' + data.id + '/background.webp';
-  })));
-  function imageFor(index) {
-    const entry = entries.get(index);
-    return entry && entry.loaded ? entry.image : null;
+  function load(entry,key,file) {
+    if(entry[key+'Promise'])return entry[key+'Promise'];
+    return entry[key+'Promise']=new Promise(resolve=>{
+      const image=new Image();entry[key]=image;
+      const timer=setTimeout(()=>resolve(false),12000);
+      image.onload=()=>{clearTimeout(timer);entry[key+'Loaded']=true;resolve(true);};
+      image.onerror=()=>{clearTimeout(timer);resolve(false);};
+      image.src='assets/arenas-hd/'+entry.data.id+'/'+file;
+    });
   }
-  return { ready, entries, imageFor };
+  const ready=Promise.all(ARENA_ART_DATA.map(data=>{
+    const entry={data};entries.set(data.index,entry);
+    return load(entry,'thumbnail','thumbnail.webp');
+  }));
+  async function prepare(index){
+    for(const [i,entry] of entries)if(i!==index&&entry.image){entry.image.onload=entry.image.onerror=null;entry.image.src='';delete entry.image;delete entry.imagePromise;entry.imageLoaded=false;}
+    const entry=entries.get(index);if(entry)await load(entry,'image','background-mobile.webp');
+  }
+  function thumbnailFor(index){const e=entries.get(index);return e?.thumbnailLoaded?e.thumbnail:null;}
+  function imageFor(index){const e=entries.get(index);return e?.imageLoaded?e.image:thumbnailFor(index);}
+  return {ready,prepare,entries,imageFor,thumbnailFor};
 })();

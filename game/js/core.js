@@ -13,6 +13,9 @@ const chance = p => Math.random() < p;
 function seeded(s) { return () => { s = (s * 1664525 + 1013904223) >>> 0; return s / 4294967296; }; }
 const FONT_D = '"Russo One", Impact, "Arial Black", sans-serif';
 const FONT_B = '"Rubik", "Segoe UI", Arial, sans-serif';
+const MOBILE = typeof navigator !== 'undefined' && ((navigator.maxTouchPoints || 0) > 0 ||
+  (typeof matchMedia === 'function' && matchMedia('(pointer: coarse)').matches) ||
+  (typeof location !== 'undefined' && new URLSearchParams(location.search).has('mobile')));
 
 const store = {
   get(k, d) { try { const v = localStorage.getItem('fightnow_' + k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } },
@@ -96,7 +99,7 @@ addEventListener('keydown', e => {
   Snd.init();
 });
 addEventListener('keyup', e => Keys.down.delete(e.code));
-addEventListener('blur', () => Keys.down.clear());
+addEventListener('blur', () => { Keys.down.clear(); Keys.pressed.clear(); });
 
 const MAPS = {
   solo: { l: ['KeyA', 'ArrowLeft'], r: ['KeyD', 'ArrowRight'], u: ['KeyW', 'ArrowUp'], d: ['KeyS', 'ArrowDown'], lp: ['KeyJ'], hp: ['KeyI'], lk: ['KeyK'], hk: ['KeyO'], bl: ['KeyL', 'ShiftLeft'], sp: ['KeyU', 'Space'] },
@@ -104,7 +107,7 @@ const MAPS = {
   p2: { l: ['ArrowLeft'], r: ['ArrowRight'], u: ['ArrowUp'], d: ['ArrowDown'], lp: ['KeyK', 'Numpad4'], hp: ['KeyL', 'Numpad5'], lk: ['Comma', 'Numpad1'], hk: ['Period', 'Numpad2'], bl: ['Slash', 'Numpad3'], sp: ['KeyO', 'Numpad6'] }
 };
 const BTN = ['lp', 'hp', 'lk', 'hk', 'bl', 'sp'];
-const Touch = { l: 0, r: 0, u: 0, d: 0, lp: 0, hp: 0, lk: 0, hk: 0, bl: 0, sp: 0, fin: 0, pressed: new Set(), active: false };
+const Touch = { l: 0, r: 0, u: 0, d: 0, lp: 0, hp: 0, lk: 0, hk: 0, bl: 0, sp: 0, fin: 0, pressed: new Set(), active: MOBILE };
 const Pads = { prev: [{}, {}] };
 
 function padState(i) {
