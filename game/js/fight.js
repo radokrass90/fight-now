@@ -613,8 +613,7 @@ class Match {
     for (const f of this.p) drawShadow(ctx, f);
     // загубилият отзад при финал; иначе атакуващият отпред
     const order = finisher ? [this.loser, this.winner] : [...this.p].sort((x, y) => (x.state === 'move' || x.state === 'throwing' || x.state === 'super' ? 1 : 0) - (y.state === 'move' || y.state === 'throwing' || y.state === 'super' ? 1 : 0));
-    const drawn3D = window.Fighters3D?.draw(ctx, order, this.arena, this.T);
-    if (!drawn3D) for (const f of order) drawFighter(ctx, f);
+    for (const f of order) drawFighter(ctx, f);
     this.drawMotionTrails(ctx);
     if (finisher && finisher.def.front) finisher.def.front(ctx, finisher.t, finisher.S, this.winner, this.loser, this);
     for (const f of this.p) if (f.state === 'dizzy') this.drawStars(ctx, f);

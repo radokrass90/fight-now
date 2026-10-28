@@ -1,0 +1,29 @@
+{
+  "tool": "built-in image_gen",
+  "characters": [
+    "murat",
+    "yasmin",
+    "dragan",
+    "kevin",
+    "leyla",
+    "tomasz",
+    "hakan",
+    "nadine",
+    "emre",
+    "boris",
+    "jasmin",
+    "adem",
+    "marco",
+    "fatima",
+    "danny"
+  ],
+  "reference": "game/assets/characters-hd/<id>/source.png",
+  "output": "game/assets/characters-hd/<id>/extra-20.webp",
+  "mainPrompt": "Use case: identity-preserve. Asset type: hand-painted 2.5D fighting game sprite animation sheet. Reference is the OLD approved fighter; preserve EXACT face, clothing, hair, build, colors and rendering style. Create exactly 20 NEW full body poses of this ONE fighter on a regular 5 column by 4 row grid, row-major. Each cell is square, one separated whole figure per cell, generous transparent gutters, no overlap. All face RIGHT in consistent side-on 3/4 game view, same anatomical body size in every cell. Transparent alpha background; no labels, text, scenery, floor, shadows, effects. Realistic adult anatomy; two arms and two legs. Balanced fighting guard, chin tucked, guard hand protecting jaw, knees soft, correct joint bends, plausible weight shift. Grounded poses share same foot baseline. Preserve style of reference, never toy or 3D. ROW 1: (1) advancing combat shuffle lead foot contacts forward rear foot behind (2) weight settles front knee bends (3) rear foot catches up without crossing feet (4) lead heel raises in next shuffle (5) opposite contact, wider fighting guard. ROW 2: (6) return step rear foot plants, guarded (7) jab preparation front fist halfway out, rear fist at chin (8) jab retracting halfway back, rear fist protecting chin (9) rear cross preparation torso coils and rear heel raises (10) cross recovery torso untwists fists return to guard. ROW 3: (11) lead hook bent elbow horizontal, rear guard at chin (12) rear uppercut bent elbow rising, knees drive up (13) front kick chamber knee raised shin folded (14) kick retracts knee bent back toward torso (15) knee strike thigh lifted hips forward hands guard. ROW 4: (16) crouched low block both forearms guard, knees bent (17) body hit recoil torso folded forward (18) falling backward diagonal full body knees bent (19) knocked down lying horizontally on back bent knees (20) getting up from one knee one foot planted guarding face. Exactly these 20 poses, no duplication of entire rows, no extra figures. Maintain character-specific props in rear hand when present, avoid extra weapons.",
+  "correctionPrompt": "Use case: identity-preserve. Create a supplementary fighting-game sprite strip of exactly THREE full-body figures of the same approved adult fighter from the reference. Keep exact face, hair, body build, clothing colors, full outfit, weapons/accessories and hand-painted 2.5D realistic style. Transparent background. One row of three equal square cells, generous empty gutters, each full figure wholly inside its cell; equal head/body size, feet on same baseline, side-on facing RIGHT. No text/shadows/scenery. LEFT: rear straight punch WIND-UP: BOTH FEET ON GROUND, wide staggered fighting base, weight on rear leg, rear shoulder coiled backward, rear fist by cheek, lead hand protecting chin. NOT a knee strike, NO lifted leg. MIDDLE: grounded rear UPPERCUT: BOTH FEET planted, knees slightly bent, hips rotate and torso rises, rear elbow bent with fist rising vertically just in front of face, lead hand guards jaw; no raised knee, no straight arm overhead. RIGHT: front kick RECOVERY: rear supporting foot fully planted, front thigh raised to hip height, knee bent 90 degrees, shin folded DOWN under knee, front foot below knee and close to body, both hands in protective guard; NO fully extended kick. Exactly two arms and two legs each. Retain reference prop IN REAR HAND in ALL THREE poses if character has one (Dragan gold-handled cane, Leyla wrench, Adem serving tray). Preserve full-length trousers when present. Same body scale throughout. These are corrected balanced martial arts positions for animation.",
+  "corrections": {
+    "murat": "Keep row 3 column 5 raised leg covered with full-length cargo trousers and work boot.",
+    "dragan": "Restore gold-handled wooden cane in rear hand throughout all twenty poses.",
+    "packing": "Transparent silhouettes are isolated into 512px cells. Disconnected generation debris is omitted. Grounded feet share baseline 464. Corrected strip replaces preparation of cross, uppercut and kick recovery."
+  }
+}

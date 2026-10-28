@@ -265,7 +265,6 @@ function fightScreen(inp) {
       { t: 'СПИСЪК С УДАРИ', fn: () => { G.moveFor = m.p[0].c; G.moveBack = 'fight'; G.screen = 'moves'; } },
       { t: 'РЕСТАРТ', fn: () => { G.match = new Match(G.matchOpts); } },
       { t: 'МУЗИКА: ' + (Snd.musicOn ? 'ДА' : 'НЕ'), fn: () => Snd.toggleMusic() },
-      { t: 'ВИЗИЯ: ' + (window.Fighters3D?.enabled && window.Fighters3D?.available ? '3D' : 'РИСУВАНА'), fn: () => window.Fighters3D?.toggle() },
       { t: 'ДРУГ БОЕЦ', fn: () => { Snd.stopMusic(); startSelect(); } },
       { t: 'ГЛАВНО МЕНЮ', fn: () => { Snd.stopMusic(); go('title'); } }
     ], W / 2, 200, 52, inp, 26);
@@ -355,5 +354,4 @@ function boot() {
 const fontsReady = document.fonts && document.fonts.load
   ? Promise.race([Promise.all([document.fonts.load('40px "Russo One"'), document.fonts.load('14px "Rubik"')]), new Promise(r => setTimeout(r, 1500))])
   : Promise.resolve();
-Promise.all([fontsReady.catch(() => {}), CharacterArt.ready, ArenaArt.ready,
-  Promise.race([window.Fighters3DReady, new Promise(resolve => setTimeout(resolve, 15000))])]).then(boot, boot);
+Promise.all([fontsReady.catch(() => {}), CharacterArt.ready, ArenaArt.ready]).then(boot, boot);
