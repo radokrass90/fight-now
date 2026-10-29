@@ -39,8 +39,9 @@ run("G.screen='fight';G.match={paused:true,p:[{c:CHARS[1]}]};MobileUI.sync()");c
 click('← Back');assert.equal(run('G.screen'),'fight');assert(run('G.match.paused'));click('RESUME');assert.equal(run('G.match.paused'),false);
 run('G.match.paused=true;MobileUI.sync()');click('Restart');assert.equal(run('G.match.paused'),false);assert.equal(run('BattleMusic.paused'),false);
 run("go('title');MobileUI.sync()");panel.querySelectorAll('.mode-action')[3].click();assert.equal(run('G.mode'),'pvp');click('CONFIRM FIGHTER');click('CHOOSE ARENA');click('FIGHT!');assert.equal(run('G.matchOpts.ctrl1.map'),'p1');assert.equal(run('G.matchOpts.ctrl2.map'),'p2');
+run("go('title');MobileUI.sync()");panel.querySelectorAll('.mode-action')[1].click();assert.equal(run('G.mode'),'versus');click('CONFIRM FIGHTER');click('CHOOSE ARENA');click('FIGHT!');assert.equal(run('G.matchOpts.ctrl1.type'),'human');assert.equal(run('G.matchOpts.ctrl2.type'),'cpu');assert.equal(run('G.matchOpts.ctrl2.level'),run('G.diff'));
 run("go('title');MobileUI.sync()");panel.querySelectorAll('.mode-action')[0].click();click('START ARCADE');assert.equal(run('G.arcade.list.length'),7);assert.equal(run('new Set(G.arcade.list).size'),7);assert.equal(run('G.mode'),'arcade');assert.equal(run('G.screen'),'vs');
-console.log('PASS: native desktop and touch menu contract, 15 fighter/arena grids, keyboard selection, training flow, pause/moves/resume/restart, PvP mappings and 7-fight arcade.');
+console.log('PASS: native desktop and touch menu contract, 15 fighter/arena grids, keyboard selection, training flow, pause/moves/resume/restart, PvP mappings, versus CPU and 7-fight arcade.');
 
 (async()=>{
  await new Promise(r=>setImmediate(r));

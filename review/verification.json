@@ -25,7 +25,8 @@
       "test": "check-menu-flow.cjs",
       "args": [],
       "exitCode": 0,
-      "output": "PASS: native desktop and touch menu contract, 15 fighter/arena grids, keyboard selection, training flow, pause/moves/resume/restart, PvP mappings and 7-fight arcade.\nPASS: fighter/arena loading failure shows retry, successful retry starts the match, obsolete requests cannot replace a newer fight.\n"
+      "output": "PASS: native desktop and touch menu contract, 15 fighter/arena grids, keyboard selection, training flow, pause/moves/resume/restart, PvP mappings, versus CPU and 7-fight arcade.\nPASS: fighter/arena loading failure shows retry, successful retry starts the match, obsolete requests cannot replace a newer fight.\n",
+      "additionalVersusCoveragePassed": true
     },
     {
       "test": "check-asset-retry.cjs",

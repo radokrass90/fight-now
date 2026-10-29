@@ -1,0 +1,27 @@
+{
+  "mainCommit": "dd79c2af2db4c0698d0d621726a67d25d64cd072",
+  "runtimeTree": "e3234cb235c43568629db1f666cab6aefcf97502",
+  "sourceImplementationCommit": "56993bdc5e4ed5123c0b741ee16d2427a69731e5",
+  "sourceImplementationTree": "d0ea95d70c111833ba8ecf06b6bfb9bada2b1ecf",
+  "pagesRun": 40918011442,
+  "pagesStatus": "completed",
+  "pagesConclusion": "success",
+  "originalRootPreserved": true,
+  "publicChecks": {
+    "all15PortraitsLoaded": true,
+    "renderer": "reforged-30",
+    "residentFighters": 2,
+    "trainingHitDamage": 83,
+    "englishMenu": true,
+    "germanMenu": true,
+    "galleryCompleteSets": 15,
+    "galleryFramesPerFighter": 30,
+    "gameOriginErrors": []
+  },
+  "urls": {
+    "play": "https://radokrass90.github.io/fight-now/reforged/?lang=de",
+    "gallery": "https://radokrass90.github.io/fight-now/reforged/reforged-gallery.html?lang=en",
+    "source": "https://github.com/radokrass90/fight-now/tree/codex/reforged-review"
+  },
+  "physicalDevicesTested": false
+}
