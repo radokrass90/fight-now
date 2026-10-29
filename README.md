@@ -7,6 +7,16 @@ original Suno battle tracks, two-player keyboard play, training and arcade modes
 
 ## Impact effects
 
+All fifteen arenas also include Blender street props: industrial drums, stacked
+tires, timber crates and safety barriers, lit with warm street light and cool
+rim light. Edge and foreground layers add depth, while soft contact shadows
+anchor the fighters. One shared 128 KB transparent atlas adds 4 MiB of decoded
+image memory. These are prerendered 3D models, keeping the canvas game lightweight.
+Edit `blender/street-props.blend`, or regenerate using
+`blender --background --python blender/build_street_props.py` and
+`node tools/build-street-atlas.cjs`. `node tools/check-street-props.cjs` checks
+all fifteen layouts and verifies that props leave the combat center clear.
+
 Heavy hits, specials and supers now have distinct camera shake, brief hit stops,
 camera punches, strike trails and expanding impact/ground rings. The HUD stays
 steady. Pause → Effects switches between strong and light presentation; the

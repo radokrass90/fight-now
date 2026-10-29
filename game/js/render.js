@@ -232,8 +232,11 @@ function limbPoint(c, sk, pose, limb) {
 function drawShadow(ctx, f) {
   if (f.vis === false) return;
   const k = clamp(1 - f.y / 260, 0.3, 1);
-  ctx.fillStyle = 'rgba(0,0,0,0.38)';
-  ctx.beginPath(); ctx.ellipse(f.x, GROUND + 2, 30 * f.c.w * k * (f.lying ? 1.8 : 1) * (f.sc || 1), 6 * k, 0, 0, Math.PI * 2); ctx.fill();
+  const width=38*f.c.w*k*(f.lying?1.8:1)*(f.sc||1);
+  ctx.save();ctx.translate(f.x,GROUND+3);ctx.scale(1,.19);
+  const shadow=ctx.createRadialGradient(0,0,0,0,0,width);
+  shadow.addColorStop(0,`rgba(0,0,0,${.58*k})`);shadow.addColorStop(.4,`rgba(0,0,0,${.30*k})`);shadow.addColorStop(1,'rgba(0,0,0,0)');
+  ctx.fillStyle=shadow;ctx.fillRect(-width,-width,width*2,width*2);ctx.restore();
 }
 
 // ---------- портрет за избора на герой ----------

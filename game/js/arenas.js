@@ -209,6 +209,7 @@ function invalidateArenas() { for (const k in ArenaCache) delete ArenaCache[k]; 
 const Weather = { parts: [] };
 function drawArenaBack(ctx, i, T) {
   ctx.drawImage(arenaCanvas(i), 0, 0, W, H);
+  if(typeof StageProps!=='undefined')StageProps.back(ctx,i,T);
   // Generated scenes contain their own lights and props. Avoid painting the
   // old geometric signs/fixtures over them; weather still renders in front.
   if (typeof ArenaArt !== 'undefined' && ArenaArt.imageFor(i)) return;
@@ -220,6 +221,7 @@ function drawArenaBack(ctx, i, T) {
   if (i === 11) { ctx.save(); ctx.translate(350, 425); ctx.fillStyle = '#a0682f'; for (let k = 0; k < 5; k++) { const ph = (T * 0.05 + k * 1.2) % (Math.PI * 2); ctx.globalAlpha = 0.5 + Math.cos(ph) * 0.4; ctx.fillRect(Math.sin(ph) * 14 - 3, -28 + k * 11, 6, 8); } ctx.restore(); ctx.globalAlpha = 1; }
 }
 function drawArenaFront(ctx, i, T) {
+  if(typeof StageProps!=='undefined')StageProps.front(ctx,i,T);
   const a = ARENAS[i];
   if (a.fx === 'rain') { ctx.strokeStyle = 'rgba(180,200,255,0.35)'; ctx.lineWidth = 1.2; ctx.beginPath(); for (let k = 0; k < 90; k++) { const x = (k * 97 + T * 3) % (W + 60) - 30, y = (k * 53 + T * 14) % H; ctx.moveTo(x, y); ctx.lineTo(x - 4, y + 14); } ctx.stroke(); }
   if (a.fx === 'snow') { ctx.fillStyle = 'rgba(255,255,255,0.85)'; for (let k = 0; k < 80; k++) { const x = (k * 113 + Math.sin(T * 0.02 + k) * 30 + T * 0.4) % W, y = (k * 71 + T * 1.2) % H; ctx.fillRect(x, y, 2.5, 2.5); } }
