@@ -1,142 +1,52 @@
-# FIGHT NOW — Street Combat
+# Fight Now — Reforged
 
-[**Play in your browser**](https://radokrass90.github.io/fight-now/)
+A painted 2.5D web fighting game: 15 redesigned fighters, 450 newly generated pose frames, 15 arenas and six original battle tracks. German and English menus, biographies, move lists, announcements and touch labels.
 
-A German street-fighting arcade game with 15 characters, 15 cinematic arenas,
-original Suno battle tracks, two-player keyboard play, training and arcade modes.
+## Review build
 
-## Languages
+- Play: https://radokrass90.github.io/fight-now/reforged/?lang=de
+- English: https://radokrass90.github.io/fight-now/reforged/?lang=en
+- Art and motion: https://radokrass90.github.io/fight-now/reforged/reforged-gallery.html?lang=en
+- The earlier published game remains at https://radokrass90.github.io/fight-now/game/
 
-The live game supports German (default) and English. Use the DE / EN buttons in
-the menus, or open `game/?lang=de` / `game/?lang=en`. The choice is saved locally;
-switching reloads the game. Menus, biographies, moves, combat messages, touch
-labels, announcer language and the animation gallery follow the selected language.
-German street names, fighter identities and original song titles remain intact.
-`game/js/i18n.js` contains the German catalog; English source strings are the
-fallback. Run `node tools/check-languages.cjs` to verify both languages and keys.
-
-The previous Bulgarian game is preserved locally as
-`backups/fight-now-bg-2026-10-29.tar.gz`, made from commit
-`2d035eb1cf73ab51f153cbf4b3d76b6c6bedeaad`. The backup contains the complete
-tracked game and assets and is excluded from the live deployment.
-
-## Impact effects
-
-All fifteen arenas also include Blender street props: industrial drums, stacked
-tires, timber crates and safety barriers, lit with warm street light and cool
-rim light. Edge and foreground layers add depth, while soft contact shadows
-anchor the fighters. One shared 128 KB transparent atlas adds 4 MiB of decoded
-image memory. These are prerendered 3D models, keeping the canvas game lightweight.
-Edit `blender/street-props.blend`, or regenerate using
-`blender --background --python blender/build_street_props.py` and
-`node tools/build-street-atlas.cjs`. `node tools/check-street-props.cjs` checks
-all fifteen layouts and verifies that props leave the combat center clear.
-
-Heavy hits, specials and supers now have distinct camera shake, brief hit stops,
-camera punches, strike trails and expanding impact/ground rings. The HUD stays
-steady. Pause → Effects switches between strong and light presentation; the
-system's reduced-motion preference also disables shake, roll and impact zoom.
-Mobile particle counts are capped at 90.
-
-The impact burst is a real Blender render: twelve transparent frames packed into
-a 57 KB WebP atlas. The painted fighters remain the active character art.
-Edit `blender/impact-effects.blend`, or regenerate it and its PNG frames using
-`blender --background --python blender/build_impact_fx.py`, then run
-`node tools/build-impact-atlas.cjs` (requires sharp). The runtime retains a
-procedural fallback while the atlas loads. Run `node tools/check-combat-fx.cjs`
-to check heavy-hit/block feedback, particle limits and reduced-motion behavior
-(requires @napi-rs/canvas).
-
-## Painted fighters — 30 poses each
-
-The approved hand-painted fighters are the active game renderer. Each of the
-15 characters retains the original ten sprites and has twenty additional poses:
-a six-frame combat shuffle, punch preparation/recovery, hook, uppercut, kick
-chamber/recovery, knee, low guard, body-hit reaction, fall, grounded and get-up.
-There are 300 new poses and 450 sprite frames in total.
-
-Move segments select the preparation, strike and recovery frames using the same
-frame boundaries as the combat simulation. Reverse walking reverses the shuffle
-cycle. A shared supporting-foot baseline keeps crouches and kicks on the floor;
-knockdown art is horizontal instead of rotating an upright reaction twice.
-
-[Browse all poses and animation sequences](https://radokrass90.github.io/fight-now/game/animation-gallery.html).
-
-Art: `game/assets/characters-hd/<id>/spritesheet.webp` (original ten) and
-`extra-20.webp` (new twenty). Pose metadata is in `game/js/extra-pose-data.js`.
-Generation prompts and correction briefs are in `tools/extra-pose-prompts.json`.
-The local source folder also retains transparent source sheets and individual
-PNG frames. `tools/build-extra-poses.cjs` packs their silhouettes into atlases;
-`tools/check-painted-animation.cjs --complete` checks counts and animation timing.
-
-## Controls
-
-| Action | Solo / training |
-| --- | --- |
-| Move / jump / crouch | WASD or arrow keys |
-| Light / heavy punch | J / I |
-| Light / heavy kick | K / O |
-| Block | L or left Shift |
-| Special | U or Space |
-| Super | Down + Special with full energy |
-| Pause | Escape or P |
-
-The Controls screen lists the separate keyboard layouts for two players.
-Touch controls appear automatically on phones. Portrait and landscape both work.
-Phone menus use large native buttons and scrollable fighter/arena grids. The left
-stick and right buttons support simultaneous fingers and clear on cancellation,
-rotation or app switching. Returning from another app leaves the fight paused.
-Music can be
-disabled separately in the pause menu. A browser may require a key or tap to
-start sound. The six MP3 files are served with the game and loop as full tracks.
+This branch contains the complete source project. The main branch hosts the optimized review game under `reforged/`; that deployment excludes raw generation sheets and rebuildable PNG previews.
 
 ## Run locally
 
-Serve the project over HTTP:
+Serve `game/` with a static HTTP server, for example `python3 -m http.server 8781 --directory game`. Open `http://localhost:8781/?lang=en`. No build service or external font connection is required. Landscape is recommended on phones; portrait also retains the whole playfield and separate touch controls.
+
+Modes: arcade (seven distinct opponents), versus computer, two players, and training. Desktop menus accept keyboard navigation; fighting supports keyboard, gamepads and touch. Pause provides moves, restart, sound/music and effect intensity. Reduced-motion preferences suppress camera shake and impact zoom.
+
+## What's new
+
+All fifteen appearances and their 30-pose atlases are newly generated for this edition. Walking shuffles, punch windup/recovery, uppercuts, kick preparation/recovery, knees, low guards, hit reactions and falling/getting up follow simulation timing. Shared per-strip scale and anchored support feet avoid independent frame-size pumping. Only the selected pair's atlases stay resident: 60 MiB desktop, 15 MiB mobile, plus portraits, arena and effects.
+
+Combat adds a short input buffer, confirmed-hit cancel chains, perfect guard/counter opportunities, bounded juggles, difficulty-dependent CPU reaction and training combo/damage telemetry. All fifteen scripted finishers have finite tested trajectories in either direction.
+
+Blender-authored street props, rotating industrial ventilation units, impact bursts, floor reflections and depth layers enrich the arenas. 3D art is baked into transparent atlases to keep gameplay lightweight; fighters use painted frame animation rather than skeletal 3D models. The new editable project is `blender/reforged-atmosphere.blend` with its generator and GLB export.
+
+Detailed high-resolution Murat/Nadine portraits serve the title. Other portraits and all combat frames share the new fighter source sheets. Failed fighter/arena downloads return to arena selection with a retry message; a partial character set cannot start a match.
+
+## Art and source provenance
+
+`art-direction/REFORGED.md` and `fighter-designs.json` define the roster and visual direction. `generated-art-ledger.json` records the built-in image generator's source/prompt/reference for each source sheet and menu portraits. Raw transparent sheets are in `game/assets/fighters-reforged/sources/`. Their packing contract is documented in that asset directory's README.
+
+Five game-development skills and supporting scripts were obtained from the official OpenAI plugins repository at revision `0722921d5542fc593105c27bd52630babd8b8c2a`. Copies are in `vendor/game-studio/`; exact provenance is in `art-direction/skill-provenance.json`. Two collaborating agents worked on combat and web UI; root integrated art, Blender and final QA.
+
+Local Russo One/Rubik font files include their OFL licenses. Original arena art, Suno tracks and fighter identities are retained from the existing game.
+
+## Verify and rebuild
+
+Verification dependencies: Node.js with `sharp`, `pngjs` and `@napi-rs/canvas`; Python 3 for the combined runner. Set `GAME_NODE`/`NODE_PATH` if needed.
 
 ```sh
-python3 -m http.server 8770
-# Open http://localhost:8770/game/
+python3 tools/verify-reforged.py
+node tools/build-reforged-fighters.cjs --complete
+node tools/build-menu-heroes.cjs
+blender --background --python blender/build_reforged_atmosphere.py
+node tools/build-reforged-atmosphere.cjs
 ```
 
-## Archived Blender experiment
+`review/verification.json` records eleven passing checks: strict all-roster audit, 900 desktop/mobile art draws, seeded combat/finishers, all menu modes, failed download/retry behavior, DE/EN, multi-touch ownership/cancellation, impact effects, 15 prop layouts, timeline sampling and six music files. `review/art-visual-qc.md` documents visual inspection of all 450 poses. `review/final/` contains actual browser screenshots and observations at 1200×665, 390×844 and 844×390. No game-origin console errors were observed. Physical iOS/Android hardware has not been tested.
 
-- `blender/fight-now-cast.blend`: complete 15-character cast and walk-cycle study.
-- `blender/build_fighters.py`: reproducible procedural modeling/export pipeline.
-- `blender/characters.json`: character appearances, stances and pose definitions.
-- `game/assets/models/*.glb`: individual web-ready articulated fighters.
-
-Rebuild from the project root:
-
-```sh
-blender -b --python blender/build_fighters.py -- --preview
-```
-
-Models intentionally use Y up in both Blender and the runtime; the exporter
-preserves those coordinates. The archived experiment uses vendored Three.js 0.180.0,
-including its MIT license in `game/vendor/three/LICENSE`.
-
-## Asset credits and scope
-
-The character portraits and arena illustrations were generated for this project;
-the battle recordings were generated in the owner's Suno account. The Blender
-cast is a new stylized interpretation of those characters. Included music and
-art are project assets; this repository does not grant a separate blanket license
-to redistribute them. Third-party Three.js retains its own MIT license.
-
-This is a browser arcade game with painted fighters and illustrated backgrounds,
-not a fully navigable 3D world. The earlier raw generations, large ZIP archives,
-temporary files and local account/browser data are excluded from the repository.
-
-## Mobile performance
-
-Mobile browsers load 256px portraits and 320px arena thumbnails for menus, then
-only the two selected fighters and one 960px arena for the match. Mobile sprite
-atlases use 256px cells with the same thirty poses and timing. Replacing the
-opponent releases the previous pair. Fighter atlas memory is about 15 MiB for
-the active mobile pair, compared with 450 MiB when all full-size casts were
-preloaded. The mobile layout accounts for browser viewport changes and safe areas.
-
-Run `tools/check-mobile.cjs` for multi-pointer ownership/cancellation and asset
-loading/eviction checks. `tools/build-mobile-assets.cjs` produces the smaller WebP
-files from the approved original art.
+The prior Bulgarian game is preserved locally in `Fight now/backups/fight-now-bg-2026-10-29.tar.gz`, separately from this review deployment.

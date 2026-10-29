@@ -69,9 +69,11 @@ class Fighter {
   reset(x, facing) {
     Object.assign(this, { x, y: 0, vx: 0, vy: 0, facing, hp: 1000, state: 'idle', st: 0, move: null, mt: 0, hitstun: 0, juggle: 0, comboHits: 0, comboDmg: 0, myCombo: 0,
       invul: 0, connected: false, chain: 0, hitIds: new Set(), airUsed: false, lying: false, rot: 0, sc: 1, vis: true, alpha: 1, flash: 0, strip: false, paint: false, squash: 1, noProp: false,
-      stunUsed: false, dirHist: [], lastDir: '', thr: null, sup: null, armorHits: 0, walkPh: 0, fp: null, script: false, lastHitBy: null, pushed: 0 });
+      stunUsed: false, dirHist: [], lastDir: '', thr: null, sup: null, armorHits: 0, walkPh: 0, fp: null, script: false, lastHitBy: null, pushed: 0,
+      attackBuffer: null, sampledInput: null, moveSerial: 0, moveRank: 0, guardStart: -999, blockHeld: false });
     this.pose = Object.assign({}, this.c.stance);
     this.input = { P: {} };
+    if (this.ai) this.ai.reset();
   }
   get free() { return FREE.has(this.state); }
   get crouching() { return this.state === 'crouch' || this.state === 'cblock' || (this.state === 'move' && this.move && this.move.crouch); }
@@ -88,7 +90,8 @@ class Match {
     this.opts = opts; this.mode = opts.mode; this.arena = opts.arena;
     this.p = [new Fighter(opts.c1, 0, opts.ctrl1), new Fighter(opts.c2, 1, opts.ctrl2)];
     this.round = 1; this.T = 0; this.fx = []; this.proj = []; this.texts = []; this.shake = 0; this.hitstop = 0; this.dim = 0; this.slow = 0;
-    this.result = null; this.paused = false;
+    this.result = null; this.paused = false; this.simFrame = 0;
+    this.trainingStats = { lastCombo: { hits: 0, damage: 0 }, bestCombo: { hits: 0, damage: 0 }, totalDamage: 0, perfectGuards: 0 };
     this.startRound();
   }
   startRound() {
@@ -116,6 +119,11 @@ class Match {
   update() {
     if (this.paused) return;
     this.T++;
+    // Sample human edges even during hitstop. The buffer expires in simulation
+    // frames, so a cinematic pause never eats a deliberate follow-up input.
+    for (const f of this.p) if (f.ctrl.type === 'human') {
+      f.sampledInput = this.readInput(f); this.bufferAttack(f, f.sampledInput);
+    }
     if(this.impactFocus)this.impactFocus.age++;
     if (this.banner) { this.banner.life--; if (this.banner.life <= 0) this.banner = null; }
     for (const t of this.texts) { t.life--; t.y -= 0.6; } this.texts = this.texts.filter(t => t.life > 0);
@@ -125,9 +133,12 @@ class Match {
     if (this.slow > 0) { this.slow--; if (this.slow % 3 !== 0) return; }
     if (this.hitstop > 0) { this.hitstop--; for (const f of this.p) if (f.flash > 0) f.flash--; return; }
 
-    this.pt++;
+    this.pt++; this.simFrame++;
     const [a, b] = this.p;
-    a.input = this.readInput(a); b.input = this.readInput(b);
+    for (const f of this.p) {
+      f.input = f.ctrl.type === 'human' ? f.sampledInput : this.readInput(f);
+      if (f.ctrl.type !== 'human') this.bufferAttack(f, f.input);
+    }
 
     switch (this.phase) {
       case 'intro':
@@ -170,11 +181,31 @@ class Match {
     return { P: {} };
   }
 
+  bufferAttack(f, input) {
+    const key = ['sp', 'lp', 'hp', 'lk', 'hk'].find(k => input.P?.[k]);
+    if (key) f.attackBuffer = { key, expires: this.simFrame + 8, d: !!input.d, l: !!input.l, r: !!input.r };
+  }
+  attackInput(f) {
+    const buffered = f.attackBuffer;
+    if (buffered && buffered.expires >= this.simFrame) return { ...f.input, d: buffered.d, l: buffered.l, r: buffered.r, P: { [buffered.key]: true } };
+    f.attackBuffer = null;
+    return f.input;
+  }
+  recordCombo(B) {
+    if (this.mode !== 'training' || B.side !== 1 || !B.comboHits) return;
+    const combo = { hits: B.comboHits, damage: B.comboDmg };
+    this.trainingStats.lastCombo = combo;
+    const best = this.trainingStats.bestCombo;
+    if (combo.damage > best.damage || (combo.damage === best.damage && combo.hits > best.hits)) this.trainingStats.bestCombo = { ...combo };
+  }
+
   // ---------- логика на боеца ----------
   stepFighter(f) {
     const o = this.opp(f), inp = f.input;
     const fwd = f.facing === 1 ? inp.r : inp.l, back = f.facing === 1 ? inp.l : inp.r;
     f.fwd = fwd; f.back = back;
+    if (inp.bl && !f.blockHeld) f.guardStart = this.simFrame;
+    f.blockHeld = !!inp.bl;
     // история на посоките (за финала)
     const ds = inp.d && !fwd && !back ? 'D' : fwd && !inp.d ? 'F' : back && !inp.d ? 'B' : inp.u ? 'U' : '';
     if (ds !== f.lastDir) { if (ds) { f.dirHist.push({ d: ds, t: this.T }); if (f.dirHist.length > 8) f.dirHist.shift(); } f.lastDir = ds; }
@@ -184,7 +215,7 @@ class Match {
     if (f.script) return;
 
     if (f.free) {
-      if (f.comboHits) { f.comboHits = 0; f.comboDmg = 0; f.juggle = 0; f.stunUsed = false; }
+      if (f.comboHits) { this.recordCombo(f); f.comboHits = 0; f.comboDmg = 0; f.juggle = 0; f.stunUsed = false; }
       if (Math.abs(o.x - f.x) > 6 && o.state !== 'thrown') f.facing = o.x > f.x ? 1 : -1;
       if (this.tryAttack(f, o)) return;
       if (inp.bl) { this.setState(f, inp.d ? 'cblock' : 'block'); f.vx = 0; return; }
@@ -219,10 +250,11 @@ class Match {
   setState(f, s) { if (f.state !== s) { f.state = s; f.st = 0; } }
 
   tryAttack(f, o) {
-    const inp = f.input, P = inp.P;
+    const inp = this.attackInput(f), P = inp.P;
+    const fwd = f.facing === 1 ? inp.r : inp.l, back = f.facing === 1 ? inp.l : inp.r;
     if (P.sp) {
       if (inp.d && f.meter >= 1000) { f.meter = 0; this.startMove(f, f.c.supm); this.dim = 40; this.announce(f.c.sup.name.toUpperCase(), 50, f.c.sup.color, 52); Snd.zap(); return true; }
-      const m = (f.fwd || f.back) ? f.c.sp2m : f.c.sp1m;
+      const m = (fwd || back) ? f.c.sp2m : f.c.sp1m;
       if (m.proj && this.proj.some(p => p.owner === f && !p.dead)) return false;
       this.startMove(f, m); this.popText(f.x, GROUND - 170, m.name, '#fff', 18, 40); return true;
     }
@@ -231,18 +263,20 @@ class Match {
     // финал
     if (this.phase === 'finishPrompt' && f === this.winner && this.checkFinisherCode(f, b)) return true;
     // хвърляне: напред + силен удар отблизо
-    if (b === 'hp' && f.fwd && Math.abs(o.x - f.x) < 78 + 10 * f.c.w && o.y === 0 && !o.invul && (o.free || o.state === 'move')) {
+    if (b === 'hp' && fwd && Math.abs(o.x - f.x) < 78 + 10 * f.c.w && o.y === 0 && !o.invul && (o.free || o.state === 'move')) {
       this.startThrow(f, o, THROWS[f.c.throw], 110); return true;
     }
     const key = b.toUpperCase();
     if (inp.d) { this.startMove(f, f.c.moves['c' + key]); return true; }
-    if (b === 'hp' && f.fwd && f.c.moves.fHP) { this.startMove(f, f.c.moves.fHP); return true; }
+    if (b === 'hp' && fwd && f.c.moves.fHP) { this.startMove(f, f.c.moves.fHP); return true; }
     this.startMove(f, f.c.moves[key]); return true;
   }
 
   startMove(f, m) {
     const c = compileMove(m);
     f.prevState = f.state;
+    f.attackBuffer = null; f.moveSerial++;
+    f.moveRank = m.special || m.isSuper ? 3 : ['HP', 'HK', 'cHP', 'cHK', 'fHP'].some(k => f.c.moves[k] === m) ? 2 : 1;
     f.state = 'move'; f.st = 0; f.move = m; f.mt = 0; f.mc = c; f.hitIds = new Set(); f.connected = false; f.armorHits = 0;
     f.startPose = Object.assign({}, f.pose); f.jumped = false;
     if (!m.air) f.vx = 0;
@@ -268,9 +302,14 @@ class Match {
     if ((m.air || m.hop) && f.y <= 0 && f.mt > 2 && (f.jumped || !m.jumpAt) && (m.hop ? f.mt > 6 : true) && f.vy <= 0 && f.prevY > 0) { f.y = 0; f.vy = 0; f.move = null; this.setState(f, 'land'); this.dust(f.x, 3); return; }
     // верижни комбинации
     if (f.connected && seg && !seg.hold && seg.p == null && f.chain < 2 && !m.special && !m.air) {
-      const P = f.input.P, b = ['lp', 'hp', 'lk', 'hk'].find(k => P[k]);
-      if (P.sp) { f.state = 'idle'; if (this.tryAttack(f, o)) return; }
-      if (b) { const ch = f.chain + 1; f.state = 'idle'; this.tryAttack(f, o); f.chain = ch; return; }
+      const P = this.attackInput(f).P, b = ['lp', 'hp', 'lk', 'hk'].find(k => P[k]);
+      const rank = P.sp ? 3 : b === 'hp' || b === 'hk' ? 2 : b ? 1 : 0;
+      // A clean hit opens light → heavy → special routes. Heavy → light
+      // loops and canceling blocked normals cannot create infinite pressure.
+      if (rank && rank >= f.moveRank && (rank > f.moveRank || rank === 1)) {
+        const chain = f.chain + 1;
+        if (this.tryAttack(f, o)) { f.chain = chain; return; }
+      }
     }
     if (f.mt >= c.len) this.endMove(f);
   }
@@ -304,6 +343,8 @@ class Match {
 
   // ---------- хвърляния ----------
   startThrow(A, B, sc, dmg, name) {
+    A.attackBuffer = null; B.attackBuffer = null;
+    if(B.free&&B.comboHits){this.recordCombo(B);B.comboHits=0;B.comboDmg=0;B.juggle=0;}
     A.state = 'throwing'; A.st = 0; A.move = null; A.vx = 0; A.thr = { s: sc, t: 0, dmg, n: [sc.impact, sc.impact2, sc.impact3].filter(Boolean).length };
     B.state = 'thrown'; B.st = 0; B.move = null; B.vx = B.vy = 0; B.y = 0; B.lying = false; B.vis = true; B.comboHits++;
     B.facing = -A.facing;
@@ -318,7 +359,7 @@ class Match {
     const dx = lerp(b1[1], b2[1], kb), dy = lerp(b1[2], b2[2], kb), rot = lerp(b1[3], b2[3], kb);
     B.x = A.x + dx * A.facing; B.y = Math.max(0, dy); B.rot = rot; B.pose = fullPose(B.c.stance, rot < -30 ? 'air_hit' : 'hit_hi');
     if (th.t === s.impact || th.t === s.impact2 || th.t === s.impact3) {
-      const d = th.dmg / th.n; this.damage(A, B, d); this.shake = 12; this.hitstop = 6; Snd.thud(); Snd.hit(1); this.dust(B.x, 8);
+      const d = th.dmg / th.n; this.damage(A, B, d); this.recordCombo(B); this.shake = 12; this.hitstop = 6; Snd.thud(); Snd.hit(1); this.dust(B.x, 8);
       this.spark(B.x, GROUND - B.y - 40, true,undefined,{power:3,facing:A.facing});
     }
     if (th.t >= s.end) {
@@ -348,7 +389,7 @@ class Match {
     B.x = A.x + A.facing * (66 + i * 2); B.pose = fullPose(B.c.stance, i % 2 ? 'hit_hi' : 'hit_lo');
     if ((su.t - 1) % 11 === 8) {
       const last = i === SUPER_SEQ.length - 1;
-      this.damage(A, B, last ? 90 : 36, true); this.hitstop = last ? 14 : 5; this.shake = last ? 18 : 7; Snd.hit(last ? 1 : 0.5);
+      this.damage(A, B, last ? 90 : 36, true); B.comboHits++; this.recordCombo(B); this.hitstop = last ? 14 : 5; this.shake = last ? 18 : 7; Snd.hit(last ? 1 : 0.5);
       const sk = skeleton(A.c, A.pose), hp = fighterHip(A, sk), pt = toWorld(A, hp, limbPoint(A.c, sk, A.pose, limb));
       this.spark(pt[0], pt[1], true, A.c.sup.color,{power:last?4:3,facing:A.facing}); B.flash = 3;
       if (last) {
@@ -364,6 +405,7 @@ class Match {
     const mul = raw ? 1 : A.c.power * B.c.def;
     const dmg = Math.round(d * mul);
     B.hp = Math.max(0, B.hp - dmg); B.comboDmg += dmg;
+    if (this.mode === 'training' && A.side === 0) this.trainingStats.totalDamage += dmg;
     A.meter = Math.min(1000, A.meter + dmg * 0.7); B.meter = Math.min(1000, B.meter + dmg * 0.4);
     if (this.mode === 'training' && B.hp < 1) B.hp = 1;
     return dmg;
@@ -437,25 +479,32 @@ class Match {
     const blocking = (B.state === 'block' || B.state === 'cblock' || B.state === 'blockstun') && B.y === 0;
     const crouchB = B.state === 'cblock' || (B.state === 'blockstun' && B.wasCrouch);
     const canBlock = blocking && (h.l === 'm' || h.l === 'h' || (h.l === 'l' && crouchB) || (h.l === 'o' && !crouchB));
-    A.connected = true;
     if (canBlock) {
-      const chip = h.special ? Math.round(h.d * 0.15) : 0; if (chip) B.hp = Math.max(1, B.hp - chip);
-      B.wasCrouch = crouchB; B.state = 'blockstun'; B.st = 0; B.hitstun = Math.max(6, Math.round((h.st || 18) * 0.6)); B.vx = A.facing * (h.kb * 0.8 + 2.5);
+      A.connected = false;
+      const perfect = B.state !== 'blockstun' && this.simFrame - B.guardStart <= 4;
+      const chip = !perfect && h.special ? Math.round(h.d * 0.15) : 0; if (chip) B.hp = Math.max(1, B.hp - chip);
+      B.wasCrouch = crouchB; B.state = 'blockstun'; B.st = 0; B.hitstun = perfect ? 3 : Math.max(6, Math.round((h.st || 18) * 0.6)); B.vx = perfect ? 0 : A.facing * (h.kb * 0.8 + 2.5);
       if (B.x <= LEFT + 2 || B.x >= RIGHT - 2) A.vx = -A.facing * 3;
       this.hitstop = 4; Snd.block(); this.spark(px, py, false, '#8fd3ff'); B.meter = Math.min(1000, B.meter + 12);
+      if (perfect) {
+        B.meter = Math.min(1000, B.meter + 48); this.popText(B.x, GROUND - 190, localize("PERFECT GUARD"), '#93eeff', 22, 50);
+        if (this.mode === 'training' && B.side === 0) this.trainingStats.perfectGuards++;
+      }
       if (h.superStart) { /* блокиран супер */ }
       return;
     }
+    A.connected = true;
     // броня
     if (B.state === 'move' && B.move && B.move.armor && B.mt >= B.move.armor[0] && B.mt <= B.move.armor[1] && B.armorHits < 1) {
       B.armorHits++; this.damage(A, B, h.d * 0.5); B.flash = 6; this.hitstop = 6; Snd.block(); this.spark(px, py, false, '#ffffff'); this.popText(B.x, GROUND - 180, localize("ARMOR"), '#fff', 18); return;
     }
-    if (h.superStart) { this.damage(A, B, h.d); this.startSuper(A, B); Snd.hit(1); this.spark(px, py, true, A.c.sup.color); return; }
+    if (h.superStart) { this.damage(A, B, h.d); B.comboHits++; this.recordCombo(B); this.startSuper(A, B); Snd.hit(1); this.spark(px, py, true, A.c.sup.color); return; }
     const counterHit = B.state === 'move' && B.mt < 10 && B.move && !B.move.air;
     const scale = Math.max(0.35, 1 - B.comboHits * 0.1);
     const dmg = this.damage(A, B, h.d * scale * (counterHit ? 1.2 : 1));
     if (counterHit) this.popText(B.x, GROUND - 190, localize("COUNTER"), '#ff5a5a', 20);
     B.comboHits++; B.move = null; B.lying = false;
+    this.recordCombo(B);
     if (B.comboHits >= 2) this.popText(A.side ? 820 : 140, 170, B.comboHits + localize(" HITS"), '#ffd23d', 30 + Math.min(20, B.comboHits * 2), 50);
     if (h.steal) { const s = Math.min(B.meter, 70); B.meter -= s; A.meter = Math.min(1000, A.meter + s); }
     const big = h.d >= 60;
@@ -466,7 +515,8 @@ class Match {
     if (h.stun && !B.stunUsed && B.y === 0) { B.stunUsed = true; B.state = 'dizzy'; B.st = 0; B.hitstun = h.stun; B.vx = 0; this.popText(B.x, GROUND - 190, localize("STUNNED"), '#facc15', 20); return; }
     if (h.launch || h.kd || B.y > 0 || B.state === 'air') {
       B.state = 'air'; B.st = 0; B.juggle++;
-      B.vy = B.juggle > 4 ? 2 : (h.launch || (B.y > 0 ? 6 : 7)); B.vx = A.facing * (h.kb * 0.5 + 1.5); B.y = Math.max(B.y, 1);
+      B.vy = B.juggle >= 4 ? -3 : (h.launch || (B.y > 0 ? 6 : 7)); B.vx = A.facing * (h.kb * 0.5 + 1.5); B.y = Math.max(B.y, 1);
+      if (B.juggle >= 4) { B.invul = 60; this.popText(B.x, GROUND - B.y - 140, localize("AIR RECOVERY"), '#b9d9ff', 17, 36); }
     } else {
       B.state = 'hit'; B.st = 0; B.hitstun = h.st || 16; B.vx = A.facing * h.kb; B.hitLow = h.l === 'l' || h.l === 'm' && Math.random() < 0.4; B.rot = 0;
       if (B.x <= LEFT + 2 || B.x >= RIGHT - 2) A.vx = -A.facing * h.kb * 0.8;
@@ -689,28 +739,39 @@ class Match {
   drawHUD(ctx) {
     const [a, b] = this.p;
     const bar = (f, x, flip) => {
-      const w = 380, h = 22, y = 28;
-      ctx.fillStyle = '#0b0b0f'; ctx.fillRect(x - 3, y - 3, w + 6, h + 6);
-      ctx.fillStyle = '#5b1111'; ctx.fillRect(x, y, w, h);
-      f.hpShow = f.hpShow == null ? f.hp : lerp(f.hpShow, f.hp, 0.06);
+      const w = 380, h = 20, y = 28;
+      ctx.fillStyle = 'rgba(8,13,24,.94)'; ctx.fillRect(x - 3, y - 3, w + 6, h + 6);
+      ctx.fillStyle = '#512735'; ctx.fillRect(x, y, w, h);
+      f.hpShow = f.hpShow == null ? f.hp : this.paused ? f.hpShow : lerp(f.hpShow, f.hp, 0.075);
       const ww = w * f.hpShow / 1000, wv = w * f.hp / 1000;
-      ctx.fillStyle = '#f59e0b'; ctx.fillRect(flip ? x + w - ww : x, y, ww, h);
-      const g = ctx.createLinearGradient(0, y, 0, y + h); g.addColorStop(0, flip ? '#ffd08b' : '#92efff'); g.addColorStop(1, flip ? '#e37f32' : '#278fc7');
-      ctx.fillStyle = f.hp < 250 ? (this.T % 20 < 10 ? '#ff5a3d' : '#d93a20') : g; ctx.fillRect(flip ? x + w - wv : x, y, wv, h);
+      ctx.fillStyle = '#ec6773'; ctx.fillRect(flip ? x + w - ww : x, y, ww, h);
+      const g = ctx.createLinearGradient(0, y, 0, y + h); g.addColorStop(0, flip ? '#ffd69c' : '#adf4ff'); g.addColorStop(1, flip ? '#d88346' : '#42a5c9');
+      ctx.fillStyle = f.hp < 250 ? '#f26765' : g; ctx.fillRect(flip ? x + w - wv : x, y, wv, h);
+      ctx.fillStyle='rgba(255,255,255,.28)';ctx.fillRect(flip?x+w-wv:x,y,wv,2);
       ctx.font = '18px ' + FONT_D; ctx.textBaseline = 'middle'; ctx.textAlign = flip ? 'right' : 'left';
-      outlineText(ctx, f.c.full.toUpperCase(), flip ? x + w : x, y + h + 16, 15, '#fff', flip ? 'right' : 'left');
+      outlineText(ctx, f.c.full.toUpperCase(), flip ? x + w : x, y + h + 16, 14, '#f4f5fa', flip ? 'right' : 'left', 3, w);
       // победи
-      for (let i = 0; i < f.wins; i++) star(ctx, flip ? x + w - 8 - i * 22 : x + 8 + i * 22, y + h + 36, 8, '#ffd23d', 5);
+      for (let i = 0; i < 2; i++) {
+        ctx.fillStyle=i<f.wins?'#ffd285':'#354052';ctx.beginPath();
+        const rx=flip?x+w-5-i*17:x+5+i*17,ry=y+h+34;
+        ctx.moveTo(rx,ry-5);ctx.lineTo(rx+5,ry);ctx.lineTo(rx,ry+5);ctx.lineTo(rx-5,ry);ctx.closePath();ctx.fill();
+      }
       // енергия
       const my = H - 30, mw = 200, mx = flip ? W - 24 - mw : 24;
-      ctx.fillStyle = '#0b0b0f'; ctx.fillRect(mx - 2, my - 2, mw + 4, 14);
-      ctx.fillStyle = f.meter >= 1000 ? (this.T % 16 < 8 ? '#60f0ff' : '#ffffff') : '#2b6ee8'; ctx.fillRect(flip ? mx + mw - mw * f.meter / 1000 : mx, my, mw * f.meter / 1000, 10);
-      outlineText(ctx, f.meter >= 1000 ? localize("SUPER READY  ↓ + SPECIAL") : localize("ENERGY"), flip ? mx + mw : mx, my - 12, 12, f.meter >= 1000 ? '#60f0ff' : '#cbd5e1', flip ? 'right' : 'left');
+      ctx.fillStyle = 'rgba(8,13,24,.94)'; ctx.fillRect(mx - 2, my - 2, mw + 4, 14);
+      ctx.fillStyle = f.meter >= 1000 ? '#83ecfa' : '#5489d4'; ctx.fillRect(flip ? mx + mw - mw * f.meter / 1000 : mx, my, mw * f.meter / 1000, 10);
+      for(let i=1;i<4;i++){ctx.fillStyle='#101b2c';ctx.fillRect(mx+i*mw/4-1,my,2,10);}
+      outlineText(ctx, f.meter >= 1000 ? localize("SUPER READY  ↓ + SPECIAL") : localize("ENERGY"), flip ? mx + mw : mx, my - 12, 12, f.meter >= 1000 ? '#83ecfa' : '#cbd5e1', flip ? 'right' : 'left', 3, mw+30);
     };
     bar(a, 24, false); bar(b, W - 24 - 380, true);
     // таймер
     ctx.fillStyle = '#0b0b0f'; ctx.fillRect(W / 2 - 34, 18, 68, 46);
     outlineText(ctx, this.mode === 'training' ? '∞' : String(this.timer), W / 2, 42, 34, this.timer <= 10 ? '#ff5a3d' : '#fff');
+    if(this.mode==='training'){
+      const current=b.comboHits?{hits:b.comboHits,damage:b.comboDmg}:this.trainingStats.lastCombo,best=this.trainingStats.bestCombo;
+      ctx.fillStyle='rgba(8,13,24,.8)';ctx.fillRect(W/2-200,87,400,28);
+      outlineText(ctx,localize("COMBO")+' '+current.hits+'  ·  '+current.damage+' '+localize("DAMAGE")+'     '+localize("BEST")+' '+best.hits+' / '+best.damage,W/2,101,12,'#d6e9f4','center',2,382);
+    }
     // банер
     if (this.banner) {
       const bn = this.banner, k = 1 - bn.life / bn.max, sc = k < 0.15 ? 1.6 - k * 4 : 1;
@@ -734,10 +795,11 @@ class Match {
   }
 }
 
-function outlineText(ctx, t, x, y, size, col, align = 'center', lw = 5) {
+function outlineText(ctx, t, x, y, size, col, align = 'center', lw = 5, maxWidth) {
   ctx.font = size + 'px ' + FONT_D; ctx.textAlign = align; ctx.textBaseline = 'middle';
-  ctx.lineJoin = 'round'; ctx.lineWidth = lw; ctx.strokeStyle = '#0b0b0f'; ctx.strokeText(t, x, y);
-  ctx.fillStyle = col; ctx.fillText(t, x, y);
+  ctx.lineJoin = 'round'; ctx.lineWidth = lw; ctx.strokeStyle = '#0b0b0f';
+  if(maxWidth){ctx.strokeText(t,x,y,maxWidth);ctx.fillStyle=col;ctx.fillText(t,x,y,maxWidth);}
+  else {ctx.strokeText(t, x, y);ctx.fillStyle = col; ctx.fillText(t, x, y);}
 }
 function star(ctx, x, y, r, col, n = 5) {
   ctx.beginPath(); for (let i = 0; i < n * 2; i++) { const a = i * Math.PI / n - Math.PI / 2, rr2 = i % 2 ? r * 0.45 : r; ctx.lineTo(x + Math.cos(a) * rr2, y + Math.sin(a) * rr2); }
@@ -748,8 +810,9 @@ function star(ctx, x, y, r, col, n = 5) {
 class AI {
   constructor(level) {
     const L = { easy: { react: 22, block: 0.25, agg: 0.35, aa: 0.15, sp: 0.4 }, normal: { react: 12, block: 0.5, agg: 0.6, aa: 0.4, sp: 0.7 }, hard: { react: 6, block: 0.78, agg: 0.85, aa: 0.7, sp: 1 } };
-    this.L = L[level] || L.normal; this.plan = []; this.cool = 30; this.seenMove = null; this.blockFor = 0;
+    this.L = L[level] || L.normal; this.reset();
   }
+  reset(){this.plan=[];this.cool=30;this.seenMove=null;this.seenSerial=-1;this.seenProjectile=null;this.pendingThreat=null;this.blockFor=0;this.blockLow=false;}
   think(me, op, m) {
     const I = { P: {} }, L = this.L, dx = op.x - me.x, dist = Math.abs(dx);
     const press = (b) => { I.P[b] = true; I[b] = true; };
@@ -757,10 +820,28 @@ class AI {
     if (m.phase === 'finishPrompt') { if (me === m.winner && dist > 150) hold('f'); return I; }
     // блок
     if (this.blockFor > 0) { this.blockFor--; I.bl = true; if (this.blockLow) I.d = true; return I; }
-    const threat = (op.state === 'move' && op.move && op.move !== this.seenMove && dist < 190) || m.proj.some(p => p.owner === op && Math.abs(p.x - me.x) < 200 && Math.sign(me.x - p.x) === Math.sign(p.vx));
-    if (threat && me.free) {
-      this.seenMove = op.move;
-      if (Math.random() < L.block) { const lowM = op.move && op.move.k && op.move.k.some(k => k.hit && k.hit.l === 'l'); this.blockFor = 16 + (Math.random() * 10 | 0); this.blockLow = lowM; I.bl = true; if (lowM) I.d = true; return I; }
+    const projectile = m.proj.find(p => !p.dead && p.owner === op && Math.abs(p.x - me.x) < 200 && Math.sign(me.x - p.x) === Math.sign(p.vx));
+    const moveThreat = op.state === 'move' && op.move && dist < 190;
+    const newMove = moveThreat && (op.move !== this.seenMove || op.moveSerial !== this.seenSerial);
+    if (newMove || (projectile && this.seenProjectile !== projectile)) {
+      this.seenMove = op.move; this.seenSerial = op.moveSerial; this.seenProjectile = projectile;
+      // Snapshot the observed attack, then wait real simulation frames before
+      // defending. Difficulty changes reaction speed, never reads player input.
+      if (!this.pendingThreat) this.pendingThreat = {
+        at: m.simFrame + L.react,
+        move: moveThreat ? op.move : null, serial: op.moveSerial, projectile,
+        low: !!(moveThreat && op.move.k?.some(k => k.hit?.l === 'l')),
+        defend: Math.random() < L.block
+      };
+    }
+    const notice = this.pendingThreat;
+    if (notice && m.simFrame >= notice.at) {
+      this.pendingThreat = null;
+      const stillThreat = (notice.move && op.state === 'move' && op.move === notice.move && op.moveSerial === notice.serial && dist < 190) || (notice.projectile && !notice.projectile.dead);
+      if (stillThreat && me.free && notice.defend) {
+        this.blockFor = 12 + (Math.random() * 8 | 0); this.blockLow = notice.low;
+        I.bl = true; if (this.blockLow) I.d = true; return I;
+      }
     }
     if (this.plan.length) {
       const s = this.plan[0];
@@ -793,9 +874,9 @@ class AI {
       hold('f'); return I;
     }
     // близо
-    if (Math.random() < L.agg * 0.13) {
+    if (this.cool <= 0 && Math.random() < L.agg * 0.13) {
       const r = Math.random();
-      if (me.meter >= 1000 && r < 0.3) { this.plan = [{ dirs: ['d'], btn: 'sp', n: 2 }]; return I; }
+      if (me.meter >= 1000 && r < 0.3) { this.plan = [{ dirs: ['d'], btn: 'sp', n: 2 }]; this.cool = L.react + 12; return I; }
       const combos = [
         [{ btn: 'lp', n: 8 }, { btn: 'lp', n: 8 }, { btn: 'hp', n: 2 }],
         [{ btn: 'lp', n: 8 }, { btn: 'hk', n: 2 }],
@@ -807,7 +888,7 @@ class AI {
         [{ btn: 'lp', n: 8 }, { dirs: ['f'], btn: 'sp', n: 2 }],
         [{ dirs: [], btn: 'sp', n: 2 }]
       ];
-      this.plan = pick(combos).map(s => Object.assign({}, s));
+      this.plan = pick(combos).map(s => Object.assign({}, s)); this.cool = L.react + 10;
       return I;
     }
     if (Math.random() < 0.03) { this.plan = [{ dirs: ['b'], n: 10 + (Math.random() * 12 | 0) }]; return I; }

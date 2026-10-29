@@ -4,3 +4,8 @@
 .claude/
 node_modules/
 backups/
+
+# Rebuildable Reforged QA frames; source sheets and shipping atlases are versioned.
+game/assets/fighters-reforged/*/frames/
+game/assets/fighters-reforged/*/contact-sheet.png
+game/assets/reforged-3d/*.png

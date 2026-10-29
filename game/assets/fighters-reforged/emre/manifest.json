@@ -1,0 +1,1347 @@
+{
+  "id": "emre",
+  "name": "Emre „Taxi“ Yıldız",
+  "height": 0.96,
+  "base": "assets/fighters-reforged/emre/spritesheet.webp",
+  "extra": "assets/fighters-reforged/emre/extra-20.webp",
+  "mobileBase": "assets/fighters-reforged/emre/spritesheet-mobile.webp",
+  "mobileExtra": "assets/fighters-reforged/emre/extra-20-mobile.webp",
+  "portrait": "assets/fighters-reforged/emre/portrait.webp",
+  "status": "ready",
+  "frameCount": 30,
+  "frames": [
+    {
+      "index": 0,
+      "name": "idle",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 0,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 88,
+        "y": 100,
+        "w": 260,
+        "h": 364
+      },
+      "scale": 0.9698630136986301,
+      "source": "sources/emre-base.png",
+      "sourceBounds": {
+        "x": 71,
+        "y": 12,
+        "w": 268,
+        "h": 375
+      },
+      "componentBounds": {
+        "x": 73,
+        "y": 14,
+        "w": 264,
+        "h": 371,
+        "area": 37974,
+        "row": 0,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 207,
+        "y": 385,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 1,
+      "name": "block",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 512,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 84,
+        "y": 106,
+        "w": 277,
+        "h": 358
+      },
+      "scale": 0.9698630136986301,
+      "source": "sources/emre-base.png",
+      "sourceBounds": {
+        "x": 455,
+        "y": 17,
+        "w": 286,
+        "h": 369
+      },
+      "componentBounds": {
+        "x": 457,
+        "y": 19,
+        "w": 282,
+        "h": 365,
+        "area": 38960,
+        "row": 0,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 595,
+        "y": 384,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 2,
+      "name": "crouch",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1024,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 98,
+        "y": 212,
+        "w": 225,
+        "h": 252
+      },
+      "scale": 0.9698630136986301,
+      "source": "sources/emre-base.png",
+      "sourceBounds": {
+        "x": 861,
+        "y": 126,
+        "w": 232,
+        "h": 260
+      },
+      "componentBounds": {
+        "x": 863,
+        "y": 128,
+        "w": 228,
+        "h": 256,
+        "area": 31490,
+        "row": 0,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 987,
+        "y": 384,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 3,
+      "name": "jump",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1536,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 116,
+        "y": 187,
+        "w": 208,
+        "h": 277
+      },
+      "scale": 0.9698630136986301,
+      "source": "sources/emre-base.png",
+      "sourceBounds": {
+        "x": 1237,
+        "y": 8,
+        "w": 214,
+        "h": 286
+      },
+      "componentBounds": {
+        "x": 1239,
+        "y": 10,
+        "w": 210,
+        "h": 282,
+        "area": 33430,
+        "row": 0,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 1344,
+        "y": 292,
+        "method": "air-center"
+      }
+    },
+    {
+      "index": 4,
+      "name": "light_punch",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 2048,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 43,
+        "y": 105,
+        "w": 374,
+        "h": 359
+      },
+      "scale": 0.9698630136986301,
+      "source": "sources/emre-base.png",
+      "sourceBounds": {
+        "x": 1562,
+        "y": 17,
+        "w": 386,
+        "h": 370
+      },
+      "componentBounds": {
+        "x": 1564,
+        "y": 19,
+        "w": 382,
+        "h": 366,
+        "area": 42212,
+        "row": 0,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1744,
+        "y": 385,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 5,
+      "name": "heavy_punch",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 0,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 47,
+        "y": 115,
+        "w": 370,
+        "h": 349
+      },
+      "scale": 0.9698630136986301,
+      "source": "sources/emre-base.png",
+      "sourceBounds": {
+        "x": 41,
+        "y": 406,
+        "w": 381,
+        "h": 360
+      },
+      "componentBounds": {
+        "x": 43,
+        "y": 408,
+        "w": 377,
+        "h": 356,
+        "area": 40605,
+        "row": 1,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 219,
+        "y": 764,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 6,
+      "name": "light_kick",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 512,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 129,
+        "y": 119,
+        "w": 306,
+        "h": 345
+      },
+      "scale": 0.9698630136986301,
+      "source": "sources/emre-base.png",
+      "sourceBounds": {
+        "x": 479,
+        "y": 406,
+        "w": 316,
+        "h": 356
+      },
+      "componentBounds": {
+        "x": 481,
+        "y": 408,
+        "w": 312,
+        "h": 352,
+        "area": 32818,
+        "row": 1,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 573,
+        "y": 760,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 7,
+      "name": "heavy_kick",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1024,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 105,
+        "y": 122,
+        "w": 385,
+        "h": 342
+      },
+      "scale": 0.9698630136986301,
+      "source": "sources/emre-base.png",
+      "sourceBounds": {
+        "x": 835,
+        "y": 411,
+        "w": 397,
+        "h": 353
+      },
+      "componentBounds": {
+        "x": 837,
+        "y": 413,
+        "w": 393,
+        "h": 349,
+        "area": 38975,
+        "row": 1,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 954,
+        "y": 762,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 8,
+      "name": "hit",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1536,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 79,
+        "y": 122,
+        "w": 236,
+        "h": 342
+      },
+      "scale": 0.9698630136986301,
+      "source": "sources/emre-base.png",
+      "sourceBounds": {
+        "x": 1309,
+        "y": 413,
+        "w": 243,
+        "h": 353
+      },
+      "componentBounds": {
+        "x": 1311,
+        "y": 415,
+        "w": 239,
+        "h": 349,
+        "area": 36629,
+        "row": 1,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 1454,
+        "y": 764,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 9,
+      "name": "victory",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 2048,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 80,
+        "y": 113,
+        "w": 247,
+        "h": 351
+      },
+      "scale": 0.9698630136986301,
+      "source": "sources/emre-base.png",
+      "sourceBounds": {
+        "x": 1657,
+        "y": 404,
+        "w": 255,
+        "h": 362
+      },
+      "componentBounds": {
+        "x": 1659,
+        "y": 406,
+        "w": 251,
+        "h": 358,
+        "area": 37710,
+        "row": 1,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1801,
+        "y": 764,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 10,
+      "name": "walk_contact",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 97,
+        "y": 133,
+        "w": 245,
+        "h": 331
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/emre-extra.png",
+      "sourceBounds": {
+        "x": 45,
+        "y": 15,
+        "w": 210,
+        "h": 283
+      },
+      "componentBounds": {
+        "x": 47,
+        "y": 17,
+        "w": 206,
+        "h": 279,
+        "area": 23885,
+        "row": 0,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 150,
+        "y": 296,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 11,
+      "name": "walk_down",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 108,
+        "y": 137,
+        "w": 234,
+        "h": 327
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/emre-extra.png",
+      "sourceBounds": {
+        "x": 325,
+        "y": 14,
+        "w": 200,
+        "h": 280
+      },
+      "componentBounds": {
+        "x": 327,
+        "y": 16,
+        "w": 196,
+        "h": 276,
+        "area": 23654,
+        "row": 0,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 421,
+        "y": 292,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 12,
+      "name": "walk_pass",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 157,
+        "y": 135,
+        "w": 148,
+        "h": 329
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/emre-extra.png",
+      "sourceBounds": {
+        "x": 631,
+        "y": 14,
+        "w": 127,
+        "h": 282
+      },
+      "componentBounds": {
+        "x": 633,
+        "y": 16,
+        "w": 123,
+        "h": 278,
+        "area": 20150,
+        "row": 0,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 685,
+        "y": 294,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 13,
+      "name": "walk_up",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 118,
+        "y": 137,
+        "w": 201,
+        "h": 327
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/emre-extra.png",
+      "sourceBounds": {
+        "x": 879,
+        "y": 14,
+        "w": 172,
+        "h": 280
+      },
+      "componentBounds": {
+        "x": 881,
+        "y": 16,
+        "w": 168,
+        "h": 276,
+        "area": 22987,
+        "row": 0,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 966,
+        "y": 292,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 14,
+      "name": "walk_opposite",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 76,
+        "y": 133,
+        "w": 258,
+        "h": 331
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/emre-extra.png",
+      "sourceBounds": {
+        "x": 1145,
+        "y": 14,
+        "w": 221,
+        "h": 283
+      },
+      "componentBounds": {
+        "x": 1147,
+        "y": 16,
+        "w": 217,
+        "h": 279,
+        "area": 24239,
+        "row": 0,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1268,
+        "y": 295,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 15,
+      "name": "walk_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 106,
+        "y": 126,
+        "w": 245,
+        "h": 338
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/emre-extra.png",
+      "sourceBounds": {
+        "x": 37,
+        "y": 298,
+        "w": 210,
+        "h": 289
+      },
+      "componentBounds": {
+        "x": 39,
+        "y": 300,
+        "w": 206,
+        "h": 285,
+        "area": 24681,
+        "row": 1,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 135,
+        "y": 585,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 16,
+      "name": "jab_load",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 87,
+        "y": 131,
+        "w": 271,
+        "h": 333
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/emre-extra.png",
+      "sourceBounds": {
+        "x": 301,
+        "y": 301,
+        "w": 232,
+        "h": 285
+      },
+      "componentBounds": {
+        "x": 303,
+        "y": 303,
+        "w": 228,
+        "h": 281,
+        "area": 27124,
+        "row": 1,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 415,
+        "y": 584,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 17,
+      "name": "jab_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 113,
+        "y": 133,
+        "w": 249,
+        "h": 331
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/emre-extra.png",
+      "sourceBounds": {
+        "x": 586,
+        "y": 303,
+        "w": 213,
+        "h": 283
+      },
+      "componentBounds": {
+        "x": 588,
+        "y": 305,
+        "w": 209,
+        "h": 279,
+        "area": 24402,
+        "row": 1,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 678,
+        "y": 584,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 18,
+      "name": "cross_load",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 92,
+        "y": 133,
+        "w": 249,
+        "h": 331
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/emre-extra.png",
+      "sourceBounds": {
+        "x": 870,
+        "y": 301,
+        "w": 213,
+        "h": 283
+      },
+      "componentBounds": {
+        "x": 872,
+        "y": 303,
+        "w": 209,
+        "h": 279,
+        "area": 27549,
+        "row": 1,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 980,
+        "y": 582,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 19,
+      "name": "cross_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 93,
+        "y": 129,
+        "w": 262,
+        "h": 335
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/emre-extra.png",
+      "sourceBounds": {
+        "x": 1144,
+        "y": 299,
+        "w": 224,
+        "h": 287
+      },
+      "componentBounds": {
+        "x": 1146,
+        "y": 301,
+        "w": 220,
+        "h": 283,
+        "area": 25304,
+        "row": 1,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1253,
+        "y": 584,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 20,
+      "name": "hook",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 86,
+        "y": 119,
+        "w": 258,
+        "h": 345
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/emre-extra.png",
+      "sourceBounds": {
+        "x": 38,
+        "y": 593,
+        "w": 221,
+        "h": 295
+      },
+      "componentBounds": {
+        "x": 40,
+        "y": 595,
+        "w": 217,
+        "h": 291,
+        "area": 26816,
+        "row": 2,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 153,
+        "y": 886,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 21,
+      "name": "uppercut",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 102,
+        "y": 121,
+        "w": 234,
+        "h": 343
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/emre-extra.png",
+      "sourceBounds": {
+        "x": 333,
+        "y": 594,
+        "w": 200,
+        "h": 294
+      },
+      "componentBounds": {
+        "x": 335,
+        "y": 596,
+        "w": 196,
+        "h": 290,
+        "area": 25981,
+        "row": 2,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 434,
+        "y": 886,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 22,
+      "name": "kick_chamber",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 141,
+        "y": 105,
+        "w": 180,
+        "h": 359
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/emre-extra.png",
+      "sourceBounds": {
+        "x": 618,
+        "y": 576,
+        "w": 154,
+        "h": 307
+      },
+      "componentBounds": {
+        "x": 620,
+        "y": 578,
+        "w": 150,
+        "h": 303,
+        "area": 23336,
+        "row": 2,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 686,
+        "y": 881,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 23,
+      "name": "kick_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 151,
+        "y": 111,
+        "w": 150,
+        "h": 353
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/emre-extra.png",
+      "sourceBounds": {
+        "x": 903,
+        "y": 579,
+        "w": 128,
+        "h": 302
+      },
+      "componentBounds": {
+        "x": 905,
+        "y": 581,
+        "w": 124,
+        "h": 298,
+        "area": 21628,
+        "row": 2,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 962,
+        "y": 879,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 24,
+      "name": "knee",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 164,
+        "y": 109,
+        "w": 236,
+        "h": 355
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/emre-extra.png",
+      "sourceBounds": {
+        "x": 1189,
+        "y": 580,
+        "w": 202,
+        "h": 304
+      },
+      "componentBounds": {
+        "x": 1191,
+        "y": 582,
+        "w": 198,
+        "h": 300,
+        "area": 25589,
+        "row": 2,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1237,
+        "y": 882,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 25,
+      "name": "low_block",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 132,
+        "y": 240,
+        "w": 176,
+        "h": 224
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/emre-extra.png",
+      "sourceBounds": {
+        "x": 66,
+        "y": 902,
+        "w": 151,
+        "h": 192
+      },
+      "componentBounds": {
+        "x": 68,
+        "y": 904,
+        "w": 147,
+        "h": 188,
+        "area": 19068,
+        "row": 3,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 141,
+        "y": 1092,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 26,
+      "name": "body_hit",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 130,
+        "y": 239,
+        "w": 165,
+        "h": 225
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/emre-extra.png",
+      "sourceBounds": {
+        "x": 319,
+        "y": 904,
+        "w": 141,
+        "h": 193
+      },
+      "componentBounds": {
+        "x": 321,
+        "y": 906,
+        "w": 137,
+        "h": 189,
+        "area": 17634,
+        "row": 3,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 396,
+        "y": 1095,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 27,
+      "name": "fall",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 34,
+        "y": 257,
+        "w": 371,
+        "h": 207
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/emre-extra.png",
+      "sourceBounds": {
+        "x": 509,
+        "y": 893,
+        "w": 318,
+        "h": 177
+      },
+      "componentBounds": {
+        "x": 511,
+        "y": 895,
+        "w": 314,
+        "h": 173,
+        "area": 24533,
+        "row": 3,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 668,
+        "y": 1068,
+        "method": "horizontal-center"
+      }
+    },
+    {
+      "index": 28,
+      "name": "ground",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 8,
+        "y": 346,
+        "w": 424,
+        "h": 118
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/emre-extra.png",
+      "sourceBounds": {
+        "x": 805,
+        "y": 995,
+        "w": 363,
+        "h": 101
+      },
+      "componentBounds": {
+        "x": 807,
+        "y": 997,
+        "w": 359,
+        "h": 97,
+        "area": 21623,
+        "row": 3,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 986.5,
+        "y": 1094,
+        "method": "horizontal-center"
+      }
+    },
+    {
+      "index": 29,
+      "name": "rise",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 99,
+        "y": 244,
+        "w": 241,
+        "h": 220
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/emre-extra.png",
+      "sourceBounds": {
+        "x": 1179,
+        "y": 906,
+        "w": 206,
+        "h": 188
+      },
+      "componentBounds": {
+        "x": 1181,
+        "y": 908,
+        "w": 202,
+        "h": 184,
+        "area": 20884,
+        "row": 3,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1283,
+        "y": 1092,
+        "method": "hip-band"
+      }
+    }
+  ],
+  "scales": {
+    "base": {
+      "scale": 0.9698630136986301,
+      "referenceHeight": 365,
+      "targetHeight": 354
+    },
+    "extra": {
+      "scale": 1.1680440771349863,
+      "referenceHeight": 279,
+      "targetHeight": 354
+    }
+  },
+  "sources": {
+    "base": {
+      "file": "sources/emre-base.png",
+      "sha256": "218acb5e432409a1184f3f0bfe15af5a8ee71474388ad40f9a8b279f0880c1e5",
+      "width": 1983,
+      "height": 793,
+      "transparentFraction": 0.7193464753049089
+    },
+    "extra": {
+      "file": "sources/emre-extra.png",
+      "sha256": "8f619ec80946bb590a1cb9287184908bee895db1ddf833b49b40d710bbcdd68f",
+      "width": 1402,
+      "height": 1122,
+      "transparentFraction": 0.6396057580080404
+    }
+  },
+  "files": {
+    "base": "emre/spritesheet.webp",
+    "baseMobile": "emre/spritesheet-mobile.webp",
+    "extra": "emre/extra-20.webp",
+    "extraMobile": "emre/extra-20-mobile.webp",
+    "portrait": "emre/portrait.webp",
+    "preview": "emre/contact-sheet.png"
+  },
+  "layoutHash": "ee7d43e0ebe6733bffd85a23e85bfaa73868814803a27ce15051c2e33aa785ea",
+  "qc": {
+    "reviewed": true,
+    "issues": [],
+    "sharedScalePerStrip": true,
+    "preservedSourceAlpha": true
+  }
+}

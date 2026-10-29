@@ -1,0 +1,17 @@
+{
+  "results": [
+    {
+      "mobile": false,
+      "rendered": 450,
+      "activeFighters": 2,
+      "decodedAtlasMiB": 60
+    },
+    {
+      "mobile": true,
+      "rendered": 450,
+      "activeFighters": 2,
+      "decodedAtlasMiB": 15
+    }
+  ],
+  "oldFighterLoads": 0
+}

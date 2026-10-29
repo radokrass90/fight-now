@@ -91,7 +91,7 @@ const Snd = {
 
 // ---------- вход: клавиатура, тъч, геймпад ----------
 const Keys = { down: new Set(), pressed: new Set() };
-const BLOCKED_KEYS = new Set(['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'Space', 'Slash', 'Tab']);
+const BLOCKED_KEYS = new Set(['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'Space', 'Slash']);
 addEventListener('keydown', e => {
   if (!e.repeat) Keys.pressed.add(e.code);
   Keys.down.add(e.code);

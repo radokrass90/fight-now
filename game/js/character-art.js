@@ -4,22 +4,27 @@
 const CharacterArt = (() => {
   const entries = new Map();
   const mobile = typeof MOBILE !== 'undefined' && MOBILE;
+  const reforged = typeof REFORGED_FIGHTER_DATA !== 'undefined';
+  const roster = reforged ? REFORGED_FIGHTER_DATA.characters : CHARACTER_ART_DATA.characters;
+  function heroURL(id){return reforged&&['murat','nadine'].includes(id)?'assets/fighters-reforged/'+id+'/menu-hero'+(mobile?'-mobile':'')+'.webp':portraitURL(id);}
+  function portraitURL(id){return entries.get(id)?.data.portrait || 'assets/characters-hd/'+id+'/portrait.webp';}
   function loadImage(entry, key, src) {
-    if (entry[key + 'Promise']) return entry[key + 'Promise'];
+    if (entry[key + 'Promise']&&!entry[key+'Failed']) return entry[key + 'Promise'];
+    entry[key+'Failed']=false;
     return entry[key + 'Promise'] = new Promise(resolve => {
       const image = new Image(); entry[key] = image;
-      const timer = setTimeout(() => resolve(false), 12000);
-      image.onload = () => { clearTimeout(timer); entry[key + 'Loaded'] = true; resolve(true); };
-      image.onerror = () => { clearTimeout(timer); console.warn('Character art unavailable:', src); resolve(false); };
+      const timer = setTimeout(() => {entry[key+'Failed']=true;resolve(false);}, 12000);
+      image.onload = () => { clearTimeout(timer); entry[key + 'Loaded'] = true;entry[key+'Failed']=false; resolve(true); };
+      image.onerror = () => { clearTimeout(timer); entry[key+'Failed']=true;console.warn('Character art unavailable:', src); resolve(false); };
       image.src = src;
     });
   }
   const extraData = typeof EXTRA_POSE_DATA === 'undefined' ? null : EXTRA_POSE_DATA;
-  const ready = Promise.all(CHARACTER_ART_DATA.characters.map(data => {
-    const entry = { data, extraData: extraData?.characters.find(c => c.id === data.id) };
+  const ready = Promise.all(roster.map(data => {
+    const entry = { data, extraData: reforged ? {frames:data.frames.slice(10)} : extraData?.characters.find(c => c.id === data.id) };
     entries.set(data.id, entry);
-    return loadImage(entry, 'portrait', 'assets/characters-hd/' + data.id + '/portrait.webp');
-  })).then(() => { document.documentElement.dataset.renderer = 'painted-30'; });
+    return loadImage(entry, 'portrait', portraitURL(data.id));
+  })).then(() => { document.documentElement.dataset.renderer = reforged ? 'reforged-30' : 'painted-30'; });
   function release(entry) {
     for (const key of ['image', 'extra']) {
       if (entry[key]) { entry[key].onload = entry[key].onerror = null; entry[key].src = ''; }
@@ -33,13 +38,16 @@ const CharacterArt = (() => {
     await Promise.all([...active].flatMap(id => {
       const entry = entries.get(id); if (!entry) return [];
       const base = 'assets/characters-hd/' + id + '/';
-      return [loadImage(entry, 'image', base + 'spritesheet' + suffix + '.webp'),
-        ...(entry.extraData ? [loadImage(entry, 'extra', base + 'extra-20' + suffix + '.webp')] : [])];
+      const imageURL=reforged?(mobile?entry.data.mobileBase:entry.data.base):base+'spritesheet'+suffix+'.webp';
+      const extraURL=reforged?(mobile?entry.data.mobileExtra:entry.data.extra):base+'extra-20'+suffix+'.webp';
+      return [loadImage(entry, 'image', imageURL),
+        ...(extraURL&&entry.extraData?.frames.length ? [loadImage(entry, 'extra', extraURL)] : [])];
     }));
     document.documentElement.dataset.residentFighters = String([...entries.values()].filter(e => e.imageLoaded).length);
+    return [...active].every(id=>{const e=entries.get(id);return e?.imageLoaded&&(!reforged||(e.data.frames.length===30&&e.extraLoaded));});
   }
 
-  // 0–9: the ten approved original sprites. 10–29: twenty new poses.
+  // 0–9: the new core combat poses. 10–29: matching movement and reaction poses.
   const poseFrames = {
     block: 1, cblock: 25, crouch: 2, kneel: 29, sit: 2,
     jump: 3, jab: 4, c_jab: 4, palm: 4, jpunch: 4, jhp: 5,
@@ -108,6 +116,15 @@ const CharacterArt = (() => {
     }
     return 0;
   }
+  function drawScale(entry,frame,c){
+    if(!reforged)return .47*c.h;
+    const kind=frame.source?.includes('corrections')?'corrections':frame.sheet;
+    const calibration=entry.data.scales?.[kind];
+    const standingHeight=calibration?calibration.referenceHeight*calibration.scale:354;
+    // Wide falls can constrain an atlas strip; calibrate its world-space body
+    // height so switching from idle to a new walking strip never shrinks a fighter.
+    return .47*c.h*354/Math.max(1,standingHeight);
+  }
   function draw(ctx, f, opt = {}) {
     const entry = entries.get(f.c.id);
     if (!entry?.imageLoaded) return false;
@@ -118,7 +135,7 @@ const CharacterArt = (() => {
       const fallback = { 16: 0, 17: 0, 18: 0, 19: 0, 20: 5, 21: 5, 22: 3, 23: 3, 24: 6, 25: 2, 26: 8, 27: 8, 28: 8, 29: 2 };
       index = fallback[index] ?? 0; frame = entry.data.frames[index];
     }
-    const sk = skeleton(f.c, f.pose), hip = fighterHip(f, sk), size = .47 * f.c.h;
+    const sk = skeleton(f.c, f.pose), hip = fighterHip(f, sk), size = drawScale(entry,frame,f.c);
     const groundedArt = index === 28 || index === 29;
     ctx.save();
     ctx.globalAlpha = (f.alpha ?? 1) * (opt.alpha ?? 1);
@@ -127,19 +144,25 @@ const CharacterArt = (() => {
     ctx.translate(f.x, GROUND - f.y);
     ctx.scale(f.facing * (f.sc || 1), (f.sc || 1) * (f.squash || 1));
     if (f.rot && !groundedArt) ctx.rotate(f.rot * D2R * (index === 27 ? .2 : 1));
-    if (f.flash > 0) ctx.filter = 'brightness(2.2)';
+    if (f.flash > 0) ctx.filter = 'brightness(1.65)';
     else if (f.paint) ctx.filter = 'hue-rotate(110deg) saturate(2)';
     else if (f.strip) ctx.filter = 'brightness(1.3) saturate(0.2)';
     if (f.state === 'idle') ctx.scale(1, 1 + Math.sin((f.st || 0) * .09) * .003);
     ctx.imageSmoothingEnabled = true;
     const ratio = (image.naturalWidth || 2560) / 2560;
-    ctx.drawImage(image, frame.x * ratio, frame.y * ratio, 512 * ratio, 512 * ratio, -220 * size, -464 * size + (index === 3 ? 40 * size : 0), 512 * size, 512 * size);
+    const airOffset=reforged&&index===3 ? Math.min(100,Math.max(0,frame.bounds.y-entry.data.frames[0].bounds.y)) : 0;
+    ctx.drawImage(image, frame.x * ratio, frame.y * ratio, 512 * ratio, 512 * ratio, -220 * size, -464 * size-airOffset*size, 512 * size, 512 * size);
     ctx.restore();
     return { sk, hip };
   }
   function portrait(ctx, c, x, y, w, h, facing) {
     const entry = entries.get(c.id);
     if (!entry?.portraitLoaded) return false;
+    if(reforged){
+      const size=Math.max(w,h);ctx.save();ctx.beginPath();ctx.rect(x,y,w,h);ctx.clip();
+      ctx.translate(x+w/2,y+h/2);ctx.scale(facing||1,1);
+      ctx.drawImage(entry.portrait,-size/2,-size/2,size,size);ctx.restore();return true;
+    }
     const b = entry.data.frames[0].bounds;
     const cropH = b.h * .73, cropW = b.w, scale = Math.max(w / cropW, h / cropH);
     ctx.save(); ctx.beginPath(); ctx.rect(x, y, w, h); ctx.clip();
@@ -147,5 +170,16 @@ const CharacterArt = (() => {
     ctx.drawImage(entry.portrait, b.x / 2, b.y / 2, cropW / 2, cropH / 2, -cropW * scale / 2, -cropH * scale / 2, cropW * scale, cropH * scale);
     ctx.restore(); return true;
   }
-  return { ready, prepare, draw, portrait, frameFor, entries };
+  function reflection(ctx,f){
+    const entry=entries.get(f.c.id);if(!reforged||!entry?.imageLoaded||f.vis===false||f.lying)return;
+    const index=frameFor(f),frame=entry.data.frames[index];
+    const image=index>=10?entry.extra:entry.image;if(!frame||!image||(index>=10&&!entry.extraLoaded))return;
+    const size=drawScale(entry,frame,f.c),ratio=(image.naturalWidth||2560)/2560;
+    ctx.save();ctx.beginPath();ctx.rect(f.x-160,GROUND+4,320,H-GROUND);ctx.clip();
+    ctx.globalAlpha=.12*(f.alpha??1);ctx.translate(f.x,GROUND+5+Math.max(0,f.y)*.12);
+    ctx.scale(f.facing*(f.sc||1),-.20*(f.sc||1));
+    ctx.drawImage(image,frame.x*ratio,frame.y*ratio,512*ratio,512*ratio,-220*size,-464*size,512*size,512*size);
+    ctx.restore();
+  }
+  return { ready, prepare, draw, portrait, portraitURL, heroURL, reflection, frameFor, entries };
 })();

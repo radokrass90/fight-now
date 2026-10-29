@@ -1,17 +1,17 @@
 'use strict';
 const cv = document.getElementById('c');
 const ctx = cv.getContext('2d');
-const G = { screen: 'title', T: 0, sel: 0, mode: 'versus', diff: store.get('diff', 'normal'), regions: [], prevRegions: [], mouse: null, match: null, arcade: null, pick: [0, 7], ready: [false, false], arena: -1 };
+const G = { screen: 'title', T: 0, sel: 0, mode: 'versus', diff: ['easy','normal','hard'].includes(store.get('diff','normal'))?store.get('diff','normal'):'normal', regions: [], prevRegions: [], mouse: null, match: null, arcade: null, pick: [0, 7], ready: [false, false], arena: -1 };
 
 // ---------- мащабиране ----------
 function fit() {
   const viewport = window.visualViewport;
   const width = viewport?.width || innerWidth, height = viewport?.height || innerHeight;
-  const playing = Touch.active && G.screen === 'fight';
+  const playing = G.screen === 'fight';
   const portrait = height > width;
   const safe=getComputedStyle(document.getElementById('wrap'));
   const left=parseFloat(safe.paddingLeft)||0,right=parseFloat(safe.paddingRight)||0,bottom=parseFloat(safe.paddingBottom)||0;
-  const top=(parseFloat(safe.paddingTop)||0)+(playing?44:0), dock=playing&&portrait?204:0;
+  const top=(parseFloat(safe.paddingTop)||0)+(playing?44:0), dock=playing&&Touch.active&&portrait?204:0;
   const areaW=Math.max(100,width-left-right),areaH=Math.max(100,height-top-bottom-dock);
   const scale = Math.min(areaW / W, areaH / H);
   cv.style.width = Math.floor(W * scale) + 'px'; cv.style.height = Math.floor(H * scale) + 'px';
@@ -81,7 +81,7 @@ function menuList(items, x, y, gap, inp, size = 28) {
   });
   if (inp.ok) { Snd.ok(); items[G.sel].fn(); }
 }
-function go(screen) { touchControls.reset(); MenuIn.clicks.length=0; G.screen = screen; G.sel = 0; G.T0 = G.T; if (!['fight', 'result'].includes(screen)) Snd.stopMusic(); fit(); }
+function go(screen) { touchControls.reset(); MenuIn.clicks.length=0; G.screen = screen; G.sel = 0; G.T0 = G.T; if (!['fight', 'result'].includes(screen)&&!(screen==='moves'&&G.moveBack==='fight')) Snd.stopMusic(); fit(); }
 const DIFF_NAMES = { easy: localize("EASY"), normal: localize("NORMAL"), hard: localize("HARD") };
 
 // ---------- екрани ----------
@@ -128,7 +128,7 @@ function controlsScreen(inp) {
   if (inp.back) go('title');
 }
 
-function startSelect() { go('select'); G.ready = [false, false]; G.selStep = 0; G.pick = [store.get('lastPick', 0), (store.get('lastPick', 0) + 7) % 15]; }
+function startSelect() { go('select'); G.ready = [false, false]; G.selStep = 0; const saved=store.get('lastPick',0),pick=Number.isInteger(saved)&&saved>=0&&saved<CHARS.length?saved:0;G.pick=[pick,(pick+7)%CHARS.length]; }
 
 function selectScreen(inp) {
   bg(4);
@@ -237,9 +237,13 @@ function startFight(arena, lvl) {
   const human1 = { type: 'human', map: G.mode === 'pvp' ? 'p1' : 'solo', touch: true, pad: 0 };
   const ctrl2 = G.mode === 'pvp' ? { type: 'human', map: 'p2', touch: false, pad: 1 } : G.mode === 'training' ? { type: 'dummy' } : { type: 'cpu', level: lvl || G.diff };
   G.matchOpts = { mode: G.mode, arena, c1, c2, ctrl1: human1, ctrl2 };
-  G.assetsReady=false;const request=G.assetRequest=(G.assetRequest||0)+1;
-  Promise.all([CharacterArt.prepare([c1.id,c2.id]),ArenaArt.prepare(arena)]).then(()=>{if(G.assetRequest===request)G.assetsReady=true;});
-  G.vsT = 0; go('vs'); if(Touch.active)Snd.startMusic(arena); Snd.say(c1.name + ' gegen ' + c2.name);
+  G.assetsReady=false;G.artError=null;const request=G.assetRequest=(G.assetRequest||0)+1;
+  Promise.all([CharacterArt.prepare([c1.id,c2.id]),ArenaArt.prepare(arena)]).then((results)=>{
+    if(G.assetRequest!==request)return;
+    if(results.some(ready=>ready===false)){G.artError=localize('Artwork could not be loaded. Select Fight to retry.');G.stageCur=arena;go('stage');return;}
+    G.assetsReady=true;
+  }).catch(()=>{if(G.assetRequest===request){G.artError=localize('Artwork could not be loaded. Select Fight to retry.');G.stageCur=arena;go('stage');}});
+  G.vsT = 0; go('vs'); if(Touch.active)Snd.startMusic(arena); Snd.say(c1.name + localize(' versus ') + c2.name);
 }
 
 function vsScreen(inp) {
@@ -346,10 +350,12 @@ function frame(now) {
     G.T++;
     G.prevRegions = G.regions; G.regions = [];
     const inp = menuInput();
+    const nativeMenu=typeof MobileUI!=='undefined'&&MobileUI.ownsMenu();
+    if(nativeMenu)MobileUI.handleInput(inp);
     if (G.screen !== 'fight' || (G.match && G.match.paused)) { if (handleClicks(inp)) inp.ok = false; }
     ctx.setTransform(1, 0, 0, 1, 0, 0);
     ctx.clearRect(0, 0, W, H);
-    if(!(Touch.active && typeof MobileUI!=='undefined' && MobileUI.ownsMenu())) switch (G.screen) {
+    if(!nativeMenu) switch (G.screen) {
       case 'title': titleScreen(inp); break;
       case 'controls': controlsScreen(inp); break;
       case 'select': selectScreen(inp); break;

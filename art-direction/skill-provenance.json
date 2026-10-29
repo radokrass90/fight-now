@@ -1,0 +1,19 @@
+{
+  "repository": "https://github.com/openai/plugins",
+  "revision": "0722921d5542fc593105c27bd52630babd8b8c2a",
+  "skills": [
+    "web-game-foundations",
+    "sprite-pipeline",
+    "game-ui-frontend",
+    "game-playtest",
+    "web-3d-asset-pipeline"
+  ],
+  "supportingFiles": [
+    "scripts/build_sprite_edit_canvas.py",
+    "scripts/normalize_sprite_strip.py",
+    "scripts/render_sprite_preview_sheet.py",
+    "references/sprite-pipeline.md",
+    "references/playtest-checklist.md",
+    "references/web-3d-asset-pipeline.md"
+  ]
+}

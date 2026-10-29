@@ -1,0 +1,1347 @@
+{
+  "id": "hakan",
+  "name": "Hakan „Der Metzger“ Kurt",
+  "height": 1.05,
+  "base": "assets/fighters-reforged/hakan/spritesheet.webp",
+  "extra": "assets/fighters-reforged/hakan/extra-20.webp",
+  "mobileBase": "assets/fighters-reforged/hakan/spritesheet-mobile.webp",
+  "mobileExtra": "assets/fighters-reforged/hakan/extra-20-mobile.webp",
+  "portrait": "assets/fighters-reforged/hakan/portrait.webp",
+  "status": "ready",
+  "frameCount": 30,
+  "frames": [
+    {
+      "index": 0,
+      "name": "idle",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 0,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 55,
+        "y": 103,
+        "w": 301,
+        "h": 361
+      },
+      "scale": 0.9895470383275261,
+      "source": "sources/hakan-base.png",
+      "sourceBounds": {
+        "x": 59,
+        "y": 23,
+        "w": 304,
+        "h": 365
+      },
+      "componentBounds": {
+        "x": 61,
+        "y": 25,
+        "w": 300,
+        "h": 361,
+        "area": 54897,
+        "row": 0,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 226,
+        "y": 386,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 1,
+      "name": "block",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 512,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 59,
+        "y": 109,
+        "w": 289,
+        "h": 355
+      },
+      "scale": 0.9895470383275261,
+      "source": "sources/hakan-base.png",
+      "sourceBounds": {
+        "x": 442,
+        "y": 28,
+        "w": 292,
+        "h": 359
+      },
+      "componentBounds": {
+        "x": 444,
+        "y": 30,
+        "w": 288,
+        "h": 355,
+        "area": 52828,
+        "row": 0,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 605,
+        "y": 385,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 2,
+      "name": "crouch",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1024,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 79,
+        "y": 193,
+        "w": 328,
+        "h": 271
+      },
+      "scale": 0.9895470383275261,
+      "source": "sources/hakan-base.png",
+      "sourceBounds": {
+        "x": 825,
+        "y": 112,
+        "w": 331,
+        "h": 274
+      },
+      "componentBounds": {
+        "x": 827,
+        "y": 114,
+        "w": 327,
+        "h": 270,
+        "area": 48016,
+        "row": 0,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 967,
+        "y": 384,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 3,
+      "name": "jump",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1536,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 84,
+        "y": 201,
+        "w": 271,
+        "h": 263
+      },
+      "scale": 0.9895470383275261,
+      "source": "sources/hakan-base.png",
+      "sourceBounds": {
+        "x": 1244,
+        "y": 15,
+        "w": 274,
+        "h": 266
+      },
+      "componentBounds": {
+        "x": 1246,
+        "y": 17,
+        "w": 270,
+        "h": 262,
+        "area": 41718,
+        "row": 0,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 1381,
+        "y": 279,
+        "method": "air-center"
+      }
+    },
+    {
+      "index": 4,
+      "name": "light_punch",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 2048,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 42,
+        "y": 118,
+        "w": 415,
+        "h": 346
+      },
+      "scale": 0.9895470383275261,
+      "source": "sources/hakan-base.png",
+      "sourceBounds": {
+        "x": 1554,
+        "y": 38,
+        "w": 419,
+        "h": 350
+      },
+      "componentBounds": {
+        "x": 1556,
+        "y": 40,
+        "w": 415,
+        "h": 346,
+        "area": 56074,
+        "row": 0,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1734,
+        "y": 386,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 5,
+      "name": "heavy_punch",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 0,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 31,
+        "y": 116,
+        "w": 389,
+        "h": 348
+      },
+      "scale": 0.9895470383275261,
+      "source": "sources/hakan-base.png",
+      "sourceBounds": {
+        "x": 24,
+        "y": 414,
+        "w": 393,
+        "h": 352
+      },
+      "componentBounds": {
+        "x": 26,
+        "y": 416,
+        "w": 389,
+        "h": 348,
+        "area": 53809,
+        "row": 1,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 215,
+        "y": 764,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 6,
+      "name": "light_kick",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 512,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 137,
+        "y": 102,
+        "w": 306,
+        "h": 362
+      },
+      "scale": 0.9895470383275261,
+      "source": "sources/hakan-base.png",
+      "sourceBounds": {
+        "x": 455,
+        "y": 395,
+        "w": 309,
+        "h": 366
+      },
+      "componentBounds": {
+        "x": 457,
+        "y": 397,
+        "w": 305,
+        "h": 362,
+        "area": 44304,
+        "row": 1,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 539,
+        "y": 759,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 7,
+      "name": "heavy_kick",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1024,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 108,
+        "y": 100,
+        "w": 396,
+        "h": 364
+      },
+      "scale": 0.9895470383275261,
+      "source": "sources/hakan-base.png",
+      "sourceBounds": {
+        "x": 797,
+        "y": 396,
+        "w": 400,
+        "h": 368
+      },
+      "componentBounds": {
+        "x": 799,
+        "y": 398,
+        "w": 396,
+        "h": 364,
+        "area": 55362,
+        "row": 1,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 910,
+        "y": 762,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 8,
+      "name": "hit",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1536,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 35,
+        "y": 127,
+        "w": 355,
+        "h": 337
+      },
+      "scale": 0.9895470383275261,
+      "source": "sources/hakan-base.png",
+      "sourceBounds": {
+        "x": 1234,
+        "y": 426,
+        "w": 359,
+        "h": 341
+      },
+      "componentBounds": {
+        "x": 1236,
+        "y": 428,
+        "w": 355,
+        "h": 337,
+        "area": 56703,
+        "row": 1,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 1421,
+        "y": 765,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 9,
+      "name": "victory",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 2048,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 66,
+        "y": 85,
+        "w": 301,
+        "h": 379
+      },
+      "scale": 0.9895470383275261,
+      "source": "sources/hakan-base.png",
+      "sourceBounds": {
+        "x": 1652,
+        "y": 385,
+        "w": 304,
+        "h": 383
+      },
+      "componentBounds": {
+        "x": 1654,
+        "y": 387,
+        "w": 300,
+        "h": 379,
+        "area": 55987,
+        "row": 1,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1808,
+        "y": 766,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 10,
+      "name": "walk_contact",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 81,
+        "y": 131,
+        "w": 261,
+        "h": 333
+      },
+      "scale": 1.1777777777777778,
+      "source": "sources/hakan-extra.png",
+      "sourceBounds": {
+        "x": 26,
+        "y": 23,
+        "w": 222,
+        "h": 283
+      },
+      "componentBounds": {
+        "x": 28,
+        "y": 25,
+        "w": 218,
+        "h": 279,
+        "area": 33377,
+        "row": 0,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 144,
+        "y": 304,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 11,
+      "name": "walk_down",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 81,
+        "y": 132,
+        "w": 263,
+        "h": 332
+      },
+      "scale": 1.1777777777777778,
+      "source": "sources/hakan-extra.png",
+      "sourceBounds": {
+        "x": 319,
+        "y": 24,
+        "w": 223,
+        "h": 282
+      },
+      "componentBounds": {
+        "x": 321,
+        "y": 26,
+        "w": 219,
+        "h": 278,
+        "area": 32342,
+        "row": 0,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 437,
+        "y": 304,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 12,
+      "name": "walk_pass",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 83,
+        "y": 130,
+        "w": 247,
+        "h": 334
+      },
+      "scale": 1.1777777777777778,
+      "source": "sources/hakan-extra.png",
+      "sourceBounds": {
+        "x": 597,
+        "y": 22,
+        "w": 210,
+        "h": 284
+      },
+      "componentBounds": {
+        "x": 599,
+        "y": 24,
+        "w": 206,
+        "h": 280,
+        "area": 30785,
+        "row": 0,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 713,
+        "y": 304,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 13,
+      "name": "walk_up",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 88,
+        "y": 133,
+        "w": 239,
+        "h": 331
+      },
+      "scale": 1.1777777777777778,
+      "source": "sources/hakan-extra.png",
+      "sourceBounds": {
+        "x": 877,
+        "y": 23,
+        "w": 203,
+        "h": 281
+      },
+      "componentBounds": {
+        "x": 879,
+        "y": 25,
+        "w": 199,
+        "h": 277,
+        "area": 30001,
+        "row": 0,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 989,
+        "y": 302,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 14,
+      "name": "walk_opposite",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 73,
+        "y": 138,
+        "w": 273,
+        "h": 326
+      },
+      "scale": 1.1777777777777778,
+      "source": "sources/hakan-extra.png",
+      "sourceBounds": {
+        "x": 1144,
+        "y": 29,
+        "w": 232,
+        "h": 277
+      },
+      "componentBounds": {
+        "x": 1146,
+        "y": 31,
+        "w": 228,
+        "h": 273,
+        "area": 32525,
+        "row": 0,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1269,
+        "y": 304,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 15,
+      "name": "walk_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 98,
+        "y": 137,
+        "w": 253,
+        "h": 327
+      },
+      "scale": 1.1777777777777778,
+      "source": "sources/hakan-extra.png",
+      "sourceBounds": {
+        "x": 34,
+        "y": 307,
+        "w": 215,
+        "h": 278
+      },
+      "componentBounds": {
+        "x": 36,
+        "y": 309,
+        "w": 211,
+        "h": 274,
+        "area": 31968,
+        "row": 1,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 138,
+        "y": 583,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 16,
+      "name": "jab_load",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 85,
+        "y": 138,
+        "w": 304,
+        "h": 326
+      },
+      "scale": 1.1777777777777778,
+      "source": "sources/hakan-extra.png",
+      "sourceBounds": {
+        "x": 308,
+        "y": 308,
+        "w": 258,
+        "h": 277
+      },
+      "componentBounds": {
+        "x": 310,
+        "y": 310,
+        "w": 254,
+        "h": 273,
+        "area": 33506,
+        "row": 1,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 423,
+        "y": 583,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 17,
+      "name": "jab_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 86,
+        "y": 142,
+        "w": 265,
+        "h": 322
+      },
+      "scale": 1.1777777777777778,
+      "source": "sources/hakan-extra.png",
+      "sourceBounds": {
+        "x": 590,
+        "y": 312,
+        "w": 225,
+        "h": 273
+      },
+      "componentBounds": {
+        "x": 592,
+        "y": 314,
+        "w": 221,
+        "h": 269,
+        "area": 31448,
+        "row": 1,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 704,
+        "y": 583,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 18,
+      "name": "cross_load",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 48,
+        "y": 142,
+        "w": 294,
+        "h": 322
+      },
+      "scale": 1.1777777777777778,
+      "source": "sources/hakan-extra.png",
+      "sourceBounds": {
+        "x": 840,
+        "y": 311,
+        "w": 250,
+        "h": 273
+      },
+      "componentBounds": {
+        "x": 842,
+        "y": 313,
+        "w": 246,
+        "h": 269,
+        "area": 33133,
+        "row": 1,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 986,
+        "y": 582,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 19,
+      "name": "cross_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 98,
+        "y": 140,
+        "w": 261,
+        "h": 324
+      },
+      "scale": 1.1777777777777778,
+      "source": "sources/hakan-extra.png",
+      "sourceBounds": {
+        "x": 1153,
+        "y": 311,
+        "w": 222,
+        "h": 275
+      },
+      "componentBounds": {
+        "x": 1155,
+        "y": 313,
+        "w": 218,
+        "h": 271,
+        "area": 31851,
+        "row": 1,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1257,
+        "y": 584,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 20,
+      "name": "hook",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 66,
+        "y": 138,
+        "w": 340,
+        "h": 326
+      },
+      "scale": 1.1777777777777778,
+      "source": "sources/hakan-extra.png",
+      "sourceBounds": {
+        "x": 11,
+        "y": 591,
+        "w": 289,
+        "h": 277
+      },
+      "componentBounds": {
+        "x": 13,
+        "y": 593,
+        "w": 285,
+        "h": 273,
+        "area": 34491,
+        "row": 2,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 142,
+        "y": 866,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 21,
+      "name": "uppercut",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 89,
+        "y": 111,
+        "w": 239,
+        "h": 353
+      },
+      "scale": 1.1777777777777778,
+      "source": "sources/hakan-extra.png",
+      "sourceBounds": {
+        "x": 335,
+        "y": 568,
+        "w": 203,
+        "h": 300
+      },
+      "componentBounds": {
+        "x": 337,
+        "y": 570,
+        "w": 199,
+        "h": 296,
+        "area": 29660,
+        "row": 2,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 446,
+        "y": 866,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 22,
+      "name": "kick_chamber",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 148,
+        "y": 121,
+        "w": 208,
+        "h": 343
+      },
+      "scale": 1.1777777777777778,
+      "source": "sources/hakan-extra.png",
+      "sourceBounds": {
+        "x": 607,
+        "y": 575,
+        "w": 177,
+        "h": 291
+      },
+      "componentBounds": {
+        "x": 609,
+        "y": 577,
+        "w": 173,
+        "h": 287,
+        "area": 28231,
+        "row": 2,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 668,
+        "y": 864,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 23,
+      "name": "kick_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 60,
+        "y": 140,
+        "w": 208,
+        "h": 324
+      },
+      "scale": 1.1777777777777778,
+      "source": "sources/hakan-extra.png",
+      "sourceBounds": {
+        "x": 873,
+        "y": 590,
+        "w": 177,
+        "h": 275
+      },
+      "componentBounds": {
+        "x": 875,
+        "y": 592,
+        "w": 173,
+        "h": 271,
+        "area": 27312,
+        "row": 2,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 1009,
+        "y": 863,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 24,
+      "name": "knee",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 112,
+        "y": 128,
+        "w": 267,
+        "h": 336
+      },
+      "scale": 1.1777777777777778,
+      "source": "sources/hakan-extra.png",
+      "sourceBounds": {
+        "x": 1169,
+        "y": 580,
+        "w": 227,
+        "h": 285
+      },
+      "componentBounds": {
+        "x": 1171,
+        "y": 582,
+        "w": 223,
+        "h": 281,
+        "area": 28362,
+        "row": 2,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1261,
+        "y": 863,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 25,
+      "name": "low_block",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 89,
+        "y": 215,
+        "w": 252,
+        "h": 249
+      },
+      "scale": 1.1777777777777778,
+      "source": "sources/hakan-extra.png",
+      "sourceBounds": {
+        "x": 30,
+        "y": 886,
+        "w": 214,
+        "h": 211
+      },
+      "componentBounds": {
+        "x": 32,
+        "y": 888,
+        "w": 210,
+        "h": 207,
+        "area": 29074,
+        "row": 3,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 141,
+        "y": 1095,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 26,
+      "name": "body_hit",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 107,
+        "y": 208,
+        "w": 220,
+        "h": 256
+      },
+      "scale": 1.1777777777777778,
+      "source": "sources/hakan-extra.png",
+      "sourceBounds": {
+        "x": 308,
+        "y": 880,
+        "w": 187,
+        "h": 217
+      },
+      "componentBounds": {
+        "x": 310,
+        "y": 882,
+        "w": 183,
+        "h": 213,
+        "area": 26597,
+        "row": 3,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 404,
+        "y": 1095,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 27,
+      "name": "fall",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 33,
+        "y": 208,
+        "w": 375,
+        "h": 256
+      },
+      "scale": 1.1777777777777778,
+      "source": "sources/hakan-extra.png",
+      "sourceBounds": {
+        "x": 515,
+        "y": 870,
+        "w": 318,
+        "h": 217
+      },
+      "componentBounds": {
+        "x": 517,
+        "y": 872,
+        "w": 314,
+        "h": 213,
+        "area": 33968,
+        "row": 3,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 674,
+        "y": 1085,
+        "method": "horizontal-center"
+      }
+    },
+    {
+      "index": 28,
+      "name": "ground",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 8,
+        "y": 331,
+        "w": 424,
+        "h": 133
+      },
+      "scale": 1.1777777777777778,
+      "source": "sources/hakan-extra.png",
+      "sourceBounds": {
+        "x": 800,
+        "y": 989,
+        "w": 360,
+        "h": 113
+      },
+      "componentBounds": {
+        "x": 802,
+        "y": 991,
+        "w": 356,
+        "h": 109,
+        "area": 27881,
+        "row": 3,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 980,
+        "y": 1100,
+        "method": "horizontal-center"
+      }
+    },
+    {
+      "index": 29,
+      "name": "rise",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 93,
+        "y": 211,
+        "w": 254,
+        "h": 253
+      },
+      "scale": 1.1777777777777778,
+      "source": "sources/hakan-extra.png",
+      "sourceBounds": {
+        "x": 1170,
+        "y": 880,
+        "w": 216,
+        "h": 215
+      },
+      "componentBounds": {
+        "x": 1172,
+        "y": 882,
+        "w": 212,
+        "h": 211,
+        "area": 30602,
+        "row": 3,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1278,
+        "y": 1093,
+        "method": "hip-band"
+      }
+    }
+  ],
+  "scales": {
+    "base": {
+      "scale": 0.9895470383275261,
+      "referenceHeight": 348,
+      "targetHeight": 354
+    },
+    "extra": {
+      "scale": 1.1777777777777778,
+      "referenceHeight": 274,
+      "targetHeight": 354
+    }
+  },
+  "sources": {
+    "base": {
+      "file": "sources/hakan-base.png",
+      "sha256": "1225a85859f9c7ed7502b0a204be752f707a5d46cd483881bd386191616289ab",
+      "width": 1983,
+      "height": 793,
+      "transparentFraction": 0.6154869988852281
+    },
+    "extra": {
+      "file": "sources/hakan-extra.png",
+      "sha256": "0ce498a6fde138d48f777637a80d0c3de79bfe943bd373f6986e87a5935f05fe",
+      "width": 1402,
+      "height": 1122,
+      "transparentFraction": 0.5448843134712061
+    }
+  },
+  "files": {
+    "base": "hakan/spritesheet.webp",
+    "baseMobile": "hakan/spritesheet-mobile.webp",
+    "extra": "hakan/extra-20.webp",
+    "extraMobile": "hakan/extra-20-mobile.webp",
+    "portrait": "hakan/portrait.webp",
+    "preview": "hakan/contact-sheet.png"
+  },
+  "layoutHash": "ee7d43e0ebe6733bffd85a23e85bfaa73868814803a27ce15051c2e33aa785ea",
+  "qc": {
+    "reviewed": true,
+    "issues": [],
+    "sharedScalePerStrip": true,
+    "preservedSourceAlpha": true
+  }
+}

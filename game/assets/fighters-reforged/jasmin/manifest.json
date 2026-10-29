@@ -1,0 +1,1347 @@
+{
+  "id": "jasmin",
+  "name": "Jasmin „Kobra“ Hoffmann",
+  "height": 0.98,
+  "base": "assets/fighters-reforged/jasmin/spritesheet.webp",
+  "extra": "assets/fighters-reforged/jasmin/extra-20.webp",
+  "mobileBase": "assets/fighters-reforged/jasmin/spritesheet-mobile.webp",
+  "mobileExtra": "assets/fighters-reforged/jasmin/extra-20-mobile.webp",
+  "portrait": "assets/fighters-reforged/jasmin/portrait.webp",
+  "status": "ready",
+  "frameCount": 30,
+  "frames": [
+    {
+      "index": 0,
+      "name": "idle",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 0,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 88,
+        "y": 106,
+        "w": 251,
+        "h": 358
+      },
+      "scale": 0.9672131147540983,
+      "source": "sources/jasmin-base.png",
+      "sourceBounds": {
+        "x": 85,
+        "y": 10,
+        "w": 259,
+        "h": 370
+      },
+      "componentBounds": {
+        "x": 87,
+        "y": 12,
+        "w": 255,
+        "h": 366,
+        "area": 32051,
+        "row": 0,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 221,
+        "y": 378,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 1,
+      "name": "block",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 512,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 110,
+        "y": 106,
+        "w": 241,
+        "h": 358
+      },
+      "scale": 0.9672131147540983,
+      "source": "sources/jasmin-base.png",
+      "sourceBounds": {
+        "x": 474,
+        "y": 10,
+        "w": 249,
+        "h": 370
+      },
+      "componentBounds": {
+        "x": 476,
+        "y": 12,
+        "w": 245,
+        "h": 366,
+        "area": 31345,
+        "row": 0,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 588,
+        "y": 378,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 2,
+      "name": "crouch",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1024,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 94,
+        "y": 191,
+        "w": 282,
+        "h": 273
+      },
+      "scale": 0.9672131147540983,
+      "source": "sources/jasmin-base.png",
+      "sourceBounds": {
+        "x": 852,
+        "y": 97,
+        "w": 292,
+        "h": 282
+      },
+      "componentBounds": {
+        "x": 854,
+        "y": 99,
+        "w": 288,
+        "h": 278,
+        "area": 29210,
+        "row": 0,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 982,
+        "y": 377,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 3,
+      "name": "jump",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1536,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 130,
+        "y": 154,
+        "w": 180,
+        "h": 310
+      },
+      "scale": 0.9672131147540983,
+      "source": "sources/jasmin-base.png",
+      "sourceBounds": {
+        "x": 1289,
+        "y": 9,
+        "w": 186,
+        "h": 321
+      },
+      "componentBounds": {
+        "x": 1291,
+        "y": 11,
+        "w": 182,
+        "h": 317,
+        "area": 31500,
+        "row": 0,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 1382,
+        "y": 328,
+        "method": "air-center"
+      }
+    },
+    {
+      "index": 4,
+      "name": "light_punch",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 2048,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 73,
+        "y": 106,
+        "w": 340,
+        "h": 358
+      },
+      "scale": 0.9672131147540983,
+      "source": "sources/jasmin-base.png",
+      "sourceBounds": {
+        "x": 1589,
+        "y": 10,
+        "w": 352,
+        "h": 370
+      },
+      "componentBounds": {
+        "x": 1591,
+        "y": 12,
+        "w": 348,
+        "h": 366,
+        "area": 34434,
+        "row": 0,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1741,
+        "y": 378,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 5,
+      "name": "heavy_punch",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 0,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 58,
+        "y": 109,
+        "w": 343,
+        "h": 355
+      },
+      "scale": 0.9672131147540983,
+      "source": "sources/jasmin-base.png",
+      "sourceBounds": {
+        "x": 56,
+        "y": 397,
+        "w": 355,
+        "h": 367
+      },
+      "componentBounds": {
+        "x": 58,
+        "y": 399,
+        "w": 351,
+        "h": 363,
+        "area": 33600,
+        "row": 1,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 223,
+        "y": 762,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 6,
+      "name": "light_kick",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 512,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 142,
+        "y": 108,
+        "w": 290,
+        "h": 356
+      },
+      "scale": 0.9672131147540983,
+      "source": "sources/jasmin-base.png",
+      "sourceBounds": {
+        "x": 473,
+        "y": 394,
+        "w": 300,
+        "h": 368
+      },
+      "componentBounds": {
+        "x": 475,
+        "y": 396,
+        "w": 296,
+        "h": 364,
+        "area": 26973,
+        "row": 1,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 554,
+        "y": 760,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 7,
+      "name": "heavy_kick",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1024,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 55,
+        "y": 117,
+        "w": 363,
+        "h": 347
+      },
+      "scale": 0.9672131147540983,
+      "source": "sources/jasmin-base.png",
+      "sourceBounds": {
+        "x": 796,
+        "y": 404,
+        "w": 375,
+        "h": 359
+      },
+      "componentBounds": {
+        "x": 798,
+        "y": 406,
+        "w": 371,
+        "h": 355,
+        "area": 30141,
+        "row": 1,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 967,
+        "y": 761,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 8,
+      "name": "hit",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1536,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 53,
+        "y": 115,
+        "w": 241,
+        "h": 349
+      },
+      "scale": 0.9672131147540983,
+      "source": "sources/jasmin-base.png",
+      "sourceBounds": {
+        "x": 1246,
+        "y": 407,
+        "w": 249,
+        "h": 361
+      },
+      "componentBounds": {
+        "x": 1248,
+        "y": 409,
+        "w": 245,
+        "h": 357,
+        "area": 33249,
+        "row": 1,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 1419,
+        "y": 766,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 9,
+      "name": "victory",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 2048,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 98,
+        "y": 94,
+        "w": 232,
+        "h": 370
+      },
+      "scale": 0.9672131147540983,
+      "source": "sources/jasmin-base.png",
+      "sourceBounds": {
+        "x": 1668,
+        "y": 384,
+        "w": 240,
+        "h": 383
+      },
+      "componentBounds": {
+        "x": 1670,
+        "y": 386,
+        "w": 236,
+        "h": 379,
+        "area": 30375,
+        "row": 1,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1794,
+        "y": 765,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 10,
+      "name": "walk_contact",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 105,
+        "y": 112,
+        "w": 244,
+        "h": 352
+      },
+      "scale": 1.2148997134670487,
+      "source": "sources/jasmin-extra.png",
+      "sourceBounds": {
+        "x": 57,
+        "y": 4,
+        "w": 201,
+        "h": 290
+      },
+      "componentBounds": {
+        "x": 59,
+        "y": 6,
+        "w": 197,
+        "h": 286,
+        "area": 21198,
+        "row": 0,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 152,
+        "y": 292,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 11,
+      "name": "walk_down",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 109,
+        "y": 118,
+        "w": 236,
+        "h": 346
+      },
+      "scale": 1.2148997134670487,
+      "source": "sources/jasmin-extra.png",
+      "sourceBounds": {
+        "x": 338,
+        "y": 9,
+        "w": 194,
+        "h": 285
+      },
+      "componentBounds": {
+        "x": 340,
+        "y": 11,
+        "w": 190,
+        "h": 281,
+        "area": 21404,
+        "row": 0,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 429,
+        "y": 292,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 12,
+      "name": "walk_pass",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 123,
+        "y": 120,
+        "w": 207,
+        "h": 344
+      },
+      "scale": 1.2148997134670487,
+      "source": "sources/jasmin-extra.png",
+      "sourceBounds": {
+        "x": 614,
+        "y": 8,
+        "w": 170,
+        "h": 283
+      },
+      "componentBounds": {
+        "x": 616,
+        "y": 10,
+        "w": 166,
+        "h": 279,
+        "area": 20199,
+        "row": 0,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 694,
+        "y": 289,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 13,
+      "name": "walk_up",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 120,
+        "y": 119,
+        "w": 182,
+        "h": 345
+      },
+      "scale": 1.2148997134670487,
+      "source": "sources/jasmin-extra.png",
+      "sourceBounds": {
+        "x": 893,
+        "y": 8,
+        "w": 150,
+        "h": 284
+      },
+      "componentBounds": {
+        "x": 895,
+        "y": 10,
+        "w": 146,
+        "h": 280,
+        "area": 19470,
+        "row": 0,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 975,
+        "y": 290,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 14,
+      "name": "walk_opposite",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 92,
+        "y": 115,
+        "w": 254,
+        "h": 349
+      },
+      "scale": 1.2148997134670487,
+      "source": "sources/jasmin-extra.png",
+      "sourceBounds": {
+        "x": 1160,
+        "y": 6,
+        "w": 209,
+        "h": 287
+      },
+      "componentBounds": {
+        "x": 1162,
+        "y": 8,
+        "w": 205,
+        "h": 283,
+        "area": 20759,
+        "row": 0,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1265,
+        "y": 291,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 15,
+      "name": "walk_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 96,
+        "y": 110,
+        "w": 247,
+        "h": 354
+      },
+      "scale": 1.2148997134670487,
+      "source": "sources/jasmin-extra.png",
+      "sourceBounds": {
+        "x": 52,
+        "y": 291,
+        "w": 203,
+        "h": 291
+      },
+      "componentBounds": {
+        "x": 54,
+        "y": 293,
+        "w": 199,
+        "h": 287,
+        "area": 22841,
+        "row": 1,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 154,
+        "y": 580,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 16,
+      "name": "jab_load",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 101,
+        "y": 115,
+        "w": 255,
+        "h": 349
+      },
+      "scale": 1.2148997134670487,
+      "source": "sources/jasmin-extra.png",
+      "sourceBounds": {
+        "x": 327,
+        "y": 294,
+        "w": 210,
+        "h": 287
+      },
+      "componentBounds": {
+        "x": 329,
+        "y": 296,
+        "w": 206,
+        "h": 283,
+        "area": 22547,
+        "row": 1,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 425,
+        "y": 579,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 17,
+      "name": "jab_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 100,
+        "y": 114,
+        "w": 262,
+        "h": 350
+      },
+      "scale": 1.2148997134670487,
+      "source": "sources/jasmin-extra.png",
+      "sourceBounds": {
+        "x": 591,
+        "y": 294,
+        "w": 216,
+        "h": 288
+      },
+      "componentBounds": {
+        "x": 593,
+        "y": 296,
+        "w": 212,
+        "h": 284,
+        "area": 22551,
+        "row": 1,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 690,
+        "y": 580,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 18,
+      "name": "cross_load",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 74,
+        "y": 123,
+        "w": 288,
+        "h": 341
+      },
+      "scale": 1.2148997134670487,
+      "source": "sources/jasmin-extra.png",
+      "sourceBounds": {
+        "x": 862,
+        "y": 301,
+        "w": 237,
+        "h": 281
+      },
+      "componentBounds": {
+        "x": 864,
+        "y": 303,
+        "w": 233,
+        "h": 277,
+        "area": 24839,
+        "row": 1,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 982,
+        "y": 580,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 19,
+      "name": "cross_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 107,
+        "y": 109,
+        "w": 256,
+        "h": 355
+      },
+      "scale": 1.2148997134670487,
+      "source": "sources/jasmin-extra.png",
+      "sourceBounds": {
+        "x": 1156,
+        "y": 290,
+        "w": 211,
+        "h": 292
+      },
+      "componentBounds": {
+        "x": 1158,
+        "y": 292,
+        "w": 207,
+        "h": 288,
+        "area": 22411,
+        "row": 1,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1249,
+        "y": 580,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 20,
+      "name": "hook",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 82,
+        "y": 104,
+        "w": 300,
+        "h": 360
+      },
+      "scale": 1.2148997134670487,
+      "source": "sources/jasmin-extra.png",
+      "sourceBounds": {
+        "x": 34,
+        "y": 586,
+        "w": 247,
+        "h": 296
+      },
+      "componentBounds": {
+        "x": 36,
+        "y": 588,
+        "w": 243,
+        "h": 292,
+        "area": 25763,
+        "row": 2,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 148,
+        "y": 880,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 21,
+      "name": "uppercut",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 107,
+        "y": 101,
+        "w": 234,
+        "h": 363
+      },
+      "scale": 1.2148997134670487,
+      "source": "sources/jasmin-extra.png",
+      "sourceBounds": {
+        "x": 336,
+        "y": 582,
+        "w": 193,
+        "h": 299
+      },
+      "componentBounds": {
+        "x": 338,
+        "y": 584,
+        "w": 189,
+        "h": 295,
+        "area": 22354,
+        "row": 2,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 429,
+        "y": 879,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 22,
+      "name": "kick_chamber",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 108,
+        "y": 92,
+        "w": 237,
+        "h": 372
+      },
+      "scale": 1.2148997134670487,
+      "source": "sources/jasmin-extra.png",
+      "sourceBounds": {
+        "x": 591,
+        "y": 575,
+        "w": 195,
+        "h": 306
+      },
+      "componentBounds": {
+        "x": 593,
+        "y": 577,
+        "w": 191,
+        "h": 302,
+        "area": 22268,
+        "row": 2,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 683,
+        "y": 879,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 23,
+      "name": "kick_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 56,
+        "y": 89,
+        "w": 202,
+        "h": 375
+      },
+      "scale": 1.2148997134670487,
+      "source": "sources/jasmin-extra.png",
+      "sourceBounds": {
+        "x": 900,
+        "y": 571,
+        "w": 166,
+        "h": 309
+      },
+      "componentBounds": {
+        "x": 902,
+        "y": 573,
+        "w": 162,
+        "h": 305,
+        "area": 22515,
+        "row": 2,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 1035,
+        "y": 878,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 24,
+      "name": "knee",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 103,
+        "y": 90,
+        "w": 220,
+        "h": 374
+      },
+      "scale": 1.2148997134670487,
+      "source": "sources/jasmin-extra.png",
+      "sourceBounds": {
+        "x": 1168,
+        "y": 572,
+        "w": 181,
+        "h": 308
+      },
+      "componentBounds": {
+        "x": 1170,
+        "y": 574,
+        "w": 177,
+        "h": 304,
+        "area": 21602,
+        "row": 2,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1264,
+        "y": 878,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 25,
+      "name": "low_block",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 99,
+        "y": 223,
+        "w": 231,
+        "h": 241
+      },
+      "scale": 1.2148997134670487,
+      "source": "sources/jasmin-extra.png",
+      "sourceBounds": {
+        "x": 43,
+        "y": 900,
+        "w": 190,
+        "h": 198
+      },
+      "componentBounds": {
+        "x": 45,
+        "y": 902,
+        "w": 186,
+        "h": 194,
+        "area": 18851,
+        "row": 3,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 143,
+        "y": 1096,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 26,
+      "name": "body_hit",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 131,
+        "y": 202,
+        "w": 192,
+        "h": 262
+      },
+      "scale": 1.2148997134670487,
+      "source": "sources/jasmin-extra.png",
+      "sourceBounds": {
+        "x": 357,
+        "y": 881,
+        "w": 158,
+        "h": 216
+      },
+      "componentBounds": {
+        "x": 359,
+        "y": 883,
+        "w": 154,
+        "h": 212,
+        "area": 18411,
+        "row": 3,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 430,
+        "y": 1095,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 27,
+      "name": "fall",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 34,
+        "y": 272,
+        "w": 372,
+        "h": 192
+      },
+      "scale": 1.2148997134670487,
+      "source": "sources/jasmin-extra.png",
+      "sourceBounds": {
+        "x": 540,
+        "y": 910,
+        "w": 306,
+        "h": 158
+      },
+      "componentBounds": {
+        "x": 542,
+        "y": 912,
+        "w": 302,
+        "h": 154,
+        "area": 22092,
+        "row": 3,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 693,
+        "y": 1066,
+        "method": "horizontal-center"
+      }
+    },
+    {
+      "index": 28,
+      "name": "ground",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 8,
+        "y": 362,
+        "w": 424,
+        "h": 102
+      },
+      "scale": 1.2148997134670487,
+      "source": "sources/jasmin-extra.png",
+      "sourceBounds": {
+        "x": 806,
+        "y": 1019,
+        "w": 349,
+        "h": 84
+      },
+      "componentBounds": {
+        "x": 808,
+        "y": 1021,
+        "w": 345,
+        "h": 80,
+        "area": 17752,
+        "row": 3,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 980.5,
+        "y": 1101,
+        "method": "horizontal-center"
+      }
+    },
+    {
+      "index": 29,
+      "name": "rise",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 64,
+        "y": 227,
+        "w": 265,
+        "h": 237
+      },
+      "scale": 1.2148997134670487,
+      "source": "sources/jasmin-extra.png",
+      "sourceBounds": {
+        "x": 1166,
+        "y": 898,
+        "w": 218,
+        "h": 195
+      },
+      "componentBounds": {
+        "x": 1168,
+        "y": 900,
+        "w": 214,
+        "h": 191,
+        "area": 20352,
+        "row": 3,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1294,
+        "y": 1091,
+        "method": "hip-band"
+      }
+    }
+  ],
+  "scales": {
+    "base": {
+      "scale": 0.9672131147540983,
+      "referenceHeight": 366,
+      "targetHeight": 354
+    },
+    "extra": {
+      "scale": 1.2148997134670487,
+      "referenceHeight": 283,
+      "targetHeight": 354
+    }
+  },
+  "sources": {
+    "base": {
+      "file": "sources/jasmin-base.png",
+      "sha256": "fb71e76d4742c255123cf5e0bd24cbfccd65f439720308b12296c2a8e5adab8f",
+      "width": 1983,
+      "height": 793,
+      "transparentFraction": 0.6805793761474425
+    },
+    "extra": {
+      "file": "sources/jasmin-extra.png",
+      "sha256": "f549f73cbcfebfdd650050bad071e9e16c71b7267175013a0b36d7407603c777",
+      "width": 1402,
+      "height": 1122,
+      "transparentFraction": 0.6398314351028961
+    }
+  },
+  "files": {
+    "base": "jasmin/spritesheet.webp",
+    "baseMobile": "jasmin/spritesheet-mobile.webp",
+    "extra": "jasmin/extra-20.webp",
+    "extraMobile": "jasmin/extra-20-mobile.webp",
+    "portrait": "jasmin/portrait.webp",
+    "preview": "jasmin/contact-sheet.png"
+  },
+  "layoutHash": "ee7d43e0ebe6733bffd85a23e85bfaa73868814803a27ce15051c2e33aa785ea",
+  "qc": {
+    "reviewed": true,
+    "issues": [],
+    "sharedScalePerStrip": true,
+    "preservedSourceAlpha": true
+  }
+}

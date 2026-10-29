@@ -1,0 +1,1347 @@
+{
+  "id": "fatima",
+  "name": "Fatima „Eisen“ Benali",
+  "height": 1.04,
+  "base": "assets/fighters-reforged/fatima/spritesheet.webp",
+  "extra": "assets/fighters-reforged/fatima/extra-20.webp",
+  "mobileBase": "assets/fighters-reforged/fatima/spritesheet-mobile.webp",
+  "mobileExtra": "assets/fighters-reforged/fatima/extra-20-mobile.webp",
+  "portrait": "assets/fighters-reforged/fatima/portrait.webp",
+  "status": "ready",
+  "frameCount": 30,
+  "frames": [
+    {
+      "index": 0,
+      "name": "idle",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 0,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 79,
+        "y": 105,
+        "w": 282,
+        "h": 359
+      },
+      "scale": 0.9888268156424581,
+      "source": "sources/fatima-base.png",
+      "sourceBounds": {
+        "x": 44,
+        "y": 17,
+        "w": 285,
+        "h": 363
+      },
+      "componentBounds": {
+        "x": 46,
+        "y": 19,
+        "w": 281,
+        "h": 359,
+        "area": 40330,
+        "row": 0,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 187,
+        "y": 378,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 1,
+      "name": "block",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 512,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 75,
+        "y": 102,
+        "w": 286,
+        "h": 362
+      },
+      "scale": 0.9888268156424581,
+      "source": "sources/fatima-base.png",
+      "sourceBounds": {
+        "x": 453,
+        "y": 14,
+        "w": 289,
+        "h": 366
+      },
+      "componentBounds": {
+        "x": 455,
+        "y": 16,
+        "w": 285,
+        "h": 362,
+        "area": 41260,
+        "row": 0,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 600,
+        "y": 378,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 2,
+      "name": "crouch",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1024,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 120,
+        "y": 201,
+        "w": 277,
+        "h": 263
+      },
+      "scale": 0.9888268156424581,
+      "source": "sources/fatima-base.png",
+      "sourceBounds": {
+        "x": 862,
+        "y": 115,
+        "w": 280,
+        "h": 266
+      },
+      "componentBounds": {
+        "x": 864,
+        "y": 117,
+        "w": 276,
+        "h": 262,
+        "area": 34387,
+        "row": 0,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 963,
+        "y": 379,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 3,
+      "name": "jump",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1536,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 96,
+        "y": 139,
+        "w": 247,
+        "h": 325
+      },
+      "scale": 0.9888268156424581,
+      "source": "sources/fatima-base.png",
+      "sourceBounds": {
+        "x": 1253,
+        "y": 6,
+        "w": 250,
+        "h": 329
+      },
+      "componentBounds": {
+        "x": 1255,
+        "y": 8,
+        "w": 246,
+        "h": 325,
+        "area": 39057,
+        "row": 0,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 1378,
+        "y": 333,
+        "method": "air-center"
+      }
+    },
+    {
+      "index": 4,
+      "name": "light_punch",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 2048,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 43,
+        "y": 109,
+        "w": 369,
+        "h": 355
+      },
+      "scale": 0.9888268156424581,
+      "source": "sources/fatima-base.png",
+      "sourceBounds": {
+        "x": 1589,
+        "y": 22,
+        "w": 373,
+        "h": 359
+      },
+      "componentBounds": {
+        "x": 1591,
+        "y": 24,
+        "w": 369,
+        "h": 355,
+        "area": 42337,
+        "row": 0,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1768,
+        "y": 379,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 5,
+      "name": "heavy_punch",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 0,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 32,
+        "y": 106,
+        "w": 360,
+        "h": 358
+      },
+      "scale": 0.9888268156424581,
+      "source": "sources/fatima-base.png",
+      "sourceBounds": {
+        "x": 33,
+        "y": 404,
+        "w": 364,
+        "h": 362
+      },
+      "componentBounds": {
+        "x": 35,
+        "y": 406,
+        "w": 360,
+        "h": 358,
+        "area": 46641,
+        "row": 1,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 223,
+        "y": 764,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 6,
+      "name": "light_kick",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 512,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 127,
+        "y": 120,
+        "w": 310,
+        "h": 344
+      },
+      "scale": 0.9888268156424581,
+      "source": "sources/fatima-base.png",
+      "sourceBounds": {
+        "x": 480,
+        "y": 412,
+        "w": 314,
+        "h": 348
+      },
+      "componentBounds": {
+        "x": 482,
+        "y": 414,
+        "w": 310,
+        "h": 344,
+        "area": 35609,
+        "row": 1,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 574,
+        "y": 758,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 7,
+      "name": "heavy_kick",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1024,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 122,
+        "y": 106,
+        "w": 354,
+        "h": 358
+      },
+      "scale": 0.9888268156424581,
+      "source": "sources/fatima-base.png",
+      "sourceBounds": {
+        "x": 826,
+        "y": 404,
+        "w": 358,
+        "h": 362
+      },
+      "componentBounds": {
+        "x": 828,
+        "y": 406,
+        "w": 354,
+        "h": 358,
+        "area": 34935,
+        "row": 1,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 925,
+        "y": 764,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 8,
+      "name": "hit",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1536,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 53,
+        "y": 114,
+        "w": 257,
+        "h": 350
+      },
+      "scale": 0.9888268156424581,
+      "source": "sources/fatima-base.png",
+      "sourceBounds": {
+        "x": 1266,
+        "y": 413,
+        "w": 260,
+        "h": 354
+      },
+      "componentBounds": {
+        "x": 1268,
+        "y": 415,
+        "w": 256,
+        "h": 350,
+        "area": 44114,
+        "row": 1,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 1435,
+        "y": 765,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 9,
+      "name": "victory",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 2048,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 83,
+        "y": 99,
+        "w": 265,
+        "h": 365
+      },
+      "scale": 0.9888268156424581,
+      "source": "sources/fatima-base.png",
+      "sourceBounds": {
+        "x": 1659,
+        "y": 398,
+        "w": 268,
+        "h": 369
+      },
+      "componentBounds": {
+        "x": 1661,
+        "y": 400,
+        "w": 264,
+        "h": 365,
+        "area": 42261,
+        "row": 1,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1798,
+        "y": 765,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 10,
+      "name": "walk_contact",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 62,
+        "y": 133,
+        "w": 278,
+        "h": 331
+      },
+      "scale": 1.1216931216931216,
+      "source": "sources/fatima-extra.png",
+      "sourceBounds": {
+        "x": 19,
+        "y": 17,
+        "w": 248,
+        "h": 295
+      },
+      "componentBounds": {
+        "x": 21,
+        "y": 19,
+        "w": 244,
+        "h": 291,
+        "area": 29099,
+        "row": 0,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 160,
+        "y": 310,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 11,
+      "name": "walk_down",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 75,
+        "y": 130,
+        "w": 262,
+        "h": 334
+      },
+      "scale": 1.1216931216931216,
+      "source": "sources/fatima-extra.png",
+      "sourceBounds": {
+        "x": 330,
+        "y": 14,
+        "w": 234,
+        "h": 298
+      },
+      "componentBounds": {
+        "x": 332,
+        "y": 16,
+        "w": 230,
+        "h": 294,
+        "area": 28800,
+        "row": 0,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 459,
+        "y": 310,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 12,
+      "name": "walk_pass",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 110,
+        "y": 132,
+        "w": 206,
+        "h": 332
+      },
+      "scale": 1.1216931216931216,
+      "source": "sources/fatima-extra.png",
+      "sourceBounds": {
+        "x": 634,
+        "y": 14,
+        "w": 184,
+        "h": 296
+      },
+      "componentBounds": {
+        "x": 636,
+        "y": 16,
+        "w": 180,
+        "h": 292,
+        "area": 26526,
+        "row": 0,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 732,
+        "y": 308,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 13,
+      "name": "walk_up",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 88,
+        "y": 133,
+        "w": 247,
+        "h": 331
+      },
+      "scale": 1.1216931216931216,
+      "source": "sources/fatima-extra.png",
+      "sourceBounds": {
+        "x": 869,
+        "y": 15,
+        "w": 220,
+        "h": 295
+      },
+      "componentBounds": {
+        "x": 871,
+        "y": 17,
+        "w": 216,
+        "h": 291,
+        "area": 27607,
+        "row": 0,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 987,
+        "y": 308,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 14,
+      "name": "walk_opposite",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 62,
+        "y": 132,
+        "w": 267,
+        "h": 332
+      },
+      "scale": 1.1216931216931216,
+      "source": "sources/fatima-extra.png",
+      "sourceBounds": {
+        "x": 1147,
+        "y": 16,
+        "w": 238,
+        "h": 296
+      },
+      "componentBounds": {
+        "x": 1149,
+        "y": 18,
+        "w": 234,
+        "h": 292,
+        "area": 28861,
+        "row": 0,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1288,
+        "y": 310,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 15,
+      "name": "walk_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 91,
+        "y": 134,
+        "w": 267,
+        "h": 330
+      },
+      "scale": 1.1216931216931216,
+      "source": "sources/fatima-extra.png",
+      "sourceBounds": {
+        "x": 21,
+        "y": 317,
+        "w": 238,
+        "h": 294
+      },
+      "componentBounds": {
+        "x": 23,
+        "y": 319,
+        "w": 234,
+        "h": 290,
+        "area": 28992,
+        "row": 1,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 136,
+        "y": 609,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 16,
+      "name": "jab_load",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 75,
+        "y": 134,
+        "w": 294,
+        "h": 330
+      },
+      "scale": 1.1216931216931216,
+      "source": "sources/fatima-extra.png",
+      "sourceBounds": {
+        "x": 307,
+        "y": 317,
+        "w": 262,
+        "h": 294
+      },
+      "componentBounds": {
+        "x": 309,
+        "y": 319,
+        "w": 258,
+        "h": 290,
+        "area": 30662,
+        "row": 1,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 436,
+        "y": 609,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 17,
+      "name": "jab_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 93,
+        "y": 136,
+        "w": 260,
+        "h": 328
+      },
+      "scale": 1.1216931216931216,
+      "source": "sources/fatima-extra.png",
+      "sourceBounds": {
+        "x": 595,
+        "y": 319,
+        "w": 232,
+        "h": 292
+      },
+      "componentBounds": {
+        "x": 597,
+        "y": 321,
+        "w": 228,
+        "h": 288,
+        "area": 28795,
+        "row": 1,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 708,
+        "y": 609,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 18,
+      "name": "cross_load",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 41,
+        "y": 139,
+        "w": 291,
+        "h": 325
+      },
+      "scale": 1.1216931216931216,
+      "source": "sources/fatima-extra.png",
+      "sourceBounds": {
+        "x": 863,
+        "y": 319,
+        "w": 259,
+        "h": 290
+      },
+      "componentBounds": {
+        "x": 865,
+        "y": 321,
+        "w": 255,
+        "h": 286,
+        "area": 33449,
+        "row": 1,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 1023,
+        "y": 607,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 19,
+      "name": "cross_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 80,
+        "y": 136,
+        "w": 271,
+        "h": 328
+      },
+      "scale": 1.1216931216931216,
+      "source": "sources/fatima-extra.png",
+      "sourceBounds": {
+        "x": 1147,
+        "y": 318,
+        "w": 242,
+        "h": 293
+      },
+      "componentBounds": {
+        "x": 1149,
+        "y": 320,
+        "w": 238,
+        "h": 289,
+        "area": 29868,
+        "row": 1,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1272,
+        "y": 609,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 20,
+      "name": "hook",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 51,
+        "y": 153,
+        "w": 299,
+        "h": 311
+      },
+      "scale": 1.1216931216931216,
+      "source": "sources/fatima-extra.png",
+      "sourceBounds": {
+        "x": 17,
+        "y": 619,
+        "w": 267,
+        "h": 277
+      },
+      "componentBounds": {
+        "x": 19,
+        "y": 621,
+        "w": 263,
+        "h": 273,
+        "area": 32315,
+        "row": 2,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 168,
+        "y": 894,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 21,
+      "name": "uppercut",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 100,
+        "y": 124,
+        "w": 240,
+        "h": 340
+      },
+      "scale": 1.1216931216931216,
+      "source": "sources/fatima-extra.png",
+      "sourceBounds": {
+        "x": 346,
+        "y": 596,
+        "w": 214,
+        "h": 303
+      },
+      "componentBounds": {
+        "x": 348,
+        "y": 598,
+        "w": 210,
+        "h": 299,
+        "area": 29381,
+        "row": 2,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 453,
+        "y": 897,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 22,
+      "name": "kick_chamber",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 166,
+        "y": 132,
+        "w": 197,
+        "h": 332
+      },
+      "scale": 1.1216931216931216,
+      "source": "sources/fatima-extra.png",
+      "sourceBounds": {
+        "x": 623,
+        "y": 602,
+        "w": 176,
+        "h": 296
+      },
+      "componentBounds": {
+        "x": 625,
+        "y": 604,
+        "w": 172,
+        "h": 292,
+        "area": 25506,
+        "row": 2,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 671,
+        "y": 896,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 23,
+      "name": "kick_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 107,
+        "y": 133,
+        "w": 168,
+        "h": 331
+      },
+      "scale": 1.1216931216931216,
+      "source": "sources/fatima-extra.png",
+      "sourceBounds": {
+        "x": 900,
+        "y": 600,
+        "w": 150,
+        "h": 295
+      },
+      "componentBounds": {
+        "x": 902,
+        "y": 602,
+        "w": 146,
+        "h": 291,
+        "area": 25255,
+        "row": 2,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 1001,
+        "y": 893,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 24,
+      "name": "knee",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 119,
+        "y": 141,
+        "w": 234,
+        "h": 323
+      },
+      "scale": 1.1216931216931216,
+      "source": "sources/fatima-extra.png",
+      "sourceBounds": {
+        "x": 1179,
+        "y": 609,
+        "w": 209,
+        "h": 288
+      },
+      "componentBounds": {
+        "x": 1181,
+        "y": 611,
+        "w": 205,
+        "h": 284,
+        "area": 25144,
+        "row": 2,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1269,
+        "y": 895,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 25,
+      "name": "low_block",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 91,
+        "y": 240,
+        "w": 234,
+        "h": 224
+      },
+      "scale": 1.1216931216931216,
+      "source": "sources/fatima-extra.png",
+      "sourceBounds": {
+        "x": 23,
+        "y": 907,
+        "w": 209,
+        "h": 200
+      },
+      "componentBounds": {
+        "x": 25,
+        "y": 909,
+        "w": 205,
+        "h": 196,
+        "area": 24321,
+        "row": 3,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 138,
+        "y": 1105,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 26,
+      "name": "body_hit",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 117,
+        "y": 224,
+        "w": 192,
+        "h": 240
+      },
+      "scale": 1.1216931216931216,
+      "source": "sources/fatima-extra.png",
+      "sourceBounds": {
+        "x": 313,
+        "y": 898,
+        "w": 171,
+        "h": 214
+      },
+      "componentBounds": {
+        "x": 315,
+        "y": 900,
+        "w": 167,
+        "h": 210,
+        "area": 22243,
+        "row": 3,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 405,
+        "y": 1110,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 27,
+      "name": "fall",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 32,
+        "y": 282,
+        "w": 377,
+        "h": 182
+      },
+      "scale": 1.1216931216931216,
+      "source": "sources/fatima-extra.png",
+      "sourceBounds": {
+        "x": 501,
+        "y": 926,
+        "w": 336,
+        "h": 162
+      },
+      "componentBounds": {
+        "x": 503,
+        "y": 928,
+        "w": 332,
+        "h": 158,
+        "area": 27576,
+        "row": 3,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 669,
+        "y": 1086,
+        "method": "horizontal-center"
+      }
+    },
+    {
+      "index": 28,
+      "name": "ground",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 8,
+        "y": 368,
+        "w": 424,
+        "h": 96
+      },
+      "scale": 1.1216931216931216,
+      "source": "sources/fatima-extra.png",
+      "sourceBounds": {
+        "x": 800,
+        "y": 1018,
+        "w": 378,
+        "h": 86
+      },
+      "componentBounds": {
+        "x": 802,
+        "y": 1020,
+        "w": 374,
+        "h": 82,
+        "area": 20977,
+        "row": 3,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 989,
+        "y": 1102,
+        "method": "horizontal-center"
+      }
+    },
+    {
+      "index": 29,
+      "name": "rise",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 100,
+        "y": 243,
+        "w": 229,
+        "h": 221
+      },
+      "scale": 1.1216931216931216,
+      "source": "sources/fatima-extra.png",
+      "sourceBounds": {
+        "x": 1186,
+        "y": 905,
+        "w": 204,
+        "h": 197
+      },
+      "componentBounds": {
+        "x": 1188,
+        "y": 907,
+        "w": 200,
+        "h": 193,
+        "area": 23997,
+        "row": 3,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1293,
+        "y": 1100,
+        "method": "hip-band"
+      }
+    }
+  ],
+  "scales": {
+    "base": {
+      "scale": 0.9888268156424581,
+      "referenceHeight": 358,
+      "targetHeight": 354
+    },
+    "extra": {
+      "scale": 1.1216931216931216,
+      "referenceHeight": 291,
+      "targetHeight": 354
+    }
+  },
+  "sources": {
+    "base": {
+      "file": "sources/fatima-base.png",
+      "sha256": "ec9338baa1f6e2d5c0624eed35c33faaf4da9f32b60ab9fef7ef8499fc905009",
+      "width": 1983,
+      "height": 793,
+      "transparentFraction": 0.7048684308424891
+    },
+    "extra": {
+      "file": "sources/fatima-extra.png",
+      "sha256": "63c7e580934f93f3df15dc652f3680ca7c68fa19a511e56c81da7422d40c64f5",
+      "width": 1402,
+      "height": 1122,
+      "transparentFraction": 0.5648627756121253
+    }
+  },
+  "files": {
+    "base": "fatima/spritesheet.webp",
+    "baseMobile": "fatima/spritesheet-mobile.webp",
+    "extra": "fatima/extra-20.webp",
+    "extraMobile": "fatima/extra-20-mobile.webp",
+    "portrait": "fatima/portrait.webp",
+    "preview": "fatima/contact-sheet.png"
+  },
+  "layoutHash": "ee7d43e0ebe6733bffd85a23e85bfaa73868814803a27ce15051c2e33aa785ea",
+  "qc": {
+    "reviewed": true,
+    "issues": [],
+    "sharedScalePerStrip": true,
+    "preservedSourceAlpha": true
+  }
+}

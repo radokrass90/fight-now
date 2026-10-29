@@ -1,9 +1,9 @@
 const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),assert=require('node:assert/strict');
 const {createCanvas,Image}=require('@napi-rs/canvas');
 const root=path.resolve(__dirname,'../game');
-let activeImage;
+const loadedImages=[];
 class GameImage extends Image {
- constructor(){super();activeImage=this;}
+ constructor(){super();loadedImages.push(this);}
  set src(v){super.src=fs.readFileSync(path.join(root,v));}
  get src(){return super.src;}
 }
@@ -13,9 +13,9 @@ class GameImage extends Image {
  const canvas=createCanvas(960,540),ctx=canvas.getContext('2d');
  // Loading is optional; the fight must remain drawable before atlas readiness.
  sb.props.back(ctx,0,0);sb.props.front(ctx,0,0);
- if(!sb.props.ready)await new Promise((resolve,reject)=>{const onload=activeImage.onload;activeImage.onload=()=>{onload();resolve();};activeImage.onerror=reject;});
+ await Promise.all(loadedImages.map(img=>new Promise((resolve,reject)=>{const onload=img.onload;img.onload=()=>{onload();resolve();};img.onerror=reject;})));
  assert(sb.props.ready,'Atlas did not finish loading');
- assert.equal(activeImage.width,1024);assert.equal(activeImage.height,1024);
+ assert.equal(loadedImages[0].width,1024);assert.equal(loadedImages[0].height,1024);assert.equal(loadedImages[1].width,1536);assert.equal(loadedImages[1].height,1152);
  assert.equal(sb.props.themes.length,15);
  for(let i=0;i<15;i++){
   assert(sb.props.themes[i].every(k=>Number.isInteger(k)&&k>=0&&k<4));
@@ -26,5 +26,5 @@ class GameImage extends Image {
   }
   assert(edge>500,'Empty stage props '+i);assert.equal(middle,0,'Prop obstructs combat center '+i);
  }
- console.log('PASS: all 15 stage layouts render, combat center stays clear, one shared 4 MiB atlas.');
+ console.log('PASS: all 15 stage layouts render, combat center stays clear, shared prop atlas and animated Blender ventilation, with a clear combat center.');
 })().catch(e=>{console.error(e);process.exitCode=1;});
