@@ -1,0 +1,1347 @@
+{
+  "id": "nadine",
+  "name": "Nadine „Pfeffer“ Weiss",
+  "height": 1,
+  "base": "assets/fighters-reforged/nadine/spritesheet.webp",
+  "extra": "assets/fighters-reforged/nadine/extra-20.webp",
+  "mobileBase": "assets/fighters-reforged/nadine/spritesheet-mobile.webp",
+  "mobileExtra": "assets/fighters-reforged/nadine/extra-20-mobile.webp",
+  "portrait": "assets/fighters-reforged/nadine/portrait.webp",
+  "status": "ready",
+  "frameCount": 30,
+  "frames": [
+    {
+      "index": 0,
+      "name": "idle",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 0,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 96,
+        "y": 94,
+        "w": 253,
+        "h": 370
+      },
+      "scale": 0.9645776566757494,
+      "source": "sources/nadine-base.png",
+      "sourceBounds": {
+        "x": 94,
+        "y": 7,
+        "w": 262,
+        "h": 384
+      },
+      "componentBounds": {
+        "x": 96,
+        "y": 9,
+        "w": 258,
+        "h": 380,
+        "area": 38763,
+        "row": 0,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 223,
+        "y": 389,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 1,
+      "name": "block",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 512,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 97,
+        "y": 99,
+        "w": 255,
+        "h": 365
+      },
+      "scale": 0.9645776566757494,
+      "source": "sources/nadine-base.png",
+      "sourceBounds": {
+        "x": 477,
+        "y": 12,
+        "w": 264,
+        "h": 378
+      },
+      "componentBounds": {
+        "x": 479,
+        "y": 14,
+        "w": 260,
+        "h": 374,
+        "area": 39242,
+        "row": 0,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 604,
+        "y": 388,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 2,
+      "name": "crouch",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1024,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 132,
+        "y": 193,
+        "w": 245,
+        "h": 271
+      },
+      "scale": 0.9645776566757494,
+      "source": "sources/nadine-base.png",
+      "sourceBounds": {
+        "x": 871,
+        "y": 110,
+        "w": 254,
+        "h": 281
+      },
+      "componentBounds": {
+        "x": 873,
+        "y": 112,
+        "w": 250,
+        "h": 277,
+        "area": 35653,
+        "row": 0,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 962,
+        "y": 389,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 3,
+      "name": "jump",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1536,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 115,
+        "y": 175,
+        "w": 210,
+        "h": 289
+      },
+      "scale": 0.9645776566757494,
+      "source": "sources/nadine-base.png",
+      "sourceBounds": {
+        "x": 1258,
+        "y": 10,
+        "w": 218,
+        "h": 300
+      },
+      "componentBounds": {
+        "x": 1260,
+        "y": 12,
+        "w": 214,
+        "h": 296,
+        "area": 33917,
+        "row": 0,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 1367,
+        "y": 308,
+        "method": "air-center"
+      }
+    },
+    {
+      "index": 4,
+      "name": "light_punch",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 2048,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 58,
+        "y": 106,
+        "w": 363,
+        "h": 358
+      },
+      "scale": 0.9645776566757494,
+      "source": "sources/nadine-base.png",
+      "sourceBounds": {
+        "x": 1558,
+        "y": 20,
+        "w": 376,
+        "h": 371
+      },
+      "componentBounds": {
+        "x": 1560,
+        "y": 22,
+        "w": 372,
+        "h": 367,
+        "area": 42522,
+        "row": 0,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1726,
+        "y": 389,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 5,
+      "name": "heavy_punch",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 0,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 68,
+        "y": 118,
+        "w": 325,
+        "h": 346
+      },
+      "scale": 0.9645776566757494,
+      "source": "sources/nadine-base.png",
+      "sourceBounds": {
+        "x": 63,
+        "y": 408,
+        "w": 337,
+        "h": 359
+      },
+      "componentBounds": {
+        "x": 65,
+        "y": 410,
+        "w": 333,
+        "h": 355,
+        "area": 39598,
+        "row": 1,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 221,
+        "y": 765,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 6,
+      "name": "light_kick",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 512,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 118,
+        "y": 113,
+        "w": 296,
+        "h": 351
+      },
+      "scale": 0.9645776566757494,
+      "source": "sources/nadine-base.png",
+      "sourceBounds": {
+        "x": 464,
+        "y": 402,
+        "w": 307,
+        "h": 364
+      },
+      "componentBounds": {
+        "x": 466,
+        "y": 404,
+        "w": 303,
+        "h": 360,
+        "area": 33340,
+        "row": 1,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 570,
+        "y": 764,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 7,
+      "name": "heavy_kick",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1024,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 103,
+        "y": 122,
+        "w": 354,
+        "h": 342
+      },
+      "scale": 0.9645776566757494,
+      "source": "sources/nadine-base.png",
+      "sourceBounds": {
+        "x": 838,
+        "y": 412,
+        "w": 367,
+        "h": 355
+      },
+      "componentBounds": {
+        "x": 840,
+        "y": 414,
+        "w": 363,
+        "h": 351,
+        "area": 34787,
+        "row": 1,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 959,
+        "y": 765,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 8,
+      "name": "hit",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1536,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 32,
+        "y": 130,
+        "w": 275,
+        "h": 334
+      },
+      "scale": 0.9645776566757494,
+      "source": "sources/nadine-base.png",
+      "sourceBounds": {
+        "x": 1249,
+        "y": 425,
+        "w": 285,
+        "h": 346
+      },
+      "componentBounds": {
+        "x": 1251,
+        "y": 427,
+        "w": 281,
+        "h": 342,
+        "area": 41990,
+        "row": 1,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 1444,
+        "y": 769,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 9,
+      "name": "victory",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 2048,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 108,
+        "y": 99,
+        "w": 236,
+        "h": 365
+      },
+      "scale": 0.9645776566757494,
+      "source": "sources/nadine-base.png",
+      "sourceBounds": {
+        "x": 1652,
+        "y": 390,
+        "w": 245,
+        "h": 378
+      },
+      "componentBounds": {
+        "x": 1654,
+        "y": 392,
+        "w": 241,
+        "h": 374,
+        "area": 40870,
+        "row": 1,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1768,
+        "y": 766,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 10,
+      "name": "walk_contact",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 103,
+        "y": 131,
+        "w": 261,
+        "h": 333
+      },
+      "scale": 1.1490514905149052,
+      "source": "sources/nadine-extra.png",
+      "sourceBounds": {
+        "x": 22,
+        "y": 12,
+        "w": 227,
+        "h": 290
+      },
+      "componentBounds": {
+        "x": 24,
+        "y": 14,
+        "w": 223,
+        "h": 286,
+        "area": 24442,
+        "row": 0,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 124,
+        "y": 300,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 11,
+      "name": "walk_down",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 89,
+        "y": 130,
+        "w": 254,
+        "h": 334
+      },
+      "scale": 1.1490514905149052,
+      "source": "sources/nadine-extra.png",
+      "sourceBounds": {
+        "x": 306,
+        "y": 11,
+        "w": 221,
+        "h": 291
+      },
+      "componentBounds": {
+        "x": 308,
+        "y": 13,
+        "w": 217,
+        "h": 287,
+        "area": 25162,
+        "row": 0,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 420,
+        "y": 300,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 12,
+      "name": "walk_pass",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 115,
+        "y": 137,
+        "w": 194,
+        "h": 327
+      },
+      "scale": 1.1490514905149052,
+      "source": "sources/nadine-extra.png",
+      "sourceBounds": {
+        "x": 609,
+        "y": 17,
+        "w": 169,
+        "h": 285
+      },
+      "componentBounds": {
+        "x": 611,
+        "y": 19,
+        "w": 165,
+        "h": 281,
+        "area": 23571,
+        "row": 0,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 700,
+        "y": 300,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 13,
+      "name": "walk_up",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 87,
+        "y": 137,
+        "w": 244,
+        "h": 327
+      },
+      "scale": 1.1490514905149052,
+      "source": "sources/nadine-extra.png",
+      "sourceBounds": {
+        "x": 871,
+        "y": 15,
+        "w": 212,
+        "h": 285
+      },
+      "componentBounds": {
+        "x": 873,
+        "y": 17,
+        "w": 208,
+        "h": 281,
+        "area": 24107,
+        "row": 0,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 987,
+        "y": 298,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 14,
+      "name": "walk_opposite",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 81,
+        "y": 138,
+        "w": 250,
+        "h": 326
+      },
+      "scale": 1.1490514905149052,
+      "source": "sources/nadine-extra.png",
+      "sourceBounds": {
+        "x": 1164,
+        "y": 18,
+        "w": 218,
+        "h": 284
+      },
+      "componentBounds": {
+        "x": 1166,
+        "y": 20,
+        "w": 214,
+        "h": 280,
+        "area": 23574,
+        "row": 0,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1285,
+        "y": 300,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 15,
+      "name": "walk_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 103,
+        "y": 117,
+        "w": 250,
+        "h": 347
+      },
+      "scale": 1.1490514905149052,
+      "source": "sources/nadine-extra.png",
+      "sourceBounds": {
+        "x": 23,
+        "y": 307,
+        "w": 218,
+        "h": 302
+      },
+      "componentBounds": {
+        "x": 25,
+        "y": 309,
+        "w": 214,
+        "h": 298,
+        "area": 27012,
+        "row": 1,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 125,
+        "y": 607,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 16,
+      "name": "jab_load",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 87,
+        "y": 120,
+        "w": 284,
+        "h": 344
+      },
+      "scale": 1.1490514905149052,
+      "source": "sources/nadine-extra.png",
+      "sourceBounds": {
+        "x": 305,
+        "y": 310,
+        "w": 247,
+        "h": 299
+      },
+      "componentBounds": {
+        "x": 307,
+        "y": 312,
+        "w": 243,
+        "h": 295,
+        "area": 28509,
+        "row": 1,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 421,
+        "y": 607,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 17,
+      "name": "jab_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 90,
+        "y": 123,
+        "w": 259,
+        "h": 341
+      },
+      "scale": 1.1490514905149052,
+      "source": "sources/nadine-extra.png",
+      "sourceBounds": {
+        "x": 591,
+        "y": 310,
+        "w": 225,
+        "h": 297
+      },
+      "componentBounds": {
+        "x": 593,
+        "y": 312,
+        "w": 221,
+        "h": 293,
+        "area": 26438,
+        "row": 1,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 704,
+        "y": 605,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 18,
+      "name": "cross_load",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 91,
+        "y": 118,
+        "w": 263,
+        "h": 346
+      },
+      "scale": 1.1490514905149052,
+      "source": "sources/nadine-extra.png",
+      "sourceBounds": {
+        "x": 875,
+        "y": 308,
+        "w": 229,
+        "h": 301
+      },
+      "componentBounds": {
+        "x": 877,
+        "y": 310,
+        "w": 225,
+        "h": 297,
+        "area": 29553,
+        "row": 1,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 987,
+        "y": 607,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 19,
+      "name": "cross_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 87,
+        "y": 119,
+        "w": 256,
+        "h": 345
+      },
+      "scale": 1.1490514905149052,
+      "source": "sources/nadine-extra.png",
+      "sourceBounds": {
+        "x": 1156,
+        "y": 309,
+        "w": 223,
+        "h": 300
+      },
+      "componentBounds": {
+        "x": 1158,
+        "y": 311,
+        "w": 219,
+        "h": 296,
+        "area": 26418,
+        "row": 1,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1272,
+        "y": 607,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 20,
+      "name": "hook",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 92,
+        "y": 128,
+        "w": 298,
+        "h": 336
+      },
+      "scale": 1.1490514905149052,
+      "source": "sources/nadine-extra.png",
+      "sourceBounds": {
+        "x": 18,
+        "y": 623,
+        "w": 259,
+        "h": 292
+      },
+      "componentBounds": {
+        "x": 20,
+        "y": 625,
+        "w": 255,
+        "h": 288,
+        "area": 30369,
+        "row": 2,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 129,
+        "y": 913,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 21,
+      "name": "uppercut",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 92,
+        "y": 103,
+        "w": 244,
+        "h": 361
+      },
+      "scale": 1.1490514905149052,
+      "source": "sources/nadine-extra.png",
+      "sourceBounds": {
+        "x": 339,
+        "y": 602,
+        "w": 212,
+        "h": 314
+      },
+      "componentBounds": {
+        "x": 341,
+        "y": 604,
+        "w": 208,
+        "h": 310,
+        "area": 27036,
+        "row": 2,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 450,
+        "y": 914,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 22,
+      "name": "kick_chamber",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 140,
+        "y": 101,
+        "w": 209,
+        "h": 363
+      },
+      "scale": 1.1490514905149052,
+      "source": "sources/nadine-extra.png",
+      "sourceBounds": {
+        "x": 626,
+        "y": 598,
+        "w": 182,
+        "h": 316
+      },
+      "componentBounds": {
+        "x": 628,
+        "y": 600,
+        "w": 178,
+        "h": 312,
+        "area": 24232,
+        "row": 2,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 696,
+        "y": 912,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 23,
+      "name": "kick_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 120,
+        "y": 102,
+        "w": 185,
+        "h": 362
+      },
+      "scale": 1.1490514905149052,
+      "source": "sources/nadine-extra.png",
+      "sourceBounds": {
+        "x": 885,
+        "y": 601,
+        "w": 161,
+        "h": 315
+      },
+      "componentBounds": {
+        "x": 887,
+        "y": 603,
+        "w": 157,
+        "h": 311,
+        "area": 22876,
+        "row": 2,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 972,
+        "y": 914,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 24,
+      "name": "knee",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 136,
+        "y": 110,
+        "w": 232,
+        "h": 354
+      },
+      "scale": 1.1490514905149052,
+      "source": "sources/nadine-extra.png",
+      "sourceBounds": {
+        "x": 1175,
+        "y": 604,
+        "w": 202,
+        "h": 308
+      },
+      "componentBounds": {
+        "x": 1177,
+        "y": 606,
+        "w": 198,
+        "h": 304,
+        "area": 24900,
+        "row": 2,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1248,
+        "y": 910,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 25,
+      "name": "low_block",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 123,
+        "y": 250,
+        "w": 201,
+        "h": 214
+      },
+      "scale": 1.1490514905149052,
+      "source": "sources/nadine-extra.png",
+      "sourceBounds": {
+        "x": 34,
+        "y": 924,
+        "w": 175,
+        "h": 186
+      },
+      "componentBounds": {
+        "x": 36,
+        "y": 926,
+        "w": 171,
+        "h": 182,
+        "area": 20284,
+        "row": 3,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 118,
+        "y": 1108,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 26,
+      "name": "body_hit",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 110,
+        "y": 243,
+        "w": 229,
+        "h": 221
+      },
+      "scale": 1.1490514905149052,
+      "source": "sources/nadine-extra.png",
+      "sourceBounds": {
+        "x": 298,
+        "y": 918,
+        "w": 199,
+        "h": 192
+      },
+      "componentBounds": {
+        "x": 300,
+        "y": 920,
+        "w": 195,
+        "h": 188,
+        "area": 18857,
+        "row": 3,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 394,
+        "y": 1108,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 27,
+      "name": "fall",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 46,
+        "y": 266,
+        "w": 348,
+        "h": 198
+      },
+      "scale": 1.1490514905149052,
+      "source": "sources/nadine-extra.png",
+      "sourceBounds": {
+        "x": 531,
+        "y": 921,
+        "w": 303,
+        "h": 172
+      },
+      "componentBounds": {
+        "x": 533,
+        "y": 923,
+        "w": 299,
+        "h": 168,
+        "area": 23448,
+        "row": 3,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 682.5,
+        "y": 1091,
+        "method": "horizontal-center"
+      }
+    },
+    {
+      "index": 28,
+      "name": "ground",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 8,
+        "y": 355,
+        "w": 424,
+        "h": 109
+      },
+      "scale": 1.1490514905149052,
+      "source": "sources/nadine-extra.png",
+      "sourceBounds": {
+        "x": 802,
+        "y": 1019,
+        "w": 369,
+        "h": 95
+      },
+      "componentBounds": {
+        "x": 804,
+        "y": 1021,
+        "w": 365,
+        "h": 91,
+        "area": 19351,
+        "row": 3,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 986.5,
+        "y": 1112,
+        "method": "horizontal-center"
+      }
+    },
+    {
+      "index": 29,
+      "name": "rise",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 100,
+        "y": 235,
+        "w": 236,
+        "h": 229
+      },
+      "scale": 1.1490514905149052,
+      "source": "sources/nadine-extra.png",
+      "sourceBounds": {
+        "x": 1187,
+        "y": 911,
+        "w": 205,
+        "h": 199
+      },
+      "componentBounds": {
+        "x": 1189,
+        "y": 913,
+        "w": 201,
+        "h": 195,
+        "area": 21066,
+        "row": 3,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1291,
+        "y": 1108,
+        "method": "hip-band"
+      }
+    }
+  ],
+  "scales": {
+    "base": {
+      "scale": 0.9645776566757494,
+      "referenceHeight": 367,
+      "targetHeight": 354
+    },
+    "extra": {
+      "scale": 1.1490514905149052,
+      "referenceHeight": 287,
+      "targetHeight": 354
+    }
+  },
+  "sources": {
+    "base": {
+      "file": "sources/nadine-base.png",
+      "sha256": "d010edbec24df69ae8f474ca0a3c2661e6ccf200aa51d658b50a8683697d17be",
+      "width": 1983,
+      "height": 793,
+      "transparentFraction": 0.7188498199385827
+    },
+    "extra": {
+      "file": "sources/nadine-extra.png",
+      "sha256": "2def31deeb3f954f96d034e5c8b4de1873cb13d28708c44345d31fa59e62a8a0",
+      "width": 1402,
+      "height": 1122,
+      "transparentFraction": 0.604078461886635
+    }
+  },
+  "files": {
+    "base": "nadine/spritesheet.webp",
+    "baseMobile": "nadine/spritesheet-mobile.webp",
+    "extra": "nadine/extra-20.webp",
+    "extraMobile": "nadine/extra-20-mobile.webp",
+    "portrait": "nadine/portrait.webp",
+    "preview": "nadine/contact-sheet.png"
+  },
+  "layoutHash": "ee7d43e0ebe6733bffd85a23e85bfaa73868814803a27ce15051c2e33aa785ea",
+  "qc": {
+    "reviewed": true,
+    "issues": [],
+    "sharedScalePerStrip": true,
+    "preservedSourceAlpha": true
+  }
+}

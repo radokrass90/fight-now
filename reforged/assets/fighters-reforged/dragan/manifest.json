@@ -1,0 +1,1347 @@
+{
+  "id": "dragan",
+  "name": "Dragan „Der Pate“ Vuković",
+  "height": 1,
+  "base": "assets/fighters-reforged/dragan/spritesheet.webp",
+  "extra": "assets/fighters-reforged/dragan/extra-20.webp",
+  "mobileBase": "assets/fighters-reforged/dragan/spritesheet-mobile.webp",
+  "mobileExtra": "assets/fighters-reforged/dragan/extra-20-mobile.webp",
+  "portrait": "assets/fighters-reforged/dragan/portrait.webp",
+  "status": "ready",
+  "frameCount": 30,
+  "frames": [
+    {
+      "index": 0,
+      "name": "idle",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 0,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 34,
+        "y": 98,
+        "w": 359,
+        "h": 366
+      },
+      "scale": 1.0056818181818181,
+      "source": "sources/dragan-base.png",
+      "sourceBounds": {
+        "x": 29,
+        "y": 20,
+        "w": 357,
+        "h": 364
+      },
+      "componentBounds": {
+        "x": 31,
+        "y": 22,
+        "w": 353,
+        "h": 360,
+        "area": 54236,
+        "row": 0,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 214,
+        "y": 382,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 1,
+      "name": "block",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 512,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 82,
+        "y": 79,
+        "w": 307,
+        "h": 385
+      },
+      "scale": 1.0056818181818181,
+      "source": "sources/dragan-base.png",
+      "sourceBounds": {
+        "x": 472,
+        "y": 4,
+        "w": 305,
+        "h": 383
+      },
+      "componentBounds": {
+        "x": 474,
+        "y": 6,
+        "w": 301,
+        "h": 379,
+        "area": 50628,
+        "row": 0,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 609,
+        "y": 385,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 2,
+      "name": "crouch",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1024,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 49,
+        "y": 190,
+        "w": 330,
+        "h": 274
+      },
+      "scale": 1.0056818181818181,
+      "source": "sources/dragan-base.png",
+      "sourceBounds": {
+        "x": 828,
+        "y": 110,
+        "w": 328,
+        "h": 272
+      },
+      "componentBounds": {
+        "x": 830,
+        "y": 112,
+        "w": 324,
+        "h": 268,
+        "area": 43624,
+        "row": 0,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 998,
+        "y": 380,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 3,
+      "name": "jump",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1536,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 20,
+        "y": 180,
+        "w": 399,
+        "h": 284
+      },
+      "scale": 1.0056818181818181,
+      "source": "sources/dragan-base.png",
+      "sourceBounds": {
+        "x": 1174,
+        "y": 8,
+        "w": 397,
+        "h": 282
+      },
+      "componentBounds": {
+        "x": 1176,
+        "y": 10,
+        "w": 393,
+        "h": 278,
+        "area": 46184,
+        "row": 0,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 1372.5,
+        "y": 288,
+        "method": "air-center"
+      }
+    },
+    {
+      "index": 4,
+      "name": "light_punch",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 2048,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 57,
+        "y": 113,
+        "w": 365,
+        "h": 351
+      },
+      "scale": 1.0056818181818181,
+      "source": "sources/dragan-base.png",
+      "sourceBounds": {
+        "x": 1602,
+        "y": 33,
+        "w": 363,
+        "h": 349
+      },
+      "componentBounds": {
+        "x": 1604,
+        "y": 35,
+        "w": 359,
+        "h": 345,
+        "area": 53501,
+        "row": 0,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1764,
+        "y": 380,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 5,
+      "name": "heavy_punch",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 0,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 64,
+        "y": 107,
+        "w": 360,
+        "h": 357
+      },
+      "scale": 1.0056818181818181,
+      "source": "sources/dragan-base.png",
+      "sourceBounds": {
+        "x": 33,
+        "y": 407,
+        "w": 358,
+        "h": 355
+      },
+      "componentBounds": {
+        "x": 35,
+        "y": 409,
+        "w": 354,
+        "h": 351,
+        "area": 50232,
+        "row": 1,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 188,
+        "y": 760,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 6,
+      "name": "light_kick",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 512,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 85,
+        "y": 108,
+        "w": 381,
+        "h": 356
+      },
+      "scale": 1.0056818181818181,
+      "source": "sources/dragan-base.png",
+      "sourceBounds": {
+        "x": 422,
+        "y": 404,
+        "w": 379,
+        "h": 354
+      },
+      "componentBounds": {
+        "x": 424,
+        "y": 406,
+        "w": 375,
+        "h": 350,
+        "area": 48325,
+        "row": 1,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 556,
+        "y": 756,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 7,
+      "name": "heavy_kick",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1024,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 101,
+        "y": 112,
+        "w": 364,
+        "h": 352
+      },
+      "scale": 1.0056818181818181,
+      "source": "sources/dragan-base.png",
+      "sourceBounds": {
+        "x": 827,
+        "y": 411,
+        "w": 362,
+        "h": 350
+      },
+      "componentBounds": {
+        "x": 829,
+        "y": 413,
+        "w": 358,
+        "h": 346,
+        "area": 45034,
+        "row": 1,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 945,
+        "y": 759,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 8,
+      "name": "hit",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1536,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 35,
+        "y": 106,
+        "w": 307,
+        "h": 358
+      },
+      "scale": 1.0056818181818181,
+      "source": "sources/dragan-base.png",
+      "sourceBounds": {
+        "x": 1270,
+        "y": 405,
+        "w": 305,
+        "h": 356
+      },
+      "componentBounds": {
+        "x": 1272,
+        "y": 407,
+        "w": 301,
+        "h": 352,
+        "area": 52293,
+        "row": 1,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 1454,
+        "y": 759,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 9,
+      "name": "victory",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 2048,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 80,
+        "y": 87,
+        "w": 273,
+        "h": 377
+      },
+      "scale": 1.0056818181818181,
+      "source": "sources/dragan-base.png",
+      "sourceBounds": {
+        "x": 1654,
+        "y": 389,
+        "w": 271,
+        "h": 375
+      },
+      "componentBounds": {
+        "x": 1656,
+        "y": 391,
+        "w": 267,
+        "h": 371,
+        "area": 50830,
+        "row": 1,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1793,
+        "y": 762,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 10,
+      "name": "walk_contact",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 75,
+        "y": 143,
+        "w": 276,
+        "h": 321
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/dragan-extra.png",
+      "sourceBounds": {
+        "x": 19,
+        "y": 16,
+        "w": 236,
+        "h": 275
+      },
+      "componentBounds": {
+        "x": 21,
+        "y": 18,
+        "w": 232,
+        "h": 271,
+        "area": 31580,
+        "row": 0,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 143,
+        "y": 289,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 11,
+      "name": "walk_down",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 90,
+        "y": 151,
+        "w": 253,
+        "h": 313
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/dragan-extra.png",
+      "sourceBounds": {
+        "x": 327,
+        "y": 22,
+        "w": 217,
+        "h": 268
+      },
+      "componentBounds": {
+        "x": 329,
+        "y": 24,
+        "w": 213,
+        "h": 264,
+        "area": 31326,
+        "row": 0,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 438,
+        "y": 288,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 12,
+      "name": "walk_pass",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 94,
+        "y": 156,
+        "w": 237,
+        "h": 308
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/dragan-extra.png",
+      "sourceBounds": {
+        "x": 618,
+        "y": 23,
+        "w": 203,
+        "h": 264
+      },
+      "componentBounds": {
+        "x": 620,
+        "y": 25,
+        "w": 199,
+        "h": 260,
+        "area": 27771,
+        "row": 0,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 726,
+        "y": 285,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 13,
+      "name": "walk_up",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 101,
+        "y": 144,
+        "w": 238,
+        "h": 320
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/dragan-extra.png",
+      "sourceBounds": {
+        "x": 904,
+        "y": 16,
+        "w": 204,
+        "h": 274
+      },
+      "componentBounds": {
+        "x": 906,
+        "y": 18,
+        "w": 200,
+        "h": 270,
+        "area": 28780,
+        "row": 0,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 1006,
+        "y": 288,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 14,
+      "name": "walk_opposite",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 93,
+        "y": 145,
+        "w": 255,
+        "h": 319
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/dragan-extra.png",
+      "sourceBounds": {
+        "x": 1174,
+        "y": 16,
+        "w": 218,
+        "h": 273
+      },
+      "componentBounds": {
+        "x": 1176,
+        "y": 18,
+        "w": 214,
+        "h": 269,
+        "area": 31038,
+        "row": 0,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1283,
+        "y": 287,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 15,
+      "name": "walk_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 85,
+        "y": 139,
+        "w": 286,
+        "h": 325
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/dragan-extra.png",
+      "sourceBounds": {
+        "x": 19,
+        "y": 301,
+        "w": 245,
+        "h": 278
+      },
+      "componentBounds": {
+        "x": 21,
+        "y": 303,
+        "w": 241,
+        "h": 274,
+        "area": 32514,
+        "row": 1,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 135,
+        "y": 577,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 16,
+      "name": "jab_load",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 83,
+        "y": 143,
+        "w": 283,
+        "h": 321
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/dragan-extra.png",
+      "sourceBounds": {
+        "x": 321,
+        "y": 303,
+        "w": 242,
+        "h": 275
+      },
+      "componentBounds": {
+        "x": 323,
+        "y": 305,
+        "w": 238,
+        "h": 271,
+        "area": 33318,
+        "row": 1,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 438,
+        "y": 576,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 17,
+      "name": "jab_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 99,
+        "y": 143,
+        "w": 272,
+        "h": 321
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/dragan-extra.png",
+      "sourceBounds": {
+        "x": 614,
+        "y": 301,
+        "w": 233,
+        "h": 275
+      },
+      "componentBounds": {
+        "x": 616,
+        "y": 303,
+        "w": 229,
+        "h": 271,
+        "area": 31131,
+        "row": 1,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 718,
+        "y": 574,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 18,
+      "name": "cross_load",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 88,
+        "y": 143,
+        "w": 281,
+        "h": 321
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/dragan-extra.png",
+      "sourceBounds": {
+        "x": 893,
+        "y": 303,
+        "w": 241,
+        "h": 275
+      },
+      "componentBounds": {
+        "x": 895,
+        "y": 305,
+        "w": 237,
+        "h": 271,
+        "area": 35956,
+        "row": 1,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 1006,
+        "y": 576,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 19,
+      "name": "cross_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 99,
+        "y": 144,
+        "w": 258,
+        "h": 320
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/dragan-extra.png",
+      "sourceBounds": {
+        "x": 1181,
+        "y": 302,
+        "w": 221,
+        "h": 274
+      },
+      "componentBounds": {
+        "x": 1183,
+        "y": 304,
+        "w": 217,
+        "h": 270,
+        "area": 30484,
+        "row": 1,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1285,
+        "y": 574,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 20,
+      "name": "hook",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 86,
+        "y": 159,
+        "w": 315,
+        "h": 305
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/dragan-extra.png",
+      "sourceBounds": {
+        "x": 15,
+        "y": 605,
+        "w": 270,
+        "h": 261
+      },
+      "componentBounds": {
+        "x": 17,
+        "y": 607,
+        "w": 266,
+        "h": 257,
+        "area": 33891,
+        "row": 2,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 130,
+        "y": 864,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 21,
+      "name": "uppercut",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 96,
+        "y": 129,
+        "w": 256,
+        "h": 335
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/dragan-extra.png",
+      "sourceBounds": {
+        "x": 345,
+        "y": 581,
+        "w": 219,
+        "h": 287
+      },
+      "componentBounds": {
+        "x": 347,
+        "y": 583,
+        "w": 215,
+        "h": 283,
+        "area": 34094,
+        "row": 2,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 451,
+        "y": 866,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 22,
+      "name": "kick_chamber",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 128,
+        "y": 128,
+        "w": 231,
+        "h": 336
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/dragan-extra.png",
+      "sourceBounds": {
+        "x": 616,
+        "y": 571,
+        "w": 198,
+        "h": 288
+      },
+      "componentBounds": {
+        "x": 618,
+        "y": 573,
+        "w": 194,
+        "h": 284,
+        "area": 29454,
+        "row": 2,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 695,
+        "y": 857,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 23,
+      "name": "kick_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 100,
+        "y": 140,
+        "w": 223,
+        "h": 324
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/dragan-extra.png",
+      "sourceBounds": {
+        "x": 897,
+        "y": 584,
+        "w": 191,
+        "h": 277
+      },
+      "componentBounds": {
+        "x": 899,
+        "y": 586,
+        "w": 187,
+        "h": 273,
+        "area": 27183,
+        "row": 2,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 1000,
+        "y": 859,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 24,
+      "name": "knee",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 128,
+        "y": 129,
+        "w": 225,
+        "h": 335
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/dragan-extra.png",
+      "sourceBounds": {
+        "x": 1190,
+        "y": 576,
+        "w": 193,
+        "h": 287
+      },
+      "componentBounds": {
+        "x": 1192,
+        "y": 578,
+        "w": 189,
+        "h": 283,
+        "area": 28585,
+        "row": 2,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1269,
+        "y": 861,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 25,
+      "name": "low_block",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 95,
+        "y": 242,
+        "w": 246,
+        "h": 222
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/dragan-extra.png",
+      "sourceBounds": {
+        "x": 13,
+        "y": 911,
+        "w": 211,
+        "h": 190
+      },
+      "componentBounds": {
+        "x": 15,
+        "y": 913,
+        "w": 207,
+        "h": 186,
+        "area": 24419,
+        "row": 3,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 120,
+        "y": 1099,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 26,
+      "name": "body_hit",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 109,
+        "y": 205,
+        "w": 238,
+        "h": 259
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/dragan-extra.png",
+      "sourceBounds": {
+        "x": 295,
+        "y": 884,
+        "w": 204,
+        "h": 222
+      },
+      "componentBounds": {
+        "x": 297,
+        "y": 886,
+        "w": 200,
+        "h": 218,
+        "area": 25801,
+        "row": 3,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 390,
+        "y": 1104,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 27,
+      "name": "fall",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 38,
+        "y": 243,
+        "w": 364,
+        "h": 221
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/dragan-extra.png",
+      "sourceBounds": {
+        "x": 547,
+        "y": 901,
+        "w": 312,
+        "h": 189
+      },
+      "componentBounds": {
+        "x": 549,
+        "y": 903,
+        "w": 308,
+        "h": 185,
+        "area": 29945,
+        "row": 3,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 703,
+        "y": 1088,
+        "method": "horizontal-center"
+      }
+    },
+    {
+      "index": 28,
+      "name": "ground",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 8,
+        "y": 348,
+        "w": 424,
+        "h": 116
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/dragan-extra.png",
+      "sourceBounds": {
+        "x": 809,
+        "y": 999,
+        "w": 363,
+        "h": 99
+      },
+      "componentBounds": {
+        "x": 811,
+        "y": 1001,
+        "w": 359,
+        "h": 95,
+        "area": 25670,
+        "row": 3,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 990.5,
+        "y": 1096,
+        "method": "horizontal-center"
+      }
+    },
+    {
+      "index": 29,
+      "name": "rise",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 100,
+        "y": 229,
+        "w": 256,
+        "h": 235
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/dragan-extra.png",
+      "sourceBounds": {
+        "x": 1178,
+        "y": 907,
+        "w": 219,
+        "h": 201
+      },
+      "componentBounds": {
+        "x": 1180,
+        "y": 909,
+        "w": 215,
+        "h": 197,
+        "area": 28102,
+        "row": 3,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1281,
+        "y": 1106,
+        "method": "hip-band"
+      }
+    }
+  ],
+  "scales": {
+    "base": {
+      "scale": 1.0056818181818181,
+      "referenceHeight": 352,
+      "targetHeight": 354
+    },
+    "extra": {
+      "scale": 1.1680440771349863,
+      "referenceHeight": 271,
+      "targetHeight": 354
+    }
+  },
+  "sources": {
+    "base": {
+      "file": "sources/dragan-base.png",
+      "sha256": "faa48b8425b917bdf95a990dd45df96cf781d4bc36bd0ed101a1a52ae3be5078",
+      "width": 1983,
+      "height": 793,
+      "transparentFraction": 0.6340215921079491
+    },
+    "extra": {
+      "file": "sources/dragan-extra.png",
+      "sha256": "3c86576ff126985d33e4d114c2bd0d1b914306b481e18c349c022b92643dadc8",
+      "width": 1402,
+      "height": 1122,
+      "transparentFraction": 0.5461652693758089
+    }
+  },
+  "files": {
+    "base": "dragan/spritesheet.webp",
+    "baseMobile": "dragan/spritesheet-mobile.webp",
+    "extra": "dragan/extra-20.webp",
+    "extraMobile": "dragan/extra-20-mobile.webp",
+    "portrait": "dragan/portrait.webp",
+    "preview": "dragan/contact-sheet.png"
+  },
+  "layoutHash": "ee7d43e0ebe6733bffd85a23e85bfaa73868814803a27ce15051c2e33aa785ea",
+  "qc": {
+    "reviewed": true,
+    "issues": [],
+    "sharedScalePerStrip": true,
+    "preservedSourceAlpha": true
+  }
+}

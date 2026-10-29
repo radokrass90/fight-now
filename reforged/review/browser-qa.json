@@ -1,0 +1,37 @@
+{
+  "desktop": {
+    "viewport": [
+      1200,
+      665
+    ],
+    "title": true,
+    "all15RosterCardsVisible": true,
+    "trainingMuratEmreArenaKalk": true,
+    "hitDamageObserved": 36,
+    "pause": true,
+    "restart": true
+  },
+  "phone": {
+    "portrait": [
+      390,
+      844
+    ],
+    "landscape": [
+      844,
+      390
+    ],
+    "language": "de",
+    "fighterSelectionFatimaNadine": true,
+    "rosterScroll": true,
+    "touchStickMovement": true,
+    "touchPunchDamageObserved": 38,
+    "pause": true,
+    "restart": true
+  },
+  "gallery": {
+    "readyFighters": 15,
+    "posesPerFighter": 30
+  },
+  "gameErrors": [],
+  "physicalDevicesTested": false
+}

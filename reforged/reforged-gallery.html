@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#080e14">
+<title>Fight Now — Art & Motion</title>
+<link rel="stylesheet" href="css/reforged.css?v=reforged-1">
+<link rel="stylesheet" href="css/art-review.css?v=reforged-1">
+</head>
+<body>
+<nav id="language-picker" aria-label="Language"><button data-lang="de" title="Deutsch">DE</button><button data-lang="en" title="English">EN</button></nav>
+<main class="art-review">
+<header class="review-header"><div><p class="review-brand">FIGHT NOW</p><h1 data-i18n="Art & motion">Art & motion</h1><p data-i18n="Fifteen fighters. Every pose. One consistent world.">Fifteen fighters. Every pose. One consistent world.</p></div><a id="back-game" href="./" data-i18n="Back to the game →">Back to the game →</a></header>
+<section class="review-progress" aria-live="polite"><span id="manifest-status" data-i18n="Loading…">Loading…</span><button id="refresh" data-i18n="Refresh roster">Refresh roster</button></section>
+<div class="review-layout">
+<section class="review-roster" aria-label="Fighters" data-i18n-aria="Fighters"><h2 data-i18n="SELECT FIGHTER">SELECT FIGHTER</h2><div id="review-roster" class="review-fighters"></div></section>
+<section class="review-preview"><div class="preview-heading"><div><p id="fighter-status" class="review-status"></p><h2 id="fighter-name">—</h2></div><span id="frame-count"></span></div>
+<div class="review-stage"><canvas id="art-preview" width="512" height="512" aria-label="Pose preview" data-i18n-aria="Pose preview"></canvas><div id="empty-preview" hidden data-i18n="New artwork is not available yet.">New artwork is not available yet.</div></div>
+<div class="review-transport"><button id="play" disabled data-i18n="Pause">Pause</button><button id="flip" aria-pressed="false" data-i18n="Flip">Flip</button><label><input id="guides" type="checkbox"><span data-i18n="Show alignment guides">Show alignment guides</span></label></div>
+<div class="review-frame"><label id="frame-label" for="frame-slider">—</label><input id="frame-slider" type="range" min="0" max="29" value="0" step="1"></div>
+<div id="review-sequences" class="review-sequences"></div>
+<section id="review-qc" class="review-qc" hidden><h3 data-i18n="Review notes">Review notes</h3><ul id="review-issues"></ul></section>
+</section>
+<section class="review-poses"><h2 data-i18n="Poses and sequences">Poses and sequences</h2><div id="review-poses" class="review-pose-grid"></div><p class="review-footnote" data-i18n="Each preview uses the same image and alignment data as the game.">Each preview uses the same image and alignment data as the game.</p></section>
+</div>
+</main>
+<script src="js/i18n.js?v=reforged-1"></script>
+<script src="js/language.js?v=reforged-1"></script>
+<script src="js/art-review.js?v=reforged-1"></script>
+<script>I18N.mount();document.getElementById('back-game').href='./?lang='+I18N.language;</script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+{
+  "at": "2026-10-29T16:51:04.381774+00:00",
+  "results": [
+    {
+      "test": "build-reforged-fighters.cjs",
+      "args": [
+        "--audit"
+      ],
+      "exitCode": 0,
+      "output": "PASS: all 15 fighters / 450 frames, exact shared pivots and baselines, desktop/mobile atlas dimensions, source hashes and alpha.\n"
+    },
+    {
+      "test": "check-reforged-art-runtime.cjs",
+      "args": [],
+      "exitCode": 0,
+      "output": "{\"results\":[{\"mobile\":false,\"rendered\":450,\"activeFighters\":2,\"decodedAtlasMiB\":60},{\"mobile\":true,\"rendered\":450,\"activeFighters\":2,\"decodedAtlasMiB\":15}],\"oldFighterLoads\":0,\"actualRenderer\":\"reforged-30\"}\n"
+    },
+    {
+      "test": "check-reforged-combat.cjs",
+      "args": [],
+      "exitCode": 0,
+      "output": "{\n  \"hitstopBuffer\": true,\n  \"bufferExpiry\": true,\n  \"cleanHitRoutes\": true,\n  \"realHitConfirmCombo\": {\n    \"sent\": {\n      \"lp\": true,\n      \"hp\": true,\n      \"sp\": true\n    },\n    \"best\": {\n      \"hits\": 5,\n      \"damage\": 201\n    },\n    \"last\": {\n      \"hits\": 5,\n      \"damage\": 201\n    },\n    \"total\": 201\n  },\n  \"cornerPressure\": {\n    \"maximum\": 3,\n    \"escapeWindows\": 1010\n  },\n  \"perfectGuard\": true,\n  \"juggleLimit\": true,\n  \"superRelease\": true,\n  \"fairReaction\": true,\n  \"completedFinishersBothDirections\": 30,\n  \"completedSeededMatches\": [\n    {\n      \"fighter\": \"murat\",\n      \"rounds\": 3,\n      \"winner\": \"nadine\"\n    },\n    {\n      \"fighter\": \"yasmin\",\n      \"rounds\": 3,\n      \"winner\": \"emre\"\n    },\n    {\n      \"fighter\": \"dragan\",\n      \"rounds\": 2,\n      \"winner\": \"dragan\"\n    },\n    {\n      \"fighter\": \"kevin\",\n      \"rounds\": 3,\n      \"winner\": \"kevin\"\n    },\n    {\n      \"fighter\": \"leyla\",\n      \"rounds\": 2,\n      \"winner\": \"adem\"\n    },\n    {\n      \"fighter\": \"tomasz\",\n      \"rounds\": 2,\n      \"winner\": \"marco\"\n    },\n    {\n      \"fighter\": \"hakan\",\n      \"rounds\": 2,\n      \"winner\": \"fatima\"\n    },\n    {\n      \"fighter\": \"nadine\",\n      \"rounds\": 2,\n      \"winner\": \"danny\"\n    },\n    {\n      \"fighter\": \"emre\",\n      \"rounds\": 2,\n      \"winner\": \"murat\"\n    },\n    {\n      \"fighter\": \"boris\",\n      \"rounds\": 2,\n      \"winner\": \"yasmin\"\n    },\n    {\n      \"fighter\": \"jasmin\",\n      \"rounds\": 2,\n      \"winner\": \"jasmin\"\n    },\n    {\n      \"fighter\": \"adem\",\n      \"rounds\": 2,\n      \"winner\": \"kevin\"\n    },\n    {\n      \"fighter\": \"marco\",\n      \"rounds\": 2,\n      \"winner\": \"marco\"\n    },\n    {\n      \"fighter\": \"fatima\",\n      \"rounds\": 2,\n      \"winner\": \"fatima\"\n    },\n    {\n      \"fighter\": \"danny\",\n      \"rounds\": 2,\n      \"winner\": \"danny\"\n    }\n  ]\n}\n"
+    },
+    {
+      "test": "check-menu-flow.cjs",
+      "args": [],
+      "exitCode": 0,
+      "output": "PASS: native desktop and touch menu contract, 15 fighter/arena grids, keyboard selection, training flow, pause/moves/resume/restart, PvP mappings and 7-fight arcade.\nPASS: fighter/arena loading failure shows retry, successful retry starts the match, obsolete requests cannot replace a newer fight.\n"
+    },
+    {
+      "test": "check-asset-retry.cjs",
+      "args": [],
+      "exitCode": 0,
+      "output": "PASS: real fighter/arena loaders retry a failed request, retain two active fighters and select desktop/mobile resolution.\n"
+    },
+    {
+      "test": "check-languages.cjs",
+      "args": [],
+      "exitCode": 0,
+      "output": "PASS: DE/EN menus, 15 biographies and move sets, arena cities, complete translation keys, saved choice, URL preservation and no Bulgarian interface text.\n"
+    },
+    {
+      "test": "check-mobile.cjs",
+      "args": [],
+      "exitCode": 0,
+      "output": "PASS: one reusable mobile music element across all arenas and final-round music.\nPASS: multi-touch movement + attacks, per-finger ownership, cancellation, lost capture, reset.\nPASS: 30 small boot images; only two active fighters and one full arena retained.\n{\"fighterDecodedMB\":15,\"previousPairMB\":60,\"pairDownloadMB\":0.4732666015625}\n"
+    },
+    {
+      "test": "check-combat-fx.cjs",
+      "args": [],
+      "exitCode": 0,
+      "output": "{\"heavyHit\":{\"damage\":88,\"shake\":13,\"hitstop\":10,\"impact\":true,\"power\":2},\"block\":{\"hp\":1000,\"blocked\":true},\"particleLimit\":true,\"reducedMotion\":true,\"deterministicCamera\":true,\"renderedPreview\":true}\n"
+    },
+    {
+      "test": "check-street-props.cjs",
+      "args": [],
+      "exitCode": 0,
+      "output": "PASS: all 15 stage layouts render, combat center stays clear, shared prop atlas and animated Blender ventilation, with a clear combat center.\n"
+    },
+    {
+      "test": "check-painted-animation.cjs",
+      "args": [
+        "--complete"
+      ],
+      "exitCode": 0,
+      "output": "{\n  \"forward\": [\n    10,\n    11,\n    12,\n    13,\n    14,\n    15\n  ],\n  \"backward\": [\n    15,\n    14,\n    13,\n    12,\n    11,\n    10\n  ],\n  \"attack\": [\n    0,\n    16,\n    16,\n    4,\n    4,\n    17,\n    0,\n    0\n  ],\n  \"lowBlock\": 25,\n  \"down\": 28,\n  \"rise\": 29,\n  \"count\": 15,\n  \"frames\": 300\n}\nNormal attack timeline samples: 4797\nDecoded nonempty transparent frames with aligned baselines: 300\n"
+    },
+    {
+      "test": "check-battle-music.cjs",
+      "args": [],
+      "exitCode": 0,
+      "output": "{\"filesDecoded\":6,\"arenaMappingsChecked\":15,\"decidingRounds\":true,\"bossFight\":true,\"pauseResume\":true,\"mute\":true,\"backgroundTab\":true,\"stopResets\":true,\"tracks\":[{\"title\":\"Beton Pressure\",\"file\":\"01-beton-pressure.mp3\",\"duration\":74.4,\"codec_name\":\"mp3\",\"sample_rate\":\"48000\",\"channels\":2},{\"title\":\"Neukolln Knuckles\",\"file\":\"02-neukolln-knuckles.mp3\",\"duration\":82.76,\"codec_name\":\"mp3\",\"sample_rate\":\"48000\",\"channels\":2},{\"title\":\"Hafennacht Engine\",\"file\":\"03-hafennacht-engine.mp3\",\"duration\":218.28,\"codec_name\":\"mp3\",\"sample_rate\":\"48000\",\"channels\":2},{\"title\":\"Steel Yard Riot\",\"file\":\"04-steel-yard-riot.mp3\",\"duration\":207.16,\"codec_name\":\"mp3\",\"sample_rate\":\"48000\",\"channels\":2},{\"title\":\"Final Round Overdrive\",\"file\":\"05-final-round-overdrive.mp3\",\"duration\":92.8,\"codec_name\":\"mp3\",\"sample_rate\":\"48000\",\"channels\":2},{\"title\":\"Sudden Death Protocol\",\"file\":\"06-sudden-death-protocol.mp3\",\"duration\":153.6,\"codec_name\":\"mp3\",\"sample_rate\":\"48000\",\"channels\":2}]}\n"
+    }
+  ]
+}

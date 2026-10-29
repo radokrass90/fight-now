@@ -1,0 +1,1347 @@
+{
+  "id": "tomasz",
+  "name": "Tomasz „Spray“ Lewandowski",
+  "height": 1,
+  "base": "assets/fighters-reforged/tomasz/spritesheet.webp",
+  "extra": "assets/fighters-reforged/tomasz/extra-20.webp",
+  "mobileBase": "assets/fighters-reforged/tomasz/spritesheet-mobile.webp",
+  "mobileExtra": "assets/fighters-reforged/tomasz/extra-20-mobile.webp",
+  "portrait": "assets/fighters-reforged/tomasz/portrait.webp",
+  "status": "ready",
+  "frameCount": 30,
+  "frames": [
+    {
+      "index": 0,
+      "name": "idle",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 0,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 79,
+        "y": 102,
+        "w": 324,
+        "h": 362
+      },
+      "scale": 1.0143266475644699,
+      "source": "sources/tomasz-base.png",
+      "sourceBounds": {
+        "x": 26,
+        "y": 16,
+        "w": 319,
+        "h": 357
+      },
+      "componentBounds": {
+        "x": 28,
+        "y": 18,
+        "w": 315,
+        "h": 353,
+        "area": 40963,
+        "row": 0,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 165,
+        "y": 371,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 1,
+      "name": "block",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 512,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 80,
+        "y": 97,
+        "w": 304,
+        "h": 367
+      },
+      "scale": 1.0143266475644699,
+      "source": "sources/tomasz-base.png",
+      "sourceBounds": {
+        "x": 440,
+        "y": 12,
+        "w": 300,
+        "h": 362
+      },
+      "componentBounds": {
+        "x": 442,
+        "y": 14,
+        "w": 296,
+        "h": 358,
+        "area": 40372,
+        "row": 0,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 578,
+        "y": 372,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 2,
+      "name": "crouch",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1024,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 89,
+        "y": 210,
+        "w": 314,
+        "h": 254
+      },
+      "scale": 1.0143266475644699,
+      "source": "sources/tomasz-base.png",
+      "sourceBounds": {
+        "x": 846,
+        "y": 123,
+        "w": 310,
+        "h": 250
+      },
+      "componentBounds": {
+        "x": 848,
+        "y": 125,
+        "w": 306,
+        "h": 246,
+        "area": 34174,
+        "row": 0,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 975,
+        "y": 371,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 3,
+      "name": "jump",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1536,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 82,
+        "y": 187,
+        "w": 276,
+        "h": 277
+      },
+      "scale": 1.0143266475644699,
+      "source": "sources/tomasz-base.png",
+      "sourceBounds": {
+        "x": 1217,
+        "y": 11,
+        "w": 272,
+        "h": 273
+      },
+      "componentBounds": {
+        "x": 1219,
+        "y": 13,
+        "w": 268,
+        "h": 269,
+        "area": 32665,
+        "row": 0,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 1353,
+        "y": 282,
+        "method": "air-center"
+      }
+    },
+    {
+      "index": 4,
+      "name": "light_punch",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 2048,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 65,
+        "y": 106,
+        "w": 363,
+        "h": 358
+      },
+      "scale": 1.0143266475644699,
+      "source": "sources/tomasz-base.png",
+      "sourceBounds": {
+        "x": 1596,
+        "y": 20,
+        "w": 358,
+        "h": 353
+      },
+      "componentBounds": {
+        "x": 1598,
+        "y": 22,
+        "w": 354,
+        "h": 349,
+        "area": 42061,
+        "row": 0,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1749,
+        "y": 371,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 5,
+      "name": "heavy_punch",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 0,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 56,
+        "y": 112,
+        "w": 357,
+        "h": 352
+      },
+      "scale": 1.0143266475644699,
+      "source": "sources/tomasz-base.png",
+      "sourceBounds": {
+        "x": 30,
+        "y": 414,
+        "w": 352,
+        "h": 347
+      },
+      "componentBounds": {
+        "x": 32,
+        "y": 416,
+        "w": 348,
+        "h": 343,
+        "area": 39909,
+        "row": 1,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 192,
+        "y": 759,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 6,
+      "name": "light_kick",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 512,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 141,
+        "y": 110,
+        "w": 312,
+        "h": 354
+      },
+      "scale": 1.0143266475644699,
+      "source": "sources/tomasz-base.png",
+      "sourceBounds": {
+        "x": 479,
+        "y": 409,
+        "w": 308,
+        "h": 349
+      },
+      "componentBounds": {
+        "x": 481,
+        "y": 411,
+        "w": 304,
+        "h": 345,
+        "area": 35294,
+        "row": 1,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 557,
+        "y": 756,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 7,
+      "name": "heavy_kick",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1024,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 107,
+        "y": 131,
+        "w": 368,
+        "h": 333
+      },
+      "scale": 1.0143266475644699,
+      "source": "sources/tomasz-base.png",
+      "sourceBounds": {
+        "x": 836,
+        "y": 434,
+        "w": 363,
+        "h": 328
+      },
+      "componentBounds": {
+        "x": 838,
+        "y": 436,
+        "w": 359,
+        "h": 324,
+        "area": 36822,
+        "row": 1,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 947,
+        "y": 760,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 8,
+      "name": "hit",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1536,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 28,
+        "y": 112,
+        "w": 344,
+        "h": 352
+      },
+      "scale": 1.0143266475644699,
+      "source": "sources/tomasz-base.png",
+      "sourceBounds": {
+        "x": 1258,
+        "y": 416,
+        "w": 339,
+        "h": 347
+      },
+      "componentBounds": {
+        "x": 1260,
+        "y": 418,
+        "w": 335,
+        "h": 343,
+        "area": 41545,
+        "row": 1,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 1447,
+        "y": 761,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 9,
+      "name": "victory",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 2048,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 110,
+        "y": 67,
+        "w": 244,
+        "h": 397
+      },
+      "scale": 1.0143266475644699,
+      "source": "sources/tomasz-base.png",
+      "sourceBounds": {
+        "x": 1687,
+        "y": 378,
+        "w": 241,
+        "h": 391
+      },
+      "componentBounds": {
+        "x": 1689,
+        "y": 380,
+        "w": 237,
+        "h": 387,
+        "area": 38819,
+        "row": 1,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1795,
+        "y": 767,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 10,
+      "name": "walk_contact",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 94,
+        "y": 150,
+        "w": 288,
+        "h": 314
+      },
+      "scale": 1.1910112359550562,
+      "source": "sources/tomasz-extra.png",
+      "sourceBounds": {
+        "x": 34,
+        "y": 17,
+        "w": 242,
+        "h": 264
+      },
+      "componentBounds": {
+        "x": 36,
+        "y": 19,
+        "w": 238,
+        "h": 260,
+        "area": 23715,
+        "row": 0,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 140,
+        "y": 279,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 11,
+      "name": "walk_down",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 108,
+        "y": 147,
+        "w": 249,
+        "h": 317
+      },
+      "scale": 1.1910112359550562,
+      "source": "sources/tomasz-extra.png",
+      "sourceBounds": {
+        "x": 322,
+        "y": 15,
+        "w": 209,
+        "h": 266
+      },
+      "componentBounds": {
+        "x": 324,
+        "y": 17,
+        "w": 205,
+        "h": 262,
+        "area": 23319,
+        "row": 0,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 416,
+        "y": 279,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 12,
+      "name": "walk_pass",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 97,
+        "y": 148,
+        "w": 248,
+        "h": 316
+      },
+      "scale": 1.1910112359550562,
+      "source": "sources/tomasz-extra.png",
+      "sourceBounds": {
+        "x": 595,
+        "y": 15,
+        "w": 208,
+        "h": 265
+      },
+      "componentBounds": {
+        "x": 597,
+        "y": 17,
+        "w": 204,
+        "h": 261,
+        "area": 22400,
+        "row": 0,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 698,
+        "y": 278,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 13,
+      "name": "walk_up",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 113,
+        "y": 145,
+        "w": 256,
+        "h": 319
+      },
+      "scale": 1.1910112359550562,
+      "source": "sources/tomasz-extra.png",
+      "sourceBounds": {
+        "x": 879,
+        "y": 12,
+        "w": 215,
+        "h": 268
+      },
+      "componentBounds": {
+        "x": 881,
+        "y": 14,
+        "w": 211,
+        "h": 264,
+        "area": 22345,
+        "row": 0,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 969,
+        "y": 278,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 14,
+      "name": "walk_opposite",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 88,
+        "y": 150,
+        "w": 264,
+        "h": 314
+      },
+      "scale": 1.1910112359550562,
+      "source": "sources/tomasz-extra.png",
+      "sourceBounds": {
+        "x": 1153,
+        "y": 17,
+        "w": 222,
+        "h": 264
+      },
+      "componentBounds": {
+        "x": 1155,
+        "y": 19,
+        "w": 218,
+        "h": 260,
+        "area": 22774,
+        "row": 0,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1264,
+        "y": 279,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 15,
+      "name": "walk_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 97,
+        "y": 141,
+        "w": 258,
+        "h": 323
+      },
+      "scale": 1.1910112359550562,
+      "source": "sources/tomasz-extra.png",
+      "sourceBounds": {
+        "x": 36,
+        "y": 283,
+        "w": 217,
+        "h": 271
+      },
+      "componentBounds": {
+        "x": 38,
+        "y": 285,
+        "w": 213,
+        "h": 267,
+        "area": 24461,
+        "row": 1,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 139,
+        "y": 552,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 16,
+      "name": "jab_load",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 96,
+        "y": 138,
+        "w": 278,
+        "h": 326
+      },
+      "scale": 1.1910112359550562,
+      "source": "sources/tomasz-extra.png",
+      "sourceBounds": {
+        "x": 317,
+        "y": 282,
+        "w": 233,
+        "h": 274
+      },
+      "componentBounds": {
+        "x": 319,
+        "y": 284,
+        "w": 229,
+        "h": 270,
+        "area": 26645,
+        "row": 1,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 421,
+        "y": 554,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 17,
+      "name": "jab_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 96,
+        "y": 141,
+        "w": 270,
+        "h": 323
+      },
+      "scale": 1.1910112359550562,
+      "source": "sources/tomasz-extra.png",
+      "sourceBounds": {
+        "x": 596,
+        "y": 285,
+        "w": 227,
+        "h": 271
+      },
+      "componentBounds": {
+        "x": 598,
+        "y": 287,
+        "w": 223,
+        "h": 267,
+        "area": 24698,
+        "row": 1,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 700,
+        "y": 554,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 18,
+      "name": "cross_load",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 72,
+        "y": 144,
+        "w": 293,
+        "h": 320
+      },
+      "scale": 1.1910112359550562,
+      "source": "sources/tomasz-extra.png",
+      "sourceBounds": {
+        "x": 863,
+        "y": 287,
+        "w": 246,
+        "h": 269
+      },
+      "componentBounds": {
+        "x": 865,
+        "y": 289,
+        "w": 242,
+        "h": 265,
+        "area": 28823,
+        "row": 1,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 987,
+        "y": 554,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 19,
+      "name": "cross_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 97,
+        "y": 134,
+        "w": 270,
+        "h": 330
+      },
+      "scale": 1.1910112359550562,
+      "source": "sources/tomasz-extra.png",
+      "sourceBounds": {
+        "x": 1151,
+        "y": 279,
+        "w": 227,
+        "h": 277
+      },
+      "componentBounds": {
+        "x": 1153,
+        "y": 281,
+        "w": 223,
+        "h": 273,
+        "area": 25563,
+        "row": 1,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1254,
+        "y": 554,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 20,
+      "name": "hook",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 89,
+        "y": 127,
+        "w": 285,
+        "h": 337
+      },
+      "scale": 1.1910112359550562,
+      "source": "sources/tomasz-extra.png",
+      "sourceBounds": {
+        "x": 31,
+        "y": 570,
+        "w": 239,
+        "h": 283
+      },
+      "componentBounds": {
+        "x": 33,
+        "y": 572,
+        "w": 235,
+        "h": 279,
+        "area": 27550,
+        "row": 2,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 141,
+        "y": 851,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 21,
+      "name": "uppercut",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 76,
+        "y": 88,
+        "w": 270,
+        "h": 376
+      },
+      "scale": 1.1910112359550562,
+      "source": "sources/tomasz-extra.png",
+      "sourceBounds": {
+        "x": 326,
+        "y": 538,
+        "w": 227,
+        "h": 316
+      },
+      "componentBounds": {
+        "x": 328,
+        "y": 540,
+        "w": 223,
+        "h": 312,
+        "area": 28094,
+        "row": 2,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 447,
+        "y": 852,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 22,
+      "name": "kick_chamber",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 170,
+        "y": 102,
+        "w": 166,
+        "h": 362
+      },
+      "scale": 1.1910112359550562,
+      "source": "sources/tomasz-extra.png",
+      "sourceBounds": {
+        "x": 646,
+        "y": 550,
+        "w": 139,
+        "h": 304
+      },
+      "componentBounds": {
+        "x": 648,
+        "y": 552,
+        "w": 135,
+        "h": 300,
+        "area": 24186,
+        "row": 2,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 688,
+        "y": 852,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 23,
+      "name": "kick_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 152,
+        "y": 102,
+        "w": 176,
+        "h": 362
+      },
+      "scale": 1.1910112359550562,
+      "source": "sources/tomasz-extra.png",
+      "sourceBounds": {
+        "x": 931,
+        "y": 551,
+        "w": 148,
+        "h": 304
+      },
+      "componentBounds": {
+        "x": 933,
+        "y": 553,
+        "w": 144,
+        "h": 300,
+        "area": 22222,
+        "row": 2,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 988,
+        "y": 853,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 24,
+      "name": "knee",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 160,
+        "y": 102,
+        "w": 233,
+        "h": 362
+      },
+      "scale": 1.1910112359550562,
+      "source": "sources/tomasz-extra.png",
+      "sourceBounds": {
+        "x": 1201,
+        "y": 550,
+        "w": 196,
+        "h": 304
+      },
+      "componentBounds": {
+        "x": 1203,
+        "y": 552,
+        "w": 192,
+        "h": 300,
+        "area": 24078,
+        "row": 2,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1251,
+        "y": 852,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 25,
+      "name": "low_block",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 104,
+        "y": 202,
+        "w": 217,
+        "h": 262
+      },
+      "scale": 1.1910112359550562,
+      "source": "sources/tomasz-extra.png",
+      "sourceBounds": {
+        "x": 51,
+        "y": 873,
+        "w": 182,
+        "h": 220
+      },
+      "componentBounds": {
+        "x": 53,
+        "y": 875,
+        "w": 178,
+        "h": 216,
+        "area": 24240,
+        "row": 3,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 148,
+        "y": 1091,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 26,
+      "name": "body_hit",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 108,
+        "y": 191,
+        "w": 224,
+        "h": 273
+      },
+      "scale": 1.1910112359550562,
+      "source": "sources/tomasz-extra.png",
+      "sourceBounds": {
+        "x": 317,
+        "y": 864,
+        "w": 188,
+        "h": 229
+      },
+      "componentBounds": {
+        "x": 319,
+        "y": 866,
+        "w": 184,
+        "h": 225,
+        "area": 22335,
+        "row": 3,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 411,
+        "y": 1091,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 27,
+      "name": "fall",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 42,
+        "y": 257,
+        "w": 356,
+        "h": 207
+      },
+      "scale": 1.1910112359550562,
+      "source": "sources/tomasz-extra.png",
+      "sourceBounds": {
+        "x": 523,
+        "y": 886,
+        "w": 299,
+        "h": 174
+      },
+      "componentBounds": {
+        "x": 525,
+        "y": 888,
+        "w": 295,
+        "h": 170,
+        "area": 24358,
+        "row": 3,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 672.5,
+        "y": 1058,
+        "method": "horizontal-center"
+      }
+    },
+    {
+      "index": 28,
+      "name": "ground",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 8,
+        "y": 340,
+        "w": 424,
+        "h": 124
+      },
+      "scale": 1.1910112359550562,
+      "source": "sources/tomasz-extra.png",
+      "sourceBounds": {
+        "x": 812,
+        "y": 978,
+        "w": 356,
+        "h": 104
+      },
+      "componentBounds": {
+        "x": 814,
+        "y": 980,
+        "w": 352,
+        "h": 100,
+        "area": 21986,
+        "row": 3,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 990,
+        "y": 1080,
+        "method": "horizontal-center"
+      }
+    },
+    {
+      "index": 29,
+      "name": "rise",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 106,
+        "y": 242,
+        "w": 249,
+        "h": 222
+      },
+      "scale": 1.1910112359550562,
+      "source": "sources/tomasz-extra.png",
+      "sourceBounds": {
+        "x": 1173,
+        "y": 898,
+        "w": 209,
+        "h": 186
+      },
+      "componentBounds": {
+        "x": 1175,
+        "y": 900,
+        "w": 205,
+        "h": 182,
+        "area": 23252,
+        "row": 3,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1269,
+        "y": 1082,
+        "method": "hip-band"
+      }
+    }
+  ],
+  "scales": {
+    "base": {
+      "scale": 1.0143266475644699,
+      "referenceHeight": 349,
+      "targetHeight": 354
+    },
+    "extra": {
+      "scale": 1.1910112359550562,
+      "referenceHeight": 262,
+      "targetHeight": 354
+    }
+  },
+  "sources": {
+    "base": {
+      "file": "sources/tomasz-base.png",
+      "sha256": "5aa905530cab2d57261215f3463049cf031ab36dc367abdf48b9aa0f9b3eaa3d",
+      "width": 1983,
+      "height": 793,
+      "transparentFraction": 0.6875344590431022
+    },
+    "extra": {
+      "file": "sources/tomasz-extra.png",
+      "sha256": "58e83336d2c3d51287c26c72b67863a02e4bead12ea8a55b9a9c21937d16de1c",
+      "width": 1402,
+      "height": 1122,
+      "transparentFraction": 0.5941384983509679
+    }
+  },
+  "files": {
+    "base": "tomasz/spritesheet.webp",
+    "baseMobile": "tomasz/spritesheet-mobile.webp",
+    "extra": "tomasz/extra-20.webp",
+    "extraMobile": "tomasz/extra-20-mobile.webp",
+    "portrait": "tomasz/portrait.webp",
+    "preview": "tomasz/contact-sheet.png"
+  },
+  "layoutHash": "ee7d43e0ebe6733bffd85a23e85bfaa73868814803a27ce15051c2e33aa785ea",
+  "qc": {
+    "reviewed": true,
+    "issues": [],
+    "sharedScalePerStrip": true,
+    "preservedSourceAlpha": true
+  }
+}

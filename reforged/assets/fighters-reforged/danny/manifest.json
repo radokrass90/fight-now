@@ -1,0 +1,1366 @@
+{
+  "id": "danny",
+  "name": "Danny „Nebel“ Kowalski",
+  "height": 0.99,
+  "base": "assets/fighters-reforged/danny/spritesheet.webp",
+  "extra": "assets/fighters-reforged/danny/extra-20.webp",
+  "mobileBase": "assets/fighters-reforged/danny/spritesheet-mobile.webp",
+  "mobileExtra": "assets/fighters-reforged/danny/extra-20-mobile.webp",
+  "portrait": "assets/fighters-reforged/danny/portrait.webp",
+  "status": "ready",
+  "frameCount": 30,
+  "frames": [
+    {
+      "index": 0,
+      "name": "idle",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 0,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 76,
+        "y": 104,
+        "w": 263,
+        "h": 360
+      },
+      "scale": 0.954177897574124,
+      "source": "sources/danny-base.png",
+      "sourceBounds": {
+        "x": 85,
+        "y": 7,
+        "w": 276,
+        "h": 377
+      },
+      "componentBounds": {
+        "x": 87,
+        "y": 9,
+        "w": 272,
+        "h": 373,
+        "area": 41706,
+        "row": 0,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 236,
+        "y": 382,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 1,
+      "name": "block",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 512,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 85,
+        "y": 106,
+        "w": 261,
+        "h": 358
+      },
+      "scale": 0.954177897574124,
+      "source": "sources/danny-base.png",
+      "sourceBounds": {
+        "x": 480,
+        "y": 9,
+        "w": 274,
+        "h": 375
+      },
+      "componentBounds": {
+        "x": 482,
+        "y": 11,
+        "w": 270,
+        "h": 371,
+        "area": 42764,
+        "row": 0,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 622,
+        "y": 382,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 2,
+      "name": "crouch",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1024,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 103,
+        "y": 207,
+        "w": 225,
+        "h": 257
+      },
+      "scale": 0.954177897574124,
+      "source": "sources/danny-base.png",
+      "sourceBounds": {
+        "x": 890,
+        "y": 115,
+        "w": 236,
+        "h": 269
+      },
+      "componentBounds": {
+        "x": 892,
+        "y": 117,
+        "w": 232,
+        "h": 265,
+        "area": 37239,
+        "row": 0,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 1013,
+        "y": 382,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 3,
+      "name": "jump",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1536,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 71,
+        "y": 183,
+        "w": 299,
+        "h": 281
+      },
+      "scale": 0.954177897574124,
+      "source": "sources/danny-base.png",
+      "sourceBounds": {
+        "x": 1217,
+        "y": 7,
+        "w": 313,
+        "h": 295
+      },
+      "componentBounds": {
+        "x": 1219,
+        "y": 9,
+        "w": 309,
+        "h": 291,
+        "area": 40770,
+        "row": 0,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 1373.5,
+        "y": 300,
+        "method": "air-center"
+      }
+    },
+    {
+      "index": 4,
+      "name": "light_punch",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 2048,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 56,
+        "y": 106,
+        "w": 351,
+        "h": 358
+      },
+      "scale": 0.954177897574124,
+      "source": "sources/danny-base.png",
+      "sourceBounds": {
+        "x": 1606,
+        "y": 9,
+        "w": 368,
+        "h": 375
+      },
+      "componentBounds": {
+        "x": 1608,
+        "y": 11,
+        "w": 364,
+        "h": 371,
+        "area": 46245,
+        "row": 0,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1778,
+        "y": 382,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 5,
+      "name": "heavy_punch",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 0,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 32,
+        "y": 123,
+        "w": 380,
+        "h": 341
+      },
+      "scale": 0.954177897574124,
+      "source": "sources/danny-base.png",
+      "sourceBounds": {
+        "x": 13,
+        "y": 406,
+        "w": 398,
+        "h": 358
+      },
+      "componentBounds": {
+        "x": 15,
+        "y": 408,
+        "w": 394,
+        "h": 354,
+        "area": 45112,
+        "row": 1,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 210,
+        "y": 762,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 6,
+      "name": "light_kick",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 512,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 120,
+        "y": 114,
+        "w": 310,
+        "h": 350
+      },
+      "scale": 0.954177897574124,
+      "source": "sources/danny-base.png",
+      "sourceBounds": {
+        "x": 450,
+        "y": 399,
+        "w": 325,
+        "h": 367
+      },
+      "componentBounds": {
+        "x": 452,
+        "y": 401,
+        "w": 321,
+        "h": 363,
+        "area": 37733,
+        "row": 1,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 555,
+        "y": 764,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 7,
+      "name": "heavy_kick",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1024,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 85,
+        "y": 116,
+        "w": 379,
+        "h": 348
+      },
+      "scale": 0.954177897574124,
+      "source": "sources/danny-base.png",
+      "sourceBounds": {
+        "x": 805,
+        "y": 401,
+        "w": 397,
+        "h": 365
+      },
+      "componentBounds": {
+        "x": 807,
+        "y": 403,
+        "w": 393,
+        "h": 361,
+        "area": 44032,
+        "row": 1,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 946,
+        "y": 764,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 8,
+      "name": "hit",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1536,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 67,
+        "y": 127,
+        "w": 252,
+        "h": 337
+      },
+      "scale": 0.954177897574124,
+      "source": "sources/danny-base.png",
+      "sourceBounds": {
+        "x": 1277,
+        "y": 412,
+        "w": 264,
+        "h": 353
+      },
+      "componentBounds": {
+        "x": 1279,
+        "y": 414,
+        "w": 260,
+        "h": 349,
+        "area": 42057,
+        "row": 1,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 1437,
+        "y": 763,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 9,
+      "name": "victory",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 2048,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 114,
+        "y": 104,
+        "w": 229,
+        "h": 360
+      },
+      "scale": 0.954177897574124,
+      "source": "sources/danny-base.png",
+      "sourceBounds": {
+        "x": 1679,
+        "y": 389,
+        "w": 240,
+        "h": 377
+      },
+      "componentBounds": {
+        "x": 1681,
+        "y": 390,
+        "w": 236,
+        "h": 374,
+        "area": 41948,
+        "row": 1,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1790,
+        "y": 764,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 10,
+      "name": "walk_contact",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 72,
+        "y": 135,
+        "w": 260,
+        "h": 329
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/danny-extra.png",
+      "sourceBounds": {
+        "x": 52,
+        "y": 17,
+        "w": 223,
+        "h": 282
+      },
+      "componentBounds": {
+        "x": 54,
+        "y": 19,
+        "w": 219,
+        "h": 278,
+        "area": 26129,
+        "row": 0,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 179,
+        "y": 297,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 11,
+      "name": "walk_down",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 97,
+        "y": 149,
+        "w": 223,
+        "h": 315
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/danny-extra.png",
+      "sourceBounds": {
+        "x": 344,
+        "y": 29,
+        "w": 191,
+        "h": 270
+      },
+      "componentBounds": {
+        "x": 346,
+        "y": 31,
+        "w": 187,
+        "h": 266,
+        "area": 24373,
+        "row": 0,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 449,
+        "y": 297,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 12,
+      "name": "walk_pass",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 81,
+        "y": 143,
+        "w": 243,
+        "h": 321
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/danny-extra.png",
+      "sourceBounds": {
+        "x": 600,
+        "y": 24,
+        "w": 208,
+        "h": 275
+      },
+      "componentBounds": {
+        "x": 602,
+        "y": 26,
+        "w": 204,
+        "h": 271,
+        "area": 25278,
+        "row": 0,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 719,
+        "y": 297,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 13,
+      "name": "walk_up",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 115,
+        "y": 133,
+        "w": 216,
+        "h": 331
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/danny-extra.png",
+      "sourceBounds": {
+        "x": 888,
+        "y": 18,
+        "w": 185,
+        "h": 283
+      },
+      "componentBounds": {
+        "x": 890,
+        "y": 20,
+        "w": 181,
+        "h": 279,
+        "area": 23590,
+        "row": 0,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 978,
+        "y": 299,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 14,
+      "name": "walk_opposite",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 82,
+        "y": 137,
+        "w": 270,
+        "h": 327
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/danny-extra.png",
+      "sourceBounds": {
+        "x": 1144,
+        "y": 19,
+        "w": 231,
+        "h": 280
+      },
+      "componentBounds": {
+        "x": 1146,
+        "y": 21,
+        "w": 227,
+        "h": 276,
+        "area": 24995,
+        "row": 0,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1262,
+        "y": 297,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 15,
+      "name": "walk_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 83,
+        "y": 140,
+        "w": 258,
+        "h": 324
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/danny-extra.png",
+      "sourceBounds": {
+        "x": 29,
+        "y": 305,
+        "w": 221,
+        "h": 277
+      },
+      "componentBounds": {
+        "x": 31,
+        "y": 307,
+        "w": 217,
+        "h": 273,
+        "area": 25505,
+        "row": 1,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 146,
+        "y": 580,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 16,
+      "name": "jab_load",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 79,
+        "y": 151,
+        "w": 260,
+        "h": 313
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/danny-extra.png",
+      "sourceBounds": {
+        "x": 327,
+        "y": 313,
+        "w": 223,
+        "h": 268
+      },
+      "componentBounds": {
+        "x": 329,
+        "y": 315,
+        "w": 219,
+        "h": 264,
+        "area": 26378,
+        "row": 1,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 448,
+        "y": 579,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 17,
+      "name": "jab_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 71,
+        "y": 109,
+        "w": 273,
+        "h": 355
+      },
+      "scale": 0.31355181576616475,
+      "source": "sources/danny-corrections.png",
+      "sourceBounds": {
+        "x": 254,
+        "y": 16,
+        "w": 871,
+        "h": 1133
+      },
+      "componentBounds": {
+        "x": 256,
+        "y": 18,
+        "w": 867,
+        "h": 1129,
+        "area": 378967,
+        "row": 0,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 728,
+        "y": 1147,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 18,
+      "name": "cross_load",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 88,
+        "y": 150,
+        "w": 264,
+        "h": 314
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/danny-extra.png",
+      "sourceBounds": {
+        "x": 883,
+        "y": 313,
+        "w": 226,
+        "h": 269
+      },
+      "componentBounds": {
+        "x": 885,
+        "y": 315,
+        "w": 222,
+        "h": 265,
+        "area": 28317,
+        "row": 1,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 996,
+        "y": 580,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 19,
+      "name": "cross_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 101,
+        "y": 137,
+        "w": 244,
+        "h": 327
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/danny-extra.png",
+      "sourceBounds": {
+        "x": 1164,
+        "y": 305,
+        "w": 209,
+        "h": 280
+      },
+      "componentBounds": {
+        "x": 1166,
+        "y": 307,
+        "w": 205,
+        "h": 276,
+        "area": 25496,
+        "row": 1,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1266,
+        "y": 583,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 20,
+      "name": "hook",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 75,
+        "y": 140,
+        "w": 305,
+        "h": 324
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/danny-extra.png",
+      "sourceBounds": {
+        "x": 24,
+        "y": 592,
+        "w": 261,
+        "h": 277
+      },
+      "componentBounds": {
+        "x": 26,
+        "y": 594,
+        "w": 257,
+        "h": 273,
+        "area": 30136,
+        "row": 2,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 148,
+        "y": 867,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 21,
+      "name": "uppercut",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 96,
+        "y": 124,
+        "w": 256,
+        "h": 340
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/danny-extra.png",
+      "sourceBounds": {
+        "x": 333,
+        "y": 581,
+        "w": 219,
+        "h": 291
+      },
+      "componentBounds": {
+        "x": 335,
+        "y": 583,
+        "w": 215,
+        "h": 287,
+        "area": 26895,
+        "row": 2,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 439,
+        "y": 870,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 22,
+      "name": "kick_chamber",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 172,
+        "y": 114,
+        "w": 211,
+        "h": 350
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/danny-extra.png",
+      "sourceBounds": {
+        "x": 612,
+        "y": 571,
+        "w": 181,
+        "h": 300
+      },
+      "componentBounds": {
+        "x": 614,
+        "y": 573,
+        "w": 177,
+        "h": 296,
+        "area": 25024,
+        "row": 2,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 653,
+        "y": 869,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 23,
+      "name": "kick_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 128,
+        "y": 115,
+        "w": 194,
+        "h": 349
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/danny-extra.png",
+      "sourceBounds": {
+        "x": 899,
+        "y": 572,
+        "w": 166,
+        "h": 299
+      },
+      "componentBounds": {
+        "x": 901,
+        "y": 574,
+        "w": 162,
+        "h": 295,
+        "area": 22413,
+        "row": 2,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 978,
+        "y": 869,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 24,
+      "name": "knee",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 145,
+        "y": 119,
+        "w": 272,
+        "h": 345
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/danny-extra.png",
+      "sourceBounds": {
+        "x": 1168,
+        "y": 576,
+        "w": 233,
+        "h": 295
+      },
+      "componentBounds": {
+        "x": 1170,
+        "y": 578,
+        "w": 229,
+        "h": 291,
+        "area": 25959,
+        "row": 2,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1232,
+        "y": 869,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 25,
+      "name": "low_block",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 101,
+        "y": 227,
+        "w": 227,
+        "h": 237
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/danny-extra.png",
+      "sourceBounds": {
+        "x": 41,
+        "y": 892,
+        "w": 194,
+        "h": 203
+      },
+      "componentBounds": {
+        "x": 43,
+        "y": 894,
+        "w": 190,
+        "h": 199,
+        "area": 23374,
+        "row": 3,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 143,
+        "y": 1093,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 26,
+      "name": "body_hit",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 107,
+        "y": 216,
+        "w": 204,
+        "h": 248
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/danny-extra.png",
+      "sourceBounds": {
+        "x": 309,
+        "y": 887,
+        "w": 175,
+        "h": 212
+      },
+      "componentBounds": {
+        "x": 311,
+        "y": 889,
+        "w": 171,
+        "h": 208,
+        "area": 20224,
+        "row": 3,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 406,
+        "y": 1097,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 27,
+      "name": "fall",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 39,
+        "y": 254,
+        "w": 362,
+        "h": 210
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/danny-extra.png",
+      "sourceBounds": {
+        "x": 520,
+        "y": 882,
+        "w": 310,
+        "h": 180
+      },
+      "componentBounds": {
+        "x": 522,
+        "y": 884,
+        "w": 306,
+        "h": 176,
+        "area": 26264,
+        "row": 3,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 675,
+        "y": 1060,
+        "method": "horizontal-center"
+      }
+    },
+    {
+      "index": 28,
+      "name": "ground",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 8,
+        "y": 352,
+        "w": 424,
+        "h": 112
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/danny-extra.png",
+      "sourceBounds": {
+        "x": 805,
+        "y": 1002,
+        "w": 363,
+        "h": 96
+      },
+      "componentBounds": {
+        "x": 807,
+        "y": 1004,
+        "w": 359,
+        "h": 92,
+        "area": 23093,
+        "row": 3,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 986.5,
+        "y": 1096,
+        "method": "horizontal-center"
+      }
+    },
+    {
+      "index": 29,
+      "name": "rise",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 113,
+        "y": 222,
+        "w": 231,
+        "h": 242
+      },
+      "scale": 1.1680440771349863,
+      "source": "sources/danny-extra.png",
+      "sourceBounds": {
+        "x": 1186,
+        "y": 889,
+        "w": 198,
+        "h": 207
+      },
+      "componentBounds": {
+        "x": 1188,
+        "y": 891,
+        "w": 194,
+        "h": 203,
+        "area": 24040,
+        "row": 3,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1278,
+        "y": 1094,
+        "method": "hip-band"
+      }
+    }
+  ],
+  "scales": {
+    "base": {
+      "scale": 0.954177897574124,
+      "referenceHeight": 371,
+      "targetHeight": 354
+    },
+    "extra": {
+      "scale": 1.1680440771349863,
+      "referenceHeight": 271,
+      "targetHeight": 354
+    },
+    "corrections": {
+      "scale": 0.31355181576616475,
+      "referenceHeight": 1129,
+      "targetHeight": 354
+    }
+  },
+  "sources": {
+    "base": {
+      "file": "sources/danny-base.png",
+      "sha256": "c7f5d6f480dc64a32948077ecb5997d508cf8ae746cdc7253c8d5dee17d385d6",
+      "width": 1983,
+      "height": 793,
+      "transparentFraction": 0.6718672397599011
+    },
+    "extra": {
+      "file": "sources/danny-extra.png",
+      "sha256": "e803857f7a2f5f6eeabadef145afb874df5149dee17cd7f8961dbabbc7c80d08",
+      "width": 1402,
+      "height": 1122,
+      "transparentFraction": 0.5863891919107158
+    },
+    "corrections": {
+      "file": "sources/danny-corrections.png",
+      "sha256": "933719442d27db9b6e6473d160e2b90b4fde6366e924909666ff85712925dcc0",
+      "width": 1338,
+      "height": 1176,
+      "transparentFraction": 0.7448324995169966
+    }
+  },
+  "files": {
+    "base": "danny/spritesheet.webp",
+    "baseMobile": "danny/spritesheet-mobile.webp",
+    "extra": "danny/extra-20.webp",
+    "extraMobile": "danny/extra-20-mobile.webp",
+    "portrait": "danny/portrait.webp",
+    "preview": "danny/contact-sheet.png"
+  },
+  "layoutHash": "10fea44b863f7512958ffc94530adfe01d11b7ed988be569ccaf7c14ffd6ac9b",
+  "qc": {
+    "reviewed": true,
+    "issues": [
+      {
+        "frame": 17,
+        "severity": "error",
+        "note": "Generated extra7 was an extended jab instead of a retracted recovery. Replaced with dedicated matching recovery sprite.",
+        "resolved": true
+      }
+    ],
+    "sharedScalePerStrip": true,
+    "preservedSourceAlpha": true
+  }
+}
