@@ -98,7 +98,7 @@ class Match {
     if (this.round === 1) { a.meter = 0; b.meter = 0; }
     a.x = 180; b.x = 780; a.state = b.state = 'intro';
     this.timer = 99; this.tick = 0; this.phase = 'intro'; this.pt = 0; this.proj = []; this.fx = []; this.finisher = null; this.winner = null; this.loser = null; this.dim = 0;
-    this.announce('RUNDE ' + this.round, 70, '#fff', 64); Snd.say('Runde ' + ['eins', 'zwei', 'drei', 'vier', 'fünf'][Math.min(this.round - 1, 4)]);
+    this.announce(localize("ROUND ") + this.round, 70, '#fff', 64); Snd.say(localize("Round ") + [localize("one"), localize("two"), localize("three"), localize("four"), localize("five")][Math.min(this.round - 1, 4)]);
   }
   announce(t, life = 60, col = '#fff', size = 60, sub) { this.banner = { t, life, max: life, col, size, sub }; }
   popText(x, y, t, col = '#fff', size = 22, life = 50) { this.texts.push({ x, y, t, col, size, life, max: life }); }
@@ -132,7 +132,7 @@ class Match {
     switch (this.phase) {
       case 'intro':
         for (const f of this.p) { const tx = f.side ? 620 : 340; f.x += (tx - f.x) * 0.06; f.state = 'walk'; this.animate(f); }
-        if (this.pt === 75) { this.announce('KÄMPFT!', 45, '#ffd23d', 80); Snd.say('Kämpft!'); }
+        if (this.pt === 75) { this.announce(localize("FIGHT!"), 45, '#ffd23d', 80); Snd.say(localize("Fight!")); }
         if (this.pt >= 95) { this.phase = 'play'; for (const f of this.p) f.state = 'idle'; }
         return;
       case 'play':
@@ -428,11 +428,11 @@ class Match {
   }
 
   resolveHit(A, B, h, px, py, isProj) {
-    if (this.phase === 'finishPrompt') { this.knockDown(B); B.invul = 999; Snd.hit(1); this.spark(px, py, true); this.phase = 'roundOver'; this.pt = 60; A.state = A.state === 'move' ? A.state : 'win'; A.winPose = 'cheer'; this.announce((A.c.name + ' ПЕЧЕЛИ').toUpperCase(), 100, '#ffd23d', 50, this.flawless ? 'MAKELLOS' : null); return; }
+    if (this.phase === 'finishPrompt') { this.knockDown(B); B.invul = 999; Snd.hit(1); this.spark(px, py, true); this.phase = 'roundOver'; this.pt = 60; A.state = A.state === 'move' ? A.state : 'win'; A.winPose = 'cheer'; this.announce((A.c.name + localize(" WINS")).toUpperCase(), 100, '#ffd23d', 50, this.flawless ? localize("FLAWLESS") : null); return; }
     // контра (Nadine)
     if (B.state === 'move' && B.move && B.move.special && B.move.special.type === 'counter' && !isProj) {
       const seg = B.mc.segs.find(s => B.mt > s.s && B.mt <= s.e);
-      if (seg && seg.ev === 'counter') { this.popText(B.x, GROUND - 180, 'KONTER!', '#60a5fa', 26); Snd.ok(); B.facing = A.x > B.x ? 1 : -1; this.startThrow(B, A, THROWS[B.move.special.throw], B.move.special.d); return; }
+      if (seg && seg.ev === 'counter') { this.popText(B.x, GROUND - 180, localize("COUNTER!"), '#60a5fa', 26); Snd.ok(); B.facing = A.x > B.x ? 1 : -1; this.startThrow(B, A, THROWS[B.move.special.throw], B.move.special.d); return; }
     }
     const blocking = (B.state === 'block' || B.state === 'cblock' || B.state === 'blockstun') && B.y === 0;
     const crouchB = B.state === 'cblock' || (B.state === 'blockstun' && B.wasCrouch);
@@ -448,22 +448,22 @@ class Match {
     }
     // броня
     if (B.state === 'move' && B.move && B.move.armor && B.mt >= B.move.armor[0] && B.mt <= B.move.armor[1] && B.armorHits < 1) {
-      B.armorHits++; this.damage(A, B, h.d * 0.5); B.flash = 6; this.hitstop = 6; Snd.block(); this.spark(px, py, false, '#ffffff'); this.popText(B.x, GROUND - 180, 'БРОНЯ', '#fff', 18); return;
+      B.armorHits++; this.damage(A, B, h.d * 0.5); B.flash = 6; this.hitstop = 6; Snd.block(); this.spark(px, py, false, '#ffffff'); this.popText(B.x, GROUND - 180, localize("ARMOR"), '#fff', 18); return;
     }
     if (h.superStart) { this.damage(A, B, h.d); this.startSuper(A, B); Snd.hit(1); this.spark(px, py, true, A.c.sup.color); return; }
     const counterHit = B.state === 'move' && B.mt < 10 && B.move && !B.move.air;
     const scale = Math.max(0.35, 1 - B.comboHits * 0.1);
     const dmg = this.damage(A, B, h.d * scale * (counterHit ? 1.2 : 1));
-    if (counterHit) this.popText(B.x, GROUND - 190, 'КОНТРА', '#ff5a5a', 20);
+    if (counterHit) this.popText(B.x, GROUND - 190, localize("COUNTER"), '#ff5a5a', 20);
     B.comboHits++; B.move = null; B.lying = false;
-    if (B.comboHits >= 2) this.popText(A.side ? 820 : 140, 170, B.comboHits + ' УДАРА', '#ffd23d', 30 + Math.min(20, B.comboHits * 2), 50);
+    if (B.comboHits >= 2) this.popText(A.side ? 820 : 140, 170, B.comboHits + localize(" HITS"), '#ffd23d', 30 + Math.min(20, B.comboHits * 2), 50);
     if (h.steal) { const s = Math.min(B.meter, 70); B.meter -= s; A.meter = Math.min(1000, A.meter + s); }
     const big = h.d >= 60;
     this.hitstop = h.special ? 11 : big ? 10 : 4; B.flash = big ? 3 : 2;
     Snd.hit(big ? 1 : 0.3); this.spark(px, py, big,undefined,{power:B.hp<=0?4:h.special?3:big?2:1,facing:A.facing});
     if (B.hp <= 0) { B.state = 'air'; B.st = 0; B.vy = 10; B.vx = 6 * A.facing; B.y = Math.max(B.y, 1); this.onKO(A, B); return; }
     if (h.pull) { B.x = clamp(A.x + A.facing * 72, LEFT, RIGHT); B.state = 'hit'; B.st = 0; B.hitstun = h.st; B.vx = 0; B.rot = 0; return; }
-    if (h.stun && !B.stunUsed && B.y === 0) { B.stunUsed = true; B.state = 'dizzy'; B.st = 0; B.hitstun = h.stun; B.vx = 0; this.popText(B.x, GROUND - 190, 'ЗАМАЯН', '#facc15', 20); return; }
+    if (h.stun && !B.stunUsed && B.y === 0) { B.stunUsed = true; B.state = 'dizzy'; B.st = 0; B.hitstun = h.stun; B.vx = 0; this.popText(B.x, GROUND - 190, localize("STUNNED"), '#facc15', 20); return; }
     if (h.launch || h.kd || B.y > 0 || B.state === 'air') {
       B.state = 'air'; B.st = 0; B.juggle++;
       B.vy = B.juggle > 4 ? 2 : (h.launch || (B.y > 0 ? 6 : 7)); B.vx = A.facing * (h.kb * 0.5 + 1.5); B.y = Math.max(B.y, 1);
@@ -538,7 +538,7 @@ class Match {
   }
   timeOver() {
     const [a, b] = this.p;
-    this.announce('ВРЕМЕТО ИЗТЕЧЕ', 70, '#fff', 54);
+    this.announce(localize("TIME UP"), 70, '#fff', 54);
     if (a.hp === b.hp) { this.phase = 'roundOver'; this.pt = 0; a.state = b.state = 'idle'; return; }
     const A = a.hp > b.hp ? a : b, B = A === a ? b : a;
     this.winner = A; this.loser = B; this.phase = 'ko'; this.pt = 0; B.state = 'air'; B.vy = 4; B.y = 1; B.vx = 0;
@@ -552,12 +552,12 @@ class Match {
       this.phase = 'finishPrompt'; this.pt = 0;
       B.state = 'dizzy'; B.lying = false; B.rot = 0; B.y = 0; B.vx = 0; B.invul = 0; B.hp = Math.max(B.hp, 0);
       if (A.state !== 'move') A.state = 'idle';
-      this.announce(B.c.sex === 'f' ? 'ERLEDIGE SIE!' : 'ERLEDIGE IHN!', 110, '#ff3b3b', 64);
-      Snd.say(B.c.sex === 'f' ? 'Erledige sie!' : 'Erledige ihn!');
+      this.announce(B.c.sex === 'f' ? localize("FINISH HER!") : localize("FINISH HIM!"), 110, '#ff3b3b', 64);
+      Snd.say(B.c.sex === 'f' ? localize("Finish her!") : localize("Finish him!"));
       this.finHintShown = true;
     } else {
       this.phase = 'roundOver'; this.pt = 0; A.state = 'win'; A.winPose = pick(['cheer', 'flex', 'point']);
-      this.announce((A.c.name + ' ПЕЧЕЛИ').toUpperCase(), 100, '#ffd23d', 50, this.flawless ? 'MAKELLOS' : null);
+      this.announce((A.c.name + localize(" WINS")).toUpperCase(), 100, '#ffd23d', 50, this.flawless ? localize("FLAWLESS") : null);
     }
   }
   finishPromptUpdate() {
@@ -565,17 +565,17 @@ class Match {
     if (B.state !== 'down') B.state = 'dizzy';
     // CPU извършва финала сам
     if (A.ctrl.type !== 'human') { if (this.pt > 70 && Math.abs(A.x - B.x) < 200 && this.cpuFinish !== false) { if (this.cpuFinish == null) this.cpuFinish = Math.random() < 0.8; if (this.cpuFinish) return this.startFinisher(); } }
-    if (A.input.fin) { if (Math.abs(A.x - B.x) < 220) return this.startFinisher(); this.popText(A.x, GROUND - 190, 'ПО-БЛИЗО!', '#fff', 20, 30); }
+    if (A.input.fin) { if (Math.abs(A.x - B.x) < 220) return this.startFinisher(); this.popText(A.x, GROUND - 190, localize("GET CLOSER!"), '#fff', 20, 30); }
     // всеки удар събаря
     if (B.state === 'air' || B.hp <= -1) { }
-    if (this.pt > 330) { this.knockDown(B); this.phase = 'roundOver'; this.pt = 60; A.state = 'win'; A.winPose = 'cheer'; this.announce((A.c.name + ' ПЕЧЕЛИ').toUpperCase(), 100, '#ffd23d', 50, this.flawless ? 'MAKELLOS' : null); }
+    if (this.pt > 330) { this.knockDown(B); this.phase = 'roundOver'; this.pt = 60; A.state = 'win'; A.winPose = 'cheer'; this.announce((A.c.name + localize(" WINS")).toUpperCase(), 100, '#ffd23d', 50, this.flawless ? localize("FLAWLESS") : null); }
   }
   checkFinisherCode(f, btn) {
     const code = f.c.code, h = f.dirHist.filter(e => this.T - e.t < 70).map(e => e.d);
     const need = code.slice(0, 3).join('');
     const ok = btn === code[3] && h.slice(-3).join('') === need;
     if (!ok) return false;
-    if (Math.abs(f.x - this.loser.x) > 220) { this.popText(f.x, GROUND - 190, 'ПО-БЛИЗО!', '#fff', 20, 30); return true; }
+    if (Math.abs(f.x - this.loser.x) > 220) { this.popText(f.x, GROUND - 190, localize("GET CLOSER!"), '#fff', 20, 30); return true; }
     this.startFinisher(); return true;
   }
   startFinisher() {
@@ -705,7 +705,7 @@ class Match {
       const my = H - 30, mw = 200, mx = flip ? W - 24 - mw : 24;
       ctx.fillStyle = '#0b0b0f'; ctx.fillRect(mx - 2, my - 2, mw + 4, 14);
       ctx.fillStyle = f.meter >= 1000 ? (this.T % 16 < 8 ? '#60f0ff' : '#ffffff') : '#2b6ee8'; ctx.fillRect(flip ? mx + mw - mw * f.meter / 1000 : mx, my, mw * f.meter / 1000, 10);
-      outlineText(ctx, f.meter >= 1000 ? 'СУПЕР ГОТОВ  ↓ + СПЕЦ' : 'ЕНЕРГИЯ', flip ? mx + mw : mx, my - 12, 12, f.meter >= 1000 ? '#60f0ff' : '#cbd5e1', flip ? 'right' : 'left');
+      outlineText(ctx, f.meter >= 1000 ? localize("SUPER READY  ↓ + SPECIAL") : localize("ENERGY"), flip ? mx + mw : mx, my - 12, 12, f.meter >= 1000 ? '#60f0ff' : '#cbd5e1', flip ? 'right' : 'left');
     };
     bar(a, 24, false); bar(b, W - 24 - 380, true);
     // таймер
@@ -720,8 +720,8 @@ class Match {
       ctx.restore();
     }
     if (this.phase === 'finishPrompt' && this.winner.ctrl.type === 'human') {
-      const c = this.winner.c, arrows = { D: '↓', F: '→', B: '←', U: '↑' }, btn = { lp: 'УДАР', hp: 'СИЛЕН УДАР', lk: 'РИТНИК', hk: 'СИЛЕН РИТНИК' };
-      const txt = 'ФИНАЛ „' + c.finName + '“:  ' + c.code.slice(0, 3).map(d => arrows[d]).join(' ') + ' + ' + btn[c.code[3]];
+      const c = this.winner.c, arrows = { D: '↓', F: '→', B: '←', U: '↑' }, btn = { lp: localize("PUNCH"), hp: localize("HEAVY PUNCH"), lk: localize("KICK"), hk: localize("HEAVY KICK") };
+      const txt = localize("FINISHER “") + c.finName + '“:  ' + c.code.slice(0, 3).map(d => arrows[d]).join(' ') + ' + ' + btn[c.code[3]];
       ctx.fillStyle = 'rgba(0,0,0,0.6)'; ctx.fillRect(W / 2 - 300, 300, 600, 34);
       outlineText(ctx, txt, W / 2, 317, 18, '#ffd23d');
       const tleft = Math.max(0, Math.ceil((330 - this.pt) / 60));
@@ -729,7 +729,7 @@ class Match {
     }
     if (this.phase === 'finisher' && this.finisher.t > this.finisher.def.dur - 110) {
       const k = clamp((this.finisher.t - (this.finisher.def.dur - 110)) / 20, 0, 1);
-      ctx.save(); ctx.globalAlpha = k; outlineText(ctx, 'FINALE', W / 2, 140, 70, '#ff3b3b', 'center', 8); outlineText(ctx, '„' + this.winner.c.finName + '“', W / 2, 196, 34, '#fff', 'center', 6); ctx.restore();
+      ctx.save(); ctx.globalAlpha = k; outlineText(ctx, localize("FINISHER"), W / 2, 140, 70, '#ff3b3b', 'center', 8); outlineText(ctx, '„' + this.winner.c.finName + '“', W / 2, 196, 34, '#fff', 'center', 6); ctx.restore();
     }
   }
 }

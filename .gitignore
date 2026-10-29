@@ -3,3 +3,4 @@
 *.zip
 .claude/
 node_modules/
+backups/

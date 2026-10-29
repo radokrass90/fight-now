@@ -3,7 +3,7 @@ const {createCanvas,Image}=require('@napi-rs/canvas');const root=path.resolve(__
 class GameImage extends Image{set src(value){super.src=fs.readFileSync(path.join(root,value));}get src(){return super.src;}}
 function setup(reduced=false){const sb={console,Image:GameImage,matchMedia:()=>({matches:reduced}),Snd:new Proxy({},{get:()=>()=>{}}),localStorage:{getItem(){return null;},setItem(){}},Math};vm.createContext(sb);
  const core=fs.readFileSync(root+'/js/core.js','utf8').split('// ---------- синтезирани')[0];vm.runInContext(core,sb);
- for(const file of ['data','render','combat-fx','fight'])vm.runInContext(fs.readFileSync(root+'/js/'+file+'.js','utf8'),sb);return sb;}
+ for(const file of ['i18n','language','data','render','combat-fx','fight'])vm.runInContext(fs.readFileSync(root+'/js/'+file+'.js','utf8'),sb);return sb;}
 (async()=>{
  const sb=setup();await new Promise(r=>setTimeout(r,20));
  vm.runInContext(`

@@ -54,11 +54,19 @@ function handleClicks(inp) {
   return false;
 }
 function bg(i) { drawArenaBack(ctx, i, G.T); ctx.fillStyle = 'rgba(8,6,12,0.72)'; ctx.fillRect(0, 0, W, H); }
-function txt(t, x, y, size, col = '#fff', align = 'center', font = FONT_D) { ctx.font = size + 'px ' + font; ctx.textAlign = align; ctx.textBaseline = 'middle'; ctx.fillStyle = col; ctx.fillText(t, x, y); }
+function txt(t, x, y, size, col = '#fff', align = 'center', font = FONT_D, limit) { ctx.font = size + 'px ' + font; ctx.textAlign = align; ctx.textBaseline = 'middle'; ctx.fillStyle = col; const maxWidth=align==='left'?W-x-16:align==='right'?x-16:2*Math.min(x-16,W-x-16);ctx.fillText(t, x, y,Math.max(20,Math.min(maxWidth,limit||Infinity))); }
 function wrapText(t, x, y, maxW, lh, size, col) {
-  ctx.font = size + 'px ' + FONT_B; ctx.fillStyle = col; ctx.textAlign = 'left'; ctx.textBaseline = 'top';
-  let line = '', yy = y; for (const w of t.split(' ')) { const test = line ? line + ' ' + w : w; if (ctx.measureText(test).width > maxW && line) { ctx.fillText(line, x, yy); line = w; yy += lh; } else line = test; }
-  if (line) ctx.fillText(line, x, yy); return yy + lh;
+  // Fit longer translated biographies into their 60 px panel space.
+  let lines=[];
+  for(;;){
+    ctx.font=size+'px '+FONT_B;lines=[];let line='';
+    for(const word of t.split(' ')){const next=line?line+' '+word:word;if(line&&ctx.measureText(next).width>maxW){lines.push(line);line=word;}else line=next;}
+    if(line)lines.push(line);
+    if(lines.length*lh<=60||size<=8.5)break;
+    size-=.5;lh=size+2;
+  }
+  ctx.fillStyle=col;ctx.textAlign='left';ctx.textBaseline='top';
+  lines.forEach((line,i)=>ctx.fillText(line,x,y+i*lh,maxW));return y+lines.length*lh;
 }
 function menuList(items, x, y, gap, inp, size = 28) {
   if (inp.up) { G.sel = (G.sel + items.length - 1) % items.length; Snd.ui(); }
@@ -74,7 +82,7 @@ function menuList(items, x, y, gap, inp, size = 28) {
   if (inp.ok) { Snd.ok(); items[G.sel].fn(); }
 }
 function go(screen) { touchControls.reset(); MenuIn.clicks.length=0; G.screen = screen; G.sel = 0; G.T0 = G.T; if (!['fight', 'result'].includes(screen)) Snd.stopMusic(); fit(); }
-const DIFF_NAMES = { easy: 'ЛЕСНО', normal: 'НОРМАЛНО', hard: 'ТРУДНО' };
+const DIFF_NAMES = { easy: localize("EASY"), normal: localize("NORMAL"), hard: localize("HARD") };
 
 // ---------- екрани ----------
 function titleScreen(inp) {
@@ -83,40 +91,40 @@ function titleScreen(inp) {
   ctx.save(); ctx.translate(W / 2, 112); ctx.rotate(-0.03);
   outlineText(ctx, 'FIGHT NOW', 0, 0, 92, '#ffd23d', 'center', 12);
   ctx.restore();
-  outlineText(ctx, 'STRASSEN VON DEUTSCHLAND', W / 2, 172, 22, '#ff4f7b', 'center', 5);
+  outlineText(ctx, localize("STREETS OF GERMANY"), W / 2, 172, 22, '#ff4f7b', 'center', 5);
   // въртящи се бойци
   const a = CHARS[(G.T / 180 | 0) % 15], b = CHARS[((G.T / 180 | 0) + 7) % 15];
   drawPortrait(ctx, a, 30, 200, 240, 300, 2.4, 1); drawPortrait(ctx, b, W - 270, 200, 240, 300, 2.4, -1);
   menuList([
-    { t: 'АРКАДА', sub: '7 боя из кварталите на Германия', fn: () => { G.mode = 'arcade'; startSelect(); } },
-    { t: 'СРЕЩУ КОМПЮТЪРА', sub: 'Избери себе си, противник и квартал', fn: () => { G.mode = 'versus'; startSelect(); } },
-    { t: '2 ИГРАЧА', sub: 'Двама на една клавиатура (или геймпади)', fn: () => { G.mode = 'pvp'; startSelect(); } },
-    { t: 'ТРЕНИРОВКА', sub: 'Безкраен живот — пробвай ударите', fn: () => { G.mode = 'training'; startSelect(); } },
-    { t: 'КОНТРОЛИ', fn: () => go('controls') },
-    { t: 'ТРУДНОСТ: ' + DIFF_NAMES[G.diff], fn: () => { G.diff = { easy: 'normal', normal: 'hard', hard: 'easy' }[G.diff]; store.set('diff', G.diff); } },
-    { t: 'ЗВУК: ' + (Snd.on ? 'ДА' : 'НЕ') + '   МУЗИКА: ' + (Snd.musicOn ? 'ДА' : 'НЕ'), fn: () => { if (!Snd.on) Snd.toggle(); else if (Snd.musicOn) Snd.toggleMusic(); else { Snd.toggle(); Snd.toggleMusic(); } } }
+    { t: localize("ARCADE"), sub: localize("7 fights through Germany's neighborhoods"), fn: () => { G.mode = 'arcade'; startSelect(); } },
+    { t: localize("VS COMPUTER"), sub: localize("Pick your fighter, opponent and neighborhood"), fn: () => { G.mode = 'versus'; startSelect(); } },
+    { t: localize("2 PLAYERS"), sub: localize("Two players, one keyboard (or gamepads)"), fn: () => { G.mode = 'pvp'; startSelect(); } },
+    { t: localize("TRAINING"), sub: localize("Unlimited health — try every move"), fn: () => { G.mode = 'training'; startSelect(); } },
+    { t: localize("CONTROLS"), fn: () => go('controls') },
+    { t: localize("DIFFICULTY: ") + DIFF_NAMES[G.diff], fn: () => { G.diff = { easy: 'normal', normal: 'hard', hard: 'easy' }[G.diff]; store.set('diff', G.diff); } },
+    { t: localize("SOUND: ") + (Snd.on ? localize("ON") : localize("OFF")) + localize("   MUSIC: ") + (Snd.musicOn ? localize("ON") : localize("OFF")), fn: () => { if (!Snd.on) Snd.toggle(); else if (Snd.musicOn) Snd.toggleMusic(); else { Snd.toggle(); Snd.toggleMusic(); } } }
   ], W / 2, 236, 40, inp, 24);
-  txt('Без кръв. Само улица.', W / 2, H - 18, 13, '#a8a29e', 'center', FONT_B);
+  txt(localize("No blood. Just the streets."), W / 2, H - 18, 13, '#a8a29e', 'center', FONT_B);
 }
 
 function controlsScreen(inp) {
   bg(9);
-  outlineText(ctx, 'КОНТРОЛИ', W / 2, 46, 40, '#ffd23d');
+  outlineText(ctx, localize("CONTROLS"), W / 2, 46, 40, '#ffd23d');
   const rows = [
-    ['', 'САМ (срещу CPU)', 'ИГРАЧ 1 (2 играчи)', 'ИГРАЧ 2'],
-    ['Движение', 'W A S D  или стрелки', 'W A S D', 'Стрелки'],
-    ['Удар', 'J', 'F', 'K  /  Num4'],
-    ['Силен удар', 'I', 'G', 'L  /  Num5'],
-    ['Ритник', 'K', 'V', ',  /  Num1'],
-    ['Силен ритник', 'O', 'B', '.  /  Num2'],
-    ['Блок', 'L  или  Shift', 'H', '/  /  Num3'],
-    ['Специален', 'U  или  Space', 'T', 'O  /  Num6'],
-    ['Пауза', 'Esc  или  P', '', '']
+    ['', localize("SOLO (vs CPU)"), localize("PLAYER 1 (2 players)"), localize("PLAYER 2")],
+    [localize("Movement"), localize("W A S D  or arrows"), 'W A S D', localize("Arrow keys")],
+    [localize("Punch"), 'J', 'F', 'K  /  Num4'],
+    [localize("Heavy punch"), 'I', 'G', 'L  /  Num5'],
+    [localize("Kick"), 'K', 'V', ',  /  Num1'],
+    [localize("Heavy kick"), 'O', 'B', '.  /  Num2'],
+    [localize("Block"), localize("L  or  Shift"), 'H', '/  /  Num3'],
+    [localize("Special"), localize("U  or  Space"), 'T', 'O  /  Num6'],
+    [localize("Pause"), localize("Esc  or  P"), '', '']
   ];
   rows.forEach((r, i) => r.forEach((c, j) => txt(c, [150, 370, 600, 810][j], 100 + i * 32, i === 0 ? 15 : 16, i === 0 ? '#ffd23d' : j === 0 ? '#d6d0c4' : '#fff', 'center', i === 0 || j === 0 ? FONT_D : FONT_B)));
-  const tips = ['→ + Силен удар отблизо = хвърляне.  → + Силен удар отдалеч = специален удар на стила.', 'Спец = първи специален.  ← или → + Спец = втори.  ↓ + Спец с пълна енергия = СУПЕР.', 'Удари се свързват в комбо, ако първият попадне.  ↓ + Силен удар = ъперкът (вдига във въздуха).', 'Телефон: джойстик вляво, бутони вдясно. Геймпад: стандартна подредба.', 'След втората победа: „ERLEDIGE IHN!“ — въведи кода за ФИНАЛ (виж списъка с удари).'];
+  const tips = [localize("→ + Heavy punch up close = throw. At range = your style's unique strike."), localize("Special = first special. ← / → + Special = second. ↓ + Special at full energy = SUPER."), localize("Chain moves into combos after a hit. ↓ + Heavy punch = uppercut (launches)."), localize("Phone: stick on the left, buttons on the right. Gamepad: standard layout."), localize("After your second win: FINISH THEM! Enter the finisher code from the move list.")];
   tips.forEach((t, i) => txt(t, W / 2, 404 + i * 24, 14, '#e7e2d8', 'center', FONT_B));
-  menuList([{ t: 'НАЗАД', fn: () => go('title') }], W / 2, H - 22, 40, inp, 20);
+  menuList([{ t: localize("BACK"), fn: () => go('title') }], W / 2, H - 22, 40, inp, 20);
   if (inp.back) go('title');
 }
 
@@ -125,7 +133,7 @@ function startSelect() { go('select'); G.ready = [false, false]; G.selStep = 0; 
 function selectScreen(inp) {
   bg(4);
   const pvp = G.mode === 'pvp', step2 = !pvp && G.selStep === 1 && G.mode !== 'arcade';
-  outlineText(ctx, pvp ? 'ИЗБЕРЕТЕ БОЙЦИ' : step2 ? 'ИЗБЕРИ ПРОТИВНИК' : 'ИЗБЕРИ БОЕЦ', W / 2, 36, 32, '#ffd23d');
+  outlineText(ctx, pvp ? localize("SELECT FIGHTERS") : step2 ? localize("SELECT OPPONENT") : localize("SELECT FIGHTER"), W / 2, 36, 32, '#ffd23d');
   const gx = 232, gy = 70, cw = 98, ch = 104, cols = 5;
   const moveCur = (i, dx, dy) => { let c = G.pick[i] % cols + dx, r = (G.pick[i] / cols | 0) + dy; c = (c + cols) % cols; r = (r + 3) % 3; G.pick[i] = r * cols + c; Snd.ui(); };
   const active = step2 ? 1 : 0;
@@ -155,27 +163,27 @@ function selectScreen(inp) {
     outlineText(ctx, c.name.toUpperCase(), x + 107, 270, 24, '#fff');
     txt('„' + c.nick + '“  ·  ' + ARENAS[c.home].city, x + 107, 292, 11, '#d6d0c4', 'center', FONT_B);
     txt(STYLE_NAMES[c.style], x + 107, 310, 12, col, 'center', FONT_D);
-    [['СИЛА', c.str], ['СКОРОСТ', c.spd], ['ТЕХНИКА', c.tec], ['ИЗДРЪЖЛИВОСТ', c.end]].forEach(([n, v], k) => {
+    [[localize("POWER"), c.str], [localize("SPEED"), c.spd], [localize("TECHNIQUE"), c.tec], [localize("ENDURANCE"), c.end]].forEach(([n, v], k) => {
       const y = 330 + k * 18; txt(n, x + 12, y, 11, '#cbd5e1', 'left', FONT_B); ctx.fillStyle = '#2a2633'; ctx.fillRect(x + 104, y - 5, 100, 10); ctx.fillStyle = col; ctx.fillRect(x + 104, y - 5, v * 10, 10);
     });
     wrapText(c.bio, x + 12, 404, 190, 15, 11.5, '#e7e2d8');
-    txt('СПЕЦ: ' + c.sp1.name, x + 12, 470, 11, '#ffd23d', 'left', FONT_B);
-    txt('←/→ + СПЕЦ: ' + c.sp2.name, x + 12, 486, 11, '#ffd23d', 'left', FONT_B);
-    txt('ФИНАЛ: ' + c.finName, x + 12, 502, 11, '#ff6b6b', 'left', FONT_B);
+    txt(localize("SPECIAL: ") + c.sp1.name, x + 12, 470, 11, '#ffd23d', 'left', FONT_B, 190);
+    txt(localize("←/→ + SPECIAL: ") + c.sp2.name, x + 12, 486, 11, '#ffd23d', 'left', FONT_B, 190);
+    txt(localize("FINISHER: ") + c.finName, x + 12, 502, 11, '#ff6b6b', 'left', FONT_B, 190);
   };
-  panel(0, 10, '#3b82f6', pvp ? 'ИГРАЧ 1' : 'ТИ');
-  if (pvp || G.selStep === 1) panel(1, W - 224, '#ef4444', pvp ? 'ИГРАЧ 2' : 'ПРОТИВНИК');
-  else { ctx.fillStyle = 'rgba(12,10,18,0.85)'; ctx.fillRect(W - 224, 66, 214, 452); txt(G.mode === 'arcade' ? '7 противника' : 'Следва: противник', W - 117, 260, 15, '#d6d0c4', 'center', FONT_B); txt(G.mode === 'arcade' ? 'чакат по кварталите' : '', W - 117, 282, 15, '#d6d0c4', 'center', FONT_B); }
+  panel(0, 10, '#3b82f6', pvp ? localize("PLAYER 1") : localize("YOU"));
+  if (pvp || G.selStep === 1) panel(1, W - 224, '#ef4444', pvp ? localize("PLAYER 2") : localize("OPPONENT"));
+  else { ctx.fillStyle = 'rgba(12,10,18,0.85)'; ctx.fillRect(W - 224, 66, 214, 452); txt(G.mode === 'arcade' ? localize("7 opponents") : localize("Next: opponent"), W - 117, 260, 15, '#d6d0c4', 'center', FONT_B); txt(G.mode === 'arcade' ? localize("waiting in the neighborhoods") : '', W - 117, 282, 15, '#d6d0c4', 'center', FONT_B); }
   const helpY = 404;
   ctx.fillStyle = 'rgba(12,10,18,0.85)'; ctx.fillRect(232, helpY - 14, 484, 114);
   const c = CHARS[G.pick[active]], h = ARENAS[c.home];
-  txt('Квартал: ' + h.name + ' (' + h.city + ')', 474, helpY + 4, 14, '#fff', 'center', FONT_B);
-  txt(pvp ? 'Играч 1: WASD + F   ·   Играч 2: стрелки + K' : 'Стрелки/WASD за избор, Enter или клик за потвърждение', 474, helpY + 28, 12, '#a8a29e', 'center', FONT_B);
+  txt(localize("Neighborhood: ") + h.name + ' (' + h.city + ')', 474, helpY + 4, 14, '#fff', 'center', FONT_B);
+  txt(pvp ? localize("Player 1: WASD + F   ·   Player 2: arrows + K") : localize("Arrows/WASD to select, Enter or click to confirm"), 474, helpY + 28, 12, '#a8a29e', 'center', FONT_B);
   // бутони
   const btn = (t, x, y, w, fn, col = '#ffd23d') => { ctx.fillStyle = col; ctx.fillRect(x, y, w, 34); txt(t, x + w / 2, y + 18, 15, '#0b0b0f'); region(x, y, w, 34, fn); };
-  btn('НАЗАД', 250, helpY + 48, 130, () => { if (G.selStep === 1) G.selStep = 0; else go('title'); }, '#a8a29e');
-  btn('СПИСЪК С УДАРИ', 392, helpY + 48, 170, () => { G.moveFor = CHARS[G.pick[active]]; G.moveBack = 'select'; go('moves'); }, '#e7e2d8');
-  btn(pvp ? 'НАПРЕД' : 'ИЗБЕРИ', 574, helpY + 48, 130, () => { if (pvp) { G.ready = [true, true]; } else confirmPick(); });
+  btn(localize("BACK"), 250, helpY + 48, 130, () => { if (G.selStep === 1) G.selStep = 0; else go('title'); }, '#a8a29e');
+  btn(localize("MOVE LIST"), 392, helpY + 48, 170, () => { G.moveFor = CHARS[G.pick[active]]; G.moveBack = 'select'; go('moves'); }, '#e7e2d8');
+  btn(pvp ? localize("NEXT") : localize("SELECT"), 574, helpY + 48, 130, () => { if (pvp) { G.ready = [true, true]; } else confirmPick(); });
   if (inp.back) { if (G.selStep === 1) G.selStep = 0; else go('title'); }
   if (pvp && G.ready[0] && G.ready[1]) { G.ready = [false, false]; go('stage'); }
 }
@@ -188,7 +196,7 @@ function confirmPick() {
 
 function stageScreen(inp) {
   bg(G.arena >= 0 ? G.arena : 0);
-  outlineText(ctx, 'ИЗБЕРИ КВАРТАЛ', W / 2, 36, 32, '#ffd23d');
+  outlineText(ctx, localize("SELECT NEIGHBORHOOD"), W / 2, 36, 32, '#ffd23d');
   const cols = 5, cw = 180, ch = 120, gx = (W - cols * cw) / 2 + 4, gy = 66;
   const n = ARENAS.length;
   if (G.stageCur == null) G.stageCur = CHARS[G.pick[1]].home;
@@ -203,11 +211,11 @@ function stageScreen(inp) {
     region(x, y, cw - 10, ch - 6, () => { if (G.stageCur === i) startFight(i); else { G.stageCur = i; Snd.ui(); } });
   }
   const a = ARENAS[G.stageCur], owner = CHARS.find(c => c.home === G.stageCur);
-  txt(a.name + ' — ' + a.city + '   ·   квартал на ' + owner.full, W / 2, 448, 15, '#fff', 'center', FONT_B);
+  txt(a.name + ' — ' + a.city + localize("   ·   home of ") + owner.full, W / 2, 448, 15, '#fff', 'center', FONT_B);
   const btn = (t, x, w, fn, col = '#ffd23d') => { ctx.fillStyle = col; ctx.fillRect(x, 474, w, 36); txt(t, x + w / 2, 493, 16, '#0b0b0f'); region(x, 474, w, 36, fn); };
-  btn('НАЗАД', W / 2 - 290, 160, () => { G.stageCur = null; startSelect(); }, '#a8a29e');
-  btn('СЛУЧАЕН', W / 2 - 110, 200, () => startFight(Math.random() * n | 0), '#e7e2d8');
-  btn('БИЙ СЕ!', W / 2 + 110, 180, () => startFight(G.stageCur));
+  btn(localize("BACK"), W / 2 - 290, 160, () => { G.stageCur = null; startSelect(); }, '#a8a29e');
+  btn(localize("RANDOM"), W / 2 - 110, 200, () => startFight(Math.random() * n | 0), '#e7e2d8');
+  btn(localize("FIGHT!"), W / 2 + 110, 180, () => startFight(G.stageCur));
   if (inp.ok) startFight(G.stageCur);
   if (inp.back) { G.stageCur = null; startSelect(); }
 }
@@ -245,8 +253,8 @@ function vsScreen(inp) {
   outlineText(ctx, o.c1.full.toUpperCase(), 220, 470, 22, '#fff'); outlineText(ctx, o.c2.full.toUpperCase(), W - 220, 470, 22, '#fff');
   const s = 1 + Math.max(0, 1 - (t - 20) / 12) * 2; ctx.save(); ctx.translate(W / 2, H / 2); ctx.scale(s, s); outlineText(ctx, 'VS', 0, 0, 90, '#ffd23d', 'center', 10); ctx.restore();
   txt(ARENAS[o.arena].name.toUpperCase() + ' · ' + ARENAS[o.arena].city, W / 2, H - 30, 16, '#fff', 'center', FONT_B);
-  if (G.mode === 'arcade') txt('БОЙ ' + (G.arcade.i + 1) + ' / 7', W / 2, 40, 22, '#ffd23d');
-  if(!G.assetsReady)txt('ЗАРЕЖДАНЕ НА БОЙЦИТЕ…',W/2,40,18,'#ffd23d');
+  if (G.mode === 'arcade') txt(localize("FIGHT ") + (G.arcade.i + 1) + ' / 7', W / 2, 40, 22, '#ffd23d');
+  if(!G.assetsReady)txt(localize("LOADING FIGHTERS…"),W/2,40,18,'#ffd23d');
   if (G.assetsReady && (t > 150 || (t > 30 && (inp.ok || inp.click)))) { G.match = new Match(o); go('fight'); Snd.startMusic(o.arena); }
 }
 
@@ -267,16 +275,16 @@ function fightScreen(inp) {
   finBtn.hidden = !showFin;
   if (m.paused) {
     ctx.fillStyle = 'rgba(0,0,0,0.7)'; ctx.fillRect(0, 0, W, H);
-    outlineText(ctx, 'ПАУЗА', W / 2, 110, 54, '#ffd23d');
+    outlineText(ctx, localize("PAUSED"), W / 2, 110, 54, '#ffd23d');
     txt(BattleMusic.title, W / 2, 154, 16, '#a8a29e', 'center', FONT_B);
     menuList([
-      { t: 'ПРОДЪЛЖИ', fn: () => togglePause() },
-      { t: 'СПИСЪК С УДАРИ', fn: () => { G.moveFor = m.p[0].c; G.moveBack = 'fight'; G.screen = 'moves'; } },
-      { t: 'РЕСТАРТ', fn: () => { G.match = new Match(G.matchOpts); } },
-      { t: 'МУЗИКА: ' + (Snd.musicOn ? 'ДА' : 'НЕ'), fn: () => Snd.toggleMusic() },
-      { t: 'ЕФЕКТИ: ' + (CombatFX.full ? 'СИЛНИ' : 'ЛЕКИ'), fn: () => CombatFX.toggle() },
-      { t: 'ДРУГ БОЕЦ', fn: () => { Snd.stopMusic(); startSelect(); } },
-      { t: 'ГЛАВНО МЕНЮ', fn: () => { Snd.stopMusic(); go('title'); } }
+      { t: localize("RESUME"), fn: () => togglePause() },
+      { t: localize("MOVE LIST"), fn: () => { G.moveFor = m.p[0].c; G.moveBack = 'fight'; G.screen = 'moves'; } },
+      { t: localize("RESTART"), fn: () => { G.match = new Match(G.matchOpts); } },
+      { t: localize("MUSIC: ") + (Snd.musicOn ? localize("ON") : localize("OFF")), fn: () => Snd.toggleMusic() },
+      { t: localize("EFFECTS: ") + (CombatFX.full ? localize("STRONG") : localize("LIGHT")), fn: () => CombatFX.toggle() },
+      { t: localize("CHANGE FIGHTER"), fn: () => { Snd.stopMusic(); startSelect(); } },
+      { t: localize("MAIN MENU"), fn: () => { Snd.stopMusic(); go('title'); } }
     ], W / 2, 200, 52, inp, 26);
     return;
   }
@@ -288,18 +296,18 @@ function resultScreen(inp) {
   m.T++; m.draw(ctx);
   ctx.fillStyle = 'rgba(0,0,0,' + Math.min(0.7, t / 40) + ')'; ctx.fillRect(0, 0, W, H);
   const won = r.winner.side === 0 || G.mode === 'pvp';
-  outlineText(ctx, (r.winner.c.name + ' ПЕЧЕЛИ').toUpperCase(), W / 2, 90, 52, '#ffd23d');
-  if (r.finisher) outlineText(ctx, 'FINALE: „' + r.winner.c.finName + '“', W / 2, 146, 26, '#ff4f4f');
-  else if (r.flawless) outlineText(ctx, 'MAKELLOS', W / 2, 146, 26, '#9dff6a');
+  outlineText(ctx, (r.winner.c.name + localize(" WINS")).toUpperCase(), W / 2, 90, 52, '#ffd23d');
+  if (r.finisher) outlineText(ctx, localize("FINISHER: “") + r.winner.c.finName + '“', W / 2, 146, 26, '#ff4f4f');
+  else if (r.flawless) outlineText(ctx, localize("FLAWLESS"), W / 2, 146, 26, '#9dff6a');
   drawPortrait(ctx, r.winner.c, W / 2 - 110, 170, 220, 180, 2.8);
   const items = [];
   if (G.mode === 'arcade') {
     if (r.winner.side === 0) {
-      if (G.arcade.i < 6) items.push({ t: 'СЛЕДВАЩ БОЙ', fn: () => { G.arcade.i++; nextArcade(); } });
-      else { outlineText(ctx, 'ТИ СИ ЦАР НА УЛИЦАТА!', W / 2, 372, 30, '#9dff6a'); items.push({ t: 'ОТНАЧАЛО', fn: () => startSelect() }); }
-    } else if (G.arcade.cont > 0) items.push({ t: 'ПРОДЪЛЖИ (' + G.arcade.cont + ')', fn: () => { G.arcade.cont--; nextArcade(); } });
-  } else items.push({ t: 'РЕВАНШ', fn: () => { G.vsT = 0; go('vs'); } });
-  items.push({ t: 'ДРУГ БОЕЦ', fn: () => { Snd.stopMusic(); startSelect(); } }, { t: 'ГЛАВНО МЕНЮ', fn: () => { Snd.stopMusic(); go('title'); } });
+      if (G.arcade.i < 6) items.push({ t: localize("NEXT FIGHT"), fn: () => { G.arcade.i++; nextArcade(); } });
+      else { outlineText(ctx, localize("YOU RULE THE STREETS!"), W / 2, 372, 30, '#9dff6a'); items.push({ t: localize("START OVER"), fn: () => startSelect() }); }
+    } else if (G.arcade.cont > 0) items.push({ t: localize("CONTINUE (") + G.arcade.cont + ')', fn: () => { G.arcade.cont--; nextArcade(); } });
+  } else items.push({ t: localize("REMATCH"), fn: () => { G.vsT = 0; go('vs'); } });
+  items.push({ t: localize("CHANGE FIGHTER"), fn: () => { Snd.stopMusic(); startSelect(); } }, { t: localize("MAIN MENU"), fn: () => { Snd.stopMusic(); go('title'); } });
   if (t > 40) menuList(items, W / 2, 404, 44, inp, 24);
 }
 
@@ -309,22 +317,22 @@ function movesScreen(inp) {
   outlineText(ctx, c.full.toUpperCase(), W / 2, 36, 28, '#ffd23d');
   txt(STYLE_NAMES[c.style] + '  ·  ' + ARENAS[c.home].name + ', ' + ARENAS[c.home].city, W / 2, 64, 14, '#d6d0c4', 'center', FONT_B);
   drawPortrait(ctx, c, 20, 90, 230, 380, 3, 1);
-  const M = c.moves, A = { D: '↓', F: '→', B: '←' }, BN = { lp: 'Удар', hp: 'Силен удар', lk: 'Ритник', hk: 'Силен ритник' };
+  const M = c.moves, A = { D: '↓', F: '→', B: '←' }, BN = { lp: localize("Punch"), hp: localize("Heavy punch"), lk: localize("Kick"), hk: localize("Heavy kick") };
   const rows = [
-    ['ОСНОВНИ', ''],
-    ['Удар', M.LP.name], ['Силен удар', M.HP.name], ['→ + Силен удар', M.fHP.name], ['Ритник', M.LK.name], ['Силен ритник', M.HK.name],
-    ['↓ + Удар / Ритник', M.cLP.name + ' / ' + M.cLK.name], ['↓ + Силен удар', 'Ъперкът (вдига)'], ['↓ + Силен ритник', 'Подсичане (събаря)'], ['→ + Силен удар (близо)', 'Хвърляне'],
-    ['СПЕЦИАЛНИ', ''],
-    ['Спец', c.sp1.name + ' — ' + c.sp1.desc], ['← или → + Спец', c.sp2.name + ' — ' + c.sp2.desc], ['↓ + Спец (пълна енергия)', 'СУПЕР: ' + c.sup.name],
-    ['ФИНАЛ', ''],
-    [c.code.slice(0, 3).map(d => A[d]).join(' ') + ' + ' + BN[c.code[3]], '„' + c.finName + '“ (близо, след „ERLEDIGE…“)']
+    [localize("BASICS"), ''],
+    [localize("Punch"), M.LP.name], [localize("Heavy punch"), M.HP.name], [localize("→ + Heavy punch"), M.fHP.name], [localize("Kick"), M.LK.name], [localize("Heavy kick"), M.HK.name],
+    [localize("↓ + Punch / Kick"), M.cLP.name + ' / ' + M.cLK.name], [localize("↓ + Heavy punch"), localize("Uppercut (launches)")], [localize("↓ + Heavy kick"), localize("Sweep (knockdown)")], [localize("→ + Heavy punch (close)"), localize("Throw")],
+    [localize("SPECIALS"), ''],
+    [localize("Special"), c.sp1.name + ' — ' + c.sp1.desc], [localize("← / → + Special"), c.sp2.name + ' — ' + c.sp2.desc], [localize("↓ + Special (full energy)"), localize("SUPER: ") + c.sup.name],
+    [localize("FINISHER"), ''],
+    [c.code.slice(0, 3).map(d => A[d]).join(' ') + ' + ' + BN[c.code[3]], '„' + c.finName + localize("” (close, after FINISH THEM!)")]
   ];
   rows.forEach(([a, b], i) => {
     const y = 104 + i * 25;
     if (!b) { txt(a, 280, y, 15, '#ff6b6b', 'left'); return; }
     txt(a, 280, y, 14, '#ffd23d', 'left', FONT_D); txt(b, 520, y, 14, '#f2efe8', 'left', FONT_B);
   });
-  menuList([{ t: 'НАЗАД', fn: () => { G.screen = G.moveBack; } }], W / 2, H - 26, 40, inp, 20);
+  menuList([{ t: localize("BACK"), fn: () => { G.screen = G.moveBack; } }], W / 2, H - 26, 40, inp, 20);
   if (inp.back) G.screen = G.moveBack;
 }
 
@@ -351,6 +359,7 @@ function frame(now) {
       case 'result': resultScreen(inp); break;
       case 'moves': movesScreen(inp); break;
     }
+    I18N.sync(G.screen,G.match?.paused);
     if(typeof MobileUI!=='undefined')MobileUI.sync();
     touchEl.hidden = !(Touch.active && G.screen === 'fight' && G.match && !G.match.paused && G.match.phase !== 'matchOver');
     endInputFrame();

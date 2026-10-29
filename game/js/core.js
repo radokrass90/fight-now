@@ -79,8 +79,8 @@ const Snd = {
     try {
       if (!this.on || !window.speechSynthesis) return;
       speechSynthesis.cancel();
-      const u = new SpeechSynthesisUtterance(text); u.lang = 'de-DE'; u.rate = 0.92; u.pitch = 0.55; u.volume = 0.9;
-      const v = speechSynthesis.getVoices().find(v => /^de/i.test(v.lang)); if (v) u.voice = v;
+      const u = new SpeechSynthesisUtterance(text); u.lang = I18N.language === 'de' ? 'de-DE' : 'en-US'; u.rate = 0.92; u.pitch = 0.55; u.volume = 0.9;
+      const v = speechSynthesis.getVoices().find(v => v.lang.toLowerCase().startsWith(I18N.language)); if (v) u.voice = v;
       speechSynthesis.speak(u);
     } catch (e) { }
   },

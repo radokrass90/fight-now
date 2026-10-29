@@ -5,6 +5,21 @@
 A German street-fighting arcade game with 15 characters, 15 cinematic arenas,
 original Suno battle tracks, two-player keyboard play, training and arcade modes.
 
+## Languages
+
+The live game supports German (default) and English. Use the DE / EN buttons in
+the menus, or open `game/?lang=de` / `game/?lang=en`. The choice is saved locally;
+switching reloads the game. Menus, biographies, moves, combat messages, touch
+labels, announcer language and the animation gallery follow the selected language.
+German street names, fighter identities and original song titles remain intact.
+`game/js/i18n.js` contains the German catalog; English source strings are the
+fallback. Run `node tools/check-languages.cjs` to verify both languages and keys.
+
+The previous Bulgarian game is preserved locally as
+`backups/fight-now-bg-2026-10-29.tar.gz`, made from commit
+`2d035eb1cf73ab51f153cbf4b3d76b6c6bedeaad`. The backup contains the complete
+tracked game and assets and is excluded from the live deployment.
+
 ## Impact effects
 
 All fifteen arenas also include Blender street props: industrial drums, stacked

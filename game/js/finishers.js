@@ -13,9 +13,9 @@ function lyingBox(L) { const len = 150 * L.c.h; return { x1: Math.min(L.x - L.fa
 function shoes(ctx, x, col) { rr(ctx, x - 22, GROUND - 12, 20, 10, 4, col); rr(ctx, x + 2, GROUND - 12, 20, 10, 4, col); }
 function poster(ctx, x, y, L, k) {
   ctx.save(); ctx.translate(x, y); ctx.rotate(-0.05); ctx.globalAlpha = k;
-  rr(ctx, -60, -80, 120, 160, 2, '#f4f1e8'); outlineText(ctx, 'VERMISST', 0, -62, 20, '#b91c1c', 'center', 3);
+  rr(ctx, -60, -80, 120, 160, 2, '#f4f1e8'); outlineText(ctx, localize("MISSING"), 0, -62, 20, '#b91c1c', 'center', 3);
   ctx.fillStyle = '#d6d3c8'; ctx.fillRect(-40, -46, 80, 80); drawPortrait(ctx, L.c, -40, -46, 80, 80, 1.6);
-  ctx.fillStyle = '#222'; ctx.font = '10px ' + FONT_B; ctx.textAlign = 'center'; ctx.fillText(L.c.name + ' „' + L.c.nick + '“', 0, 48); ctx.fillText('Zuletzt gesehen: hier', 0, 64);
+  ctx.fillStyle = '#222'; ctx.font = '10px ' + FONT_B; ctx.textAlign = 'center'; ctx.fillText(L.c.name + ' „' + L.c.nick + '“', 0, 48); ctx.fillText(localize("Last seen: here"), 0, 64);
   ctx.restore();
 }
 
@@ -32,7 +32,7 @@ const FINISHERS = {
         if (t === 71) { S.sx = L.x; S.sy = L.y; Snd.whoosh(); }
         const k = tw(t, 70, 100), ox = S.target - 138 * S.d, oy = 120;
         L.x = lerp(S.sx, ox, k); L.y = lerp(S.sy, oy, k) + Math.sin(k * Math.PI) * 80; L.rot -= 18; L.sc = lerp(1, 0.35, k); bp(W, 'throwx', 0.3);
-        if (t === 100) { L.vis = false; Snd.thud(); m.shake = 8; m.popText(ox, GROUND - 190, 'Feierabend.', '#fff', 26, 90); }
+        if (t === 100) { L.vis = false; Snd.thud(); m.shake = 8; m.popText(ox, GROUND - 190, localize("Clocking off."), '#fff', 26, 90); }
       } else if (t < 210) { bp(W, 'point', 0.2); m.shake = 2; }
       else { S.tx += S.d * Math.min(9, (t - 210) * 0.25); if (t % 6 === 0) m.smoke(S.tx + 150 * S.d, GROUND - 20, 1, '#6b7280', 6); bp(W, 'flex', 0.2); }
     },
@@ -46,7 +46,7 @@ const FINISHERS = {
       if (t === 24) { m.spark(L.x, GROUND - 120, true); Snd.hit(1); m.shake = 14; m.hitstop = 8; S.vx = d * 7; }
       if (t > 24 && t <= 140) { const k = tw(t, 24, 140); L.x += S.vx * (1 - k * 0.5); L.y = Math.pow(k, 0.8) * 380; L.rot -= 22; L.sc = lerp(1, 0.04, k); bp(L, 'air_hit'); S.ex = L.x; S.ey = GROUND - L.y - 30; }
       if (t === 141) { L.vis = false; Snd.ok(); }
-      if (t === 150) m.popText(S.ex, S.ey + 40, 'Abflug!', '#fff', 24, 90);
+      if (t === 150) m.popText(S.ex, S.ey + 40, localize("Takeoff!"), '#fff', 24, 90);
     },
     front(ctx, t, S) { if (t > 140 && S.ex != null) { const k = Math.sin((t - 140) * 0.3) * 0.5 + 0.8; star(ctx, S.ex, S.ey, 14 * k, '#fff6c2', 4); ctx.globalAlpha = 0.5; star(ctx, S.ex, S.ey, 26 * k, '#fff6c2', 4); ctx.globalAlpha = 1; } }
   },
@@ -68,7 +68,7 @@ const FINISHERS = {
       if (S.py != null && S.py < GROUND - 20) S.py += 1.3;
     },
     back(ctx, t, S) { if (S.tx != null) drawVehicle(ctx, 'limo', S.tx, S.dir, t, { door: S.door }); },
-    front(ctx, t, S, W) { if (S.py != null) { ctx.save(); ctx.translate(W.x + Math.sin(t * 0.07) * 40 + 60, S.py); ctx.rotate(Math.sin(t * 0.09) * 0.4); rr(ctx, -30, -20, 60, 40, 2, '#fffdf5'); ctx.fillStyle = '#b91c1c'; ctx.font = '11px ' + FONT_D; ctx.textAlign = 'center'; ctx.fillText('MAHNUNG', 0, -6); ctx.fillStyle = '#333'; ctx.fillRect(-20, 4, 40, 2); ctx.fillRect(-20, 10, 30, 2); ctx.restore(); } }
+    front(ctx, t, S, W) { if (S.py != null) { ctx.save(); ctx.translate(W.x + Math.sin(t * 0.07) * 40 + 60, S.py); ctx.rotate(Math.sin(t * 0.09) * 0.4); rr(ctx, -30, -20, 60, 40, 2, '#fffdf5'); ctx.fillStyle = '#b91c1c'; ctx.font = '11px ' + FONT_D; ctx.textAlign = 'center'; ctx.fillText(localize("FINAL NOTICE"), 0, -6); ctx.fillStyle = '#333'; ctx.fillRect(-20, 4, 40, 2); ctx.fillRect(-20, 10, 30, 2); ctx.restore(); } }
   },
   pyro: {
     dur: 320,
@@ -80,7 +80,7 @@ const FINISHERS = {
       bp(L, { ...L.c.stance, fu: 4, ff: 4, bu: 2, bf: 2, ft: 4, fs: 2, bt: -4, bs: -2, lean: 0, head: 0 }, 0.2);
       if (t > 120 && t <= 145) { L.rot = lerp(0, -90, easeIn(tw(t, 120, 145))); }
       if (t === 145) { L.lying = true; m.shake = 8; Snd.thud(); m.dust(L.x, 8); }
-      if (t > 150 && t < 280 && t % 34 === 0) m.popText(W.x + rand(-60, 60), GROUND - 210 - rand(0, 40), pick(['OLÉ OLÉ!', 'AUSWÄRTSSIEG!', 'OLÉ!']), '#f5c400', 24, 60);
+      if (t > 150 && t < 280 && t % 34 === 0) m.popText(W.x + rand(-60, 60), GROUND - 210 - rand(0, 40), pick(['OLÉ OLÉ!', localize("AWAY WIN!"), 'OLÉ!']), '#f5c400', 24, 60);
     },
     front(ctx, t, S, W, L) {
       const h = handOf(W); ctx.save(); ctx.shadowColor = '#ff3b3b'; ctx.shadowBlur = 30; dot(ctx, [h[0], h[1] - 8], 7 + Math.random() * 3, '#fff1c2', false); ctx.restore();
@@ -106,7 +106,7 @@ const FINISHERS = {
         L.x = lerp(L.x, tipX(), 0.2); L.rot = lerp(L.rot, 180, 0.12); L.y = Math.max(0, GROUND - S.hy - 70 * L.c.h); bp(L, 'air_hit'); L.rot += Math.sin(t * 0.15) * 2;
       }
       if (t > 140) { S.tx += S.d * Math.min(10, (t - 140) * 0.18); if (t % 5 === 0) m.smoke(S.tx + 150 * S.d, GROUND - 20, 1, '#555', 5); }
-      if (t === 150) m.popText(W.x, GROUND - 210, 'Abschleppzone!', '#fff', 24, 90);
+      if (t === 150) m.popText(W.x, GROUND - 210, localize("Tow-away zone!"), '#fff', 24, 90);
     },
     back(ctx, t, S) { if (S.tx != null) drawVehicle(ctx, 'tow', S.tx, S.d, t); },
     front(ctx, t, S) { if (S.tx != null) { const x = S.tx - 130 * S.d; seg2(ctx, [x, GROUND - 150], [x, S.hy], 2, '#111'); ctx.strokeStyle = '#9ca3af'; ctx.lineWidth = 3; ctx.beginPath(); ctx.arc(x, S.hy + 6, 6, 0, Math.PI); ctx.stroke(); } }
@@ -140,7 +140,7 @@ const FINISHERS = {
       if (t > 55 && t < 200) bp(W, 'kneel', 0.2); else if (t >= 200) bp(W, 'flex', 0.15);
       S.paper = tw(t, 60, 130); S.string = tw(t, 140, 175); S.tag = t > 190;
       if (t === 60 || t === 100) Snd.noise(0.6, 1500, 0.2, 'highpass');
-      if (t === 191) { Snd.block(); m.popText(L.x, GROUND - 120, 'Frisch verpackt!', '#fff', 24, 100); }
+      if (t === 191) { Snd.block(); m.popText(L.x, GROUND - 120, localize("Freshly wrapped!"), '#fff', 24, 100); }
     },
     front(ctx, t, S, W, L) {
       if (!S.paper) return;
@@ -174,7 +174,7 @@ const FINISHERS = {
       rr(ctx, x - 48 + ow, GROUND - 192, 96 - ow, 166, 2, '#27272a'); neon(ctx, 'CLUB', x, GROUND - 214, 20, '#a78bfa');
       ctx.restore();
     },
-    front(ctx, t, S) { if (S.stamp) { ctx.save(); ctx.translate(S.dx, GROUND - 120); ctx.rotate(-0.25); const s = 2 - S.stamp; ctx.scale(s, s); ctx.strokeStyle = '#dc2626'; ctx.lineWidth = 5; ctx.strokeRect(-90, -24, 180, 48); outlineText(ctx, 'HAUSVERBOT', 0, 0, 28, '#ef4444', 'center', 3); ctx.restore(); } }
+    front(ctx, t, S) { if (S.stamp) { ctx.save(); ctx.translate(S.dx, GROUND - 120); ctx.rotate(-0.25); const s = 2 - S.stamp; ctx.scale(s, s); ctx.strokeStyle = '#dc2626'; ctx.lineWidth = 5; ctx.strokeRect(-90, -24, 180, 48); outlineText(ctx, localize("BANNED FOR LIFE"), 0, 0, 28, '#ef4444', 'center', 3); ctx.restore(); } }
   },
   taxi: {
     dur: 330,
@@ -190,7 +190,7 @@ const FINISHERS = {
       if (t === 120) L.vis = false;
       if (t === 127) { Snd.thud(); m.shake = 6; }
       if (t > 140) { bp(W, 'point', 0.15); S.tx += S.d * Math.min(11, (t - 140) * 0.25); if (t % 5 === 0) m.smoke(S.tx + 110 * S.d, GROUND - 16, 1, '#666', 4); }
-      if (t === 145) m.popText(W.x, GROUND - 210, 'Taxameter: 99,90 €', '#facc15', 24, 110);
+      if (t === 145) m.popText(W.x, GROUND - 210, localize("Taxi fare: €99.90"), '#facc15', 24, 110);
     },
     back(ctx, t, S) { if (S.tx != null) drawVehicle(ctx, 'taxi', S.tx, S.d, t, { trunk: S.trunk }); }
   },
@@ -204,7 +204,7 @@ const FINISHERS = {
       else if (t < 84) S.cy = GROUND - 260 + Math.sin(t) * 2;
       else if (t <= 94) S.cy = lerp(GROUND - 260, GROUND - 112, easeIn(tw(t, 84, 94)));
       if (t === 94) { L.vis = false; m.shake = 22; Snd.thud(); Snd.hit(1); m.dust(S.cx - 80, 10); m.dust(S.cx + 80, 10); }
-      if (t === 120) m.popText(S.cx, GROUND - 160, 'Zollfrei.', '#fff', 26, 100);
+      if (t === 120) m.popText(S.cx, GROUND - 160, localize("Duty free."), '#fff', 26, 100);
     },
     front(ctx, t, S, W, L) {
       if (S.cy == null) return;
@@ -213,7 +213,7 @@ const FINISHERS = {
       if (t >= 94) shoes(ctx, x, L.c.look.shoes);
       rr(ctx, x - 120, S.cy, 240, 112, 2, '#b91c1c');
       ctx.strokeStyle = '#7f1d1d'; ctx.lineWidth = 3; for (let k = 10; k < 236; k += 12) { ctx.beginPath(); ctx.moveTo(x - 120 + k, S.cy + 6); ctx.lineTo(x - 120 + k, S.cy + 106); ctx.stroke(); }
-      ctx.fillStyle = '#fef3c7'; ctx.font = '16px ' + FONT_D; ctx.textAlign = 'center'; ctx.fillText('HAFEN BREMEN', x, S.cy + 60);
+      ctx.fillStyle = '#fef3c7'; ctx.font = '16px ' + FONT_D; ctx.textAlign = 'center'; ctx.fillText(localize("BREMEN PORT"), x, S.cy + 60);
     }
   },
   tapout: {
@@ -227,7 +227,7 @@ const FINISHERS = {
       if (t >= 210) bp(W, 'cheer', 0.15);
       if (t > 60 && t < 140) { const tap = Math.floor((t - 60) / 22); const ph = (t - 60) % 22; L.pose.fu = ph < 8 ? 120 : 165; L.pose.ff = ph < 8 ? 120 : 170; if (ph === 0 && tap < 3) { m.popText(L.x - L.facing * 20, GROUND - 60, 'TAP', '#fff', 22, 30); Snd.tone(300, 0.06, 'square', 0.2); } }
       if (t > 150 && t % 30 === 0) m.popText(L.x - L.facing * 60, GROUND - 60, 'Z z z', '#a5b4fc', 22, 70);
-      if (t === 160) m.popText(W.x, GROUND - 200, 'Abgeklopft.', '#22c55e', 26, 100);
+      if (t === 160) m.popText(W.x, GROUND - 200, localize("Tapped out."), '#22c55e', 26, 100);
     }
   },
   durum: {
@@ -239,7 +239,7 @@ const FINISHERS = {
       if (t === 40) { L.lying = true; L.rot = -90; Snd.thud(); m.dust(L.x, 6); }
       S.bread = tw(t, 45, 70); S.top = tw(t, 75, 115); S.sauce = tw(t, 115, 135); S.roll = tw(t, 140, 185);
       if (t === 175) L.vis = false;
-      if (t === 205) { m.popText(L.x, GROUND - 130, 'Mit alles?', '#fff', 28, 110); Snd.ok(); }
+      if (t === 205) { m.popText(L.x, GROUND - 130, localize("With everything?"), '#fff', 28, 110); Snd.ok(); }
     },
     front(ctx, t, S, W, L) {
       if (!S.bread) return;
@@ -270,7 +270,7 @@ const FINISHERS = {
         if (t >= pt && t < pt + 8) { W.x = lerp(S.from, S.to, (t - pt) / 7); W.facing = Math.sign(S.to - S.from) || 1; L.flash = 3; L.rot = Math.sin(t) * 6; bp(W, 'shoulder', 0.5); }
         if (t === pt + 8) { W.facing = L.x > W.x ? 1 : -1; m.spark(L.x, GROUND - 100, false, '#e5e7eb'); }
       });
-      if (t === 74) { L.strip = true; L.rot = 0; m.popText(L.x, GROUND - 200, 'Alles weg!', '#fff', 26, 100); }
+      if (t === 74) { L.strip = true; L.rot = 0; m.popText(L.x, GROUND - 200, localize("All gone!"), '#fff', 26, 100); }
       if (t > 74 && t < 150) { bp(L, { ...L.c.stance, fu: 20, ff: 150, bu: 15, bf: 140, lean: 22, head: 18, ft: 30, fs: 10, bt: -10, bs: -30 }, 0.2); bp(W, { ...W.c.stance, fu: 120, ff: 150, bu: 80, bf: 100 }, 0.2); }
       if (t >= 150) { const away = L.x > W.x ? 1 : -1; L.facing = away; L.x += away * 6; S.ph = (S.ph || 0) + 0.45; L.pose = walkPose(L, S.ph); L.pose.lean = 20; bp(W, 'cheer', 0.12); }
       if (t === 155) Snd.tone(900, 0.4, 'sine', 0.15, 300);
@@ -299,7 +299,7 @@ const FINISHERS = {
       rr(ctx, x - 80, GROUND - 100, 160, 96, 4, '#166534'); ctx.fillStyle = '#14532d'; for (let i = 0; i < 5; i++) ctx.fillRect(x - 70 + i * 30, GROUND - 92, 6, 80);
       ctx.save(); ctx.translate(x - 84, GROUND - 100); ctx.rotate(-S.lid); rr(ctx, 0, -8, 168, 10, 2, '#15803d'); ctx.restore();
       wheel(ctx, x - 60, GROUND - 4, 6, 0); wheel(ctx, x + 60, GROUND - 4, 6, 0);
-      if (S.sticker) { ctx.save(); ctx.translate(x, GROUND - 56); ctx.rotate(-0.08); rr(ctx, -64, -14, 128, 28, 3, '#f97316'); ctx.fillStyle = '#111'; ctx.font = '16px ' + FONT_D; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText('SPERRMÜLL', 0, 1); ctx.restore(); }
+      if (S.sticker) { ctx.save(); ctx.translate(x, GROUND - 56); ctx.rotate(-0.08); rr(ctx, -64, -14, 128, 28, 3, '#f97316'); ctx.fillStyle = '#111'; ctx.font = '16px ' + FONT_D; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText(localize("BULKY WASTE"), 0, 1); ctx.restore(); }
     }
   },
   vanish: {
@@ -311,7 +311,7 @@ const FINISHERS = {
       if (t === 60) { L.vis = false; S.sx = L.x; W.x = clamp(W.x - W.facing * 60, 80, 880); }
       if (t > 90) bp(W, { ...W.c.stance, fu: 30, ff: 150, bu: 10, bf: 20, lean: -6, head: -8, ft: 40, fs: -30, bt: -10, bs: -6 }, 0.1);
       S.poster = tw(t, 150, 185);
-      if (t === 200) m.popText(W.x, GROUND - 200, 'Nie gesehen.', '#c4b5fd', 24, 100);
+      if (t === 200) m.popText(W.x, GROUND - 200, localize("Never seen them."), '#c4b5fd', 24, 100);
     },
     back(ctx, t, S, W, L) { if (S.poster) poster(ctx, clamp(S.sx || W.x, 120, 840) + 0, 180 + (1 - S.poster) * -200, L, S.poster); },
     front(ctx, t, S, W, L) { if (t > 60 && S.sx != null) shoes(ctx, S.sx, L.c.look.shoes); }

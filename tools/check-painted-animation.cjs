@@ -2,7 +2,7 @@ const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/st
 const root=require('node:path').resolve(__dirname,'../game');
 const sandbox={console,setTimeout,clearTimeout,window:{},document:{documentElement:{dataset:{}}},Image:class{set src(v){this.onload?.();}},D2R:Math.PI/180};
 vm.createContext(sandbox);
-for(const file of ['data','character-art-data','extra-pose-data','character-art','fight'])vm.runInContext(fs.readFileSync(root+'/js/'+file+'.js','utf8'),sandbox);
+for(const file of ['i18n','language','data','character-art-data','extra-pose-data','character-art','fight'])vm.runInContext(fs.readFileSync(root+'/js/'+file+'.js','utf8'),sandbox);
 vm.runInContext(`
  const f={c:CHARS[0],state:'walk',facing:1,vx:2,pose:CHARS[0].stance};
  const forward=[],backward=[];

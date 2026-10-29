@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="bg">
+<html lang="de">
 <meta charset="utf-8">
 <title>Fight Now — Street Combat</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
@@ -68,29 +68,37 @@
   body.mobile.portrait #btns button { width:52px; height:52px; }
   body.mobile.portrait.playing #touch { background:linear-gradient(transparent calc(100% - 204px),#111927 calc(100% - 200px)); }
   @media(max-width:360px){body.mobile.portrait #stick{width:104px;height:104px;left:10px}body.mobile.portrait #btns{grid-template-columns:repeat(3,48px);right:10px}body.mobile.portrait #btns button{width:48px;height:48px}}
+  #language-picker{position:fixed;z-index:30;right:calc(env(safe-area-inset-right,0px) + 10px);top:calc(env(safe-area-inset-top,0px) + 8px);display:flex;gap:5px}
+  #language-picker[hidden]{display:none}
+  #language-picker button{font:bold 13px system-ui;color:#fff;background:#182130;border:1px solid #62738d;border-radius:7px;padding:8px 11px;min-height:36px;cursor:pointer}
+  #language-picker button[aria-pressed="true"]{background:#ffd23d;color:#151820;border-color:#ffd23d}
+  body.mobile #mobile-menu{padding-top:calc(env(safe-area-inset-top,0px) + 58px)}
 </style>
 
 <div id="wrap"><canvas id="c" width="960" height="540"></canvas></div>
-<div id="loading">FIGHT NOW…<small style="font:14px system-ui;letter-spacing:0">Зареждане на менюто…</small></div>
+<div id="loading">FIGHT NOW…<small data-i18n="Loading menu…" style="font:14px system-ui;letter-spacing:0">Loading menu…</small></div>
 <div id="touch" hidden>
   <div id="stick"><div id="knob"></div></div>
   <div id="btns">
-    <button data-k="lp" aria-label="Удар">УДАР</button>
-    <button data-k="hp" aria-label="Силен удар">СИЛЕН<br>УДАР</button>
-    <button data-k="sp" aria-label="Специален">СПЕЦ</button>
-    <button data-k="lk" aria-label="Ритник">РИТНИК</button>
-    <button data-k="hk" aria-label="Силен ритник">СИЛЕН<br>РИТНИК</button>
-    <button data-k="bl" aria-label="Блок">БЛОК</button>
+    <button data-k="lp" data-i18n="PUNCH" data-i18n-aria="Punch" aria-label="Punch">PUNCH</button>
+    <button data-k="hp" data-i18n="HEAVY PUNCH" data-i18n-aria="Heavy punch" aria-label="Heavy punch">HEAVY PUNCH</button>
+    <button data-k="sp" data-i18n="SPECIAL" data-i18n-aria="Special" aria-label="Special">SPECIAL</button>
+    <button data-k="lk" data-i18n="KICK" data-i18n-aria="Kick" aria-label="Kick">KICK</button>
+    <button data-k="hk" data-i18n="HEAVY KICK" data-i18n-aria="Heavy kick" aria-label="Heavy kick">HEAVY KICK</button>
+    <button data-k="bl" data-i18n="BLOCK" data-i18n-aria="Block" aria-label="Block">BLOCK</button>
   </div>
-  <button id="pauseBtn" aria-label="Пауза">II</button>
-  <button id="finBtn" data-k="fin" hidden>FINALE!</button>
+  <button id="pauseBtn" data-i18n-aria="Pause" aria-label="Pause">II</button>
+  <button id="finBtn" data-k="fin" data-i18n="FINISHER" hidden>FINISHER</button>
 </div>
-<main id="mobile-menu" hidden aria-label="Меню на играта"></main>
-<div id="mobile-toolbar" hidden><span id="mobile-hint"></span><button id="fullscreen" aria-label="Цял екран">⛶</button><button id="mobilePause" aria-label="Пауза">Ⅱ Пауза</button></div>
+<main id="mobile-menu" hidden data-i18n-aria="Game menu" aria-label="Game menu"></main>
+<div id="mobile-toolbar" hidden><span id="mobile-hint"></span><button id="fullscreen" data-i18n-aria="Full screen" aria-label="Full screen">⛶</button><button id="mobilePause" data-i18n-aria="Pause" aria-label="Pause" data-i18n="Pause">Pause</button></div>
 
-<script src="js/core.js?v=mobile-1"></script>
+<nav id="language-picker" aria-label="Language"><button data-lang="de" title="Deutsch">DE</button><button data-lang="en" title="English">EN</button></nav>
+<script src="js/i18n.js?v=lang-1"></script>
+<script src="js/language.js?v=lang-1"></script>
+<script src="js/core.js?v=lang-1"></script>
 <script src="js/battle-music.js?v=mobile-1"></script>
-<script src="js/data.js"></script>
+<script src="js/data.js?v=lang-1"></script>
 <script src="js/character-art-data.js"></script>
 <script src="js/extra-pose-data.js"></script>
 <script src="js/character-art.js?v=mobile-1"></script>
@@ -98,10 +106,12 @@
 <script src="js/arena-art-data.js"></script>
 <script src="js/arena-art.js?v=mobile-1"></script>
 <script src="js/stage-props.js?v=props-1"></script>
-<script src="js/arenas.js?v=props-1"></script>
+<script src="js/arenas.js?v=lang-1"></script>
 <script src="js/combat-fx.js?v=impact-1"></script>
-<script src="js/fight.js?v=impact-1"></script>
-<script src="js/finishers.js"></script>
+<script src="js/fight.js?v=lang-1"></script>
+<script src="js/finishers.js?v=lang-1"></script>
 <script src="js/touch-controls.js?v=mobile-1"></script>
-<script src="js/main.js?v=impact-1"></script>
-<script src="js/mobile-ui.js?v=impact-1"></script>
+<script src="js/main.js?v=lang-1"></script>
+<script src="js/mobile-ui.js?v=lang-1"></script>
+
+<script>I18N.mount();</script>
