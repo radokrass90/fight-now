@@ -17,7 +17,7 @@ const MobileUI = (()=>{
     document.getElementById('mobilePause').hidden=G.screen!=='fight';
     document.getElementById('fullscreen').hidden=!document.documentElement.requestFullscreen;
     document.getElementById('mobile-hint').textContent=innerHeight>innerWidth?'Завърти за по-голяма арена':'Движение + удар едновременно';
-    const nextStamp=[menu,G.screen,G.mode,G.selStep,G.pick.join(','),G.stageCur,G.diff,Snd.on,Snd.musicOn,G.match?.paused,G.match?.result?.winner?.c.id,G.moveFor?.id,G.moveBack,G.arcade?.i,G.arcade?.cont].join('/');
+    const nextStamp=[menu,G.screen,G.mode,G.selStep,G.pick.join(','),G.stageCur,G.diff,Snd.on,Snd.musicOn,CombatFX.full,G.match?.paused,G.match?.result?.winner?.c.id,G.moveFor?.id,G.moveBack,G.arcade?.i,G.arcade?.cont].join('/');
     if(!menu||nextStamp===stamp)return;stamp=nextStamp;panel.replaceChildren();
     if(G.screen==='title'){
       title('Готов ли си за бой?','15 бойци · 15 арени · управление с два пръста');
@@ -43,7 +43,7 @@ const MobileUI = (()=>{
       next('БИЙ СЕ!',()=>startFight(G.stageCur));back(()=>startSelect());
     }else if(G.screen==='fight'){
       title('Пауза',BattleMusic.title);next('ПРОДЪЛЖИ',()=>togglePause());
-      panel.append(button('Списък с удари',()=>{G.moveFor=G.match.p[0].c;G.moveBack='fight';go('moves');}),button('Рестарт',()=>{touchControls.reset();G.match=new Match(G.matchOpts);fit();}),button('Музика: '+(Snd.musicOn?'ДА':'НЕ'),()=>Snd.toggleMusic()),button('Друг боец',()=>startSelect()),button('Главно меню',()=>go('title')));
+      panel.append(button('Списък с удари',()=>{G.moveFor=G.match.p[0].c;G.moveBack='fight';go('moves');}),button('Рестарт',()=>{touchControls.reset();G.match=new Match(G.matchOpts);fit();}),button('Музика: '+(Snd.musicOn?'ДА':'НЕ'),()=>Snd.toggleMusic()),button('Ефекти: '+(CombatFX.full?'СИЛНИ':'ЛЕКИ'),()=>CombatFX.toggle()),button('Друг боец',()=>startSelect()),button('Главно меню',()=>go('title')));
     }else if(G.screen==='controls'){
       title('Как се играе на телефон');
       for(const [h,p]of [['Движение','Левият джойстик: наляво/надясно за ходене, нагоре за скок, надолу за клек.'],['Атаки и блок','Бутоните вдясно са удар, силен удар, ритник, силен ритник, специален и блок. Движението и атаката работят едновременно.'],['Специални удари','Посока наляво/надясно + СПЕЦ за втори специален. Надолу + СПЕЦ с пълна енергия за СУПЕР.'],['Пауза','Бутонът горе спира боя. При смяна на приложение или завъртане играта се паузира; натисни ПРОДЪЛЖИ.']]){panel.append(el('h2',h),el('p',p,'mobile-copy'));}back();
@@ -58,7 +58,7 @@ const MobileUI = (()=>{
         else if(r.winner.side!==0&&G.arcade.cont>0)next('ПРОДЪЛЖИ ('+G.arcade.cont+')',()=>{G.arcade.cont--;nextArcade();});
         else next('НОВА АРКАДА',()=>startSelect());
       }else next('РЕВАНШ',()=>go('vs'));
-      panel.append(button('Друг боец',()=>startSelect()),button('Главно меню',()=>go('title')));
+      panel.append(button('Ефекти: '+(CombatFX.full?'СИЛНИ':'ЛЕКИ'),()=>CombatFX.toggle()),button('Друг боец',()=>startSelect()),button('Главно меню',()=>go('title')));
     }
   }
   return {sync,ownsMenu};

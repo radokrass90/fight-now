@@ -274,6 +274,7 @@ function fightScreen(inp) {
       { t: 'СПИСЪК С УДАРИ', fn: () => { G.moveFor = m.p[0].c; G.moveBack = 'fight'; G.screen = 'moves'; } },
       { t: 'РЕСТАРТ', fn: () => { G.match = new Match(G.matchOpts); } },
       { t: 'МУЗИКА: ' + (Snd.musicOn ? 'ДА' : 'НЕ'), fn: () => Snd.toggleMusic() },
+      { t: 'ЕФЕКТИ: ' + (CombatFX.full ? 'СИЛНИ' : 'ЛЕКИ'), fn: () => CombatFX.toggle() },
       { t: 'ДРУГ БОЕЦ', fn: () => { Snd.stopMusic(); startSelect(); } },
       { t: 'ГЛАВНО МЕНЮ', fn: () => { Snd.stopMusic(); go('title'); } }
     ], W / 2, 200, 52, inp, 26);

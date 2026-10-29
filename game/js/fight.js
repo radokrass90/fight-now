@@ -94,6 +94,7 @@ class Match {
   startRound() {
     const [a, b] = this.p;
     a.reset(300, 1); b.reset(660, -1);
+    this.impactFocus=null; this.cameraZoom=1.08; this.shake=0;
     if (this.round === 1) { a.meter = 0; b.meter = 0; }
     a.x = 180; b.x = 780; a.state = b.state = 'intro';
     this.timer = 99; this.tick = 0; this.phase = 'intro'; this.pt = 0; this.proj = []; this.fx = []; this.finisher = null; this.winner = null; this.loser = null; this.dim = 0;
@@ -101,9 +102,10 @@ class Match {
   }
   announce(t, life = 60, col = '#fff', size = 60, sub) { this.banner = { t, life, max: life, col, size, sub }; }
   popText(x, y, t, col = '#fff', size = 22, life = 50) { this.texts.push({ x, y, t, col, size, life, max: life }); }
-  spark(x, y, big, col) {
+  spark(x, y, big, col, opt = {}) {
     for (let i = 0; i < (big ? 14 : 8); i++) { const a = Math.random() * Math.PI * 2, s = rand(2, big ? 9 : 6); this.fx.push({ k: 'spk', x, y, vx: Math.cos(a) * s, vy: Math.sin(a) * s, life: 16, max: 16, col: col || (i % 2 ? '#fff6c2' : '#ffd23d') }); }
     this.fx.push({ k: 'star', x, y, life: 10, max: 10, r: big ? 34 : 22, col: col || '#fff6c2' });
+    CombatFX.emit(this,x,y,{power:opt.power||(big?2:1),blocked:col==='#8fd3ff',color:col,facing:opt.facing});
   }
   dust(x, n = 6, col = '#9b8f80') { for (let i = 0; i < n; i++) this.fx.push({ k: 'puff', x: x + rand(-20, 20), y: GROUND - rand(0, 10), vx: rand(-1.5, 1.5), vy: rand(-1.2, -0.2), r: rand(6, 12), life: 34, max: 34, col }); }
   smoke(x, y, n = 14, col = '#8f8f9a', spread = 40) { for (let i = 0; i < n; i++) this.fx.push({ k: 'puff', x: x + rand(-spread, spread), y: y + rand(-spread, spread * 0.6), vx: rand(-1, 1), vy: rand(-1.4, -0.2), r: rand(14, 26), life: 60, max: 60, col }); }
@@ -114,6 +116,7 @@ class Match {
   update() {
     if (this.paused) return;
     this.T++;
+    if(this.impactFocus)this.impactFocus.age++;
     if (this.banner) { this.banner.life--; if (this.banner.life <= 0) this.banner = null; }
     for (const t of this.texts) { t.life--; t.y -= 0.6; } this.texts = this.texts.filter(t => t.life > 0);
     for (const f of this.fx) { f.life--; if (f.vx != null) { f.x += f.vx; f.y += f.vy; if (f.k === 'spk') { f.vx *= 0.9; f.vy *= 0.9; } } if (f.k === 'puff') f.r += 0.4; }
@@ -316,7 +319,7 @@ class Match {
     B.x = A.x + dx * A.facing; B.y = Math.max(0, dy); B.rot = rot; B.pose = fullPose(B.c.stance, rot < -30 ? 'air_hit' : 'hit_hi');
     if (th.t === s.impact || th.t === s.impact2 || th.t === s.impact3) {
       const d = th.dmg / th.n; this.damage(A, B, d); this.shake = 12; this.hitstop = 6; Snd.thud(); Snd.hit(1); this.dust(B.x, 8);
-      this.spark(B.x, GROUND - B.y - 40, true);
+      this.spark(B.x, GROUND - B.y - 40, true,undefined,{power:3,facing:A.facing});
     }
     if (th.t >= s.end) {
       A.thr = null; this.setState(A, 'idle'); A.pose = Object.assign({}, A.c.stance);
@@ -347,7 +350,7 @@ class Match {
       const last = i === SUPER_SEQ.length - 1;
       this.damage(A, B, last ? 90 : 36, true); this.hitstop = last ? 14 : 5; this.shake = last ? 18 : 7; Snd.hit(last ? 1 : 0.5);
       const sk = skeleton(A.c, A.pose), hp = fighterHip(A, sk), pt = toWorld(A, hp, limbPoint(A.c, sk, A.pose, limb));
-      this.spark(pt[0], pt[1], true, A.c.sup.color); B.flash = 3;
+      this.spark(pt[0], pt[1], true, A.c.sup.color,{power:last?4:3,facing:A.facing}); B.flash = 3;
       if (last) {
         A.sup = null; this.dim = 0;
         B.state = 'air'; B.st = 0; B.vy = 13; B.vx = 7 * A.facing; B.y = 1; B.juggle = 9;
@@ -378,7 +381,7 @@ class Match {
         if (f.state === 'air') { f.rot = lerp(f.rot, -70, 0.08); }
         if (f.y <= 0) {
           f.y = 0; f.vy = 0;
-          if (f.state === 'air') { if (f.hp <= 0 || f.juggle > 0 || true) { this.knockDown(f); Snd.thud(); this.shake = 6; } }
+          if (f.state === 'air') { if (f.hp <= 0 || f.juggle > 0 || true) { this.knockDown(f); Snd.thud(); CombatFX.ground(this,f.x); } }
           else if (f.state === 'jump') { this.setState(f, 'land'); f.vx = 0; this.dust(f.x, 3); }
         }
       }
@@ -456,8 +459,8 @@ class Match {
     if (B.comboHits >= 2) this.popText(A.side ? 820 : 140, 170, B.comboHits + ' УДАРА', '#ffd23d', 30 + Math.min(20, B.comboHits * 2), 50);
     if (h.steal) { const s = Math.min(B.meter, 70); B.meter -= s; A.meter = Math.min(1000, A.meter + s); }
     const big = h.d >= 60;
-    this.hitstop = big ? 9 : 6; this.shake = big ? 9 : 4; B.flash = 2;
-    Snd.hit(big ? 1 : 0.3); this.spark(px, py, big);
+    this.hitstop = h.special ? 11 : big ? 10 : 4; B.flash = big ? 3 : 2;
+    Snd.hit(big ? 1 : 0.3); this.spark(px, py, big,undefined,{power:B.hp<=0?4:h.special?3:big?2:1,facing:A.facing});
     if (B.hp <= 0) { B.state = 'air'; B.st = 0; B.vy = 10; B.vx = 6 * A.facing; B.y = Math.max(B.y, 1); this.onKO(A, B); return; }
     if (h.pull) { B.x = clamp(A.x + A.facing * 72, LEFT, RIGHT); B.state = 'hit'; B.st = 0; B.hitstun = h.st; B.vx = 0; B.rot = 0; return; }
     if (h.stun && !B.stunUsed && B.y === 0) { B.stunUsed = true; B.state = 'dizzy'; B.st = 0; B.hitstun = h.stun; B.vx = 0; this.popText(B.x, GROUND - 190, 'ЗАМАЯН', '#facc15', 20); return; }
@@ -599,10 +602,11 @@ class Match {
   // ---------- рисуване ----------
   draw(ctx) {
     ctx.save();
-    const targetZoom = this.phase === 'ko' ? 1.13 : this.dim > 0 ? 1.115 : this.shake > 8 ? 1.10 : 1.08;
-    this.cameraZoom = lerp(this.cameraZoom || 1, targetZoom, .14);
-    ctx.translate(W / 2, H * .7); ctx.scale(this.cameraZoom, this.cameraZoom); ctx.translate(-W / 2, -H * .7);
-    if (this.shake > 0.5) ctx.translate(rand(-this.shake, this.shake), rand(-this.shake, this.shake) * 0.6);
+    const camera=CombatFX.camera(this);
+    if(!this.paused)this.cameraZoom = lerp(this.cameraZoom || 1.08, camera.zoom, .2);
+    if(!this.cameraZoom)this.cameraZoom=1.08;
+    ctx.translate(W / 2, H * .7);ctx.rotate(camera.roll);ctx.scale(this.cameraZoom,this.cameraZoom);ctx.translate(-W / 2,-H * .7);
+    ctx.translate(camera.dx,camera.dy);
     drawArenaBack(ctx, this.arena, this.T);
     const finisher = this.phase === 'finisher' ? this.finisher : null;
     if (this.dim > 0 || finisher) {
@@ -621,6 +625,7 @@ class Match {
     this.drawFx(ctx);
     drawArenaFront(ctx, this.arena, this.T);
     ctx.restore();
+    CombatFX.overlay(ctx,this);
     this.drawHUD(ctx);
   }
   drawStars(ctx, f) {
@@ -641,6 +646,12 @@ class Match {
           ctx.save(); ctx.strokeStyle = gradient; ctx.lineWidth = i < 2 ? 7 : 10; ctx.lineCap = 'round';
           ctx.beginPath(); ctx.moveTo(...previous); ctx.lineTo(...p); ctx.stroke(); ctx.restore();
         });
+      }
+      const active=f.state==='move'&&f.mc?.segs.find(s=>f.mt>s.s&&f.mt<=s.e&&s.hit);
+      if(active&&active.hit.d>=60&&CombatFX.full&&!CombatFX.reduced){
+        const tip=toWorld(f,hip,limbPoint(f.c,sk,f.pose,active.hit.limb)),dir=f.facing;
+        ctx.save();ctx.globalCompositeOperation='screen';ctx.strokeStyle=f.side?'rgba(255,192,110,.8)':'rgba(140,235,255,.8)';ctx.lineWidth=4;ctx.lineCap='round';
+        ctx.beginPath();ctx.moveTo(tip[0]-dir*62,tip[1]+18);ctx.quadraticCurveTo(tip[0]-dir*28,tip[1]-36,tip[0]+dir*8,tip[1]);ctx.stroke();ctx.restore();
       }
       f.motionTrail = points;
     }
@@ -666,6 +677,7 @@ class Match {
   drawFx(ctx) {
     for (const f of this.fx) {
       const a = f.life / f.max;
+      if(CombatFX.drawParticle(ctx,f))continue;
       if (f.k === 'spk') { ctx.globalAlpha = a; seg2(ctx, [f.x, f.y], [f.x - f.vx * 2, f.y - f.vy * 2], 3, f.col); }
       else if (f.k === 'star') { ctx.globalAlpha = a; star(ctx, f.x, f.y, f.r * (1.3 - a * 0.3), f.col, 8); }
       else if (f.k === 'puff') { ctx.globalAlpha = a * 0.6; dot(ctx, [f.x, f.y], f.r, f.col, false); }

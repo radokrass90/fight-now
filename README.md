@@ -5,6 +5,23 @@
 A German street-fighting arcade game with 15 characters, 15 cinematic arenas,
 original Suno battle tracks, two-player keyboard play, training and arcade modes.
 
+## Impact effects
+
+Heavy hits, specials and supers now have distinct camera shake, brief hit stops,
+camera punches, strike trails and expanding impact/ground rings. The HUD stays
+steady. Pause → Effects switches between strong and light presentation; the
+system's reduced-motion preference also disables shake, roll and impact zoom.
+Mobile particle counts are capped at 90.
+
+The impact burst is a real Blender render: twelve transparent frames packed into
+a 57 KB WebP atlas. The painted fighters remain the active character art.
+Edit `blender/impact-effects.blend`, or regenerate it and its PNG frames using
+`blender --background --python blender/build_impact_fx.py`, then run
+`node tools/build-impact-atlas.cjs` (requires sharp). The runtime retains a
+procedural fallback while the atlas loads. Run `node tools/check-combat-fx.cjs`
+to check heavy-hit/block feedback, particle limits and reduced-motion behavior
+(requires @napi-rs/canvas).
+
 ## Painted fighters — 30 poses each
 
 The approved hand-painted fighters are the active game renderer. Each of the
