@@ -1,0 +1,18 @@
+{
+  "id": "hammer-04",
+  "name": {
+    "en": "Demolition Hammer",
+    "de": "Abriss Hammer"
+  },
+  "family": "hammer",
+  "tier": 2,
+  "design": "Industrial demolition sledgehammer, heavy rectangular steel head with faceted corners, orange composite shaft to left and black ribbed safety grip.",
+  "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Demolition Hammer.\nSHAPE: One hammer only, handle extends to left, substantial head at right.\nUNIQUE DESIGN: Industrial demolition sledgehammer, heavy rectangular steel head with faceted corners, orange composite shaft to left and black ribbed safety grip.",
+  "generator": "built-in image_gen",
+  "source": "exec-9fe98a33-185b-4707-9b63-5d0c439e3655.png",
+  "destination": "game/assets/weapons/illustrated/sources/hammer-04.png",
+  "sourceSha256": "463bff9b323f56e2564c8540e62dbc6637d68e36e78122abcdb5dc7c8aa03e34",
+  "generatedAt": "2026-10-30T07:41:22.536607+00:00",
+  "reviewed": true,
+  "reviewNotes": "Individual generated source and alpha-composited family review checked: distinct correct form, full silhouette, detailed material, clean transparency. Grip and scale packed for the actual fighter renderer."
+}

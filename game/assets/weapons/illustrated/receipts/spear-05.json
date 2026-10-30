@@ -1,0 +1,18 @@
+{
+  "id": "spear-05",
+  "name": {
+    "en": "Sunbeam Spear",
+    "de": "Sonnenstrahl Speer"
+  },
+  "family": "spear",
+  "tier": 3,
+  "design": "Sunbeam spear with long warm bronze-banded wood shaft, a polished gilded steel leaf point at RIGHT and cream leather left-quarter grip.",
+  "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Sunbeam Spear.\nSHAPE: One spear only, long shaft left-to-right, point at right.\nUNIQUE DESIGN: Sunbeam spear with long warm bronze-banded wood shaft, a polished gilded steel leaf point at RIGHT and cream leather left-quarter grip.",
+  "generator": "built-in image_gen",
+  "source": "exec-070c3644-09b2-44a0-b273-212f0b976535.png",
+  "destination": "game/assets/weapons/illustrated/sources/spear-05.png",
+  "sourceSha256": "ea100f699fbf6a7277c47bd46b43f51a7ec09728400b0f276805d17a74456031",
+  "generatedAt": "2026-10-30T08:09:36.924981+00:00",
+  "reviewed": true,
+  "reviewNotes": "Individual generated source and alpha-composited family review checked: distinct correct form, full silhouette, detailed material, clean transparency. Grip and scale packed for the actual fighter renderer."
+}

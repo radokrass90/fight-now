@@ -1,0 +1,18 @@
+{
+  "id": "hammer-02",
+  "name": {
+    "en": "Rivet Hammer",
+    "de": "Niete Hammer"
+  },
+  "family": "hammer",
+  "tier": 1,
+  "design": "Riveting hammer with a forged steel rectangular head, one round striking face and one tapered rounded peen, scarred ash handle to left and brass ferrule.",
+  "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Rivet Hammer.\nSHAPE: One hammer only, handle extends to left, substantial head at right.\nUNIQUE DESIGN: Riveting hammer with a forged steel rectangular head, one round striking face and one tapered rounded peen, scarred ash handle to left and brass ferrule.",
+  "generator": "built-in image_gen",
+  "source": "exec-50ea7325-1991-4e61-ad95-78eba10e98b6.png",
+  "destination": "game/assets/weapons/illustrated/sources/hammer-02.png",
+  "sourceSha256": "e31b31f2df9c25eb84813f71c4e8c7e6e9f6db81cd0fc248b3c3fa286ea17614",
+  "generatedAt": "2026-10-30T07:41:22.537083+00:00",
+  "reviewed": true,
+  "reviewNotes": "Individual generated source and alpha-composited family review checked: distinct correct form, full silhouette, detailed material, clean transparency. Grip and scale packed for the actual fighter renderer."
+}

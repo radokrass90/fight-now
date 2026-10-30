@@ -1,0 +1,18 @@
+{
+  "id": "hammer-05",
+  "name": {
+    "en": "Ember Hammer",
+    "de": "Glut Hammer"
+  },
+  "family": "hammer",
+  "tier": 3,
+  "design": "Copper-faced workshop hammer with a short thick cylindrical double head, dark gunmetal central block and crimson leather-wrapped handle to the left.",
+  "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Ember Hammer.\nSHAPE: One hammer only, handle extends to left, substantial head at right.\nUNIQUE DESIGN: Copper-faced workshop hammer with a short thick cylindrical double head, dark gunmetal central block and crimson leather-wrapped handle to the left.",
+  "generator": "built-in image_gen",
+  "source": "exec-3d597aac-2bdf-41a3-ae1f-563dc75e1995.png",
+  "destination": "game/assets/weapons/illustrated/sources/hammer-05.png",
+  "sourceSha256": "93cef712ecaa593cd04d85a3920d5de60cc42b07ae6e07d012f58a44688655b6",
+  "generatedAt": "2026-10-30T07:41:22.544341+00:00",
+  "reviewed": true,
+  "reviewNotes": "Individual generated source and alpha-composited family review checked: distinct correct form, full silhouette, detailed material, clean transparency. Grip and scale packed for the actual fighter renderer."
+}

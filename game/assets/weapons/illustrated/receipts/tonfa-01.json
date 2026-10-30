@@ -1,0 +1,18 @@
+{
+  "id": "tonfa-01",
+  "name": {
+    "en": "Patrol Tonfa",
+    "de": "Patrouille Tonfa"
+  },
+  "family": "tonfa",
+  "tier": 1,
+  "design": "One solid matte-black patrol tonfa, horizontal long baton end to right, short perpendicular side handle pointing UP near the left third, textured rubber side grip and rounded ends.",
+  "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Patrol Tonfa.\nSHAPE: One tonfa only, main shaft horizontal to right, short perpendicular side grip points UP near left third. Not a pair.\nUNIQUE DESIGN: One solid matte-black patrol tonfa, horizontal long baton end to right, short perpendicular side handle pointing UP near the left third, textured rubber side grip and rounded ends.",
+  "generator": "built-in image_gen",
+  "source": "exec-0fe0148d-6f4f-4072-bab0-8cfaf03e0ed4.png",
+  "destination": "game/assets/weapons/illustrated/sources/tonfa-01.png",
+  "sourceSha256": "b6e439555a341d51b9aa3a3fe6be6a4443b06ccedcb457939f4dc1f23c8fc1a5",
+  "generatedAt": "2026-10-30T07:57:04.357381+00:00",
+  "reviewed": true,
+  "reviewNotes": "Individual generated source and alpha-composited family review checked: distinct correct form, full silhouette, detailed material, clean transparency. Grip and scale packed for the actual fighter renderer."
+}

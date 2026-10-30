@@ -1,0 +1,18 @@
+{
+  "id": "bat-06",
+  "name": {
+    "en": "Blackout Bat",
+    "de": "Blackout Schläger"
+  },
+  "family": "bat",
+  "tier": 3,
+  "design": "Matte black steel bat with an angular hexagonal barrel, carbon-fibre neck, ventilated recessed grooves, crimson stitching on leather handle and a blunt faceted end cap.",
+  "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Blackout Bat.\nSHAPE: One complete baseball-bat/club silhouette, slim handle at left and broad striking barrel at right.\nUNIQUE DESIGN: Matte black steel bat with an angular hexagonal barrel, carbon-fibre neck, ventilated recessed grooves, crimson stitching on leather handle and a blunt faceted end cap.",
+  "generator": "built-in image_gen",
+  "source": "exec-b0e13369-9cf1-4aab-a348-fa3a4ffbd445.png",
+  "destination": "game/assets/weapons/illustrated/sources/bat-06.png",
+  "sourceSha256": "0f2cf0e2f64c7375e1c793a2be0bfcc833189f7be9e85e876952ed7ebad02269",
+  "generatedAt": "2026-10-30T07:31:54.151549+00:00",
+  "reviewed": true,
+  "reviewNotes": "Individual generated source and alpha-composited family review checked: distinct correct form, full silhouette, detailed material, clean transparency. Grip and scale packed for the actual fighter renderer."
+}

@@ -10,13 +10,13 @@ const run=code=>vm.runInContext(code,sb);
 (async()=>{
  await run('Economy.ready');assert.equal(run('Economy.profile.coins'),250);assert(storage.has('fightersgame_token'));
  const catalog=run('WEAPON_CATALOG.weapons');assert.equal(catalog.length,100);assert.equal(new Set(catalog.map(w=>w.id)).size,100);
- const hashes=catalog.map(w=>crypto.createHash('sha256').update(fs.readFileSync(root+'/'+w.icon)).digest('hex'));assert.equal(new Set(hashes).size,100);
+ const hashes=catalog.map(w=>crypto.createHash('sha256').update(fs.readFileSync(root+'/'+w.icon)).digest('hex'));assert.equal(new Set(hashes).size,100);if(process.env.REQUIRE_WEAPON_ILLUSTRATIONS==='1')assert(catalog.every(w=>w.art?.version===2&&w.art.combat.endsWith('.webp')));
  for(const w of catalog){assert(w.name.en&&w.name.de&&w.price>0&&w.reach>0);assert(!/[А-Яа-я]/.test(w.name.en+w.name.de));}
  await run('CharacterArt.ready');await run("CharacterArt.prepare(['murat','nadine'])");
  const c=createCanvas(960,540);sb.testCtx=c.getContext('2d');
  let rendered=0;
- for(const w of catalog){sb.weaponId=w.id;const image=run('WeaponArt.prepare(weaponId)');if(!image.complete)await new Promise((resolve,reject)=>{image.onload=resolve;image.onerror=reject;});
-  run(`{const m=new Match({mode:'training',arena:0,c1:CHARS[0],c2:CHARS[7],ctrl1:{type:'human'},ctrl2:{type:'dummy'},economy:{loadout:{weaponId,upgrades:{power:5,guard:5,focus:5}}}});const [a,b]=m.p;a.state='idle';a.x=450;a.y=0;const base=Math.round(100*a.c.power*b.c.def);b.hp=1000;const dealt=m.damage(a,b,100);if(dealt<=base||a.equipment.reach<=0||a.equipment.focus<=1)throw Error('Purchased weapon/upgrade not applied');testCtx.clearRect(0,0,960,540);const art=CharacterArt.draw(testCtx,a);const before=testCtx.getImageData(300,200,400,320).data;WeaponArt.draw(testCtx,a,art);const after=testCtx.getImageData(300,200,400,320).data;let changed=0;for(let px=0;px<before.length;px+=4)if(before[px]!==after[px]||before[px+1]!==after[px+1]||before[px+2]!==after[px+2])changed++;if(changed<20)throw Error('Weapon is not visibly drawn: '+weaponId+' '+changed);this.weaponStats=a.equipment;}`);
+ for(const w of catalog){sb.weaponId=w.id;const image=run('WeaponArt.prepare(weaponId)');await image.decode();
+  run(`{const m=new Match({mode:'training',arena:0,c1:CHARS[0],c2:CHARS[7],ctrl1:{type:'human'},ctrl2:{type:'dummy'},economy:{loadout:{weaponId,upgrades:{power:5,guard:5,focus:5}}}});const [a,b]=m.p;a.state='idle';a.x=450;a.y=0;const base=Math.round(100*a.c.power*b.c.def);b.hp=1000;const dealt=m.damage(a,b,100);if(dealt<=base||a.equipment.reach<=0||a.equipment.focus<=1)throw Error('Purchased weapon/upgrade not applied');testCtx.clearRect(0,0,960,540);const art=CharacterArt.draw(testCtx,a);const before=testCtx.getImageData(300,200,400,320).data;WeaponArt.draw(testCtx,a,{...art,image:null});const after=testCtx.getImageData(300,200,400,320).data;let changed=0;for(let px=0;px<before.length;px+=4)if(before[px]!==after[px]||before[px+1]!==after[px+1]||before[px+2]!==after[px+2])changed++;if(changed<20)throw Error('Weapon is not visibly drawn: '+weaponId+' '+changed);this.weaponStats=a.equipment;}`);
   assert(sb.weaponStats.weapon.id===w.id);rendered++;
  }
  // Snapshot survives rounds and never mutates shared character definitions.

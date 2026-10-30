@@ -1,0 +1,18 @@
+{
+  "id": "axe-08",
+  "name": {
+    "en": "Tempest Axe",
+    "de": "Sturmwind Axt"
+  },
+  "family": "axe",
+  "tier": 4,
+  "design": "Tempest axe with an elegant swept titanium crescent at right, clean aerodynamic cut-outs in head, dark carbon left handle and cobalt fittings.",
+  "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Tempest Axe.\nSHAPE: One axe only, long handle extends to left, curved axe head at right.\nUNIQUE DESIGN: Tempest axe with an elegant swept titanium crescent at right, clean aerodynamic cut-outs in head, dark carbon left handle and cobalt fittings.",
+  "generator": "built-in image_gen",
+  "source": "exec-821fa950-bdd4-437a-9303-89db1f648645.png",
+  "destination": "game/assets/weapons/illustrated/sources/axe-08.png",
+  "sourceSha256": "eb3e20896ca24d0862f7ab83ed7ee59fd651c4450ad2154a8a9f7272f58726d3",
+  "generatedAt": "2026-10-30T07:51:19.011336+00:00",
+  "reviewed": true,
+  "reviewNotes": "Individual generated source and alpha-composited family review checked: distinct correct form, full silhouette, detailed material, clean transparency. Grip and scale packed for the actual fighter renderer."
+}

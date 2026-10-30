@@ -18,7 +18,25 @@
       "reach": 7,
       "meter": 0.01,
       "length": 53,
-      "icon": "assets/weapons/bat-01.svg"
+      "icon": "assets/weapons/illustrated/thumb/bat-01.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/bat-01.webp",
+        "detail": "assets/weapons/illustrated/detail/bat-01.webp",
+        "combat": "assets/weapons/illustrated/combat/bat-01.webp",
+        "grip": {
+          "x": 75.80000000000001,
+          "y": 95.56091954022989
+        },
+        "bounds": {
+          "x": 26,
+          "y": 74,
+          "w": 332,
+          "h": 44
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "bat-02",
@@ -37,7 +55,25 @@
       "reach": 7,
       "meter": 0.01,
       "length": 54,
-      "icon": "assets/weapons/bat-02.svg"
+      "icon": "assets/weapons/illustrated/thumb/bat-02.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/bat-02.webp",
+        "detail": "assets/weapons/illustrated/detail/bat-02.webp",
+        "combat": "assets/weapons/illustrated/combat/bat-02.webp",
+        "grip": {
+          "x": 75.837899543379,
+          "y": 95.01369863013699
+        },
+        "bounds": {
+          "x": 26,
+          "y": 70,
+          "w": 332,
+          "h": 53
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "bat-03",
@@ -56,7 +92,25 @@
       "reach": 8,
       "meter": 0.01,
       "length": 55,
-      "icon": "assets/weapons/bat-03.svg"
+      "icon": "assets/weapons/illustrated/thumb/bat-03.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/bat-03.webp",
+        "detail": "assets/weapons/illustrated/detail/bat-03.webp",
+        "combat": "assets/weapons/illustrated/combat/bat-03.webp",
+        "grip": {
+          "x": 75.80000000000001,
+          "y": 95.00229885057472
+        },
+        "bounds": {
+          "x": 26,
+          "y": 66,
+          "w": 332,
+          "h": 60
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "bat-04",
@@ -75,7 +129,25 @@
       "reach": 8,
       "meter": 0.01,
       "length": 56,
-      "icon": "assets/weapons/bat-04.svg"
+      "icon": "assets/weapons/illustrated/thumb/bat-04.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/bat-04.webp",
+        "detail": "assets/weapons/illustrated/detail/bat-04.webp",
+        "combat": "assets/weapons/illustrated/combat/bat-04.webp",
+        "grip": {
+          "x": 75.86712882726748,
+          "y": 96.5366839976892
+        },
+        "bounds": {
+          "x": 26,
+          "y": 67,
+          "w": 332,
+          "h": 59
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "bat-05",
@@ -94,7 +166,25 @@
       "reach": 9,
       "meter": 0.01,
       "length": 57,
-      "icon": "assets/weapons/bat-05.svg"
+      "icon": "assets/weapons/illustrated/thumb/bat-05.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/bat-05.webp",
+        "detail": "assets/weapons/illustrated/detail/bat-05.webp",
+        "combat": "assets/weapons/illustrated/combat/bat-05.webp",
+        "grip": {
+          "x": 75.7243735763098,
+          "y": 96.14578587699316
+        },
+        "bounds": {
+          "x": 26,
+          "y": 71,
+          "w": 332,
+          "h": 51
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "bat-06",
@@ -113,7 +203,25 @@
       "reach": 9,
       "meter": 0.01,
       "length": 58,
-      "icon": "assets/weapons/bat-06.svg"
+      "icon": "assets/weapons/illustrated/thumb/bat-06.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/bat-06.webp",
+        "detail": "assets/weapons/illustrated/detail/bat-06.webp",
+        "combat": "assets/weapons/illustrated/combat/bat-06.webp",
+        "grip": {
+          "x": 75.82831154064809,
+          "y": 95.46048891415577
+        },
+        "bounds": {
+          "x": 26,
+          "y": 73,
+          "w": 332,
+          "h": 47
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "bat-07",
@@ -132,7 +240,25 @@
       "reach": 10,
       "meter": 0.01,
       "length": 59,
-      "icon": "assets/weapons/bat-07.svg"
+      "icon": "assets/weapons/illustrated/thumb/bat-07.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/bat-07.webp",
+        "detail": "assets/weapons/illustrated/detail/bat-07.webp",
+        "combat": "assets/weapons/illustrated/combat/bat-07.webp",
+        "grip": {
+          "x": 75.7223088923557,
+          "y": 96.99791991679668
+        },
+        "bounds": {
+          "x": 26,
+          "y": 73,
+          "w": 332,
+          "h": 46
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "bat-08",
@@ -151,7 +277,25 @@
       "reach": 10,
       "meter": 0.01,
       "length": 60,
-      "icon": "assets/weapons/bat-08.svg"
+      "icon": "assets/weapons/illustrated/thumb/bat-08.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/bat-08.webp",
+        "detail": "assets/weapons/illustrated/detail/bat-08.webp",
+        "combat": "assets/weapons/illustrated/combat/bat-08.webp",
+        "grip": {
+          "x": 75.75160349854227,
+          "y": 96.134110787172
+        },
+        "bounds": {
+          "x": 26,
+          "y": 70,
+          "w": 332,
+          "h": 53
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "bat-09",
@@ -170,7 +314,25 @@
       "reach": 11,
       "meter": 0.01,
       "length": 61,
-      "icon": "assets/weapons/bat-09.svg"
+      "icon": "assets/weapons/illustrated/thumb/bat-09.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/bat-09.webp",
+        "detail": "assets/weapons/illustrated/detail/bat-09.webp",
+        "combat": "assets/weapons/illustrated/combat/bat-09.webp",
+        "grip": {
+          "x": 75.82595101615425,
+          "y": 95.97186034392914
+        },
+        "bounds": {
+          "x": 26,
+          "y": 74,
+          "w": 332,
+          "h": 45
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "bat-10",
@@ -189,7 +351,25 @@
       "reach": 11,
       "meter": 0.01,
       "length": 62,
-      "icon": "assets/weapons/bat-10.svg"
+      "icon": "assets/weapons/illustrated/thumb/bat-10.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/bat-10.webp",
+        "detail": "assets/weapons/illustrated/detail/bat-10.webp",
+        "combat": "assets/weapons/illustrated/combat/bat-10.webp",
+        "grip": {
+          "x": 75.80000000000001,
+          "y": 94.66666666666667
+        },
+        "bounds": {
+          "x": 26,
+          "y": 67,
+          "w": 332,
+          "h": 58
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "staff-01",
@@ -208,7 +388,25 @@
       "reach": 13,
       "meter": 0.015,
       "length": 77,
-      "icon": "assets/weapons/staff-01.svg"
+      "icon": "assets/weapons/illustrated/thumb/staff-01.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/staff-01.webp",
+        "detail": "assets/weapons/illustrated/detail/staff-01.webp",
+        "combat": "assets/weapons/illustrated/combat/staff-01.webp",
+        "grip": {
+          "x": 105.68654509610646,
+          "y": 95.99950714637752
+        },
+        "bounds": {
+          "x": 26,
+          "y": 87,
+          "w": 332,
+          "h": 19
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "staff-02",
@@ -227,7 +425,25 @@
       "reach": 13,
       "meter": 0.015,
       "length": 78,
-      "icon": "assets/weapons/staff-02.svg"
+      "icon": "assets/weapons/illustrated/thumb/staff-02.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/staff-02.webp",
+        "detail": "assets/weapons/illustrated/detail/staff-02.webp",
+        "combat": "assets/weapons/illustrated/combat/staff-02.webp",
+        "grip": {
+          "x": 105.62983947119925,
+          "y": 96.18885741265345
+        },
+        "bounds": {
+          "x": 26,
+          "y": 86,
+          "w": 332,
+          "h": 21
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "staff-03",
@@ -246,7 +462,25 @@
       "reach": 14,
       "meter": 0.015,
       "length": 79,
-      "icon": "assets/weapons/staff-03.svg"
+      "icon": "assets/weapons/illustrated/thumb/staff-03.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/staff-03.webp",
+        "detail": "assets/weapons/illustrated/detail/staff-03.webp",
+        "combat": "assets/weapons/illustrated/combat/staff-03.webp",
+        "grip": {
+          "x": 105.74354066985646,
+          "y": 95.75502392344498
+        },
+        "bounds": {
+          "x": 26,
+          "y": 84,
+          "w": 332,
+          "h": 24
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "staff-04",
@@ -265,7 +499,25 @@
       "reach": 14,
       "meter": 0.015,
       "length": 80,
-      "icon": "assets/weapons/staff-04.svg"
+      "icon": "assets/weapons/illustrated/thumb/staff-04.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/staff-04.webp",
+        "detail": "assets/weapons/illustrated/detail/staff-04.webp",
+        "combat": "assets/weapons/illustrated/combat/staff-04.webp",
+        "grip": {
+          "x": 105.6594427244582,
+          "y": 95.59339525283798
+        },
+        "bounds": {
+          "x": 26,
+          "y": 86,
+          "w": 332,
+          "h": 20
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "staff-05",
@@ -284,7 +536,25 @@
       "reach": 15,
       "meter": 0.015,
       "length": 81,
-      "icon": "assets/weapons/staff-05.svg"
+      "icon": "assets/weapons/illustrated/thumb/staff-05.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/staff-05.webp",
+        "detail": "assets/weapons/illustrated/detail/staff-05.webp",
+        "combat": "assets/weapons/illustrated/combat/staff-05.webp",
+        "grip": {
+          "x": 105.67299578059071,
+          "y": 96.20675105485232
+        },
+        "bounds": {
+          "x": 26,
+          "y": 85,
+          "w": 332,
+          "h": 23
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "staff-06",
@@ -303,7 +573,25 @@
       "reach": 15,
       "meter": 0.015,
       "length": 82,
-      "icon": "assets/weapons/staff-06.svg"
+      "icon": "assets/weapons/illustrated/thumb/staff-06.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/staff-06.webp",
+        "detail": "assets/weapons/illustrated/detail/staff-06.webp",
+        "combat": "assets/weapons/illustrated/combat/staff-06.webp",
+        "grip": {
+          "x": 105.70056788848736,
+          "y": 96.11254517294786
+        },
+        "bounds": {
+          "x": 26,
+          "y": 86,
+          "w": 332,
+          "h": 21
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "staff-07",
@@ -322,7 +610,25 @@
       "reach": 16,
       "meter": 0.015,
       "length": 83,
-      "icon": "assets/weapons/staff-07.svg"
+      "icon": "assets/weapons/illustrated/thumb/staff-07.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/staff-07.webp",
+        "detail": "assets/weapons/illustrated/detail/staff-07.webp",
+        "combat": "assets/weapons/illustrated/combat/staff-07.webp",
+        "grip": {
+          "x": 105.69374030005173,
+          "y": 96.39679255043973
+        },
+        "bounds": {
+          "x": 26,
+          "y": 83,
+          "w": 332,
+          "h": 27
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "staff-08",
@@ -341,7 +647,25 @@
       "reach": 16,
       "meter": 0.015,
       "length": 84,
-      "icon": "assets/weapons/staff-08.svg"
+      "icon": "assets/weapons/illustrated/thumb/staff-08.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/staff-08.webp",
+        "detail": "assets/weapons/illustrated/detail/staff-08.webp",
+        "combat": "assets/weapons/illustrated/combat/staff-08.webp",
+        "grip": {
+          "x": 105.67326230339928,
+          "y": 96.27498731608321
+        },
+        "bounds": {
+          "x": 26,
+          "y": 86,
+          "w": 332,
+          "h": 20
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "staff-09",
@@ -360,7 +684,25 @@
       "reach": 17,
       "meter": 0.015,
       "length": 85,
-      "icon": "assets/weapons/staff-09.svg"
+      "icon": "assets/weapons/illustrated/thumb/staff-09.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/staff-09.webp",
+        "detail": "assets/weapons/illustrated/detail/staff-09.webp",
+        "combat": "assets/weapons/illustrated/combat/staff-09.webp",
+        "grip": {
+          "x": 105.61587982832617,
+          "y": 96.35836909871244
+        },
+        "bounds": {
+          "x": 26,
+          "y": 83,
+          "w": 332,
+          "h": 26
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "staff-10",
@@ -379,7 +721,25 @@
       "reach": 17,
       "meter": 0.015,
       "length": 86,
-      "icon": "assets/weapons/staff-10.svg"
+      "icon": "assets/weapons/illustrated/thumb/staff-10.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/staff-10.webp",
+        "detail": "assets/weapons/illustrated/detail/staff-10.webp",
+        "combat": "assets/weapons/illustrated/combat/staff-10.webp",
+        "grip": {
+          "x": 105.72088250384813,
+          "y": 97.37506413545408
+        },
+        "bounds": {
+          "x": 26,
+          "y": 80,
+          "w": 332,
+          "h": 32
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "hammer-01",
@@ -398,7 +758,25 @@
       "reach": 4,
       "meter": 0.02,
       "length": 43,
-      "icon": "assets/weapons/hammer-01.svg"
+      "icon": "assets/weapons/illustrated/thumb/hammer-01.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/hammer-01.webp",
+        "detail": "assets/weapons/illustrated/detail/hammer-01.webp",
+        "combat": "assets/weapons/illustrated/combat/hammer-01.webp",
+        "grip": {
+          "x": 69.08690614136732,
+          "y": 94.85863267670916
+        },
+        "bounds": {
+          "x": 26,
+          "y": 41,
+          "w": 332,
+          "h": 110
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "hammer-02",
@@ -417,7 +795,25 @@
       "reach": 4,
       "meter": 0.02,
       "length": 44,
-      "icon": "assets/weapons/hammer-02.svg"
+      "icon": "assets/weapons/illustrated/thumb/hammer-02.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/hammer-02.webp",
+        "detail": "assets/weapons/illustrated/detail/hammer-02.webp",
+        "combat": "assets/weapons/illustrated/combat/hammer-02.webp",
+        "grip": {
+          "x": 69.17919075144508,
+          "y": 98.9757225433526
+        },
+        "bounds": {
+          "x": 26,
+          "y": 32,
+          "w": 332,
+          "h": 128
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "hammer-03",
@@ -436,7 +832,25 @@
       "reach": 5,
       "meter": 0.02,
       "length": 45,
-      "icon": "assets/weapons/hammer-03.svg"
+      "icon": "assets/weapons/illustrated/thumb/hammer-03.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/hammer-03.webp",
+        "detail": "assets/weapons/illustrated/detail/hammer-03.webp",
+        "combat": "assets/weapons/illustrated/combat/hammer-03.webp",
+        "grip": {
+          "x": 69.16192687173535,
+          "y": 94.26465467208358
+        },
+        "bounds": {
+          "x": 26,
+          "y": 38,
+          "w": 332,
+          "h": 116
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "hammer-04",
@@ -455,7 +869,25 @@
       "reach": 5,
       "meter": 0.02,
       "length": 46,
-      "icon": "assets/weapons/hammer-04.svg"
+      "icon": "assets/weapons/illustrated/thumb/hammer-04.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/hammer-04.webp",
+        "detail": "assets/weapons/illustrated/detail/hammer-04.webp",
+        "combat": "assets/weapons/illustrated/combat/hammer-04.webp",
+        "grip": {
+          "x": 69.170837867247,
+          "y": 96.38302502720347
+        },
+        "bounds": {
+          "x": 26,
+          "y": 44,
+          "w": 332,
+          "h": 105
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "hammer-05",
@@ -474,7 +906,25 @@
       "reach": 6,
       "meter": 0.02,
       "length": 47,
-      "icon": "assets/weapons/hammer-05.svg"
+      "icon": "assets/weapons/illustrated/thumb/hammer-05.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/hammer-05.webp",
+        "detail": "assets/weapons/illustrated/detail/hammer-05.webp",
+        "combat": "assets/weapons/illustrated/combat/hammer-05.webp",
+        "grip": {
+          "x": 69.1775043936731,
+          "y": 97.5735207967194
+        },
+        "bounds": {
+          "x": 26,
+          "y": 26,
+          "w": 332,
+          "h": 141
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "hammer-06",
@@ -493,7 +943,25 @@
       "reach": 6,
       "meter": 0.02,
       "length": 48,
-      "icon": "assets/weapons/hammer-06.svg"
+      "icon": "assets/weapons/illustrated/thumb/hammer-06.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/hammer-06.webp",
+        "detail": "assets/weapons/illustrated/detail/hammer-06.webp",
+        "combat": "assets/weapons/illustrated/combat/hammer-06.webp",
+        "grip": {
+          "x": 69.18853868194842,
+          "y": 98.10773638968482
+        },
+        "bounds": {
+          "x": 26,
+          "y": 26,
+          "w": 332,
+          "h": 141
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "hammer-07",
@@ -512,7 +980,25 @@
       "reach": 7,
       "meter": 0.02,
       "length": 49,
-      "icon": "assets/weapons/hammer-07.svg"
+      "icon": "assets/weapons/illustrated/thumb/hammer-07.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/hammer-07.webp",
+        "detail": "assets/weapons/illustrated/detail/hammer-07.webp",
+        "combat": "assets/weapons/illustrated/combat/hammer-07.webp",
+        "grip": {
+          "x": 69.2108362779741,
+          "y": 95.1542991755006
+        },
+        "bounds": {
+          "x": 26,
+          "y": 32,
+          "w": 332,
+          "h": 128
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "hammer-08",
@@ -531,7 +1017,25 @@
       "reach": 7,
       "meter": 0.02,
       "length": 50,
-      "icon": "assets/weapons/hammer-08.svg"
+      "icon": "assets/weapons/illustrated/thumb/hammer-08.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/hammer-08.webp",
+        "detail": "assets/weapons/illustrated/detail/hammer-08.webp",
+        "combat": "assets/weapons/illustrated/combat/hammer-08.webp",
+        "grip": {
+          "x": 69.11939429237042,
+          "y": 95.22306348281887
+        },
+        "bounds": {
+          "x": 26,
+          "y": 26,
+          "w": 332,
+          "h": 140
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "hammer-09",
@@ -550,7 +1054,25 @@
       "reach": 8,
       "meter": 0.02,
       "length": 51,
-      "icon": "assets/weapons/hammer-09.svg"
+      "icon": "assets/weapons/illustrated/thumb/hammer-09.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/hammer-09.webp",
+        "detail": "assets/weapons/illustrated/detail/hammer-09.webp",
+        "combat": "assets/weapons/illustrated/combat/hammer-09.webp",
+        "grip": {
+          "x": 69.07345971563981,
+          "y": 94.7085308056872
+        },
+        "bounds": {
+          "x": 26,
+          "y": 30,
+          "w": 332,
+          "h": 133
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "hammer-10",
@@ -569,7 +1091,25 @@
       "reach": 8,
       "meter": 0.02,
       "length": 52,
-      "icon": "assets/weapons/hammer-10.svg"
+      "icon": "assets/weapons/illustrated/thumb/hammer-10.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/hammer-10.webp",
+        "detail": "assets/weapons/illustrated/detail/hammer-10.webp",
+        "combat": "assets/weapons/illustrated/combat/hammer-10.webp",
+        "grip": {
+          "x": 69.20547945205479,
+          "y": 95.23972602739725
+        },
+        "bounds": {
+          "x": 26,
+          "y": 31,
+          "w": 332,
+          "h": 130
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "axe-01",
@@ -588,7 +1128,25 @@
       "reach": 6,
       "meter": 0.025,
       "length": 48,
-      "icon": "assets/weapons/axe-01.svg"
+      "icon": "assets/weapons/illustrated/thumb/axe-01.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/axe-01.webp",
+        "detail": "assets/weapons/illustrated/detail/axe-01.webp",
+        "combat": "assets/weapons/illustrated/combat/axe-01.webp",
+        "grip": {
+          "x": 72.45667447306792,
+          "y": 76.54332552693208
+        },
+        "bounds": {
+          "x": 26,
+          "y": 40,
+          "w": 332,
+          "h": 112
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "axe-02",
@@ -607,7 +1165,25 @@
       "reach": 6,
       "meter": 0.025,
       "length": 49,
-      "icon": "assets/weapons/axe-02.svg"
+      "icon": "assets/weapons/illustrated/thumb/axe-02.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/axe-02.webp",
+        "detail": "assets/weapons/illustrated/detail/axe-02.webp",
+        "combat": "assets/weapons/illustrated/combat/axe-02.webp",
+        "grip": {
+          "x": 72.41067285382832,
+          "y": 88.57308584686774
+        },
+        "bounds": {
+          "x": 26,
+          "y": 36,
+          "w": 332,
+          "h": 121
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "axe-03",
@@ -626,7 +1202,25 @@
       "reach": 7,
       "meter": 0.025,
       "length": 50,
-      "icon": "assets/weapons/axe-03.svg"
+      "icon": "assets/weapons/illustrated/thumb/axe-03.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/axe-03.webp",
+        "detail": "assets/weapons/illustrated/detail/axe-03.webp",
+        "combat": "assets/weapons/illustrated/combat/axe-03.webp",
+        "grip": {
+          "x": 72.47607796810397,
+          "y": 84.30064973419965
+        },
+        "bounds": {
+          "x": 26,
+          "y": 29,
+          "w": 332,
+          "h": 135
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "axe-04",
@@ -645,7 +1239,25 @@
       "reach": 7,
       "meter": 0.025,
       "length": 51,
-      "icon": "assets/weapons/axe-04.svg"
+      "icon": "assets/weapons/illustrated/thumb/axe-04.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/axe-04.webp",
+        "detail": "assets/weapons/illustrated/detail/axe-04.webp",
+        "combat": "assets/weapons/illustrated/combat/axe-04.webp",
+        "grip": {
+          "x": 72.55279861511829,
+          "y": 83.95499134448933
+        },
+        "bounds": {
+          "x": 26,
+          "y": 42,
+          "w": 332,
+          "h": 109
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "axe-05",
@@ -664,7 +1276,25 @@
       "reach": 8,
       "meter": 0.025,
       "length": 52,
-      "icon": "assets/weapons/axe-05.svg"
+      "icon": "assets/weapons/illustrated/thumb/axe-05.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/axe-05.webp",
+        "detail": "assets/weapons/illustrated/detail/axe-05.webp",
+        "combat": "assets/weapons/illustrated/combat/axe-05.webp",
+        "grip": {
+          "x": 72.56672345258376,
+          "y": 84.26348665530949
+        },
+        "bounds": {
+          "x": 26,
+          "y": 36,
+          "w": 332,
+          "h": 120
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "axe-06",
@@ -683,7 +1313,25 @@
       "reach": 8,
       "meter": 0.025,
       "length": 53,
-      "icon": "assets/weapons/axe-06.svg"
+      "icon": "assets/weapons/illustrated/thumb/axe-06.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/axe-06.webp",
+        "detail": "assets/weapons/illustrated/detail/axe-06.webp",
+        "combat": "assets/weapons/illustrated/combat/axe-06.webp",
+        "grip": {
+          "x": 72.44954128440367,
+          "y": 73.64449541284404
+        },
+        "bounds": {
+          "x": 26,
+          "y": 35,
+          "w": 332,
+          "h": 123
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "axe-07",
@@ -702,7 +1350,25 @@
       "reach": 9,
       "meter": 0.025,
       "length": 54,
-      "icon": "assets/weapons/axe-07.svg"
+      "icon": "assets/weapons/illustrated/thumb/axe-07.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/axe-07.webp",
+        "detail": "assets/weapons/illustrated/detail/axe-07.webp",
+        "combat": "assets/weapons/illustrated/combat/axe-07.webp",
+        "grip": {
+          "x": 72.45733788395904,
+          "y": 75.03640500568828
+        },
+        "bounds": {
+          "x": 26,
+          "y": 35,
+          "w": 332,
+          "h": 122
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "axe-08",
@@ -721,7 +1387,25 @@
       "reach": 9,
       "meter": 0.025,
       "length": 55,
-      "icon": "assets/weapons/axe-08.svg"
+      "icon": "assets/weapons/illustrated/thumb/axe-08.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/axe-08.webp",
+        "detail": "assets/weapons/illustrated/detail/axe-08.webp",
+        "combat": "assets/weapons/illustrated/combat/axe-08.webp",
+        "grip": {
+          "x": 72.48,
+          "y": 83.58628571428571
+        },
+        "bounds": {
+          "x": 26,
+          "y": 28,
+          "w": 332,
+          "h": 136
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "axe-09",
@@ -740,7 +1424,25 @@
       "reach": 10,
       "meter": 0.025,
       "length": 56,
-      "icon": "assets/weapons/axe-09.svg"
+      "icon": "assets/weapons/illustrated/thumb/axe-09.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/axe-09.webp",
+        "detail": "assets/weapons/illustrated/detail/axe-09.webp",
+        "combat": "assets/weapons/illustrated/combat/axe-09.webp",
+        "grip": {
+          "x": 72.51025056947609,
+          "y": 84.4510250569476
+        },
+        "bounds": {
+          "x": 26,
+          "y": 30,
+          "w": 332,
+          "h": 132
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "axe-10",
@@ -759,7 +1461,25 @@
       "reach": 10,
       "meter": 0.025,
       "length": 57,
-      "icon": "assets/weapons/axe-10.svg"
+      "icon": "assets/weapons/illustrated/thumb/axe-10.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/axe-10.webp",
+        "detail": "assets/weapons/illustrated/detail/axe-10.webp",
+        "combat": "assets/weapons/illustrated/combat/axe-10.webp",
+        "grip": {
+          "x": 72.54729729729729,
+          "y": 76.95945945945945
+        },
+        "bounds": {
+          "x": 26,
+          "y": 22,
+          "w": 332,
+          "h": 149
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "sword-01",
@@ -778,7 +1498,25 @@
       "reach": 10,
       "meter": 0.01,
       "length": 62,
-      "icon": "assets/weapons/sword-01.svg"
+      "icon": "assets/weapons/illustrated/thumb/sword-01.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/sword-01.webp",
+        "detail": "assets/weapons/illustrated/detail/sword-01.webp",
+        "combat": "assets/weapons/illustrated/combat/sword-01.webp",
+        "grip": {
+          "x": 65.90841442472811,
+          "y": 95.84544934172868
+        },
+        "bounds": {
+          "x": 26,
+          "y": 70,
+          "w": 332,
+          "h": 53
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "sword-02",
@@ -797,7 +1535,25 @@
       "reach": 10,
       "meter": 0.01,
       "length": 63,
-      "icon": "assets/weapons/sword-02.svg"
+      "icon": "assets/weapons/illustrated/thumb/sword-02.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/sword-02.webp",
+        "detail": "assets/weapons/illustrated/detail/sword-02.webp",
+        "combat": "assets/weapons/illustrated/combat/sword-02.webp",
+        "grip": {
+          "x": 65.80477453580902,
+          "y": 95.02175066312998
+        },
+        "bounds": {
+          "x": 26,
+          "y": 76,
+          "w": 332,
+          "h": 41
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "sword-03",
@@ -816,7 +1572,25 @@
       "reach": 11,
       "meter": 0.01,
       "length": 64,
-      "icon": "assets/weapons/sword-03.svg"
+      "icon": "assets/weapons/illustrated/thumb/sword-03.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/sword-03.webp",
+        "detail": "assets/weapons/illustrated/detail/sword-03.webp",
+        "combat": "assets/weapons/illustrated/combat/sword-03.webp",
+        "grip": {
+          "x": 65.81904260915309,
+          "y": 94.2924776433456
+        },
+        "bounds": {
+          "x": 26,
+          "y": 66,
+          "w": 332,
+          "h": 60
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "sword-04",
@@ -835,7 +1609,25 @@
       "reach": 11,
       "meter": 0.01,
       "length": 65,
-      "icon": "assets/weapons/sword-04.svg"
+      "icon": "assets/weapons/illustrated/thumb/sword-04.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/sword-04.webp",
+        "detail": "assets/weapons/illustrated/detail/sword-04.webp",
+        "combat": "assets/weapons/illustrated/combat/sword-04.webp",
+        "grip": {
+          "x": 65.91566951566952,
+          "y": 95.64501424501424
+        },
+        "bounds": {
+          "x": 26,
+          "y": 51,
+          "w": 332,
+          "h": 91
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "sword-05",
@@ -854,7 +1646,25 @@
       "reach": 12,
       "meter": 0.01,
       "length": 66,
-      "icon": "assets/weapons/sword-05.svg"
+      "icon": "assets/weapons/illustrated/thumb/sword-05.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/sword-05.webp",
+        "detail": "assets/weapons/illustrated/detail/sword-05.webp",
+        "combat": "assets/weapons/illustrated/combat/sword-05.webp",
+        "grip": {
+          "x": 65.88577055637617,
+          "y": 95.88577055637617
+        },
+        "bounds": {
+          "x": 26,
+          "y": 56,
+          "w": 332,
+          "h": 80
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "sword-06",
@@ -873,7 +1683,25 @@
       "reach": 12,
       "meter": 0.01,
       "length": 67,
-      "icon": "assets/weapons/sword-06.svg"
+      "icon": "assets/weapons/illustrated/thumb/sword-06.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/sword-06.webp",
+        "detail": "assets/weapons/illustrated/detail/sword-06.webp",
+        "combat": "assets/weapons/illustrated/combat/sword-06.webp",
+        "grip": {
+          "x": 65.90744920993228,
+          "y": 96.90519187358916
+        },
+        "bounds": {
+          "x": 26,
+          "y": 54,
+          "w": 332,
+          "h": 85
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "sword-07",
@@ -892,7 +1720,25 @@
       "reach": 13,
       "meter": 0.01,
       "length": 68,
-      "icon": "assets/weapons/sword-07.svg"
+      "icon": "assets/weapons/illustrated/thumb/sword-07.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/sword-07.webp",
+        "detail": "assets/weapons/illustrated/detail/sword-07.webp",
+        "combat": "assets/weapons/illustrated/combat/sword-07.webp",
+        "grip": {
+          "x": 65.77083333333333,
+          "y": 94.35648148148148
+        },
+        "bounds": {
+          "x": 26,
+          "y": 64,
+          "w": 332,
+          "h": 64
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "sword-08",
@@ -911,7 +1757,25 @@
       "reach": 13,
       "meter": 0.01,
       "length": 69,
-      "icon": "assets/weapons/sword-08.svg"
+      "icon": "assets/weapons/illustrated/thumb/sword-08.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/sword-08.webp",
+        "detail": "assets/weapons/illustrated/detail/sword-08.webp",
+        "combat": "assets/weapons/illustrated/combat/sword-08.webp",
+        "grip": {
+          "x": 65.86125933831377,
+          "y": 95.91248665955176
+        },
+        "bounds": {
+          "x": 26,
+          "y": 58,
+          "w": 332,
+          "h": 77
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "sword-09",
@@ -930,7 +1794,25 @@
       "reach": 14,
       "meter": 0.01,
       "length": 70,
-      "icon": "assets/weapons/sword-09.svg"
+      "icon": "assets/weapons/illustrated/thumb/sword-09.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/sword-09.webp",
+        "detail": "assets/weapons/illustrated/detail/sword-09.webp",
+        "combat": "assets/weapons/illustrated/combat/sword-09.webp",
+        "grip": {
+          "x": 65.76992084432717,
+          "y": 96.09868073878629
+        },
+        "bounds": {
+          "x": 26,
+          "y": 53,
+          "w": 332,
+          "h": 86
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "sword-10",
@@ -949,7 +1831,25 @@
       "reach": 14,
       "meter": 0.01,
       "length": 71,
-      "icon": "assets/weapons/sword-10.svg"
+      "icon": "assets/weapons/illustrated/thumb/sword-10.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/sword-10.webp",
+        "detail": "assets/weapons/illustrated/detail/sword-10.webp",
+        "combat": "assets/weapons/illustrated/combat/sword-10.webp",
+        "grip": {
+          "x": 65.89341377576672,
+          "y": 95.73554550025138
+        },
+        "bounds": {
+          "x": 26,
+          "y": 50,
+          "w": 332,
+          "h": 93
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "tonfa-01",
@@ -968,7 +1868,25 @@
       "reach": 5,
       "meter": 0.015,
       "length": 43,
-      "icon": "assets/weapons/tonfa-01.svg"
+      "icon": "assets/weapons/illustrated/thumb/tonfa-01.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/tonfa-01.webp",
+        "detail": "assets/weapons/illustrated/detail/tonfa-01.webp",
+        "combat": "assets/weapons/illustrated/combat/tonfa-01.webp",
+        "grip": {
+          "x": 118.86713286713287,
+          "y": 59.634032634032636
+        },
+        "bounds": {
+          "x": 26,
+          "y": 31,
+          "w": 332,
+          "h": 130
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "tonfa-02",
@@ -987,7 +1905,25 @@
       "reach": 5,
       "meter": 0.015,
       "length": 44,
-      "icon": "assets/weapons/tonfa-02.svg"
+      "icon": "assets/weapons/illustrated/thumb/tonfa-02.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/tonfa-02.webp",
+        "detail": "assets/weapons/illustrated/detail/tonfa-02.webp",
+        "combat": "assets/weapons/illustrated/combat/tonfa-02.webp",
+        "grip": {
+          "x": 118.88323699421964,
+          "y": 64.9479768786127
+        },
+        "bounds": {
+          "x": 26,
+          "y": 40,
+          "w": 332,
+          "h": 113
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "tonfa-03",
@@ -1006,7 +1942,25 @@
       "reach": 6,
       "meter": 0.015,
       "length": 45,
-      "icon": "assets/weapons/tonfa-03.svg"
+      "icon": "assets/weapons/illustrated/thumb/tonfa-03.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/tonfa-03.webp",
+        "detail": "assets/weapons/illustrated/detail/tonfa-03.webp",
+        "combat": "assets/weapons/illustrated/combat/tonfa-03.webp",
+        "grip": {
+          "x": 118.99074074074073,
+          "y": 62.70601851851852
+        },
+        "bounds": {
+          "x": 26,
+          "y": 36,
+          "w": 332,
+          "h": 121
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "tonfa-04",
@@ -1025,7 +1979,25 @@
       "reach": 6,
       "meter": 0.015,
       "length": 46,
-      "icon": "assets/weapons/tonfa-04.svg"
+      "icon": "assets/weapons/illustrated/thumb/tonfa-04.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/tonfa-04.webp",
+        "detail": "assets/weapons/illustrated/detail/tonfa-04.webp",
+        "combat": "assets/weapons/illustrated/combat/tonfa-04.webp",
+        "grip": {
+          "x": 118.88433048433049,
+          "y": 63.97094017094017
+        },
+        "bounds": {
+          "x": 26,
+          "y": 39,
+          "w": 332,
+          "h": 114
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "tonfa-05",
@@ -1044,7 +2016,25 @@
       "reach": 7,
       "meter": 0.015,
       "length": 47,
-      "icon": "assets/weapons/tonfa-05.svg"
+      "icon": "assets/weapons/illustrated/thumb/tonfa-05.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/tonfa-05.webp",
+        "detail": "assets/weapons/illustrated/detail/tonfa-05.webp",
+        "combat": "assets/weapons/illustrated/combat/tonfa-05.webp",
+        "grip": {
+          "x": 119.0139211136891,
+          "y": 61.53828306264501
+        },
+        "bounds": {
+          "x": 26,
+          "y": 34,
+          "w": 332,
+          "h": 125
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "tonfa-06",
@@ -1063,7 +2053,25 @@
       "reach": 7,
       "meter": 0.015,
       "length": 48,
-      "icon": "assets/weapons/tonfa-06.svg"
+      "icon": "assets/weapons/illustrated/thumb/tonfa-06.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/tonfa-06.webp",
+        "detail": "assets/weapons/illustrated/detail/tonfa-06.webp",
+        "combat": "assets/weapons/illustrated/combat/tonfa-06.webp",
+        "grip": {
+          "x": 118.98349056603774,
+          "y": 57.950471698113205
+        },
+        "bounds": {
+          "x": 26,
+          "y": 28,
+          "w": 332,
+          "h": 136
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "tonfa-07",
@@ -1082,7 +2090,25 @@
       "reach": 8,
       "meter": 0.015,
       "length": 49,
-      "icon": "assets/weapons/tonfa-07.svg"
+      "icon": "assets/weapons/illustrated/thumb/tonfa-07.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/tonfa-07.webp",
+        "detail": "assets/weapons/illustrated/detail/tonfa-07.webp",
+        "combat": "assets/weapons/illustrated/combat/tonfa-07.webp",
+        "grip": {
+          "x": 118.88323699421964,
+          "y": 63.947976878612714
+        },
+        "bounds": {
+          "x": 26,
+          "y": 39,
+          "w": 332,
+          "h": 114
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "tonfa-08",
@@ -1101,7 +2127,25 @@
       "reach": 8,
       "meter": 0.015,
       "length": 50,
-      "icon": "assets/weapons/tonfa-08.svg"
+      "icon": "assets/weapons/illustrated/thumb/tonfa-08.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/tonfa-08.webp",
+        "detail": "assets/weapons/illustrated/detail/tonfa-08.webp",
+        "combat": "assets/weapons/illustrated/combat/tonfa-08.webp",
+        "grip": {
+          "x": 118.86713286713287,
+          "y": 63.925407925407924
+        },
+        "bounds": {
+          "x": 26,
+          "y": 38,
+          "w": 332,
+          "h": 117
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "tonfa-09",
@@ -1120,7 +2164,25 @@
       "reach": 9,
       "meter": 0.015,
       "length": 51,
-      "icon": "assets/weapons/tonfa-09.svg"
+      "icon": "assets/weapons/illustrated/thumb/tonfa-09.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/tonfa-09.webp",
+        "detail": "assets/weapons/illustrated/detail/tonfa-09.webp",
+        "combat": "assets/weapons/illustrated/combat/tonfa-09.webp",
+        "grip": {
+          "x": 119.01315037164095,
+          "y": 63.81589479702687
+        },
+        "bounds": {
+          "x": 26,
+          "y": 38,
+          "w": 332,
+          "h": 117
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "tonfa-10",
@@ -1139,7 +2201,25 @@
       "reach": 9,
       "meter": 0.015,
       "length": 52,
-      "icon": "assets/weapons/tonfa-10.svg"
+      "icon": "assets/weapons/illustrated/thumb/tonfa-10.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/tonfa-10.webp",
+        "detail": "assets/weapons/illustrated/detail/tonfa-10.webp",
+        "combat": "assets/weapons/illustrated/combat/tonfa-10.webp",
+        "grip": {
+          "x": 118.95227008149011,
+          "y": 61.86146682188591
+        },
+        "bounds": {
+          "x": 26,
+          "y": 35,
+          "w": 332,
+          "h": 123
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "chain-01",
@@ -1158,7 +2238,25 @@
       "reach": 11,
       "meter": 0.02,
       "length": 68,
-      "icon": "assets/weapons/chain-01.svg"
+      "icon": "assets/weapons/illustrated/thumb/chain-01.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/chain-01.webp",
+        "detail": "assets/weapons/illustrated/detail/chain-01.webp",
+        "combat": "assets/weapons/illustrated/combat/chain-01.webp",
+        "grip": {
+          "x": 52.49138920780712,
+          "y": 78.86796785304247
+        },
+        "bounds": {
+          "x": 26,
+          "y": 60,
+          "w": 332,
+          "h": 72
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "chain-02",
@@ -1177,7 +2275,25 @@
       "reach": 11,
       "meter": 0.02,
       "length": 69,
-      "icon": "assets/weapons/chain-02.svg"
+      "icon": "assets/weapons/illustrated/thumb/chain-02.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/chain-02.webp",
+        "detail": "assets/weapons/illustrated/detail/chain-02.webp",
+        "combat": "assets/weapons/illustrated/combat/chain-02.webp",
+        "grip": {
+          "x": 52.49330357142857,
+          "y": 95.640625
+        },
+        "bounds": {
+          "x": 26,
+          "y": 71,
+          "w": 332,
+          "h": 50
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "chain-03",
@@ -1196,7 +2312,25 @@
       "reach": 12,
       "meter": 0.02,
       "length": 70,
-      "icon": "assets/weapons/chain-03.svg"
+      "icon": "assets/weapons/illustrated/thumb/chain-03.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/chain-03.webp",
+        "detail": "assets/weapons/illustrated/detail/chain-03.webp",
+        "combat": "assets/weapons/illustrated/combat/chain-03.webp",
+        "grip": {
+          "x": 52.479647964796484,
+          "y": 92.62816281628163
+        },
+        "bounds": {
+          "x": 26,
+          "y": 53,
+          "w": 332,
+          "h": 87
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "chain-04",
@@ -1215,7 +2349,25 @@
       "reach": 12,
       "meter": 0.02,
       "length": 71,
-      "icon": "assets/weapons/chain-04.svg"
+      "icon": "assets/weapons/illustrated/thumb/chain-04.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/chain-04.webp",
+        "detail": "assets/weapons/illustrated/detail/chain-04.webp",
+        "combat": "assets/weapons/illustrated/combat/chain-04.webp",
+        "grip": {
+          "x": 52.626106194690266,
+          "y": 94.30088495575221
+        },
+        "bounds": {
+          "x": 26,
+          "y": 73,
+          "w": 332,
+          "h": 46
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "chain-05",
@@ -1234,7 +2386,25 @@
       "reach": 13,
       "meter": 0.02,
       "length": 72,
-      "icon": "assets/weapons/chain-05.svg"
+      "icon": "assets/weapons/illustrated/thumb/chain-05.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/chain-05.webp",
+        "detail": "assets/weapons/illustrated/detail/chain-05.webp",
+        "combat": "assets/weapons/illustrated/combat/chain-05.webp",
+        "grip": {
+          "x": 52.59827089337176,
+          "y": 94.83919308357349
+        },
+        "bounds": {
+          "x": 26,
+          "y": 78,
+          "w": 332,
+          "h": 37
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "chain-06",
@@ -1253,7 +2423,25 @@
       "reach": 13,
       "meter": 0.02,
       "length": 73,
-      "icon": "assets/weapons/chain-06.svg"
+      "icon": "assets/weapons/illustrated/thumb/chain-06.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/chain-06.webp",
+        "detail": "assets/weapons/illustrated/detail/chain-06.webp",
+        "combat": "assets/weapons/illustrated/combat/chain-06.webp",
+        "grip": {
+          "x": 52.49138920780712,
+          "y": 91.06084959816303
+        },
+        "bounds": {
+          "x": 26,
+          "y": 68,
+          "w": 332,
+          "h": 56
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "chain-07",
@@ -1272,7 +2460,25 @@
       "reach": 14,
       "meter": 0.02,
       "length": 74,
-      "icon": "assets/weapons/chain-07.svg"
+      "icon": "assets/weapons/illustrated/thumb/chain-07.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/chain-07.webp",
+        "detail": "assets/weapons/illustrated/detail/chain-07.webp",
+        "combat": "assets/weapons/illustrated/combat/chain-07.webp",
+        "grip": {
+          "x": 52.64304325169359,
+          "y": 90.68108389786347
+        },
+        "bounds": {
+          "x": 26,
+          "y": 63,
+          "w": 332,
+          "h": 67
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "chain-08",
@@ -1291,7 +2497,25 @@
       "reach": 14,
       "meter": 0.02,
       "length": 75,
-      "icon": "assets/weapons/chain-08.svg"
+      "icon": "assets/weapons/illustrated/thumb/chain-08.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/chain-08.webp",
+        "detail": "assets/weapons/illustrated/detail/chain-08.webp",
+        "combat": "assets/weapons/illustrated/combat/chain-08.webp",
+        "grip": {
+          "x": 52.65008479366874,
+          "y": 93.02261164499717
+        },
+        "bounds": {
+          "x": 26,
+          "y": 69,
+          "w": 332,
+          "h": 55
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "chain-09",
@@ -1310,7 +2534,25 @@
       "reach": 15,
       "meter": 0.02,
       "length": 76,
-      "icon": "assets/weapons/chain-09.svg"
+      "icon": "assets/weapons/illustrated/thumb/chain-09.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/chain-09.webp",
+        "detail": "assets/weapons/illustrated/detail/chain-09.webp",
+        "combat": "assets/weapons/illustrated/combat/chain-09.webp",
+        "grip": {
+          "x": 52.630079155672824,
+          "y": 95.22849604221636
+        },
+        "bounds": {
+          "x": 26,
+          "y": 70,
+          "w": 332,
+          "h": 52
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "chain-10",
@@ -1329,7 +2571,25 @@
       "reach": 15,
       "meter": 0.02,
       "length": 77,
-      "icon": "assets/weapons/chain-10.svg"
+      "icon": "assets/weapons/illustrated/thumb/chain-10.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/chain-10.webp",
+        "detail": "assets/weapons/illustrated/detail/chain-10.webp",
+        "combat": "assets/weapons/illustrated/combat/chain-10.webp",
+        "grip": {
+          "x": 52.49028871391076,
+          "y": 91.6477690288714
+        },
+        "bounds": {
+          "x": 26,
+          "y": 73,
+          "w": 332,
+          "h": 46
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "spear-01",
@@ -1348,7 +2608,25 @@
       "reach": 15,
       "meter": 0.025,
       "length": 83,
-      "icon": "assets/weapons/spear-01.svg"
+      "icon": "assets/weapons/illustrated/thumb/spear-01.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/spear-01.webp",
+        "detail": "assets/weapons/illustrated/detail/spear-01.webp",
+        "combat": "assets/weapons/illustrated/combat/spear-01.webp",
+        "grip": {
+          "x": 102.42264150943396,
+          "y": 96.02264150943397
+        },
+        "bounds": {
+          "x": 26,
+          "y": 86,
+          "w": 332,
+          "h": 20
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "spear-02",
@@ -1367,7 +2645,25 @@
       "reach": 15,
       "meter": 0.025,
       "length": 84,
-      "icon": "assets/weapons/spear-02.svg"
+      "icon": "assets/weapons/illustrated/thumb/spear-02.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/spear-02.webp",
+        "detail": "assets/weapons/illustrated/detail/spear-02.webp",
+        "combat": "assets/weapons/illustrated/combat/spear-02.webp",
+        "grip": {
+          "x": 102.44972972972973,
+          "y": 95.92108108108108
+        },
+        "bounds": {
+          "x": 26,
+          "y": 83,
+          "w": 332,
+          "h": 27
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "spear-03",
@@ -1386,7 +2682,25 @@
       "reach": 16,
       "meter": 0.025,
       "length": 85,
-      "icon": "assets/weapons/spear-03.svg"
+      "icon": "assets/weapons/illustrated/thumb/spear-03.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/spear-03.webp",
+        "detail": "assets/weapons/illustrated/detail/spear-03.webp",
+        "combat": "assets/weapons/illustrated/combat/spear-03.webp",
+        "grip": {
+          "x": 102.38938053097344,
+          "y": 96.4424778761062
+        },
+        "bounds": {
+          "x": 26,
+          "y": 70,
+          "w": 332,
+          "h": 53
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "spear-04",
@@ -1405,7 +2719,25 @@
       "reach": 16,
       "meter": 0.025,
       "length": 86,
-      "icon": "assets/weapons/spear-04.svg"
+      "icon": "assets/weapons/illustrated/thumb/spear-04.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/spear-04.webp",
+        "detail": "assets/weapons/illustrated/detail/spear-04.webp",
+        "combat": "assets/weapons/illustrated/combat/spear-04.webp",
+        "grip": {
+          "x": 102.30393996247655,
+          "y": 95.88367729831144
+        },
+        "bounds": {
+          "x": 26,
+          "y": 80,
+          "w": 332,
+          "h": 33
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "spear-05",
@@ -1424,7 +2756,25 @@
       "reach": 17,
       "meter": 0.025,
       "length": 87,
-      "icon": "assets/weapons/spear-05.svg"
+      "icon": "assets/weapons/illustrated/thumb/spear-05.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/spear-05.webp",
+        "detail": "assets/weapons/illustrated/detail/spear-05.webp",
+        "combat": "assets/weapons/illustrated/combat/spear-05.webp",
+        "grip": {
+          "x": 102.4152791380999,
+          "y": 96.2095984329089
+        },
+        "bounds": {
+          "x": 26,
+          "y": 78,
+          "w": 332,
+          "h": 37
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "spear-06",
@@ -1443,7 +2793,25 @@
       "reach": 17,
       "meter": 0.025,
       "length": 88,
-      "icon": "assets/weapons/spear-06.svg"
+      "icon": "assets/weapons/illustrated/thumb/spear-06.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/spear-06.webp",
+        "detail": "assets/weapons/illustrated/detail/spear-06.webp",
+        "combat": "assets/weapons/illustrated/combat/spear-06.webp",
+        "grip": {
+          "x": 102.4139211136891,
+          "y": 96.09791183294664
+        },
+        "bounds": {
+          "x": 26,
+          "y": 81,
+          "w": 332,
+          "h": 30
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "spear-07",
@@ -1462,7 +2830,25 @@
       "reach": 18,
       "meter": 0.025,
       "length": 89,
-      "icon": "assets/weapons/spear-07.svg"
+      "icon": "assets/weapons/illustrated/thumb/spear-07.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/spear-07.webp",
+        "detail": "assets/weapons/illustrated/detail/spear-07.webp",
+        "combat": "assets/weapons/illustrated/combat/spear-07.webp",
+        "grip": {
+          "x": 102.33385826771654,
+          "y": 96.16220472440945
+        },
+        "bounds": {
+          "x": 26,
+          "y": 81,
+          "w": 332,
+          "h": 30
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "spear-08",
@@ -1481,7 +2867,25 @@
       "reach": 18,
       "meter": 0.025,
       "length": 90,
-      "icon": "assets/weapons/spear-08.svg"
+      "icon": "assets/weapons/illustrated/thumb/spear-08.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/spear-08.webp",
+        "detail": "assets/weapons/illustrated/detail/spear-08.webp",
+        "combat": "assets/weapons/illustrated/combat/spear-08.webp",
+        "grip": {
+          "x": 102.43502824858757,
+          "y": 96.72693032015066
+        },
+        "bounds": {
+          "x": 26,
+          "y": 75,
+          "w": 332,
+          "h": 43
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "spear-09",
@@ -1500,7 +2904,25 @@
       "reach": 19,
       "meter": 0.025,
       "length": 91,
-      "icon": "assets/weapons/spear-09.svg"
+      "icon": "assets/weapons/illustrated/thumb/spear-09.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/spear-09.webp",
+        "detail": "assets/weapons/illustrated/detail/spear-09.webp",
+        "combat": "assets/weapons/illustrated/combat/spear-09.webp",
+        "grip": {
+          "x": 102.3755868544601,
+          "y": 95.89859154929577
+        },
+        "bounds": {
+          "x": 26,
+          "y": 80,
+          "w": 332,
+          "h": 32
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "spear-10",
@@ -1519,7 +2941,25 @@
       "reach": 19,
       "meter": 0.025,
       "length": 92,
-      "icon": "assets/weapons/spear-10.svg"
+      "icon": "assets/weapons/illustrated/thumb/spear-10.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/spear-10.webp",
+        "detail": "assets/weapons/illustrated/detail/spear-10.webp",
+        "combat": "assets/weapons/illustrated/combat/spear-10.webp",
+        "grip": {
+          "x": 102.38036809815951,
+          "y": 95.63394683026584
+        },
+        "bounds": {
+          "x": 26,
+          "y": 79,
+          "w": 332,
+          "h": 34
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "knuckles-01",
@@ -1538,7 +2978,25 @@
       "reach": 2,
       "meter": 0.01,
       "length": 22,
-      "icon": "assets/weapons/knuckles-01.svg"
+      "icon": "assets/weapons/illustrated/thumb/knuckles-01.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/knuckles-01.webp",
+        "detail": "assets/weapons/illustrated/detail/knuckles-01.webp",
+        "combat": "assets/weapons/illustrated/combat/knuckles-01.webp",
+        "grip": {
+          "x": 192.14345991561183,
+          "y": 148.9873417721519
+        },
+        "bounds": {
+          "x": 30,
+          "y": 18,
+          "w": 324,
+          "h": 156
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "knuckles-02",
@@ -1557,7 +3015,25 @@
       "reach": 2,
       "meter": 0.01,
       "length": 23,
-      "icon": "assets/weapons/knuckles-02.svg"
+      "icon": "assets/weapons/illustrated/thumb/knuckles-02.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/knuckles-02.webp",
+        "detail": "assets/weapons/illustrated/detail/knuckles-02.webp",
+        "combat": "assets/weapons/illustrated/combat/knuckles-02.webp",
+        "grip": {
+          "x": 192,
+          "y": 145.67643142476697
+        },
+        "bounds": {
+          "x": 26,
+          "y": 23,
+          "w": 332,
+          "h": 146
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "knuckles-03",
@@ -1576,7 +3052,25 @@
       "reach": 3,
       "meter": 0.01,
       "length": 24,
-      "icon": "assets/weapons/knuckles-03.svg"
+      "icon": "assets/weapons/illustrated/thumb/knuckles-03.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/knuckles-03.webp",
+        "detail": "assets/weapons/illustrated/detail/knuckles-03.webp",
+        "combat": "assets/weapons/illustrated/combat/knuckles-03.webp",
+        "grip": {
+          "x": 191.79032258064518,
+          "y": 149.0483870967742
+        },
+        "bounds": {
+          "x": 36,
+          "y": 18,
+          "w": 312,
+          "h": 156
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "knuckles-04",
@@ -1595,7 +3089,25 @@
       "reach": 3,
       "meter": 0.01,
       "length": 25,
-      "icon": "assets/weapons/knuckles-04.svg"
+      "icon": "assets/weapons/illustrated/thumb/knuckles-04.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/knuckles-04.webp",
+        "detail": "assets/weapons/illustrated/detail/knuckles-04.webp",
+        "combat": "assets/weapons/illustrated/combat/knuckles-04.webp",
+        "grip": {
+          "x": 192,
+          "y": 149.38056680161944
+        },
+        "bounds": {
+          "x": 26,
+          "y": 19,
+          "w": 332,
+          "h": 155
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "knuckles-05",
@@ -1614,7 +3126,25 @@
       "reach": 4,
       "meter": 0.01,
       "length": 26,
-      "icon": "assets/weapons/knuckles-05.svg"
+      "icon": "assets/weapons/illustrated/thumb/knuckles-05.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/knuckles-05.webp",
+        "detail": "assets/weapons/illustrated/detail/knuckles-05.webp",
+        "combat": "assets/weapons/illustrated/combat/knuckles-05.webp",
+        "grip": {
+          "x": 192.09491137793026,
+          "y": 146.3339050886221
+        },
+        "bounds": {
+          "x": 26,
+          "y": 22,
+          "w": 332,
+          "h": 148
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "knuckles-06",
@@ -1633,7 +3163,25 @@
       "reach": 4,
       "meter": 0.01,
       "length": 27,
-      "icon": "assets/weapons/knuckles-06.svg"
+      "icon": "assets/weapons/illustrated/thumb/knuckles-06.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/knuckles-06.webp",
+        "detail": "assets/weapons/illustrated/detail/knuckles-06.webp",
+        "combat": "assets/weapons/illustrated/combat/knuckles-06.webp",
+        "grip": {
+          "x": 191.9090909090909,
+          "y": 148.98484848484847
+        },
+        "bounds": {
+          "x": 43,
+          "y": 18,
+          "w": 298,
+          "h": 156
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "knuckles-07",
@@ -1652,7 +3200,25 @@
       "reach": 5,
       "meter": 0.01,
       "length": 28,
-      "icon": "assets/weapons/knuckles-07.svg"
+      "icon": "assets/weapons/illustrated/thumb/knuckles-07.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/knuckles-07.webp",
+        "detail": "assets/weapons/illustrated/detail/knuckles-07.webp",
+        "combat": "assets/weapons/illustrated/combat/knuckles-07.webp",
+        "grip": {
+          "x": 192.5370611183355,
+          "y": 149.0481144343303
+        },
+        "bounds": {
+          "x": 41,
+          "y": 18,
+          "w": 303,
+          "h": 156
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "knuckles-08",
@@ -1671,7 +3237,25 @@
       "reach": 5,
       "meter": 0.01,
       "length": 29,
-      "icon": "assets/weapons/knuckles-08.svg"
+      "icon": "assets/weapons/illustrated/thumb/knuckles-08.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/knuckles-08.webp",
+        "detail": "assets/weapons/illustrated/detail/knuckles-08.webp",
+        "combat": "assets/weapons/illustrated/combat/knuckles-08.webp",
+        "grip": {
+          "x": 191.79032258064518,
+          "y": 149.0483870967742
+        },
+        "bounds": {
+          "x": 36,
+          "y": 18,
+          "w": 312,
+          "h": 156
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "knuckles-09",
@@ -1690,7 +3274,25 @@
       "reach": 6,
       "meter": 0.01,
       "length": 30,
-      "icon": "assets/weapons/knuckles-09.svg"
+      "icon": "assets/weapons/illustrated/thumb/knuckles-09.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/knuckles-09.webp",
+        "detail": "assets/weapons/illustrated/detail/knuckles-09.webp",
+        "combat": "assets/weapons/illustrated/combat/knuckles-09.webp",
+        "grip": {
+          "x": 192.09215442092153,
+          "y": 149.1332503113325
+        },
+        "bounds": {
+          "x": 46,
+          "y": 18,
+          "w": 292,
+          "h": 156
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "knuckles-10",
@@ -1709,7 +3311,25 @@
       "reach": 6,
       "meter": 0.01,
       "length": 31,
-      "icon": "assets/weapons/knuckles-10.svg"
+      "icon": "assets/weapons/illustrated/thumb/knuckles-10.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/knuckles-10.webp",
+        "detail": "assets/weapons/illustrated/detail/knuckles-10.webp",
+        "combat": "assets/weapons/illustrated/combat/knuckles-10.webp",
+        "grip": {
+          "x": 192.70361145703612,
+          "y": 149.1332503113325
+        },
+        "bounds": {
+          "x": 47,
+          "y": 18,
+          "w": 291,
+          "h": 156
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "blade-01",
@@ -1728,7 +3348,25 @@
       "reach": 4,
       "meter": 0.015,
       "length": 31,
-      "icon": "assets/weapons/blade-01.svg"
+      "icon": "assets/weapons/illustrated/thumb/blade-01.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/blade-01.webp",
+        "detail": "assets/weapons/illustrated/detail/blade-01.webp",
+        "combat": "assets/weapons/illustrated/combat/blade-01.webp",
+        "grip": {
+          "x": 72.39125151883354,
+          "y": 94.47387606318347
+        },
+        "bounds": {
+          "x": 26,
+          "y": 62,
+          "w": 332,
+          "h": 68
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "blade-02",
@@ -1747,7 +3385,25 @@
       "reach": 4,
       "meter": 0.015,
       "length": 32,
-      "icon": "assets/weapons/blade-02.svg"
+      "icon": "assets/weapons/illustrated/thumb/blade-02.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/blade-02.webp",
+        "detail": "assets/weapons/illustrated/detail/blade-02.webp",
+        "combat": "assets/weapons/illustrated/combat/blade-02.webp",
+        "grip": {
+          "x": 72.44457617071726,
+          "y": 92.15826911677534
+        },
+        "bounds": {
+          "x": 26,
+          "y": 65,
+          "w": 332,
+          "h": 62
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "blade-03",
@@ -1766,7 +3422,25 @@
       "reach": 5,
       "meter": 0.015,
       "length": 33,
-      "icon": "assets/weapons/blade-03.svg"
+      "icon": "assets/weapons/illustrated/thumb/blade-03.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/blade-03.webp",
+        "detail": "assets/weapons/illustrated/detail/blade-03.webp",
+        "combat": "assets/weapons/illustrated/combat/blade-03.webp",
+        "grip": {
+          "x": 72.46847888953153,
+          "y": 92.84268363215732
+        },
+        "bounds": {
+          "x": 26,
+          "y": 65,
+          "w": 332,
+          "h": 62
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "blade-04",
@@ -1785,7 +3459,25 @@
       "reach": 5,
       "meter": 0.015,
       "length": 34,
-      "icon": "assets/weapons/blade-04.svg"
+      "icon": "assets/weapons/illustrated/thumb/blade-04.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/blade-04.webp",
+        "detail": "assets/weapons/illustrated/detail/blade-04.webp",
+        "combat": "assets/weapons/illustrated/combat/blade-04.webp",
+        "grip": {
+          "x": 72.46064139941691,
+          "y": 92.45830903790088
+        },
+        "bounds": {
+          "x": 26,
+          "y": 58,
+          "w": 332,
+          "h": 77
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "blade-05",
@@ -1804,7 +3496,25 @@
       "reach": 6,
       "meter": 0.015,
       "length": 35,
-      "icon": "assets/weapons/blade-05.svg"
+      "icon": "assets/weapons/illustrated/thumb/blade-05.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/blade-05.webp",
+        "detail": "assets/weapons/illustrated/detail/blade-05.webp",
+        "combat": "assets/weapons/illustrated/combat/blade-05.webp",
+        "grip": {
+          "x": 72.50657518582048,
+          "y": 97.22870211549457
+        },
+        "bounds": {
+          "x": 26,
+          "y": 53,
+          "w": 332,
+          "h": 87
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "blade-06",
@@ -1823,7 +3533,25 @@
       "reach": 6,
       "meter": 0.015,
       "length": 36,
-      "icon": "assets/weapons/blade-06.svg"
+      "icon": "assets/weapons/illustrated/thumb/blade-06.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/blade-06.webp",
+        "detail": "assets/weapons/illustrated/detail/blade-06.webp",
+        "combat": "assets/weapons/illustrated/combat/blade-06.webp",
+        "grip": {
+          "x": 72.52595155709344,
+          "y": 94.16608996539793
+        },
+        "bounds": {
+          "x": 26,
+          "y": 62,
+          "w": 332,
+          "h": 68
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "blade-07",
@@ -1842,7 +3570,25 @@
       "reach": 7,
       "meter": 0.015,
       "length": 37,
-      "icon": "assets/weapons/blade-07.svg"
+      "icon": "assets/weapons/illustrated/thumb/blade-07.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/blade-07.webp",
+        "detail": "assets/weapons/illustrated/detail/blade-07.webp",
+        "combat": "assets/weapons/illustrated/combat/blade-07.webp",
+        "grip": {
+          "x": 72.39633447880871,
+          "y": 93.02978235967927
+        },
+        "bounds": {
+          "x": 26,
+          "y": 55,
+          "w": 332,
+          "h": 83
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "blade-08",
@@ -1861,7 +3607,25 @@
       "reach": 7,
       "meter": 0.015,
       "length": 38,
-      "icon": "assets/weapons/blade-08.svg"
+      "icon": "assets/weapons/illustrated/thumb/blade-08.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/blade-08.webp",
+        "detail": "assets/weapons/illustrated/detail/blade-08.webp",
+        "combat": "assets/weapons/illustrated/combat/blade-08.webp",
+        "grip": {
+          "x": 72.3879907621247,
+          "y": 97.21247113163972
+        },
+        "bounds": {
+          "x": 26,
+          "y": 56,
+          "w": 332,
+          "h": 81
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "blade-09",
@@ -1880,7 +3644,25 @@
       "reach": 8,
       "meter": 0.015,
       "length": 39,
-      "icon": "assets/weapons/blade-09.svg"
+      "icon": "assets/weapons/illustrated/thumb/blade-09.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/blade-09.webp",
+        "detail": "assets/weapons/illustrated/detail/blade-09.webp",
+        "combat": "assets/weapons/illustrated/combat/blade-09.webp",
+        "grip": {
+          "x": 72.46847888953153,
+          "y": 94.16425679583574
+        },
+        "bounds": {
+          "x": 26,
+          "y": 50,
+          "w": 332,
+          "h": 93
+        },
+        "width": 384,
+        "height": 192
+      }
     },
     {
       "id": "blade-10",
@@ -1899,7 +3681,25 @@
       "reach": 8,
       "meter": 0.015,
       "length": 40,
-      "icon": "assets/weapons/blade-10.svg"
+      "icon": "assets/weapons/illustrated/thumb/blade-10.webp",
+      "art": {
+        "version": 2,
+        "thumb": "assets/weapons/illustrated/thumb/blade-10.webp",
+        "detail": "assets/weapons/illustrated/detail/blade-10.webp",
+        "combat": "assets/weapons/illustrated/combat/blade-10.webp",
+        "grip": {
+          "x": 72.55279861511829,
+          "y": 94.33814195037507
+        },
+        "bounds": {
+          "x": 26,
+          "y": 52,
+          "w": 332,
+          "h": 88
+        },
+        "width": 384,
+        "height": 192
+      }
     }
   ],
   "upgrades": [

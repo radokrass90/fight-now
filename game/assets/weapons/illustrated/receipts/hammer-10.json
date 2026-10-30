@@ -1,0 +1,18 @@
+{
+  "id": "hammer-10",
+  "name": {
+    "en": "Vulcan Hammer",
+    "de": "Vulkan Hammer"
+  },
+  "family": "hammer",
+  "tier": 5,
+  "design": "Vulcan masterwork maul with a sculpted black-and-bronze broad head, hammered bronze face plates, controlled amber inlays and ornate but usable long dark left grip.",
+  "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Vulcan Hammer.\nSHAPE: One hammer only, handle extends to left, substantial head at right.\nUNIQUE DESIGN: Vulcan masterwork maul with a sculpted black-and-bronze broad head, hammered bronze face plates, controlled amber inlays and ornate but usable long dark left grip.",
+  "generator": "built-in image_gen",
+  "source": "exec-7a82d8f2-a11e-4e15-b23c-c303c1735ab3.png",
+  "destination": "game/assets/weapons/illustrated/sources/hammer-10.png",
+  "sourceSha256": "7a7a056b922a0e5dbf05f7c3267476d27c240b0694ca0c790cacf13ee14c6ad5",
+  "generatedAt": "2026-10-30T07:45:21.271551+00:00",
+  "reviewed": true,
+  "reviewNotes": "Individual generated source and alpha-composited family review checked: distinct correct form, full silhouette, detailed material, clean transparency. Grip and scale packed for the actual fighter renderer."
+}

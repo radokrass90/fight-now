@@ -1,0 +1,18 @@
+{
+  "id": "chain-09",
+  "name": {
+    "en": "Thunderbolt Chain",
+    "de": "Donnerkeil Kette"
+  },
+  "family": "chain",
+  "tier": 5,
+  "design": "A complete thunderbolt chain weapon with a black carbon-fibre left hand grip, elongated titanium links, cobalt connectors and a sculpted silver double-cone terminal at RIGHT.",
+  "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Thunderbolt Chain.\nSHAPE: One complete connected chain weapon only, hand grip at far left and terminal weight at right, entire connected chain visible.\nUNIQUE DESIGN: A complete thunderbolt chain weapon with a black carbon-fibre left hand grip, elongated titanium links, cobalt connectors and a sculpted silver double-cone terminal at RIGHT.",
+  "generator": "built-in image_gen",
+  "source": "exec-ff282831-b1c2-4222-8743-3ec1ee0cd58a.png",
+  "destination": "game/assets/weapons/illustrated/sources/chain-09.png",
+  "sourceSha256": "00a337c5223f03377eefaea04d8f3a92420d0ff00b690db8c6340e717efd16c3",
+  "generatedAt": "2026-10-30T08:05:52.954688+00:00",
+  "reviewed": true,
+  "reviewNotes": "Individual generated source and alpha-composited family review checked: distinct correct form, full silhouette, detailed material, clean transparency. Grip and scale packed for the actual fighter renderer."
+}

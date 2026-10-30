@@ -1,0 +1,18 @@
+{
+  "id": "sword-06",
+  "name": {
+    "en": "Dawn Sword",
+    "de": "Morgenrot Schwert"
+  },
+  "family": "sword",
+  "tier": 3,
+  "design": "Dawn sword with a broad warm satin-steel blade, a single gold-coloured inlaid groove, brass swept guard and cream leather left grip.",
+  "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Dawn Sword.\nSHAPE: One sword only, hilt and grip at left, blade points to right. No sheath.\nUNIQUE DESIGN: Dawn sword with a broad warm satin-steel blade, a single gold-coloured inlaid groove, brass swept guard and cream leather left grip.",
+  "generator": "built-in image_gen",
+  "source": "exec-7ed6cfd8-9354-4914-9f52-fe9e8d94097f.png",
+  "destination": "game/assets/weapons/illustrated/sources/sword-06.png",
+  "sourceSha256": "a9faaf9fce84c24e3d8ab3c3333e4405b9f721eac9631d55764e8f20e27b95ef",
+  "generatedAt": "2026-10-30T07:54:37.261105+00:00",
+  "reviewed": true,
+  "reviewNotes": "Individual generated source and alpha-composited family review checked: distinct correct form, full silhouette, detailed material, clean transparency. Grip and scale packed for the actual fighter renderer."
+}

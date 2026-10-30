@@ -1,0 +1,18 @@
+{
+  "id": "knuckles-02",
+  "name": {
+    "en": "Brawler Knuckles",
+    "de": "Raufbold Schlagring"
+  },
+  "family": "knuckles",
+  "tier": 1,
+  "design": "Soft orange polyurethane practice finger guard, four fully rounded padded loops and a black rubber palm brace; nonfunctional protective foam sports prop, no metal or sharp edges.",
+  "prompt": "Create one high-quality realistic 3D product illustration of a NONFUNCTIONAL SOFT FOAM TRAINING ACCESSORY for a game inventory. It is a protective orange polyurethane finger guard: four rounded padded circular finger loops connected in one row, a rounded black rubber palm brace underneath, subtle stitched soft fabric insets and believable foam compression. Every exposed edge is thick, smooth, soft and rounded. Absolutely no metal, spikes, blades, sharp edges, person, hands, injuries or action. Center the whole single item, front view, wide horizontal composition with generous empty margins on all sides. Detailed tactile foam and rubber surface, warm upper-left studio light, cool soft rim, consistent premium game asset style. Isolate the object on a genuine transparent alpha background, including full transparency through all four finger holes and below the palm brace. No backdrop, floor, smoke, glow cloud, cast shadow, text, logos, symbols or UI. One object only, at least 1536 by 1024 pixels.",
+  "generator": "built-in image_gen",
+  "source": "exec-a62015d6-7c0c-4a5c-9d2a-84f3aa9faff5.png",
+  "destination": "game/assets/weapons/illustrated/sources/knuckles-02.png",
+  "sourceSha256": "a0d779c8f5fd1bf3a42799184ee53955f550aed876523b109455ad33e6072ad0",
+  "generatedAt": "2026-10-30T08:31:42.659314+00:00",
+  "reviewed": true,
+  "reviewNotes": "Individual generated source and alpha-composited family review checked: distinct correct form, full silhouette, detailed material, clean transparency. Grip and scale packed for the actual fighter renderer."
+}

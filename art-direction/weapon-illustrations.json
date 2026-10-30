@@ -1,0 +1,1106 @@
+{
+  "version": 1,
+  "generator": "built-in image_gen",
+  "entries": [
+    {
+      "id": "bat-01",
+      "name": {
+        "en": "Backstreet Bat",
+        "de": "Hinterhof Schläger"
+      },
+      "family": "bat",
+      "tier": 1,
+      "design": "Honey-brown ash-wood baseball bat, broad rounded barrel, tapered neck, black athletic tape grip, tarnished steel collar and one small orange cloth detail; distinct wood grain and street scuffs.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Backstreet Bat.\nSHAPE: One complete baseball-bat/club silhouette, slim handle at left and broad striking barrel at right.\nUNIQUE DESIGN: Honey-brown ash-wood baseball bat, broad rounded barrel, tapered neck, black athletic tape grip, tarnished steel collar and one small orange cloth detail; distinct wood grain and street scuffs."
+    },
+    {
+      "id": "bat-02",
+      "name": {
+        "en": "Metro Bat",
+        "de": "Metro Schläger"
+      },
+      "family": "bat",
+      "tier": 1,
+      "design": "Dented brushed-aluminium baseball bat with an asymmetric reinforced barrel, knurled dark blue rubber grip, steel butt cap and a pair of subtle blue transit stripes.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Metro Bat.\nSHAPE: One complete baseball-bat/club silhouette, slim handle at left and broad striking barrel at right.\nUNIQUE DESIGN: Dented brushed-aluminium baseball bat with an asymmetric reinforced barrel, knurled dark blue rubber grip, steel butt cap and a pair of subtle blue transit stripes."
+    },
+    {
+      "id": "bat-03",
+      "name": {
+        "en": "Concrete Bat",
+        "de": "Beton Schläger"
+      },
+      "family": "bat",
+      "tier": 2,
+      "design": "Heavy hexagonal concrete-composite club with rounded corners, inset rebar end core, bolted steel collar and yellow hazard-marked fabric handle; believable dense worn concrete texture.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Concrete Bat.\nSHAPE: One complete baseball-bat/club silhouette, slim handle at left and broad striking barrel at right.\nUNIQUE DESIGN: Heavy hexagonal concrete-composite club with rounded corners, inset rebar end core, bolted steel collar and yellow hazard-marked fabric handle; believable dense worn concrete texture."
+    },
+    {
+      "id": "bat-04",
+      "name": {
+        "en": "Dockside Bat",
+        "de": "Hafen Schläger"
+      },
+      "family": "bat",
+      "tier": 2,
+      "design": "Weathered dark oak dockworkers club with a teardrop barrel, three broad riveted brass reinforcing bands, tar-darkened hand grip and blue marine cord.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Dockside Bat.\nSHAPE: One complete baseball-bat/club silhouette, slim handle at left and broad striking barrel at right.\nUNIQUE DESIGN: Weathered dark oak dockworkers club with a teardrop barrel, three broad riveted brass reinforcing bands, tar-darkened hand grip and blue marine cord."
+    },
+    {
+      "id": "bat-05",
+      "name": {
+        "en": "Neon Bat",
+        "de": "Neon Schläger"
+      },
+      "family": "bat",
+      "tier": 3,
+      "design": "High-end translucent amber polycarbonate bat over a black ribbed structural core, narrow cyan light channel embedded in barrel, charcoal grip and machined metal butt. No external glow.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Neon Bat.\nSHAPE: One complete baseball-bat/club silhouette, slim handle at left and broad striking barrel at right.\nUNIQUE DESIGN: High-end translucent amber polycarbonate bat over a black ribbed structural core, narrow cyan light channel embedded in barrel, charcoal grip and machined metal butt. No external glow."
+    },
+    {
+      "id": "bat-06",
+      "name": {
+        "en": "Blackout Bat",
+        "de": "Blackout Schläger"
+      },
+      "family": "bat",
+      "tier": 3,
+      "design": "Matte black steel bat with an angular hexagonal barrel, carbon-fibre neck, ventilated recessed grooves, crimson stitching on leather handle and a blunt faceted end cap.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Blackout Bat.\nSHAPE: One complete baseball-bat/club silhouette, slim handle at left and broad striking barrel at right.\nUNIQUE DESIGN: Matte black steel bat with an angular hexagonal barrel, carbon-fibre neck, ventilated recessed grooves, crimson stitching on leather handle and a blunt faceted end cap."
+    },
+    {
+      "id": "bat-07",
+      "name": {
+        "en": "Ironwood Bat",
+        "de": "Eisenholz Schläger"
+      },
+      "family": "bat",
+      "tier": 4,
+      "design": "Dense reddish ironwood octagonal bat with deep carved grain, satin stainless-steel end cap, restrained botanical engraving and braided black leather grip.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Ironwood Bat.\nSHAPE: One complete baseball-bat/club silhouette, slim handle at left and broad striking barrel at right.\nUNIQUE DESIGN: Dense reddish ironwood octagonal bat with deep carved grain, satin stainless-steel end cap, restrained botanical engraving and braided black leather grip."
+    },
+    {
+      "id": "bat-08",
+      "name": {
+        "en": "Storm Bat",
+        "de": "Sturm Schläger"
+      },
+      "family": "bat",
+      "tier": 4,
+      "design": "Segmented titanium power bat with a fluted spiral barrel, cold silver surfaces, cobalt steel collars and a sculpted dark rubber handle; substantial realistic volume.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Storm Bat.\nSHAPE: One complete baseball-bat/club silhouette, slim handle at left and broad striking barrel at right.\nUNIQUE DESIGN: Segmented titanium power bat with a fluted spiral barrel, cold silver surfaces, cobalt steel collars and a sculpted dark rubber handle; substantial realistic volume."
+    },
+    {
+      "id": "bat-09",
+      "name": {
+        "en": "Champion Bat",
+        "de": "Champion Schläger"
+      },
+      "family": "bat",
+      "tier": 5,
+      "design": "Championship walnut bat with a gracefully sculpted striking barrel, two polished brass bands, royal-blue stitched leather grip and precision turned end cap. No lettering.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Champion Bat.\nSHAPE: One complete baseball-bat/club silhouette, slim handle at left and broad striking barrel at right.\nUNIQUE DESIGN: Championship walnut bat with a gracefully sculpted striking barrel, two polished brass bands, royal-blue stitched leather grip and precision turned end cap. No lettering."
+    },
+    {
+      "id": "bat-10",
+      "name": {
+        "en": "Night King Bat",
+        "de": "Nachtkönig Schläger"
+      },
+      "family": "bat",
+      "tier": 5,
+      "design": "Regal obsidian-composite club with a broad angular striking head, restrained gold geometric inlays, paired bronze end weights and black crocodile-textured leather grip.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Night King Bat.\nSHAPE: One complete baseball-bat/club silhouette, slim handle at left and broad striking barrel at right.\nUNIQUE DESIGN: Regal obsidian-composite club with a broad angular striking head, restrained gold geometric inlays, paired bronze end weights and black crocodile-textured leather grip."
+    },
+    {
+      "id": "staff-01",
+      "name": {
+        "en": "Bamboo Staff",
+        "de": "Bambus Stab"
+      },
+      "family": "staff",
+      "tier": 1,
+      "design": "Long slender bamboo combat staff, three natural nodes, scuffed pale fibres, tightly woven tan grip at the left quarter, dark iron end caps.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Bamboo Staff.\nSHAPE: One complete long slender STAFF POLE, nearly uniform thickness, NOT a bat; grip at left quarter.\nUNIQUE DESIGN: Long slender bamboo combat staff, three natural nodes, scuffed pale fibres, tightly woven tan grip at the left quarter, dark iron end caps."
+    },
+    {
+      "id": "staff-02",
+      "name": {
+        "en": "Monk Staff",
+        "de": "Mönch Stab"
+      },
+      "family": "staff",
+      "tier": 1,
+      "design": "Rosewood monk staff, nearly uniform thickness end to end, shallow hand-carved spiral texture, old iron ferrules and burgundy cloth wrap at left quarter.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Monk Staff.\nSHAPE: One complete long slender STAFF POLE, nearly uniform thickness, NOT a bat; grip at left quarter.\nUNIQUE DESIGN: Rosewood monk staff, nearly uniform thickness end to end, shallow hand-carved spiral texture, old iron ferrules and burgundy cloth wrap at left quarter."
+    },
+    {
+      "id": "staff-03",
+      "name": {
+        "en": "Railway Staff",
+        "de": "Bahn Stab"
+      },
+      "family": "staff",
+      "tier": 2,
+      "design": "Repurposed dark steel rail-guard staff with a narrow squared cross-section, rounded safety end caps, riveted reinforcement plates and yellow-black fabric grip at left quarter.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Railway Staff.\nSHAPE: One complete long slender STAFF POLE, nearly uniform thickness, NOT a bat; grip at left quarter.\nUNIQUE DESIGN: Repurposed dark steel rail-guard staff with a narrow squared cross-section, rounded safety end caps, riveted reinforcement plates and yellow-black fabric grip at left quarter."
+    },
+    {
+      "id": "staff-04",
+      "name": {
+        "en": "Carbon Staff",
+        "de": "Carbon Stab"
+      },
+      "family": "staff",
+      "tier": 2,
+      "design": "Four-section telescopic carbon-fibre staff with convincing woven carbon texture, brushed-steel locking collars and ergonomic black left-quarter grip.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Carbon Staff.\nSHAPE: One complete long slender STAFF POLE, nearly uniform thickness, NOT a bat; grip at left quarter.\nUNIQUE DESIGN: Four-section telescopic carbon-fibre staff with convincing woven carbon texture, brushed-steel locking collars and ergonomic black left-quarter grip."
+    },
+    {
+      "id": "staff-05",
+      "name": {
+        "en": "Copper Staff",
+        "de": "Kupfer Stab"
+      },
+      "family": "staff",
+      "tier": 3,
+      "design": "Hammered copper tubular staff with oxidized recesses, polished warm highlights, black rubber ring grip at left quarter and large machined copper end plugs.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Copper Staff.\nSHAPE: One complete long slender STAFF POLE, nearly uniform thickness, NOT a bat; grip at left quarter.\nUNIQUE DESIGN: Hammered copper tubular staff with oxidized recesses, polished warm highlights, black rubber ring grip at left quarter and large machined copper end plugs."
+    },
+    {
+      "id": "staff-06",
+      "name": {
+        "en": "Jade Staff",
+        "de": "Jade Stab"
+      },
+      "family": "staff",
+      "tier": 3,
+      "design": "Carved dark jade-and-bronze staff with smooth long cylindrical sections, shallow geometric relief, aged bronze ferrules and green silk grip at left quarter.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Jade Staff.\nSHAPE: One complete long slender STAFF POLE, nearly uniform thickness, NOT a bat; grip at left quarter.\nUNIQUE DESIGN: Carved dark jade-and-bronze staff with smooth long cylindrical sections, shallow geometric relief, aged bronze ferrules and green silk grip at left quarter."
+    },
+    {
+      "id": "staff-07",
+      "name": {
+        "en": "Vortex Staff",
+        "de": "Wirbel Stab"
+      },
+      "family": "staff",
+      "tier": 4,
+      "design": "Double-helix twisted titanium staff with two narrow intertwined rods, solid straight left-quarter grip, blue-grey satin finish and heavy faceted end caps.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Vortex Staff.\nSHAPE: One complete long slender STAFF POLE, nearly uniform thickness, NOT a bat; grip at left quarter.\nUNIQUE DESIGN: Double-helix twisted titanium staff with two narrow intertwined rods, solid straight left-quarter grip, blue-grey satin finish and heavy faceted end caps."
+    },
+    {
+      "id": "staff-08",
+      "name": {
+        "en": "Aurora Staff",
+        "de": "Aurora Stab"
+      },
+      "family": "staff",
+      "tier": 4,
+      "design": "Ceramic-coated midnight-blue long staff with silver segment bands, restrained pearl-iridescent panels, charcoal leather grip and polished silver tips.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Aurora Staff.\nSHAPE: One complete long slender STAFF POLE, nearly uniform thickness, NOT a bat; grip at left quarter.\nUNIQUE DESIGN: Ceramic-coated midnight-blue long staff with silver segment bands, restrained pearl-iridescent panels, charcoal leather grip and polished silver tips."
+    },
+    {
+      "id": "staff-09",
+      "name": {
+        "en": "Sentinel Staff",
+        "de": "Wächter Stab"
+      },
+      "family": "staff",
+      "tier": 5,
+      "design": "Armoured segmented gunmetal staff, substantial steel cuffs, hard-rubber left-quarter grip, deeply machined straight grooves with tiny amber inserts.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Sentinel Staff.\nSHAPE: One complete long slender STAFF POLE, nearly uniform thickness, NOT a bat; grip at left quarter.\nUNIQUE DESIGN: Armoured segmented gunmetal staff, substantial steel cuffs, hard-rubber left-quarter grip, deeply machined straight grooves with tiny amber inserts."
+    },
+    {
+      "id": "staff-10",
+      "name": {
+        "en": "Dragon Staff",
+        "de": "Drache Stab"
+      },
+      "family": "staff",
+      "tier": 5,
+      "design": "Dark mahogany dragon staff with a bronze sculpted dragon-head terminal at the right end, rough black cord grip at left quarter and a simple bronze left butt cap.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Dragon Staff.\nSHAPE: One complete long slender STAFF POLE, nearly uniform thickness, NOT a bat; grip at left quarter.\nUNIQUE DESIGN: Dark mahogany dragon staff with a bronze sculpted dragon-head terminal at the right end, rough black cord grip at left quarter and a simple bronze left butt cap."
+    },
+    {
+      "id": "hammer-01",
+      "name": {
+        "en": "Workshop Hammer",
+        "de": "Werkstatt Hammer"
+      },
+      "family": "hammer",
+      "tier": 1,
+      "design": "Compact carpenters mallet with a thick rectangular honey-oak head at right, slightly chamfered striking faces, long dark wooden handle to left with textured black grip.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Workshop Hammer.\nSHAPE: One hammer only, handle extends to left, substantial head at right.\nUNIQUE DESIGN: Compact carpenters mallet with a thick rectangular honey-oak head at right, slightly chamfered striking faces, long dark wooden handle to left with textured black grip."
+    },
+    {
+      "id": "hammer-02",
+      "name": {
+        "en": "Rivet Hammer",
+        "de": "Niete Hammer"
+      },
+      "family": "hammer",
+      "tier": 1,
+      "design": "Riveting hammer with a forged steel rectangular head, one round striking face and one tapered rounded peen, scarred ash handle to left and brass ferrule.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Rivet Hammer.\nSHAPE: One hammer only, handle extends to left, substantial head at right.\nUNIQUE DESIGN: Riveting hammer with a forged steel rectangular head, one round striking face and one tapered rounded peen, scarred ash handle to left and brass ferrule."
+    },
+    {
+      "id": "hammer-03",
+      "name": {
+        "en": "Forge Hammer",
+        "de": "Schmiede Hammer"
+      },
+      "family": "hammer",
+      "tier": 2,
+      "design": "Blacksmith forge hammer with a broad square blackened iron head, bright worn edges, brass inset collar and brown leather wrapped long left handle.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Forge Hammer.\nSHAPE: One hammer only, handle extends to left, substantial head at right.\nUNIQUE DESIGN: Blacksmith forge hammer with a broad square blackened iron head, bright worn edges, brass inset collar and brown leather wrapped long left handle."
+    },
+    {
+      "id": "hammer-04",
+      "name": {
+        "en": "Demolition Hammer",
+        "de": "Abriss Hammer"
+      },
+      "family": "hammer",
+      "tier": 2,
+      "design": "Industrial demolition sledgehammer, heavy rectangular steel head with faceted corners, orange composite shaft to left and black ribbed safety grip.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Demolition Hammer.\nSHAPE: One hammer only, handle extends to left, substantial head at right.\nUNIQUE DESIGN: Industrial demolition sledgehammer, heavy rectangular steel head with faceted corners, orange composite shaft to left and black ribbed safety grip."
+    },
+    {
+      "id": "hammer-05",
+      "name": {
+        "en": "Ember Hammer",
+        "de": "Glut Hammer"
+      },
+      "family": "hammer",
+      "tier": 3,
+      "design": "Copper-faced workshop hammer with a short thick cylindrical double head, dark gunmetal central block and crimson leather-wrapped handle to the left.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Ember Hammer.\nSHAPE: One hammer only, handle extends to left, substantial head at right.\nUNIQUE DESIGN: Copper-faced workshop hammer with a short thick cylindrical double head, dark gunmetal central block and crimson leather-wrapped handle to the left."
+    },
+    {
+      "id": "hammer-06",
+      "name": {
+        "en": "Steelhead Hammer",
+        "de": "Stahlkopf Hammer"
+      },
+      "family": "hammer",
+      "tier": 3,
+      "design": "Precision steelhead hammer with an angular solid steel head, milled silver grooves, exposed dark fastening collar and a teal-black ergonomic left grip.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Steelhead Hammer.\nSHAPE: One hammer only, handle extends to left, substantial head at right.\nUNIQUE DESIGN: Precision steelhead hammer with an angular solid steel head, milled silver grooves, exposed dark fastening collar and a teal-black ergonomic left grip."
+    },
+    {
+      "id": "hammer-07",
+      "name": {
+        "en": "Thunder Hammer",
+        "de": "Donner Hammer"
+      },
+      "family": "hammer",
+      "tier": 4,
+      "design": "Thunder sledge with a wide polygonal silver head, cobalt reinforcement plates, thin recessed blue accents and a long ribbed charcoal handle to left.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Thunder Hammer.\nSHAPE: One hammer only, handle extends to left, substantial head at right.\nUNIQUE DESIGN: Thunder sledge with a wide polygonal silver head, cobalt reinforcement plates, thin recessed blue accents and a long ribbed charcoal handle to left."
+    },
+    {
+      "id": "hammer-08",
+      "name": {
+        "en": "Titan Hammer",
+        "de": "Titan Hammer"
+      },
+      "family": "hammer",
+      "tier": 4,
+      "design": "Titan industrial hammer with a deep squared titanium head, substantial visible bolts, sand-blasted faces and heavy brown leather grip on left shaft.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Titan Hammer.\nSHAPE: One hammer only, handle extends to left, substantial head at right.\nUNIQUE DESIGN: Titan industrial hammer with a deep squared titanium head, substantial visible bolts, sand-blasted faces and heavy brown leather grip on left shaft."
+    },
+    {
+      "id": "hammer-09",
+      "name": {
+        "en": "Colossus Hammer",
+        "de": "Koloss Hammer"
+      },
+      "family": "hammer",
+      "tier": 5,
+      "design": "Colossus two-faced maul, massive dark forged head with stepped geometric ends, bronze structural ribs and reinforced black long handle to left.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Colossus Hammer.\nSHAPE: One hammer only, handle extends to left, substantial head at right.\nUNIQUE DESIGN: Colossus two-faced maul, massive dark forged head with stepped geometric ends, bronze structural ribs and reinforced black long handle to left."
+    },
+    {
+      "id": "hammer-10",
+      "name": {
+        "en": "Vulcan Hammer",
+        "de": "Vulkan Hammer"
+      },
+      "family": "hammer",
+      "tier": 5,
+      "design": "Vulcan masterwork maul with a sculpted black-and-bronze broad head, hammered bronze face plates, controlled amber inlays and ornate but usable long dark left grip.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Vulcan Hammer.\nSHAPE: One hammer only, handle extends to left, substantial head at right.\nUNIQUE DESIGN: Vulcan masterwork maul with a sculpted black-and-bronze broad head, hammered bronze face plates, controlled amber inlays and ornate but usable long dark left grip."
+    },
+    {
+      "id": "axe-01",
+      "name": {
+        "en": "Camp Axe",
+        "de": "Lager Axt"
+      },
+      "family": "axe",
+      "tier": 1,
+      "design": "Rugged camp hatchet with one broad brushed-steel blade at right, gently curved pale hickory haft extending left, dark leather hand wrap and simple steel butt.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Camp Axe.\nSHAPE: One axe only, long handle extends to left, curved axe head at right.\nUNIQUE DESIGN: Rugged camp hatchet with one broad brushed-steel blade at right, gently curved pale hickory haft extending left, dark leather hand wrap and simple steel butt."
+    },
+    {
+      "id": "axe-02",
+      "name": {
+        "en": "Rescue Axe",
+        "de": "Rettung Axt"
+      },
+      "family": "axe",
+      "tier": 1,
+      "design": "Rescue axe with a bright scarred orange metal head at right, one wedge blade and a short blunt rear lug, long graphite composite handle extending left.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Rescue Axe.\nSHAPE: One axe only, long handle extends to left, curved axe head at right.\nUNIQUE DESIGN: Rescue axe with a bright scarred orange metal head at right, one wedge blade and a short blunt rear lug, long graphite composite handle extending left."
+    },
+    {
+      "id": "axe-03",
+      "name": {
+        "en": "Scrapyard Axe",
+        "de": "Schrottplatz Axt"
+      },
+      "family": "axe",
+      "tier": 2,
+      "design": "Scrapyard axe with an asymmetric wide steel cutting head, visible welded reinforcing plates, pitted metal, wooden handle to left wrapped in dirty blue shop cloth.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Scrapyard Axe.\nSHAPE: One axe only, long handle extends to left, curved axe head at right.\nUNIQUE DESIGN: Scrapyard axe with an asymmetric wide steel cutting head, visible welded reinforcing plates, pitted metal, wooden handle to left wrapped in dirty blue shop cloth."
+    },
+    {
+      "id": "axe-04",
+      "name": {
+        "en": "Copperhead Axe",
+        "de": "Kupferkopf Axt"
+      },
+      "family": "axe",
+      "tier": 2,
+      "design": "Copperhead axe with a crescent steel blade seated in a warm hammered-copper socket, ebony left handle and coarse brown leather grip.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Copperhead Axe.\nSHAPE: One axe only, long handle extends to left, curved axe head at right.\nUNIQUE DESIGN: Copperhead axe with a crescent steel blade seated in a warm hammered-copper socket, ebony left handle and coarse brown leather grip."
+    },
+    {
+      "id": "axe-05",
+      "name": {
+        "en": "Frost Axe",
+        "de": "Frost Axt"
+      },
+      "family": "axe",
+      "tier": 3,
+      "design": "Frost axe with a pale satin-steel crescent blade, blue-grey ceramic side plates, silver ferrule and blue-white woven grip on long dark left handle.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Frost Axe.\nSHAPE: One axe only, long handle extends to left, curved axe head at right.\nUNIQUE DESIGN: Frost axe with a pale satin-steel crescent blade, blue-grey ceramic side plates, silver ferrule and blue-white woven grip on long dark left handle."
+    },
+    {
+      "id": "axe-06",
+      "name": {
+        "en": "Crimson Axe",
+        "de": "Purpur Axt"
+      },
+      "family": "axe",
+      "tier": 3,
+      "design": "Crimson workshop axe with a substantial black iron head, broad curved edge, burgundy lacquered panels and black stitched leather left handle.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Crimson Axe.\nSHAPE: One axe only, long handle extends to left, curved axe head at right.\nUNIQUE DESIGN: Crimson workshop axe with a substantial black iron head, broad curved edge, burgundy lacquered panels and black stitched leather left handle."
+    },
+    {
+      "id": "axe-07",
+      "name": {
+        "en": "Berserker Axe",
+        "de": "Berserker Axt"
+      },
+      "family": "axe",
+      "tier": 4,
+      "design": "Berserker battle axe with a broad deeply curved steel blade at right, rugged forged socket, carved dark oak left haft and restrained bronze ring fittings.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Berserker Axe.\nSHAPE: One axe only, long handle extends to left, curved axe head at right.\nUNIQUE DESIGN: Berserker battle axe with a broad deeply curved steel blade at right, rugged forged socket, carved dark oak left haft and restrained bronze ring fittings."
+    },
+    {
+      "id": "axe-08",
+      "name": {
+        "en": "Tempest Axe",
+        "de": "Sturmwind Axt"
+      },
+      "family": "axe",
+      "tier": 4,
+      "design": "Tempest axe with an elegant swept titanium crescent at right, clean aerodynamic cut-outs in head, dark carbon left handle and cobalt fittings.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Tempest Axe.\nSHAPE: One axe only, long handle extends to left, curved axe head at right.\nUNIQUE DESIGN: Tempest axe with an elegant swept titanium crescent at right, clean aerodynamic cut-outs in head, dark carbon left handle and cobalt fittings."
+    },
+    {
+      "id": "axe-09",
+      "name": {
+        "en": "Phoenix Axe",
+        "de": "Phönix Axt"
+      },
+      "family": "axe",
+      "tier": 5,
+      "design": "Phoenix ceremonial combat axe with a sculpted feather-like bronze socket surrounding a polished steel blade, black ash left haft and amber leather grip.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Phoenix Axe.\nSHAPE: One axe only, long handle extends to left, curved axe head at right.\nUNIQUE DESIGN: Phoenix ceremonial combat axe with a sculpted feather-like bronze socket surrounding a polished steel blade, black ash left haft and amber leather grip."
+    },
+    {
+      "id": "axe-10",
+      "name": {
+        "en": "Leviathan Axe",
+        "de": "Leviathan Axt"
+      },
+      "family": "axe",
+      "tier": 5,
+      "design": "Leviathan masterwork axe with a huge blue-black crescent head, silver geometric bevels, subtle scale relief, heavy bronze socket and reinforced black left grip.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Leviathan Axe.\nSHAPE: One axe only, long handle extends to left, curved axe head at right.\nUNIQUE DESIGN: Leviathan masterwork axe with a huge blue-black crescent head, silver geometric bevels, subtle scale relief, heavy bronze socket and reinforced black left grip."
+    },
+    {
+      "id": "sword-01",
+      "name": {
+        "en": "Practice Sword",
+        "de": "Training Schwert"
+      },
+      "family": "sword",
+      "tier": 1,
+      "design": "Wooden practice sword with a broad flat maple blade pointing right, rounded blunt tip, simple round dark guard and wrapped brown grip at left.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Practice Sword.\nSHAPE: One sword only, hilt and grip at left, blade points to right. No sheath.\nUNIQUE DESIGN: Wooden practice sword with a broad flat maple blade pointing right, rounded blunt tip, simple round dark guard and wrapped brown grip at left."
+    },
+    {
+      "id": "sword-02",
+      "name": {
+        "en": "Ronin Sword",
+        "de": "Ronin Schwert"
+      },
+      "family": "sword",
+      "tier": 1,
+      "design": "Ronin katana with one gently curved satin-steel blade pointing right, tiny authentic-looking layered temper line, black oval guard and dark red cord-wrapped hilt at left. No scabbard.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Ronin Sword.\nSHAPE: One sword only, hilt and grip at left, blade points to right. No sheath.\nUNIQUE DESIGN: Ronin katana with one gently curved satin-steel blade pointing right, tiny authentic-looking layered temper line, black oval guard and dark red cord-wrapped hilt at left. No scabbard."
+    },
+    {
+      "id": "sword-03",
+      "name": {
+        "en": "Saber Sword",
+        "de": "Säbel Schwert"
+      },
+      "family": "sword",
+      "tier": 2,
+      "design": "Urban saber with a slightly curved broad steel blade pointing right, deep fuller, brass knuckle guard and polished walnut left hilt. No scabbard.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Saber Sword.\nSHAPE: One sword only, hilt and grip at left, blade points to right. No sheath.\nUNIQUE DESIGN: Urban saber with a slightly curved broad steel blade pointing right, deep fuller, brass knuckle guard and polished walnut left hilt. No scabbard."
+    },
+    {
+      "id": "sword-04",
+      "name": {
+        "en": "Silverline Sword",
+        "de": "Silberlinie Schwert"
+      },
+      "family": "sword",
+      "tier": 2,
+      "design": "Straight silver longsword with a broad central fuller, fine bevels, a modest silver crossguard and ribbed charcoal leather left handle.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Silverline Sword.\nSHAPE: One sword only, hilt and grip at left, blade points to right. No sheath.\nUNIQUE DESIGN: Straight silver longsword with a broad central fuller, fine bevels, a modest silver crossguard and ribbed charcoal leather left handle."
+    },
+    {
+      "id": "sword-05",
+      "name": {
+        "en": "Obsidian Sword",
+        "de": "Obsidian Schwert"
+      },
+      "family": "sword",
+      "tier": 3,
+      "design": "Obsidian short sword with an angular blackened-steel straight blade, exposed bright bevel, a small bronze crossguard and textured black left hilt.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Obsidian Sword.\nSHAPE: One sword only, hilt and grip at left, blade points to right. No sheath.\nUNIQUE DESIGN: Obsidian short sword with an angular blackened-steel straight blade, exposed bright bevel, a small bronze crossguard and textured black left hilt."
+    },
+    {
+      "id": "sword-06",
+      "name": {
+        "en": "Dawn Sword",
+        "de": "Morgenrot Schwert"
+      },
+      "family": "sword",
+      "tier": 3,
+      "design": "Dawn sword with a broad warm satin-steel blade, a single gold-coloured inlaid groove, brass swept guard and cream leather left grip.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Dawn Sword.\nSHAPE: One sword only, hilt and grip at left, blade points to right. No sheath.\nUNIQUE DESIGN: Dawn sword with a broad warm satin-steel blade, a single gold-coloured inlaid groove, brass swept guard and cream leather left grip."
+    },
+    {
+      "id": "sword-07",
+      "name": {
+        "en": "Shadow Sword",
+        "de": "Schatten Schwert"
+      },
+      "family": "sword",
+      "tier": 4,
+      "design": "Shadow tactical sword with a dark straight slab-like blade, sculpted negative-space spine, grey edge highlights, minimalist steel guard and black carbon-fibre left hilt.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Shadow Sword.\nSHAPE: One sword only, hilt and grip at left, blade points to right. No sheath.\nUNIQUE DESIGN: Shadow tactical sword with a dark straight slab-like blade, sculpted negative-space spine, grey edge highlights, minimalist steel guard and black carbon-fibre left hilt."
+    },
+    {
+      "id": "sword-08",
+      "name": {
+        "en": "Eclipse Sword",
+        "de": "Finsternis Schwert"
+      },
+      "family": "sword",
+      "tier": 4,
+      "design": "Eclipse blade with a long deeply curved dark steel profile pointing right, silver crescent-shaped guard, subtle purple-blue oil finish and silver-bound left grip.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Eclipse Sword.\nSHAPE: One sword only, hilt and grip at left, blade points to right. No sheath.\nUNIQUE DESIGN: Eclipse blade with a long deeply curved dark steel profile pointing right, silver crescent-shaped guard, subtle purple-blue oil finish and silver-bound left grip."
+    },
+    {
+      "id": "sword-09",
+      "name": {
+        "en": "Sovereign Sword",
+        "de": "Herrscher Schwert"
+      },
+      "family": "sword",
+      "tier": 5,
+      "design": "Sovereign masterwork sword with a substantial polished steel blade, ornate bronze crossguard and pommel, restrained royal-blue enamel panels and black leather left hilt.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Sovereign Sword.\nSHAPE: One sword only, hilt and grip at left, blade points to right. No sheath.\nUNIQUE DESIGN: Sovereign masterwork sword with a substantial polished steel blade, ornate bronze crossguard and pommel, restrained royal-blue enamel panels and black leather left hilt."
+    },
+    {
+      "id": "sword-10",
+      "name": {
+        "en": "Celestial Sword",
+        "de": "Himmelslicht Schwert"
+      },
+      "family": "sword",
+      "tier": 5,
+      "design": "Celestial sword with a refined faceted silver blade pointing right, beautiful shallow star-pattern engraving, gold filigree crossguard and pearl-grey wrapped left hilt. No magical aura.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Celestial Sword.\nSHAPE: One sword only, hilt and grip at left, blade points to right. No sheath.\nUNIQUE DESIGN: Celestial sword with a refined faceted silver blade pointing right, beautiful shallow star-pattern engraving, gold filigree crossguard and pearl-grey wrapped left hilt. No magical aura."
+    },
+    {
+      "id": "tonfa-01",
+      "name": {
+        "en": "Patrol Tonfa",
+        "de": "Patrouille Tonfa"
+      },
+      "family": "tonfa",
+      "tier": 1,
+      "design": "One solid matte-black patrol tonfa, horizontal long baton end to right, short perpendicular side handle pointing UP near the left third, textured rubber side grip and rounded ends.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Patrol Tonfa.\nSHAPE: One tonfa only, main shaft horizontal to right, short perpendicular side grip points UP near left third. Not a pair.\nUNIQUE DESIGN: One solid matte-black patrol tonfa, horizontal long baton end to right, short perpendicular side handle pointing UP near the left third, textured rubber side grip and rounded ends."
+    },
+    {
+      "id": "tonfa-02",
+      "name": {
+        "en": "Alley Tonfa",
+        "de": "Gasse Tonfa"
+      },
+      "family": "tonfa",
+      "tier": 1,
+      "design": "One street tonfa carved from worn dark oak, horizontal shaft to right, shorter upward side handle near left third, steel end caps and old tan cord on the side grip.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Alley Tonfa.\nSHAPE: One tonfa only, main shaft horizontal to right, short perpendicular side grip points UP near left third. Not a pair.\nUNIQUE DESIGN: One street tonfa carved from worn dark oak, horizontal shaft to right, shorter upward side handle near left third, steel end caps and old tan cord on the side grip."
+    },
+    {
+      "id": "tonfa-03",
+      "name": {
+        "en": "Guardian Tonfa",
+        "de": "Beschützer Tonfa"
+      },
+      "family": "tonfa",
+      "tier": 2,
+      "design": "One guardian tonfa with heavy gunmetal main shaft to right, bronze end cap, upward side handle near left third wrapped in dark green leather.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Guardian Tonfa.\nSHAPE: One tonfa only, main shaft horizontal to right, short perpendicular side grip points UP near left third. Not a pair.\nUNIQUE DESIGN: One guardian tonfa with heavy gunmetal main shaft to right, bronze end cap, upward side handle near left third wrapped in dark green leather."
+    },
+    {
+      "id": "tonfa-04",
+      "name": {
+        "en": "Tactical Tonfa",
+        "de": "Taktik Tonfa"
+      },
+      "family": "tonfa",
+      "tier": 2,
+      "design": "One tactical composite tonfa with an angular matte-grey horizontal shaft, recessed hex fasteners, raised black upward side grip near left third and small burnt-orange trim.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Tactical Tonfa.\nSHAPE: One tonfa only, main shaft horizontal to right, short perpendicular side grip points UP near left third. Not a pair.\nUNIQUE DESIGN: One tactical composite tonfa with an angular matte-grey horizontal shaft, recessed hex fasteners, raised black upward side grip near left third and small burnt-orange trim."
+    },
+    {
+      "id": "tonfa-05",
+      "name": {
+        "en": "Cobalt Tonfa",
+        "de": "Kobalt Tonfa"
+      },
+      "family": "tonfa",
+      "tier": 3,
+      "design": "One cobalt tonfa with a blue ceramic-coated steel main shaft to right, finely machined silver collars and a black upward side handle near left third.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Cobalt Tonfa.\nSHAPE: One tonfa only, main shaft horizontal to right, short perpendicular side grip points UP near left third. Not a pair.\nUNIQUE DESIGN: One cobalt tonfa with a blue ceramic-coated steel main shaft to right, finely machined silver collars and a black upward side handle near left third."
+    },
+    {
+      "id": "tonfa-06",
+      "name": {
+        "en": "Enforcer Tonfa",
+        "de": "Vollstrecker Tonfa"
+      },
+      "family": "tonfa",
+      "tier": 3,
+      "design": "One enforcer tonfa with thick forged dark-steel shaft, broad fluted right end, aged brass joint socket and brown leather upward side grip near left third.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Enforcer Tonfa.\nSHAPE: One tonfa only, main shaft horizontal to right, short perpendicular side grip points UP near left third. Not a pair.\nUNIQUE DESIGN: One enforcer tonfa with thick forged dark-steel shaft, broad fluted right end, aged brass joint socket and brown leather upward side grip near left third."
+    },
+    {
+      "id": "tonfa-07",
+      "name": {
+        "en": "Spectre Tonfa",
+        "de": "Phantom Tonfa"
+      },
+      "family": "tonfa",
+      "tier": 4,
+      "design": "One spectre carbon-fibre tonfa, tapered faceted main shaft to right, subtle violet metallic joint and tightly sculpted grey upward side grip near left third.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Spectre Tonfa.\nSHAPE: One tonfa only, main shaft horizontal to right, short perpendicular side grip points UP near left third. Not a pair.\nUNIQUE DESIGN: One spectre carbon-fibre tonfa, tapered faceted main shaft to right, subtle violet metallic joint and tightly sculpted grey upward side grip near left third."
+    },
+    {
+      "id": "tonfa-08",
+      "name": {
+        "en": "Aegis Tonfa",
+        "de": "Ägide Tonfa"
+      },
+      "family": "tonfa",
+      "tier": 4,
+      "design": "One aegis tonfa with a substantial titanium main shaft, repeated protective silver ribs, cool blue inset panels and a perpendicular charcoal side handle near left third.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Aegis Tonfa.\nSHAPE: One tonfa only, main shaft horizontal to right, short perpendicular side grip points UP near left third. Not a pair.\nUNIQUE DESIGN: One aegis tonfa with a substantial titanium main shaft, repeated protective silver ribs, cool blue inset panels and a perpendicular charcoal side handle near left third."
+    },
+    {
+      "id": "tonfa-09",
+      "name": {
+        "en": "Paladin Tonfa",
+        "de": "Paladin Tonfa"
+      },
+      "family": "tonfa",
+      "tier": 5,
+      "design": "One paladin masterwork tonfa with black steel horizontal shaft, warm brushed-gold reinforcement rings and refined dark blue leather upward side handle near left third.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Paladin Tonfa.\nSHAPE: One tonfa only, main shaft horizontal to right, short perpendicular side grip points UP near left third. Not a pair.\nUNIQUE DESIGN: One paladin masterwork tonfa with black steel horizontal shaft, warm brushed-gold reinforcement rings and refined dark blue leather upward side handle near left third."
+    },
+    {
+      "id": "tonfa-10",
+      "name": {
+        "en": "Citadel Tonfa",
+        "de": "Zitadelle Tonfa"
+      },
+      "family": "tonfa",
+      "tier": 5,
+      "design": "One citadel masterwork tonfa with a powerful square-section dark gunmetal body, bronze armoured right end and sculpted ergonomic upward side handle near left third.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Citadel Tonfa.\nSHAPE: One tonfa only, main shaft horizontal to right, short perpendicular side grip points UP near left third. Not a pair.\nUNIQUE DESIGN: One citadel masterwork tonfa with a powerful square-section dark gunmetal body, bronze armoured right end and sculpted ergonomic upward side handle near left third."
+    },
+    {
+      "id": "chain-01",
+      "name": {
+        "en": "Link Chain",
+        "de": "Glied Kette"
+      },
+      "family": "chain",
+      "tier": 1,
+      "design": "A complete short weighted combat chain, simple black leather hand loop at far LEFT, thick round iron links draped in a shallow horizontal S curve, solid small steel terminal weight at RIGHT.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Link Chain.\nSHAPE: One complete connected chain weapon only, hand grip at far left and terminal weight at right, entire connected chain visible.\nUNIQUE DESIGN: A complete short weighted combat chain, simple black leather hand loop at far LEFT, thick round iron links draped in a shallow horizontal S curve, solid small steel terminal weight at RIGHT."
+    },
+    {
+      "id": "chain-02",
+      "name": {
+        "en": "Garage Chain",
+        "de": "Garage Kette"
+      },
+      "family": "chain",
+      "tier": 1,
+      "design": "A complete garage chain weapon, ribbed rubber handle at far LEFT, heavy square-section workshop chain draped horizontally and a scuffed dark steel block weight at RIGHT.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Garage Chain.\nSHAPE: One complete connected chain weapon only, hand grip at far left and terminal weight at right, entire connected chain visible.\nUNIQUE DESIGN: A complete garage chain weapon, ribbed rubber handle at far LEFT, heavy square-section workshop chain draped horizontally and a scuffed dark steel block weight at RIGHT."
+    },
+    {
+      "id": "chain-03",
+      "name": {
+        "en": "Anchor Chain",
+        "de": "Anker Kette"
+      },
+      "family": "chain",
+      "tier": 2,
+      "design": "A complete dockside anchor chain, coarse blue rope hand loop at far LEFT, thick oxidized iron oval links, warm brass link connectors and an anchor-shaped blunt terminal at RIGHT.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Anchor Chain.\nSHAPE: One complete connected chain weapon only, hand grip at far left and terminal weight at right, entire connected chain visible.\nUNIQUE DESIGN: A complete dockside anchor chain, coarse blue rope hand loop at far LEFT, thick oxidized iron oval links, warm brass link connectors and an anchor-shaped blunt terminal at RIGHT."
+    },
+    {
+      "id": "chain-04",
+      "name": {
+        "en": "Switchback Chain",
+        "de": "Kehre Kette"
+      },
+      "family": "chain",
+      "tier": 2,
+      "design": "A complete switchback chain weapon with a black cord handle at far LEFT, alternating elongated and short steel links in a restrained horizontal curve, a faceted grey terminal at RIGHT.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Switchback Chain.\nSHAPE: One complete connected chain weapon only, hand grip at far left and terminal weight at right, entire connected chain visible.\nUNIQUE DESIGN: A complete switchback chain weapon with a black cord handle at far LEFT, alternating elongated and short steel links in a restrained horizontal curve, a faceted grey terminal at RIGHT."
+    },
+    {
+      "id": "chain-05",
+      "name": {
+        "en": "Spark Chain",
+        "de": "Funke Kette"
+      },
+      "family": "chain",
+      "tier": 3,
+      "design": "A complete spark chain weapon with orange leather left handle, tarnished copper and steel alternating links, and a compact brass cylindrical terminal at RIGHT; no electrical sparks.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Spark Chain.\nSHAPE: One complete connected chain weapon only, hand grip at far left and terminal weight at right, entire connected chain visible.\nUNIQUE DESIGN: A complete spark chain weapon with orange leather left handle, tarnished copper and steel alternating links, and a compact brass cylindrical terminal at RIGHT; no electrical sparks."
+    },
+    {
+      "id": "chain-06",
+      "name": {
+        "en": "Blacksteel Chain",
+        "de": "Schwarzstahl Kette"
+      },
+      "family": "chain",
+      "tier": 3,
+      "design": "A complete blacksteel combat chain, padded dark left hand loop, broad flattened black iron links with bright bevels and an angular steel terminal at RIGHT.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Blacksteel Chain.\nSHAPE: One complete connected chain weapon only, hand grip at far left and terminal weight at right, entire connected chain visible.\nUNIQUE DESIGN: A complete blacksteel combat chain, padded dark left hand loop, broad flattened black iron links with bright bevels and an angular steel terminal at RIGHT."
+    },
+    {
+      "id": "chain-07",
+      "name": {
+        "en": "Cyclone Chain",
+        "de": "Zyklon Kette"
+      },
+      "family": "chain",
+      "tier": 4,
+      "design": "A complete cyclone chain weapon, blue wrapped hand grip at far LEFT, twisted helical silver links connected into a horizontal S curve and a rounded fluted terminal weight at RIGHT.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Cyclone Chain.\nSHAPE: One complete connected chain weapon only, hand grip at far left and terminal weight at right, entire connected chain visible.\nUNIQUE DESIGN: A complete cyclone chain weapon, blue wrapped hand grip at far LEFT, twisted helical silver links connected into a horizontal S curve and a rounded fluted terminal weight at RIGHT."
+    },
+    {
+      "id": "chain-08",
+      "name": {
+        "en": "Warden Chain",
+        "de": "Aufseher Kette"
+      },
+      "family": "chain",
+      "tier": 4,
+      "design": "A complete warden chain weapon, heavy brown leather hand loop at far LEFT, robust paired gunmetal links and a substantial bronze cage-like terminal weight at RIGHT.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Warden Chain.\nSHAPE: One complete connected chain weapon only, hand grip at far left and terminal weight at right, entire connected chain visible.\nUNIQUE DESIGN: A complete warden chain weapon, heavy brown leather hand loop at far LEFT, robust paired gunmetal links and a substantial bronze cage-like terminal weight at RIGHT."
+    },
+    {
+      "id": "chain-09",
+      "name": {
+        "en": "Thunderbolt Chain",
+        "de": "Donnerkeil Kette"
+      },
+      "family": "chain",
+      "tier": 5,
+      "design": "A complete thunderbolt chain weapon with a black carbon-fibre left hand grip, elongated titanium links, cobalt connectors and a sculpted silver double-cone terminal at RIGHT.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Thunderbolt Chain.\nSHAPE: One complete connected chain weapon only, hand grip at far left and terminal weight at right, entire connected chain visible.\nUNIQUE DESIGN: A complete thunderbolt chain weapon with a black carbon-fibre left hand grip, elongated titanium links, cobalt connectors and a sculpted silver double-cone terminal at RIGHT."
+    },
+    {
+      "id": "chain-10",
+      "name": {
+        "en": "Ouroboros Chain",
+        "de": "Ouroboros Kette"
+      },
+      "family": "chain",
+      "tier": 5,
+      "design": "A complete ouroboros masterwork chain weapon, black leather left hand loop, beautifully forged bronze scale-pattern links and a sculpted dark snake-head terminal at RIGHT.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Ouroboros Chain.\nSHAPE: One complete connected chain weapon only, hand grip at far left and terminal weight at right, entire connected chain visible.\nUNIQUE DESIGN: A complete ouroboros masterwork chain weapon, black leather left hand loop, beautifully forged bronze scale-pattern links and a sculpted dark snake-head terminal at RIGHT."
+    },
+    {
+      "id": "spear-01",
+      "name": {
+        "en": "Scout Spear",
+        "de": "Späher Speer"
+      },
+      "family": "spear",
+      "tier": 1,
+      "design": "Scout spear with a slim long ash shaft extending left, narrow leaf-shaped steel point at RIGHT, black woven grip near left quarter and a simple steel left butt cap.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Scout Spear.\nSHAPE: One spear only, long shaft left-to-right, point at right.\nUNIQUE DESIGN: Scout spear with a slim long ash shaft extending left, narrow leaf-shaped steel point at RIGHT, black woven grip near left quarter and a simple steel left butt cap."
+    },
+    {
+      "id": "spear-02",
+      "name": {
+        "en": "Outrider Spear",
+        "de": "Vorhut Speer"
+      },
+      "family": "spear",
+      "tier": 1,
+      "design": "Outrider spear with long dark wood shaft, broad steel leaf point at RIGHT, weathered brass socket, burgundy cloth left-quarter grip and iron butt cap.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Outrider Spear.\nSHAPE: One spear only, long shaft left-to-right, point at right.\nUNIQUE DESIGN: Outrider spear with long dark wood shaft, broad steel leaf point at RIGHT, weathered brass socket, burgundy cloth left-quarter grip and iron butt cap."
+    },
+    {
+      "id": "spear-03",
+      "name": {
+        "en": "Trident Spear",
+        "de": "Dreizack Speer"
+      },
+      "family": "spear",
+      "tier": 2,
+      "design": "A single trident spear with long slim black steel shaft to left, THREE distinct forward-facing prongs at RIGHT, brushed silver spearhead, blue fabric left-quarter grip.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Trident Spear.\nSHAPE: One spear only, long shaft left-to-right, point at right.\nUNIQUE DESIGN: A single trident spear with long slim black steel shaft to left, THREE distinct forward-facing prongs at RIGHT, brushed silver spearhead, blue fabric left-quarter grip."
+    },
+    {
+      "id": "spear-04",
+      "name": {
+        "en": "Railguard Spear",
+        "de": "Gleiswache Speer"
+      },
+      "family": "spear",
+      "tier": 2,
+      "design": "Railguard spear with long carbon shaft, sturdy angular steel point at RIGHT, riveted industrial socket and yellow-black left-quarter grip.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Railguard Spear.\nSHAPE: One spear only, long shaft left-to-right, point at right.\nUNIQUE DESIGN: Railguard spear with long carbon shaft, sturdy angular steel point at RIGHT, riveted industrial socket and yellow-black left-quarter grip."
+    },
+    {
+      "id": "spear-05",
+      "name": {
+        "en": "Sunbeam Spear",
+        "de": "Sonnenstrahl Speer"
+      },
+      "family": "spear",
+      "tier": 3,
+      "design": "Sunbeam spear with long warm bronze-banded wood shaft, a polished gilded steel leaf point at RIGHT and cream leather left-quarter grip.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Sunbeam Spear.\nSHAPE: One spear only, long shaft left-to-right, point at right.\nUNIQUE DESIGN: Sunbeam spear with long warm bronze-banded wood shaft, a polished gilded steel leaf point at RIGHT and cream leather left-quarter grip."
+    },
+    {
+      "id": "spear-06",
+      "name": {
+        "en": "Raven Spear",
+        "de": "Rabe Speer"
+      },
+      "family": "spear",
+      "tier": 3,
+      "design": "Raven spear with long dark gunmetal shaft, a narrow swept blackened-steel point at RIGHT, silver bevels, feather-like socket relief and black left-quarter grip.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Raven Spear.\nSHAPE: One spear only, long shaft left-to-right, point at right.\nUNIQUE DESIGN: Raven spear with long dark gunmetal shaft, a narrow swept blackened-steel point at RIGHT, silver bevels, feather-like socket relief and black left-quarter grip."
+    },
+    {
+      "id": "spear-07",
+      "name": {
+        "en": "Comet Spear",
+        "de": "Komet Speer"
+      },
+      "family": "spear",
+      "tier": 4,
+      "design": "Comet spear with long titanium shaft, deeply fluted slim steel point at RIGHT, cobalt socket details and ergonomic graphite left-quarter grip.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Comet Spear.\nSHAPE: One spear only, long shaft left-to-right, point at right.\nUNIQUE DESIGN: Comet spear with long titanium shaft, deeply fluted slim steel point at RIGHT, cobalt socket details and ergonomic graphite left-quarter grip."
+    },
+    {
+      "id": "spear-08",
+      "name": {
+        "en": "Valkyrie Spear",
+        "de": "Walküre Speer"
+      },
+      "family": "spear",
+      "tier": 4,
+      "design": "Valkyrie spear with a long dark wood shaft, a graceful silver leaf point at RIGHT with small swept side fins, ornate bronze socket and blue leather left-quarter grip.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Valkyrie Spear.\nSHAPE: One spear only, long shaft left-to-right, point at right.\nUNIQUE DESIGN: Valkyrie spear with a long dark wood shaft, a graceful silver leaf point at RIGHT with small swept side fins, ornate bronze socket and blue leather left-quarter grip."
+    },
+    {
+      "id": "spear-09",
+      "name": {
+        "en": "Gungnir Spear",
+        "de": "Gungnir Speer"
+      },
+      "family": "spear",
+      "tier": 5,
+      "design": "Gungnir masterwork spear with long reinforced ebony shaft, a substantial geometric steel point at RIGHT, restrained gold inlays and black-brown braided left-quarter grip.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Gungnir Spear.\nSHAPE: One spear only, long shaft left-to-right, point at right.\nUNIQUE DESIGN: Gungnir masterwork spear with long reinforced ebony shaft, a substantial geometric steel point at RIGHT, restrained gold inlays and black-brown braided left-quarter grip."
+    },
+    {
+      "id": "spear-10",
+      "name": {
+        "en": "Starlance Spear",
+        "de": "Sternenlanze Speer"
+      },
+      "family": "spear",
+      "tier": 5,
+      "design": "Starlance masterwork spear with long pearl-grey composite shaft, a refined long faceted silver point at RIGHT, shallow constellation engraving and blue-grey leather left-quarter grip.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Starlance Spear.\nSHAPE: One spear only, long shaft left-to-right, point at right.\nUNIQUE DESIGN: Starlance masterwork spear with long pearl-grey composite shaft, a refined long faceted silver point at RIGHT, shallow constellation engraving and blue-grey leather left-quarter grip."
+    },
+    {
+      "id": "knuckles-01",
+      "name": {
+        "en": "Brass Knuckles",
+        "de": "Messing Schlagring"
+      },
+      "family": "knuckles",
+      "tier": 1,
+      "design": "A single solid brass knuckle duster with FOUR clearly open finger holes in one horizontal row, a thick curved palm bar below, real scuffs and warm worn brass bevels.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Brass Knuckles.\nSHAPE: One complete four-hole knuckle duster only, horizontal presentation, no person or hand.\nUNIQUE DESIGN: A single solid brass knuckle duster with FOUR clearly open finger holes in one horizontal row, a thick curved palm bar below, real scuffs and warm worn brass bevels."
+    },
+    {
+      "id": "knuckles-02",
+      "name": {
+        "en": "Brawler Knuckles",
+        "de": "Raufbold Schlagring"
+      },
+      "family": "knuckles",
+      "tier": 1,
+      "design": "Soft orange polyurethane practice finger guard, four fully rounded padded loops and a black rubber palm brace; nonfunctional protective foam sports prop, no metal or sharp edges.",
+      "prompt": "Create one high-quality realistic 3D product illustration of a NONFUNCTIONAL SOFT FOAM TRAINING ACCESSORY for a game inventory. It is a protective orange polyurethane finger guard: four rounded padded circular finger loops connected in one row, a rounded black rubber palm brace underneath, subtle stitched soft fabric insets and believable foam compression. Every exposed edge is thick, smooth, soft and rounded. Absolutely no metal, spikes, blades, sharp edges, person, hands, injuries or action. Center the whole single item, front view, wide horizontal composition with generous empty margins on all sides. Detailed tactile foam and rubber surface, warm upper-left studio light, cool soft rim, consistent premium game asset style. Isolate the object on a genuine transparent alpha background, including full transparency through all four finger holes and below the palm brace. No backdrop, floor, smoke, glow cloud, cast shadow, text, logos, symbols or UI. One object only, at least 1536 by 1024 pixels."
+    },
+    {
+      "id": "knuckles-03",
+      "name": {
+        "en": "Streetwise Knuckles",
+        "de": "Straße Schlagring"
+      },
+      "family": "knuckles",
+      "tier": 2,
+      "design": "A single streetwise knuckle duster with FOUR finger holes, dented gunmetal body, wide smooth striking rail and narrow orange grip inlay on the bottom palm bar.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Streetwise Knuckles.\nSHAPE: One complete four-hole knuckle duster only, horizontal presentation, no person or hand.\nUNIQUE DESIGN: A single streetwise knuckle duster with FOUR finger holes, dented gunmetal body, wide smooth striking rail and narrow orange grip inlay on the bottom palm bar."
+    },
+    {
+      "id": "knuckles-04",
+      "name": {
+        "en": "Chrome Knuckles",
+        "de": "Chrom Schlagring"
+      },
+      "family": "knuckles",
+      "tier": 2,
+      "design": "A single chrome knuckle duster with FOUR open finger holes, highly dimensional satin-chrome body, individually beveled apertures and black rubber palm pad.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Chrome Knuckles.\nSHAPE: One complete four-hole knuckle duster only, horizontal presentation, no person or hand.\nUNIQUE DESIGN: A single chrome knuckle duster with FOUR open finger holes, highly dimensional satin-chrome body, individually beveled apertures and black rubber palm pad."
+    },
+    {
+      "id": "knuckles-05",
+      "name": {
+        "en": "Ruby Knuckles",
+        "de": "Rubin Schlagring"
+      },
+      "family": "knuckles",
+      "tier": 3,
+      "design": "A single ruby knuckle duster with FOUR open finger holes, substantial warm bronze body, small deep-red enamel panels and black textured palm support.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Ruby Knuckles.\nSHAPE: One complete four-hole knuckle duster only, horizontal presentation, no person or hand.\nUNIQUE DESIGN: A single ruby knuckle duster with FOUR open finger holes, substantial warm bronze body, small deep-red enamel panels and black textured palm support."
+    },
+    {
+      "id": "knuckles-06",
+      "name": {
+        "en": "Onyx Knuckles",
+        "de": "Onyx Schlagring"
+      },
+      "family": "knuckles",
+      "tier": 3,
+      "design": "A single onyx knuckle duster with FOUR open finger holes, faceted matte-black titanium body, bright steel edge bevels and dark violet leather palm pad.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Onyx Knuckles.\nSHAPE: One complete four-hole knuckle duster only, horizontal presentation, no person or hand.\nUNIQUE DESIGN: A single onyx knuckle duster with FOUR open finger holes, faceted matte-black titanium body, bright steel edge bevels and dark violet leather palm pad."
+    },
+    {
+      "id": "knuckles-07",
+      "name": {
+        "en": "Meteor Knuckles",
+        "de": "Meteor Schlagring"
+      },
+      "family": "knuckles",
+      "tier": 4,
+      "design": "A single meteor knuckle duster with FOUR open finger holes, beautifully mottled grey metal, sculpted broad striking rail and cobalt recessed groove in the palm bar.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Meteor Knuckles.\nSHAPE: One complete four-hole knuckle duster only, horizontal presentation, no person or hand.\nUNIQUE DESIGN: A single meteor knuckle duster with FOUR open finger holes, beautifully mottled grey metal, sculpted broad striking rail and cobalt recessed groove in the palm bar."
+    },
+    {
+      "id": "knuckles-08",
+      "name": {
+        "en": "Gladiator Knuckles",
+        "de": "Gladiator Schlagring"
+      },
+      "family": "knuckles",
+      "tier": 4,
+      "design": "A single gladiator knuckle duster with FOUR open finger holes, substantial forged bronze body, shallow laurel relief on striking bow and deep brown leather palm support.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Gladiator Knuckles.\nSHAPE: One complete four-hole knuckle duster only, horizontal presentation, no person or hand.\nUNIQUE DESIGN: A single gladiator knuckle duster with FOUR open finger holes, substantial forged bronze body, shallow laurel relief on striking bow and deep brown leather palm support."
+    },
+    {
+      "id": "knuckles-09",
+      "name": {
+        "en": "Diamond Knuckles",
+        "de": "Diamant Schlagring"
+      },
+      "family": "knuckles",
+      "tier": 5,
+      "design": "A single diamond masterwork knuckle duster with FOUR open finger holes, precisely faceted silver body, deep polished bevels and pale blue inset accents, no loose jewels.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Diamond Knuckles.\nSHAPE: One complete four-hole knuckle duster only, horizontal presentation, no person or hand.\nUNIQUE DESIGN: A single diamond masterwork knuckle duster with FOUR open finger holes, precisely faceted silver body, deep polished bevels and pale blue inset accents, no loose jewels."
+    },
+    {
+      "id": "knuckles-10",
+      "name": {
+        "en": "Imperator Knuckles",
+        "de": "Imperator Schlagring"
+      },
+      "family": "knuckles",
+      "tier": 5,
+      "design": "A single imperator masterwork knuckle duster with FOUR open finger holes, dark steel body, thick gold geometric overlays, a regal sculpted striking bow and black leather palm support.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Imperator Knuckles.\nSHAPE: One complete four-hole knuckle duster only, horizontal presentation, no person or hand.\nUNIQUE DESIGN: A single imperator masterwork knuckle duster with FOUR open finger holes, dark steel body, thick gold geometric overlays, a regal sculpted striking bow and black leather palm support."
+    },
+    {
+      "id": "blade-01",
+      "name": {
+        "en": "Trainer Training blade",
+        "de": "Übung Trainingsklinge"
+      },
+      "family": "blade",
+      "tier": 1,
+      "design": "One compact blunt-tip steel training knife, short broad satin-steel blade pointing RIGHT, small safety guard, grey rubber handle at LEFT and visible metal pommel. No sheath.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Trainer Training blade.\nSHAPE: One short training knife only, handle at left, short blade points right. No sheath.\nUNIQUE DESIGN: One compact blunt-tip steel training knife, short broad satin-steel blade pointing RIGHT, small safety guard, grey rubber handle at LEFT and visible metal pommel. No sheath."
+    },
+    {
+      "id": "blade-02",
+      "name": {
+        "en": "Utility Training blade",
+        "de": "Werkzeug Trainingsklinge"
+      },
+      "family": "blade",
+      "tier": 1,
+      "design": "One utility training blade with a thick short straight metal blade pointing RIGHT, generous rounded tip, an orange-and-black contoured handle at LEFT and screwed grip panels.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Utility Training blade.\nSHAPE: One short training knife only, handle at left, short blade points right. No sheath.\nUNIQUE DESIGN: One utility training blade with a thick short straight metal blade pointing RIGHT, generous rounded tip, an orange-and-black contoured handle at LEFT and screwed grip panels."
+    },
+    {
+      "id": "blade-03",
+      "name": {
+        "en": "Serrated Training blade",
+        "de": "Sägezahn Trainingsklinge"
+      },
+      "family": "blade",
+      "tier": 2,
+      "design": "One serrated-spine training knife with a short broad steel blade pointing RIGHT, blunt rounded front edge, a scalloped decorative spine, dark wood left grip and brass pins.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Serrated Training blade.\nSHAPE: One short training knife only, handle at left, short blade points right. No sheath.\nUNIQUE DESIGN: One serrated-spine training knife with a short broad steel blade pointing RIGHT, blunt rounded front edge, a scalloped decorative spine, dark wood left grip and brass pins."
+    },
+    {
+      "id": "blade-04",
+      "name": {
+        "en": "Falcon Training blade",
+        "de": "Falke Trainingsklinge"
+      },
+      "family": "blade",
+      "tier": 2,
+      "design": "One falcon training blade with a swept broad short steel profile pointing RIGHT, rounded safe tip, silver curved guard and teal-black sculpted handle at LEFT.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Falcon Training blade.\nSHAPE: One short training knife only, handle at left, short blade points right. No sheath.\nUNIQUE DESIGN: One falcon training blade with a swept broad short steel profile pointing RIGHT, rounded safe tip, silver curved guard and teal-black sculpted handle at LEFT."
+    },
+    {
+      "id": "blade-05",
+      "name": {
+        "en": "Scorpion Training blade",
+        "de": "Skorpion Trainingsklinge"
+      },
+      "family": "blade",
+      "tier": 3,
+      "design": "One scorpion training blade with a heavy short blackened-steel blade pointing RIGHT, softly rounded nose, bronze hooked guard and dark crimson left grip.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Scorpion Training blade.\nSHAPE: One short training knife only, handle at left, short blade points right. No sheath.\nUNIQUE DESIGN: One scorpion training blade with a heavy short blackened-steel blade pointing RIGHT, softly rounded nose, bronze hooked guard and dark crimson left grip."
+    },
+    {
+      "id": "blade-06",
+      "name": {
+        "en": "Nightfall Training blade",
+        "de": "Nachtfall Trainingsklinge"
+      },
+      "family": "blade",
+      "tier": 3,
+      "design": "One nightfall training knife with a broad short matte-black blade pointing RIGHT, silver beveled edge, tiny guard and ribbed charcoal left handle with subtle violet trim.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Nightfall Training blade.\nSHAPE: One short training knife only, handle at left, short blade points right. No sheath.\nUNIQUE DESIGN: One nightfall training knife with a broad short matte-black blade pointing RIGHT, silver beveled edge, tiny guard and ribbed charcoal left handle with subtle violet trim."
+    },
+    {
+      "id": "blade-07",
+      "name": {
+        "en": "Mirage Training blade",
+        "de": "Fata Morgana Trainingsklinge"
+      },
+      "family": "blade",
+      "tier": 4,
+      "design": "One mirage masterwork training knife with a short satin-steel blade pointing RIGHT, a shallow fuller, bronze guard and beautifully layered green-black left grip panels.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Mirage Training blade.\nSHAPE: One short training knife only, handle at left, short blade points right. No sheath.\nUNIQUE DESIGN: One mirage masterwork training knife with a short satin-steel blade pointing RIGHT, a shallow fuller, bronze guard and beautifully layered green-black left grip panels."
+    },
+    {
+      "id": "blade-08",
+      "name": {
+        "en": "Ghost Training blade",
+        "de": "Geist Trainingsklinge"
+      },
+      "family": "blade",
+      "tier": 4,
+      "design": "One ghost training blade with a thick short pale ceramic-coated steel profile pointing RIGHT, soft rounded tip, clean silver guard and white-grey carbon-fibre left grip.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Ghost Training blade.\nSHAPE: One short training knife only, handle at left, short blade points right. No sheath.\nUNIQUE DESIGN: One ghost training blade with a thick short pale ceramic-coated steel profile pointing RIGHT, soft rounded tip, clean silver guard and white-grey carbon-fibre left grip."
+    },
+    {
+      "id": "blade-09",
+      "name": {
+        "en": "Nemesis Training blade",
+        "de": "Nemesis Trainingsklinge"
+      },
+      "family": "blade",
+      "tier": 5,
+      "design": "One nemesis masterwork training knife with a broad short dark damascus-pattern steel blade pointing RIGHT, bronze stepped guard and sculpted black leather left handle.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Nemesis Training blade.\nSHAPE: One short training knife only, handle at left, short blade points right. No sheath.\nUNIQUE DESIGN: One nemesis masterwork training knife with a broad short dark damascus-pattern steel blade pointing RIGHT, bronze stepped guard and sculpted black leather left handle."
+    },
+    {
+      "id": "blade-10",
+      "name": {
+        "en": "Infinity Training blade",
+        "de": "Unendlichkeit Trainingsklinge"
+      },
+      "family": "blade",
+      "tier": 5,
+      "design": "One infinity masterwork training knife with a thick short polished silver blade pointing RIGHT, restrained flowing geometric engraving, dark-gold guard and intricate but practical charcoal left grip.",
+      "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Infinity Training blade.\nSHAPE: One short training knife only, handle at left, short blade points right. No sheath.\nUNIQUE DESIGN: One infinity masterwork training knife with a thick short polished silver blade pointing RIGHT, restrained flowing geometric engraving, dark-gold guard and intricate but practical charcoal left grip."
+    }
+  ]
+}

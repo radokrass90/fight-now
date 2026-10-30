@@ -1,0 +1,67 @@
+{
+  "note": "Category structure and bitmap paths verified during rapid navigation; immediate decoding can still be pending. Loaded images and combat were checked separately in the browser.",
+  "categories": [
+    {
+      "allBitmap": true,
+      "cards": 10,
+      "category": "bat",
+      "detailReady": false
+    },
+    {
+      "allBitmap": true,
+      "cards": 10,
+      "category": "staff",
+      "detailReady": false
+    },
+    {
+      "allBitmap": true,
+      "cards": 10,
+      "category": "hammer",
+      "detailReady": false
+    },
+    {
+      "allBitmap": true,
+      "cards": 10,
+      "category": "axe",
+      "detailReady": true
+    },
+    {
+      "allBitmap": true,
+      "cards": 10,
+      "category": "sword",
+      "detailReady": false
+    },
+    {
+      "allBitmap": true,
+      "cards": 10,
+      "category": "tonfa",
+      "detailReady": false
+    },
+    {
+      "allBitmap": true,
+      "cards": 10,
+      "category": "chain",
+      "detailReady": false
+    },
+    {
+      "allBitmap": true,
+      "cards": 10,
+      "category": "spear",
+      "detailReady": false
+    },
+    {
+      "allBitmap": true,
+      "cards": 10,
+      "category": "knuckles",
+      "detailReady": false
+    },
+    {
+      "allBitmap": true,
+      "cards": 10,
+      "category": "blade",
+      "detailReady": false
+    }
+  ],
+  "loadedDetailChecked": "blade",
+  "liveCombat": "2 hits / 109 damage with the owned bat; 75-coin QA balance unchanged"
+}

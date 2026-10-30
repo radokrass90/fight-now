@@ -1,0 +1,18 @@
+{
+  "id": "sword-04",
+  "name": {
+    "en": "Silverline Sword",
+    "de": "Silberlinie Schwert"
+  },
+  "family": "sword",
+  "tier": 2,
+  "design": "Straight silver longsword with a broad central fuller, fine bevels, a modest silver crossguard and ribbed charcoal leather left handle.",
+  "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Silverline Sword.\nSHAPE: One sword only, hilt and grip at left, blade points to right. No sheath.\nUNIQUE DESIGN: Straight silver longsword with a broad central fuller, fine bevels, a modest silver crossguard and ribbed charcoal leather left handle.",
+  "generator": "built-in image_gen",
+  "source": "exec-e92290f5-3ce3-40e9-ae06-ca3d17bc4426.png",
+  "destination": "game/assets/weapons/illustrated/sources/sword-04.png",
+  "sourceSha256": "669af47fb24b7115f31f941ccb023aed056140c7d5a4a666e7f607c91bcecb42",
+  "generatedAt": "2026-10-30T07:52:54.785204+00:00",
+  "reviewed": true,
+  "reviewNotes": "Individual generated source and alpha-composited family review checked: distinct correct form, full silhouette, detailed material, clean transparency. Grip and scale packed for the actual fighter renderer."
+}

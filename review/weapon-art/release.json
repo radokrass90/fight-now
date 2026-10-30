@@ -1,0 +1,28 @@
+{
+  "weapons": 100,
+  "generatedSources": 100,
+  "runtimeWebPAssets": 300,
+  "generator": "built-in image_gen",
+  "mainCommit": "e91f40d574f50ad14289884045dccb096691cc45",
+  "runtimeTree": "ba6a02b6018914d4529691e6a192044a1b49a9a2",
+  "pagesRun": 41032753250,
+  "pagesResult": "success",
+  "canonicalURL": "https://radokrass90.github.io/fight-now/",
+  "prodHealth": true,
+  "databaseArtRowsUpdated": 100,
+  "databaseBackupConfirmed": true,
+  "economicAttributesUnchanged": true,
+  "automatedChecksPassed": 13,
+  "browserOwnErrors": 0,
+  "languagesChecked": [
+    "en",
+    "de"
+  ],
+  "phoneViewport": [
+    390,
+    844
+  ],
+  "phoneHorizontalOverflow": false,
+  "actualCombatChecked": true,
+  "canonicalProfilePreserved": true
+}

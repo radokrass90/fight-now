@@ -38,6 +38,13 @@ for fi,(family,en,de,names,denames)in enumerate(families):
   (root/'game/assets/weapons'/f'{id}.svg').write_text(svg)
 assert len(weapons)==100 and len({w['id']for w in weapons})==100
 catalog=dict(version=1,weapons=weapons,upgrades=[dict(id='power',name={'en':'Power','de':'Kraft'},maxLevel=5,baseCost=100,step=.025),dict(id='guard',name={'en':'Guard','de':'Schutz'},maxLevel=5,baseCost=100,step=.02),dict(id='focus',name={'en':'Focus','de':'Fokus'},maxLevel=5,baseCost=100,step=.04)])
+# Preserve the individually generated illustrations when rebuilding economic data.
+illustrations=root/'game/assets/weapons/illustrated/manifest.json'
+if illustrations.exists():
+ for m in json.loads(illustrations.read_text())['weapons']:
+  w=next(w for w in weapons if w['id']==m['id']);prefix='assets/weapons/illustrated/'
+  w['icon']=prefix+'thumb/'+w['id']+'.webp'
+  w['art']=dict(version=2,thumb=w['icon'],detail=prefix+'detail/'+w['id']+'.webp',combat=prefix+'combat/'+w['id']+'.webp',grip=m['combat']['grip'],bounds=m['combat']['bounds'],width=m['combat']['width'],height=m['combat']['height'])
 (root/'game/assets/weapons/catalog.json').write_text(json.dumps(catalog,ensure_ascii=False,indent=2)+'\n')
 (root/'game/js/weapon-data.js').write_text("'use strict';\nconst WEAPON_CATALOG = "+json.dumps(catalog,ensure_ascii=False,separators=(',',':'))+';\n')
 print('100 distinct purchasable weapon designs, DE/EN catalog and 3 character upgrade tracks generated.')

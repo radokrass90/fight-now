@@ -1,0 +1,18 @@
+{
+  "id": "chain-01",
+  "name": {
+    "en": "Link Chain",
+    "de": "Glied Kette"
+  },
+  "family": "chain",
+  "tier": 1,
+  "design": "A complete short weighted combat chain, simple black leather hand loop at far LEFT, thick round iron links draped in a shallow horizontal S curve, solid small steel terminal weight at RIGHT.",
+  "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Link Chain.\nSHAPE: One complete connected chain weapon only, hand grip at far left and terminal weight at right, entire connected chain visible.\nUNIQUE DESIGN: A complete short weighted combat chain, simple black leather hand loop at far LEFT, thick round iron links draped in a shallow horizontal S curve, solid small steel terminal weight at RIGHT.",
+  "generator": "built-in image_gen",
+  "source": "exec-961f02ee-f89f-4da2-8e4b-cbe66c6fdfc2.png",
+  "destination": "game/assets/weapons/illustrated/sources/chain-01.png",
+  "sourceSha256": "359c4d1aac0f0133d2e07302bc782bb9b4ef7d9c63d043e1608412172cf0ec48",
+  "generatedAt": "2026-10-30T08:02:16.884209+00:00",
+  "reviewed": true,
+  "reviewNotes": "Individual generated source and alpha-composited family review checked: distinct correct form, full silhouette, detailed material, clean transparency. Grip and scale packed for the actual fighter renderer."
+}

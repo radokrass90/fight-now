@@ -1,0 +1,18 @@
+{
+  "id": "staff-09",
+  "name": {
+    "en": "Sentinel Staff",
+    "de": "Wächter Stab"
+  },
+  "family": "staff",
+  "tier": 5,
+  "design": "Armoured segmented gunmetal staff, substantial steel cuffs, hard-rubber left-quarter grip, deeply machined straight grooves with tiny amber inserts.",
+  "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Sentinel Staff.\nSHAPE: One complete long slender STAFF POLE, nearly uniform thickness, NOT a bat; grip at left quarter.\nUNIQUE DESIGN: Armoured segmented gunmetal staff, substantial steel cuffs, hard-rubber left-quarter grip, deeply machined straight grooves with tiny amber inserts.",
+  "generator": "built-in image_gen",
+  "source": "exec-166712c7-e92d-4998-84d5-0a99d334ef6d.png",
+  "destination": "game/assets/weapons/illustrated/sources/staff-09.png",
+  "sourceSha256": "7d277a09cd5820e1891089c5a2ea1a0868f2c8fbd856118b008bada4f15433fd",
+  "generatedAt": "2026-10-30T07:38:22.087405+00:00",
+  "reviewed": true,
+  "reviewNotes": "Individual generated source and alpha-composited family review checked: distinct correct form, full silhouette, detailed material, clean transparency. Grip and scale packed for the actual fighter renderer."
+}

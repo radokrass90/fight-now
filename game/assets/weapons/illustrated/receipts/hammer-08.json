@@ -1,0 +1,18 @@
+{
+  "id": "hammer-08",
+  "name": {
+    "en": "Titan Hammer",
+    "de": "Titan Hammer"
+  },
+  "family": "hammer",
+  "tier": 4,
+  "design": "Titan industrial hammer with a deep squared titanium head, substantial visible bolts, sand-blasted faces and heavy brown leather grip on left shaft.",
+  "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Titan Hammer.\nSHAPE: One hammer only, handle extends to left, substantial head at right.\nUNIQUE DESIGN: Titan industrial hammer with a deep squared titanium head, substantial visible bolts, sand-blasted faces and heavy brown leather grip on left shaft.",
+  "generator": "built-in image_gen",
+  "source": "exec-e2254a83-e7b9-48d0-975b-c4354d01a849.png",
+  "destination": "game/assets/weapons/illustrated/sources/hammer-08.png",
+  "sourceSha256": "138f3c3af62ed30947f47ddce66c522973965041d13516e83f6ab9625ddd4c94",
+  "generatedAt": "2026-10-30T07:43:18.258132+00:00",
+  "reviewed": true,
+  "reviewNotes": "Individual generated source and alpha-composited family review checked: distinct correct form, full silhouette, detailed material, clean transparency. Grip and scale packed for the actual fighter renderer."
+}

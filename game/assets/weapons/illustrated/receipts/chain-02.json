@@ -1,0 +1,18 @@
+{
+  "id": "chain-02",
+  "name": {
+    "en": "Garage Chain",
+    "de": "Garage Kette"
+  },
+  "family": "chain",
+  "tier": 1,
+  "design": "A complete garage chain weapon, ribbed rubber handle at far LEFT, heavy square-section workshop chain draped horizontally and a scuffed dark steel block weight at RIGHT.",
+  "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Garage Chain.\nSHAPE: One complete connected chain weapon only, hand grip at far left and terminal weight at right, entire connected chain visible.\nUNIQUE DESIGN: A complete garage chain weapon, ribbed rubber handle at far LEFT, heavy square-section workshop chain draped horizontally and a scuffed dark steel block weight at RIGHT.",
+  "generator": "built-in image_gen",
+  "source": "exec-e16771c2-b4cb-4d48-9356-1a518ece3244.png",
+  "destination": "game/assets/weapons/illustrated/sources/chain-02.png",
+  "sourceSha256": "7dbe3e7cd3ccbd284f4feb8584625aaedc442f5be6f564bf24e9aa9d4270f382",
+  "generatedAt": "2026-10-30T08:03:22.670027+00:00",
+  "reviewed": true,
+  "reviewNotes": "Individual generated source and alpha-composited family review checked: distinct correct form, full silhouette, detailed material, clean transparency. Grip and scale packed for the actual fighter renderer."
+}

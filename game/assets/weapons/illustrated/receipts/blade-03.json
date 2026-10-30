@@ -1,0 +1,18 @@
+{
+  "id": "blade-03",
+  "name": {
+    "en": "Serrated Training blade",
+    "de": "Sägezahn Trainingsklinge"
+  },
+  "family": "blade",
+  "tier": 2,
+  "design": "One serrated-spine training knife with a short broad steel blade pointing RIGHT, blunt rounded front edge, a scalloped decorative spine, dark wood left grip and brass pins.",
+  "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Serrated Training blade.\nSHAPE: One short training knife only, handle at left, short blade points right. No sheath.\nUNIQUE DESIGN: One serrated-spine training knife with a short broad steel blade pointing RIGHT, blunt rounded front edge, a scalloped decorative spine, dark wood left grip and brass pins.",
+  "generator": "built-in image_gen",
+  "source": "exec-47f97b56-cf02-47f5-a7d1-9b040905c602.png",
+  "destination": "game/assets/weapons/illustrated/sources/blade-03.png",
+  "sourceSha256": "9495040598556a30eae3a0a1b8455da4207c8fa65f8481e60caca69e04c78639",
+  "generatedAt": "2026-10-30T08:17:45.952142+00:00",
+  "reviewed": true,
+  "reviewNotes": "Individual generated source and alpha-composited family review checked: distinct correct form, full silhouette, detailed material, clean transparency. Grip and scale packed for the actual fighter renderer."
+}

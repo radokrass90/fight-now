@@ -1,0 +1,18 @@
+{
+  "id": "sword-01",
+  "name": {
+    "en": "Practice Sword",
+    "de": "Training Schwert"
+  },
+  "family": "sword",
+  "tier": 1,
+  "design": "Wooden practice sword with a broad flat maple blade pointing right, rounded blunt tip, simple round dark guard and wrapped brown grip at left.",
+  "prompt": "Use case: stylized-concept / premium game inventory prop. Create ONE spectacular high-detail realistic 3D-rendered weapon asset for the urban fighting game FIGHT NOW. Style reference is the material/render quality only; invent the requested weapon, do not copy a bat when another weapon type is requested. Convincing solid volume, tactile worn materials, expertly beveled geometry, fine surface detail, premium PBR game-art look, NOT a flat icon, vector drawing or simple primitive. Side ORTHOGRAPHIC product view with just enough top surface visible to show thickness; the long axis is perfectly HORIZONTAL. Entire single item visible, centered, at least 10 percent empty transparent margin beyond all extremities. Soft warm studio key from upper left, restrained cool rim from upper right, elegant highlights and readable midtones. GENUINELY TRANSPARENT background. No floor, no cast shadow outside the object, no person or hand, no room or scenery, no fog, no aura, no particles, no text, logo, watermark, frame, price or UI. Landscape high-resolution image ideally1536x1024 or larger. Exactly ONE requested complete weapon.\nITEM: Practice Sword.\nSHAPE: One sword only, hilt and grip at left, blade points to right. No sheath.\nUNIQUE DESIGN: Wooden practice sword with a broad flat maple blade pointing right, rounded blunt tip, simple round dark guard and wrapped brown grip at left.",
+  "generator": "built-in image_gen",
+  "source": "exec-a6f970a2-37af-4d6b-8a44-2eba317415d0.png",
+  "destination": "game/assets/weapons/illustrated/sources/sword-01.png",
+  "sourceSha256": "6da9da2c0ba95caad8b87c15dba2da246aa2a8feb72495395bf80be3407edc30",
+  "generatedAt": "2026-10-30T07:51:19.013267+00:00",
+  "reviewed": true,
+  "reviewNotes": "Individual generated source and alpha-composited family review checked: distinct correct form, full silhouette, detailed material, clean transparency. Grip and scale packed for the actual fighter renderer."
+}
