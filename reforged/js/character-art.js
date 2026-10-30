@@ -153,7 +153,7 @@ const CharacterArt = (() => {
     const airOffset=reforged&&index===3 ? Math.min(100,Math.max(0,frame.bounds.y-entry.data.frames[0].bounds.y)) : 0;
     ctx.drawImage(image, frame.x * ratio, frame.y * ratio, 512 * ratio, 512 * ratio, -220 * size, -464 * size-airOffset*size, 512 * size, 512 * size);
     ctx.restore();
-    return { sk, hip, frameIndex:index, frame, size, airOffset };
+    return { sk, hip, frameIndex:index, frame, size, airOffset, image, ratio, alpha:opt.alpha??1 };
   }
   function portrait(ctx, c, x, y, w, h, facing) {
     const entry = entries.get(c.id);

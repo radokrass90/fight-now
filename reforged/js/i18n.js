@@ -1,5 +1,13 @@
 'use strict';
 const I18N_DE = {
+  "weapon": "Waffe",
+  "Weapon details": "Waffendetails",
+  "PERMANENT COLLECTION": "DAUERHAFTE SAMMLUNG",
+  "One purchase. Equip it whenever you fight.": "Einmal kaufen. Für deine nächsten Kämpfe ausrüsten.",
+  "OWNED": "IM BESITZ",
+  "Inspect: ": "Ansehen: ",
+  "View details": "Details ansehen",
+
   "No owned weapons in this category.": "Keine eigenen Waffen in dieser Kategorie.",
   "STREET ARMORY": "STRASSENARSENAL",
   "Win coins. Build your fighter. Keep every weapon.": "Gewinne Münzen. Verbessere deinen Kämpfer. Behalte jede Waffe.",

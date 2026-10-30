@@ -1,0 +1,7406 @@
+{
+  "version": 2,
+  "generator": "built-in image_gen",
+  "weapons": [
+    {
+      "id": "bat-01",
+      "sourceSha256": "31bfe8a9bb01a2a5139b4230ed01ba3823aae78923e58d2bb3ef52657b78084e",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1794,
+        "height": 877
+      },
+      "sourceBounds": {
+        "x": 27,
+        "y": 314,
+        "w": 1740,
+        "h": 232,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 288,
+        "y": 427
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 121.5,
+          "y": 159.1206896551724
+        },
+        "bounds": {
+          "x": 45,
+          "y": 126,
+          "w": 510,
+          "h": 68
+        },
+        "sha256": "7bc68b2cf8b6d43e987b68c4269255d8f8d007298b4b3de4ba0a7bbabf868242",
+        "bytes": 18120
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 236,
+          "y": 318.54022988505744
+        },
+        "bounds": {
+          "x": 80,
+          "y": 251,
+          "w": 1040,
+          "h": 139
+        },
+        "sha256": "74cbc28ec2b13a7d8d42421f13e2b0cbe5497f3103e7fab53eb902b2fc50fe97",
+        "bytes": 74984
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 75.80000000000001,
+          "y": 95.56091954022989
+        },
+        "bounds": {
+          "x": 26,
+          "y": 74,
+          "w": 332,
+          "h": 44
+        },
+        "sha256": "b87f967389b32a04d24702361efb7a58dd99e53604a33398949ddb85d2cfc6ce",
+        "bytes": 9806
+      }
+    },
+    {
+      "id": "bat-02",
+      "sourceSha256": "fcc989ef6ee8f474c24e3de67abf0208e26843d1f081751f0cc43bf432fdda2d",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1789,
+        "height": 879
+      },
+      "sourceBounds": {
+        "x": 23,
+        "y": 306,
+        "w": 1752,
+        "h": 279,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 286,
+        "y": 438
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 121.5582191780822,
+          "y": 158.4246575342466
+        },
+        "bounds": {
+          "x": 45,
+          "y": 120,
+          "w": 510,
+          "h": 81
+        },
+        "sha256": "0beaa2cf39a5a36dc74ac765246640d492c24821a6a2bb9937cc603929f15eb5",
+        "bytes": 20692
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 236.1187214611872,
+          "y": 315.35616438356163
+        },
+        "bounds": {
+          "x": 80,
+          "y": 237,
+          "w": 1040,
+          "h": 166
+        },
+        "sha256": "e226864e4b7fd5a34c7667f3c1d129bacd7ffa34c7da7ba6c8d0594bace34cc9",
+        "bytes": 83532
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 75.837899543379,
+          "y": 95.01369863013699
+        },
+        "bounds": {
+          "x": 26,
+          "y": 70,
+          "w": 332,
+          "h": 53
+        },
+        "sha256": "05dcfbe679b21cb9b386da5c5e5b9bad9ece8d771fae771cd7878aeeebd06617",
+        "bytes": 11370
+      }
+    },
+    {
+      "id": "bat-03",
+      "sourceSha256": "e59ca00e8adfd97489fc41e59497c618cdc39e2613a748be2086bf4dafd430f9",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1793,
+        "height": 877
+      },
+      "sourceBounds": {
+        "x": 26,
+        "y": 280,
+        "w": 1740,
+        "h": 314,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 287,
+        "y": 432
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 121.5,
+          "y": 158.55172413793105
+        },
+        "bounds": {
+          "x": 45,
+          "y": 114,
+          "w": 510,
+          "h": 92
+        },
+        "sha256": "f525fcfa258f807e6625666e4083212ddb083e24aa3d027f0030f2ce6e807b00",
+        "bytes": 28368
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 236,
+          "y": 316.8505747126437
+        },
+        "bounds": {
+          "x": 80,
+          "y": 226,
+          "w": 1040,
+          "h": 188
+        },
+        "sha256": "b1e09d021e3455aa5b21aa9449620aafca6e3d0071d4a66419664f95d29b671c",
+        "bytes": 118188
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 75.80000000000001,
+          "y": 95.00229885057472
+        },
+        "bounds": {
+          "x": 26,
+          "y": 66,
+          "w": 332,
+          "h": 60
+        },
+        "sha256": "fe6e9e7d789db1b4f121ec066474cdfb258479a86321a8f6bbad6b24d84b2a68",
+        "bytes": 15074
+      }
+    },
+    {
+      "id": "bat-04",
+      "sourceSha256": "1f892e7dbab4e404c60cd14d3c3b56fefd36e3651f21f0ac020b7d8d1e85040a",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1793,
+        "height": 877
+      },
+      "sourceBounds": {
+        "x": 30,
+        "y": 281,
+        "w": 1731,
+        "h": 309,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 290,
+        "y": 435
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 121.60311958405546,
+          "y": 160.37261698440207
+        },
+        "bounds": {
+          "x": 45,
+          "y": 115,
+          "w": 510,
+          "h": 91
+        },
+        "sha256": "f7f5b8d37d5197cdea2a64ab0803af382d606b3875fc4244c5c44bc937d00698",
+        "bytes": 25666
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 236.21028307336798,
+          "y": 319.524552281918
+        },
+        "bounds": {
+          "x": 80,
+          "y": 227,
+          "w": 1040,
+          "h": 186
+        },
+        "sha256": "9a92d3c2c1c945412af0c7095ae340fa2e6abe8f02cbc897847aa88c2631412e",
+        "bytes": 99946
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 75.86712882726748,
+          "y": 96.5366839976892
+        },
+        "bounds": {
+          "x": 26,
+          "y": 67,
+          "w": 332,
+          "h": 59
+        },
+        "sha256": "a01f6d2e24938e71d519c037ecddab1557e6cdd5ed30268baa593155433ca6b2",
+        "bytes": 13802
+      }
+    },
+    {
+      "id": "bat-05",
+      "sourceSha256": "9e0d8e57ded3b144951bc7b871bad635012af4136abf7402558f14ccdbdb197f",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1793,
+        "height": 877
+      },
+      "sourceBounds": {
+        "x": 20,
+        "y": 298,
+        "w": 1756,
+        "h": 269,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 283,
+        "y": 431
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 121.38382687927107,
+          "y": 159.627562642369
+        },
+        "bounds": {
+          "x": 45,
+          "y": 121,
+          "w": 510,
+          "h": 78
+        },
+        "sha256": "fd2555e1f40d8a9437b1a5d5e979045ef7877a6fd42a4a47521112fbefa6cec2",
+        "bytes": 21594
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 235.7630979498861,
+          "y": 319.76993166287014
+        },
+        "bounds": {
+          "x": 80,
+          "y": 241,
+          "w": 1040,
+          "h": 159
+        },
+        "sha256": "97f035dc1d1deaa68408bba3c8c3b89c8b63d3f0647534aa868bde9d1e26fc62",
+        "bytes": 83442
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 75.7243735763098,
+          "y": 96.14578587699316
+        },
+        "bounds": {
+          "x": 26,
+          "y": 71,
+          "w": 332,
+          "h": 51
+        },
+        "sha256": "8b2258cfbe8fe9cf5a7a2562a811ffa9dc99d888b424f2f516faccf472ac5938",
+        "bytes": 11830
+      }
+    },
+    {
+      "id": "bat-06",
+      "sourceSha256": "0f2cf0e2f64c7375e1c793a2be0bfcc833189f7be9e85e876952ed7ebad02269",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1793,
+        "height": 877
+      },
+      "sourceBounds": {
+        "x": 17,
+        "y": 310,
+        "w": 1759,
+        "h": 251,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 281,
+        "y": 429
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 121.54349061967027,
+          "y": 158.5025582717453
+        },
+        "bounds": {
+          "x": 45,
+          "y": 124,
+          "w": 510,
+          "h": 73
+        },
+        "sha256": "33dbaee58aeb20da7f2b4357491e4c46864a4b02cd8e3313b9eb6b3daa1e021e",
+        "bytes": 18638
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 236.0886867538374,
+          "y": 316.3581580443434
+        },
+        "bounds": {
+          "x": 80,
+          "y": 246,
+          "w": 1040,
+          "h": 148
+        },
+        "sha256": "f2595983bb5c43e2c010d205397f8df4204564c5e75b82a63f196fd21e5c327e",
+        "bytes": 72690
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 75.82831154064809,
+          "y": 95.46048891415577
+        },
+        "bounds": {
+          "x": 26,
+          "y": 73,
+          "w": 332,
+          "h": 47
+        },
+        "sha256": "df8308d5984633bb0a873d04b3626245b7a94f7e671f37dc7d49bac9f19dc26a",
+        "bytes": 9952
+      }
+    },
+    {
+      "id": "bat-07",
+      "sourceSha256": "5d75d7a1e26f2b857a31eb9b2f3c9fa00ffee2a94a6ebc069e170e2f4347819c",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1962,
+        "height": 801
+      },
+      "sourceBounds": {
+        "x": 20,
+        "y": 277,
+        "w": 1923,
+        "h": 268,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 308,
+        "y": 416
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 121.38065522620904,
+          "y": 161.86427457098284
+        },
+        "bounds": {
+          "x": 45,
+          "y": 125,
+          "w": 510,
+          "h": 71
+        },
+        "sha256": "d2d23118d1ec1ce5b1bcf68176df46083c8e950b2fb6ed4f0f780fbc5dcc3342",
+        "bytes": 21232
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 235.75663026521062,
+          "y": 323.1742069682787
+        },
+        "bounds": {
+          "x": 80,
+          "y": 248,
+          "w": 1040,
+          "h": 145
+        },
+        "sha256": "799f39e2b872044c6ab1e7935f13ac29728ef49ae58036618e3b7431c9553e4d",
+        "bytes": 85830
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 75.7223088923557,
+          "y": 96.99791991679668
+        },
+        "bounds": {
+          "x": 26,
+          "y": 73,
+          "w": 332,
+          "h": 46
+        },
+        "sha256": "97ff91b08c457ba9aa6f5e70824c03bdbb494ab3a76d4c4236fe27c374563b8b",
+        "bytes": 11420
+      }
+    },
+    {
+      "id": "bat-08",
+      "sourceSha256": "fd9d056250bf289fa383f0056009c0f83db882a71cb085b155a71ae032d92049",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1793,
+        "height": 877
+      },
+      "sourceBounds": {
+        "x": 39,
+        "y": 290,
+        "w": 1715,
+        "h": 276,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 296,
+        "y": 425
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 121.42565597667638,
+          "y": 159.1457725947522
+        },
+        "bounds": {
+          "x": 45,
+          "y": 119,
+          "w": 510,
+          "h": 82
+        },
+        "sha256": "e1dd4f2fd97f2a6f6bfeafb8fd0873d807bd6a1bcdcd0f0a8d7905a70a6a5173",
+        "bytes": 23908
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 235.84839650145773,
+          "y": 318.865889212828
+        },
+        "bounds": {
+          "x": 80,
+          "y": 237,
+          "w": 1040,
+          "h": 167
+        },
+        "sha256": "0b07efe1059024b8e59cb23b57d8e38b35b6b561b40faa5f7066ade81ea459a1",
+        "bytes": 89238
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 75.75160349854227,
+          "y": 96.134110787172
+        },
+        "bounds": {
+          "x": 26,
+          "y": 70,
+          "w": 332,
+          "h": 53
+        },
+        "sha256": "5cf9b54a0af6f567f5b1b6c39413b8fce0f4b4d5d2ee885b1b45ffad9230723f",
+        "bytes": 13120
+      }
+    },
+    {
+      "id": "bat-09",
+      "sourceSha256": "b9ad488866b13c29d418cf37e6aa5801e9f0a678315a80b21d4b2d08b45fe2e0",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1983,
+        "height": 793
+      },
+      "sourceBounds": {
+        "x": 32,
+        "y": 262,
+        "w": 1919,
+        "h": 262,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 320,
+        "y": 389
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 121.53986451276707,
+          "y": 158.7519541427827
+        },
+        "bounds": {
+          "x": 45,
+          "y": 125,
+          "w": 510,
+          "h": 70
+        },
+        "sha256": "488ae4448bbeac2a9450913d5813842f6a1259c81633b43f400c20628b6a7f83",
+        "bytes": 19558
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 236.0812923397603,
+          "y": 317.8275143303804
+        },
+        "bounds": {
+          "x": 80,
+          "y": 249,
+          "w": 1040,
+          "h": 142
+        },
+        "sha256": "3caa448d5cb3088d69ce9e6420e1a9dd63d24b36b0e9fe0472480302cbb44dbf",
+        "bytes": 77112
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 75.82595101615425,
+          "y": 95.97186034392914
+        },
+        "bounds": {
+          "x": 26,
+          "y": 74,
+          "w": 332,
+          "h": 45
+        },
+        "sha256": "b19d9816a7f7362fb5636dc912333679befdca39c63e777e9ca854e09f9c3f9f",
+        "bytes": 10364
+      }
+    },
+    {
+      "id": "bat-10",
+      "sourceSha256": "90d08c86caaeb6861d3eefdba9d15eb4b6ab3e0b6bb44adb9013a12f89207db5",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1793,
+        "height": 877
+      },
+      "sourceBounds": {
+        "x": 27,
+        "y": 286,
+        "w": 1740,
+        "h": 302,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 288,
+        "y": 431
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 121.5,
+          "y": 158.5
+        },
+        "bounds": {
+          "x": 45,
+          "y": 116,
+          "w": 510,
+          "h": 89
+        },
+        "sha256": "aa0492d3aa2d8352a9975c42e2616665eccf67771731a4cdd262d9b75aafc224",
+        "bytes": 23260
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 236,
+          "y": 316.6666666666667
+        },
+        "bounds": {
+          "x": 80,
+          "y": 230,
+          "w": 1040,
+          "h": 181
+        },
+        "sha256": "e78854967b107b0e0913c3de61e24b4585f85c40a6a8126eb0b6794929804c70",
+        "bytes": 87428
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 75.80000000000001,
+          "y": 94.66666666666667
+        },
+        "bounds": {
+          "x": 26,
+          "y": 67,
+          "w": 332,
+          "h": 58
+        },
+        "sha256": "13667cb25bcd13157a5e5e77272b4ee4a3dce156fa7ff809df461ce6ed50ae62",
+        "bytes": 12784
+      }
+    },
+    {
+      "id": "staff-01",
+      "sourceSha256": "573c120b2e554bc5f7ccd28585bc440796aa617ac3dc3ec7cf8a751b835e0fda",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 2079,
+        "height": 756
+      },
+      "sourceBounds": {
+        "x": 29,
+        "y": 310,
+        "w": 2029,
+        "h": 115,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 516,
+        "y": 365
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 167.41005421389846,
+          "y": 159.82454411039922
+        },
+        "bounds": {
+          "x": 45,
+          "y": 146,
+          "w": 510,
+          "h": 29
+        },
+        "sha256": "c7d35acde7f41acf370cdbe3b3501f2c847502cbeba46b409e3bdf28b8b7e791",
+        "bytes": 12662
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 329.62050271069495,
+          "y": 319.19122720551997
+        },
+        "bounds": {
+          "x": 80,
+          "y": 291,
+          "w": 1040,
+          "h": 59
+        },
+        "sha256": "ef80f70cb3de31be4d4822786d5a29f8fcd7071e907d4e69bcc1a14b9b7043eb",
+        "bytes": 49164
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 105.68654509610646,
+          "y": 95.99950714637752
+        },
+        "bounds": {
+          "x": 26,
+          "y": 87,
+          "w": 332,
+          "h": 19
+        },
+        "sha256": "ccbdc503346667cadd4ca40e40ca162c8dd7d8d799e2ba570eeaacfd10a32755",
+        "bytes": 6750
+      }
+    },
+    {
+      "id": "staff-02",
+      "sourceSha256": "108ce0e5befb21d23e3ba04f78381a11911ee01f1d2ab1fcc0082daae9633cb5",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 2172,
+        "height": 724
+      },
+      "sourceBounds": {
+        "x": 27,
+        "y": 286,
+        "w": 2118,
+        "h": 132,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 535,
+        "y": 351
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 167.3229461756374,
+          "y": 159.6515580736544
+        },
+        "bounds": {
+          "x": 45,
+          "y": 144,
+          "w": 510,
+          "h": 32
+        },
+        "sha256": "1a4f5666a4c7d0a740b4c3da38c3a4902a3f9a5e4fa793581c49e79a2e1fdb0a",
+        "bytes": 11316
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 329.44287063267234,
+          "y": 319.9169027384325
+        },
+        "bounds": {
+          "x": 80,
+          "y": 288,
+          "w": 1040,
+          "h": 65
+        },
+        "sha256": "bb844b1a24f178cb7a7918f45a2a262d8dc5c3c5a4984876901383506ef9560f",
+        "bytes": 45394
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 105.62983947119925,
+          "y": 96.18885741265345
+        },
+        "bounds": {
+          "x": 26,
+          "y": 86,
+          "w": 332,
+          "h": 21
+        },
+        "sha256": "6d178c15cfd68fd16771253d34c76e9383786fcd107ce94e3f5925949eaa2618",
+        "bytes": 6708
+      }
+    },
+    {
+      "id": "staff-03",
+      "sourceSha256": "54113f03874ec3eb54e6968338290bc8eb41c59076fb0b2d2691b93446e898e9",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 2172,
+        "height": 724
+      },
+      "sourceBounds": {
+        "x": 41,
+        "y": 278,
+        "w": 2090,
+        "h": 149,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 543,
+        "y": 352
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 167.4976076555024,
+          "y": 160.05741626794259
+        },
+        "bounds": {
+          "x": 45,
+          "y": 142,
+          "w": 510,
+          "h": 36
+        },
+        "sha256": "5e01f8014efc3f6405d344585168480daac0578ed2fac1fb792f1829bd7da982",
+        "bytes": 12650
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 329.79904306220095,
+          "y": 319.82296650717706
+        },
+        "bounds": {
+          "x": 80,
+          "y": 283,
+          "w": 1040,
+          "h": 74
+        },
+        "sha256": "76216e7a205ecb85b9d1d7269d66a58f371ce6ae7f1a7bc76f16d5a98fe0cd49",
+        "bytes": 53100
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 105.74354066985646,
+          "y": 95.75502392344498
+        },
+        "bounds": {
+          "x": 26,
+          "y": 84,
+          "w": 332,
+          "h": 24
+        },
+        "sha256": "abb6db9d600c2f0da9faab7dbf6bf944b7861207f8902b5865af667b49c0cb22",
+        "bytes": 7306
+      }
+    },
+    {
+      "id": "staff-04",
+      "sourceSha256": "065d95c7b61cc57d9c73c83517b1ac104c3c46171ea8b9afef77dba6c43d7202",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1983,
+        "height": 793
+      },
+      "sourceBounds": {
+        "x": 23,
+        "y": 357,
+        "w": 1938,
+        "h": 114,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 488,
+        "y": 413
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 167.36842105263156,
+          "y": 159.73684210526315
+        },
+        "bounds": {
+          "x": 45,
+          "y": 145,
+          "w": 510,
+          "h": 30
+        },
+        "sha256": "6b8f50e59bc0bd7b5dd33d08374cee996726ca9a24f29e998d8c0b43a0a5ab8c",
+        "bytes": 10718
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 329.5356037151703,
+          "y": 320.0515995872033
+        },
+        "bounds": {
+          "x": 80,
+          "y": 290,
+          "w": 1040,
+          "h": 61
+        },
+        "sha256": "8f5cdfee0aa5e6e73cd31a0f6ab9d1daca7d2398db735976e0fa0e72ffb16703",
+        "bytes": 40836
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 105.6594427244582,
+          "y": 95.59339525283798
+        },
+        "bounds": {
+          "x": 26,
+          "y": 86,
+          "w": 332,
+          "h": 20
+        },
+        "sha256": "143dd3f84cdfd43bbba013620376b7ee1944a0e67458cac4399ac27f2d15c7e3",
+        "bytes": 5738
+      }
+    },
+    {
+      "id": "staff-05",
+      "sourceSha256": "748e989f759fe75345783ffed12c6a4691e512d5fb898a689b89bfb6bcee8f58",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1950,
+        "height": 807
+      },
+      "sourceBounds": {
+        "x": 28,
+        "y": 345,
+        "w": 1896,
+        "h": 129,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 483,
+        "y": 409
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 167.38924050632912,
+          "y": 160.21518987341773
+        },
+        "bounds": {
+          "x": 45,
+          "y": 143,
+          "w": 510,
+          "h": 35
+        },
+        "sha256": "0bbab91809ee248fde7bbfc7fb4c9d0f5db7de9121ec3f08403be6f375f82459",
+        "bytes": 12932
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 329.57805907172997,
+          "y": 320.1054852320675
+        },
+        "bounds": {
+          "x": 80,
+          "y": 285,
+          "w": 1040,
+          "h": 71
+        },
+        "sha256": "a83334893fe9db055a1fbc6b2b8347d8ee08b0de29ecb34d5e97a86febb13c6a",
+        "bytes": 48880
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 105.67299578059071,
+          "y": 96.20675105485232
+        },
+        "bounds": {
+          "x": 26,
+          "y": 85,
+          "w": 332,
+          "h": 23
+        },
+        "sha256": "bb7f24064213349d961083e428ad83928264e3c4c8b2de0a42c9550b814e1302",
+        "bytes": 7122
+      }
+    },
+    {
+      "id": "staff-06",
+      "sourceSha256": "4fc0b0f488b0334eef88c78e29ff7da271e183082adbc0bb2c546a9337c67ad5",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1983,
+        "height": 793
+      },
+      "sourceBounds": {
+        "x": 23,
+        "y": 323,
+        "w": 1937,
+        "h": 123,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 488,
+        "y": 382
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 167.4315952503872,
+          "y": 159.53433144037172
+        },
+        "bounds": {
+          "x": 45,
+          "y": 144,
+          "w": 510,
+          "h": 32
+        },
+        "sha256": "541ff252957a151d99c1701a343bda09357dc66f8c3dbc64b3c8414775f510c4",
+        "bytes": 13934
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 329.66442953020135,
+          "y": 318.67785234899327
+        },
+        "bounds": {
+          "x": 80,
+          "y": 287,
+          "w": 1040,
+          "h": 66
+        },
+        "sha256": "83259f678b0f1f40c3a9cc3a9b40a25380d9d4cb83e8244fcc9e6dc62c829fa1",
+        "bytes": 50160
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 105.70056788848736,
+          "y": 96.11254517294786
+        },
+        "bounds": {
+          "x": 26,
+          "y": 86,
+          "w": 332,
+          "h": 21
+        },
+        "sha256": "e89700af9cd78f9603e70dd8d15a7c70c32aee22a2a2ecda0e71449c3e1caebd",
+        "bytes": 7804
+      }
+    },
+    {
+      "id": "staff-07",
+      "sourceSha256": "915ba14557aacb30ba1fe7432476c1dd4a04689352452ff275348c646708b83b",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1983,
+        "height": 793
+      },
+      "sourceBounds": {
+        "x": 25,
+        "y": 312,
+        "w": 1933,
+        "h": 156,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 489,
+        "y": 390
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 167.42110708742885,
+          "y": 160.57941024314536
+        },
+        "bounds": {
+          "x": 45,
+          "y": 140,
+          "w": 510,
+          "h": 41
+        },
+        "sha256": "7d62973682fd6a58ec750e8ea51f795db1eab396cc25f43c7a5d683be83811d2",
+        "bytes": 13902
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 329.6430419037765,
+          "y": 319.96585618210037
+        },
+        "bounds": {
+          "x": 80,
+          "y": 278,
+          "w": 1040,
+          "h": 84
+        },
+        "sha256": "282c981b425b6919710794aa123853b7ff447aac1f3208928d6227b72d89838e",
+        "bytes": 47352
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 105.69374030005173,
+          "y": 96.39679255043973
+        },
+        "bounds": {
+          "x": 26,
+          "y": 83,
+          "w": 332,
+          "h": 27
+        },
+        "sha256": "db518f835ec0d300c41db523a8f60131616af8a980ba83573beeb89cb651d50e",
+        "bytes": 8034
+      }
+    },
+    {
+      "id": "staff-08",
+      "sourceSha256": "cf0f4f1641f86be902a9187c0795c926d173d94cfd684e6d9d07c09cf3465915",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 2021,
+        "height": 778
+      },
+      "sourceBounds": {
+        "x": 25,
+        "y": 333,
+        "w": 1971,
+        "h": 120,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 498,
+        "y": 394
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 167.3896499238965,
+          "y": 160.78386605783865
+        },
+        "bounds": {
+          "x": 45,
+          "y": 145,
+          "w": 510,
+          "h": 31
+        },
+        "sha256": "c48940cf224ddf1584abc59ffbeb0496f9a031fc4ee2f9b721095c28861d94a0",
+        "bytes": 12410
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 329.5788939624556,
+          "y": 321.1867072552004
+        },
+        "bounds": {
+          "x": 80,
+          "y": 289,
+          "w": 1040,
+          "h": 63
+        },
+        "sha256": "7e77c12e4b045640976d95b99bbca7a661b4748f8d911c7a28ec0b4ee4ec0258",
+        "bytes": 43144
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 105.67326230339928,
+          "y": 96.27498731608321
+        },
+        "bounds": {
+          "x": 26,
+          "y": 86,
+          "w": 332,
+          "h": 20
+        },
+        "sha256": "4cc698455a9de297a5a2a79d06a197f6aaa587e1d02dd2294d96eb29f7906e39",
+        "bytes": 6912
+      }
+    },
+    {
+      "id": "staff-09",
+      "sourceSha256": "7d277a09cd5820e1891089c5a2ea1a0868f2c8fbd856118b008bada4f15433fd",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1912,
+        "height": 823
+      },
+      "sourceBounds": {
+        "x": 24,
+        "y": 335,
+        "w": 1864,
+        "h": 146,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 471,
+        "y": 410
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 167.30150214592274,
+          "y": 160.52038626609442
+        },
+        "bounds": {
+          "x": 45,
+          "y": 140,
+          "w": 510,
+          "h": 40
+        },
+        "sha256": "ed2291854bc6d35ff5cda3a37c0745dbb7c218709778d9aedfd1517571aad145",
+        "bytes": 13750
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 329.3991416309012,
+          "y": 321.84549356223175
+        },
+        "bounds": {
+          "x": 80,
+          "y": 280,
+          "w": 1040,
+          "h": 81
+        },
+        "sha256": "12ddc9573800433c04cff1ab687bacb912da95f6fc6763708d4d8af8ab88b8c5",
+        "bytes": 52742
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 105.61587982832617,
+          "y": 96.35836909871244
+        },
+        "bounds": {
+          "x": 26,
+          "y": 83,
+          "w": 332,
+          "h": 26
+        },
+        "sha256": "0cfa2eab2777976d556f63bd049f18562cc1e1eb960ef4b61422b1261ea6fba4",
+        "bytes": 7636
+      }
+    },
+    {
+      "id": "staff-10",
+      "sourceSha256": "f009b33fdbbd437e63247c22069773c6c557665a7de7be37636a247bfa7eab0d",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1998,
+        "height": 787
+      },
+      "sourceBounds": {
+        "x": 31,
+        "y": 282,
+        "w": 1949,
+        "h": 187,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 499,
+        "y": 384
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 167.46280143663415,
+          "y": 162.69061056952285
+        },
+        "bounds": {
+          "x": 45,
+          "y": 136,
+          "w": 510,
+          "h": 49
+        },
+        "sha256": "29b6122ed539f61973465a712e51cc8d727bb906c226db61a5b7af5ae9162369",
+        "bytes": 14066
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 329.72806567470496,
+          "y": 324.4279117496152
+        },
+        "bounds": {
+          "x": 80,
+          "y": 270,
+          "w": 1040,
+          "h": 100
+        },
+        "sha256": "9ac1b8974b2f06522dec8b81ca3380d44e2f5cacd068ff4cf533d89570949867",
+        "bytes": 52282
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 105.72088250384813,
+          "y": 97.37506413545408
+        },
+        "bounds": {
+          "x": 26,
+          "y": 80,
+          "w": 332,
+          "h": 32
+        },
+        "sha256": "299b0d47feb5e74bb09365c3ca8fd775936a1d8834f664aa174a9dc5943dce42",
+        "bytes": 7636
+      }
+    },
+    {
+      "id": "hammer-01",
+      "sourceSha256": "a117790dce1abd042a85237975023f7d4c9926cc4776c3a2bc86dba6bfb3f50e",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1793,
+        "height": 877
+      },
+      "sourceBounds": {
+        "x": 33,
+        "y": 148,
+        "w": 1726,
+        "h": 574,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 257,
+        "y": 428
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 111.18771726535343,
+          "y": 157.73464658169178
+        },
+        "bounds": {
+          "x": 45,
+          "y": 75,
+          "w": 510,
+          "h": 170
+        },
+        "sha256": "edb327e5bb657b1b02c07cc31741e6fd3cb99a6a7a4ca1bc2e41a558d5ad4d72",
+        "bytes": 27794
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 214.9710312862109,
+          "y": 315.7137891077636
+        },
+        "bounds": {
+          "x": 80,
+          "y": 147,
+          "w": 1040,
+          "h": 346
+        },
+        "sha256": "5c31395b19e3353c8495cc17c4320141abef1c2158b4290b0136d80f2e0007b5",
+        "bytes": 122516
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 69.08690614136732,
+          "y": 94.85863267670916
+        },
+        "bounds": {
+          "x": 26,
+          "y": 41,
+          "w": 332,
+          "h": 110
+        },
+        "sha256": "b3ba39ae72944dbc2b62b8fd9d1972276578159c6a423970ba53fe5974af1aea",
+        "bytes": 14050
+      }
+    },
+    {
+      "id": "hammer-02",
+      "sourceSha256": "e31b31f2df9c25eb84813f71c4e8c7e6e9f6db81cd0fc248b3c3fa286ea17614",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "sourceBounds": {
+        "x": 22,
+        "y": 101,
+        "w": 1730,
+        "h": 669,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 247,
+        "y": 450
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 111.32947976878613,
+          "y": 164.88439306358381
+        },
+        "bounds": {
+          "x": 45,
+          "y": 62,
+          "w": 510,
+          "h": 197
+        },
+        "sha256": "a91f492c5b4ea33559e6516a6dc4e33856e4b9f60b7acb5b68d33b6ac8acd708",
+        "bytes": 29152
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 215.2601156069364,
+          "y": 328.8034682080925
+        },
+        "bounds": {
+          "x": 80,
+          "y": 119,
+          "w": 1040,
+          "h": 402
+        },
+        "sha256": "c9067b9039b3af5c24566da0a4d2f1147deb506a02585366d48fdb0fd8fc5cd6",
+        "bytes": 125482
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 69.17919075144508,
+          "y": 98.9757225433526
+        },
+        "bounds": {
+          "x": 26,
+          "y": 32,
+          "w": 332,
+          "h": 128
+        },
+        "sha256": "b3caf8ff739d5d44ba0f74f79968cdbd2e3d0b929b15e2eb2f8c24f6ccbe5fae",
+        "bytes": 15134
+      }
+    },
+    {
+      "id": "hammer-03",
+      "sourceSha256": "bc5e4ffc23101ee24dd48408c1c4334e1d14bd9625838158e9e230ef0bb8aadd",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1793,
+        "height": 877
+      },
+      "sourceBounds": {
+        "x": 35,
+        "y": 151,
+        "w": 1723,
+        "h": 602,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 259,
+        "y": 443
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 111.30295995356936,
+          "y": 157.43064422518864
+        },
+        "bounds": {
+          "x": 45,
+          "y": 71,
+          "w": 510,
+          "h": 178
+        },
+        "sha256": "94dc2bf96ca9a8b996b10083f0b87bf104d2b22f31a2f62213ae9066afd1ddbb",
+        "bytes": 27366
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 215.20603598374927,
+          "y": 315.25072547881604
+        },
+        "bounds": {
+          "x": 80,
+          "y": 139,
+          "w": 1040,
+          "h": 363
+        },
+        "sha256": "e32ff736bd4b2f5519b565721ed087999116ff1f6991bbcf24fea3ea0c0e9e55",
+        "bytes": 114070
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 69.16192687173535,
+          "y": 94.26465467208358
+        },
+        "bounds": {
+          "x": 26,
+          "y": 38,
+          "w": 332,
+          "h": 116
+        },
+        "sha256": "fca008e3d409a7b59ed28b61fa30871cb7053c0799565ad3f7e4ebaac4b1d056",
+        "bytes": 14748
+      }
+    },
+    {
+      "id": "hammer-04",
+      "sourceSha256": "463bff9b323f56e2564c8540e62dbc6637d68e36e78122abcdb5dc7c8aa03e34",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1907,
+        "height": 825
+      },
+      "sourceBounds": {
+        "x": 36,
+        "y": 127,
+        "w": 1838,
+        "h": 579,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 275,
+        "y": 417
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 111.31664853101196,
+          "y": 160.46789989118605
+        },
+        "bounds": {
+          "x": 45,
+          "y": 80,
+          "w": 510,
+          "h": 161
+        },
+        "sha256": "7df174ea21e384045557c0da42570535fad7a23255bf1b9921dbc3ca22496173",
+        "bytes": 26052
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 215.23394994559305,
+          "y": 320.0914036996736
+        },
+        "bounds": {
+          "x": 80,
+          "y": 156,
+          "w": 1040,
+          "h": 328
+        },
+        "sha256": "f1527593dcec244d4c7c79bd7bbae8dc350bf0eda3b582c31166bcae6950ff1a",
+        "bytes": 108180
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 69.170837867247,
+          "y": 96.38302502720347
+        },
+        "bounds": {
+          "x": 26,
+          "y": 44,
+          "w": 332,
+          "h": 105
+        },
+        "sha256": "28b358d89aa97db9c9574f852be66245a741af46f2dc498ba0ecb18f6fe8ac81",
+        "bytes": 13812
+      }
+    },
+    {
+      "id": "hammer-05",
+      "sourceSha256": "93cef712ecaa593cd04d85a3920d5de60cc42b07ae6e07d012f58a44688655b6",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1793,
+        "height": 877
+      },
+      "sourceBounds": {
+        "x": 41,
+        "y": 77,
+        "w": 1707,
+        "h": 726,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 263,
+        "y": 445
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 111.32688927943761,
+          "y": 161.94727592267134
+        },
+        "bounds": {
+          "x": 45,
+          "y": 52,
+          "w": 510,
+          "h": 217
+        },
+        "sha256": "20d429f085fdf5c08c9e571c04aede60a3cd50e56d448345afd887d3f4433928",
+        "bytes": 42452
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 215.2548330404218,
+          "y": 323.20620972466315
+        },
+        "bounds": {
+          "x": 80,
+          "y": 99,
+          "w": 1040,
+          "h": 442
+        },
+        "sha256": "20f21ff85052946b5af80cd9c034a1c8fffa3f6e3d4854cf5c1ad3d920bf9894",
+        "bytes": 179566
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 69.1775043936731,
+          "y": 97.5735207967194
+        },
+        "bounds": {
+          "x": 26,
+          "y": 26,
+          "w": 332,
+          "h": 141
+        },
+        "sha256": "f7c340ce78da620f236d19268a4c2d1ad686bb3473f9b73e3f2f6390a40e3b37",
+        "bytes": 22592
+      }
+    },
+    {
+      "id": "hammer-06",
+      "sourceSha256": "fdb3828c56ba85599d8f9dcd4ebf8741f7f3463ba9fbbb31641b7fc75db2c378",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1793,
+        "height": 877
+      },
+      "sourceBounds": {
+        "x": 28,
+        "y": 74,
+        "w": 1745,
+        "h": 740,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 255,
+        "y": 453
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 111.34383954154728,
+          "y": 162.7679083094556
+        },
+        "bounds": {
+          "x": 45,
+          "y": 52,
+          "w": 510,
+          "h": 216
+        },
+        "sha256": "ea67bc46fc81c3677dc5a2283563f3962f59c8851a9d961276045b9f7fae5aac",
+        "bytes": 29812
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 215.2893982808023,
+          "y": 325.87965616045847
+        },
+        "bounds": {
+          "x": 80,
+          "y": 100,
+          "w": 1040,
+          "h": 441
+        },
+        "sha256": "8f43fed1b2ac7d1e9801b296ae9cf74fbb0a89d267ae368f769ee5bc0740a3dd",
+        "bytes": 120664
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 69.18853868194842,
+          "y": 98.10773638968482
+        },
+        "bounds": {
+          "x": 26,
+          "y": 26,
+          "w": 332,
+          "h": 141
+        },
+        "sha256": "2f9fddd3ec91d71d2ea471ee7753e823999de82a36607acf0ab2715df79ea4dc",
+        "bytes": 16000
+      }
+    },
+    {
+      "id": "hammer-07",
+      "sourceSha256": "1e46b3120ab01c4e24c56cf8b7bdda52a3667c77a8ba97bbfd6244f344e166d6",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "sourceBounds": {
+        "x": 37,
+        "y": 116,
+        "w": 1698,
+        "h": 656,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 258,
+        "y": 439
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 111.37809187279153,
+          "y": 159.0141342756184
+        },
+        "bounds": {
+          "x": 45,
+          "y": 62,
+          "w": 510,
+          "h": 197
+        },
+        "sha256": "f7354f7ad5fca2a339e625cb510971561320c5b3ae1d0b044dc2c6be3bd64f97",
+        "bytes": 30158
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 215.35924617196702,
+          "y": 316.83274440518255
+        },
+        "bounds": {
+          "x": 80,
+          "y": 119,
+          "w": 1040,
+          "h": 402
+        },
+        "sha256": "0bdf1867fbe32a6db79adf01a4899c3eeb1533a44c17468b697b195f720b3608",
+        "bytes": 114394
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 69.2108362779741,
+          "y": 95.1542991755006
+        },
+        "bounds": {
+          "x": 26,
+          "y": 32,
+          "w": 332,
+          "h": 128
+        },
+        "sha256": "cf30f79e9984d5daa5a1f1998eb28497b00ac4412c72ebbac2b96281468b77aa",
+        "bytes": 16692
+      }
+    },
+    {
+      "id": "hammer-08",
+      "sourceSha256": "138f3c3af62ed30947f47ddce66c522973965041d13516e83f6ab9625ddd4c94",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1793,
+        "height": 877
+      },
+      "sourceBounds": {
+        "x": 38,
+        "y": 74,
+        "w": 1717,
+        "h": 722,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 261,
+        "y": 432
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 111.23762376237623,
+          "y": 159.33663366336634
+        },
+        "bounds": {
+          "x": 45,
+          "y": 53,
+          "w": 510,
+          "h": 214
+        },
+        "sha256": "fa86ff8d78a438b8314c53ed08ac6c43f16e67f07c54b2996d861af31e529e45",
+        "bytes": 33220
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 215.07280139778683,
+          "y": 318.8433313919627
+        },
+        "bounds": {
+          "x": 80,
+          "y": 102,
+          "w": 1040,
+          "h": 437
+        },
+        "sha256": "bb36a438222a30a89722d799f9d6a0d7edc764ef7c1227b29cb8a460ec2d8f9b",
+        "bytes": 134236
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 69.11939429237042,
+          "y": 95.22306348281887
+        },
+        "bounds": {
+          "x": 26,
+          "y": 26,
+          "w": 332,
+          "h": 140
+        },
+        "sha256": "ef04a1ac832c8971f71a3aae73f36c687ba41d7f701ad5999988a5558ad82fbd",
+        "bytes": 18076
+      }
+    },
+    {
+      "id": "hammer-09",
+      "sourceSha256": "d6761b9db807d1c75e51f4ecbac85c34d6d25bba0b06b579df97f6de748bb3f0",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "sourceBounds": {
+        "x": 42,
+        "y": 118,
+        "w": 1688,
+        "h": 676,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 261,
+        "y": 447
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 111.16706161137441,
+          "y": 157.40165876777252
+        },
+        "bounds": {
+          "x": 45,
+          "y": 58,
+          "w": 510,
+          "h": 204
+        },
+        "sha256": "b3ffb6efc111f9e5709b22aee88e2a80846c584eb8579fc7dc778ab16a4b093e",
+        "bytes": 31350
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 214.92890995260663,
+          "y": 314.70142180094786
+        },
+        "bounds": {
+          "x": 80,
+          "y": 112,
+          "w": 1040,
+          "h": 416
+        },
+        "sha256": "7fa26c9ad4d038e0330556383214d1be6b82d3d3c39ab9bb7e03c1f4fcdfeb46",
+        "bytes": 121792
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 69.07345971563981,
+          "y": 94.7085308056872
+        },
+        "bounds": {
+          "x": 26,
+          "y": 30,
+          "w": 332,
+          "h": 133
+        },
+        "sha256": "1ade55201aa7e150dc6db2458f0ec83956213763f4b5ea73e800e57aa1c2bcfc",
+        "bytes": 17200
+      }
+    },
+    {
+      "id": "hammer-10",
+      "sourceSha256": "7a7a056b922a0e5dbf05f7c3267476d27c240b0694ca0c790cacf13ee14c6ad5",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1793,
+        "height": 877
+      },
+      "sourceBounds": {
+        "x": 21,
+        "y": 96,
+        "w": 1752,
+        "h": 684,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 249,
+        "y": 435
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 111.36986301369863,
+          "y": 159.68150684931507
+        },
+        "bounds": {
+          "x": 45,
+          "y": 61,
+          "w": 510,
+          "h": 199
+        },
+        "sha256": "f05309aaf2f8561d2a92fa860a8f6dfefee362d3fa978e32be96f65b5d1f4fa8",
+        "bytes": 33624
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 215.34246575342465,
+          "y": 318.2328767123288
+        },
+        "bounds": {
+          "x": 80,
+          "y": 117,
+          "w": 1040,
+          "h": 406
+        },
+        "sha256": "b709cfa6384ebe407c552b5a4e544b323fcda0020b3ff23610ead7a682c2b663",
+        "bytes": 125382
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 69.20547945205479,
+          "y": 95.23972602739725
+        },
+        "bounds": {
+          "x": 26,
+          "y": 31,
+          "w": 332,
+          "h": 130
+        },
+        "sha256": "f7b85eaae9ebf4ffbf38e3db7fcb1fa2a76b25434fb550fb3c9ffd411fb40a2c",
+        "bytes": 18038
+      }
+    },
+    {
+      "id": "axe-01",
+      "sourceSha256": "534a70fb25e4d8f436a223edf30a043f9940247b8e853726e54b2a8236af43b7",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "sourceBounds": {
+        "x": 39,
+        "y": 193,
+        "w": 1708,
+        "h": 578,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 278,
+        "y": 381
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 116.36416861826697,
+          "y": 130.13583138173303
+        },
+        "bounds": {
+          "x": 45,
+          "y": 74,
+          "w": 510,
+          "h": 173
+        },
+        "sha256": "03350338d2dda60aedcbf4d46d19990bc915e82b9c155a211af38f51580c4ff8",
+        "bytes": 27188
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 225.52693208430912,
+          "y": 258.4730679156909
+        },
+        "bounds": {
+          "x": 80,
+          "y": 144,
+          "w": 1040,
+          "h": 352
+        },
+        "sha256": "18ac5b1315c006a8c5686a1e17f481f9eef99e7538021c1a7e45bf762a763cba",
+        "bytes": 108898
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 72.45667447306792,
+          "y": 76.54332552693208
+        },
+        "bounds": {
+          "x": 26,
+          "y": 40,
+          "w": 332,
+          "h": 112
+        },
+        "sha256": "0e58543899e688ec7d0e1f6e6b30b3fb4a6cd5436c15d9ebbe991e1968492d7e",
+        "bytes": 14576
+      }
+    },
+    {
+      "id": "axe-02",
+      "sourceSha256": "88e9b3d67113c338d5dc7b52d747a5c4da9892ffd2d397cc936e7dda415a46af",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1793,
+        "height": 877
+      },
+      "sourceBounds": {
+        "x": 38,
+        "y": 130,
+        "w": 1724,
+        "h": 630,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 279,
+        "y": 403
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 116.29350348027842,
+          "y": 147.7598607888631
+        },
+        "bounds": {
+          "x": 45,
+          "y": 67,
+          "w": 510,
+          "h": 186
+        },
+        "sha256": "0486833dd8e2fe8bff8c3821bc11d23b5d35debbbc4755f89a184ad804a80032",
+        "bytes": 25562
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 225.38283062645013,
+          "y": 294.6867749419954
+        },
+        "bounds": {
+          "x": 80,
+          "y": 130,
+          "w": 1040,
+          "h": 380
+        },
+        "sha256": "782c309dca54193b7680936fa48b9d473c0e54987d6cb6c2fe81952bda8927a5",
+        "bytes": 100560
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 72.41067285382832,
+          "y": 88.57308584686774
+        },
+        "bounds": {
+          "x": 26,
+          "y": 36,
+          "w": 332,
+          "h": 121
+        },
+        "sha256": "89e023701a5a07e1d0748b96f7186466e6d3cb94dacd5d7f8d2b8769ff25f74b",
+        "bytes": 14148
+      }
+    },
+    {
+      "id": "axe-03",
+      "sourceSha256": "a6bbaec182689558c1719a975099f413fc4a4b760cac6cc5dff8a6cdf35d906d",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "sourceBounds": {
+        "x": 44,
+        "y": 98,
+        "w": 1693,
+        "h": 690,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 281,
+        "y": 380
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 116.39397519196693,
+          "y": 140.94979326639103
+        },
+        "bounds": {
+          "x": 45,
+          "y": 56,
+          "w": 510,
+          "h": 208
+        },
+        "sha256": "6b065e74b6290db9f9a5299a56398c4923d1b680149d3e07e5edacb833b863fe",
+        "bytes": 37266
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 225.58771411695216,
+          "y": 281.23095097460134
+        },
+        "bounds": {
+          "x": 80,
+          "y": 108,
+          "w": 1040,
+          "h": 424
+        },
+        "sha256": "05da7dbbd6d8ff8eb49d4018d6343119a11c375e3997aa481074836ad3771163",
+        "bytes": 152262
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 72.47607796810397,
+          "y": 84.30064973419965
+        },
+        "bounds": {
+          "x": 26,
+          "y": 29,
+          "w": 332,
+          "h": 135
+        },
+        "sha256": "461742e2fb3c9b43e12b84f26a201b6599e490f43438812e6413f33c8b6c2765",
+        "bytes": 20186
+      }
+    },
+    {
+      "id": "axe-04",
+      "sourceSha256": "b27dc4b24818e3e3b31fef6f495e1024db945b981939bd56e48f477d9a6c4f0c",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1793,
+        "height": 877
+      },
+      "sourceBounds": {
+        "x": 28,
+        "y": 156,
+        "w": 1733,
+        "h": 569,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 271,
+        "y": 375
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 116.51182919792268,
+          "y": 141.44893248701675
+        },
+        "bounds": {
+          "x": 45,
+          "y": 77,
+          "w": 510,
+          "h": 167
+        },
+        "sha256": "5a4161f20082ff494b57957b365aa370b30ac54de9045785809d237516e952d2",
+        "bytes": 27040
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 225.82804385458743,
+          "y": 281.4252740911714
+        },
+        "bounds": {
+          "x": 80,
+          "y": 150,
+          "w": 1040,
+          "h": 341
+        },
+        "sha256": "2f109d144a84fcbd21f04df3334dbaa1df853738b03d3ecea42553429278faa9",
+        "bytes": 102158
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 72.55279861511829,
+          "y": 83.95499134448933
+        },
+        "bounds": {
+          "x": 26,
+          "y": 42,
+          "w": 332,
+          "h": 109
+        },
+        "sha256": "b14b8db676a1dc779484c3147de2809d093f0063ac39eaae5b8eb042c697a3a8",
+        "bytes": 14916
+      }
+    },
+    {
+      "id": "axe-05",
+      "sourceSha256": "ad77275b9f4edd32bd83209bfd7dfe8ab4fbce16cd1111ed4624a46c5f6f28bd",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1793,
+        "height": 877
+      },
+      "sourceBounds": {
+        "x": 16,
+        "y": 133,
+        "w": 1761,
+        "h": 636,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 263,
+        "y": 389
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 116.53321976149915,
+          "y": 142.1396933560477
+        },
+        "bounds": {
+          "x": 45,
+          "y": 68,
+          "w": 510,
+          "h": 184
+        },
+        "sha256": "d051f6b293c72030cbfa8b4552dcfb2d05c86ac951965029a6f1cd029f2dde13",
+        "bytes": 30734
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 225.8716638273708,
+          "y": 283.18682566723453
+        },
+        "bounds": {
+          "x": 80,
+          "y": 132,
+          "w": 1040,
+          "h": 376
+        },
+        "sha256": "790c2836f58f4a31f087a99a39704fb271c9af1241586239da46e4170bec5f72",
+        "bytes": 116230
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 72.56672345258376,
+          "y": 84.26348665530949
+        },
+        "bounds": {
+          "x": 26,
+          "y": 36,
+          "w": 332,
+          "h": 120
+        },
+        "sha256": "401ecd2b32013a6c2c682163e8675f7884def098d93e76650e50124868e48103",
+        "bytes": 16706
+      }
+    },
+    {
+      "id": "axe-06",
+      "sourceSha256": "9a084ba4645ea871aaf3a9ea36f4e3f80e21d6e4b2c9a4716f821c386fdb0f76",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "sourceBounds": {
+        "x": 23,
+        "y": 146,
+        "w": 1744,
+        "h": 647,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 267,
+        "y": 349
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 116.35321100917432,
+          "y": 125.36353211009174
+        },
+        "bounds": {
+          "x": 45,
+          "y": 66,
+          "w": 510,
+          "h": 189
+        },
+        "sha256": "97b3e198a889c392474c8778927ad9850a1bcb8f921181e99f2853dd6fdeb99f",
+        "bytes": 30464
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 225.5045871559633,
+          "y": 248.05504587155963
+        },
+        "bounds": {
+          "x": 80,
+          "y": 127,
+          "w": 1040,
+          "h": 386
+        },
+        "sha256": "ad719f3513f24c06d0fb7dabaa5a1cdb390ec1100c49f9994c7f7967e2ba9dfa",
+        "bytes": 120418
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 72.44954128440367,
+          "y": 73.64449541284404
+        },
+        "bounds": {
+          "x": 26,
+          "y": 35,
+          "w": 332,
+          "h": 123
+        },
+        "sha256": "9dde1ee7c1aa5feaa6668b730a4a105d28a310e0ee029536498526532bc18bbc",
+        "bytes": 16984
+      }
+    },
+    {
+      "id": "axe-07",
+      "sourceSha256": "689861895100782b186d593adac5da2a141fdd678a2924ee187721e2f58651cf",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1793,
+        "height": 877
+      },
+      "sourceBounds": {
+        "x": 23,
+        "y": 122,
+        "w": 1758,
+        "h": 646,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 269,
+        "y": 334
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 116.36518771331058,
+          "y": 128.50170648464163
+        },
+        "bounds": {
+          "x": 45,
+          "y": 67,
+          "w": 510,
+          "h": 187
+        },
+        "sha256": "4e64682c0d61e5743af0f3b48f5e511721ac3795bcd41b4d09c38aac6ffb9d00",
+        "bytes": 31342
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 225.52901023890783,
+          "y": 254.41524459613197
+        },
+        "bounds": {
+          "x": 80,
+          "y": 129,
+          "w": 1040,
+          "h": 382
+        },
+        "sha256": "2ea67df35ab3b870163e455afa86e38cefb5fa0d239262160bfa5d526891904b",
+        "bytes": 123346
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 72.45733788395904,
+          "y": 75.03640500568828
+        },
+        "bounds": {
+          "x": 26,
+          "y": 35,
+          "w": 332,
+          "h": 122
+        },
+        "sha256": "462eea23ee2d9ca6bcfd5f846a693a86436d89f698bf6b99d56de23940b1c420",
+        "bytes": 16844
+      }
+    },
+    {
+      "id": "axe-08",
+      "sourceSha256": "eb3e20896ca24d0862f7ab83ed7ee59fd651c4450ad2154a8a9f7272f58726d3",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1798,
+        "height": 875
+      },
+      "sourceBounds": {
+        "x": 24,
+        "y": 60,
+        "w": 1750,
+        "h": 717,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 269,
+        "y": 353
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 116.4,
+          "y": 141.38857142857142
+        },
+        "bounds": {
+          "x": 45,
+          "y": 56,
+          "w": 510,
+          "h": 209
+        },
+        "sha256": "fc5a6a3fe671f4602aa2f71a24c82501c499b8f10addcae263de0f7112a9105a",
+        "bytes": 32806
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 225.6,
+          "y": 281.12571428571425
+        },
+        "bounds": {
+          "x": 80,
+          "y": 107,
+          "w": 1040,
+          "h": 426
+        },
+        "sha256": "c7d70f28d6a7d2028b2cd0cba8c2a2473afacd421ecf3a7f2fe6a6ab1446aee1",
+        "bytes": 117018
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 72.48,
+          "y": 83.58628571428571
+        },
+        "bounds": {
+          "x": 26,
+          "y": 28,
+          "w": 332,
+          "h": 136
+        },
+        "sha256": "f07ea6ac77404a70071e3293b5200fd69c6141aabf823ef530ea0f8200ac3580",
+        "bytes": 18668
+      }
+    },
+    {
+      "id": "axe-09",
+      "sourceSha256": "2b1d0cef426232f2b24dced96115458b84495350372bab89092e8165795d44ad",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1793,
+        "height": 877
+      },
+      "sourceBounds": {
+        "x": 22,
+        "y": 96,
+        "w": 1756,
+        "h": 699,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 268,
+        "y": 384
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 116.44646924829156,
+          "y": 142.64464692482915
+        },
+        "bounds": {
+          "x": 45,
+          "y": 59,
+          "w": 510,
+          "h": 203
+        },
+        "sha256": "31db3d140d0db7371cb9b504e668bccd72cc440b93e1c4fdc7564ce572100813",
+        "bytes": 32484
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 225.69476082004556,
+          "y": 283.56947608200454
+        },
+        "bounds": {
+          "x": 80,
+          "y": 113,
+          "w": 1040,
+          "h": 414
+        },
+        "sha256": "84d2af82a79db715fa3ad858cd4d23bddc7694d465480901eb489c8e451cbee5",
+        "bytes": 122870
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 72.51025056947609,
+          "y": 84.4510250569476
+        },
+        "bounds": {
+          "x": 26,
+          "y": 30,
+          "w": 332,
+          "h": 132
+        },
+        "sha256": "cc3cbb36607f5cea681691044ace61a69e88df1203b1d15f051a9b2bb12e24f6",
+        "bytes": 17648
+      }
+    },
+    {
+      "id": "axe-10",
+      "sourceSha256": "600a7b828bec76bfbd553d054a9f79ecf432e0a59810e010aac3fbc072fffa23",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1793,
+        "height": 877
+      },
+      "sourceBounds": {
+        "x": 9,
+        "y": 34,
+        "w": 1776,
+        "h": 798,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 258,
+        "y": 328
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 116.50337837837839,
+          "y": 130.42567567567568
+        },
+        "bounds": {
+          "x": 45,
+          "y": 46,
+          "w": 510,
+          "h": 229
+        },
+        "sha256": "68e57c18097b6fb38729082637dea745de810e35fcec4ea517333a209e425e91",
+        "bytes": 37604
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 225.8108108108108,
+          "y": 259.1621621621622
+        },
+        "bounds": {
+          "x": 80,
+          "y": 87,
+          "w": 1040,
+          "h": 467
+        },
+        "sha256": "f0a435b368dab209c32ce2ec5e55bdc6615e9e94acb85c36fc419fd813d01fa6",
+        "bytes": 147712
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 72.54729729729729,
+          "y": 76.95945945945945
+        },
+        "bounds": {
+          "x": 26,
+          "y": 22,
+          "w": 332,
+          "h": 149
+        },
+        "sha256": "80b5b0bc8029c79ef6caac15fe1a8d37cd77163f125acff0b68a1265473f4bea",
+        "bytes": 20232
+      }
+    },
+    {
+      "id": "sword-01",
+      "sourceSha256": "6da9da2c0ba95caad8b87c15dba2da246aa2a8feb72495395bf80be3407edc30",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1793,
+        "height": 877
+      },
+      "sourceBounds": {
+        "x": 23,
+        "y": 295,
+        "w": 1747,
+        "h": 280,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 233,
+        "y": 431
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 106.3050944476245,
+          "y": 158.70234688036635
+        },
+        "bounds": {
+          "x": 45,
+          "y": 119,
+          "w": 510,
+          "h": 82
+        },
+        "sha256": "984953a6a6ecb23b52fa7324cd5359052831ce59cc7218f4c089a3c8690c9d67",
+        "bytes": 18180
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 205.01431024613623,
+          "y": 317.9616485403549
+        },
+        "bounds": {
+          "x": 80,
+          "y": 237,
+          "w": 1040,
+          "h": 167
+        },
+        "sha256": "7d0a1107cfcedb1b35e5eb2d3973c328848ad96f30ad1568212dce5533ebc624",
+        "bytes": 75470
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 65.90841442472811,
+          "y": 95.84544934172868
+        },
+        "bounds": {
+          "x": 26,
+          "y": 70,
+          "w": 332,
+          "h": 53
+        },
+        "sha256": "ad05c91b31b77cdda6d4deab7b1c066ed5c7cbab11684cb75ed6867ff88a2bf3",
+        "bytes": 9724
+      }
+    },
+    {
+      "id": "sword-02",
+      "sourceSha256": "ed751ab9b7ed8238a355fa71f046429dd0b730ae91f050c7be7f017cab55d7f1",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1914,
+        "height": 822
+      },
+      "sourceBounds": {
+        "x": 18,
+        "y": 295,
+        "w": 1885,
+        "h": 234,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 244,
+        "y": 403
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 106.14588859416446,
+          "y": 158.22015915119363
+        },
+        "bounds": {
+          "x": 45,
+          "y": 129,
+          "w": 510,
+          "h": 63
+        },
+        "sha256": "8e6775528d24d0def4e0ec88c57976a8d5067c64d004507a3a3f9547cb900543",
+        "bytes": 14600
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 204.68965517241378,
+          "y": 315.58620689655174
+        },
+        "bounds": {
+          "x": 80,
+          "y": 256,
+          "w": 1040,
+          "h": 129
+        },
+        "sha256": "f7c45fe54300177d637861c62795bbe541663370ed7bef3c873883902064b5f6",
+        "bytes": 50590
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 65.80477453580902,
+          "y": 95.02175066312998
+        },
+        "bounds": {
+          "x": 26,
+          "y": 76,
+          "w": 332,
+          "h": 41
+        },
+        "sha256": "97423a0a648994e9a121d57e5bcc435e91e90032b8114d959ef43257c5537740",
+        "bytes": 8206
+      }
+    },
+    {
+      "id": "sword-03",
+      "sourceSha256": "55c1d664f1230daa4d283a1f6cffca74fec663c6a3ae18d99e0d37170d973d6c",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1942,
+        "height": 809
+      },
+      "sourceBounds": {
+        "x": 25,
+        "y": 227,
+        "w": 1901,
+        "h": 346,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 253,
+        "y": 389
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 106.16780641767491,
+          "y": 157.4613361388743
+        },
+        "bounds": {
+          "x": 45,
+          "y": 114,
+          "w": 510,
+          "h": 93
+        },
+        "sha256": "5162c18fe645091dece17bdf8beafb8f72cef2b7e2f0a281c89730bd45d9f26e",
+        "bytes": 23122
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 204.7343503419253,
+          "y": 314.6270384008417
+        },
+        "bounds": {
+          "x": 80,
+          "y": 226,
+          "w": 1040,
+          "h": 189
+        },
+        "sha256": "9dafc443d867690664bc30992d2e2e92402326204e38678f9e7a8f5d5e37bf6e",
+        "bytes": 81218
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 65.81904260915309,
+          "y": 94.2924776433456
+        },
+        "bounds": {
+          "x": 26,
+          "y": 66,
+          "w": 332,
+          "h": 60
+        },
+        "sha256": "71b98ac238b3cdd40efe5f9a59efcf7b3c9d3ab5340e8b82d45a597dd263ee04",
+        "bytes": 13330
+      }
+    },
+    {
+      "id": "sword-04",
+      "sourceSha256": "669af47fb24b7115f31f941ccb023aed056140c7d5a4a666e7f607c91bcecb42",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1793,
+        "height": 877
+      },
+      "sourceBounds": {
+        "x": 19,
+        "y": 193,
+        "w": 1755,
+        "h": 482,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 230,
+        "y": 429
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 106.31623931623932,
+          "y": 158.5811965811966
+        },
+        "bounds": {
+          "x": 45,
+          "y": 90,
+          "w": 510,
+          "h": 140
+        },
+        "sha256": "d4630dcbfca62c01ca23ed2ed55b0a01568c7feb37a6a99e1d1ce0943548e330",
+        "bytes": 16092
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 205.037037037037,
+          "y": 316.85185185185185
+        },
+        "bounds": {
+          "x": 80,
+          "y": 177,
+          "w": 1040,
+          "h": 286
+        },
+        "sha256": "2a10b5ac9f15e38d2e74c5d9bea936a66961f27486b168d08257949a44abb7bc",
+        "bytes": 58040
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 65.91566951566952,
+          "y": 95.64501424501424
+        },
+        "bounds": {
+          "x": 26,
+          "y": 51,
+          "w": 332,
+          "h": 91
+        },
+        "sha256": "ff769933ffa043564df74730bbf43a98f33840a3a9f06ac7f711e3f2801ab049",
+        "bytes": 9604
+      }
+    },
+    {
+      "id": "sword-05",
+      "sourceSha256": "4e945ae1459eec9dd4a02191490babfd9ef9dcb94bf36236df91f219b89c4aa6",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 2079,
+        "height": 756
+      },
+      "sourceBounds": {
+        "x": 17,
+        "y": 119,
+        "w": 2031,
+        "h": 492,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 261,
+        "y": 363
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 106.27031019202363,
+          "y": 159.27031019202363
+        },
+        "bounds": {
+          "x": 45,
+          "y": 98,
+          "w": 510,
+          "h": 124
+        },
+        "sha256": "e2aa8e96f0c785c781d9e073695e04637a8b36cf22e529f9a0880d22d6c0bd0a",
+        "bytes": 21558
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 204.94337764647958,
+          "y": 318.9433776464796
+        },
+        "bounds": {
+          "x": 80,
+          "y": 194,
+          "w": 1040,
+          "h": 252
+        },
+        "sha256": "b37b7b5bada469ca729f78d0836c98fbfd6c440e2be65c5555df93a8f1bb48cd",
+        "bytes": 81106
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 65.88577055637617,
+          "y": 95.88577055637617
+        },
+        "bounds": {
+          "x": 26,
+          "y": 56,
+          "w": 332,
+          "h": 80
+        },
+        "sha256": "970bbcdf81fc6d48dc470a1d24c47b1550c29d46b521422b6037d7c148af2c5c",
+        "bytes": 11766
+      }
+    },
+    {
+      "id": "sword-06",
+      "sourceSha256": "a9faaf9fce84c24e3d8ab3c3333e4405b9f721eac9631d55764e8f20e27b95ef",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1793,
+        "height": 877
+      },
+      "sourceBounds": {
+        "x": 10,
+        "y": 210,
+        "w": 1772,
+        "h": 454,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 223,
+        "y": 439
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 106.30361173814899,
+          "y": 160.90857787810384
+        },
+        "bounds": {
+          "x": 45,
+          "y": 95,
+          "w": 510,
+          "h": 131
+        },
+        "sha256": "f03c3bd69cc274bca3f527493564d5ddacffa037e2609be3e77b3ccb480fecdb",
+        "bytes": 18454
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 205.0112866817156,
+          "y": 321.4018058690745
+        },
+        "bounds": {
+          "x": 80,
+          "y": 187,
+          "w": 1040,
+          "h": 266
+        },
+        "sha256": "89e80981c1b6efa5ca9d823490a2fd3190ac6da3b2b7cd2d932e35169b80a793",
+        "bytes": 69912
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 65.90744920993228,
+          "y": 96.90519187358916
+        },
+        "bounds": {
+          "x": 26,
+          "y": 54,
+          "w": 332,
+          "h": 85
+        },
+        "sha256": "9647ec86cd37ef156a3d74b18f1cefa7e35f499cca69db7793203b6bac7d5de3",
+        "bytes": 10474
+      }
+    },
+    {
+      "id": "sword-07",
+      "sourceSha256": "8c84e0b5fb8f01040112033406d7599bf681ad258d2f1ea13254345ede2f3495",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1793,
+        "height": 877
+      },
+      "sourceBounds": {
+        "x": 33,
+        "y": 272,
+        "w": 1728,
+        "h": 331,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 240,
+        "y": 430
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 106.09375,
+          "y": 157.63194444444446
+        },
+        "bounds": {
+          "x": 45,
+          "y": 111,
+          "w": 510,
+          "h": 98
+        },
+        "sha256": "1b9ad9e017ed838a5bca16f4710596dcee2576d63b9ed48e4b71113bf47f1672",
+        "bytes": 15000
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 204.58333333333331,
+          "y": 316.0925925925926
+        },
+        "bounds": {
+          "x": 80,
+          "y": 221,
+          "w": 1040,
+          "h": 199
+        },
+        "sha256": "ca5c76a41c0f8fba0ac999cd418ef5cb19222c292f3eb69a26f865f1a47acedb",
+        "bytes": 54644
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 65.77083333333333,
+          "y": 94.35648148148148
+        },
+        "bounds": {
+          "x": 26,
+          "y": 64,
+          "w": 332,
+          "h": 64
+        },
+        "sha256": "323826f0d7143ad1616615bb0c10aec5b3ffe111ac8a1d4b3f7fa281b2ad5218",
+        "bytes": 8346
+      }
+    },
+    {
+      "id": "sword-08",
+      "sourceSha256": "36f054d89abdd12be3fc5d883e9bfc63e353e5b5d1d9a16693e44ba4919c26c6",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1942,
+        "height": 809
+      },
+      "sourceBounds": {
+        "x": 38,
+        "y": 166,
+        "w": 1874,
+        "h": 433,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 263,
+        "y": 380
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 106.23265741728922,
+          "y": 159.23906083244395
+        },
+        "bounds": {
+          "x": 45,
+          "y": 101,
+          "w": 510,
+          "h": 118
+        },
+        "sha256": "bf167f73b0030577d40a8763f9fa264f537f57873b9f9b253ec284097d3a1911",
+        "bytes": 20372
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 204.8665955176094,
+          "y": 318.76200640341517
+        },
+        "bounds": {
+          "x": 80,
+          "y": 200,
+          "w": 1040,
+          "h": 240
+        },
+        "sha256": "5ac9fab8012e4f904b69dcee52f6561ef8a9ab838f772bc189f8ad461591ea0a",
+        "bytes": 70178
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 65.86125933831377,
+          "y": 95.91248665955176
+        },
+        "bounds": {
+          "x": 26,
+          "y": 58,
+          "w": 332,
+          "h": 77
+        },
+        "sha256": "f1cd067e7e4b08fafd60dbfe25f2e6a5aa59308421aee77dc27d16f897dfa635",
+        "bytes": 11994
+      }
+    },
+    {
+      "id": "sword-09",
+      "sourceSha256": "204733183ee1da413ab217cbfe43b74f064a2a1b36708bb11648bea3c9ae45ab",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1920,
+        "height": 819
+      },
+      "sourceBounds": {
+        "x": 12,
+        "y": 166,
+        "w": 1895,
+        "h": 492,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 239,
+        "y": 412
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 106.09234828496042,
+          "y": 160.20580474934036
+        },
+        "bounds": {
+          "x": 45,
+          "y": 94,
+          "w": 510,
+          "h": 132
+        },
+        "sha256": "ac59f03a47e4725795d690f0c074a7518c2ecb38e70f703eea081d6f1d2948dc",
+        "bytes": 17568
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 204.58047493403694,
+          "y": 320.00791556728234
+        },
+        "bounds": {
+          "x": 80,
+          "y": 185,
+          "w": 1040,
+          "h": 270
+        },
+        "sha256": "08888ecd1e9fb875efcfe5871192ac42a5a307209ba6fe5a049fcbb061bb847d",
+        "bytes": 60992
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 65.76992084432717,
+          "y": 96.09868073878629
+        },
+        "bounds": {
+          "x": 26,
+          "y": 53,
+          "w": 332,
+          "h": 86
+        },
+        "sha256": "3b353266275ad992e2eea0c174e97efe2901d70e95708a6198b2282c2b7e9a22",
+        "bytes": 10112
+      }
+    },
+    {
+      "id": "sword-10",
+      "sourceSha256": "ba4f51b214489e9f7a4a90557a625c1c96c819f1d1fb956e24786618f6770b54",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 2022,
+        "height": 778
+      },
+      "sourceBounds": {
+        "x": 16,
+        "y": 112,
+        "w": 1989,
+        "h": 557,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 255,
+        "y": 386
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 106.28205128205127,
+          "y": 159.25641025641025
+        },
+        "bounds": {
+          "x": 45,
+          "y": 89,
+          "w": 510,
+          "h": 143
+        },
+        "sha256": "9090ca1f16b30b4e60354aa68bdf833b601c3874880bb133e942b48179f28747",
+        "bytes": 19824
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 204.96732026143792,
+          "y": 318.26797385620915
+        },
+        "bounds": {
+          "x": 80,
+          "y": 175,
+          "w": 1040,
+          "h": 291
+        },
+        "sha256": "fcefb0a59a5018b6a5d44d2aaaa733babec1c00996f87e4b9e05c2c819bdb47a",
+        "bytes": 70910
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 65.89341377576672,
+          "y": 95.73554550025138
+        },
+        "bounds": {
+          "x": 26,
+          "y": 50,
+          "w": 332,
+          "h": 93
+        },
+        "sha256": "aa85158d6aba984e7d7940bc4393efc17ecae0f042a86d847fd80db1a056f93c",
+        "bytes": 11466
+      }
+    },
+    {
+      "id": "tonfa-01",
+      "sourceSha256": "b6e439555a341d51b9aa3a3fe6be6a4443b06ccedcb457939f4dc1f23c8fc1a5",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1793,
+        "height": 877
+      },
+      "sourceBounds": {
+        "x": 39,
+        "y": 83,
+        "w": 1716,
+        "h": 674,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 519,
+        "y": 231
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 187.65734265734264,
+          "y": 103.98601398601399
+        },
+        "bounds": {
+          "x": 45,
+          "y": 60,
+          "w": 510,
+          "h": 200
+        },
+        "sha256": "43d3bc9682ec373185c9a25290add4536f9063de7c3a743d617306938c7c2687",
+        "bytes": 19472
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 370.90909090909093,
+          "y": 205.6969696969697
+        },
+        "bounds": {
+          "x": 80,
+          "y": 116,
+          "w": 1040,
+          "h": 408
+        },
+        "sha256": "935d58da27c39682908c6fbe772ae1397f4358d8b7c8b514794e43f43fafc03a",
+        "bytes": 82162
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 118.86713286713287,
+          "y": 59.634032634032636
+        },
+        "bounds": {
+          "x": 26,
+          "y": 31,
+          "w": 332,
+          "h": 130
+        },
+        "sha256": "e9658aaa5341ecf8034596e9f7080a327eeab2bd506ee36f21334ba8b17a1528",
+        "bytes": 10368
+      }
+    },
+    {
+      "id": "tonfa-02",
+      "sourceSha256": "519dfb6fe0cd2cb39e3421c1690c3eaaec5249233da10ecfadfd491b239f18e0",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1793,
+        "height": 877
+      },
+      "sourceBounds": {
+        "x": 32,
+        "y": 88,
+        "w": 1730,
+        "h": 590,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 516,
+        "y": 218
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 187.6820809248555,
+          "y": 111.32369942196533
+        },
+        "bounds": {
+          "x": 45,
+          "y": 73,
+          "w": 510,
+          "h": 174
+        },
+        "sha256": "cfcd317a4440861a93ac131745ee53316f2ced86f6a9472cb591a807b8ad4c7e",
+        "bytes": 23250
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 370.95953757225436,
+          "y": 221.15028901734104
+        },
+        "bounds": {
+          "x": 80,
+          "y": 143,
+          "w": 1040,
+          "h": 355
+        },
+        "sha256": "eb7319d33a9cb8b752a1a80f1ea756affc1bddc1a57f51eb1014df700678a756",
+        "bytes": 96254
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 118.88323699421964,
+          "y": 64.9479768786127
+        },
+        "bounds": {
+          "x": 26,
+          "y": 40,
+          "w": 332,
+          "h": 113
+        },
+        "sha256": "06a1d6bc6b43a61380342e4e3d6e366ad249658160f6f915c04ea34758e96f70",
+        "bytes": 12204
+      }
+    },
+    {
+      "id": "tonfa-03",
+      "sourceSha256": "dfc1070fa0dcbc72ff61ad8e0f305247108b61bfc6885f9fcdfcfccfdbec2555",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1793,
+        "height": 877
+      },
+      "sourceBounds": {
+        "x": 36,
+        "y": 77,
+        "w": 1728,
+        "h": 630,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 520,
+        "y": 216
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 187.84722222222223,
+          "y": 108.02430555555556
+        },
+        "bounds": {
+          "x": 45,
+          "y": 67,
+          "w": 510,
+          "h": 186
+        },
+        "sha256": "82c93a02e863a5641ea2f6d5c2aae5599a69f6d213241277785aae9d86b4d7f8",
+        "bytes": 22202
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 371.2962962962963,
+          "y": 214.6574074074074
+        },
+        "bounds": {
+          "x": 80,
+          "y": 131,
+          "w": 1040,
+          "h": 379
+        },
+        "sha256": "85bb898aab8fbe43d5c0b7433a222b229fda9e3f5dbd3cd1e9bde5a5e93af234",
+        "bytes": 93544
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 118.99074074074073,
+          "y": 62.70601851851852
+        },
+        "bounds": {
+          "x": 26,
+          "y": 36,
+          "w": 332,
+          "h": 121
+        },
+        "sha256": "bd2d07c5be6529ea870799c29970f684f93e76d283a4aacdeb73f616d93376cd",
+        "bytes": 12126
+      }
+    },
+    {
+      "id": "tonfa-04",
+      "sourceSha256": "7419ac79a497835781e2f8c7777bf36e227e3492492d4346f63ca6642cfcefa1",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1793,
+        "height": 877
+      },
+      "sourceBounds": {
+        "x": 20,
+        "y": 87,
+        "w": 1755,
+        "h": 600,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 511,
+        "y": 219
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 187.68376068376068,
+          "y": 111.35897435897436
+        },
+        "bounds": {
+          "x": 45,
+          "y": 73,
+          "w": 510,
+          "h": 174
+        },
+        "sha256": "ef5850ef86f45f00e5a9949213477ae448121fd01a396490a6f1cd3e1d1d6cd8",
+        "bytes": 18436
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 370.96296296296293,
+          "y": 220.22222222222223
+        },
+        "bounds": {
+          "x": 80,
+          "y": 142,
+          "w": 1040,
+          "h": 356
+        },
+        "sha256": "805fb8c7d94d7bdd7102a57d7a286894767d1f4474411e2d92560e6253cb89eb",
+        "bytes": 74450
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 118.88433048433049,
+          "y": 63.97094017094017
+        },
+        "bounds": {
+          "x": 26,
+          "y": 39,
+          "w": 332,
+          "h": 114
+        },
+        "sha256": "106adf937911969e0ea6ff850ece92a97d243ff8d8fd8eef14b737d43bf98edc",
+        "bytes": 9928
+      }
+    },
+    {
+      "id": "tonfa-05",
+      "sourceSha256": "50fdd698c944af2809721c4603c4806cde2aecf8fb681c6dd890d0ad2164e29a",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1793,
+        "height": 877
+      },
+      "sourceBounds": {
+        "x": 38,
+        "y": 78,
+        "w": 1724,
+        "h": 651,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 521,
+        "y": 221
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 187.88283062645013,
+          "y": 106.30278422273781
+        },
+        "bounds": {
+          "x": 45,
+          "y": 64,
+          "w": 510,
+          "h": 193
+        },
+        "sha256": "2f774ed7e3a2dee9ae33ced9b9d46c198684adc17edb95978c4d1cad88b1fa1f",
+        "bytes": 21922
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 371.36890951276104,
+          "y": 210.2645011600928
+        },
+        "bounds": {
+          "x": 80,
+          "y": 124,
+          "w": 1040,
+          "h": 393
+        },
+        "sha256": "6c61f0f5392cdec49a1be5a41ea90e2d1bf79b746f269883fffe4680a6f0f404",
+        "bytes": 87120
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 119.0139211136891,
+          "y": 61.53828306264501
+        },
+        "bounds": {
+          "x": 26,
+          "y": 34,
+          "w": 332,
+          "h": 125
+        },
+        "sha256": "89771c8d5b861a77333df09f0caf49358e982e4680b78533a95e29452026b5bc",
+        "bytes": 11906
+      }
+    },
+    {
+      "id": "tonfa-06",
+      "sourceSha256": "5e130dae782b6a2cabffc2a31564e0e9fb8b8534fec91ff8e3d5569761c79cd4",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "sourceBounds": {
+        "x": 40,
+        "y": 73,
+        "w": 1696,
+        "h": 697,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 515,
+        "y": 226
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 187.83608490566036,
+          "y": 101.00825471698113
+        },
+        "bounds": {
+          "x": 45,
+          "y": 55,
+          "w": 510,
+          "h": 210
+        },
+        "sha256": "e64afdbdffa397435b0ac27a299ce24202b92757077a5fb5a65b89333aabcc94",
+        "bytes": 23994
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 371.27358490566036,
+          "y": 200.82075471698113
+        },
+        "bounds": {
+          "x": 80,
+          "y": 107,
+          "w": 1040,
+          "h": 427
+        },
+        "sha256": "69ced83d49ba13fccaa358be62e880c33e1a0dfa9605dd0ef828f9488bf5ef44",
+        "bytes": 101756
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 118.98349056603774,
+          "y": 57.950471698113205
+        },
+        "bounds": {
+          "x": 26,
+          "y": 28,
+          "w": 332,
+          "h": 136
+        },
+        "sha256": "bc5044c154936cd3e29ff03a7757dbc974a5331d8a91ccf584540f9e688379fd",
+        "bytes": 12846
+      }
+    },
+    {
+      "id": "tonfa-07",
+      "sourceSha256": "ef4e6179a66c3172e2bdd637818862df2033a94aa94e1826023c6f63b123f326",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "sourceBounds": {
+        "x": 21,
+        "y": 115,
+        "w": 1730,
+        "h": 593,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 505,
+        "y": 245
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 187.6820809248555,
+          "y": 111.32369942196533
+        },
+        "bounds": {
+          "x": 45,
+          "y": 73,
+          "w": 510,
+          "h": 175
+        },
+        "sha256": "71a07f6f42c8d9ac70c03e7a459684d7af46cd541a30b486605944de88ea60a9",
+        "bytes": 20408
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 370.95953757225436,
+          "y": 220.15028901734104
+        },
+        "bounds": {
+          "x": 80,
+          "y": 142,
+          "w": 1040,
+          "h": 356
+        },
+        "sha256": "6cfcc81e0a74f80bfc670e31ef606a9e6efaef0e5d5584e02add7fdc27349fc9",
+        "bytes": 77034
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 118.88323699421964,
+          "y": 63.947976878612714
+        },
+        "bounds": {
+          "x": 26,
+          "y": 39,
+          "w": 332,
+          "h": 114
+        },
+        "sha256": "5a7bbdc73e8f377c0f78a3c96fea11495411a64b38ac1b035ad7d89b99ce621a",
+        "bytes": 10948
+      }
+    },
+    {
+      "id": "tonfa-08",
+      "sourceSha256": "a0409bba4030b23fd42228563b470a1a3ab343fd92b4b351608dd067f278d36f",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "sourceBounds": {
+        "x": 27,
+        "y": 86,
+        "w": 1716,
+        "h": 607,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 507,
+        "y": 220
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 187.65734265734264,
+          "y": 109.82517482517483
+        },
+        "bounds": {
+          "x": 45,
+          "y": 70,
+          "w": 510,
+          "h": 180
+        },
+        "sha256": "1e283c2e3125274068ce3e38a82ce03b94ab9465d8bbf877e6ea2b0e82855bcc",
+        "bytes": 25718
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 370.90909090909093,
+          "y": 217.21212121212122
+        },
+        "bounds": {
+          "x": 80,
+          "y": 136,
+          "w": 1040,
+          "h": 368
+        },
+        "sha256": "f713ed486aeccb2e99d51b4022eb40d1bd09a7610fd6880e9db8fa58a3c73237",
+        "bytes": 98324
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 118.86713286713287,
+          "y": 63.925407925407924
+        },
+        "bounds": {
+          "x": 26,
+          "y": 38,
+          "w": 332,
+          "h": 117
+        },
+        "sha256": "6de1f6a167081c03796f26e0d620ce8412792015db00f81afe9d9681c71068ab",
+        "bytes": 14256
+      }
+    },
+    {
+      "id": "tonfa-09",
+      "sourceSha256": "7dfc87301aa1f68e91ddebfc06b383f34d5e156f3d87a45cc8fb8268c26681a2",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1793,
+        "height": 877
+      },
+      "sourceBounds": {
+        "x": 22,
+        "y": 61,
+        "w": 1749,
+        "h": 618,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 512,
+        "y": 197
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 187.88164665523155,
+          "y": 109.65694682675814
+        },
+        "bounds": {
+          "x": 45,
+          "y": 70,
+          "w": 510,
+          "h": 180
+        },
+        "sha256": "c178ad710a61f21bdbb6734984dfee6aa1d5f6670ba494933ab1b0b695d6db26",
+        "bytes": 26460
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 371.3664951400801,
+          "y": 217.86906803887936
+        },
+        "bounds": {
+          "x": 80,
+          "y": 137,
+          "w": 1040,
+          "h": 367
+        },
+        "sha256": "488ade78e659c6a7336158f289540b4d733d0ef6d92488cd8d5c9da57c991044",
+        "bytes": 101674
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 119.01315037164095,
+          "y": 63.81589479702687
+        },
+        "bounds": {
+          "x": 26,
+          "y": 38,
+          "w": 332,
+          "h": 117
+        },
+        "sha256": "caa66ac31c53cd79ed4710f15dfee479bae65feacf6d21e33dd747e4b0f8495f",
+        "bytes": 14454
+      }
+    },
+    {
+      "id": "tonfa-10",
+      "sourceSha256": "8f8318f2cbbf5edfca9a92c298af76a54b1e1ef8ba768ddbed5fdd0cd2b500d1",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1793,
+        "height": 877
+      },
+      "sourceBounds": {
+        "x": 38,
+        "y": 59,
+        "w": 1718,
+        "h": 634,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 519,
+        "y": 198
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 187.78812572759023,
+          "y": 107.26309662398137
+        },
+        "bounds": {
+          "x": 45,
+          "y": 66,
+          "w": 510,
+          "h": 188
+        },
+        "sha256": "347e5f8cc067ad71c554b59171f2592f8ffb1ee7451460c4fd8a152fe1a07c31",
+        "bytes": 22650
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 371.1757857974389,
+          "y": 212.14435389988358
+        },
+        "bounds": {
+          "x": 80,
+          "y": 128,
+          "w": 1040,
+          "h": 384
+        },
+        "sha256": "33505821d77d3d75c0e2e412b0de49693f2b82780230d4e7be1a82d2bb868050",
+        "bytes": 92992
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 118.95227008149011,
+          "y": 61.86146682188591
+        },
+        "bounds": {
+          "x": 26,
+          "y": 35,
+          "w": 332,
+          "h": 123
+        },
+        "sha256": "23e4348b19baf1e9e26a7312872bef45c49ad9548022fa502f2226b975e9ff4b",
+        "bytes": 11894
+      }
+    },
+    {
+      "id": "chain-01",
+      "sourceSha256": "359c4d1aac0f0133d2e07302bc782bb9b4ef7d9c63d043e1608412172cf0ec48",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1793,
+        "height": 877
+      },
+      "sourceBounds": {
+        "x": 28,
+        "y": 243,
+        "w": 1742,
+        "h": 377,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 167,
+        "y": 342
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 85.69460390355913,
+          "y": 133.98392652123994
+        },
+        "bounds": {
+          "x": 45,
+          "y": 105,
+          "w": 510,
+          "h": 110
+        },
+        "sha256": "596439f828061e065011dc54edcffe1e8122d434b51c88dc4c840bb4db746830",
+        "bytes": 24076
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 162.98507462686567,
+          "y": 267.1044776119403
+        },
+        "bounds": {
+          "x": 80,
+          "y": 208,
+          "w": 1040,
+          "h": 225
+        },
+        "sha256": "30560ff33b06482a63690acb312b8b513fe4c8f42ce9aa944ec69c800dbb587d",
+        "bytes": 84612
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 52.49138920780712,
+          "y": 78.86796785304247
+        },
+        "bounds": {
+          "x": 26,
+          "y": 60,
+          "w": 332,
+          "h": 72
+        },
+        "sha256": "ec132fe1202db8cc7b4346df0c1926291f490a08e892e3d8ac1f17336e4e554a",
+        "bytes": 13346
+      }
+    },
+    {
+      "id": "chain-02",
+      "sourceSha256": "7dbe3e7cd3ccbd284f4feb8584625aaedc442f5be6f564bf24e9aa9d4270f382",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1851,
+        "height": 850
+      },
+      "sourceBounds": {
+        "x": 30,
+        "y": 297,
+        "w": 1792,
+        "h": 269,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 173,
+        "y": 430
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 85.69754464285714,
+          "y": 159.8515625
+        },
+        "bounds": {
+          "x": 45,
+          "y": 122,
+          "w": 510,
+          "h": 77
+        },
+        "sha256": "99799cb63d77284cd686aefe9865a154d41364220b69ecb77233e936d48cb9d5",
+        "bytes": 20274
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 162.99107142857144,
+          "y": 319.1875
+        },
+        "bounds": {
+          "x": 80,
+          "y": 242,
+          "w": 1040,
+          "h": 156
+        },
+        "sha256": "1391fa82705e68428d05d24b0765e8be2e5cde6601542b32c1c819913f4aa802",
+        "bytes": 73700
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 52.49330357142857,
+          "y": 95.640625
+        },
+        "bounds": {
+          "x": 26,
+          "y": 71,
+          "w": 332,
+          "h": 50
+        },
+        "sha256": "b4b9268fa42ca909377169f50b71f7673406d5c06d3c3a0ecf1b77bc5e2aa0c6",
+        "bytes": 11446
+      }
+    },
+    {
+      "id": "chain-03",
+      "sourceSha256": "a7af9e63e3fa06af1e66a90d1d9bc81f3e25510efe6bf38aa20b7baaef4fc2f0",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1850,
+        "height": 850
+      },
+      "sourceBounds": {
+        "x": 20,
+        "y": 215,
+        "w": 1818,
+        "h": 476,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 165,
+        "y": 432
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 85.67656765676568,
+          "y": 153.87458745874588
+        },
+        "bounds": {
+          "x": 45,
+          "y": 93,
+          "w": 510,
+          "h": 134
+        },
+        "sha256": "f67194f6d2178ce301f9fb63432fbb72a75ae823699d7d7dc602ee7c40fa7504",
+        "bytes": 27240
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 162.94829482948296,
+          "y": 308.13641364136413
+        },
+        "bounds": {
+          "x": 80,
+          "y": 184,
+          "w": 1040,
+          "h": 272
+        },
+        "sha256": "3d0859e4e7ee7e9bcac5882c8f0f76155a197e92e39f938e7265ca42d0831f65",
+        "bytes": 95590
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 52.479647964796484,
+          "y": 92.62816281628163
+        },
+        "bounds": {
+          "x": 26,
+          "y": 53,
+          "w": 332,
+          "h": 87
+        },
+        "sha256": "16476104a9bac7b61615a5b7545acd38cf2389b19827f8e861bdf13442ad9448",
+        "bytes": 15606
+      }
+    },
+    {
+      "id": "chain-04",
+      "sourceSha256": "0e01413c55ed2c5688339a557fb9bfbc2fa64da76cf97466a134b4622333336d",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1881,
+        "height": 836
+      },
+      "sourceBounds": {
+        "x": 38,
+        "y": 296,
+        "w": 1808,
+        "h": 251,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 183,
+        "y": 412
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 85.90154867256638,
+          "y": 157.7212389380531
+        },
+        "bounds": {
+          "x": 45,
+          "y": 125,
+          "w": 510,
+          "h": 71
+        },
+        "sha256": "338e0c2b09440e30a60673300a3d76c6d8c2d921cf88fc37f1d0f13cedbf4052",
+        "bytes": 19966
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 163.4070796460177,
+          "y": 314.72566371681415
+        },
+        "bounds": {
+          "x": 80,
+          "y": 248,
+          "w": 1040,
+          "h": 144
+        },
+        "sha256": "d6a19cc20bc4cd714a5c111b73f4c56338419a012bc95f40574892777b0dc20c",
+        "bytes": 67434
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 52.626106194690266,
+          "y": 94.30088495575221
+        },
+        "bounds": {
+          "x": 26,
+          "y": 73,
+          "w": 332,
+          "h": 46
+        },
+        "sha256": "d7eb37962f0cb25c246be233af19409c2a3652c904887c3b3cc5143e6d7e2dab",
+        "bytes": 11518
+      }
+    },
+    {
+      "id": "chain-05",
+      "sourceSha256": "672eb0d6c1c78070839b9d20815097af3ee41521e2009d209c2bfbc5bca3c813",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "sourceBounds": {
+        "x": 20,
+        "y": 339,
+        "w": 1735,
+        "h": 193,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 159,
+        "y": 427
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 85.85878962536023,
+          "y": 157.86743515850145
+        },
+        "bounds": {
+          "x": 45,
+          "y": 132,
+          "w": 510,
+          "h": 57
+        },
+        "sha256": "a15cb018ca87c4bf42c0e483755b3d7f34dc86115ea83ac8735b952bd0af0978",
+        "bytes": 20326
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 163.31988472622479,
+          "y": 314.7492795389049
+        },
+        "bounds": {
+          "x": 80,
+          "y": 262,
+          "w": 1040,
+          "h": 116
+        },
+        "sha256": "633a526f034beb6d8ccd06e2fb4fadfc31348463eda8bf03977c940b56a3fd45",
+        "bytes": 73136
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 52.59827089337176,
+          "y": 94.83919308357349
+        },
+        "bounds": {
+          "x": 26,
+          "y": 78,
+          "w": 332,
+          "h": 37
+        },
+        "sha256": "fca03ddafb9f07587c4a8e006c78e3b2e7a3271a8318f6db1d9a3e72ac00bebf",
+        "bytes": 11548
+      }
+    },
+    {
+      "id": "chain-06",
+      "sourceSha256": "d74a38d7341f139e304379d2de9ad0cb193b864cd4d82eb125d6207c135f9525",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "sourceBounds": {
+        "x": 18,
+        "y": 321,
+        "w": 1742,
+        "h": 296,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 157,
+        "y": 442
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 85.69460390355913,
+          "y": 152.4247990815155
+        },
+        "bounds": {
+          "x": 45,
+          "y": 117,
+          "w": 510,
+          "h": 87
+        },
+        "sha256": "756b27e325c7b617d9c1b1f61b5e2433a69debfa920ce5ac2d0d731c36cdb795",
+        "bytes": 22722
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 162.98507462686567,
+          "y": 304.23880597014926
+        },
+        "bounds": {
+          "x": 80,
+          "y": 232,
+          "w": 1040,
+          "h": 177
+        },
+        "sha256": "a184e9fa96415dab468b2c2ada982f63ddec0869600b4f39a28b8b25f8e25b85",
+        "bytes": 80468
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 52.49138920780712,
+          "y": 91.06084959816303
+        },
+        "bounds": {
+          "x": 26,
+          "y": 68,
+          "w": 332,
+          "h": 56
+        },
+        "sha256": "6b2102fcc7cf16ad54206e983585a62d75401e01bbf0631412025f939ac38946",
+        "bytes": 13016
+      }
+    },
+    {
+      "id": "chain-07",
+      "sourceSha256": "c9ce49776cb66893f7bf17b75ea4429c56cb8608f05d381688af99e986e9e88d",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1942,
+        "height": 809
+      },
+      "sourceBounds": {
+        "x": 12,
+        "y": 221,
+        "w": 1919,
+        "h": 386,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 166,
+        "y": 381
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 85.9275664408546,
+          "y": 151.52214695153725
+        },
+        "bounds": {
+          "x": 45,
+          "y": 109,
+          "w": 510,
+          "h": 103
+        },
+        "sha256": "1ddfaf72752ee8438b8729d46d4820e1913b20f43702963e832ff2c36fbd8306",
+        "bytes": 23922
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 163.46013548723295,
+          "y": 302.7118290776446
+        },
+        "bounds": {
+          "x": 80,
+          "y": 216,
+          "w": 1040,
+          "h": 209
+        },
+        "sha256": "3b785d77f2f5c752c048788d2f3e10d918ddd138ac09f02a546b3127558466d3",
+        "bytes": 84428
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 52.64304325169359,
+          "y": 90.68108389786347
+        },
+        "bounds": {
+          "x": 26,
+          "y": 63,
+          "w": 332,
+          "h": 67
+        },
+        "sha256": "db656eabe9c92a20da36c79af158e1c7b21aef2797ff41c997c4d2c4800ccee5",
+        "bytes": 13442
+      }
+    },
+    {
+      "id": "chain-08",
+      "sourceSha256": "75e39911c2907d117a64d3e56e9651d4ffff64083f2c6ec0ee02b62c5710c870",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1793,
+        "height": 877
+      },
+      "sourceBounds": {
+        "x": 12,
+        "y": 285,
+        "w": 1769,
+        "h": 291,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 154,
+        "y": 413
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 85.9383832673827,
+          "y": 154.90220463538722
+        },
+        "bounds": {
+          "x": 45,
+          "y": 118,
+          "w": 510,
+          "h": 84
+        },
+        "sha256": "0e37cc62207713c24d44ea68203a46f2cb7578f03ddc8b3b2bf11598f7abe8fe",
+        "bytes": 24282
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 163.48219332956472,
+          "y": 310.25155455059354
+        },
+        "bounds": {
+          "x": 80,
+          "y": 235,
+          "w": 1040,
+          "h": 171
+        },
+        "sha256": "4d551560275499bb258f3aa0aa5159a85713b3e0b5b197b079ae598712a9acf2",
+        "bytes": 81454
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 52.65008479366874,
+          "y": 93.02261164499717
+        },
+        "bounds": {
+          "x": 26,
+          "y": 69,
+          "w": 332,
+          "h": 55
+        },
+        "sha256": "ac6ad7ec171846aa3eb968ab2a8fb41a9d765ad538bf5feb51e6d200a5d9751b",
+        "bytes": 13794
+      }
+    },
+    {
+      "id": "chain-09",
+      "sourceSha256": "00a337c5223f03377eefaea04d8f3a92420d0ff00b690db8c6340e717efd16c3",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1933,
+        "height": 814
+      },
+      "sourceBounds": {
+        "x": 19,
+        "y": 235,
+        "w": 1895,
+        "h": 299,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 171,
+        "y": 379
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 85.90765171503958,
+          "y": 158.75461741424803
+        },
+        "bounds": {
+          "x": 45,
+          "y": 120,
+          "w": 510,
+          "h": 80
+        },
+        "sha256": "8dcb18ac61d8dbcfa95ed0ab0b8ae2cfe057fe2f34b9f923ac72b71f65a75ea1",
+        "bytes": 20930
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 163.41952506596306,
+          "y": 317.02902374670185
+        },
+        "bounds": {
+          "x": 80,
+          "y": 238,
+          "w": 1040,
+          "h": 164
+        },
+        "sha256": "7ef5b48b2b7468e93dd2de26853a90e344ca397423332916229c6baeb722a66e",
+        "bytes": 72840
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 52.630079155672824,
+          "y": 95.22849604221636
+        },
+        "bounds": {
+          "x": 26,
+          "y": 70,
+          "w": 332,
+          "h": 52
+        },
+        "sha256": "abad71460d93cb94f72e9f30fe1b35ff1cc442752e998b1d7e6e23b17849f292",
+        "bytes": 11796
+      }
+    },
+    {
+      "id": "chain-10",
+      "sourceSha256": "2378551e0438ba04142cf7813a7507c0887e4b0e35a56c31d15d0f514725824e",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1951,
+        "height": 806
+      },
+      "sourceBounds": {
+        "x": 26,
+        "y": 285,
+        "w": 1905,
+        "h": 262,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 178,
+        "y": 392
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 85.69291338582678,
+          "y": 153.64566929133858
+        },
+        "bounds": {
+          "x": 45,
+          "y": 125,
+          "w": 510,
+          "h": 70
+        },
+        "sha256": "594ab0cfa06baf0b0f3d726b2aba7733d17362200b9dc9f7f29fe9ed20c93777",
+        "bytes": 21968
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 162.98162729658793,
+          "y": 307.4146981627297
+        },
+        "bounds": {
+          "x": 80,
+          "y": 249,
+          "w": 1040,
+          "h": 143
+        },
+        "sha256": "675c486b78be4671c6d03534c896a78d40668fb7e3a2650926c3f94834103075",
+        "bytes": 77960
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 52.49028871391076,
+          "y": 91.6477690288714
+        },
+        "bounds": {
+          "x": 26,
+          "y": 73,
+          "w": 332,
+          "h": 46
+        },
+        "sha256": "82de69228c11a61d6d9008ccf2a7c039c349910563f1a1c76e996268c05f09df",
+        "bytes": 12616
+      }
+    },
+    {
+      "id": "spear-01",
+      "sourceSha256": "cf16493488426a470897ff12a5f5a922350c1cc31396d443270eeb0a77d590a7",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 2172,
+        "height": 724
+      },
+      "sourceBounds": {
+        "x": 28,
+        "y": 293,
+        "w": 2120,
+        "h": 129,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 516,
+        "y": 357
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 162.39622641509436,
+          "y": 160.39622641509433
+        },
+        "bounds": {
+          "x": 45,
+          "y": 145,
+          "w": 510,
+          "h": 31
+        },
+        "sha256": "b39c02c16826e35e3693af016eb86f95a87cb81dceab48941b16f44ac1940e52",
+        "bytes": 10048
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 319.39622641509436,
+          "y": 320.39622641509436
+        },
+        "bounds": {
+          "x": 80,
+          "y": 289,
+          "w": 1040,
+          "h": 63
+        },
+        "sha256": "d814ce27094e5da1f3883c217528bf396f6686eb90aec922d259c918874965b6",
+        "bytes": 37506
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 102.42264150943396,
+          "y": 96.02264150943397
+        },
+        "bounds": {
+          "x": 26,
+          "y": 86,
+          "w": 332,
+          "h": 20
+        },
+        "sha256": "051a67db719e1fb7e72b644ba575317c06bb77508c44dd66d6af995239ceb530",
+        "bytes": 5816
+      }
+    },
+    {
+      "id": "spear-02",
+      "sourceSha256": "0f085b2fea027161f09e21cbcfa07c1afd775f77849ceea83e60273f48434683",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1907,
+        "height": 825
+      },
+      "sourceBounds": {
+        "x": 26,
+        "y": 333,
+        "w": 1850,
+        "h": 148,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 452,
+        "y": 405
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 162.43783783783783,
+          "y": 159.84864864864863
+        },
+        "bounds": {
+          "x": 45,
+          "y": 140,
+          "w": 510,
+          "h": 41
+        },
+        "sha256": "953a3950105735349b4eb59c6dba548576d1ca8b0b5ae925974615efe88da5d5",
+        "bytes": 13618
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 319.48108108108113,
+          "y": 319.4756756756757
+        },
+        "bounds": {
+          "x": 80,
+          "y": 279,
+          "w": 1040,
+          "h": 83
+        },
+        "sha256": "de83e3c0c3343b7a363f3cf21d10728e1851fec9d7e627c50fcee75a438a6939",
+        "bytes": 48520
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 102.44972972972973,
+          "y": 95.92108108108108
+        },
+        "bounds": {
+          "x": 26,
+          "y": 83,
+          "w": 332,
+          "h": 27
+        },
+        "sha256": "6f5692e7239142571298ee5382fa758239627daf7aa71e712688a1c49f1b0ba4",
+        "bytes": 7850
+      }
+    },
+    {
+      "id": "spear-03",
+      "sourceSha256": "15b9f6822e332ffaae956326456e2e4a55aceac8becc5f97f2599f2bf16f1ea9",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 2061,
+        "height": 763
+      },
+      "sourceBounds": {
+        "x": 14,
+        "y": 210,
+        "w": 2034,
+        "h": 327,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 482,
+        "y": 372
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 162.34513274336283,
+          "y": 159.61946902654867
+        },
+        "bounds": {
+          "x": 45,
+          "y": 119,
+          "w": 510,
+          "h": 82
+        },
+        "sha256": "dbf2fd780d7b05099233af80795ba53c66bdc015cc21b6186206d8e897d99a94",
+        "bytes": 15892
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 319.29203539823004,
+          "y": 319.8318584070796
+        },
+        "bounds": {
+          "x": 80,
+          "y": 237,
+          "w": 1040,
+          "h": 167
+        },
+        "sha256": "9eb11af1d89480017855336eff2503b549991f4289be488832ebed9f11a0a742",
+        "bytes": 54012
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 102.38938053097344,
+          "y": 96.4424778761062
+        },
+        "bounds": {
+          "x": 26,
+          "y": 70,
+          "w": 332,
+          "h": 53
+        },
+        "sha256": "c2eb0fd8dacb0b88e9b4c98170397fd7866f6c365ca618dd5a405d9166a1ef69",
+        "bytes": 8812
+      }
+    },
+    {
+      "id": "spear-04",
+      "sourceSha256": "f7029f89f908f51bd47dc8222ac87d07ccd8c72fce042a1406fae845a4873fea",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 2172,
+        "height": 724
+      },
+      "sourceBounds": {
+        "x": 20,
+        "y": 250,
+        "w": 2132,
+        "h": 211,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 510,
+        "y": 352
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 162.21388367729833,
+          "y": 159.39962476547842
+        },
+        "bounds": {
+          "x": 45,
+          "y": 135,
+          "w": 510,
+          "h": 50
+        },
+        "sha256": "9c69764d5f1f8b22cdd507982937d3fa1a591ab89358debf5b051fd5b8e8ac3f",
+        "bytes": 13358
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 319.0243902439024,
+          "y": 318.7560975609756
+        },
+        "bounds": {
+          "x": 80,
+          "y": 269,
+          "w": 1040,
+          "h": 103
+        },
+        "sha256": "4f257baa6502e0f1d78ced46e399aa2f4e2e279a6431bd8eacb0a1b6e5cf29d1",
+        "bytes": 45148
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 102.30393996247655,
+          "y": 95.88367729831144
+        },
+        "bounds": {
+          "x": 26,
+          "y": 80,
+          "w": 332,
+          "h": 33
+        },
+        "sha256": "13ed745e891a1cebdcfb806983254c74432d6658600d97513ffcb3294d93368d",
+        "bytes": 7722
+      }
+    },
+    {
+      "id": "spear-05",
+      "sourceSha256": "ea100f699fbf6a7277c47bd46b43f51a7ec09728400b0f276805d17a74456031",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 2079,
+        "height": 756
+      },
+      "sourceBounds": {
+        "x": 18,
+        "y": 250,
+        "w": 2042,
+        "h": 228,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 488,
+        "y": 362
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 162.384916748286,
+          "y": 159.97257590597454
+        },
+        "bounds": {
+          "x": 45,
+          "y": 132,
+          "w": 510,
+          "h": 57
+        },
+        "sha256": "8f20fab146f8d9ec92a43affccc7d4ee4644368143d6442bfb752ba2dc3caea0",
+        "bytes": 15376
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 319.37316356513224,
+          "y": 319.04211557296765
+        },
+        "bounds": {
+          "x": 80,
+          "y": 262,
+          "w": 1040,
+          "h": 116
+        },
+        "sha256": "f4857b1a19f213b988eaf06d8a411f094bb35888eb7ee8e20b4ac00a529545ab",
+        "bytes": 51274
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 102.4152791380999,
+          "y": 96.2095984329089
+        },
+        "bounds": {
+          "x": 26,
+          "y": 78,
+          "w": 332,
+          "h": 37
+        },
+        "sha256": "1f3eb24198fd33cccc9309eaf9b4080f99aaa8f31011a52cb95a6418ea9337df",
+        "bytes": 8470
+      }
+    },
+    {
+      "id": "spear-06",
+      "sourceSha256": "e89f882cae40feeb0579ed5fd33356067e34c5e8151fe11eb5a1d08b3f062564",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 2172,
+        "height": 724
+      },
+      "sourceBounds": {
+        "x": 8,
+        "y": 258,
+        "w": 2155,
+        "h": 197,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 504,
+        "y": 356
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 162.38283062645013,
+          "y": 160.1925754060325
+        },
+        "bounds": {
+          "x": 45,
+          "y": 137,
+          "w": 510,
+          "h": 47
+        },
+        "sha256": "7da021fc672ad3850dd9aec0d16d0cbbcc050955e090d3d3aa43f82cfc9cc159",
+        "bytes": 12610
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 319.368909512761,
+          "y": 320.2946635730858
+        },
+        "bounds": {
+          "x": 80,
+          "y": 273,
+          "w": 1040,
+          "h": 95
+        },
+        "sha256": "3fc396a96af5038f3ba9734215cbb09eb2c29fde427161be7487adf3f01d4be2",
+        "bytes": 42580
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 102.4139211136891,
+          "y": 96.09791183294664
+        },
+        "bounds": {
+          "x": 26,
+          "y": 81,
+          "w": 332,
+          "h": 30
+        },
+        "sha256": "e4ae4c92a793d4bf0816a58fd87b1528c3508bf2106584c002e4893fce33c7e7",
+        "bytes": 6596
+      }
+    },
+    {
+      "id": "spear-07",
+      "sourceSha256": "c3fee9d7515c619e5a599432d453567c2658da8f00704869c76e37e4cabdce55",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1942,
+        "height": 809
+      },
+      "sourceBounds": {
+        "x": 18,
+        "y": 321,
+        "w": 1905,
+        "h": 170,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 456,
+        "y": 408
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 162.25984251968504,
+          "y": 160.29133858267716
+        },
+        "bounds": {
+          "x": 45,
+          "y": 137,
+          "w": 510,
+          "h": 46
+        },
+        "sha256": "96b4f79457f0d6f7735a2e8e603f0f296ae465e0495bddf8c919477b2162c6bc",
+        "bytes": 13620
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 319.11811023622045,
+          "y": 321.496062992126
+        },
+        "bounds": {
+          "x": 80,
+          "y": 274,
+          "w": 1040,
+          "h": 93
+        },
+        "sha256": "d32ce9dfc24fab7d5416c3a557021157b698b90ae374e5caef5824450354148d",
+        "bytes": 45504
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 102.33385826771654,
+          "y": 96.16220472440945
+        },
+        "bounds": {
+          "x": 26,
+          "y": 81,
+          "w": 332,
+          "h": 30
+        },
+        "sha256": "98d91ee0bd927b3a195c8cbd8e78db4c0902a479ca49058703a60ab5c233784e",
+        "bytes": 7726
+      }
+    },
+    {
+      "id": "spear-08",
+      "sourceSha256": "0edb22914ab34cb2a47ba35f5f0db13493324692f1df256e26a02bce7f6dc026",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 2172,
+        "height": 724
+      },
+      "sourceBounds": {
+        "x": 24,
+        "y": 223,
+        "w": 2124,
+        "h": 278,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 513,
+        "y": 362
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 162.41525423728814,
+          "y": 160.37570621468927
+        },
+        "bounds": {
+          "x": 45,
+          "y": 127,
+          "w": 510,
+          "h": 67
+        },
+        "sha256": "5fe158f34be80dfc9b0aa7006951e78dd1947e6d3d2e885f48e68a6981c8358c",
+        "bytes": 15570
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 319.43502824858757,
+          "y": 320.06026365348396
+        },
+        "bounds": {
+          "x": 80,
+          "y": 252,
+          "w": 1040,
+          "h": 136
+        },
+        "sha256": "de747d0243da67b1071bc997c032948fdb24028bc934d4782783a49c245141f6",
+        "bytes": 54450
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 102.43502824858757,
+          "y": 96.72693032015066
+        },
+        "bounds": {
+          "x": 26,
+          "y": 75,
+          "w": 332,
+          "h": 43
+        },
+        "sha256": "d65869c1c2c61dda08d28c0d54e6dfb57cba786a6848b340e2217b91858daa65",
+        "bytes": 8832
+      }
+    },
+    {
+      "id": "spear-09",
+      "sourceSha256": "f3ad128d06ba78777bf668a6dd7716136a2cccb790fcecc63733237e83cb13e4",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 2172,
+        "height": 724
+      },
+      "sourceBounds": {
+        "x": 21,
+        "y": 247,
+        "w": 2130,
+        "h": 208,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 511,
+        "y": 349
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 162.32394366197184,
+          "y": 159.42253521126761
+        },
+        "bounds": {
+          "x": 45,
+          "y": 135,
+          "w": 510,
+          "h": 50
+        },
+        "sha256": "e2675b9ffb9ef46ecf9a150416123cf9c462a2b31564132f34481df5e0b4e7c7",
+        "bytes": 13660
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 319.2488262910798,
+          "y": 318.80281690140845
+        },
+        "bounds": {
+          "x": 80,
+          "y": 269,
+          "w": 1040,
+          "h": 102
+        },
+        "sha256": "2f50a917ef04f880a4a80c7b3ca800c51bcf96c52d343f3fafcf05cfe881f862",
+        "bytes": 46690
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 102.3755868544601,
+          "y": 95.89859154929577
+        },
+        "bounds": {
+          "x": 26,
+          "y": 80,
+          "w": 332,
+          "h": 32
+        },
+        "sha256": "cc5c7399382d2f0381749e7c3ab697b08842227008576c97db66767174eb7085",
+        "bytes": 7630
+      }
+    },
+    {
+      "id": "spear-10",
+      "sourceSha256": "face4f59b51b5f6c871181d25979ac55ccf223162c8f8c0af0c70c4de4ac2ff0",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1983,
+        "height": 793
+      },
+      "sourceBounds": {
+        "x": 14,
+        "y": 305,
+        "w": 1956,
+        "h": 199,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 464,
+        "y": 403
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 162.3312883435583,
+          "y": 159.5521472392638
+        },
+        "bounds": {
+          "x": 45,
+          "y": 134,
+          "w": 510,
+          "h": 52
+        },
+        "sha256": "5bb7a5495b51dcc04f4a02aa323111e235dc0e6143196998f186f5498ecf942c",
+        "bytes": 14458
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 319.2638036809816,
+          "y": 319.1063394683027
+        },
+        "bounds": {
+          "x": 80,
+          "y": 267,
+          "w": 1040,
+          "h": 106
+        },
+        "sha256": "1710f5f57c4e050c5804034d02256b711f4a8f3b237a95721fd935703c1c7201",
+        "bytes": 49678
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 102.38036809815951,
+          "y": 95.63394683026584
+        },
+        "bounds": {
+          "x": 26,
+          "y": 79,
+          "w": 332,
+          "h": 34
+        },
+        "sha256": "107ebd21083e510e3a4d0fa3aa10a30b1429995dbbbcf9dc34c0ab643fa2dce5",
+        "bytes": 8262
+      }
+    },
+    {
+      "id": "knuckles-01",
+      "sourceSha256": "aa2e8840c494dd9a100e9a59db8ccb517d9dc6576e5f038178b5ffee4a721af0",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1536,
+        "height": 1024
+      },
+      "sourceBounds": {
+        "x": 29,
+        "y": 176,
+        "w": 1478,
+        "h": 711,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 768,
+        "y": 773
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 300,
+          "y": 244.00135317997294
+        },
+        "bounds": {
+          "x": 45,
+          "y": 38,
+          "w": 510,
+          "h": 245
+        },
+        "sha256": "217b988253964b545756518057d230c220f6832ff949fb09bb3b14403e677fa7",
+        "bytes": 60478
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 600,
+          "y": 490.0811907983762
+        },
+        "bounds": {
+          "x": 80,
+          "y": 70,
+          "w": 1040,
+          "h": 500
+        },
+        "sha256": "31da31d27fdc6fc69e195c475647ef9e2a84afc1ab0f1a3daf6222f539c78d69",
+        "bytes": 233214
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 192.14345991561183,
+          "y": 148.9873417721519
+        },
+        "bounds": {
+          "x": 30,
+          "y": 18,
+          "w": 324,
+          "h": 156
+        },
+        "sha256": "efeb346b30f001ac59e62d1dd1aee789fa94c871c1085966ba31c7a5f0e6ba8a",
+        "bytes": 30330
+      }
+    },
+    {
+      "id": "knuckles-02",
+      "sourceSha256": "a0d779c8f5fd1bf3a42799184ee53955f550aed876523b109455ad33e6072ad0",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1536,
+        "height": 1024
+      },
+      "sourceBounds": {
+        "x": 17,
+        "y": 175,
+        "w": 1502,
+        "h": 661,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 768,
+        "y": 730
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 300,
+          "y": 236.44873501997336
+        },
+        "bounds": {
+          "x": 45,
+          "y": 48,
+          "w": 510,
+          "h": 224
+        },
+        "sha256": "84016f98701f8b25bcf6690dd5aba027417e211fb4469404097504a15a39a8e4",
+        "bytes": 44040
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 600,
+          "y": 475.2876165113182
+        },
+        "bounds": {
+          "x": 80,
+          "y": 91,
+          "w": 1040,
+          "h": 458
+        },
+        "sha256": "7fc702eb6bce8a989c2327246a2ba3cdccdbbed2bff873c389f501e4a77666cc",
+        "bytes": 208636
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 192,
+          "y": 145.67643142476697
+        },
+        "bounds": {
+          "x": 26,
+          "y": 23,
+          "w": 332,
+          "h": 146
+        },
+        "sha256": "e84e910d12c872eb3c06d1e6325560ae8d09f03481ed0fd0b73c400ecbc832fb",
+        "bytes": 24728
+      }
+    },
+    {
+      "id": "knuckles-03",
+      "sourceSha256": "740da05c7534932aab09d8be8e78678ee7fd03cbba00fc05027e6941393b78ec",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1536,
+        "height": 1024
+      },
+      "sourceBounds": {
+        "x": 25,
+        "y": 132,
+        "w": 1486,
+        "h": 744,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 768,
+        "y": 757
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 300.6639784946236,
+          "y": 245.01344086021504
+        },
+        "bounds": {
+          "x": 51,
+          "y": 35,
+          "w": 499,
+          "h": 250
+        },
+        "sha256": "1b21894e6bfc4b6c200222ed60cf2776e7d24b72ff3da112db993dab7c9ae57a",
+        "bytes": 61576
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 600.3145161290322,
+          "y": 493.42741935483866
+        },
+        "bounds": {
+          "x": 91,
+          "y": 65,
+          "w": 1019,
+          "h": 510
+        },
+        "sha256": "c3cd0cb7d4d888207a918376a770641d9c67a70dc3dbaf6e9c3715841be81d47",
+        "bytes": 250380
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 191.79032258064518,
+          "y": 149.0483870967742
+        },
+        "bounds": {
+          "x": 36,
+          "y": 18,
+          "w": 312,
+          "h": 156
+        },
+        "sha256": "f36fe1832761e9039acd221a8807749240d95eb832b9ab2a8ec474aa80752ece",
+        "bytes": 29470
+      }
+    },
+    {
+      "id": "knuckles-04",
+      "sourceSha256": "16d5d1113de25740f6dbf1d392ca88793c1488d0e4c6deb5c09824e8807e469e",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1536,
+        "height": 1024
+      },
+      "sourceBounds": {
+        "x": 27,
+        "y": 165,
+        "w": 1482,
+        "h": 693,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 768,
+        "y": 747
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 300,
+          "y": 241.2834008097166
+        },
+        "bounds": {
+          "x": 45,
+          "y": 41,
+          "w": 510,
+          "h": 238
+        },
+        "sha256": "b79a7ebb6c12fae49df2be7b43a966b3470112d622abe3cdd951a7f6cfb2c8f3",
+        "bytes": 56030
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 600,
+          "y": 485.4210526315789
+        },
+        "bounds": {
+          "x": 80,
+          "y": 77,
+          "w": 1040,
+          "h": 486
+        },
+        "sha256": "902d38f51dc2945773ccf0407406547c29794d7689f4091b3ee0dff5593b59c3",
+        "bytes": 221772
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 192,
+          "y": 149.38056680161944
+        },
+        "bounds": {
+          "x": 26,
+          "y": 19,
+          "w": 332,
+          "h": 155
+        },
+        "sha256": "cc0e61ff7c2fc07b680edea430c7b52f0c2aed38332e5fd2c50354c373f682b4",
+        "bytes": 30082
+      }
+    },
+    {
+      "id": "knuckles-05",
+      "sourceSha256": "28bdef3f28d36ab09cb5e7c6ce5284eb3e2ef61676c618e49c86534d60199e3f",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1793,
+        "height": 877
+      },
+      "sourceBounds": {
+        "x": 21,
+        "y": 37,
+        "w": 1749,
+        "h": 780,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 896,
+        "y": 692
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 300.1457975986278,
+          "y": 237.99485420240137
+        },
+        "bounds": {
+          "x": 45,
+          "y": 47,
+          "w": 510,
+          "h": 227
+        },
+        "sha256": "6a02cf8dd2afcc219beae4c4a0dee7b4c389e560118c95ae9671a820a7cae357",
+        "bytes": 53612
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 600.297312750143,
+          "y": 477.47970268724987
+        },
+        "bounds": {
+          "x": 80,
+          "y": 88,
+          "w": 1040,
+          "h": 464
+        },
+        "sha256": "d4220a3018abf90bc084be60238ed6f307cc16a16ae4709423663f2444d98049",
+        "bytes": 219790
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 192.09491137793026,
+          "y": 146.3339050886221
+        },
+        "bounds": {
+          "x": 26,
+          "y": 22,
+          "w": 332,
+          "h": 148
+        },
+        "sha256": "97965f0d05b18618c04d1385b0560eda4ef1f78914771b185870c5e50b05c20f",
+        "bytes": 29196
+      }
+    },
+    {
+      "id": "knuckles-06",
+      "sourceSha256": "0ea30bc5955d0fbfd9dba46f7893fa7ec147e5c4308e051fd7b4ba241c124a0b",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1581,
+        "height": 995
+      },
+      "sourceBounds": {
+        "x": 35,
+        "y": 104,
+        "w": 1512,
+        "h": 792,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 791,
+        "y": 769
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 300.6363636363636,
+          "y": 244.91161616161614
+        },
+        "bounds": {
+          "x": 62,
+          "y": 35,
+          "w": 477,
+          "h": 250
+        },
+        "sha256": "fc350fe73d9630dc2bea0228e558a7660c01e853eee157739ca169b97c2f7c13",
+        "bytes": 49008
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 599.8181818181818,
+          "y": 493.21969696969694
+        },
+        "bounds": {
+          "x": 113,
+          "y": 65,
+          "w": 974,
+          "h": 510
+        },
+        "sha256": "ece54f39dcbca5c951ad4c9d30bb9884232bc959584463185ce5a5beb7265d77",
+        "bytes": 202286
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 191.9090909090909,
+          "y": 148.98484848484847
+        },
+        "bounds": {
+          "x": 43,
+          "y": 18,
+          "w": 298,
+          "h": 156
+        },
+        "sha256": "d3a93272df68535986495696c25a2565e4fd416e415e66f70be476286775fc52",
+        "bytes": 25406
+      }
+    },
+    {
+      "id": "knuckles-07",
+      "sourceSha256": "cd24e1b70437aa70525bc8c0414a6da9af0d8ab6d12ce9148af080c94f59c589",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1536,
+        "height": 1024
+      },
+      "sourceBounds": {
+        "x": 21,
+        "y": 126,
+        "w": 1494,
+        "h": 769,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 768,
+        "y": 772
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 299.84785435630687,
+          "y": 245.01300390117032
+        },
+        "bounds": {
+          "x": 57,
+          "y": 35,
+          "w": 486,
+          "h": 250
+        },
+        "sha256": "8969b4fe0d1d3392032884d2e27247c69cda6f0620ae0697ea4ef3e4f3dce206",
+        "bytes": 61012
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 600.409622886866,
+          "y": 493.4265279583875
+        },
+        "bounds": {
+          "x": 105,
+          "y": 65,
+          "w": 991,
+          "h": 510
+        },
+        "sha256": "d5ac9deadc94a52bcb7722a292bc09928e3c3f6e8e21aabf6666dadcf9f4828d",
+        "bytes": 233840
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 192.5370611183355,
+          "y": 149.0481144343303
+        },
+        "bounds": {
+          "x": 41,
+          "y": 18,
+          "w": 303,
+          "h": 156
+        },
+        "sha256": "41ee81b2bdfc34f8d17d49a50be2c5a438761eb7f35ca9537c6e65d3135436cf",
+        "bytes": 29686
+      }
+    },
+    {
+      "id": "knuckles-08",
+      "sourceSha256": "6f90430796281aebd387d753a4b7a156ff44e93deb4d8804a9e746aa659b26c4",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1536,
+        "height": 1024
+      },
+      "sourceBounds": {
+        "x": 25,
+        "y": 141,
+        "w": 1486,
+        "h": 744,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 768,
+        "y": 766
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 300.6639784946236,
+          "y": 245.01344086021504
+        },
+        "bounds": {
+          "x": 51,
+          "y": 35,
+          "w": 499,
+          "h": 250
+        },
+        "sha256": "c3bb3f330bcad6c44994794b3f9d8beb8f2eaba5582d75e32fe8e96a9f95a624",
+        "bytes": 61436
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 600.3145161290322,
+          "y": 493.42741935483866
+        },
+        "bounds": {
+          "x": 91,
+          "y": 65,
+          "w": 1019,
+          "h": 510
+        },
+        "sha256": "8e35e6317b2e8180c6be2ff3f9bec3f1b3be80ebe89c63758af92e97681165da",
+        "bytes": 249676
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 191.79032258064518,
+          "y": 149.0483870967742
+        },
+        "bounds": {
+          "x": 36,
+          "y": 18,
+          "w": 312,
+          "h": 156
+        },
+        "sha256": "a63ed9fbbec8d5912b2bc3bd7d17366f20fb0fe2b7159945d47ba8dabdac5093",
+        "bytes": 30324
+      }
+    },
+    {
+      "id": "knuckles-09",
+      "sourceSha256": "c44d286f0663780c569e7ab04b5c290f913d19eacc8fd636c60a8f856093060b",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1536,
+        "height": 1024
+      },
+      "sourceBounds": {
+        "x": 16,
+        "y": 100,
+        "w": 1504,
+        "h": 803,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 768,
+        "y": 775
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 300.12204234122044,
+          "y": 245.1494396014944
+        },
+        "bounds": {
+          "x": 66,
+          "y": 35,
+          "w": 468,
+          "h": 250
+        },
+        "sha256": "277a43e134a7d7b094902efecc77f1d0e9d7f48d93a766ab47a4643d34cf9dde",
+        "bytes": 56556
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 600.6089663760897,
+          "y": 493.7048567870486
+        },
+        "bounds": {
+          "x": 123,
+          "y": 65,
+          "w": 955,
+          "h": 510
+        },
+        "sha256": "803ed1f595d831fabca7b27e88067ad76078024b264ff5031b4c7573ad2f561e",
+        "bytes": 221944
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 192.09215442092153,
+          "y": 149.1332503113325
+        },
+        "bounds": {
+          "x": 46,
+          "y": 18,
+          "w": 292,
+          "h": 156
+        },
+        "sha256": "250ac4544edf6fabeae2fbf1df8ef6d268a8734c679fc04a7d4d0f47308b996f",
+        "bytes": 28556
+      }
+    },
+    {
+      "id": "knuckles-10",
+      "sourceSha256": "2f0ed7fe32314702154a084ce97163237d7b6802d29c5521b019f622c0a8c771",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1536,
+        "height": 1024
+      },
+      "sourceBounds": {
+        "x": 15,
+        "y": 99,
+        "w": 1500,
+        "h": 803,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 765,
+        "y": 774
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 300.4993773349938,
+          "y": 245.1494396014944
+        },
+        "bounds": {
+          "x": 67,
+          "y": 35,
+          "w": 467,
+          "h": 250
+        },
+        "sha256": "719d9be28c440409f3839ec5454ba6a7f9ca1c95e5c4b9b23bad2ea6071d6378",
+        "bytes": 57870
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 600.3387297633873,
+          "y": 493.7048567870486
+        },
+        "bounds": {
+          "x": 124,
+          "y": 65,
+          "w": 953,
+          "h": 510
+        },
+        "sha256": "dfbdf3b486ddc59c39766bebc8d8c215510c7eaff4e62bfb9e01d57c59750eee",
+        "bytes": 222176
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 192.70361145703612,
+          "y": 149.1332503113325
+        },
+        "bounds": {
+          "x": 47,
+          "y": 18,
+          "w": 291,
+          "h": 156
+        },
+        "sha256": "b12456e196b93c8c533b55548f80584c845d54ba76ae4283e3bd923c76f24086",
+        "bytes": 30038
+      }
+    },
+    {
+      "id": "blade-01",
+      "sourceSha256": "a9df9c64591b1a0dea9eefd48731902f329199d3ba08ed929a3b962efabdda66",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "sourceBounds": {
+        "x": 72,
+        "y": 283,
+        "w": 1646,
+        "h": 339,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 302,
+        "y": 444
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 116.2636695018226,
+          "y": 157.88456865127583
+        },
+        "bounds": {
+          "x": 45,
+          "y": 108,
+          "w": 510,
+          "h": 105
+        },
+        "sha256": "f2922c1e740dc7b40e74d561f1081f3d70a6a5bc0f2a99d5a88df9c506bac906",
+        "bytes": 23322
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 225.32199270959904,
+          "y": 314.7253948967193
+        },
+        "bounds": {
+          "x": 80,
+          "y": 213,
+          "w": 1040,
+          "h": 214
+        },
+        "sha256": "2fc3c906cbc4948585c705f35d55db2841d677cbe4ce799369c542fd4a53d847",
+        "bytes": 93466
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 72.39125151883354,
+          "y": 94.47387606318347
+        },
+        "bounds": {
+          "x": 26,
+          "y": 62,
+          "w": 332,
+          "h": 68
+        },
+        "sha256": "de1724062cde64d5fe758dba0a4b96225f540ceb49ee7c38ee3ba962a978841b",
+        "bytes": 12518
+      }
+    },
+    {
+      "id": "blade-02",
+      "sourceSha256": "86f4a013e0b533b5e985bb334c76b3a4d891ac620c228ef7470a8c6aa1751a24",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1793,
+        "height": 877
+      },
+      "sourceBounds": {
+        "x": 55,
+        "y": 284,
+        "w": 1687,
+        "h": 316,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 291,
+        "y": 422
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 116.34558387670421,
+          "y": 153.71902786010668
+        },
+        "bounds": {
+          "x": 45,
+          "y": 112,
+          "w": 510,
+          "h": 96
+        },
+        "sha256": "39fa1448c44820c1a3234b46be01784a43cd0ac2437ecb7505840503a145522f",
+        "bytes": 28068
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 225.48903378778897,
+          "y": 308.0740960284529
+        },
+        "bounds": {
+          "x": 80,
+          "y": 223,
+          "w": 1040,
+          "h": 195
+        },
+        "sha256": "e712be5621fe0c79fc3a77f79210337653598576f33c6db33bf355d341dd9fde",
+        "bytes": 113484
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 72.44457617071726,
+          "y": 92.15826911677534
+        },
+        "bounds": {
+          "x": 26,
+          "y": 65,
+          "w": 332,
+          "h": 62
+        },
+        "sha256": "645408619b0f3d23c0850d83fe853d14566d4cf967452ddf47815e4b941d5196",
+        "bytes": 14698
+      }
+    },
+    {
+      "id": "blade-03",
+      "sourceSha256": "9495040598556a30eae3a0a1b8455da4207c8fa65f8481e60caca69e04c78639",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1793,
+        "height": 877
+      },
+      "sourceBounds": {
+        "x": 32,
+        "y": 276,
+        "w": 1729,
+        "h": 323,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 274,
+        "y": 421
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 116.38230190861769,
+          "y": 155.7703875072296
+        },
+        "bounds": {
+          "x": 45,
+          "y": 113,
+          "w": 510,
+          "h": 95
+        },
+        "sha256": "179260eeeec071cd5f4bea6b63036d007f9d0a9fbaf485f4b9b376e081ad9fc2",
+        "bytes": 27480
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 225.56390977443607,
+          "y": 310.21804511278197
+        },
+        "bounds": {
+          "x": 80,
+          "y": 223,
+          "w": 1040,
+          "h": 194
+        },
+        "sha256": "c4f5c256704e8544b4d3e71af6bdd1c1dd2fcf98b39ccb98981861dda4a2ebf6",
+        "bytes": 118972
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 72.46847888953153,
+          "y": 92.84268363215732
+        },
+        "bounds": {
+          "x": 26,
+          "y": 65,
+          "w": 332,
+          "h": 62
+        },
+        "sha256": "a9259f9026e4bc65e2fdc2b7905f35a8cfc1fe566cf609def34392cf90e819cc",
+        "bytes": 14626
+      }
+    },
+    {
+      "id": "blade-04",
+      "sourceSha256": "6ecf42bd59dab5f65979ef6054a6bfb64e8c2ca89704cfdca44e836bfd910e86",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1793,
+        "height": 877
+      },
+      "sourceBounds": {
+        "x": 40,
+        "y": 237,
+        "w": 1715,
+        "h": 396,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 280,
+        "y": 415
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 116.37026239067055,
+          "y": 153.932944606414
+        },
+        "bounds": {
+          "x": 45,
+          "y": 101,
+          "w": 510,
+          "h": 118
+        },
+        "sha256": "ba601c7d0903ad868c571ab44ff93156e696a420ded0ba09f0b518cefd02d7d0",
+        "bytes": 28006
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 225.5393586005831,
+          "y": 307.94169096209913
+        },
+        "bounds": {
+          "x": 80,
+          "y": 200,
+          "w": 1040,
+          "h": 240
+        },
+        "sha256": "fec174a93c3413281e02234613b837708a9946d1f9ec5b607221a606577b7512",
+        "bytes": 112084
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 72.46064139941691,
+          "y": 92.45830903790088
+        },
+        "bounds": {
+          "x": 26,
+          "y": 58,
+          "w": 332,
+          "h": 77
+        },
+        "sha256": "8b7e40b129bac9ccaea0f87e2355bb43ff9905bcf77bb4f52360f697353a3232",
+        "bytes": 15284
+      }
+    },
+    {
+      "id": "blade-05",
+      "sourceSha256": "49d146261c1b60f9ec58f8f84ba50aad12c91eb0b6f99594de08b98fc1ce8ac0",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "sourceBounds": {
+        "x": 12,
+        "y": 206,
+        "w": 1749,
+        "h": 460,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 257,
+        "y": 439
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 116.44082332761577,
+          "y": 160.94168096054887
+        },
+        "bounds": {
+          "x": 45,
+          "y": 93,
+          "w": 510,
+          "h": 134
+        },
+        "sha256": "c7854621d941207b782c30335f3a9c383fb471b8b26e1133ff19cafbaf6252a5",
+        "bytes": 30022
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 225.68324757004004,
+          "y": 321.5477415666095
+        },
+        "bounds": {
+          "x": 80,
+          "y": 183,
+          "w": 1040,
+          "h": 274
+        },
+        "sha256": "2fca997297635e67f6541250b65d900d9354298ca24049c6197c9d7d4e3a7510",
+        "bytes": 119418
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 72.50657518582048,
+          "y": 97.22870211549457
+        },
+        "bounds": {
+          "x": 26,
+          "y": 53,
+          "w": 332,
+          "h": 87
+        },
+        "sha256": "d4cd0c5108979cb44c671da1faf2e6f2f4cccafbbed2c38b16c45a975607d507",
+        "bytes": 16618
+      }
+    },
+    {
+      "id": "blade-06",
+      "sourceSha256": "1c1d0e290576bb832be74bdf04161422568a2e84fc5c8cc8eb70806d025f9877",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1797,
+        "height": 875
+      },
+      "sourceBounds": {
+        "x": 35,
+        "y": 251,
+        "w": 1734,
+        "h": 354,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 278,
+        "y": 419
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 116.47058823529412,
+          "y": 157.41176470588235
+        },
+        "bounds": {
+          "x": 45,
+          "y": 108,
+          "w": 510,
+          "h": 104
+        },
+        "sha256": "05482177cb14339f905f569e9463631819b4aa1f2ba2f950367d3150015f84f6",
+        "bytes": 22312
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 225.7439446366782,
+          "y": 314.7612456747405
+        },
+        "bounds": {
+          "x": 80,
+          "y": 214,
+          "w": 1040,
+          "h": 212
+        },
+        "sha256": "073fba64fddd8506fd22ae99f91005e100cc73a6715184efe0c5415cb4de8cd7",
+        "bytes": 92416
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 72.52595155709344,
+          "y": 94.16608996539793
+        },
+        "bounds": {
+          "x": 26,
+          "y": 62,
+          "w": 332,
+          "h": 68
+        },
+        "sha256": "4ebcf11927a52e9397045088eba4fd68bca2d63daa7120f83f5785644e499f19",
+        "bytes": 12230
+      }
+    },
+    {
+      "id": "blade-07",
+      "sourceSha256": "69be0b0bf3ca3cc07b9024520d3538c6cfbbec96753f6dcae9b8b20c4abd3c97",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1821,
+        "height": 864
+      },
+      "sourceBounds": {
+        "x": 38,
+        "y": 200,
+        "w": 1746,
+        "h": 437,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 282,
+        "y": 400
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 116.27147766323024,
+          "y": 154.4192439862543
+        },
+        "bounds": {
+          "x": 45,
+          "y": 96,
+          "w": 510,
+          "h": 128
+        },
+        "sha256": "2bd0f0c6b3abb0a067a260a4e7ef676dce50ddce65de5cd260ded6cf978537dd",
+        "bytes": 25654
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 225.33791523482245,
+          "y": 309.1294387170676
+        },
+        "bounds": {
+          "x": 80,
+          "y": 190,
+          "w": 1040,
+          "h": 260
+        },
+        "sha256": "dd89664eefe96772ce390dc80ad62b864dcb72d388e6906cefe0e692b864c485",
+        "bytes": 100668
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 72.39633447880871,
+          "y": 93.02978235967927
+        },
+        "bounds": {
+          "x": 26,
+          "y": 55,
+          "w": 332,
+          "h": 83
+        },
+        "sha256": "e04fc5d38489dba6b3bd1cd9ce59e1ffb6f4eb3042daf181854872217d10b4e9",
+        "bytes": 13952
+      }
+    },
+    {
+      "id": "blade-08",
+      "sourceSha256": "8414500815fa8163ae533cc8e0ed3101a1ab36ea5bdaeeae18fc973186352e3f",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1793,
+        "height": 877
+      },
+      "sourceBounds": {
+        "x": 33,
+        "y": 223,
+        "w": 1732,
+        "h": 420,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 275,
+        "y": 438
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 116.25866050808314,
+          "y": 161.3083140877598
+        },
+        "bounds": {
+          "x": 45,
+          "y": 98,
+          "w": 510,
+          "h": 124
+        },
+        "sha256": "38eed3f6dc590a8ef84f6f3bb0e338a2d6050a4620b1f567915eaf73fc4fefb2",
+        "bytes": 22704
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 225.31177829099306,
+          "y": 323.0993071593533
+        },
+        "bounds": {
+          "x": 80,
+          "y": 194,
+          "w": 1040,
+          "h": 252
+        },
+        "sha256": "a1cad9ec70c685233adc7320964f6272217ecad709b6b5f410096a7b13975299",
+        "bytes": 85764
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 72.3879907621247,
+          "y": 97.21247113163972
+        },
+        "bounds": {
+          "x": 26,
+          "y": 56,
+          "w": 332,
+          "h": 81
+        },
+        "sha256": "c722b9dbb853699e3f62ee119b92eb6aa234ffd5d5bd9c97fc13132908d4087d",
+        "bytes": 13110
+      }
+    },
+    {
+      "id": "blade-09",
+      "sourceSha256": "2232870cc08ba34abf21d7797ca59f537b1bfe4744f714b87dbda506bf69fc96",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1793,
+        "height": 877
+      },
+      "sourceBounds": {
+        "x": 32,
+        "y": 193,
+        "w": 1729,
+        "h": 485,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 274,
+        "y": 423
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 116.38230190861769,
+          "y": 156.84268363215733
+        },
+        "bounds": {
+          "x": 45,
+          "y": 89,
+          "w": 510,
+          "h": 143
+        },
+        "sha256": "dc4f4bb8790b99d870511ea4148335de8e90b74443f53a643e945d4db54fb71d",
+        "bytes": 29352
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 225.56390977443607,
+          "y": 312.3458646616541
+        },
+        "bounds": {
+          "x": 80,
+          "y": 174,
+          "w": 1040,
+          "h": 292
+        },
+        "sha256": "40a5f7b1b808aeaad661949782c64a7ab56dea7bd9edbba128f0d13d621881db",
+        "bytes": 123026
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 72.46847888953153,
+          "y": 94.16425679583574
+        },
+        "bounds": {
+          "x": 26,
+          "y": 50,
+          "w": 332,
+          "h": 93
+        },
+        "sha256": "dfa880824576e3397224bd136851edbbab679a845eb70d9f4d43052acdd8de86",
+        "bytes": 15706
+      }
+    },
+    {
+      "id": "blade-10",
+      "sourceSha256": "696b2f01c1914bcd525aacc2402bcc2d134578aa8233d9b6dacfe406722c79fb",
+      "layoutHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "buildVersion": 1,
+      "sourceDimensions": {
+        "width": 1793,
+        "height": 877
+      },
+      "sourceBounds": {
+        "x": 32,
+        "y": 209,
+        "w": 1733,
+        "h": 460,
+        "majorComponents": 1
+      },
+      "sourceGrip": {
+        "x": 275,
+        "y": 430
+      },
+      "qc": {
+        "reviewed": true,
+        "genuineAlpha": true,
+        "edgeClear": true
+      },
+      "thumb": {
+        "width": 600,
+        "height": 320,
+        "grip": {
+          "x": 116.51182919792268,
+          "y": 158.03750721292556
+        },
+        "bounds": {
+          "x": 45,
+          "y": 93,
+          "w": 510,
+          "h": 135
+        },
+        "sha256": "827a6cd32fddc27b30a1755b57bacf68f55edc4c6a77e05062d31616dfaa4bb9",
+        "bytes": 27722
+      },
+      "detail": {
+        "width": 1200,
+        "height": 640,
+        "grip": {
+          "x": 225.82804385458743,
+          "y": 314.6255049047894
+        },
+        "bounds": {
+          "x": 80,
+          "y": 182,
+          "w": 1040,
+          "h": 276
+        },
+        "sha256": "022203a19345dbb45f80b6434402ac753fe13530ca64812c3b98f8f71fee2215",
+        "bytes": 109876
+      },
+      "combat": {
+        "width": 384,
+        "height": 192,
+        "grip": {
+          "x": 72.55279861511829,
+          "y": 94.33814195037507
+        },
+        "bounds": {
+          "x": 26,
+          "y": 52,
+          "w": 332,
+          "h": 88
+        },
+        "sha256": "398caad4d86b645b75f7661a4364605f3d7fb9020ce580f8c983a43ddc1a439a",
+        "bytes": 15344
+      }
+    }
+  ]
+}

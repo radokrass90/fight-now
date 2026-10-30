@@ -1,6 +1,6 @@
 'use strict';
 const ShopUI=(()=>{
- const state={tab:'weapons',fighter:null,family:'all',page:0},errors={not_enough_coins:'Not enough coins.',weapon_not_owned:'Buy this weapon first.',username_taken:'That player name is already used.',invalid_credentials:'Incorrect name or password.',already_registered:'This profile is already saved.',sign_in_required:'Please log in again.',session_expired:'Please log in again.',slow_down:'Please wait before trying again.',max_level:'Maximum level reached.'};
+ const state={tab:'weapons',fighter:null,family:'all',page:0,previewId:null},errors={not_enough_coins:'Not enough coins.',weapon_not_owned:'Buy this weapon first.',username_taken:'That player name is already used.',invalid_credentials:'Incorrect name or password.',already_registered:'This profile is already saved.',sign_in_required:'Please log in again.',session_expired:'Please log in again.',slow_down:'Please wait before trying again.',max_level:'Maximum level reached.'};
  let version=0;
  const name=w=>w.name[I18N.language]||w.name.en;
  function message(code){return localize(errors[code]||'Connection unavailable. Try again.');}
@@ -39,17 +39,32 @@ const ShopUI=(()=>{
   }else{
    const filter=el('select');filter.setAttribute('aria-label',localize('Weapon category'));const families=[['all',localize('All categories')],...WEAPON_CATALOG.weapons.filter((_,i)=>i%10===0).map(w=>[w.family,w.familyName[I18N.language]])];
    for(const[id,label]of families){const o=el('option',label);o.value=id;o.selected=id===state.family;filter.append(o);}filter.onchange=()=>{state.family=filter.value;state.page=0;version++;};panel.append(filter);
-   const list=WEAPON_CATALOG.weapons.filter(w=>(state.family==='all'||w.family===state.family)&&(state.tab!=='inventory'||p?.owned.includes(w.id))),pages=Math.max(1,Math.ceil(list.length/20));state.page=Math.min(state.page,pages-1);
-   const heading=el('p',String(list.length)+' '+localize('weapons')+' · '+localize('Owned: ')+(p?.owned.length||0)+' / 100','mobile-copy');panel.append(heading);
-   const cards=el('div',null,'weapon-grid');
-   for(const w of list.slice(state.page*20,(state.page+1)*20)){
-    const owned=p?.owned.includes(w.id),active=load.weaponId===w.id,card=el('article',null,'weapon-card tier-'+w.tier+(active?' equipped':'')),img=image(w.icon);img.loading='lazy';
-    card.append(img,el('span',localize('TIER ')+w.tier,'weapon-tier'),el('h2',name(w)),el('p','+'+Math.round(w.damage*1000)/10+'% '+localize('damage')+' · +'+w.reach+' '+localize('reach'),'mobile-copy'));
-    const b=button(active?localize('EQUIPPED'):owned?localize('EQUIP'):localize('BUY & EQUIP')+' · ◈ '+w.price,async()=>{try{if(!owned)await Economy.buy(w.id);await Economy.equip(state.fighter,w.id);}catch{}},active?'selected':'mobile-primary','weapon-'+w.id);
-    b.disabled=active||Economy.busy||!Economy.online||!p||(!owned&&p.coins<w.price);card.append(b);cards.append(card);
+   const list=WEAPON_CATALOG.weapons.filter(w=>(state.family==='all'||w.family===state.family)&&(state.tab!=='inventory'||p?.owned.includes(w.id))),pageSize=12,pages=Math.max(1,Math.ceil(list.length/pageSize));state.page=Math.min(state.page,pages-1);
+   panel.append(el('p',String(list.length)+' '+localize(list.length===1?'weapon':'weapons')+' · '+localize('Owned: ')+(p?.owned.length||0)+' / 100','armory-count'));
+   function purchase(w,key='weapon-'){
+    const owned=p?.owned.includes(w.id),active=load.weaponId===w.id;
+    const b=button(active?localize('EQUIPPED'):owned?localize('EQUIP'):localize('BUY & EQUIP')+' · ◈ '+w.price,async()=>{try{if(!owned)await Economy.buy(w.id);await Economy.equip(state.fighter,w.id);}catch{}},'weapon-purchase '+(active?'selected':'mobile-primary'),key+w.id);
+    b.disabled=active||Economy.busy||!Economy.online||!p||(!owned&&p.coins<w.price);return b;
+   }
+   const selected=list.find(w=>w.id===state.previewId)||list.find(w=>w.id===load.weaponId)||list[0];
+   if(selected){
+    const feature=el('section',null,'armory-showcase tier-'+selected.tier);feature.dataset.family=selected.family;feature.setAttribute('aria-label',localize('Weapon details'));
+    const stage=el('div',null,'showcase-stage'),large=image(selected.art?.detail||selected.icon,'showcase-weapon');large.alt=name(selected);stage.append(el('span',localize('PERMANENT COLLECTION'),'showcase-kicker'),large);
+    const info=el('div',null,'showcase-info');info.append(el('p',selected.familyName[I18N.language]+' / '+localize('TIER ')+selected.tier,'weapon-eyebrow'),el('h2',name(selected)),el('p',localize('One purchase. Equip it whenever you fight.'),'mobile-copy'));
+    const stats=el('dl',null,'weapon-specs');for(const [value,label]of [['+'+(Math.round(selected.damage*1000)/10)+'%',localize('damage')],['+'+selected.reach,localize('reach')],['+'+(Math.round(selected.meter*1000)/10)+'%',localize('ENERGY')]]){const item=el('div');item.append(el('dt',label),el('dd',value));stats.append(item);}info.append(stats,purchase(selected,'featured-'));
+    if(p?.owned.includes(selected.id))info.append(el('span',localize('OWNED'),'ownership-note'));
+    feature.append(stage,info);panel.append(feature);
+   }
+   const cards=el('div',null,'weapon-grid illustrated-grid');
+   for(const w of list.slice(state.page*pageSize,(state.page+1)*pageSize)){
+    const owned=p?.owned.includes(w.id),active=load.weaponId===w.id,card=el('article',null,'weapon-card illustrated-card tier-'+w.tier+(active?' equipped':''));card.dataset.family=w.family;
+    const inspect=button('',()=>{state.previewId=w.id;version++;panel.scrollTop=0;},'weapon-inspect','inspect-'+w.id);inspect.setAttribute('aria-label',localize('Inspect: ')+name(w));const img=image(w.art?.thumb||w.icon,'weapon-illustration');img.alt=name(w);img.loading='lazy';inspect.append(img,el('span',localize('View details'),'inspect-label'));
+    const meta=el('div',null,'weapon-card-meta');meta.append(el('span',localize('TIER ')+w.tier,'weapon-tier'),el('span',active?localize('EQUIPPED'):owned?localize('OWNED'):w.familyName[I18N.language],active||owned?'ownership-note':'weapon-family'));
+    card.append(inspect,meta,el('h2',name(w)),el('p','+'+(Math.round(w.damage*1000)/10)+'% '+localize('damage')+' · +'+w.reach+' '+localize('reach'),'weapon-summary'),purchase(w));cards.append(card);
    }panel.append(cards);
    if(!list.length)panel.append(el('p',localize(p?.owned.length?'No owned weapons in this category.':'Your inventory is empty. Buy a weapon in the armory.'),'mobile-copy'));
    if(pages>1){const a=el('div',null,'armory-pages'),prev=button(localize('Previous'),()=>{state.page--;version++;},'quiet-action','previous'),next=button(localize('Next'),()=>{state.page++;version++;},'quiet-action','next');prev.disabled=state.page===0;next.disabled=state.page>=pages-1;a.append(prev,el('span',(state.page+1)+' / '+pages),next);panel.append(a);}
+
   }
   panel.append(el('p',localize('Owned weapons never expire. Equipment and upgrades apply from the next match.'),'menu-footnote'));back(actions(),()=>go(state.back||'title'));
  }
