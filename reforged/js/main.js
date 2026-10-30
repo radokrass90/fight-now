@@ -232,15 +232,17 @@ function nextArcade() {
   startFight(CHARS[opp].home, lvl);
 }
 function startFight(arena, lvl) {
+  BattleMusic.paused=false;
   G.stageCur = null;
   const c1 = CHARS[G.pick[0]], c2 = CHARS[G.pick[1]];
   const human1 = { type: 'human', map: G.mode === 'pvp' ? 'p1' : 'solo', touch: true, pad: 0 };
   const ctrl2 = G.mode === 'pvp' ? { type: 'human', map: 'p2', touch: false, pad: 1 } : G.mode === 'training' ? { type: 'dummy' } : { type: 'cpu', level: lvl || G.diff };
   G.matchOpts = { mode: G.mode, arena, c1, c2, ctrl1: human1, ctrl2 };
   G.assetsReady=false;G.artError=null;const request=G.assetRequest=(G.assetRequest||0)+1;
-  Promise.all([CharacterArt.prepare([c1.id,c2.id]),ArenaArt.prepare(arena)]).then((results)=>{
+  Promise.all([CharacterArt.prepare([c1.id,c2.id]),ArenaArt.prepare(arena),typeof Economy!=='undefined'?Economy.begin(G.matchOpts):Promise.resolve(null)]).then((results)=>{
     if(G.assetRequest!==request)return;
     if(results.some(ready=>ready===false)){G.artError=localize('Artwork could not be loaded. Select Fight to retry.');G.stageCur=arena;go('stage');return;}
+    G.matchOpts.economy=results[2];
     G.assetsReady=true;
   }).catch(()=>{if(G.assetRequest===request){G.artError=localize('Artwork could not be loaded. Select Fight to retry.');G.stageCur=arena;go('stage');}});
   G.vsT = 0; go('vs'); if(Touch.active)Snd.startMusic(arena); Snd.say(c1.name + localize(' versus ') + c2.name);
@@ -292,7 +294,7 @@ function fightScreen(inp) {
     ], W / 2, 200, 52, inp, 26);
     return;
   }
-  if (m.phase === 'matchOver') { G.resultT = G.T; go('result'); }
+  if (m.phase === 'matchOver') { if(typeof Economy!=='undefined')Economy.finish(m); G.resultT = G.T; go('result'); }
 }
 
 function resultScreen(inp) {
@@ -310,7 +312,7 @@ function resultScreen(inp) {
       if (G.arcade.i < 6) items.push({ t: localize("NEXT FIGHT"), fn: () => { G.arcade.i++; nextArcade(); } });
       else { outlineText(ctx, localize("YOU RULE THE STREETS!"), W / 2, 372, 30, '#9dff6a'); items.push({ t: localize("START OVER"), fn: () => startSelect() }); }
     } else if (G.arcade.cont > 0) items.push({ t: localize("CONTINUE (") + G.arcade.cont + ')', fn: () => { G.arcade.cont--; nextArcade(); } });
-  } else items.push({ t: localize("REMATCH"), fn: () => { G.vsT = 0; go('vs'); } });
+  } else items.push({ t: localize("REMATCH"), fn: () => { startFight(G.matchOpts.arena,G.matchOpts.ctrl2.level); } });
   items.push({ t: localize("CHANGE FIGHTER"), fn: () => { Snd.stopMusic(); startSelect(); } }, { t: localize("MAIN MENU"), fn: () => { Snd.stopMusic(); go('title'); } });
   if (t > 40) menuList(items, W / 2, 404, 44, inp, 24);
 }

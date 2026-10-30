@@ -1,5 +1,5 @@
 {
-  "at": "2026-10-29T16:51:04.381774+00:00",
+  "at": "2026-10-30T06:12:09.421406+00:00",
   "results": [
     {
       "test": "build-reforged-fighters.cjs",
@@ -25,13 +25,19 @@
       "test": "check-menu-flow.cjs",
       "args": [],
       "exitCode": 0,
-      "output": "PASS: native desktop and touch menu contract, 15 fighter/arena grids, keyboard selection, training flow, pause/moves/resume/restart, PvP mappings and 7-fight arcade.\nPASS: fighter/arena loading failure shows retry, successful retry starts the match, obsolete requests cannot replace a newer fight.\n"
+      "output": "PASS: native desktop and touch menu contract, 15 fighter/arena grids, keyboard selection, training flow, pause/moves/resume/restart, PvP mappings, versus CPU and 7-fight arcade.\nPASS: fighter/arena loading failure shows retry, successful retry starts the match, obsolete requests cannot replace a newer fight.\n"
     },
     {
       "test": "check-asset-retry.cjs",
       "args": [],
       "exitCode": 0,
       "output": "PASS: real fighter/arena loaders retry a failed request, retain two active fighters and select desktop/mobile resolution.\n"
+    },
+    {
+      "test": "check-economy-runtime.cjs",
+      "args": [],
+      "exitCode": 0,
+      "output": "PASS: 100 unique DE/EN weapon designs decode and draw in actual fighter renderer; damage/reach/focus apply, cloud snapshot survives rounds, training cannot earn, reward callback is idempotent, offline purchases cannot alter coins.\n"
     },
     {
       "test": "check-languages.cjs",
