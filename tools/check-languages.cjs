@@ -26,4 +26,5 @@ for(const file of ['index.html','animation-gallery.html']){
  const html=fs.readFileSync(root+'/'+file,'utf8').replace(/<!--[^]*?-->|\/\*[^]*?\*\//g,'');assert(!/[А-Яа-я]/.test(html),file+' still contains Bulgarian');
  for(const m of html.matchAll(/data-i18n(?:-aria)?="([^"]+)"/g))assert(Object.hasOwn(catalog,m[1]),'Missing DOM translation: '+m[1]);
 }
+for(const file of ['shop-ui','mobile-ui'])for(const m of fs.readFileSync(root+'/js/'+file+'.js','utf8').matchAll(/localize\(((?:"(?:\\.|[^"\\])*")|(?:'(?:\\.|[^'\\])*'))\)/g))assert(Object.hasOwn(catalog,vm.runInNewContext(m[1])),'Missing German shop text: '+m[1]);
 console.log('PASS: DE/EN menus, 15 biographies and move sets, arena cities, complete translation keys, saved choice, URL preservation and no Bulgarian interface text.');

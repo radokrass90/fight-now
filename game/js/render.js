@@ -45,7 +45,7 @@ function drawFighter(ctx, f, opt = {}) {
   if (f.vis === false) return;
   if (typeof CharacterArt !== 'undefined') {
     const rendered = CharacterArt.draw(ctx, f, opt);
-    if (rendered) return rendered;
+    if (rendered) { if(typeof WeaponArt!=='undefined')WeaponArt.draw(ctx,f,rendered); return rendered; }
   }
   const c = f.c, lk = c.look, p = f.pose;
   const sk = skeleton(c, p), w = c.w, s = c.h;

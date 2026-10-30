@@ -1,0 +1,22 @@
+services:
+  fightersgame-api:
+    build: ./api
+    restart: unless-stopped
+    env_file: .env
+    ports: ['127.0.0.1:7120:7120']
+    volumes: ['./game:/app/game:ro']
+    read_only: true
+    tmpfs: ['/tmp:size=16m']
+    cap_drop: [ALL]
+    security_opt: ['no-new-privileges:true']
+    mem_limit: 256m
+    cpus: 0.75
+    healthcheck:
+      test: ['CMD','python','-c','import urllib.request;urllib.request.urlopen("http://127.0.0.1:7120/api/v1/health",timeout=3)']
+      interval: 30s
+      timeout: 5s
+      retries: 3
+networks:
+  default:
+    external: true
+    name: supabase_default

@@ -1,0 +1,28 @@
+{
+  "desktop": [
+    1200,
+    665
+  ],
+  "phone": [
+    390,
+    844
+  ],
+  "languages": [
+    "en",
+    "de"
+  ],
+  "guestStartCoins": 250,
+  "weaponPurchase": 120,
+  "upgradePurchase": 100,
+  "coinsBeforeMatch": 30,
+  "completedCpuMatchReward": 45,
+  "coinsAfterMatch": 75,
+  "inventoryPersistsAfterReload": true,
+  "weaponVisibleInFight": true,
+  "phoneOverflow": false,
+  "categoryFilterSwordShows10": true,
+  "accountFormInputWorks": true,
+  "passwordFieldMasked": true,
+  "gameErrors": [],
+  "physicalDevicesTested": false
+}

@@ -9,3 +9,7 @@ backups/
 game/assets/fighters-reforged/*/frames/
 game/assets/fighters-reforged/*/contact-sheet.png
 game/assets/reforged-3d/*.png
+
+.env
+.env.*
+__pycache__/

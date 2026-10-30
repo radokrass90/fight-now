@@ -92,6 +92,7 @@ class Match {
     this.round = 1; this.T = 0; this.fx = []; this.proj = []; this.texts = []; this.shake = 0; this.hitstop = 0; this.dim = 0; this.slow = 0;
     this.result = null; this.paused = false; this.simFrame = 0;
     this.trainingStats = { lastCombo: { hits: 0, damage: 0 }, bestCombo: { hits: 0, damage: 0 }, totalDamage: 0, perfectGuards: 0 };
+    if(typeof Economy!=='undefined')Economy.apply(this);
     this.startRound();
   }
   startRound() {
@@ -403,10 +404,10 @@ class Match {
 
   damage(A, B, d, raw) {
     const mul = raw ? 1 : A.c.power * B.c.def;
-    const dmg = Math.round(d * mul);
+    const dmg = Math.round(d * mul * (A.equipment?.power||1) * (B.equipment?.guard||1));
     B.hp = Math.max(0, B.hp - dmg); B.comboDmg += dmg;
     if (this.mode === 'training' && A.side === 0) this.trainingStats.totalDamage += dmg;
-    A.meter = Math.min(1000, A.meter + dmg * 0.7); B.meter = Math.min(1000, B.meter + dmg * 0.4);
+    A.meter = Math.min(1000, A.meter + dmg * 0.7 * (A.equipment?.focus||1)); B.meter = Math.min(1000, B.meter + dmg * 0.4 * (B.equipment?.focus||1));
     if (this.mode === 'training' && B.hp < 1) B.hp = 1;
     return dmg;
   }
@@ -463,7 +464,8 @@ class Match {
     const sk = skeleton(A.c, A.pose), hip = fighterHip(A, sk), pt = toWorld(A, hip, limbPoint(A.c, sk, A.pose, h.limb));
     const r = this.hurtRect(B); if (!r) return;
     const cx = clamp(pt[0], r.x1, r.x2), cy = clamp(pt[1], r.y1, r.y2);
-    if ((pt[0] - cx) ** 2 + (pt[1] - cy) ** 2 > h.r * h.r) return;
+    const reach=h.r+(['fh','bh','fe','prop'].includes(h.limb)?(A.equipment?.reach||0):0);
+    if ((pt[0] - cx) ** 2 + (pt[1] - cy) ** 2 > reach * reach) return;
     if (h.l === 'h' && B.crouching && B.y === 0) return; // високите удари минават над клекнал
     A.hitIds.add(seg.hid);
     this.resolveHit(A, B, h, pt[0], pt[1], false);

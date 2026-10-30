@@ -1,0 +1,13 @@
+{
+  "checks": [
+    "fightersgame database and 100 unique catalog entries",
+    "server prices, insufficient funds, owned-item idempotency and player isolation",
+    "concurrent double purchase charges exactly once",
+    "all 100 weapons buy/equip and all 15 character-upgrade levels",
+    "password save, second-device login, persistent inventory and session revocation",
+    "earned match coins, match ownership, timing gate and exactly-once reward",
+    "hashed session tokens and private database privileges"
+  ],
+  "database": "fightersgame",
+  "catalog": 100
+}

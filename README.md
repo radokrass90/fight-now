@@ -1,5 +1,12 @@
 # Fight Now — Reforged
 
+## Persistent armory and progression
+
+The game now uses the **fightersgame** database in the production Supabase PostgreSQL server. Every player receives a private wallet and permanent inventory; name/password profiles allow recovery across devices. There are 100 weapon designs in 10 categories, per-fighter loadouts, and five power/guard/focus upgrade levels. Win or complete CPU/arcade matches to earn coins, then use ARMORY / ARSENAL. Equipment stays available for subsequent matches.
+
+[Play on the production host](https://fightersgame.159.195.207.175.sslip.io/?lang=de) or use the GitHub Pages review link below. Prices and wallet transactions are server-controlled; database credentials stay on prod. See `server/fightersgame/README.md` for deployment, economy rules and validation.
+
+
 A painted 2.5D web fighting game: 15 redesigned fighters, 450 newly generated pose frames, 15 arenas and six original battle tracks. German and English menus, biographies, move lists, announcements and touch labels.
 
 ## Review build
@@ -47,6 +54,6 @@ blender --background --python blender/build_reforged_atmosphere.py
 node tools/build-reforged-atmosphere.cjs
 ```
 
-`review/verification.json` records eleven passing checks: strict all-roster audit, 900 desktop/mobile art draws, seeded combat/finishers, all menu modes, failed download/retry behavior, DE/EN, multi-touch ownership/cancellation, impact effects, 15 prop layouts, timeline sampling and six music files. `review/art-visual-qc.md` documents visual inspection of all 450 poses. `review/final/` contains actual browser screenshots and observations at 1200×665, 390×844 and 844×390. No game-origin console errors were observed. Physical iOS/Android hardware has not been tested.
+`review/verification.json` records twelve passing checks: strict all-roster audit, 900 desktop/mobile art draws, seeded combat/finishers, all menu modes, failed download/retry behavior, DE/EN, multi-touch ownership/cancellation, impact effects, 15 prop layouts, timeline sampling and six music files. `review/art-visual-qc.md` documents visual inspection of all 450 poses. `review/final/` contains actual browser screenshots and observations at 1200×665, 390×844 and 844×390. No game-origin console errors were observed. Physical iOS/Android hardware has not been tested.
 
 The prior Bulgarian game is preserved locally in `Fight now/backups/fight-now-bg-2026-10-29.tar.gz`, separately from this review deployment.

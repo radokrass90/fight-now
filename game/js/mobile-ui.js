@@ -3,7 +3,7 @@
 const MobileUI = (()=>{
   const panel=document.getElementById('mobile-menu'),toolbar=document.getElementById('mobile-toolbar');
   let stamp='',focusAfter=null;
-  const screens=['title','select','stage','controls','moves','result'];
+  const screens=['title','select','stage','controls','moves','result','shop'];
   function ownsMenu(){return screens.includes(G.screen)||(G.screen==='fight'&&G.match?.paused);}
   function el(tag,text,cls){const n=document.createElement(tag);if(text!=null)n.textContent=text;if(cls)n.className=cls;return n;}
   function button(text,action,cls='',key=''){
@@ -33,6 +33,7 @@ const MobileUI = (()=>{
     for(const [label,v]of [[localize('POWER'),c.str],[localize('SPEED'),c.spd],[localize('TECHNIQUE'),c.tec],[localize('ENDURANCE'),c.end]]){
       const row=el('div');row.append(el('dt',label));const dd=el('dd');const bar=el('span');bar.style.setProperty('--stat',String(v/10));bar.setAttribute('aria-label',v+' / 10');dd.append(bar);row.append(dd);stats.append(row);
     }
+    if(!active&&typeof ShopUI!=='undefined')n.append(button(localize('ARMORY'),()=>ShopUI.open(c.id),'quiet-action','armory'));
     n.append(stats,button(localize('Move list'),()=>{G.moveFor=c;G.moveBack='select';go('moves');},'quiet-action','moves'));return n;
   }
   function renderTitle(){
@@ -43,7 +44,7 @@ const MobileUI = (()=>{
     const rows=[['arcade',localize('ARCADE'),localize("7 fights through Germany's neighborhoods"),'01'],['versus',localize('VS COMPUTER'),localize('Pick your fighter, opponent and neighborhood'),'02'],['training',localize('TRAINING'),localize('Unlimited health — try every move'),'03'],['pvp',localize('2 PLAYERS'),localize('Two players, one keyboard (or gamepads)'),'04']];
     for(const [mode,label,description,num]of rows){const b=button('',()=>openMode(mode),'mode-action '+(mode==='arcade'?'mode-featured':''),'mode-'+mode);b.append(el('span',num,'mode-number'),el('strong',label),el('small',description),el('span','↗','mode-arrow'));modes.append(b);}
     panel.append(modes);
-    const foot=el('footer',null,'title-footer');foot.append(button(localize('How to play'),()=>go('controls'),'quiet-action','controls'));settings(foot);panel.append(foot);
+    const foot=el('footer',null,'title-footer');if(typeof Economy!=='undefined')foot.append(button(localize('ARMORY')+' · ◈ '+(Economy.profile?.coins??'—'),()=>ShopUI.open(),'quiet-action armory-entry','armory'));foot.append(button(localize('How to play'),()=>go('controls'),'quiet-action','controls'));settings(foot);panel.append(foot);
     panel.append(el('p',localize('15 fighters · 15 arenas · multi-touch controls'),'title-meta'));
   }
   function renderSelect(){
@@ -65,7 +66,7 @@ const MobileUI = (()=>{
   }
   function renderPause(){
     title(localize('Pause'),BattleMusic.title);const a=actions();primary(a,localize('RESUME'),()=>togglePause());
-    a.append(button(localize('Move list'),()=>{G.moveFor=G.match.p[0].c;G.moveBack='fight';go('moves');},'','moves'),button(localize('Restart'),()=>{touchControls.reset();G.match=new Match(G.matchOpts);BattleMusic.paused=false;Snd.startMusic(G.matchOpts.arena);fit();},'','restart'));
+    a.append(button(localize('Move list'),()=>{G.moveFor=G.match.p[0].c;G.moveBack='fight';go('moves');},'','moves'),button(localize('Restart'),()=>{touchControls.reset();startFight(G.matchOpts.arena,G.matchOpts.ctrl2.level);fit();},'','restart'));
     const settings=el('div',null,'menu-settings');settings.append(button(localize('Music: ')+(Snd.musicOn?localize('ON'):localize('OFF')),()=>Snd.toggleMusic(),'','music'),button(localize('Effects: ')+(CombatFX.full?localize('STRONG'):localize('LIGHT')),()=>CombatFX.toggle(),'','effects'));panel.append(settings);
     const links=actions();links.append(button(localize('Change fighter'),()=>startSelect(),'quiet-action','change'),button(localize('Main menu'),()=>go('title'),'quiet-action','home'));
     panel.append(el('p',localize('Pause any time. Your fight waits for you.'),'menu-footnote'));
@@ -99,12 +100,13 @@ const MobileUI = (()=>{
     const m=G.match,r=m?.result;if(!r)return;
     title(r.winner.c.name+localize(' wins!'),r.finisher?localize('Finisher: ')+r.winner.c.finName:r.flawless?localize('FLAWLESS'):localize('Another street. Another story.'));
     const winner=el('div',null,'result-hero');winner.append(image(portrait(r.winner.c.id)),el('strong',r.winner.c.full));panel.append(winner);
-    const a=actions();
+    if(m.reward){const labels={paid:'Coins earned',pending:'Reward syncing…',practice:'Practice match — no coin reward',offline:'Offline match — no coin reward',unavailable:'Reward unavailable'};panel.append(el('div',(m.reward.state==='paid'?'◈ +'+m.reward.amount+' · ':'')+localize(labels[m.reward.state]||'Reward syncing…'),'reward-card'));if(m.reward.state==='pending')panel.append(button(localize('RETRY SYNC'),()=>Economy.flush(),'quiet-action','sync'));}
+    const a=actions();if(typeof ShopUI!=='undefined')a.append(button(localize('ARMORY'),()=>ShopUI.open(),'quiet-action','armory'));
     if(G.mode==='arcade'){
       if(r.winner.side===0&&G.arcade.i<6)primary(a,localize('NEXT FIGHT'),()=>{G.arcade.i++;nextArcade();});
       else if(r.winner.side!==0&&G.arcade.cont>0)primary(a,localize('CONTINUE (')+G.arcade.cont+')',()=>{G.arcade.cont--;nextArcade();});
       else primary(a,localize('NEW ARCADE'),()=>startSelect());
-    }else primary(a,localize('REMATCH'),()=>{G.vsT=0;go('vs');});
+    }else primary(a,localize('REMATCH'),()=>{startFight(G.matchOpts.arena,G.matchOpts.ctrl2.level);});
     a.append(button(localize('Change fighter'),()=>startSelect(),'','change'),button(localize('Main menu'),()=>go('title'),'quiet-action','home'));
   }
   function sync(){
@@ -112,12 +114,13 @@ const MobileUI = (()=>{
     panel.hidden=!menu;document.getElementById('c').setAttribute('aria-hidden',String(menu));toolbar.hidden=!(['fight','vs'].includes(G.screen)&&!menu);
     document.getElementById('mobilePause').hidden=G.screen!=='fight';document.getElementById('fullscreen').hidden=!document.documentElement.requestFullscreen;
     document.getElementById('mobile-hint').textContent=Touch.active?(innerHeight>innerWidth?localize('Rotate for a larger arena'):localize('Move and attack together')):localize('Esc / P to pause');
-    const nextStamp=[menu,G.screen,G.mode,G.selStep,G.pick.join(','),G.stageCur,G.diff,Snd.on,Snd.musicOn,CombatFX.full,G.match?.paused,G.match?.result?.winner?.c.id,G.moveFor?.id,G.moveBack,G.arcade?.i,G.arcade?.cont].join('/');
+    if(typeof Economy!=='undefined'){let coins=document.getElementById('coin-hud');if(!coins){coins=el('span',null,'coin-hud');coins.id='coin-hud';toolbar.append(coins);}coins.textContent='◈ '+(Economy.profile?.coins??'—');coins.dataset.weapon=G.match?.p?.[0]?.equipment?.weapon?.id||'';coins.title=G.match?.p?.[0]?.equipment?.weapon?.name?.[I18N.language]||'';}
+    const nextStamp=[menu,G.screen,G.mode,G.selStep,G.pick.join(','),G.stageCur,G.diff,Snd.on,Snd.musicOn,CombatFX.full,G.match?.paused,G.match?.result?.winner?.c.id,G.moveFor?.id,G.moveBack,G.arcade?.i,G.arcade?.cont,typeof Economy!=='undefined'?Economy.version:0,typeof ShopUI!=='undefined'?ShopUI.version:0].join('/');
     if(!menu||nextStamp===stamp)return;
     const oldScreen=panel.dataset.screen,oldStep=panel.dataset.step,focused=document.activeElement?.dataset?.focusKey;
     stamp=nextStamp;panel.replaceChildren();panel.className='game-menu';panel.dataset.screen=G.screen;panel.dataset.step=String(G.selStep);
     panel.style.setProperty('--menu-scene',"url('assets/arenas-hd/"+ARENA_ART_DATA[(G.screen==='stage'?G.stageCur:null)??(G.screen==='select'?CHARS[G.pick[G.selStep===1?1:0]].home:7)].id+"/thumbnail.webp')");
-    ({title:renderTitle,select:renderSelect,stage:renderStage,fight:renderPause,controls:renderControls,moves:renderMoves,result:renderResult}[G.screen]||renderTitle)();
+    ({shop:()=>ShopUI.render({panel,el,button,title,actions,back,image,portrait}),title:renderTitle,select:renderSelect,stage:renderStage,fight:renderPause,controls:renderControls,moves:renderMoves,result:renderResult}[G.screen]||renderTitle)();
     if(oldScreen!==G.screen||(G.screen==='select'&&oldStep!==String(G.selStep)))panel.scrollTop=0;
     const key=focusAfter||focused;focusAfter=null;
     if(key){const match=[...panel.querySelectorAll('button')].find(b=>b.dataset.focusKey===key);match?.focus({preventScroll:true});}
