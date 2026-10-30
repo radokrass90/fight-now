@@ -1,0 +1,1347 @@
+{
+  "id": "kevin",
+  "name": "Kevin „Hooli“ Brandt",
+  "height": 1,
+  "base": "assets/fighters-reforged/kevin/spritesheet.webp",
+  "extra": "assets/fighters-reforged/kevin/extra-20.webp",
+  "mobileBase": "assets/fighters-reforged/kevin/spritesheet-mobile.webp",
+  "mobileExtra": "assets/fighters-reforged/kevin/extra-20-mobile.webp",
+  "portrait": "assets/fighters-reforged/kevin/portrait.webp",
+  "status": "ready",
+  "frameCount": 30,
+  "frames": [
+    {
+      "index": 0,
+      "name": "idle",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 0,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 64,
+        "y": 105,
+        "w": 280,
+        "h": 359
+      },
+      "scale": 0.9779005524861878,
+      "source": "sources/kevin-base.png",
+      "sourceBounds": {
+        "x": 66,
+        "y": 9,
+        "w": 286,
+        "h": 367
+      },
+      "componentBounds": {
+        "x": 68,
+        "y": 11,
+        "w": 282,
+        "h": 363,
+        "area": 44935,
+        "row": 0,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 226,
+        "y": 374,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 1,
+      "name": "block",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 512,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 65,
+        "y": 106,
+        "w": 291,
+        "h": 358
+      },
+      "scale": 0.9779005524861878,
+      "source": "sources/kevin-base.png",
+      "sourceBounds": {
+        "x": 454,
+        "y": 10,
+        "w": 298,
+        "h": 366
+      },
+      "componentBounds": {
+        "x": 456,
+        "y": 12,
+        "w": 294,
+        "h": 362,
+        "area": 46372,
+        "row": 0,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 612,
+        "y": 374,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 2,
+      "name": "crouch",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1024,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 62,
+        "y": 199,
+        "w": 331,
+        "h": 265
+      },
+      "scale": 0.9779005524861878,
+      "source": "sources/kevin-base.png",
+      "sourceBounds": {
+        "x": 838,
+        "y": 105,
+        "w": 338,
+        "h": 271
+      },
+      "componentBounds": {
+        "x": 840,
+        "y": 107,
+        "w": 334,
+        "h": 267,
+        "area": 38224,
+        "row": 0,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 1000,
+        "y": 374,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 3,
+      "name": "jump",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1536,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 69,
+        "y": 176,
+        "w": 301,
+        "h": 288
+      },
+      "scale": 0.9779005524861878,
+      "source": "sources/kevin-base.png",
+      "sourceBounds": {
+        "x": 1204,
+        "y": 7,
+        "w": 308,
+        "h": 294
+      },
+      "componentBounds": {
+        "x": 1206,
+        "y": 9,
+        "w": 304,
+        "h": 290,
+        "area": 41637,
+        "row": 0,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 1358,
+        "y": 299,
+        "method": "air-center"
+      }
+    },
+    {
+      "index": 4,
+      "name": "light_punch",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 2048,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 30,
+        "y": 133,
+        "w": 406,
+        "h": 331
+      },
+      "scale": 0.9779005524861878,
+      "source": "sources/kevin-base.png",
+      "sourceBounds": {
+        "x": 1559,
+        "y": 38,
+        "w": 415,
+        "h": 338
+      },
+      "componentBounds": {
+        "x": 1561,
+        "y": 40,
+        "w": 411,
+        "h": 334,
+        "area": 43434,
+        "row": 0,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1753,
+        "y": 374,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 5,
+      "name": "heavy_punch",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 0,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 33,
+        "y": 112,
+        "w": 377,
+        "h": 352
+      },
+      "scale": 0.9779005524861878,
+      "source": "sources/kevin-base.png",
+      "sourceBounds": {
+        "x": 23,
+        "y": 406,
+        "w": 386,
+        "h": 360
+      },
+      "componentBounds": {
+        "x": 25,
+        "y": 408,
+        "w": 382,
+        "h": 356,
+        "area": 47307,
+        "row": 1,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 214,
+        "y": 764,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 6,
+      "name": "light_kick",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 512,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 104,
+        "y": 110,
+        "w": 340,
+        "h": 354
+      },
+      "scale": 0.9779005524861878,
+      "source": "sources/kevin-base.png",
+      "sourceBounds": {
+        "x": 444,
+        "y": 405,
+        "w": 348,
+        "h": 362
+      },
+      "componentBounds": {
+        "x": 446,
+        "y": 407,
+        "w": 344,
+        "h": 358,
+        "area": 40524,
+        "row": 1,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 563,
+        "y": 765,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 7,
+      "name": "heavy_kick",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1024,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 106,
+        "y": 110,
+        "w": 389,
+        "h": 354
+      },
+      "scale": 0.9779005524861878,
+      "source": "sources/kevin-base.png",
+      "sourceBounds": {
+        "x": 793,
+        "y": 411,
+        "w": 398,
+        "h": 362
+      },
+      "componentBounds": {
+        "x": 795,
+        "y": 413,
+        "w": 394,
+        "h": 358,
+        "area": 44328,
+        "row": 1,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 910,
+        "y": 771,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 8,
+      "name": "hit",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1536,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 47,
+        "y": 102,
+        "w": 302,
+        "h": 362
+      },
+      "scale": 0.9779005524861878,
+      "source": "sources/kevin-base.png",
+      "sourceBounds": {
+        "x": 1253,
+        "y": 401,
+        "w": 309,
+        "h": 370
+      },
+      "componentBounds": {
+        "x": 1255,
+        "y": 403,
+        "w": 305,
+        "h": 366,
+        "area": 46695,
+        "row": 1,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 1430,
+        "y": 769,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 9,
+      "name": "victory",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 2048,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 85,
+        "y": 76,
+        "w": 272,
+        "h": 388
+      },
+      "scale": 0.9779005524861878,
+      "source": "sources/kevin-base.png",
+      "sourceBounds": {
+        "x": 1648,
+        "y": 382,
+        "w": 278,
+        "h": 397
+      },
+      "componentBounds": {
+        "x": 1650,
+        "y": 384,
+        "w": 274,
+        "h": 393,
+        "area": 47075,
+        "row": 1,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1786,
+        "y": 777,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 10,
+      "name": "walk_contact",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 66,
+        "y": 96,
+        "w": 288,
+        "h": 368
+      },
+      "scale": 1.2688172043010753,
+      "source": "sources/kevin-extra.png",
+      "sourceBounds": {
+        "x": 27,
+        "y": 11,
+        "w": 227,
+        "h": 290
+      },
+      "componentBounds": {
+        "x": 29,
+        "y": 13,
+        "w": 223,
+        "h": 286,
+        "area": 29483,
+        "row": 0,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 148,
+        "y": 299,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 11,
+      "name": "walk_down",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 49,
+        "y": 105,
+        "w": 284,
+        "h": 359
+      },
+      "scale": 1.2688172043010753,
+      "source": "sources/kevin-extra.png",
+      "sourceBounds": {
+        "x": 317,
+        "y": 14,
+        "w": 224,
+        "h": 283
+      },
+      "componentBounds": {
+        "x": 319,
+        "y": 16,
+        "w": 220,
+        "h": 279,
+        "area": 26974,
+        "row": 0,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 452,
+        "y": 295,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 12,
+      "name": "walk_pass",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 96,
+        "y": 101,
+        "w": 231,
+        "h": 363
+      },
+      "scale": 1.2688172043010753,
+      "source": "sources/kevin-extra.png",
+      "sourceBounds": {
+        "x": 626,
+        "y": 15,
+        "w": 182,
+        "h": 286
+      },
+      "componentBounds": {
+        "x": 628,
+        "y": 17,
+        "w": 178,
+        "h": 282,
+        "area": 25339,
+        "row": 0,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 724,
+        "y": 299,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 13,
+      "name": "walk_up",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 70,
+        "y": 111,
+        "w": 260,
+        "h": 353
+      },
+      "scale": 1.2688172043010753,
+      "source": "sources/kevin-extra.png",
+      "sourceBounds": {
+        "x": 887,
+        "y": 18,
+        "w": 205,
+        "h": 278
+      },
+      "componentBounds": {
+        "x": 889,
+        "y": 20,
+        "w": 201,
+        "h": 274,
+        "area": 26823,
+        "row": 0,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 1005,
+        "y": 294,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 14,
+      "name": "walk_opposite",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 49,
+        "y": 99,
+        "w": 298,
+        "h": 365
+      },
+      "scale": 1.2688172043010753,
+      "source": "sources/kevin-extra.png",
+      "sourceBounds": {
+        "x": 1147,
+        "y": 13,
+        "w": 235,
+        "h": 288
+      },
+      "componentBounds": {
+        "x": 1149,
+        "y": 15,
+        "w": 231,
+        "h": 284,
+        "area": 27633,
+        "row": 0,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1282,
+        "y": 299,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 15,
+      "name": "walk_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 72,
+        "y": 105,
+        "w": 277,
+        "h": 359
+      },
+      "scale": 1.2688172043010753,
+      "source": "sources/kevin-extra.png",
+      "sourceBounds": {
+        "x": 20,
+        "y": 306,
+        "w": 218,
+        "h": 283
+      },
+      "componentBounds": {
+        "x": 22,
+        "y": 308,
+        "w": 214,
+        "h": 279,
+        "area": 27734,
+        "row": 1,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 137,
+        "y": 587,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 16,
+      "name": "jab_load",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 60,
+        "y": 105,
+        "w": 316,
+        "h": 359
+      },
+      "scale": 1.2688172043010753,
+      "source": "sources/kevin-extra.png",
+      "sourceBounds": {
+        "x": 289,
+        "y": 307,
+        "w": 249,
+        "h": 283
+      },
+      "componentBounds": {
+        "x": 291,
+        "y": 309,
+        "w": 245,
+        "h": 279,
+        "area": 28180,
+        "row": 1,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 415,
+        "y": 588,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 17,
+      "name": "jab_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 66,
+        "y": 113,
+        "w": 285,
+        "h": 351
+      },
+      "scale": 1.2688172043010753,
+      "source": "sources/kevin-extra.png",
+      "sourceBounds": {
+        "x": 589,
+        "y": 312,
+        "w": 225,
+        "h": 277
+      },
+      "componentBounds": {
+        "x": 591,
+        "y": 314,
+        "w": 221,
+        "h": 273,
+        "area": 28142,
+        "row": 1,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 710,
+        "y": 587,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 18,
+      "name": "cross_load",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 60,
+        "y": 119,
+        "w": 291,
+        "h": 345
+      },
+      "scale": 1.2688172043010753,
+      "source": "sources/kevin-extra.png",
+      "sourceBounds": {
+        "x": 870,
+        "y": 315,
+        "w": 229,
+        "h": 272
+      },
+      "componentBounds": {
+        "x": 872,
+        "y": 317,
+        "w": 225,
+        "h": 268,
+        "area": 29453,
+        "row": 1,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 996,
+        "y": 585,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 19,
+      "name": "cross_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 75,
+        "y": 104,
+        "w": 287,
+        "h": 360
+      },
+      "scale": 1.2688172043010753,
+      "source": "sources/kevin-extra.png",
+      "sourceBounds": {
+        "x": 1146,
+        "y": 307,
+        "w": 226,
+        "h": 284
+      },
+      "componentBounds": {
+        "x": 1148,
+        "y": 309,
+        "w": 222,
+        "h": 280,
+        "area": 27421,
+        "row": 1,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1260,
+        "y": 589,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 20,
+      "name": "hook",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 60,
+        "y": 111,
+        "w": 297,
+        "h": 353
+      },
+      "scale": 1.2688172043010753,
+      "source": "sources/kevin-extra.png",
+      "sourceBounds": {
+        "x": 29,
+        "y": 608,
+        "w": 234,
+        "h": 278
+      },
+      "componentBounds": {
+        "x": 31,
+        "y": 610,
+        "w": 230,
+        "h": 274,
+        "area": 30548,
+        "row": 2,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 155,
+        "y": 884,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 21,
+      "name": "uppercut",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 66,
+        "y": 96,
+        "w": 297,
+        "h": 368
+      },
+      "scale": 1.2688172043010753,
+      "source": "sources/kevin-extra.png",
+      "sourceBounds": {
+        "x": 313,
+        "y": 594,
+        "w": 234,
+        "h": 290
+      },
+      "componentBounds": {
+        "x": 315,
+        "y": 596,
+        "w": 230,
+        "h": 286,
+        "area": 29099,
+        "row": 2,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 434,
+        "y": 882,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 22,
+      "name": "kick_chamber",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 125,
+        "y": 94,
+        "w": 218,
+        "h": 370
+      },
+      "scale": 1.2688172043010753,
+      "source": "sources/kevin-extra.png",
+      "sourceBounds": {
+        "x": 615,
+        "y": 592,
+        "w": 172,
+        "h": 292
+      },
+      "componentBounds": {
+        "x": 617,
+        "y": 594,
+        "w": 168,
+        "h": 288,
+        "area": 25703,
+        "row": 2,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 690,
+        "y": 882,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 23,
+      "name": "kick_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 118,
+        "y": 94,
+        "w": 194,
+        "h": 370
+      },
+      "scale": 1.2688172043010753,
+      "source": "sources/kevin-extra.png",
+      "sourceBounds": {
+        "x": 919,
+        "y": 592,
+        "w": 153,
+        "h": 292
+      },
+      "componentBounds": {
+        "x": 921,
+        "y": 594,
+        "w": 149,
+        "h": 288,
+        "area": 23936,
+        "row": 2,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 999,
+        "y": 882,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 24,
+      "name": "knee",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 160,
+        "y": 85,
+        "w": 235,
+        "h": 379
+      },
+      "scale": 1.2688172043010753,
+      "source": "sources/kevin-extra.png",
+      "sourceBounds": {
+        "x": 1193,
+        "y": 586,
+        "w": 185,
+        "h": 299
+      },
+      "componentBounds": {
+        "x": 1195,
+        "y": 588,
+        "w": 181,
+        "h": 295,
+        "area": 26186,
+        "row": 2,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1240,
+        "y": 883,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 25,
+      "name": "low_block",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 115,
+        "y": 205,
+        "w": 209,
+        "h": 259
+      },
+      "scale": 1.2688172043010753,
+      "source": "sources/kevin-extra.png",
+      "sourceBounds": {
+        "x": 47,
+        "y": 901,
+        "w": 165,
+        "h": 204
+      },
+      "componentBounds": {
+        "x": 49,
+        "y": 903,
+        "w": 161,
+        "h": 200,
+        "area": 22729,
+        "row": 3,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 130,
+        "y": 1103,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 26,
+      "name": "body_hit",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 98,
+        "y": 205,
+        "w": 226,
+        "h": 259
+      },
+      "scale": 1.2688172043010753,
+      "source": "sources/kevin-extra.png",
+      "sourceBounds": {
+        "x": 308,
+        "y": 898,
+        "w": 178,
+        "h": 204
+      },
+      "componentBounds": {
+        "x": 310,
+        "y": 900,
+        "w": 174,
+        "h": 200,
+        "area": 20082,
+        "row": 3,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 404,
+        "y": 1100,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 27,
+      "name": "fall",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 16,
+        "y": 232,
+        "w": 409,
+        "h": 232
+      },
+      "scale": 1.2688172043010753,
+      "source": "sources/kevin-extra.png",
+      "sourceBounds": {
+        "x": 508,
+        "y": 896,
+        "w": 322,
+        "h": 183
+      },
+      "componentBounds": {
+        "x": 510,
+        "y": 898,
+        "w": 318,
+        "h": 179,
+        "area": 29604,
+        "row": 3,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 669,
+        "y": 1077,
+        "method": "horizontal-center"
+      }
+    },
+    {
+      "index": 28,
+      "name": "ground",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 8,
+        "y": 351,
+        "w": 424,
+        "h": 113
+      },
+      "scale": 1.2688172043010753,
+      "source": "sources/kevin-extra.png",
+      "sourceBounds": {
+        "x": 839,
+        "y": 1006,
+        "w": 334,
+        "h": 89
+      },
+      "componentBounds": {
+        "x": 841,
+        "y": 1008,
+        "w": 330,
+        "h": 85,
+        "area": 20826,
+        "row": 3,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 1006,
+        "y": 1093,
+        "method": "horizontal-center"
+      }
+    },
+    {
+      "index": 29,
+      "name": "rise",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 79,
+        "y": 215,
+        "w": 260,
+        "h": 249
+      },
+      "scale": 1.2688172043010753,
+      "source": "sources/kevin-extra.png",
+      "sourceBounds": {
+        "x": 1187,
+        "y": 903,
+        "w": 205,
+        "h": 196
+      },
+      "componentBounds": {
+        "x": 1189,
+        "y": 905,
+        "w": 201,
+        "h": 192,
+        "area": 23724,
+        "row": 3,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1298,
+        "y": 1097,
+        "method": "hip-band"
+      }
+    }
+  ],
+  "scales": {
+    "base": {
+      "scale": 0.9779005524861878,
+      "referenceHeight": 362,
+      "targetHeight": 354
+    },
+    "extra": {
+      "scale": 1.2688172043010753,
+      "referenceHeight": 279,
+      "targetHeight": 354
+    }
+  },
+  "sources": {
+    "base": {
+      "file": "sources/kevin-base.png",
+      "sha256": "2e93a930fb790a3dd7586e095b77c23d8b3c6d63486a5facfb43d0e22b757de3",
+      "width": 1983,
+      "height": 793,
+      "transparentFraction": 0.6672879628163475
+    },
+    "extra": {
+      "file": "sources/kevin-extra.png",
+      "sha256": "16fe8e454870c5d4376151bb6a27f34b843f5532a9fdcb3617d56061c0fdea11",
+      "width": 1402,
+      "height": 1122,
+      "transparentFraction": 0.5840294359216907
+    }
+  },
+  "files": {
+    "base": "kevin/spritesheet.webp",
+    "baseMobile": "kevin/spritesheet-mobile.webp",
+    "extra": "kevin/extra-20.webp",
+    "extraMobile": "kevin/extra-20-mobile.webp",
+    "portrait": "kevin/portrait.webp",
+    "preview": "kevin/contact-sheet.png"
+  },
+  "layoutHash": "ee7d43e0ebe6733bffd85a23e85bfaa73868814803a27ce15051c2e33aa785ea",
+  "qc": {
+    "reviewed": true,
+    "issues": [],
+    "sharedScalePerStrip": true,
+    "preservedSourceAlpha": true
+  }
+}

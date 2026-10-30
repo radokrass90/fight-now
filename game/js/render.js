@@ -45,7 +45,7 @@ function drawFighter(ctx, f, opt = {}) {
   if (f.vis === false) return;
   if (typeof CharacterArt !== 'undefined') {
     const rendered = CharacterArt.draw(ctx, f, opt);
-    if (rendered) return rendered;
+    if (rendered) { if(typeof WeaponArt!=='undefined')WeaponArt.draw(ctx,f,rendered); return rendered; }
   }
   const c = f.c, lk = c.look, p = f.pose;
   const sk = skeleton(c, p), w = c.w, s = c.h;
@@ -231,6 +231,7 @@ function limbPoint(c, sk, pose, limb) {
 
 function drawShadow(ctx, f) {
   if (f.vis === false) return;
+  if(typeof CharacterArt!=='undefined')CharacterArt.reflection?.(ctx,f);
   const k = clamp(1 - f.y / 260, 0.3, 1);
   const width=38*f.c.w*k*(f.lying?1.8:1)*(f.sc||1);
   ctx.save();ctx.translate(f.x,GROUND+3);ctx.scale(1,.19);

@@ -1,0 +1,1384 @@
+{
+  "id": "murat",
+  "name": "Murat „Beton“ Çelik",
+  "height": 1.02,
+  "base": "assets/fighters-reforged/murat/spritesheet.webp",
+  "extra": "assets/fighters-reforged/murat/extra-20.webp",
+  "mobileBase": "assets/fighters-reforged/murat/spritesheet-mobile.webp",
+  "mobileExtra": "assets/fighters-reforged/murat/extra-20-mobile.webp",
+  "portrait": "assets/fighters-reforged/murat/portrait.webp",
+  "status": "ready",
+  "frameCount": 30,
+  "frames": [
+    {
+      "index": 0,
+      "name": "idle",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 0,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 76,
+        "y": 97,
+        "w": 288,
+        "h": 367
+      },
+      "scale": 1.0028328611898016,
+      "source": "sources/murat-base.png",
+      "sourceBounds": {
+        "x": 62,
+        "y": 11,
+        "w": 287,
+        "h": 366
+      },
+      "componentBounds": {
+        "x": 64,
+        "y": 13,
+        "w": 283,
+        "h": 362,
+        "area": 42641,
+        "row": 0,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 206,
+        "y": 375,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 1,
+      "name": "block",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 512,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 82,
+        "y": 106,
+        "w": 284,
+        "h": 358
+      },
+      "scale": 1.0028328611898016,
+      "source": "sources/murat-base.png",
+      "sourceBounds": {
+        "x": 468,
+        "y": 20,
+        "w": 283,
+        "h": 357
+      },
+      "componentBounds": {
+        "x": 470,
+        "y": 22,
+        "w": 279,
+        "h": 353,
+        "area": 42324,
+        "row": 0,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 606,
+        "y": 375,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 2,
+      "name": "crouch",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1024,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 86,
+        "y": 198,
+        "w": 236,
+        "h": 266
+      },
+      "scale": 1.0028328611898016,
+      "source": "sources/murat-base.png",
+      "sourceBounds": {
+        "x": 864,
+        "y": 114,
+        "w": 235,
+        "h": 265
+      },
+      "componentBounds": {
+        "x": 866,
+        "y": 116,
+        "w": 231,
+        "h": 261,
+        "area": 36536,
+        "row": 0,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 998,
+        "y": 377,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 3,
+      "name": "jump",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1536,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 55,
+        "y": 174,
+        "w": 331,
+        "h": 290
+      },
+      "scale": 1.0028328611898016,
+      "source": "sources/murat-base.png",
+      "sourceBounds": {
+        "x": 1237,
+        "y": 13,
+        "w": 330,
+        "h": 289
+      },
+      "componentBounds": {
+        "x": 1239,
+        "y": 15,
+        "w": 326,
+        "h": 285,
+        "area": 39384,
+        "row": 0,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 1402,
+        "y": 300,
+        "method": "air-center"
+      }
+    },
+    {
+      "index": 4,
+      "name": "light_punch",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 2048,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 50,
+        "y": 106,
+        "w": 370,
+        "h": 358
+      },
+      "scale": 1.0028328611898016,
+      "source": "sources/murat-base.png",
+      "sourceBounds": {
+        "x": 1599,
+        "y": 22,
+        "w": 369,
+        "h": 357
+      },
+      "componentBounds": {
+        "x": 1601,
+        "y": 24,
+        "w": 365,
+        "h": 353,
+        "area": 44949,
+        "row": 0,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1769,
+        "y": 377,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 5,
+      "name": "heavy_punch",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 0,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 39,
+        "y": 119,
+        "w": 353,
+        "h": 345
+      },
+      "scale": 1.0028328611898016,
+      "source": "sources/murat-base.png",
+      "sourceBounds": {
+        "x": 17,
+        "y": 420,
+        "w": 352,
+        "h": 344
+      },
+      "componentBounds": {
+        "x": 19,
+        "y": 422,
+        "w": 348,
+        "h": 340,
+        "area": 45409,
+        "row": 1,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 197,
+        "y": 762,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 6,
+      "name": "light_kick",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 512,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 146,
+        "y": 108,
+        "w": 327,
+        "h": 356
+      },
+      "scale": 1.0028328611898016,
+      "source": "sources/murat-base.png",
+      "sourceBounds": {
+        "x": 449,
+        "y": 409,
+        "w": 326,
+        "h": 355
+      },
+      "componentBounds": {
+        "x": 451,
+        "y": 411,
+        "w": 322,
+        "h": 351,
+        "area": 39800,
+        "row": 1,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 523,
+        "y": 762,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 7,
+      "name": "heavy_kick",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1024,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 85,
+        "y": 106,
+        "w": 351,
+        "h": 358
+      },
+      "scale": 1.0028328611898016,
+      "source": "sources/murat-base.png",
+      "sourceBounds": {
+        "x": 820,
+        "y": 407,
+        "w": 350,
+        "h": 357
+      },
+      "componentBounds": {
+        "x": 822,
+        "y": 409,
+        "w": 346,
+        "h": 353,
+        "area": 41522,
+        "row": 1,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 955,
+        "y": 762,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 8,
+      "name": "hit",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1536,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 54,
+        "y": 118,
+        "w": 313,
+        "h": 346
+      },
+      "scale": 1.0028328611898016,
+      "source": "sources/murat-base.png",
+      "sourceBounds": {
+        "x": 1245,
+        "y": 422,
+        "w": 312,
+        "h": 345
+      },
+      "componentBounds": {
+        "x": 1247,
+        "y": 424,
+        "w": 308,
+        "h": 341,
+        "area": 46160,
+        "row": 1,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 1411,
+        "y": 765,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 9,
+      "name": "victory",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 2048,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 86,
+        "y": 98,
+        "w": 272,
+        "h": 366
+      },
+      "scale": 1.0028328611898016,
+      "source": "sources/murat-base.png",
+      "sourceBounds": {
+        "x": 1661,
+        "y": 403,
+        "w": 271,
+        "h": 365
+      },
+      "componentBounds": {
+        "x": 1663,
+        "y": 405,
+        "w": 267,
+        "h": 361,
+        "area": 40774,
+        "row": 1,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1795,
+        "y": 766,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 10,
+      "name": "walk_contact",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 62,
+        "y": 104,
+        "w": 299,
+        "h": 360
+      },
+      "scale": 1.2826086956521738,
+      "source": "sources/murat-extra.png",
+      "sourceBounds": {
+        "x": 31,
+        "y": 19,
+        "w": 233,
+        "h": 281
+      },
+      "componentBounds": {
+        "x": 33,
+        "y": 21,
+        "w": 229,
+        "h": 277,
+        "area": 25981,
+        "row": 0,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 154,
+        "y": 298,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 11,
+      "name": "walk_down",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 78,
+        "y": 109,
+        "w": 274,
+        "h": 355
+      },
+      "scale": 1.2826086956521738,
+      "source": "sources/murat-extra.png",
+      "sourceBounds": {
+        "x": 325,
+        "y": 24,
+        "w": 214,
+        "h": 277
+      },
+      "componentBounds": {
+        "x": 327,
+        "y": 26,
+        "w": 210,
+        "h": 273,
+        "area": 25558,
+        "row": 0,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 436,
+        "y": 299,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 12,
+      "name": "walk_pass",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 117,
+        "y": 105,
+        "w": 194,
+        "h": 359
+      },
+      "scale": 1.2826086956521738,
+      "source": "sources/murat-extra.png",
+      "sourceBounds": {
+        "x": 611,
+        "y": 21,
+        "w": 151,
+        "h": 280
+      },
+      "componentBounds": {
+        "x": 613,
+        "y": 23,
+        "w": 147,
+        "h": 276,
+        "area": 24567,
+        "row": 0,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 691,
+        "y": 299,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 13,
+      "name": "walk_up",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 106,
+        "y": 102,
+        "w": 237,
+        "h": 362
+      },
+      "scale": 1.2826086956521738,
+      "source": "sources/murat-extra.png",
+      "sourceBounds": {
+        "x": 882,
+        "y": 18,
+        "w": 185,
+        "h": 282
+      },
+      "componentBounds": {
+        "x": 884,
+        "y": 20,
+        "w": 181,
+        "h": 278,
+        "area": 24643,
+        "row": 0,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 971,
+        "y": 298,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 14,
+      "name": "walk_opposite",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 69,
+        "y": 104,
+        "w": 301,
+        "h": 360
+      },
+      "scale": 1.2826086956521738,
+      "source": "sources/murat-extra.png",
+      "sourceBounds": {
+        "x": 1138,
+        "y": 20,
+        "w": 235,
+        "h": 281
+      },
+      "componentBounds": {
+        "x": 1140,
+        "y": 22,
+        "w": 231,
+        "h": 277,
+        "area": 26579,
+        "row": 0,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1256,
+        "y": 299,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 15,
+      "name": "walk_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 89,
+        "y": 95,
+        "w": 271,
+        "h": 369
+      },
+      "scale": 1.2826086956521738,
+      "source": "sources/murat-extra.png",
+      "sourceBounds": {
+        "x": 28,
+        "y": 309,
+        "w": 211,
+        "h": 288
+      },
+      "componentBounds": {
+        "x": 30,
+        "y": 311,
+        "w": 207,
+        "h": 284,
+        "area": 27079,
+        "row": 1,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 130,
+        "y": 595,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 16,
+      "name": "jab_load",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 58,
+        "y": 120,
+        "w": 295,
+        "h": 344
+      },
+      "scale": 1.2826086956521738,
+      "source": "sources/murat-extra.png",
+      "sourceBounds": {
+        "x": 326,
+        "y": 328,
+        "w": 230,
+        "h": 268
+      },
+      "componentBounds": {
+        "x": 328,
+        "y": 330,
+        "w": 226,
+        "h": 264,
+        "area": 27271,
+        "row": 1,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 452,
+        "y": 594,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 17,
+      "name": "jab_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 77,
+        "y": 107,
+        "w": 288,
+        "h": 357
+      },
+      "scale": 0.7137096774193549,
+      "source": "sources/murat-corrections.png",
+      "sourceBounds": {
+        "x": 328,
+        "y": 12,
+        "w": 404,
+        "h": 500
+      },
+      "componentBounds": {
+        "x": 330,
+        "y": 14,
+        "w": 400,
+        "h": 496,
+        "area": 82499,
+        "row": 0,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 528,
+        "y": 510,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 18,
+      "name": "cross_load",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 46,
+        "y": 106,
+        "w": 292,
+        "h": 358
+      },
+      "scale": 1.2826086956521738,
+      "source": "sources/murat-extra.png",
+      "sourceBounds": {
+        "x": 860,
+        "y": 319,
+        "w": 228,
+        "h": 279
+      },
+      "componentBounds": {
+        "x": 862,
+        "y": 321,
+        "w": 224,
+        "h": 275,
+        "area": 29800,
+        "row": 1,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 996,
+        "y": 596,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 19,
+      "name": "cross_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 65,
+        "y": 107,
+        "w": 295,
+        "h": 357
+      },
+      "scale": 1.2826086956521738,
+      "source": "sources/murat-extra.png",
+      "sourceBounds": {
+        "x": 1144,
+        "y": 320,
+        "w": 230,
+        "h": 278
+      },
+      "componentBounds": {
+        "x": 1146,
+        "y": 322,
+        "w": 226,
+        "h": 274,
+        "area": 27313,
+        "row": 1,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1265,
+        "y": 596,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 20,
+      "name": "hook",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 44,
+        "y": 111,
+        "w": 355,
+        "h": 353
+      },
+      "scale": 1.2826086956521738,
+      "source": "sources/murat-extra.png",
+      "sourceBounds": {
+        "x": 21,
+        "y": 613,
+        "w": 277,
+        "h": 275
+      },
+      "componentBounds": {
+        "x": 23,
+        "y": 615,
+        "w": 273,
+        "h": 271,
+        "area": 28789,
+        "row": 2,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 158,
+        "y": 886,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 21,
+      "name": "uppercut",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 68,
+        "y": 107,
+        "w": 274,
+        "h": 357
+      },
+      "scale": 0.7137096774193549,
+      "source": "sources/murat-corrections.png",
+      "sourceBounds": {
+        "x": 867,
+        "y": 12,
+        "w": 384,
+        "h": 500
+      },
+      "componentBounds": {
+        "x": 869,
+        "y": 14,
+        "w": 380,
+        "h": 496,
+        "area": 77890,
+        "row": 0,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 1080,
+        "y": 510,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 22,
+      "name": "kick_chamber",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 189,
+        "y": 107,
+        "w": 243,
+        "h": 357
+      },
+      "scale": 0.7137096774193549,
+      "source": "sources/murat-corrections.png",
+      "sourceBounds": {
+        "x": 366,
+        "y": 514,
+        "w": 341,
+        "h": 500
+      },
+      "componentBounds": {
+        "x": 368,
+        "y": 516,
+        "w": 337,
+        "h": 496,
+        "area": 71633,
+        "row": 1,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 409,
+        "y": 1012,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 23,
+      "name": "kick_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 112,
+        "y": 106,
+        "w": 160,
+        "h": 358
+      },
+      "scale": 0.7137096774193549,
+      "source": "sources/murat-corrections.png",
+      "sourceBounds": {
+        "x": 943,
+        "y": 514,
+        "w": 224,
+        "h": 501
+      },
+      "componentBounds": {
+        "x": 945,
+        "y": 516,
+        "w": 220,
+        "h": 497,
+        "area": 66766,
+        "row": 1,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 1094,
+        "y": 1013,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 24,
+      "name": "knee",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 138,
+        "y": 83,
+        "w": 237,
+        "h": 381
+      },
+      "scale": 1.2826086956521738,
+      "source": "sources/murat-extra.png",
+      "sourceBounds": {
+        "x": 1180,
+        "y": 589,
+        "w": 185,
+        "h": 297
+      },
+      "componentBounds": {
+        "x": 1182,
+        "y": 591,
+        "w": 181,
+        "h": 293,
+        "area": 25600,
+        "row": 2,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1244,
+        "y": 884,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 25,
+      "name": "low_block",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 93,
+        "y": 213,
+        "w": 240,
+        "h": 251
+      },
+      "scale": 1.2826086956521738,
+      "source": "sources/murat-extra.png",
+      "sourceBounds": {
+        "x": 43,
+        "y": 905,
+        "w": 187,
+        "h": 196
+      },
+      "componentBounds": {
+        "x": 45,
+        "y": 907,
+        "w": 183,
+        "h": 192,
+        "area": 21606,
+        "row": 3,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 142,
+        "y": 1099,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 26,
+      "name": "body_hit",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 106,
+        "y": 232,
+        "w": 269,
+        "h": 232
+      },
+      "scale": 1.2826086956521738,
+      "source": "sources/murat-extra.png",
+      "sourceBounds": {
+        "x": 325,
+        "y": 921,
+        "w": 210,
+        "h": 181
+      },
+      "componentBounds": {
+        "x": 327,
+        "y": 923,
+        "w": 206,
+        "h": 177,
+        "area": 20232,
+        "row": 3,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 414,
+        "y": 1100,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 27,
+      "name": "fall",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 35,
+        "y": 231,
+        "w": 369,
+        "h": 233
+      },
+      "scale": 1.2826086956521738,
+      "source": "sources/murat-extra.png",
+      "sourceBounds": {
+        "x": 552,
+        "y": 912,
+        "w": 288,
+        "h": 182
+      },
+      "componentBounds": {
+        "x": 554,
+        "y": 914,
+        "w": 284,
+        "h": 178,
+        "area": 24612,
+        "row": 3,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 696,
+        "y": 1092,
+        "method": "horizontal-center"
+      }
+    },
+    {
+      "index": 28,
+      "name": "ground",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 24,
+        "y": 343,
+        "w": 391,
+        "h": 121
+      },
+      "scale": 1.2826086956521738,
+      "source": "sources/murat-extra.png",
+      "sourceBounds": {
+        "x": 840,
+        "y": 1009,
+        "w": 305,
+        "h": 94
+      },
+      "componentBounds": {
+        "x": 842,
+        "y": 1011,
+        "w": 301,
+        "h": 90,
+        "area": 16873,
+        "row": 3,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 992.5,
+        "y": 1101,
+        "method": "horizontal-center"
+      }
+    },
+    {
+      "index": 29,
+      "name": "rise",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 76,
+        "y": 232,
+        "w": 285,
+        "h": 232
+      },
+      "scale": 1.2826086956521738,
+      "source": "sources/murat-extra.png",
+      "sourceBounds": {
+        "x": 1175,
+        "y": 914,
+        "w": 222,
+        "h": 181
+      },
+      "componentBounds": {
+        "x": 1177,
+        "y": 916,
+        "w": 218,
+        "h": 177,
+        "area": 23741,
+        "row": 3,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1287,
+        "y": 1093,
+        "method": "hip-band"
+      }
+    }
+  ],
+  "scales": {
+    "base": {
+      "scale": 1.0028328611898016,
+      "referenceHeight": 353,
+      "targetHeight": 354
+    },
+    "extra": {
+      "scale": 1.2826086956521738,
+      "referenceHeight": 276,
+      "targetHeight": 354
+    },
+    "corrections": {
+      "scale": 0.7137096774193549,
+      "referenceHeight": 496,
+      "targetHeight": 354
+    }
+  },
+  "sources": {
+    "base": {
+      "file": "sources/murat-base.png",
+      "sha256": "715b622db253cf66826ae23a3755957235afdd68dd34fb6ab57ecc71cab71ba7",
+      "width": 1983,
+      "height": 793,
+      "transparentFraction": 0.6779396624142539
+    },
+    "extra": {
+      "file": "sources/murat-extra.png",
+      "sha256": "cdc37338b04de8a551966566a4a1fb6f1c2a34390db3f978b38a6b304d4f4037",
+      "width": 1402,
+      "height": 1122,
+      "transparentFraction": 0.6076829383030609
+    },
+    "corrections": {
+      "file": "sources/murat-corrections.png",
+      "sha256": "41e6b1094c8af73afe802081269aeeb4c92c2fb0a6844f75cec8f209554b04d6",
+      "width": 1536,
+      "height": 1024,
+      "transparentFraction": 0.7900810241699219
+    }
+  },
+  "files": {
+    "base": "murat/spritesheet.webp",
+    "baseMobile": "murat/spritesheet-mobile.webp",
+    "extra": "murat/extra-20.webp",
+    "extraMobile": "murat/extra-20-mobile.webp",
+    "portrait": "murat/portrait.webp",
+    "preview": "murat/contact-sheet.png"
+  },
+  "layoutHash": "358338830650eaeb42fc3f811d9ae67fb2165ec2e389d6c53f2acaee60c71920",
+  "qc": {
+    "reviewed": true,
+    "issues": [
+      {
+        "frame": 17,
+        "severity": "error",
+        "note": "Source extra7 is an extended jab instead of a jab recovery.",
+        "resolved": true
+      },
+      {
+        "frame": 21,
+        "severity": "error",
+        "note": "Source extra11 reads as a hook/elbow, not an uppercut.",
+        "resolved": true
+      },
+      {
+        "frame": 22,
+        "severity": "error",
+        "note": "Source extra12 is an uppercut instead of a kick chamber.",
+        "resolved": true
+      },
+      {
+        "frame": 23,
+        "severity": "error",
+        "note": "Source extra13 is a raised knee/chamber rather than a kick recovery.",
+        "resolved": true
+      }
+    ],
+    "sharedScalePerStrip": true,
+    "preservedSourceAlpha": true
+  }
+}

@@ -91,8 +91,9 @@ const Snd = {
 
 // ---------- вход: клавиатура, тъч, геймпад ----------
 const Keys = { down: new Set(), pressed: new Set() };
-const BLOCKED_KEYS = new Set(['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'Space', 'Slash', 'Tab']);
+const BLOCKED_KEYS = new Set(['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'Space', 'Slash']);
 addEventListener('keydown', e => {
+  if (['INPUT','TEXTAREA','SELECT'].includes(e.target?.tagName)||e.target?.isContentEditable) return;
   if (!e.repeat) Keys.pressed.add(e.code);
   Keys.down.add(e.code);
   if (BLOCKED_KEYS.has(e.code)) e.preventDefault();

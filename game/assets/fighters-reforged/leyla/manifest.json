@@ -1,0 +1,1347 @@
+{
+  "id": "leyla",
+  "name": "Leyla „Scheinwerfer“ Arslan",
+  "height": 0.97,
+  "base": "assets/fighters-reforged/leyla/spritesheet.webp",
+  "extra": "assets/fighters-reforged/leyla/extra-20.webp",
+  "mobileBase": "assets/fighters-reforged/leyla/spritesheet-mobile.webp",
+  "mobileExtra": "assets/fighters-reforged/leyla/extra-20-mobile.webp",
+  "portrait": "assets/fighters-reforged/leyla/portrait.webp",
+  "status": "ready",
+  "frameCount": 30,
+  "frames": [
+    {
+      "index": 0,
+      "name": "idle",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 0,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 73,
+        "y": 102,
+        "w": 277,
+        "h": 362
+      },
+      "scale": 0.954177897574124,
+      "source": "sources/leyla-base.png",
+      "sourceBounds": {
+        "x": 69,
+        "y": 4,
+        "w": 290,
+        "h": 379
+      },
+      "componentBounds": {
+        "x": 71,
+        "y": 6,
+        "w": 286,
+        "h": 375,
+        "area": 41954,
+        "row": 0,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 223,
+        "y": 381,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 1,
+      "name": "block",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 512,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 84,
+        "y": 106,
+        "w": 279,
+        "h": 358
+      },
+      "scale": 0.954177897574124,
+      "source": "sources/leyla-base.png",
+      "sourceBounds": {
+        "x": 463,
+        "y": 7,
+        "w": 292,
+        "h": 375
+      },
+      "componentBounds": {
+        "x": 465,
+        "y": 9,
+        "w": 288,
+        "h": 371,
+        "area": 40429,
+        "row": 0,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 606,
+        "y": 380,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 2,
+      "name": "crouch",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1024,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 99,
+        "y": 213,
+        "w": 265,
+        "h": 251
+      },
+      "scale": 0.954177897574124,
+      "source": "sources/leyla-base.png",
+      "sourceBounds": {
+        "x": 883,
+        "y": 119,
+        "w": 278,
+        "h": 263
+      },
+      "componentBounds": {
+        "x": 885,
+        "y": 121,
+        "w": 274,
+        "h": 259,
+        "area": 37146,
+        "row": 0,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 1010,
+        "y": 380,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 3,
+      "name": "jump",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1536,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 86,
+        "y": 195,
+        "w": 267,
+        "h": 269
+      },
+      "scale": 0.954177897574124,
+      "source": "sources/leyla-base.png",
+      "sourceBounds": {
+        "x": 1237,
+        "y": 4,
+        "w": 280,
+        "h": 282
+      },
+      "componentBounds": {
+        "x": 1239,
+        "y": 6,
+        "w": 276,
+        "h": 278,
+        "area": 34203,
+        "row": 0,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 1377,
+        "y": 284,
+        "method": "air-center"
+      }
+    },
+    {
+      "index": 4,
+      "name": "light_punch",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 2048,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 49,
+        "y": 109,
+        "w": 351,
+        "h": 355
+      },
+      "scale": 0.954177897574124,
+      "source": "sources/leyla-base.png",
+      "sourceBounds": {
+        "x": 1597,
+        "y": 12,
+        "w": 368,
+        "h": 372
+      },
+      "componentBounds": {
+        "x": 1599,
+        "y": 14,
+        "w": 364,
+        "h": 368,
+        "area": 40513,
+        "row": 0,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1776,
+        "y": 382,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 5,
+      "name": "heavy_punch",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 0,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 37,
+        "y": 121,
+        "w": 344,
+        "h": 343
+      },
+      "scale": 0.954177897574124,
+      "source": "sources/leyla-base.png",
+      "sourceBounds": {
+        "x": 30,
+        "y": 411,
+        "w": 361,
+        "h": 359
+      },
+      "componentBounds": {
+        "x": 32,
+        "y": 413,
+        "w": 357,
+        "h": 355,
+        "area": 40616,
+        "row": 1,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 222,
+        "y": 768,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 6,
+      "name": "light_kick",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 512,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 131,
+        "y": 113,
+        "w": 292,
+        "h": 351
+      },
+      "scale": 0.954177897574124,
+      "source": "sources/leyla-base.png",
+      "sourceBounds": {
+        "x": 464,
+        "y": 402,
+        "w": 306,
+        "h": 368
+      },
+      "componentBounds": {
+        "x": 466,
+        "y": 404,
+        "w": 302,
+        "h": 364,
+        "area": 35888,
+        "row": 1,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 557,
+        "y": 768,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 7,
+      "name": "heavy_kick",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1024,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 100,
+        "y": 111,
+        "w": 352,
+        "h": 353
+      },
+      "scale": 0.954177897574124,
+      "source": "sources/leyla-base.png",
+      "sourceBounds": {
+        "x": 813,
+        "y": 402,
+        "w": 369,
+        "h": 370
+      },
+      "componentBounds": {
+        "x": 815,
+        "y": 404,
+        "w": 365,
+        "h": 366,
+        "area": 39016,
+        "row": 1,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 939,
+        "y": 770,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 8,
+      "name": "hit",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1536,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 49,
+        "y": 103,
+        "w": 264,
+        "h": 361
+      },
+      "scale": 0.954177897574124,
+      "source": "sources/leyla-base.png",
+      "sourceBounds": {
+        "x": 1254,
+        "y": 393,
+        "w": 277,
+        "h": 378
+      },
+      "componentBounds": {
+        "x": 1256,
+        "y": 395,
+        "w": 273,
+        "h": 374,
+        "area": 45011,
+        "row": 1,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 1433,
+        "y": 769,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 9,
+      "name": "victory",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 2048,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 88,
+        "y": 96,
+        "w": 260,
+        "h": 368
+      },
+      "scale": 0.954177897574124,
+      "source": "sources/leyla-base.png",
+      "sourceBounds": {
+        "x": 1648,
+        "y": 386,
+        "w": 272,
+        "h": 386
+      },
+      "componentBounds": {
+        "x": 1650,
+        "y": 388,
+        "w": 268,
+        "h": 382,
+        "area": 38167,
+        "row": 1,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1786,
+        "y": 770,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 10,
+      "name": "walk_contact",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 85,
+        "y": 105,
+        "w": 277,
+        "h": 359
+      },
+      "scale": 1.2081911262798635,
+      "source": "sources/leyla-extra.png",
+      "sourceBounds": {
+        "x": 36,
+        "y": 17,
+        "w": 229,
+        "h": 297
+      },
+      "componentBounds": {
+        "x": 38,
+        "y": 19,
+        "w": 225,
+        "h": 293,
+        "area": 25929,
+        "row": 0,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 148,
+        "y": 312,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 11,
+      "name": "walk_down",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 85,
+        "y": 104,
+        "w": 267,
+        "h": 360
+      },
+      "scale": 1.2081911262798635,
+      "source": "sources/leyla-extra.png",
+      "sourceBounds": {
+        "x": 320,
+        "y": 15,
+        "w": 221,
+        "h": 298
+      },
+      "componentBounds": {
+        "x": 322,
+        "y": 17,
+        "w": 217,
+        "h": 294,
+        "area": 25719,
+        "row": 0,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 432,
+        "y": 311,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 12,
+      "name": "walk_pass",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 77,
+        "y": 111,
+        "w": 274,
+        "h": 353
+      },
+      "scale": 1.2081911262798635,
+      "source": "sources/leyla-extra.png",
+      "sourceBounds": {
+        "x": 587,
+        "y": 21,
+        "w": 227,
+        "h": 292
+      },
+      "componentBounds": {
+        "x": 589,
+        "y": 23,
+        "w": 223,
+        "h": 288,
+        "area": 25296,
+        "row": 0,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 705,
+        "y": 311,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 13,
+      "name": "walk_up",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 92,
+        "y": 104,
+        "w": 254,
+        "h": 360
+      },
+      "scale": 1.2081911262798635,
+      "source": "sources/leyla-extra.png",
+      "sourceBounds": {
+        "x": 878,
+        "y": 12,
+        "w": 210,
+        "h": 298
+      },
+      "componentBounds": {
+        "x": 880,
+        "y": 14,
+        "w": 206,
+        "h": 294,
+        "area": 24921,
+        "row": 0,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 984,
+        "y": 308,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 14,
+      "name": "walk_opposite",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 73,
+        "y": 112,
+        "w": 273,
+        "h": 352
+      },
+      "scale": 1.2081911262798635,
+      "source": "sources/leyla-extra.png",
+      "sourceBounds": {
+        "x": 1146,
+        "y": 22,
+        "w": 226,
+        "h": 291
+      },
+      "componentBounds": {
+        "x": 1148,
+        "y": 24,
+        "w": 222,
+        "h": 287,
+        "area": 24687,
+        "row": 0,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1268,
+        "y": 311,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 15,
+      "name": "walk_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 91,
+        "y": 99,
+        "w": 262,
+        "h": 365
+      },
+      "scale": 1.2081911262798635,
+      "source": "sources/leyla-extra.png",
+      "sourceBounds": {
+        "x": 33,
+        "y": 312,
+        "w": 217,
+        "h": 302
+      },
+      "componentBounds": {
+        "x": 35,
+        "y": 314,
+        "w": 213,
+        "h": 298,
+        "area": 26196,
+        "row": 1,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 140,
+        "y": 612,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 16,
+      "name": "jab_load",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 68,
+        "y": 112,
+        "w": 296,
+        "h": 352
+      },
+      "scale": 1.2081911262798635,
+      "source": "sources/leyla-extra.png",
+      "sourceBounds": {
+        "x": 309,
+        "y": 323,
+        "w": 245,
+        "h": 291
+      },
+      "componentBounds": {
+        "x": 311,
+        "y": 325,
+        "w": 241,
+        "h": 287,
+        "area": 27233,
+        "row": 1,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 435,
+        "y": 612,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 17,
+      "name": "jab_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 81,
+        "y": 108,
+        "w": 267,
+        "h": 356
+      },
+      "scale": 1.2081911262798635,
+      "source": "sources/leyla-extra.png",
+      "sourceBounds": {
+        "x": 594,
+        "y": 319,
+        "w": 221,
+        "h": 295
+      },
+      "componentBounds": {
+        "x": 596,
+        "y": 321,
+        "w": 217,
+        "h": 291,
+        "area": 25880,
+        "row": 1,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 709,
+        "y": 612,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 18,
+      "name": "cross_load",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 62,
+        "y": 105,
+        "w": 294,
+        "h": 359
+      },
+      "scale": 1.2081911262798635,
+      "source": "sources/leyla-extra.png",
+      "sourceBounds": {
+        "x": 867,
+        "y": 316,
+        "w": 243,
+        "h": 297
+      },
+      "componentBounds": {
+        "x": 869,
+        "y": 318,
+        "w": 239,
+        "h": 293,
+        "area": 28821,
+        "row": 1,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 998,
+        "y": 611,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 19,
+      "name": "cross_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 82,
+        "y": 99,
+        "w": 275,
+        "h": 365
+      },
+      "scale": 1.2081911262798635,
+      "source": "sources/leyla-extra.png",
+      "sourceBounds": {
+        "x": 1141,
+        "y": 312,
+        "w": 228,
+        "h": 302
+      },
+      "componentBounds": {
+        "x": 1143,
+        "y": 314,
+        "w": 224,
+        "h": 298,
+        "area": 26354,
+        "row": 1,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1255,
+        "y": 612,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 20,
+      "name": "hook",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 42,
+        "y": 98,
+        "w": 313,
+        "h": 366
+      },
+      "scale": 1.2081911262798635,
+      "source": "sources/leyla-extra.png",
+      "sourceBounds": {
+        "x": 24,
+        "y": 628,
+        "w": 259,
+        "h": 303
+      },
+      "componentBounds": {
+        "x": 26,
+        "y": 630,
+        "w": 255,
+        "h": 299,
+        "area": 28515,
+        "row": 2,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 171,
+        "y": 929,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 21,
+      "name": "uppercut",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 70,
+        "y": 39,
+        "w": 273,
+        "h": 425
+      },
+      "scale": 1.2081911262798635,
+      "source": "sources/leyla-extra.png",
+      "sourceBounds": {
+        "x": 326,
+        "y": 579,
+        "w": 226,
+        "h": 352
+      },
+      "componentBounds": {
+        "x": 328,
+        "y": 581,
+        "w": 222,
+        "h": 348,
+        "area": 29677,
+        "row": 2,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 450,
+        "y": 929,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 22,
+      "name": "kick_chamber",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 137,
+        "y": 77,
+        "w": 193,
+        "h": 387
+      },
+      "scale": 1.2081911262798635,
+      "source": "sources/leyla-extra.png",
+      "sourceBounds": {
+        "x": 639,
+        "y": 609,
+        "w": 160,
+        "h": 320
+      },
+      "componentBounds": {
+        "x": 641,
+        "y": 611,
+        "w": 156,
+        "h": 316,
+        "area": 25927,
+        "row": 2,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 708,
+        "y": 927,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 23,
+      "name": "kick_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 74,
+        "y": 85,
+        "w": 190,
+        "h": 379
+      },
+      "scale": 1.2081911262798635,
+      "source": "sources/leyla-extra.png",
+      "sourceBounds": {
+        "x": 909,
+        "y": 614,
+        "w": 157,
+        "h": 314
+      },
+      "componentBounds": {
+        "x": 911,
+        "y": 616,
+        "w": 153,
+        "h": 310,
+        "area": 23340,
+        "row": 2,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 1030,
+        "y": 926,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 24,
+      "name": "knee",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 141,
+        "y": 82,
+        "w": 249,
+        "h": 382
+      },
+      "scale": 1.2081911262798635,
+      "source": "sources/leyla-extra.png",
+      "sourceBounds": {
+        "x": 1194,
+        "y": 613,
+        "w": 206,
+        "h": 316
+      },
+      "componentBounds": {
+        "x": 1196,
+        "y": 615,
+        "w": 202,
+        "h": 312,
+        "area": 25810,
+        "row": 2,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1259,
+        "y": 927,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 25,
+      "name": "low_block",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 102,
+        "y": 248,
+        "w": 225,
+        "h": 216
+      },
+      "scale": 1.2081911262798635,
+      "source": "sources/leyla-extra.png",
+      "sourceBounds": {
+        "x": 46,
+        "y": 931,
+        "w": 186,
+        "h": 179
+      },
+      "componentBounds": {
+        "x": 48,
+        "y": 933,
+        "w": 182,
+        "h": 175,
+        "area": 19697,
+        "row": 3,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 144,
+        "y": 1108,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 26,
+      "name": "body_hit",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 116,
+        "y": 253,
+        "w": 226,
+        "h": 211
+      },
+      "scale": 1.2081911262798635,
+      "source": "sources/leyla-extra.png",
+      "sourceBounds": {
+        "x": 319,
+        "y": 935,
+        "w": 187,
+        "h": 175
+      },
+      "componentBounds": {
+        "x": 321,
+        "y": 937,
+        "w": 183,
+        "h": 171,
+        "area": 18175,
+        "row": 3,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 405,
+        "y": 1108,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 27,
+      "name": "fall",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 39,
+        "y": 260,
+        "w": 361,
+        "h": 204
+      },
+      "scale": 1.2081911262798635,
+      "source": "sources/leyla-extra.png",
+      "sourceBounds": {
+        "x": 533,
+        "y": 934,
+        "w": 299,
+        "h": 169
+      },
+      "componentBounds": {
+        "x": 535,
+        "y": 936,
+        "w": 295,
+        "h": 165,
+        "area": 24119,
+        "row": 3,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 682.5,
+        "y": 1101,
+        "method": "horizontal-center"
+      }
+    },
+    {
+      "index": 28,
+      "name": "ground",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 24,
+        "y": 338,
+        "w": 393,
+        "h": 126
+      },
+      "scale": 1.2081911262798635,
+      "source": "sources/leyla-extra.png",
+      "sourceBounds": {
+        "x": 840,
+        "y": 999,
+        "w": 325,
+        "h": 104
+      },
+      "componentBounds": {
+        "x": 842,
+        "y": 1001,
+        "w": 321,
+        "h": 100,
+        "area": 21932,
+        "row": 3,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 1002.5,
+        "y": 1101,
+        "method": "horizontal-center"
+      }
+    },
+    {
+      "index": 29,
+      "name": "rise",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 110,
+        "y": 247,
+        "w": 250,
+        "h": 217
+      },
+      "scale": 1.2081911262798635,
+      "source": "sources/leyla-extra.png",
+      "sourceBounds": {
+        "x": 1177,
+        "y": 930,
+        "w": 207,
+        "h": 180
+      },
+      "componentBounds": {
+        "x": 1179,
+        "y": 932,
+        "w": 203,
+        "h": 176,
+        "area": 19951,
+        "row": 3,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1268,
+        "y": 1108,
+        "method": "hip-band"
+      }
+    }
+  ],
+  "scales": {
+    "base": {
+      "scale": 0.954177897574124,
+      "referenceHeight": 371,
+      "targetHeight": 354
+    },
+    "extra": {
+      "scale": 1.2081911262798635,
+      "referenceHeight": 293,
+      "targetHeight": 354
+    }
+  },
+  "sources": {
+    "base": {
+      "file": "sources/leyla-base.png",
+      "sha256": "61f2e1507a4b4a963814dee150dea8a2ee575920fc6fca110cedca08b9e70ced",
+      "width": 1983,
+      "height": 793,
+      "transparentFraction": 0.698427809139349
+    },
+    "extra": {
+      "file": "sources/leyla-extra.png",
+      "sha256": "c0e57a0ba188ff683a35d7ba280043caf50e042a869f018718d51fdfd849a1e5",
+      "width": 1402,
+      "height": 1122,
+      "transparentFraction": 0.6096498254339993
+    }
+  },
+  "files": {
+    "base": "leyla/spritesheet.webp",
+    "baseMobile": "leyla/spritesheet-mobile.webp",
+    "extra": "leyla/extra-20.webp",
+    "extraMobile": "leyla/extra-20-mobile.webp",
+    "portrait": "leyla/portrait.webp",
+    "preview": "leyla/contact-sheet.png"
+  },
+  "layoutHash": "ee7d43e0ebe6733bffd85a23e85bfaa73868814803a27ce15051c2e33aa785ea",
+  "qc": {
+    "reviewed": true,
+    "issues": [],
+    "sharedScalePerStrip": true,
+    "preservedSourceAlpha": true
+  }
+}

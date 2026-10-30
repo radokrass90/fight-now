@@ -1,0 +1,1347 @@
+{
+  "id": "yasmin",
+  "name": "Yasmin „Flex“ Dörfler",
+  "height": 0.98,
+  "base": "assets/fighters-reforged/yasmin/spritesheet.webp",
+  "extra": "assets/fighters-reforged/yasmin/extra-20.webp",
+  "mobileBase": "assets/fighters-reforged/yasmin/spritesheet-mobile.webp",
+  "mobileExtra": "assets/fighters-reforged/yasmin/extra-20-mobile.webp",
+  "portrait": "assets/fighters-reforged/yasmin/portrait.webp",
+  "status": "ready",
+  "frameCount": 30,
+  "frames": [
+    {
+      "index": 0,
+      "name": "idle",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 0,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 91,
+        "y": 104,
+        "w": 255,
+        "h": 360
+      },
+      "scale": 0.9123711340206185,
+      "source": "sources/yasmin-base.png",
+      "sourceBounds": {
+        "x": 81,
+        "y": 2,
+        "w": 280,
+        "h": 395
+      },
+      "componentBounds": {
+        "x": 83,
+        "y": 4,
+        "w": 276,
+        "h": 391,
+        "area": 37644,
+        "row": 0,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 222,
+        "y": 395,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 1,
+      "name": "block",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 512,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 98,
+        "y": 105,
+        "w": 242,
+        "h": 359
+      },
+      "scale": 0.9123711340206185,
+      "source": "sources/yasmin-base.png",
+      "sourceBounds": {
+        "x": 477,
+        "y": 3,
+        "w": 265,
+        "h": 393
+      },
+      "componentBounds": {
+        "x": 479,
+        "y": 5,
+        "w": 261,
+        "h": 389,
+        "area": 35734,
+        "row": 0,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 611,
+        "y": 394,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 2,
+      "name": "crouch",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1024,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 96,
+        "y": 217,
+        "w": 256,
+        "h": 247
+      },
+      "scale": 0.9123711340206185,
+      "source": "sources/yasmin-base.png",
+      "sourceBounds": {
+        "x": 867,
+        "y": 125,
+        "w": 281,
+        "h": 271
+      },
+      "componentBounds": {
+        "x": 869,
+        "y": 127,
+        "w": 277,
+        "h": 267,
+        "area": 31972,
+        "row": 0,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 1003,
+        "y": 394,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 3,
+      "name": "jump",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1536,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 104,
+        "y": 191,
+        "w": 232,
+        "h": 273
+      },
+      "scale": 0.9123711340206185,
+      "source": "sources/yasmin-base.png",
+      "sourceBounds": {
+        "x": 1232,
+        "y": 7,
+        "w": 254,
+        "h": 299
+      },
+      "componentBounds": {
+        "x": 1234,
+        "y": 9,
+        "w": 250,
+        "h": 295,
+        "area": 38860,
+        "row": 0,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 1359,
+        "y": 304,
+        "method": "air-center"
+      }
+    },
+    {
+      "index": 4,
+      "name": "light_punch",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 2048,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 79,
+        "y": 106,
+        "w": 338,
+        "h": 358
+      },
+      "scale": 0.9123711340206185,
+      "source": "sources/yasmin-base.png",
+      "sourceBounds": {
+        "x": 1595,
+        "y": 5,
+        "w": 370,
+        "h": 392
+      },
+      "componentBounds": {
+        "x": 1597,
+        "y": 7,
+        "w": 366,
+        "h": 388,
+        "area": 39848,
+        "row": 0,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1750,
+        "y": 395,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 5,
+      "name": "heavy_punch",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 0,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 73,
+        "y": 115,
+        "w": 299,
+        "h": 349
+      },
+      "scale": 0.9123711340206185,
+      "source": "sources/yasmin-base.png",
+      "sourceBounds": {
+        "x": 47,
+        "y": 406,
+        "w": 328,
+        "h": 382
+      },
+      "componentBounds": {
+        "x": 49,
+        "y": 408,
+        "w": 324,
+        "h": 378,
+        "area": 40597,
+        "row": 1,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 208,
+        "y": 786,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 6,
+      "name": "light_kick",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 512,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 119,
+        "y": 114,
+        "w": 310,
+        "h": 350
+      },
+      "scale": 0.9123711340206185,
+      "source": "sources/yasmin-base.png",
+      "sourceBounds": {
+        "x": 441,
+        "y": 402,
+        "w": 340,
+        "h": 384
+      },
+      "componentBounds": {
+        "x": 443,
+        "y": 404,
+        "w": 336,
+        "h": 380,
+        "area": 34326,
+        "row": 1,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 552,
+        "y": 784,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 7,
+      "name": "heavy_kick",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1024,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 69,
+        "y": 118,
+        "w": 343,
+        "h": 346
+      },
+      "scale": 0.9123711340206185,
+      "source": "sources/yasmin-base.png",
+      "sourceBounds": {
+        "x": 810,
+        "y": 407,
+        "w": 376,
+        "h": 379
+      },
+      "componentBounds": {
+        "x": 812,
+        "y": 409,
+        "w": 372,
+        "h": 375,
+        "area": 35533,
+        "row": 1,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 975,
+        "y": 784,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 8,
+      "name": "hit",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1536,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 16,
+        "y": 148,
+        "w": 280,
+        "h": 316
+      },
+      "scale": 0.9123711340206185,
+      "source": "sources/yasmin-base.png",
+      "sourceBounds": {
+        "x": 1208,
+        "y": 442,
+        "w": 307,
+        "h": 346
+      },
+      "componentBounds": {
+        "x": 1210,
+        "y": 444,
+        "w": 303,
+        "h": 342,
+        "area": 40845,
+        "row": 1,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 1432,
+        "y": 786,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 9,
+      "name": "victory",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 2048,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 95,
+        "y": 94,
+        "w": 221,
+        "h": 370
+      },
+      "scale": 0.9123711340206185,
+      "source": "sources/yasmin-base.png",
+      "sourceBounds": {
+        "x": 1670,
+        "y": 380,
+        "w": 242,
+        "h": 406
+      },
+      "componentBounds": {
+        "x": 1672,
+        "y": 382,
+        "w": 238,
+        "h": 402,
+        "area": 30208,
+        "row": 1,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1807,
+        "y": 784,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 10,
+      "name": "walk_contact",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 82,
+        "y": 104,
+        "w": 257,
+        "h": 360
+      },
+      "scale": 1.195945945945946,
+      "source": "sources/yasmin-extra.png",
+      "sourceBounds": {
+        "x": 35,
+        "y": 5,
+        "w": 215,
+        "h": 301
+      },
+      "componentBounds": {
+        "x": 37,
+        "y": 7,
+        "w": 211,
+        "h": 297,
+        "area": 23697,
+        "row": 0,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 150,
+        "y": 304,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 11,
+      "name": "walk_down",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 98,
+        "y": 103,
+        "w": 238,
+        "h": 361
+      },
+      "scale": 1.195945945945946,
+      "source": "sources/yasmin-extra.png",
+      "sourceBounds": {
+        "x": 338,
+        "y": 4,
+        "w": 199,
+        "h": 302
+      },
+      "componentBounds": {
+        "x": 340,
+        "y": 6,
+        "w": 195,
+        "h": 298,
+        "area": 23089,
+        "row": 0,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 440,
+        "y": 304,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 12,
+      "name": "walk_pass",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 118,
+        "y": 102,
+        "w": 185,
+        "h": 362
+      },
+      "scale": 1.195945945945946,
+      "source": "sources/yasmin-extra.png",
+      "sourceBounds": {
+        "x": 625,
+        "y": 3,
+        "w": 155,
+        "h": 303
+      },
+      "componentBounds": {
+        "x": 627,
+        "y": 5,
+        "w": 151,
+        "h": 299,
+        "area": 22217,
+        "row": 0,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 710,
+        "y": 304,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 13,
+      "name": "walk_up",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 75,
+        "y": 106,
+        "w": 266,
+        "h": 358
+      },
+      "scale": 1.195945945945946,
+      "source": "sources/yasmin-extra.png",
+      "sourceBounds": {
+        "x": 869,
+        "y": 7,
+        "w": 222,
+        "h": 299
+      },
+      "componentBounds": {
+        "x": 871,
+        "y": 9,
+        "w": 218,
+        "h": 295,
+        "area": 24606,
+        "row": 0,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 990,
+        "y": 304,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 14,
+      "name": "walk_opposite",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 94,
+        "y": 105,
+        "w": 248,
+        "h": 359
+      },
+      "scale": 1.195945945945946,
+      "source": "sources/yasmin-extra.png",
+      "sourceBounds": {
+        "x": 1158,
+        "y": 7,
+        "w": 207,
+        "h": 300
+      },
+      "componentBounds": {
+        "x": 1160,
+        "y": 9,
+        "w": 203,
+        "h": 296,
+        "area": 23894,
+        "row": 0,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1263,
+        "y": 305,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 15,
+      "name": "walk_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 93,
+        "y": 109,
+        "w": 250,
+        "h": 355
+      },
+      "scale": 1.195945945945946,
+      "source": "sources/yasmin-extra.png",
+      "sourceBounds": {
+        "x": 40,
+        "y": 306,
+        "w": 209,
+        "h": 297
+      },
+      "componentBounds": {
+        "x": 42,
+        "y": 308,
+        "w": 205,
+        "h": 293,
+        "area": 24183,
+        "row": 1,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 146,
+        "y": 601,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 16,
+      "name": "jab_load",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 90,
+        "y": 116,
+        "w": 294,
+        "h": 348
+      },
+      "scale": 1.195945945945946,
+      "source": "sources/yasmin-extra.png",
+      "sourceBounds": {
+        "x": 300,
+        "y": 312,
+        "w": 246,
+        "h": 291
+      },
+      "componentBounds": {
+        "x": 302,
+        "y": 314,
+        "w": 242,
+        "h": 287,
+        "area": 25595,
+        "row": 1,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 409,
+        "y": 601,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 17,
+      "name": "jab_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 94,
+        "y": 115,
+        "w": 255,
+        "h": 349
+      },
+      "scale": 1.195945945945946,
+      "source": "sources/yasmin-extra.png",
+      "sourceBounds": {
+        "x": 600,
+        "y": 311,
+        "w": 213,
+        "h": 292
+      },
+      "componentBounds": {
+        "x": 602,
+        "y": 313,
+        "w": 209,
+        "h": 288,
+        "area": 24140,
+        "row": 1,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 705,
+        "y": 601,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 18,
+      "name": "cross_load",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 59,
+        "y": 116,
+        "w": 297,
+        "h": 348
+      },
+      "scale": 1.195945945945946,
+      "source": "sources/yasmin-extra.png",
+      "sourceBounds": {
+        "x": 877,
+        "y": 311,
+        "w": 248,
+        "h": 291
+      },
+      "componentBounds": {
+        "x": 879,
+        "y": 313,
+        "w": 244,
+        "h": 287,
+        "area": 26243,
+        "row": 1,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 1012,
+        "y": 600,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 19,
+      "name": "cross_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 96,
+        "y": 115,
+        "w": 264,
+        "h": 349
+      },
+      "scale": 1.195945945945946,
+      "source": "sources/yasmin-extra.png",
+      "sourceBounds": {
+        "x": 1162,
+        "y": 312,
+        "w": 221,
+        "h": 292
+      },
+      "componentBounds": {
+        "x": 1164,
+        "y": 314,
+        "w": 217,
+        "h": 288,
+        "area": 24691,
+        "row": 1,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1266,
+        "y": 602,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 20,
+      "name": "hook",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 65,
+        "y": 110,
+        "w": 287,
+        "h": 354
+      },
+      "scale": 1.195945945945946,
+      "source": "sources/yasmin-extra.png",
+      "sourceBounds": {
+        "x": 30,
+        "y": 625,
+        "w": 240,
+        "h": 296
+      },
+      "componentBounds": {
+        "x": 32,
+        "y": 627,
+        "w": 236,
+        "h": 292,
+        "area": 28439,
+        "row": 2,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 160,
+        "y": 919,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 21,
+      "name": "uppercut",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 90,
+        "y": 77,
+        "w": 234,
+        "h": 387
+      },
+      "scale": 1.195945945945946,
+      "source": "sources/yasmin-extra.png",
+      "sourceBounds": {
+        "x": 351,
+        "y": 598,
+        "w": 196,
+        "h": 324
+      },
+      "componentBounds": {
+        "x": 353,
+        "y": 600,
+        "w": 192,
+        "h": 320,
+        "area": 23838,
+        "row": 2,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 460,
+        "y": 920,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 22,
+      "name": "kick_chamber",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 97,
+        "y": 74,
+        "w": 242,
+        "h": 390
+      },
+      "scale": 1.195945945945946,
+      "source": "sources/yasmin-extra.png",
+      "sourceBounds": {
+        "x": 604,
+        "y": 600,
+        "w": 202,
+        "h": 326
+      },
+      "componentBounds": {
+        "x": 606,
+        "y": 602,
+        "w": 198,
+        "h": 322,
+        "area": 25892,
+        "row": 2,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 707,
+        "y": 924,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 23,
+      "name": "kick_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 90,
+        "y": 82,
+        "w": 224,
+        "h": 382
+      },
+      "scale": 1.195945945945946,
+      "source": "sources/yasmin-extra.png",
+      "sourceBounds": {
+        "x": 890,
+        "y": 604,
+        "w": 187,
+        "h": 319
+      },
+      "componentBounds": {
+        "x": 892,
+        "y": 606,
+        "w": 183,
+        "h": 315,
+        "area": 24734,
+        "row": 2,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 999,
+        "y": 921,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 24,
+      "name": "knee",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 134,
+        "y": 78,
+        "w": 266,
+        "h": 386
+      },
+      "scale": 1.195945945945946,
+      "source": "sources/yasmin-extra.png",
+      "sourceBounds": {
+        "x": 1164,
+        "y": 599,
+        "w": 222,
+        "h": 323
+      },
+      "componentBounds": {
+        "x": 1166,
+        "y": 601,
+        "w": 218,
+        "h": 319,
+        "area": 26067,
+        "row": 2,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1236,
+        "y": 920,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 25,
+      "name": "low_block",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 90,
+        "y": 243,
+        "w": 219,
+        "h": 221
+      },
+      "scale": 1.195945945945946,
+      "source": "sources/yasmin-extra.png",
+      "sourceBounds": {
+        "x": 39,
+        "y": 925,
+        "w": 183,
+        "h": 185
+      },
+      "componentBounds": {
+        "x": 41,
+        "y": 927,
+        "w": 179,
+        "h": 181,
+        "area": 18927,
+        "row": 3,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 148,
+        "y": 1108,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 26,
+      "name": "body_hit",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 135,
+        "y": 243,
+        "w": 191,
+        "h": 221
+      },
+      "scale": 1.195945945945946,
+      "source": "sources/yasmin-extra.png",
+      "sourceBounds": {
+        "x": 338,
+        "y": 926,
+        "w": 160,
+        "h": 185
+      },
+      "componentBounds": {
+        "x": 340,
+        "y": 928,
+        "w": 156,
+        "h": 181,
+        "area": 17694,
+        "row": 3,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 409,
+        "y": 1109,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 27,
+      "name": "fall",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 32,
+        "y": 295,
+        "w": 376,
+        "h": 169
+      },
+      "scale": 1.195945945945946,
+      "source": "sources/yasmin-extra.png",
+      "sourceBounds": {
+        "x": 508,
+        "y": 961,
+        "w": 314,
+        "h": 141
+      },
+      "componentBounds": {
+        "x": 510,
+        "y": 963,
+        "w": 310,
+        "h": 137,
+        "area": 22203,
+        "row": 3,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 665,
+        "y": 1100,
+        "method": "horizontal-center"
+      }
+    },
+    {
+      "index": 28,
+      "name": "ground",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 14,
+        "y": 355,
+        "w": 411,
+        "h": 109
+      },
+      "scale": 1.195945945945946,
+      "source": "sources/yasmin-extra.png",
+      "sourceBounds": {
+        "x": 817,
+        "y": 1019,
+        "w": 344,
+        "h": 91
+      },
+      "componentBounds": {
+        "x": 819,
+        "y": 1021,
+        "w": 340,
+        "h": 87,
+        "area": 19482,
+        "row": 3,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 989,
+        "y": 1108,
+        "method": "horizontal-center"
+      }
+    },
+    {
+      "index": 29,
+      "name": "rise",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 88,
+        "y": 227,
+        "w": 242,
+        "h": 237
+      },
+      "scale": 1.195945945945946,
+      "source": "sources/yasmin-extra.png",
+      "sourceBounds": {
+        "x": 1173,
+        "y": 910,
+        "w": 202,
+        "h": 198
+      },
+      "componentBounds": {
+        "x": 1175,
+        "y": 912,
+        "w": 198,
+        "h": 194,
+        "area": 21125,
+        "row": 3,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1283,
+        "y": 1106,
+        "method": "hip-band"
+      }
+    }
+  ],
+  "scales": {
+    "base": {
+      "scale": 0.9123711340206185,
+      "referenceHeight": 388,
+      "targetHeight": 354
+    },
+    "extra": {
+      "scale": 1.195945945945946,
+      "referenceHeight": 296,
+      "targetHeight": 354
+    }
+  },
+  "sources": {
+    "base": {
+      "file": "sources/yasmin-base.png",
+      "sha256": "26acb4918a29e9823fcbde3344c143394c8a5a3a41a4429b30a965eca8f9225f",
+      "width": 1983,
+      "height": 793,
+      "transparentFraction": 0.6912418864255376
+    },
+    "extra": {
+      "file": "sources/yasmin-extra.png",
+      "sha256": "36e8a1b98f109174d5801e6417ca3660f0087d223d691637c8ff0cf0921fa5c2",
+      "width": 1402,
+      "height": 1122,
+      "transparentFraction": 0.6104571772944686
+    }
+  },
+  "files": {
+    "base": "yasmin/spritesheet.webp",
+    "baseMobile": "yasmin/spritesheet-mobile.webp",
+    "extra": "yasmin/extra-20.webp",
+    "extraMobile": "yasmin/extra-20-mobile.webp",
+    "portrait": "yasmin/portrait.webp",
+    "preview": "yasmin/contact-sheet.png"
+  },
+  "layoutHash": "ee7d43e0ebe6733bffd85a23e85bfaa73868814803a27ce15051c2e33aa785ea",
+  "qc": {
+    "reviewed": true,
+    "issues": [],
+    "sharedScalePerStrip": true,
+    "preservedSourceAlpha": true
+  }
+}

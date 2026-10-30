@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="de">
+<meta charset="utf-8">
+<title>Fight Now — Street Combat</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#0b0a10">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Russo+One&family=Rubik:wght@400;600&display=swap">
+<style>
+  /* Еднотемен „аркаден“ вид: тъмен асфалт, натриево жълто, неоново червено. */
+  :root {
+    --asphalt: #0b0a10; --sodium: #ffd23d; --neon: #ff3b5c; --steel: #2a2633; --chalk: #f2efe8;
+    --font-d: "Russo One", Impact, "Arial Black", sans-serif; --font-b: "Rubik", "Segoe UI", Arial, sans-serif;
+    color-scheme: dark;
+  }
+  html, body { height: 100%; }
+  body { margin: 0; background: var(--asphalt); color: var(--chalk); font-family: var(--font-b); overflow: hidden; touch-action: none; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
+  #wrap { padding:env(safe-area-inset-top,0px) env(safe-area-inset-right,0px) env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px); position: fixed; inset: 0; display: grid; place-items: center; }
+  #c { display: block; background: #000; image-rendering: auto; }
+  #loading { position: fixed; inset: 0; display: grid; place-items: center; font-family: var(--font-d); color: var(--sodium); font-size: 28px; letter-spacing: 0.08em; }
+  #touch { position: fixed; inset: 0; pointer-events: none; z-index: 5; }
+  #stick { position: absolute; left: calc(env(safe-area-inset-left, 0px) + 24px); bottom: calc(env(safe-area-inset-bottom, 0px) + 20px); width: 150px; height: 150px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,255,255,0.08), rgba(255,255,255,0.03)); border: 2px solid rgba(255,255,255,0.25); pointer-events: auto; touch-action: none; }
+  #knob { position: absolute; left: 50%; top: 50%; width: 64px; height: 64px; margin: -32px 0 0 -32px; border-radius: 50%; background: rgba(255,210,61,0.55); border: 2px solid rgba(255,255,255,0.6); }
+  #btns { position: absolute; right: calc(env(safe-area-inset-right, 0px) + 18px); bottom: calc(env(safe-area-inset-bottom, 0px) + 16px); display: grid; grid-template-columns: repeat(3, 66px); gap: 10px; pointer-events: auto; }
+  #btns button, #finBtn, #pauseBtn { width: 66px; height: 66px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.5); color: #fff; font-family: var(--font-d); font-size: 11px; letter-spacing: 0.02em; touch-action: none; padding: 0; }
+  #btns button { background: rgba(42,38,51,0.6); }
+  #btns button[data-k="lp"], #btns button[data-k="hp"] { background: rgba(59,130,246,0.45); }
+  #btns button[data-k="lk"], #btns button[data-k="hk"] { background: rgba(239,68,68,0.45); }
+  #btns button[data-k="sp"] { background: rgba(255,210,61,0.5); color: #0b0a10; }
+  #btns button.on, #finBtn.on { transform: scale(0.92); filter: brightness(1.6); }
+  #pauseBtn { position: absolute; top: calc(env(safe-area-inset-top, 0px) + 8px); left: 50%; margin-left: -22px; width: 44px; height: 44px; background: rgba(0,0,0,0.4); pointer-events: auto; font-size: 14px; }
+  #finBtn { position: absolute; left: 50%; top: 58%; width: 150px; height: 64px; margin-left: -75px; border-radius: 12px; background: var(--neon); font-size: 20px; pointer-events: auto; animation: pulse 0.6s infinite alternate; }
+  @keyframes pulse { to { transform: scale(1.08); } }
+  @media (prefers-reduced-motion: reduce) { #finBtn { animation: none; } }
+  #rotate { display: none; position: fixed; inset: 0; z-index: 10; background: var(--asphalt); place-items: center; text-align: center; font-family: var(--font-d); color: var(--sodium); font-size: 22px; padding: 24px; }
+  [hidden] { display: none !important; }
+  @media (max-height: 420px) { #stick { width: 124px; height: 124px; } #btns { grid-template-columns: repeat(3, 56px); gap: 8px; } #btns button { width: 56px; height: 56px; font-size: 10px; } }
+
+  body.mobile-menu-open { touch-action:pan-y; }
+  #mobile-menu { position:fixed; inset:0; z-index:20; overflow-y:auto; overscroll-behavior:contain; touch-action:pan-y; padding:calc(env(safe-area-inset-top,0px) + 24px) max(20px,calc((100vw - 720px)/2)) calc(env(safe-area-inset-bottom,0px) + 28px); background:radial-gradient(ellipse at top,#253047,#0b0a10 75%); }
+  #mobile-menu h1 { font:clamp(25px,5vw,38px) var(--font-d); line-height:1.15; margin:8px 0 20px; }
+  #mobile-menu h2 { font-size:19px; margin:22px 0 8px; }
+  .eyebrow { color:var(--sodium); font:bold 14px var(--font-d); letter-spacing:.18em; margin:0; }
+  .mobile-copy { color:#bdc8da; line-height:1.55; font-size:15px; }
+  #mobile-menu button { display:block; width:100%; min-height:48px; padding:12px; margin:10px 0; color:#fff; background:#242c3e; border:1px solid #4b5972; border-radius:10px; font:bold 16px var(--font-b); touch-action:manipulation; }
+  #mobile-menu .mobile-primary { color:#141620; background:var(--sodium); border-color:var(--sodium); }
+  #mobile-menu .mobile-back { margin-top:22px; }
+  .mobile-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; }
+  #mobile-menu .mobile-grid button { margin:0; padding:4px; overflow:hidden; font-size:13px; }
+  .fighter-card img { width:100%; height:100px; object-fit:cover; object-position:50% 10%; display:block; }
+  #mobile-menu .mobile-grid strong { display:block; padding:8px 0; }
+  #mobile-menu .selected { border:2px solid var(--sodium); background:#3a3422; }
+  .arena-card img { width:100%; aspect-ratio:16/9; object-fit:cover; display:block; }
+  #mobile-toolbar { position:fixed; z-index:7; top:env(safe-area-inset-top,0px); left:env(safe-area-inset-left,0px); right:env(safe-area-inset-right,0px); display:flex; align-items:center; justify-content:flex-end; gap:8px; padding:4px 10px; height:40px; background:#101622; }
+  #mobile-toolbar span { margin-right:auto; color:#b8c6da; font-size:11px; }
+  #mobile-toolbar button { color:white; border:1px solid #58657d; background:#273246; border-radius:7px; min-height:32px; padding:4px 12px; }
+  body.mobile.playing #touch { background:none; }
+  body.mobile #stick { width:104px; height:104px; left:calc(env(safe-area-inset-left,0px) + 18px); bottom:calc(env(safe-area-inset-bottom,0px) + 6px); }
+  body.mobile #knob { width:46px; height:46px; margin:-23px 0 0 -23px; }
+  body.mobile #btns { grid-template-columns:repeat(3,48px); gap:6px; right:calc(env(safe-area-inset-right,0px) + 16px); bottom:calc(env(safe-area-inset-bottom,0px) + 6px); }
+  body.mobile #btns button { width:48px; height:48px; font-size:9px; }
+  body.mobile #pauseBtn { display:none; }
+  body.mobile #finBtn { top:42px; left:50%; width:130px; height:44px; margin-left:-65px; font-size:16px; }
+  body.mobile.portrait #stick { width:128px; height:128px; bottom:calc(env(safe-area-inset-bottom,0px) + 28px); }
+  body.mobile.portrait #btns { grid-template-columns:repeat(3,52px); bottom:calc(env(safe-area-inset-bottom,0px) + 28px); }
+  body.mobile.portrait #btns button { width:52px; height:52px; }
+  body.mobile.portrait.playing #touch { background:linear-gradient(transparent calc(100% - 204px),#111927 calc(100% - 200px)); }
+  @media(max-width:360px){body.mobile.portrait #stick{width:104px;height:104px;left:10px}body.mobile.portrait #btns{grid-template-columns:repeat(3,48px);right:10px}body.mobile.portrait #btns button{width:48px;height:48px}}
+  #language-picker{position:fixed;z-index:30;right:calc(env(safe-area-inset-right,0px) + 10px);top:calc(env(safe-area-inset-top,0px) + 8px);display:flex;gap:5px}
+  #language-picker[hidden]{display:none}
+  #language-picker button{font:bold 13px system-ui;color:#fff;background:#182130;border:1px solid #62738d;border-radius:7px;padding:8px 11px;min-height:36px;cursor:pointer}
+  #language-picker button[aria-pressed="true"]{background:#ffd23d;color:#151820;border-color:#ffd23d}
+  body.mobile #mobile-menu{padding-top:calc(env(safe-area-inset-top,0px) + 58px)}
+</style>
+
+<div id="wrap"><canvas id="c" width="960" height="540"></canvas></div>
+<div id="loading">FIGHT NOW…<small data-i18n="Loading menu…" style="font:14px system-ui;letter-spacing:0">Loading menu…</small></div>
+<div id="touch" hidden>
+  <div id="stick"><div id="knob"></div></div>
+  <div id="btns">
+    <button data-k="lp" data-i18n="PUNCH" data-i18n-aria="Punch" aria-label="Punch">PUNCH</button>
+    <button data-k="hp" data-i18n="HEAVY PUNCH" data-i18n-aria="Heavy punch" aria-label="Heavy punch">HEAVY PUNCH</button>
+    <button data-k="sp" data-i18n="SPECIAL" data-i18n-aria="Special" aria-label="Special">SPECIAL</button>
+    <button data-k="lk" data-i18n="KICK" data-i18n-aria="Kick" aria-label="Kick">KICK</button>
+    <button data-k="hk" data-i18n="HEAVY KICK" data-i18n-aria="Heavy kick" aria-label="Heavy kick">HEAVY KICK</button>
+    <button data-k="bl" data-i18n="BLOCK" data-i18n-aria="Block" aria-label="Block">BLOCK</button>
+  </div>
+  <button id="pauseBtn" data-i18n-aria="Pause" aria-label="Pause">II</button>
+  <button id="finBtn" data-k="fin" data-i18n="FINISHER" hidden>FINISHER</button>
+</div>
+<main id="mobile-menu" hidden data-i18n-aria="Game menu" aria-label="Game menu"></main>
+<div id="mobile-toolbar" hidden><span id="mobile-hint"></span><button id="fullscreen" data-i18n-aria="Full screen" aria-label="Full screen">⛶</button><button id="mobilePause" data-i18n-aria="Pause" aria-label="Pause" data-i18n="Pause">Pause</button></div>
+
+<nav id="language-picker" aria-label="Language"><button data-lang="de" title="Deutsch">DE</button><button data-lang="en" title="English">EN</button></nav>
+<script src="js/i18n.js?v=lang-1"></script>
+<script src="js/language.js?v=lang-1"></script>
+<script src="js/core.js?v=lang-1"></script>
+<script src="js/battle-music.js?v=mobile-1"></script>
+<script src="js/data.js?v=lang-1"></script>
+<script src="js/character-art-data.js"></script>
+<script src="js/extra-pose-data.js"></script>
+<script src="js/character-art.js?v=mobile-1"></script>
+<script src="js/render.js?v=props-1"></script>
+<script src="js/arena-art-data.js"></script>
+<script src="js/arena-art.js?v=mobile-1"></script>
+<script src="js/stage-props.js?v=props-1"></script>
+<script src="js/arenas.js?v=lang-1"></script>
+<script src="js/combat-fx.js?v=impact-1"></script>
+<script src="js/fight.js?v=lang-1"></script>
+<script src="js/finishers.js?v=lang-1"></script>
+<script src="js/touch-controls.js?v=mobile-1"></script>
+<script src="js/main.js?v=lang-1"></script>
+<script src="js/mobile-ui.js?v=lang-1"></script>
+
+<script>I18N.mount();</script>

@@ -1,0 +1,1347 @@
+{
+  "id": "boris",
+  "name": "Boris „Kran“ Petrov",
+  "height": 1.1,
+  "base": "assets/fighters-reforged/boris/spritesheet.webp",
+  "extra": "assets/fighters-reforged/boris/extra-20.webp",
+  "mobileBase": "assets/fighters-reforged/boris/spritesheet-mobile.webp",
+  "mobileExtra": "assets/fighters-reforged/boris/extra-20-mobile.webp",
+  "portrait": "assets/fighters-reforged/boris/portrait.webp",
+  "status": "ready",
+  "frameCount": 30,
+  "frames": [
+    {
+      "index": 0,
+      "name": "idle",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 0,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 68,
+        "y": 95,
+        "w": 286,
+        "h": 369
+      },
+      "scale": 1.0056818181818181,
+      "source": "sources/boris-base.png",
+      "sourceBounds": {
+        "x": 29,
+        "y": 19,
+        "w": 284,
+        "h": 367
+      },
+      "componentBounds": {
+        "x": 31,
+        "y": 21,
+        "w": 280,
+        "h": 363,
+        "area": 47898,
+        "row": 0,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 180,
+        "y": 384,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 1,
+      "name": "block",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 512,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 71,
+        "y": 102,
+        "w": 293,
+        "h": 362
+      },
+      "scale": 1.0056818181818181,
+      "source": "sources/boris-base.png",
+      "sourceBounds": {
+        "x": 423,
+        "y": 25,
+        "w": 291,
+        "h": 360
+      },
+      "componentBounds": {
+        "x": 425,
+        "y": 27,
+        "w": 287,
+        "h": 356,
+        "area": 46063,
+        "row": 0,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 571,
+        "y": 383,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 2,
+      "name": "crouch",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1024,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 87,
+        "y": 182,
+        "w": 252,
+        "h": 282
+      },
+      "scale": 1.0056818181818181,
+      "source": "sources/boris-base.png",
+      "sourceBounds": {
+        "x": 841,
+        "y": 105,
+        "w": 251,
+        "h": 280
+      },
+      "componentBounds": {
+        "x": 843,
+        "y": 107,
+        "w": 247,
+        "h": 276,
+        "area": 40981,
+        "row": 0,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 973,
+        "y": 383,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 3,
+      "name": "jump",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1536,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 76,
+        "y": 163,
+        "w": 288,
+        "h": 301
+      },
+      "scale": 1.0056818181818181,
+      "source": "sources/boris-base.png",
+      "sourceBounds": {
+        "x": 1238,
+        "y": 14,
+        "w": 286,
+        "h": 299
+      },
+      "componentBounds": {
+        "x": 1240,
+        "y": 16,
+        "w": 282,
+        "h": 295,
+        "area": 44735,
+        "row": 0,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 1381,
+        "y": 311,
+        "method": "air-center"
+      }
+    },
+    {
+      "index": 4,
+      "name": "light_punch",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 2048,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 35,
+        "y": 106,
+        "w": 399,
+        "h": 358
+      },
+      "scale": 1.0056818181818181,
+      "source": "sources/boris-base.png",
+      "sourceBounds": {
+        "x": 1572,
+        "y": 29,
+        "w": 397,
+        "h": 356
+      },
+      "componentBounds": {
+        "x": 1574,
+        "y": 31,
+        "w": 393,
+        "h": 352,
+        "area": 49082,
+        "row": 0,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1756,
+        "y": 383,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 5,
+      "name": "heavy_punch",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 0,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 33,
+        "y": 109,
+        "w": 376,
+        "h": 355
+      },
+      "scale": 1.0056818181818181,
+      "source": "sources/boris-base.png",
+      "sourceBounds": {
+        "x": 22,
+        "y": 415,
+        "w": 374,
+        "h": 353
+      },
+      "componentBounds": {
+        "x": 24,
+        "y": 417,
+        "w": 370,
+        "h": 349,
+        "area": 48657,
+        "row": 1,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 208,
+        "y": 766,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 6,
+      "name": "light_kick",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 512,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 114,
+        "y": 111,
+        "w": 351,
+        "h": 353
+      },
+      "scale": 1.0056818181818181,
+      "source": "sources/boris-base.png",
+      "sourceBounds": {
+        "x": 435,
+        "y": 411,
+        "w": 349,
+        "h": 351
+      },
+      "componentBounds": {
+        "x": 437,
+        "y": 413,
+        "w": 345,
+        "h": 347,
+        "area": 42940,
+        "row": 1,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 540,
+        "y": 760,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 7,
+      "name": "heavy_kick",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1024,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 60,
+        "y": 105,
+        "w": 425,
+        "h": 359
+      },
+      "scale": 1.0056818181818181,
+      "source": "sources/boris-base.png",
+      "sourceBounds": {
+        "x": 811,
+        "y": 409,
+        "w": 423,
+        "h": 357
+      },
+      "componentBounds": {
+        "x": 813,
+        "y": 411,
+        "w": 419,
+        "h": 353,
+        "area": 48124,
+        "row": 1,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 970,
+        "y": 764,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 8,
+      "name": "hit",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 1536,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 38,
+        "y": 110,
+        "w": 313,
+        "h": 354
+      },
+      "scale": 1.0056818181818181,
+      "source": "sources/boris-base.png",
+      "sourceBounds": {
+        "x": 1260,
+        "y": 418,
+        "w": 311,
+        "h": 352
+      },
+      "componentBounds": {
+        "x": 1262,
+        "y": 420,
+        "w": 307,
+        "h": 348,
+        "area": 52413,
+        "row": 1,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 1441,
+        "y": 768,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 9,
+      "name": "victory",
+      "sheet": "base",
+      "file": "spritesheet.webp",
+      "x": 2048,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 47,
+        "y": 76,
+        "w": 309,
+        "h": 388
+      },
+      "scale": 1.0056818181818181,
+      "source": "sources/boris-base.png",
+      "sourceBounds": {
+        "x": 1649,
+        "y": 384,
+        "w": 307,
+        "h": 386
+      },
+      "componentBounds": {
+        "x": 1651,
+        "y": 386,
+        "w": 303,
+        "h": 382,
+        "area": 53677,
+        "row": 1,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1821,
+        "y": 768,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 10,
+      "name": "walk_contact",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 83,
+        "y": 101,
+        "w": 251,
+        "h": 363
+      },
+      "scale": 1.2377622377622377,
+      "source": "sources/boris-extra.png",
+      "sourceBounds": {
+        "x": 25,
+        "y": 20,
+        "w": 203,
+        "h": 293
+      },
+      "componentBounds": {
+        "x": 27,
+        "y": 22,
+        "w": 199,
+        "h": 289,
+        "area": 29627,
+        "row": 0,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 136,
+        "y": 311,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 11,
+      "name": "walk_down",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 96,
+        "y": 103,
+        "w": 224,
+        "h": 361
+      },
+      "scale": 1.2377622377622377,
+      "source": "sources/boris-extra.png",
+      "sourceBounds": {
+        "x": 324,
+        "y": 19,
+        "w": 181,
+        "h": 292
+      },
+      "componentBounds": {
+        "x": 326,
+        "y": 21,
+        "w": 177,
+        "h": 288,
+        "area": 27907,
+        "row": 0,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 424,
+        "y": 309,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 12,
+      "name": "walk_pass",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 119,
+        "y": 101,
+        "w": 203,
+        "h": 363
+      },
+      "scale": 1.2377622377622377,
+      "source": "sources/boris-extra.png",
+      "sourceBounds": {
+        "x": 610,
+        "y": 19,
+        "w": 164,
+        "h": 293
+      },
+      "componentBounds": {
+        "x": 612,
+        "y": 21,
+        "w": 160,
+        "h": 289,
+        "area": 26798,
+        "row": 0,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 692,
+        "y": 310,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 13,
+      "name": "walk_up",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 112,
+        "y": 106,
+        "w": 205,
+        "h": 358
+      },
+      "scale": 1.2377622377622377,
+      "source": "sources/boris-extra.png",
+      "sourceBounds": {
+        "x": 881,
+        "y": 16,
+        "w": 166,
+        "h": 289
+      },
+      "componentBounds": {
+        "x": 883,
+        "y": 18,
+        "w": 162,
+        "h": 285,
+        "area": 25995,
+        "row": 0,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 968,
+        "y": 303,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 14,
+      "name": "walk_opposite",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 0,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 71,
+        "y": 105,
+        "w": 297,
+        "h": 359
+      },
+      "scale": 1.2377622377622377,
+      "source": "sources/boris-extra.png",
+      "sourceBounds": {
+        "x": 1136,
+        "y": 21,
+        "w": 240,
+        "h": 290
+      },
+      "componentBounds": {
+        "x": 1138,
+        "y": 23,
+        "w": 236,
+        "h": 286,
+        "area": 28697,
+        "row": 0,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1256,
+        "y": 309,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 15,
+      "name": "walk_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 88,
+        "y": 111,
+        "w": 262,
+        "h": 353
+      },
+      "scale": 1.2377622377622377,
+      "source": "sources/boris-extra.png",
+      "sourceBounds": {
+        "x": 23,
+        "y": 324,
+        "w": 212,
+        "h": 285
+      },
+      "componentBounds": {
+        "x": 25,
+        "y": 326,
+        "w": 208,
+        "h": 281,
+        "area": 28957,
+        "row": 1,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 130,
+        "y": 607,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 16,
+      "name": "jab_load",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 76,
+        "y": 110,
+        "w": 321,
+        "h": 354
+      },
+      "scale": 1.2377622377622377,
+      "source": "sources/boris-extra.png",
+      "sourceBounds": {
+        "x": 296,
+        "y": 323,
+        "w": 259,
+        "h": 286
+      },
+      "componentBounds": {
+        "x": 298,
+        "y": 325,
+        "w": 255,
+        "h": 282,
+        "area": 33200,
+        "row": 1,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 412,
+        "y": 607,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 17,
+      "name": "jab_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 88,
+        "y": 112,
+        "w": 255,
+        "h": 352
+      },
+      "scale": 1.2377622377622377,
+      "source": "sources/boris-extra.png",
+      "sourceBounds": {
+        "x": 582,
+        "y": 324,
+        "w": 206,
+        "h": 284
+      },
+      "componentBounds": {
+        "x": 584,
+        "y": 326,
+        "w": 202,
+        "h": 280,
+        "area": 28785,
+        "row": 1,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 689,
+        "y": 606,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 18,
+      "name": "cross_load",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 68,
+        "y": 117,
+        "w": 296,
+        "h": 347
+      },
+      "scale": 1.2377622377622377,
+      "source": "sources/boris-extra.png",
+      "sourceBounds": {
+        "x": 842,
+        "y": 323,
+        "w": 239,
+        "h": 280
+      },
+      "componentBounds": {
+        "x": 844,
+        "y": 325,
+        "w": 235,
+        "h": 276,
+        "area": 33331,
+        "row": 1,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 965,
+        "y": 601,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 19,
+      "name": "cross_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 512,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 78,
+        "y": 111,
+        "w": 285,
+        "h": 353
+      },
+      "scale": 1.2377622377622377,
+      "source": "sources/boris-extra.png",
+      "sourceBounds": {
+        "x": 1126,
+        "y": 323,
+        "w": 230,
+        "h": 285
+      },
+      "componentBounds": {
+        "x": 1128,
+        "y": 325,
+        "w": 226,
+        "h": 281,
+        "area": 30371,
+        "row": 1,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1241,
+        "y": 606,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 20,
+      "name": "hook",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 67,
+        "y": 122,
+        "w": 339,
+        "h": 342
+      },
+      "scale": 1.2377622377622377,
+      "source": "sources/boris-extra.png",
+      "sourceBounds": {
+        "x": 19,
+        "y": 622,
+        "w": 274,
+        "h": 276
+      },
+      "componentBounds": {
+        "x": 21,
+        "y": 624,
+        "w": 270,
+        "h": 272,
+        "area": 30859,
+        "row": 2,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 143,
+        "y": 896,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 21,
+      "name": "uppercut",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 91,
+        "y": 64,
+        "w": 270,
+        "h": 400
+      },
+      "scale": 1.2377622377622377,
+      "source": "sources/boris-extra.png",
+      "sourceBounds": {
+        "x": 316,
+        "y": 581,
+        "w": 218,
+        "h": 323
+      },
+      "componentBounds": {
+        "x": 318,
+        "y": 583,
+        "w": 214,
+        "h": 319,
+        "area": 32006,
+        "row": 2,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 420,
+        "y": 902,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 22,
+      "name": "kick_chamber",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 122,
+        "y": 105,
+        "w": 223,
+        "h": 359
+      },
+      "scale": 1.2377622377622377,
+      "source": "sources/boris-extra.png",
+      "sourceBounds": {
+        "x": 618,
+        "y": 605,
+        "w": 180,
+        "h": 290
+      },
+      "componentBounds": {
+        "x": 620,
+        "y": 607,
+        "w": 176,
+        "h": 286,
+        "area": 26289,
+        "row": 2,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 697,
+        "y": 893,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 23,
+      "name": "kick_return",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 128,
+        "y": 104,
+        "w": 160,
+        "h": 360
+      },
+      "scale": 1.2377622377622377,
+      "source": "sources/boris-extra.png",
+      "sourceBounds": {
+        "x": 902,
+        "y": 605,
+        "w": 129,
+        "h": 291
+      },
+      "componentBounds": {
+        "x": 904,
+        "y": 607,
+        "w": 125,
+        "h": 287,
+        "area": 23495,
+        "row": 2,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 976,
+        "y": 894,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 24,
+      "name": "knee",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 1024,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 130,
+        "y": 99,
+        "w": 280,
+        "h": 365
+      },
+      "scale": 1.2377622377622377,
+      "source": "sources/boris-extra.png",
+      "sourceBounds": {
+        "x": 1163,
+        "y": 600,
+        "w": 226,
+        "h": 295
+      },
+      "componentBounds": {
+        "x": 1165,
+        "y": 602,
+        "w": 222,
+        "h": 291,
+        "area": 27714,
+        "row": 2,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1236,
+        "y": 893,
+        "method": "support-foot"
+      }
+    },
+    {
+      "index": 25,
+      "name": "low_block",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 0,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 107,
+        "y": 216,
+        "w": 218,
+        "h": 248
+      },
+      "scale": 1.2377622377622377,
+      "source": "sources/boris-extra.png",
+      "sourceBounds": {
+        "x": 47,
+        "y": 906,
+        "w": 176,
+        "h": 200
+      },
+      "componentBounds": {
+        "x": 49,
+        "y": 908,
+        "w": 172,
+        "h": 196,
+        "area": 23183,
+        "row": 3,
+        "column": 0
+      },
+      "anchorSource": {
+        "x": 138,
+        "y": 1104,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 26,
+      "name": "body_hit",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 512,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 105,
+        "y": 215,
+        "w": 227,
+        "h": 249
+      },
+      "scale": 1.2377622377622377,
+      "source": "sources/boris-extra.png",
+      "sourceBounds": {
+        "x": 309,
+        "y": 905,
+        "w": 183,
+        "h": 201
+      },
+      "componentBounds": {
+        "x": 311,
+        "y": 907,
+        "w": 179,
+        "h": 197,
+        "area": 22784,
+        "row": 3,
+        "column": 1
+      },
+      "anchorSource": {
+        "x": 402,
+        "y": 1104,
+        "method": "hip-band"
+      }
+    },
+    {
+      "index": 27,
+      "name": "fall",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1024,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 28,
+        "y": 251,
+        "w": 385,
+        "h": 213
+      },
+      "scale": 1.2377622377622377,
+      "source": "sources/boris-extra.png",
+      "sourceBounds": {
+        "x": 528,
+        "y": 913,
+        "w": 311,
+        "h": 172
+      },
+      "componentBounds": {
+        "x": 530,
+        "y": 915,
+        "w": 307,
+        "h": 168,
+        "area": 27119,
+        "row": 3,
+        "column": 2
+      },
+      "anchorSource": {
+        "x": 683.5,
+        "y": 1083,
+        "method": "horizontal-center"
+      }
+    },
+    {
+      "index": 28,
+      "name": "ground",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 1536,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 24,
+        "y": 350,
+        "w": 392,
+        "h": 114
+      },
+      "scale": 1.2377622377622377,
+      "source": "sources/boris-extra.png",
+      "sourceBounds": {
+        "x": 840,
+        "y": 1013,
+        "w": 317,
+        "h": 92
+      },
+      "componentBounds": {
+        "x": 842,
+        "y": 1015,
+        "w": 313,
+        "h": 88,
+        "area": 19527,
+        "row": 3,
+        "column": 3
+      },
+      "anchorSource": {
+        "x": 998.5,
+        "y": 1103,
+        "method": "horizontal-center"
+      }
+    },
+    {
+      "index": 29,
+      "name": "rise",
+      "sheet": "extra",
+      "file": "extra-20.webp",
+      "x": 2048,
+      "y": 1536,
+      "w": 512,
+      "h": 512,
+      "pivot": {
+        "x": 220,
+        "y": 464
+      },
+      "baseline": 464,
+      "bounds": {
+        "x": 95,
+        "y": 220,
+        "w": 244,
+        "h": 244
+      },
+      "scale": 1.2377622377622377,
+      "source": "sources/boris-extra.png",
+      "sourceBounds": {
+        "x": 1167,
+        "y": 905,
+        "w": 197,
+        "h": 197
+      },
+      "componentBounds": {
+        "x": 1169,
+        "y": 907,
+        "w": 193,
+        "h": 193,
+        "area": 24697,
+        "row": 3,
+        "column": 4
+      },
+      "anchorSource": {
+        "x": 1268,
+        "y": 1100,
+        "method": "hip-band"
+      }
+    }
+  ],
+  "scales": {
+    "base": {
+      "scale": 1.0056818181818181,
+      "referenceHeight": 352,
+      "targetHeight": 354
+    },
+    "extra": {
+      "scale": 1.2377622377622377,
+      "referenceHeight": 286,
+      "targetHeight": 354
+    }
+  },
+  "sources": {
+    "base": {
+      "file": "sources/boris-base.png",
+      "sha256": "25added2981fc28bd03c9123ad8a11434d38a4700c3e3f3b4360cb0a0997cc75",
+      "width": 1983,
+      "height": 793,
+      "transparentFraction": 0.6474904277786151
+    },
+    "extra": {
+      "file": "sources/boris-extra.png",
+      "sha256": "07aeba208293fb04af09e466d9ab779f4b8509e6b7a650ab6a021edda8268ddf",
+      "width": 1402,
+      "height": 1122,
+      "transparentFraction": 0.5583976036271077
+    }
+  },
+  "files": {
+    "base": "boris/spritesheet.webp",
+    "baseMobile": "boris/spritesheet-mobile.webp",
+    "extra": "boris/extra-20.webp",
+    "extraMobile": "boris/extra-20-mobile.webp",
+    "portrait": "boris/portrait.webp",
+    "preview": "boris/contact-sheet.png"
+  },
+  "layoutHash": "ee7d43e0ebe6733bffd85a23e85bfaa73868814803a27ce15051c2e33aa785ea",
+  "qc": {
+    "reviewed": true,
+    "issues": [],
+    "sharedScalePerStrip": true,
+    "preservedSourceAlpha": true
+  }
+}

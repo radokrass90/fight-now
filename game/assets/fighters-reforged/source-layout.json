@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "characters": {
+    "murat": {
+      "reviewed": true,
+      "correctionFrames": [
+        17,
+        21,
+        22,
+        23
+      ],
+      "issues": [
+        {
+          "frame": 17,
+          "severity": "error",
+          "note": "Source extra7 is an extended jab instead of a jab recovery."
+        },
+        {
+          "frame": 21,
+          "severity": "error",
+          "note": "Source extra11 reads as a hook/elbow, not an uppercut."
+        },
+        {
+          "frame": 22,
+          "severity": "error",
+          "note": "Source extra12 is an uppercut instead of a kick chamber."
+        },
+        {
+          "frame": 23,
+          "severity": "error",
+          "note": "Source extra13 is a raised knee/chamber rather than a kick recovery."
+        }
+      ],
+      "correctionRows": 2
+    },
+    "danny": {
+      "reviewed": true,
+      "correctionFrames": [
+        17
+      ],
+      "correctionRows": 1,
+      "issues": [
+        {
+          "frame": 17,
+          "severity": "error",
+          "note": "Generated extra7 was an extended jab instead of a retracted recovery. Replaced with dedicated matching recovery sprite."
+        }
+      ]
+    },
+    "yasmin": {
+      "reviewed": true
+    },
+    "dragan": {
+      "reviewed": true
+    },
+    "kevin": {
+      "reviewed": true
+    },
+    "leyla": {
+      "reviewed": true
+    },
+    "tomasz": {
+      "reviewed": true
+    },
+    "hakan": {
+      "reviewed": true
+    },
+    "nadine": {
+      "reviewed": true
+    },
+    "emre": {
+      "reviewed": true
+    },
+    "boris": {
+      "reviewed": true
+    },
+    "jasmin": {
+      "reviewed": true
+    },
+    "adem": {
+      "reviewed": true
+    },
+    "marco": {
+      "reviewed": true
+    },
+    "fatima": {
+      "reviewed": true
+    }
+  }
+}

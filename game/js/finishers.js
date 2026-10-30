@@ -29,7 +29,7 @@ const FINISHERS = {
       S.spin += t > 100 && t < 210 ? 22 : 3;
       if (t < 40) bp(W, 'grab'); else if (t < 70) { bp(W, 'lift', 0.3); L.y = lerp(0, 90, tw(t, 40, 70)); L.x = lerp(L.x, W.x + W.facing * 8, 0.2); L.rot = lerp(0, -150, tw(t, 40, 70)); bp(L, 'air_hit'); }
       else if (t <= 100) {
-        if (t === 71) { S.sx = L.x; S.sy = L.y; Snd.whoosh(); }
+        if (t === 70) { S.sx = L.x; S.sy = L.y; Snd.whoosh(); }
         const k = tw(t, 70, 100), ox = S.target - 138 * S.d, oy = 120;
         L.x = lerp(S.sx, ox, k); L.y = lerp(S.sy, oy, k) + Math.sin(k * Math.PI) * 80; L.rot -= 18; L.sc = lerp(1, 0.35, k); bp(W, 'throwx', 0.3);
         if (t === 100) { L.vis = false; Snd.thud(); m.shake = 8; m.popText(ox, GROUND - 190, localize("Clocking off."), '#fff', 26, 90); }
@@ -186,7 +186,7 @@ const FINISHERS = {
       S.trunk = t < 55 ? 0 : t < 65 ? tw(t, 55, 65) * 1.2 : t < 125 ? 1.2 : Math.max(0, 1.2 - (t - 125) * 0.3);
       const tr = [S.tx - 85 * S.d, 70];
       if (t < 60) bp(W, 'grab'); else if (t < 90) { bp(W, 'lift', 0.3); L.y = lerp(0, 100, tw(t, 60, 90)); L.x = lerp(L.x, W.x, 0.15); L.rot = lerp(0, -160, tw(t, 60, 90)); bp(L, 'air_hit'); }
-      else if (t <= 120) { if (t === 91) { S.sx = L.x; S.sy = L.y; } const k = tw(t, 90, 120); L.x = lerp(S.sx, tr[0], k); L.y = lerp(S.sy, tr[1], k) + Math.sin(k * Math.PI) * 60; L.rot -= 15; L.sc = lerp(1, 0.4, k); bp(W, 'throwx', 0.3); }
+      else if (t <= 120) { if (t === 90) { S.sx = L.x; S.sy = L.y; } const k = tw(t, 90, 120); L.x = lerp(S.sx, tr[0], k); L.y = lerp(S.sy, tr[1], k) + Math.sin(k * Math.PI) * 60; L.rot -= 15; L.sc = lerp(1, 0.4, k); bp(W, 'throwx', 0.3); }
       if (t === 120) L.vis = false;
       if (t === 127) { Snd.thud(); m.shake = 6; }
       if (t > 140) { bp(W, 'point', 0.15); S.tx += S.d * Math.min(11, (t - 140) * 0.25); if (t % 5 === 0) m.smoke(S.tx + 110 * S.d, GROUND - 16, 1, '#666', 4); }
@@ -288,7 +288,7 @@ const FINISHERS = {
       if (t < 40) S.x = lerp(S.x, S.dx, 0.12);
       if (t === 20) Snd.noise(0.6, 600, 0.3, 'lowpass');
       if (t < 60) bp(W, 'grab'); else if (t < 95) { bp(W, 'lift', 0.25); L.y = lerp(0, 110, tw(t, 60, 95)); L.x = lerp(L.x, W.x, 0.15); L.rot = lerp(0, -90, tw(t, 60, 95)); bp(L, 'air_hit'); }
-      else if (t <= 125) { if (t === 96) { S.sx = L.x; S.sy = L.y; Snd.whoosh(); } const k = tw(t, 95, 125); L.x = lerp(S.sx, S.x, k); L.y = lerp(S.sy, 20, k) + Math.sin(k * Math.PI) * 70; L.rot -= 10; bp(W, 'throwx', 0.3); }
+      else if (t <= 125) { if (t === 95) { S.sx = L.x; S.sy = L.y; Snd.whoosh(); } const k = tw(t, 95, 125); L.x = lerp(S.sx, S.x, k); L.y = lerp(S.sy, 20, k) + Math.sin(k * Math.PI) * 70; L.rot -= 10; bp(W, 'throwx', 0.3); }
       if (t === 125) { L.vis = false; Snd.thud(); }
       if (t > 128) S.lid = Math.max(0, S.lid - 0.25); if (t === 132) { Snd.thud(); m.shake = 10; }
       if (t > 140) bp(W, 'flex', 0.12);
