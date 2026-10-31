@@ -1,5 +1,10 @@
 'use strict';
 const I18N_DE = {
+  "FLOW": "FLUSS",
+  "WEAPON FLOW": "WAFFENFLUSS",
+  "SIGNATURE COMBOS": "SIGNATUR-KOMBOS",
+  "HIT COMBO": "TREFFER-KOMBO",
+  "Tap the next attack on hit. Double-tap a direction to dash.": "Beim Treffer den nächsten Angriff drücken. Richtung doppelt antippen zum Sprinten.",
   "weapon": "Waffe",
   "Weapon details": "Waffendetails",
   "PERMANENT COLLECTION": "DAUERHAFTE SAMMLUNG",

@@ -94,7 +94,13 @@ const MobileUI = (()=>{
     for(const [input,name,description]of [[localize('Punch'),M.LP.name,'J'],[localize('Heavy punch'),M.HP.name,'I'],[localize('Kick'),M.LK.name,'K'],[localize('Heavy kick'),M.HK.name,'O'],['→ + '+localize('Heavy punch'),M.fHP.name,''],['↓ + '+localize('Heavy punch'),localize('Uppercut (launches)'), ''],['↓ + '+localize('Heavy kick'),localize('Sweep (knockdown)'), ''],[localize('Special'),c.sp1.name,c.sp1.desc],['← / → + '+localize('Special'),c.sp2.name,c.sp2.desc],['↓ + '+localize('Special'),c.sup.name,localize('Full energy')],[localize('Finisher: '),c.finName,c.code.slice(0,3).map(d=>({D:'↓',F:'→',B:'←',U:'↑'})[d]).join(' ')+' + '+({lp:localize('Punch'),hp:localize('Heavy punch'),lk:localize('Kick'),hk:localize('Heavy kick')})[c.code[3]]]]){
       const row=el('article',null,'move-row');row.append(el('span',input,'move-input'),el('strong',name),el('small',description));rows.append(row);
     }
-    panel.append(rows);back(panel,()=>{G.screen=G.moveBack;fit();});
+    const strings=el('section',null,'combo-move-list');strings.append(el('h2',localize('SIGNATURE COMBOS')),el('p',localize('Tap the next attack on hit. Double-tap a direction to dash.'),'mobile-copy'));
+    const labels={lp:localize('Punch'),hp:localize('Heavy punch'),lk:localize('Kick'),hk:localize('Heavy kick')};
+    const routes=c.combos||[];
+    for(const route of routes){const row=el('article',null,'move-row');row.append(el('strong',route.name),el('span',route.buttons.map(k=>labels[k]).join(' › '),'move-input'));strings.append(row);}
+    const gear=typeof Economy!=='undefined'?Economy.gear(c.id):null;
+    if(gear?.weaponId)strings.append(el('p',localize('WEAPON FLOW')+': '+[labels.lp,labels.hp,labels.hp].join(' › '),'mobile-copy'));
+    panel.append(strings,rows);back(panel,()=>{G.screen=G.moveBack;fit();});
   }
   function renderResult(){
     const m=G.match,r=m?.result;if(!r)return;
@@ -109,7 +115,20 @@ const MobileUI = (()=>{
     }else primary(a,localize('REMATCH'),()=>{startFight(G.matchOpts.arena,G.matchOpts.ctrl2.level);});
     a.append(button(localize('Change fighter'),()=>startSelect(),'','change'),button(localize('Main menu'),()=>go('title'),'quiet-action','home'));
   }
+  function syncCoach(){
+    let node=document.getElementById('training-coach');
+    const match=G.match,show=Touch.active&&innerHeight>innerWidth&&G.screen==='fight'&&match?.mode==='training'&&!match.paused;
+    if(!show){if(node)node.hidden=true;return;}
+    if(!node){node=el('aside',null,'training-coach');node.id='training-coach';document.body.append(node);}
+    node.hidden=false;const a=match.p[0],b=match.p[1],route=a.comboRoute||a.c.combos[0],step=a.comboRoute?a.comboStep+1:a.stringKeys.length;
+    const combo=b.comboHits?{hits:b.comboHits,damage:b.comboDmg}:match.trainingStats.lastCombo;
+    const next=[route.id,step,combo.hits,combo.damage].join('/');if(node.dataset.progress===next)return;node.dataset.progress=next;node.replaceChildren();
+    node.append(el('strong',route.name));const keys=el('div',null,'coach-keys'),labels={lp:localize('Punch'),hp:localize('Heavy punch'),lk:localize('Kick'),hk:localize('Heavy kick')};
+    route.buttons.forEach((key,i)=>keys.append(el('span',labels[key],i<step?'confirmed':'')));
+    node.append(keys,el('small',combo.hits+localize(' HITS')+' · '+combo.damage+' '+localize('DAMAGE')));
+  }
   function sync(){
+    syncCoach();
     const menu=ownsMenu();document.body.classList.toggle('mobile-menu-open',menu);document.body.classList.toggle('native-menu-open',menu);
     panel.hidden=!menu;document.getElementById('c').setAttribute('aria-hidden',String(menu));toolbar.hidden=!(['fight','vs'].includes(G.screen)&&!menu);
     document.getElementById('mobilePause').hidden=G.screen!=='fight';document.getElementById('fullscreen').hidden=!document.documentElement.requestFullscreen;
