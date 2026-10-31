@@ -1,11 +1,11 @@
 {
-  "at": "2026-10-31T07:39:50.132051+00:00",
+  "at": "2026-10-31T07:50:08.732106+00:00",
   "results": [
     {
       "test": "check-dynamic-render.cjs",
       "args": [],
       "exitCode": 0,
-      "output": "PASS: actual painted motion/weapon renders: 30 in 308ms\n"
+      "output": "PASS: actual painted motion/weapon renders: 30 in 301ms\n"
     },
     {
       "test": "check-dynamic-combat.cjs",

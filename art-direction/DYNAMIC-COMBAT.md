@@ -18,7 +18,7 @@ Training displays the fighter's route, input progress, hit count and damage. Por
 
 `game/js/combat-motion.js` samples simulation frames so pause and hitstop freeze all presentation. Foot-anchored body lean, weight transfer, anticipation, recoil, landing compression and speed-sensitive gait supplement the painted poses. A bounded local mesh supplies fast arm in-betweens without a double-body crossfade. Its grid explicitly includes the grip point, and overlapping clips avoid mesh seams. Steady poses retain a single sprite draw.
 
-Weapon and fighter use the same body transform and hand deformation. Blunt swings, rising blows and thrusts have different arcs; heavy families have longer preparation than light blades. A painted fist is restored above the grip. Optional trails respect reduced-motion settings. An additional 150 hand centers were visually calibrated from atlas crops; see `dynamic-hand-anchors.json`.
+Weapon and fighter use the same body transform and hand deformation. Blunt swings, rising blows and thrusts have different arcs; heavy families have longer preparation than light blades. A painted fist is restored above the grip. Optional trails respect reduced-motion settings. All 405 visible hand centers were visually calibrated (27 poses × 15 fighters) from atlas crops; see `dynamic-hand-anchors.json`.
 
 Authored strikes sweep the actual loaded-to-extended limb path during their active window, instead of checking only the final fingertip. This fixes uppercuts tunneling above a reacting opponent without a large universal hit radius. Character and weapon finishers receive a stronger existing impact effect.
 

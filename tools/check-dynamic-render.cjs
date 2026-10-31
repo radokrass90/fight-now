@@ -19,7 +19,10 @@ const run=s=>vm.runInContext(s,sb);run('const Economy={weapons:new Map(WEAPON_CA
   }`);poses.push(info);
   ctx.font='13px sans-serif';ctx.fillStyle='#d7eaf1';ctx.fillText(run('CHARS[charIndex].name')+' / '+sb.weaponId,12,row*220+18);rendered+=6;
  }
+ const calibration=JSON.parse(fs.readFileSync(path.resolve(root,'../art-direction/dynamic-hand-anchors.json'),'utf8'));let gripCount=0;
+ for(const [id,frames]of Object.entries(calibration.anchors))for(let i=0;i<27;i++){const point=frames[i];assert(point&&point.length===2&&point.every(v=>Number.isFinite(v)&&v>=0&&v<=1),id+' missing visible grip '+i);gripCount++;}
+ assert.equal(gripCount,405);
  assert(poses.flat().every(p=>Object.values(p.motion).filter(v=>typeof v==='number').every(Number.isFinite)));
  assert(poses.flat().some(p=>Math.abs(p.motion.handDX)>.3),'No arm in-between deformation was exercised');
- const out=path.resolve(root,'../review/dynamic-combat');fs.mkdirSync(out,{recursive:true});fs.writeFileSync(out+'/strike-timelines.png',sheet.toBuffer('image/png'));fs.writeFileSync(out+'/render.json',JSON.stringify({rendered,elapsedMs:Date.now()-began,poses},null,2));console.log('PASS: actual painted motion/weapon renders: '+rendered+' in '+(Date.now()-began)+'ms');
+ const out=path.resolve(root,'../review/dynamic-combat');fs.mkdirSync(out,{recursive:true});fs.writeFileSync(out+'/strike-timelines.png',sheet.toBuffer('image/png'));fs.writeFileSync(out+'/render.json',JSON.stringify({rendered,calibratedVisibleGrips:gripCount,elapsedMs:Date.now()-began,poses},null,2));console.log('PASS: actual painted motion/weapon renders: '+rendered+' in '+(Date.now()-began)+'ms');
 })().catch(e=>{console.error(e);process.exitCode=1;});
