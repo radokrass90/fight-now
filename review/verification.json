@@ -1,6 +1,18 @@
 {
-  "at": "2026-10-30T08:38:20.643414+00:00",
+  "at": "2026-10-31T07:39:50.132051+00:00",
   "results": [
+    {
+      "test": "check-dynamic-render.cjs",
+      "args": [],
+      "exitCode": 0,
+      "output": "PASS: actual painted motion/weapon renders: 30 in 308ms\n"
+    },
+    {
+      "test": "check-dynamic-combat.cjs",
+      "args": [],
+      "exitCode": 0,
+      "output": "{\n  \"routes\": 60,\n  \"failed\": [],\n  \"examples\": [\n    {\n      \"id\": \"murat\",\n      \"route\": 0,\n      \"facing\": 1,\n      \"sent\": 4,\n      \"hits\": 4,\n      \"damage\": 144,\n      \"hitAt\": 41\n    },\n    {\n      \"id\": \"murat\",\n      \"route\": 1,\n      \"facing\": 1,\n      \"sent\": 3,\n      \"hits\": 3,\n      \"damage\": 140,\n      \"hitAt\": 33\n    },\n    {\n      \"id\": \"murat\",\n      \"route\": 0,\n      \"facing\": -1,\n      \"sent\": 4,\n      \"hits\": 4,\n      \"damage\": 144,\n      \"hitAt\": 41\n    },\n    {\n      \"id\": \"murat\",\n      \"route\": 1,\n      \"facing\": -1,\n      \"sent\": 3,\n      \"hits\": 3,\n      \"damage\": 140,\n      \"hitAt\": 33\n    }\n  ]\n}\nPASS: 60 real character strings + 300 weapon strings, both directions, guard, dash and frozen presentation.\n"
+    },
     {
       "test": "build-weapon-images.cjs",
       "args": [
@@ -27,7 +39,7 @@
       "test": "check-reforged-combat.cjs",
       "args": [],
       "exitCode": 0,
-      "output": "{\n  \"hitstopBuffer\": true,\n  \"bufferExpiry\": true,\n  \"cleanHitRoutes\": true,\n  \"realHitConfirmCombo\": {\n    \"sent\": {\n      \"lp\": true,\n      \"hp\": true,\n      \"sp\": true\n    },\n    \"best\": {\n      \"hits\": 5,\n      \"damage\": 201\n    },\n    \"last\": {\n      \"hits\": 5,\n      \"damage\": 201\n    },\n    \"total\": 201\n  },\n  \"cornerPressure\": {\n    \"maximum\": 3,\n    \"escapeWindows\": 1010\n  },\n  \"perfectGuard\": true,\n  \"juggleLimit\": true,\n  \"superRelease\": true,\n  \"fairReaction\": true,\n  \"completedFinishersBothDirections\": 30,\n  \"completedSeededMatches\": [\n    {\n      \"fighter\": \"murat\",\n      \"rounds\": 3,\n      \"winner\": \"nadine\"\n    },\n    {\n      \"fighter\": \"yasmin\",\n      \"rounds\": 3,\n      \"winner\": \"emre\"\n    },\n    {\n      \"fighter\": \"dragan\",\n      \"rounds\": 2,\n      \"winner\": \"dragan\"\n    },\n    {\n      \"fighter\": \"kevin\",\n      \"rounds\": 3,\n      \"winner\": \"kevin\"\n    },\n    {\n      \"fighter\": \"leyla\",\n      \"rounds\": 2,\n      \"winner\": \"adem\"\n    },\n    {\n      \"fighter\": \"tomasz\",\n      \"rounds\": 2,\n      \"winner\": \"marco\"\n    },\n    {\n      \"fighter\": \"hakan\",\n      \"rounds\": 2,\n      \"winner\": \"fatima\"\n    },\n    {\n      \"fighter\": \"nadine\",\n      \"rounds\": 2,\n      \"winner\": \"danny\"\n    },\n    {\n      \"fighter\": \"emre\",\n      \"rounds\": 2,\n      \"winner\": \"murat\"\n    },\n    {\n      \"fighter\": \"boris\",\n      \"rounds\": 2,\n      \"winner\": \"yasmin\"\n    },\n    {\n      \"fighter\": \"jasmin\",\n      \"rounds\": 2,\n      \"winner\": \"jasmin\"\n    },\n    {\n      \"fighter\": \"adem\",\n      \"rounds\": 2,\n      \"winner\": \"kevin\"\n    },\n    {\n      \"fighter\": \"marco\",\n      \"rounds\": 2,\n      \"winner\": \"marco\"\n    },\n    {\n      \"fighter\": \"fatima\",\n      \"rounds\": 2,\n      \"winner\": \"fatima\"\n    },\n    {\n      \"fighter\": \"danny\",\n      \"rounds\": 2,\n      \"winner\": \"danny\"\n    }\n  ]\n}\n"
+      "output": "{\n  \"hitstopBuffer\": true,\n  \"bufferExpiry\": true,\n  \"cleanHitRoutes\": true,\n  \"realHitConfirmCombo\": {\n    \"sent\": {\n      \"lp\": true,\n      \"hp\": true,\n      \"sp\": true\n    },\n    \"best\": {\n      \"hits\": 5,\n      \"damage\": 201\n    },\n    \"last\": {\n      \"hits\": 5,\n      \"damage\": 201\n    },\n    \"total\": 201\n  },\n  \"cornerPressure\": {\n    \"maximum\": 3,\n    \"escapeWindows\": 1105\n  },\n  \"perfectGuard\": true,\n  \"juggleLimit\": true,\n  \"superRelease\": true,\n  \"fairReaction\": true,\n  \"completedFinishersBothDirections\": 30,\n  \"completedSeededMatches\": [\n    {\n      \"fighter\": \"murat\",\n      \"rounds\": 2,\n      \"winner\": \"murat\"\n    },\n    {\n      \"fighter\": \"yasmin\",\n      \"rounds\": 3,\n      \"winner\": \"emre\"\n    },\n    {\n      \"fighter\": \"dragan\",\n      \"rounds\": 2,\n      \"winner\": \"dragan\"\n    },\n    {\n      \"fighter\": \"kevin\",\n      \"rounds\": 2,\n      \"winner\": \"jasmin\"\n    },\n    {\n      \"fighter\": \"leyla\",\n      \"rounds\": 3,\n      \"winner\": \"adem\"\n    },\n    {\n      \"fighter\": \"tomasz\",\n      \"rounds\": 2,\n      \"winner\": \"marco\"\n    },\n    {\n      \"fighter\": \"hakan\",\n      \"rounds\": 2,\n      \"winner\": \"hakan\"\n    },\n    {\n      \"fighter\": \"nadine\",\n      \"rounds\": 2,\n      \"winner\": \"danny\"\n    },\n    {\n      \"fighter\": \"emre\",\n      \"rounds\": 2,\n      \"winner\": \"murat\"\n    },\n    {\n      \"fighter\": \"boris\",\n      \"rounds\": 2,\n      \"winner\": \"boris\"\n    },\n    {\n      \"fighter\": \"jasmin\",\n      \"rounds\": 3,\n      \"winner\": \"jasmin\"\n    },\n    {\n      \"fighter\": \"adem\",\n      \"rounds\": 2,\n      \"winner\": \"kevin\"\n    },\n    {\n      \"fighter\": \"marco\",\n      \"rounds\": 3,\n      \"winner\": \"leyla\"\n    },\n    {\n      \"fighter\": \"fatima\",\n      \"rounds\": 3,\n      \"winner\": \"tomasz\"\n    },\n    {\n      \"fighter\": \"danny\",\n      \"rounds\": 3,\n      \"winner\": \"danny\"\n    }\n  ]\n}\n"
     },
     {
       "test": "check-menu-flow.cjs",

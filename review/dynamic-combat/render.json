@@ -1,0 +1,1202 @@
+{
+  "rendered": 30,
+  "elapsedMs": 308,
+  "poses": [
+    [
+      {
+        "mt": 1,
+        "frame": 21,
+        "hand": {
+          "x": 25.647899999999996,
+          "y": -162.085341348,
+          "angle": -82,
+          "sourceX": 25.647899999999996,
+          "sourceY": -162.085341348
+        },
+        "motion": {
+          "x": -0.08309037900874636,
+          "y": 0,
+          "lean": -0.0012186588921282797,
+          "sx": 1,
+          "sy": 0.999002915451895,
+          "handDX": 0,
+          "handDY": 0,
+          "segment": {
+            "s": {
+              "p": "ovh_c",
+              "s": 0,
+              "e": 7
+            },
+            "i": 0,
+            "t": 0.14285714285714285
+          },
+          "striking": false,
+          "loading": true,
+          "weaponLoading": true,
+          "recovering": false,
+          "weaponRecovery": false,
+          "loadFrame": null,
+          "handBlend": 0.3702623906705538
+        }
+      },
+      {
+        "mt": 5,
+        "frame": 21,
+        "hand": {
+          "x": 25.647899999999996,
+          "y": -162.085341348,
+          "angle": -82,
+          "sourceX": 25.647899999999996,
+          "sourceY": -162.085341348
+        },
+        "motion": {
+          "x": -1.2026239067055393,
+          "y": 0,
+          "lean": -0.017638483965014575,
+          "sx": 1,
+          "sy": 0.9855685131195335,
+          "handDX": 0,
+          "handDY": 0,
+          "segment": {
+            "s": {
+              "p": "ovh_c",
+              "s": 0,
+              "e": 7
+            },
+            "i": 0,
+            "t": 0.7142857142857143
+          },
+          "striking": false,
+          "loading": true,
+          "weaponLoading": true,
+          "recovering": false,
+          "weaponRecovery": false,
+          "loadFrame": null,
+          "handBlend": 0.9766763848396501
+        }
+      },
+      {
+        "mt": 10,
+        "frame": 5,
+        "hand": {
+          "x": 73.31658911306249,
+          "y": -136.70000528231245,
+          "angle": -10,
+          "sourceX": 74.073234972,
+          "sourceY": -136.29706343999996
+        },
+        "motion": {
+          "x": 2.953125,
+          "y": 0,
+          "lean": 0.054140625,
+          "sx": 1,
+          "sy": 1.00984375,
+          "handDX": -0.7566458589375,
+          "handDY": -0.4029418423125004,
+          "segment": {
+            "s": {
+              "p": "ovh",
+              "s": 7,
+              "e": 11
+            },
+            "i": 1,
+            "t": 0.75
+          },
+          "striking": true,
+          "loading": false,
+          "weaponLoading": false,
+          "recovering": false,
+          "weaponRecovery": false,
+          "loadFrame": 21,
+          "handBlend": 0.984375
+        }
+      },
+      {
+        "mt": 12,
+        "frame": 5,
+        "hand": {
+          "x": 74.073234972,
+          "y": -136.29706343999996,
+          "angle": -10,
+          "sourceX": 74.073234972,
+          "sourceY": -136.29706343999996
+        },
+        "motion": {
+          "x": 2.5,
+          "y": 0,
+          "lean": 0.04,
+          "sx": 1,
+          "sy": 1.004,
+          "handDX": 0,
+          "handDY": 0,
+          "segment": {
+            "s": {
+              "p": "ovh",
+              "s": 11,
+              "e": 14,
+              "hit": {
+                "d": 70,
+                "l": "m",
+                "st": 20,
+                "kb": 5,
+                "limb": "bh",
+                "r": 18,
+                "sweepFrom": "ovh_c"
+              },
+              "hid": 0,
+              "hold": 1
+            },
+            "i": 2,
+            "t": 0.3333333333333333
+          },
+          "striking": true,
+          "loading": false,
+          "weaponLoading": false,
+          "recovering": false,
+          "weaponRecovery": false,
+          "loadFrame": null,
+          "handBlend": 0.7037037037037036
+        }
+      },
+      {
+        "mt": 14,
+        "frame": 5,
+        "hand": {
+          "x": 74.073234972,
+          "y": -136.29706343999996,
+          "angle": -10,
+          "sourceX": 74.073234972,
+          "sourceY": -136.29706343999996
+        },
+        "motion": {
+          "x": 2.5,
+          "y": 0,
+          "lean": 0.04,
+          "sx": 1,
+          "sy": 1.004,
+          "handDX": 0,
+          "handDY": 0,
+          "segment": {
+            "s": {
+              "p": "ovh",
+              "s": 11,
+              "e": 14,
+              "hit": {
+                "d": 70,
+                "l": "m",
+                "st": 20,
+                "kb": 5,
+                "limb": "bh",
+                "r": 18,
+                "sweepFrom": "ovh_c"
+              },
+              "hid": 0,
+              "hold": 1
+            },
+            "i": 2,
+            "t": 1
+          },
+          "striking": true,
+          "loading": false,
+          "weaponLoading": false,
+          "recovering": false,
+          "weaponRecovery": false,
+          "loadFrame": null,
+          "handBlend": 1
+        }
+      },
+      {
+        "mt": 19,
+        "frame": 19,
+        "hand": {
+          "x": 31.760249999999996,
+          "y": -129.86885595599998,
+          "angle": -30,
+          "sourceX": 31.760249999999996,
+          "sourceY": -129.86885595599998
+        },
+        "motion": {
+          "x": 1.265625,
+          "y": 0,
+          "lean": 0.02109375,
+          "sx": 1,
+          "sy": 1,
+          "handDX": 0,
+          "handDY": 0,
+          "segment": {
+            "s": {
+              "p": null,
+              "s": 14,
+              "e": 34
+            },
+            "i": 3,
+            "t": 0.25
+          },
+          "striking": false,
+          "loading": false,
+          "weaponLoading": false,
+          "recovering": true,
+          "weaponRecovery": true,
+          "loadFrame": null,
+          "handBlend": 0.578125
+        }
+      }
+    ],
+    [
+      {
+        "mt": 1,
+        "frame": 18,
+        "hand": {
+          "x": -44.516534005999986,
+          "y": -115.97375546399996,
+          "angle": 35,
+          "sourceX": -44.516534005999986,
+          "sourceY": -115.97375546399996
+        },
+        "motion": {
+          "x": -0.15600000000000003,
+          "y": 0,
+          "lean": -0.0022880000000000005,
+          "sx": 1,
+          "sy": 0.998128,
+          "handDX": 0,
+          "handDY": 0,
+          "segment": {
+            "s": {
+              "p": "hook_c",
+              "s": 0,
+              "e": 5
+            },
+            "i": 0,
+            "t": 0.2
+          },
+          "striking": false,
+          "loading": true,
+          "weaponLoading": true,
+          "recovering": false,
+          "weaponRecovery": false,
+          "loadFrame": null,
+          "handBlend": 0.4879999999999999
+        }
+      },
+      {
+        "mt": 4,
+        "frame": 18,
+        "hand": {
+          "x": -44.516534005999986,
+          "y": -115.97375546399996,
+          "angle": 35,
+          "sourceX": -44.516534005999986,
+          "sourceY": -115.97375546399996
+        },
+        "motion": {
+          "x": -1.3440000000000003,
+          "y": 0,
+          "lean": -0.019712,
+          "sx": 1,
+          "sy": 0.983872,
+          "handDX": 0,
+          "handDY": 0,
+          "segment": {
+            "s": {
+              "p": "hook_c",
+              "s": 0,
+              "e": 5
+            },
+            "i": 0,
+            "t": 0.8
+          },
+          "striking": false,
+          "loading": true,
+          "weaponLoading": true,
+          "recovering": false,
+          "weaponRecovery": false,
+          "loadFrame": null,
+          "handBlend": 0.992
+        }
+      },
+      {
+        "mt": 7,
+        "frame": 20,
+        "hand": {
+          "x": 49.82604079859257,
+          "y": -131.75253989955553,
+          "angle": -10,
+          "sourceX": 53.454601367999985,
+          "sourceY": -132.35941622399997
+        },
+        "motion": {
+          "x": 2.888888888888889,
+          "y": 0,
+          "lean": 0.05296296296296296,
+          "sx": 1,
+          "sy": 1.0096296296296297,
+          "handDX": -3.6285605694074117,
+          "handDY": 0.6068763244444456,
+          "segment": {
+            "s": {
+              "p": "hook",
+              "s": 5,
+              "e": 8
+            },
+            "i": 1,
+            "t": 0.6666666666666666
+          },
+          "striking": true,
+          "loading": false,
+          "weaponLoading": false,
+          "recovering": false,
+          "weaponRecovery": false,
+          "loadFrame": 18,
+          "handBlend": 0.9629629629629629
+        }
+      },
+      {
+        "mt": 9,
+        "frame": 20,
+        "hand": {
+          "x": 53.454601367999985,
+          "y": -132.35941622399997,
+          "angle": -10,
+          "sourceX": 53.454601367999985,
+          "sourceY": -132.35941622399997
+        },
+        "motion": {
+          "x": 2.5,
+          "y": 0,
+          "lean": 0.04,
+          "sx": 1,
+          "sy": 1.004,
+          "handDX": 0,
+          "handDY": 0,
+          "segment": {
+            "s": {
+              "p": "hook",
+              "s": 8,
+              "e": 11,
+              "hit": {
+                "d": 66,
+                "l": "m",
+                "st": 20,
+                "kb": 3,
+                "limb": "fh",
+                "r": 18,
+                "sweepFrom": "hook_c"
+              },
+              "hid": 0,
+              "hold": 1
+            },
+            "i": 2,
+            "t": 0.3333333333333333
+          },
+          "striking": true,
+          "loading": false,
+          "weaponLoading": false,
+          "recovering": false,
+          "weaponRecovery": false,
+          "loadFrame": null,
+          "handBlend": 0.7037037037037036
+        }
+      },
+      {
+        "mt": 11,
+        "frame": 20,
+        "hand": {
+          "x": 53.454601367999985,
+          "y": -132.35941622399997,
+          "angle": -10,
+          "sourceX": 53.454601367999985,
+          "sourceY": -132.35941622399997
+        },
+        "motion": {
+          "x": 2.5,
+          "y": 0,
+          "lean": 0.04,
+          "sx": 1,
+          "sy": 1.004,
+          "handDX": 0,
+          "handDY": 0,
+          "segment": {
+            "s": {
+              "p": "hook",
+              "s": 8,
+              "e": 11,
+              "hit": {
+                "d": 66,
+                "l": "m",
+                "st": 20,
+                "kb": 3,
+                "limb": "fh",
+                "r": 18,
+                "sweepFrom": "hook_c"
+              },
+              "hid": 0,
+              "hold": 1
+            },
+            "i": 2,
+            "t": 1
+          },
+          "striking": true,
+          "loading": false,
+          "weaponLoading": false,
+          "recovering": false,
+          "weaponRecovery": false,
+          "loadFrame": null,
+          "handBlend": 1
+        }
+      },
+      {
+        "mt": 16,
+        "frame": 19,
+        "hand": {
+          "x": 30.706396447999975,
+          "y": -121.97985970799995,
+          "angle": -30,
+          "sourceX": 30.706396447999975,
+          "sourceY": -121.97985970799995
+        },
+        "motion": {
+          "x": 1.265625,
+          "y": 0,
+          "lean": 0.02109375,
+          "sx": 1,
+          "sy": 1,
+          "handDX": 0,
+          "handDY": 0,
+          "segment": {
+            "s": {
+              "p": null,
+              "s": 11,
+              "e": 31
+            },
+            "i": 3,
+            "t": 0.25
+          },
+          "striking": false,
+          "loading": false,
+          "weaponLoading": false,
+          "recovering": true,
+          "weaponRecovery": true,
+          "loadFrame": null,
+          "handBlend": 0.578125
+        }
+      }
+    ],
+    [
+      {
+        "mt": 1,
+        "frame": 21,
+        "hand": {
+          "x": -13.413974356989394,
+          "y": -182.1028583857664,
+          "angle": -82,
+          "sourceX": -13.413974356989394,
+          "sourceY": -182.1028583857664
+        },
+        "motion": {
+          "x": -0.064453125,
+          "y": 0,
+          "lean": -0.0009453125,
+          "sx": 1,
+          "sy": 0.9992265625,
+          "handDX": 0,
+          "handDY": 0,
+          "segment": {
+            "s": {
+              "p": "ovh_c",
+              "s": 0,
+              "e": 8
+            },
+            "i": 0,
+            "t": 0.125
+          },
+          "striking": false,
+          "loading": true,
+          "weaponLoading": true,
+          "recovering": false,
+          "weaponRecovery": false,
+          "loadFrame": null,
+          "handBlend": 0.330078125
+        }
+      },
+      {
+        "mt": 7,
+        "frame": 21,
+        "hand": {
+          "x": -13.413974356989394,
+          "y": -182.1028583857664,
+          "angle": -82,
+          "sourceX": -13.413974356989394,
+          "sourceY": -182.1028583857664
+        },
+        "motion": {
+          "x": -1.435546875,
+          "y": 0,
+          "lean": -0.0210546875,
+          "sx": 1,
+          "sy": 0.9827734375,
+          "handDX": 0,
+          "handDY": 0,
+          "segment": {
+            "s": {
+              "p": "ovh_c",
+              "s": 0,
+              "e": 8
+            },
+            "i": 0,
+            "t": 0.875
+          },
+          "striking": false,
+          "loading": true,
+          "weaponLoading": true,
+          "recovering": false,
+          "weaponRecovery": false,
+          "loadFrame": null,
+          "handBlend": 0.998046875
+        }
+      },
+      {
+        "mt": 13,
+        "frame": 5,
+        "hand": {
+          "x": 91.36820766486039,
+          "y": -143.8283880435355,
+          "angle": -10,
+          "sourceX": 91.85164393864434,
+          "sourceY": -143.70362045683095
+        },
+        "motion": {
+          "x": 2.986111111111111,
+          "y": 0,
+          "lean": 0.05474537037037037,
+          "sx": 1,
+          "sy": 1.0099537037037036,
+          "handDX": -0.483436273783957,
+          "handDY": -0.1247675867045683,
+          "segment": {
+            "s": {
+              "p": "ovh",
+              "s": 8,
+              "e": 14
+            },
+            "i": 1,
+            "t": 0.8333333333333334
+          },
+          "striking": true,
+          "loading": false,
+          "weaponLoading": false,
+          "recovering": false,
+          "weaponRecovery": false,
+          "loadFrame": 21,
+          "handBlend": 0.9953703703703703
+        }
+      },
+      {
+        "mt": 15,
+        "frame": 5,
+        "hand": {
+          "x": 91.85164393864434,
+          "y": -143.70362045683095,
+          "angle": -10,
+          "sourceX": 91.85164393864434,
+          "sourceY": -143.70362045683095
+        },
+        "motion": {
+          "x": 2.5,
+          "y": 0,
+          "lean": 0.04,
+          "sx": 1,
+          "sy": 1.004,
+          "handDX": 0,
+          "handDY": 0,
+          "segment": {
+            "s": {
+              "p": "ovh",
+              "s": 14,
+              "e": 17,
+              "hit": {
+                "d": 84,
+                "l": "m",
+                "st": 22,
+                "kb": 6,
+                "limb": "bh",
+                "r": 22,
+                "sweepFrom": "ovh_c"
+              },
+              "hid": 0,
+              "hold": 1
+            },
+            "i": 2,
+            "t": 0.3333333333333333
+          },
+          "striking": true,
+          "loading": false,
+          "weaponLoading": false,
+          "recovering": false,
+          "weaponRecovery": false,
+          "loadFrame": null,
+          "handBlend": 0.7037037037037036
+        }
+      },
+      {
+        "mt": 17,
+        "frame": 5,
+        "hand": {
+          "x": 91.85164393864434,
+          "y": -143.70362045683095,
+          "angle": -10,
+          "sourceX": 91.85164393864434,
+          "sourceY": -143.70362045683095
+        },
+        "motion": {
+          "x": 2.5,
+          "y": 0,
+          "lean": 0.04,
+          "sx": 1,
+          "sy": 1.004,
+          "handDX": 0,
+          "handDY": 0,
+          "segment": {
+            "s": {
+              "p": "ovh",
+              "s": 14,
+              "e": 17,
+              "hit": {
+                "d": 84,
+                "l": "m",
+                "st": 22,
+                "kb": 6,
+                "limb": "bh",
+                "r": 22,
+                "sweepFrom": "ovh_c"
+              },
+              "hid": 0,
+              "hold": 1
+            },
+            "i": 2,
+            "t": 1
+          },
+          "striking": true,
+          "loading": false,
+          "weaponLoading": false,
+          "recovering": false,
+          "weaponRecovery": false,
+          "loadFrame": null,
+          "handBlend": 1
+        }
+      },
+      {
+        "mt": 22,
+        "frame": 19,
+        "hand": {
+          "x": 41.49416374659483,
+          "y": -135.15897184532432,
+          "angle": -30,
+          "sourceX": 41.49416374659483,
+          "sourceY": -135.15897184532432
+        },
+        "motion": {
+          "x": 1.265625,
+          "y": 0,
+          "lean": 0.02109375,
+          "sx": 1,
+          "sy": 1,
+          "handDX": 0,
+          "handDY": 0,
+          "segment": {
+            "s": {
+              "p": null,
+              "s": 17,
+              "e": 37
+            },
+            "i": 3,
+            "t": 0.25
+          },
+          "striking": false,
+          "loading": false,
+          "weaponLoading": false,
+          "recovering": true,
+          "weaponRecovery": true,
+          "loadFrame": null,
+          "handBlend": 0.578125
+        }
+      }
+    ],
+    [
+      {
+        "mt": 1,
+        "frame": 18,
+        "hand": {
+          "x": -31.910988881401614,
+          "y": -122.19512264150941,
+          "angle": 35,
+          "sourceX": -31.910988881401614,
+          "sourceY": -122.19512264150941
+        },
+        "motion": {
+          "x": -0.08309037900874636,
+          "y": 0,
+          "lean": -0.0012186588921282797,
+          "sx": 1,
+          "sy": 0.999002915451895,
+          "handDX": 0,
+          "handDY": 0,
+          "segment": {
+            "s": {
+              "p": "hook_c",
+              "s": 0,
+              "e": 7
+            },
+            "i": 0,
+            "t": 0.14285714285714285
+          },
+          "striking": false,
+          "loading": true,
+          "weaponLoading": true,
+          "recovering": false,
+          "weaponRecovery": false,
+          "loadFrame": null,
+          "handBlend": 0.3702623906705538
+        }
+      },
+      {
+        "mt": 5,
+        "frame": 18,
+        "hand": {
+          "x": -31.910988881401614,
+          "y": -122.19512264150941,
+          "angle": 35,
+          "sourceX": -31.910988881401614,
+          "sourceY": -122.19512264150941
+        },
+        "motion": {
+          "x": -1.2026239067055393,
+          "y": 0,
+          "lean": -0.017638483965014575,
+          "sx": 1,
+          "sy": 0.9855685131195335,
+          "handDX": 0,
+          "handDY": 0,
+          "segment": {
+            "s": {
+              "p": "hook_c",
+              "s": 0,
+              "e": 7
+            },
+            "i": 0,
+            "t": 0.7142857142857143
+          },
+          "striking": false,
+          "loading": true,
+          "weaponLoading": true,
+          "recovering": false,
+          "weaponRecovery": false,
+          "loadFrame": null,
+          "handBlend": 0.9766763848396501
+        }
+      },
+      {
+        "mt": 10,
+        "frame": 20,
+        "hand": {
+          "x": 74.06287801368977,
+          "y": -124.60751393879715,
+          "angle": -10,
+          "sourceX": 75.74500288504042,
+          "sourceY": -124.64580586415093
+        },
+        "motion": {
+          "x": 2.953125,
+          "y": 0,
+          "lean": 0.054140625,
+          "sx": 1,
+          "sy": 1.00984375,
+          "handDX": -1.682124871350657,
+          "handDY": 0.03829192535377368,
+          "segment": {
+            "s": {
+              "p": "hook",
+              "s": 7,
+              "e": 11
+            },
+            "i": 1,
+            "t": 0.75
+          },
+          "striking": true,
+          "loading": false,
+          "weaponLoading": false,
+          "recovering": false,
+          "weaponRecovery": false,
+          "loadFrame": 18,
+          "handBlend": 0.984375
+        }
+      },
+      {
+        "mt": 12,
+        "frame": 20,
+        "hand": {
+          "x": 75.74500288504042,
+          "y": -124.64580586415093,
+          "angle": -10,
+          "sourceX": 75.74500288504042,
+          "sourceY": -124.64580586415093
+        },
+        "motion": {
+          "x": 2.5,
+          "y": 0,
+          "lean": 0.04,
+          "sx": 1,
+          "sy": 1.004,
+          "handDX": 0,
+          "handDY": 0,
+          "segment": {
+            "s": {
+              "p": "hook",
+              "s": 11,
+              "e": 14,
+              "hit": {
+                "d": 68,
+                "l": "m",
+                "st": 20,
+                "kb": 3,
+                "limb": "fh",
+                "r": 18,
+                "sweepFrom": "hook_c"
+              },
+              "hid": 0,
+              "hold": 1
+            },
+            "i": 2,
+            "t": 0.3333333333333333
+          },
+          "striking": true,
+          "loading": false,
+          "weaponLoading": false,
+          "recovering": false,
+          "weaponRecovery": false,
+          "loadFrame": null,
+          "handBlend": 0.7037037037037036
+        }
+      },
+      {
+        "mt": 14,
+        "frame": 20,
+        "hand": {
+          "x": 75.74500288504042,
+          "y": -124.64580586415093,
+          "angle": -10,
+          "sourceX": 75.74500288504042,
+          "sourceY": -124.64580586415093
+        },
+        "motion": {
+          "x": 2.5,
+          "y": 0,
+          "lean": 0.04,
+          "sx": 1,
+          "sy": 1.004,
+          "handDX": 0,
+          "handDY": 0,
+          "segment": {
+            "s": {
+              "p": "hook",
+              "s": 11,
+              "e": 14,
+              "hit": {
+                "d": 68,
+                "l": "m",
+                "st": 20,
+                "kb": 3,
+                "limb": "fh",
+                "r": 18,
+                "sweepFrom": "hook_c"
+              },
+              "hid": 0,
+              "hold": 1
+            },
+            "i": 2,
+            "t": 1
+          },
+          "striking": true,
+          "loading": false,
+          "weaponLoading": false,
+          "recovering": false,
+          "weaponRecovery": false,
+          "loadFrame": null,
+          "handBlend": 1
+        }
+      },
+      {
+        "mt": 19,
+        "frame": 19,
+        "hand": {
+          "x": 28.33183218760108,
+          "y": -132.08016317991914,
+          "angle": -30,
+          "sourceX": 28.33183218760108,
+          "sourceY": -132.08016317991914
+        },
+        "motion": {
+          "x": 1.265625,
+          "y": 0,
+          "lean": 0.02109375,
+          "sx": 1,
+          "sy": 1,
+          "handDX": 0,
+          "handDY": 0,
+          "segment": {
+            "s": {
+              "p": null,
+              "s": 14,
+              "e": 34
+            },
+            "i": 3,
+            "t": 0.25
+          },
+          "striking": false,
+          "loading": false,
+          "weaponLoading": false,
+          "recovering": true,
+          "weaponRecovery": true,
+          "loadFrame": null,
+          "handBlend": 0.578125
+        }
+      }
+    ],
+    [
+      {
+        "mt": 1,
+        "frame": 0,
+        "hand": {
+          "x": 37.036659504,
+          "y": -138.518016104,
+          "angle": -32,
+          "sourceX": 37.036659504,
+          "sourceY": -138.518016104
+        },
+        "motion": {
+          "x": 1.344,
+          "y": 0,
+          "lean": 0.022400000000000003,
+          "sx": 1,
+          "sy": 1,
+          "handDX": 0,
+          "handDY": 0,
+          "segment": {
+            "s": {
+              "s": 0,
+              "e": 5
+            },
+            "i": 0,
+            "t": 0.2
+          },
+          "striking": false,
+          "loading": false,
+          "weaponLoading": false,
+          "recovering": true,
+          "weaponRecovery": false,
+          "loadFrame": null,
+          "handBlend": 0.4879999999999999
+        }
+      },
+      {
+        "mt": 4,
+        "frame": 0,
+        "hand": {
+          "x": 37.036659504,
+          "y": -138.518016104,
+          "angle": -32,
+          "sourceX": 37.036659504,
+          "sourceY": -138.518016104
+        },
+        "motion": {
+          "x": 0.1559999999999998,
+          "y": 0,
+          "lean": 0.002599999999999997,
+          "sx": 1,
+          "sy": 1,
+          "handDX": 0,
+          "handDY": 0,
+          "segment": {
+            "s": {
+              "s": 0,
+              "e": 5
+            },
+            "i": 0,
+            "t": 0.8
+          },
+          "striking": false,
+          "loading": false,
+          "weaponLoading": false,
+          "recovering": true,
+          "weaponRecovery": false,
+          "loadFrame": null,
+          "handBlend": 0.992
+        }
+      },
+      {
+        "mt": 7,
+        "frame": 5,
+        "hand": {
+          "x": 70.452669872,
+          "y": -143.07444423614814,
+          "angle": -10,
+          "sourceX": 75.55498912000002,
+          "sourceY": -144.444075776
+        },
+        "motion": {
+          "x": 2.888888888888889,
+          "y": 0,
+          "lean": 0.05296296296296296,
+          "sx": 1,
+          "sy": 1.0096296296296297,
+          "handDX": -5.102319248000008,
+          "handDY": 1.3696315398518537,
+          "segment": {
+            "s": {
+              "p": "cross",
+              "s": 5,
+              "e": 8
+            },
+            "i": 1,
+            "t": 0.6666666666666666
+          },
+          "striking": true,
+          "loading": false,
+          "weaponLoading": false,
+          "recovering": false,
+          "weaponRecovery": false,
+          "loadFrame": 18,
+          "handBlend": 0.9629629629629629
+        }
+      },
+      {
+        "mt": 9,
+        "frame": 5,
+        "hand": {
+          "x": 75.55498912000002,
+          "y": -144.444075776,
+          "angle": -10,
+          "sourceX": 75.55498912000002,
+          "sourceY": -144.444075776
+        },
+        "motion": {
+          "x": 2.5,
+          "y": 0,
+          "lean": 0.04,
+          "sx": 1,
+          "sy": 1.004,
+          "handDX": 0,
+          "handDY": 0,
+          "segment": {
+            "s": {
+              "p": "cross",
+              "s": 8,
+              "e": 11,
+              "hit": {
+                "d": 84,
+                "l": "m",
+                "st": 22,
+                "kb": 6,
+                "limb": "bh",
+                "r": 22
+              },
+              "hid": 0,
+              "hold": 1
+            },
+            "i": 2,
+            "t": 0.3333333333333333
+          },
+          "striking": true,
+          "loading": false,
+          "weaponLoading": false,
+          "recovering": false,
+          "weaponRecovery": false,
+          "loadFrame": null,
+          "handBlend": 0.7037037037037036
+        }
+      },
+      {
+        "mt": 11,
+        "frame": 5,
+        "hand": {
+          "x": 75.55498912000002,
+          "y": -144.444075776,
+          "angle": -10,
+          "sourceX": 75.55498912000002,
+          "sourceY": -144.444075776
+        },
+        "motion": {
+          "x": 2.5,
+          "y": 0,
+          "lean": 0.04,
+          "sx": 1,
+          "sy": 1.004,
+          "handDX": 0,
+          "handDY": 0,
+          "segment": {
+            "s": {
+              "p": "cross",
+              "s": 8,
+              "e": 11,
+              "hit": {
+                "d": 84,
+                "l": "m",
+                "st": 22,
+                "kb": 6,
+                "limb": "bh",
+                "r": 22
+              },
+              "hid": 0,
+              "hold": 1
+            },
+            "i": 2,
+            "t": 1
+          },
+          "striking": true,
+          "loading": false,
+          "weaponLoading": false,
+          "recovering": false,
+          "weaponRecovery": false,
+          "loadFrame": null,
+          "handBlend": 1
+        }
+      },
+      {
+        "mt": 16,
+        "frame": 19,
+        "hand": {
+          "x": 32.730815725006046,
+          "y": -138.0789230659374,
+          "angle": -30,
+          "sourceX": 32.730815725006046,
+          "sourceY": -138.0789230659374
+        },
+        "motion": {
+          "x": 1.265625,
+          "y": 0,
+          "lean": 0.02109375,
+          "sx": 1,
+          "sy": 1,
+          "handDX": 0,
+          "handDY": 0,
+          "segment": {
+            "s": {
+              "p": null,
+              "s": 11,
+              "e": 31
+            },
+            "i": 3,
+            "t": 0.25
+          },
+          "striking": false,
+          "loading": false,
+          "weaponLoading": false,
+          "recovering": true,
+          "weaponRecovery": true,
+          "loadFrame": null,
+          "handBlend": 0.578125
+        }
+      }
+    ]
+  ]
+}

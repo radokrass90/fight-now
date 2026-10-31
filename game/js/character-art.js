@@ -52,7 +52,7 @@ const CharacterArt = (() => {
     block: 1, cblock: 25, crouch: 2, kneel: 29, sit: 2,
     jump: 3, jab: 4, c_jab: 4, palm: 4, jpunch: 4, jhp: 5,
     jab_c: 0, palm_c: 0, cross_c: 18, hook_c: 18, hay_c: 18,
-    upper_c: 18, c_up_c: 18, elbow_c: 18, ovh_c: 18, hb_c: 18,
+    upper_c: 18, c_up_c: 18, elbow_c: 18, ovh_c: 21, hb_c: 18,
     cross: 5, hook: 20, hay: 5, upper: 21, c_up: 21, elbow: 20,
     ovh: 5, hb: 20, shoulder: 20, lariat: 20, superman: 5,
     spray: 4, throwp: 18, throwx: 4, grab: 1, lift: 9, slam: 5,
@@ -104,7 +104,7 @@ const CharacterArt = (() => {
       if (i < 0) i = f.mc.segs.length - 1;
       const seg = f.mc.segs[i];
       if (seg && typeof seg.p === 'string') {
-        if (!seg.hold && ['jab', 'palm', 'c_jab', 'jpunch'].includes(seg.p)) return 16;
+        if (!seg.hold && ['jab', 'palm', 'c_jab', 'jpunch'].includes(seg.p) && (typeof CombatMotion==='undefined'||(f.mt-seg.s)/Math.max(1,seg.e-seg.s)<.4)) return 16;
         if (Object.hasOwn(poseFrames, seg.p)) return poseFrames[seg.p];
         if (seg.p.endsWith('_c')) return f.move?.crouch ? 25 : 18;
       }
@@ -147,13 +147,16 @@ const CharacterArt = (() => {
     if (f.flash > 0) ctx.filter = 'brightness(1.65)';
     else if (f.paint) ctx.filter = 'hue-rotate(110deg) saturate(2)';
     else if (f.strip) ctx.filter = 'brightness(1.3) saturate(0.2)';
-    if (f.state === 'idle') ctx.scale(1, 1 + Math.sin((f.st || 0) * .09) * .003);
+    const motion=typeof CombatMotion!=='undefined'?CombatMotion.sample(f):null;
+    if(motion)CombatMotion.apply(ctx,motion);
+    else if (f.state === 'idle') ctx.scale(1, 1 + Math.sin((f.st || 0) * .09) * .003);
     ctx.imageSmoothingEnabled = true;
     const ratio = (image.naturalWidth || 2560) / 2560;
     const airOffset=reforged&&index===3 ? Math.min(100,Math.max(0,frame.bounds.y-entry.data.frames[0].bounds.y)) : 0;
-    ctx.drawImage(image, frame.x * ratio, frame.y * ratio, 512 * ratio, 512 * ratio, -220 * size, -464 * size-airOffset*size, 512 * size, 512 * size);
-    ctx.restore();
-    return { sk, hip, frameIndex:index, frame, size, airOffset, image, ratio, alpha:opt.alpha??1 };
+    const art={sk,hip,frameIndex:index,frame,size,airOffset,image,ratio,motion,alpha:opt.alpha??1};
+    if(motion){art.hand=CombatMotion.hand(f,art);CombatMotion.paint(ctx,image,art);}
+    else ctx.drawImage(image,frame.x*ratio,frame.y*ratio,512*ratio,512*ratio,-220*size,-464*size-airOffset*size,512*size,512*size);
+    ctx.restore();return art;
   }
   function portrait(ctx, c, x, y, w, h, facing) {
     const entry = entries.get(c.id);

@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-31",
+  "mainCommit": "fac6e7be47a3f4eec0bf80b1abee07a6f9eb2eaa",
+  "runtimeTree": "71fa9289b94ec147aff73428872a3023b77a9ef0",
+  "pagesRun": 41181558929,
+  "pagesStatus": "success",
+  "productionFilesHashVerified": 8,
+  "databaseModified": false,
+  "checksPassed": 15,
+  "characterStringCases": 60,
+  "weaponStringCases": 300,
+  "actualBrowserKeyboardFourHitDamage": 144,
+  "actualPhoneButtonsFourHitDamage": 144,
+  "canonicalEquippedWeapon": "bat-06",
+  "canonicalEquippedWeaponCombo": {
+    "hits": 3,
+    "damage": 127
+  },
+  "phoneViewport": [
+    390,
+    844
+  ],
+  "physicalDeviceTest": false,
+  "newGeneratedRasterFrames": 0
+}

@@ -1,0 +1,2346 @@
+{
+  "routes": [
+    {
+      "id": "murat",
+      "route": 0,
+      "facing": 1,
+      "sent": 4,
+      "hits": 4,
+      "damage": 144,
+      "hitAt": 41
+    },
+    {
+      "id": "murat",
+      "route": 1,
+      "facing": 1,
+      "sent": 3,
+      "hits": 3,
+      "damage": 140,
+      "hitAt": 33
+    },
+    {
+      "id": "murat",
+      "route": 0,
+      "facing": -1,
+      "sent": 4,
+      "hits": 4,
+      "damage": 144,
+      "hitAt": 41
+    },
+    {
+      "id": "murat",
+      "route": 1,
+      "facing": -1,
+      "sent": 3,
+      "hits": 3,
+      "damage": 140,
+      "hitAt": 33
+    },
+    {
+      "id": "yasmin",
+      "route": 0,
+      "facing": 1,
+      "sent": 4,
+      "hits": 4,
+      "damage": 128,
+      "hitAt": 41
+    },
+    {
+      "id": "yasmin",
+      "route": 1,
+      "facing": 1,
+      "sent": 3,
+      "hits": 3,
+      "damage": 132,
+      "hitAt": 33
+    },
+    {
+      "id": "yasmin",
+      "route": 0,
+      "facing": -1,
+      "sent": 4,
+      "hits": 4,
+      "damage": 128,
+      "hitAt": 41
+    },
+    {
+      "id": "yasmin",
+      "route": 1,
+      "facing": -1,
+      "sent": 3,
+      "hits": 3,
+      "damage": 132,
+      "hitAt": 33
+    },
+    {
+      "id": "dragan",
+      "route": 0,
+      "facing": 1,
+      "sent": 4,
+      "hits": 4,
+      "damage": 127,
+      "hitAt": 42
+    },
+    {
+      "id": "dragan",
+      "route": 1,
+      "facing": 1,
+      "sent": 3,
+      "hits": 3,
+      "damage": 123,
+      "hitAt": 34
+    },
+    {
+      "id": "dragan",
+      "route": 0,
+      "facing": -1,
+      "sent": 4,
+      "hits": 4,
+      "damage": 127,
+      "hitAt": 42
+    },
+    {
+      "id": "dragan",
+      "route": 1,
+      "facing": -1,
+      "sent": 3,
+      "hits": 3,
+      "damage": 123,
+      "hitAt": 34
+    },
+    {
+      "id": "kevin",
+      "route": 0,
+      "facing": 1,
+      "sent": 4,
+      "hits": 4,
+      "damage": 135,
+      "hitAt": 42
+    },
+    {
+      "id": "kevin",
+      "route": 1,
+      "facing": 1,
+      "sent": 3,
+      "hits": 3,
+      "damage": 132,
+      "hitAt": 34
+    },
+    {
+      "id": "kevin",
+      "route": 0,
+      "facing": -1,
+      "sent": 4,
+      "hits": 4,
+      "damage": 135,
+      "hitAt": 42
+    },
+    {
+      "id": "kevin",
+      "route": 1,
+      "facing": -1,
+      "sent": 3,
+      "hits": 3,
+      "damage": 132,
+      "hitAt": 34
+    },
+    {
+      "id": "leyla",
+      "route": 0,
+      "facing": 1,
+      "sent": 4,
+      "hits": 4,
+      "damage": 122,
+      "hitAt": 41
+    },
+    {
+      "id": "leyla",
+      "route": 1,
+      "facing": 1,
+      "sent": 3,
+      "hits": 3,
+      "damage": 121,
+      "hitAt": 33
+    },
+    {
+      "id": "leyla",
+      "route": 0,
+      "facing": -1,
+      "sent": 4,
+      "hits": 4,
+      "damage": 122,
+      "hitAt": 41
+    },
+    {
+      "id": "leyla",
+      "route": 1,
+      "facing": -1,
+      "sent": 3,
+      "hits": 3,
+      "damage": 121,
+      "hitAt": 33
+    },
+    {
+      "id": "tomasz",
+      "route": 0,
+      "facing": 1,
+      "sent": 4,
+      "hits": 4,
+      "damage": 127,
+      "hitAt": 41
+    },
+    {
+      "id": "tomasz",
+      "route": 1,
+      "facing": 1,
+      "sent": 3,
+      "hits": 3,
+      "damage": 124,
+      "hitAt": 32
+    },
+    {
+      "id": "tomasz",
+      "route": 0,
+      "facing": -1,
+      "sent": 4,
+      "hits": 4,
+      "damage": 127,
+      "hitAt": 41
+    },
+    {
+      "id": "tomasz",
+      "route": 1,
+      "facing": -1,
+      "sent": 3,
+      "hits": 3,
+      "damage": 124,
+      "hitAt": 32
+    },
+    {
+      "id": "hakan",
+      "route": 0,
+      "facing": 1,
+      "sent": 4,
+      "hits": 4,
+      "damage": 137,
+      "hitAt": 42
+    },
+    {
+      "id": "hakan",
+      "route": 1,
+      "facing": 1,
+      "sent": 3,
+      "hits": 3,
+      "damage": 134,
+      "hitAt": 34
+    },
+    {
+      "id": "hakan",
+      "route": 0,
+      "facing": -1,
+      "sent": 4,
+      "hits": 4,
+      "damage": 137,
+      "hitAt": 42
+    },
+    {
+      "id": "hakan",
+      "route": 1,
+      "facing": -1,
+      "sent": 3,
+      "hits": 3,
+      "damage": 134,
+      "hitAt": 34
+    },
+    {
+      "id": "nadine",
+      "route": 0,
+      "facing": 1,
+      "sent": 4,
+      "hits": 4,
+      "damage": 133,
+      "hitAt": 41
+    },
+    {
+      "id": "nadine",
+      "route": 1,
+      "facing": 1,
+      "sent": 3,
+      "hits": 3,
+      "damage": 131,
+      "hitAt": 32
+    },
+    {
+      "id": "nadine",
+      "route": 0,
+      "facing": -1,
+      "sent": 4,
+      "hits": 4,
+      "damage": 133,
+      "hitAt": 41
+    },
+    {
+      "id": "nadine",
+      "route": 1,
+      "facing": -1,
+      "sent": 3,
+      "hits": 3,
+      "damage": 131,
+      "hitAt": 32
+    },
+    {
+      "id": "emre",
+      "route": 0,
+      "facing": 1,
+      "sent": 4,
+      "hits": 4,
+      "damage": 118,
+      "hitAt": 41
+    },
+    {
+      "id": "emre",
+      "route": 1,
+      "facing": 1,
+      "sent": 3,
+      "hits": 3,
+      "damage": 114,
+      "hitAt": 33
+    },
+    {
+      "id": "emre",
+      "route": 0,
+      "facing": -1,
+      "sent": 4,
+      "hits": 4,
+      "damage": 118,
+      "hitAt": 41
+    },
+    {
+      "id": "emre",
+      "route": 1,
+      "facing": -1,
+      "sent": 3,
+      "hits": 3,
+      "damage": 114,
+      "hitAt": 33
+    },
+    {
+      "id": "boris",
+      "route": 0,
+      "facing": 1,
+      "sent": 4,
+      "hits": 4,
+      "damage": 149,
+      "hitAt": 42
+    },
+    {
+      "id": "boris",
+      "route": 1,
+      "facing": 1,
+      "sent": 3,
+      "hits": 3,
+      "damage": 144,
+      "hitAt": 34
+    },
+    {
+      "id": "boris",
+      "route": 0,
+      "facing": -1,
+      "sent": 4,
+      "hits": 4,
+      "damage": 149,
+      "hitAt": 42
+    },
+    {
+      "id": "boris",
+      "route": 1,
+      "facing": -1,
+      "sent": 3,
+      "hits": 3,
+      "damage": 144,
+      "hitAt": 34
+    },
+    {
+      "id": "jasmin",
+      "route": 0,
+      "facing": 1,
+      "sent": 4,
+      "hits": 4,
+      "damage": 125,
+      "hitAt": 41
+    },
+    {
+      "id": "jasmin",
+      "route": 1,
+      "facing": 1,
+      "sent": 3,
+      "hits": 3,
+      "damage": 125,
+      "hitAt": 33
+    },
+    {
+      "id": "jasmin",
+      "route": 0,
+      "facing": -1,
+      "sent": 4,
+      "hits": 4,
+      "damage": 125,
+      "hitAt": 41
+    },
+    {
+      "id": "jasmin",
+      "route": 1,
+      "facing": -1,
+      "sent": 3,
+      "hits": 3,
+      "damage": 125,
+      "hitAt": 33
+    },
+    {
+      "id": "adem",
+      "route": 0,
+      "facing": 1,
+      "sent": 4,
+      "hits": 4,
+      "damage": 127,
+      "hitAt": 42
+    },
+    {
+      "id": "adem",
+      "route": 1,
+      "facing": 1,
+      "sent": 3,
+      "hits": 3,
+      "damage": 121,
+      "hitAt": 34
+    },
+    {
+      "id": "adem",
+      "route": 0,
+      "facing": -1,
+      "sent": 4,
+      "hits": 4,
+      "damage": 127,
+      "hitAt": 42
+    },
+    {
+      "id": "adem",
+      "route": 1,
+      "facing": -1,
+      "sent": 3,
+      "hits": 3,
+      "damage": 121,
+      "hitAt": 34
+    },
+    {
+      "id": "marco",
+      "route": 0,
+      "facing": 1,
+      "sent": 4,
+      "hits": 4,
+      "damage": 129,
+      "hitAt": 41
+    },
+    {
+      "id": "marco",
+      "route": 1,
+      "facing": 1,
+      "sent": 3,
+      "hits": 3,
+      "damage": 126,
+      "hitAt": 32
+    },
+    {
+      "id": "marco",
+      "route": 0,
+      "facing": -1,
+      "sent": 4,
+      "hits": 4,
+      "damage": 129,
+      "hitAt": 41
+    },
+    {
+      "id": "marco",
+      "route": 1,
+      "facing": -1,
+      "sent": 3,
+      "hits": 3,
+      "damage": 126,
+      "hitAt": 32
+    },
+    {
+      "id": "fatima",
+      "route": 0,
+      "facing": 1,
+      "sent": 4,
+      "hits": 4,
+      "damage": 153,
+      "hitAt": 42
+    },
+    {
+      "id": "fatima",
+      "route": 1,
+      "facing": 1,
+      "sent": 3,
+      "hits": 3,
+      "damage": 148,
+      "hitAt": 34
+    },
+    {
+      "id": "fatima",
+      "route": 0,
+      "facing": -1,
+      "sent": 4,
+      "hits": 4,
+      "damage": 153,
+      "hitAt": 42
+    },
+    {
+      "id": "fatima",
+      "route": 1,
+      "facing": -1,
+      "sent": 3,
+      "hits": 3,
+      "damage": 148,
+      "hitAt": 34
+    },
+    {
+      "id": "danny",
+      "route": 0,
+      "facing": 1,
+      "sent": 4,
+      "hits": 4,
+      "damage": 118,
+      "hitAt": 42
+    },
+    {
+      "id": "danny",
+      "route": 1,
+      "facing": 1,
+      "sent": 3,
+      "hits": 3,
+      "damage": 114,
+      "hitAt": 34
+    },
+    {
+      "id": "danny",
+      "route": 0,
+      "facing": -1,
+      "sent": 4,
+      "hits": 4,
+      "damage": 118,
+      "hitAt": 42
+    },
+    {
+      "id": "danny",
+      "route": 1,
+      "facing": -1,
+      "sent": 3,
+      "hits": 3,
+      "damage": 114,
+      "hitAt": 34
+    }
+  ],
+  "weapons": [
+    {
+      "fighter": "murat",
+      "family": "bat",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "murat",
+      "family": "bat",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "murat",
+      "family": "staff",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "murat",
+      "family": "staff",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "murat",
+      "family": "hammer",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "murat",
+      "family": "hammer",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "murat",
+      "family": "axe",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "murat",
+      "family": "axe",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "murat",
+      "family": "sword",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "murat",
+      "family": "sword",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "murat",
+      "family": "tonfa",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "murat",
+      "family": "tonfa",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "murat",
+      "family": "chain",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "murat",
+      "family": "chain",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "murat",
+      "family": "spear",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "murat",
+      "family": "spear",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "murat",
+      "family": "knuckles",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "murat",
+      "family": "knuckles",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "murat",
+      "family": "blade",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "murat",
+      "family": "blade",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "yasmin",
+      "family": "bat",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "yasmin",
+      "family": "bat",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "yasmin",
+      "family": "staff",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "yasmin",
+      "family": "staff",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "yasmin",
+      "family": "hammer",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "yasmin",
+      "family": "hammer",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "yasmin",
+      "family": "axe",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "yasmin",
+      "family": "axe",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "yasmin",
+      "family": "sword",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "yasmin",
+      "family": "sword",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "yasmin",
+      "family": "tonfa",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "yasmin",
+      "family": "tonfa",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "yasmin",
+      "family": "chain",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "yasmin",
+      "family": "chain",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "yasmin",
+      "family": "spear",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "yasmin",
+      "family": "spear",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "yasmin",
+      "family": "knuckles",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "yasmin",
+      "family": "knuckles",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "yasmin",
+      "family": "blade",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "yasmin",
+      "family": "blade",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "dragan",
+      "family": "bat",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "dragan",
+      "family": "bat",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "dragan",
+      "family": "staff",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "dragan",
+      "family": "staff",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "dragan",
+      "family": "hammer",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "dragan",
+      "family": "hammer",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "dragan",
+      "family": "axe",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "dragan",
+      "family": "axe",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "dragan",
+      "family": "sword",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "dragan",
+      "family": "sword",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "dragan",
+      "family": "tonfa",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "dragan",
+      "family": "tonfa",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "dragan",
+      "family": "chain",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "dragan",
+      "family": "chain",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "dragan",
+      "family": "spear",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "dragan",
+      "family": "spear",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "dragan",
+      "family": "knuckles",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "dragan",
+      "family": "knuckles",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "dragan",
+      "family": "blade",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "dragan",
+      "family": "blade",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "kevin",
+      "family": "bat",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "kevin",
+      "family": "bat",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "kevin",
+      "family": "staff",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "kevin",
+      "family": "staff",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "kevin",
+      "family": "hammer",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "kevin",
+      "family": "hammer",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "kevin",
+      "family": "axe",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "kevin",
+      "family": "axe",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "kevin",
+      "family": "sword",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "kevin",
+      "family": "sword",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "kevin",
+      "family": "tonfa",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "kevin",
+      "family": "tonfa",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "kevin",
+      "family": "chain",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "kevin",
+      "family": "chain",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "kevin",
+      "family": "spear",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "kevin",
+      "family": "spear",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "kevin",
+      "family": "knuckles",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "kevin",
+      "family": "knuckles",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "kevin",
+      "family": "blade",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "kevin",
+      "family": "blade",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "leyla",
+      "family": "bat",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "leyla",
+      "family": "bat",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "leyla",
+      "family": "staff",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "leyla",
+      "family": "staff",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "leyla",
+      "family": "hammer",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "leyla",
+      "family": "hammer",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "leyla",
+      "family": "axe",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "leyla",
+      "family": "axe",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "leyla",
+      "family": "sword",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "leyla",
+      "family": "sword",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "leyla",
+      "family": "tonfa",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "leyla",
+      "family": "tonfa",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "leyla",
+      "family": "chain",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "leyla",
+      "family": "chain",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "leyla",
+      "family": "spear",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "leyla",
+      "family": "spear",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "leyla",
+      "family": "knuckles",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "leyla",
+      "family": "knuckles",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "leyla",
+      "family": "blade",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "leyla",
+      "family": "blade",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "tomasz",
+      "family": "bat",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "tomasz",
+      "family": "bat",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "tomasz",
+      "family": "staff",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "tomasz",
+      "family": "staff",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "tomasz",
+      "family": "hammer",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "tomasz",
+      "family": "hammer",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "tomasz",
+      "family": "axe",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "tomasz",
+      "family": "axe",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "tomasz",
+      "family": "sword",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "tomasz",
+      "family": "sword",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "tomasz",
+      "family": "tonfa",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "tomasz",
+      "family": "tonfa",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "tomasz",
+      "family": "chain",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "tomasz",
+      "family": "chain",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "tomasz",
+      "family": "spear",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "tomasz",
+      "family": "spear",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "tomasz",
+      "family": "knuckles",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "tomasz",
+      "family": "knuckles",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "tomasz",
+      "family": "blade",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "tomasz",
+      "family": "blade",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "hakan",
+      "family": "bat",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "hakan",
+      "family": "bat",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "hakan",
+      "family": "staff",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "hakan",
+      "family": "staff",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "hakan",
+      "family": "hammer",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "hakan",
+      "family": "hammer",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "hakan",
+      "family": "axe",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "hakan",
+      "family": "axe",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "hakan",
+      "family": "sword",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "hakan",
+      "family": "sword",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "hakan",
+      "family": "tonfa",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "hakan",
+      "family": "tonfa",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "hakan",
+      "family": "chain",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "hakan",
+      "family": "chain",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "hakan",
+      "family": "spear",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "hakan",
+      "family": "spear",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "hakan",
+      "family": "knuckles",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "hakan",
+      "family": "knuckles",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "hakan",
+      "family": "blade",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "hakan",
+      "family": "blade",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "nadine",
+      "family": "bat",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "nadine",
+      "family": "bat",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "nadine",
+      "family": "staff",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "nadine",
+      "family": "staff",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "nadine",
+      "family": "hammer",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "nadine",
+      "family": "hammer",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "nadine",
+      "family": "axe",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "nadine",
+      "family": "axe",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "nadine",
+      "family": "sword",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "nadine",
+      "family": "sword",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "nadine",
+      "family": "tonfa",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "nadine",
+      "family": "tonfa",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "nadine",
+      "family": "chain",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "nadine",
+      "family": "chain",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "nadine",
+      "family": "spear",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "nadine",
+      "family": "spear",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "nadine",
+      "family": "knuckles",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "nadine",
+      "family": "knuckles",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "nadine",
+      "family": "blade",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "nadine",
+      "family": "blade",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "emre",
+      "family": "bat",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "emre",
+      "family": "bat",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "emre",
+      "family": "staff",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "emre",
+      "family": "staff",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "emre",
+      "family": "hammer",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "emre",
+      "family": "hammer",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "emre",
+      "family": "axe",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "emre",
+      "family": "axe",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "emre",
+      "family": "sword",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "emre",
+      "family": "sword",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "emre",
+      "family": "tonfa",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "emre",
+      "family": "tonfa",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "emre",
+      "family": "chain",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "emre",
+      "family": "chain",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "emre",
+      "family": "spear",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "emre",
+      "family": "spear",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "emre",
+      "family": "knuckles",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "emre",
+      "family": "knuckles",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "emre",
+      "family": "blade",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "emre",
+      "family": "blade",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "boris",
+      "family": "bat",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "boris",
+      "family": "bat",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "boris",
+      "family": "staff",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "boris",
+      "family": "staff",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "boris",
+      "family": "hammer",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "boris",
+      "family": "hammer",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "boris",
+      "family": "axe",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "boris",
+      "family": "axe",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "boris",
+      "family": "sword",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "boris",
+      "family": "sword",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "boris",
+      "family": "tonfa",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "boris",
+      "family": "tonfa",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "boris",
+      "family": "chain",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "boris",
+      "family": "chain",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "boris",
+      "family": "spear",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "boris",
+      "family": "spear",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "boris",
+      "family": "knuckles",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "boris",
+      "family": "knuckles",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "boris",
+      "family": "blade",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "boris",
+      "family": "blade",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "jasmin",
+      "family": "bat",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "jasmin",
+      "family": "bat",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "jasmin",
+      "family": "staff",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "jasmin",
+      "family": "staff",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "jasmin",
+      "family": "hammer",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "jasmin",
+      "family": "hammer",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "jasmin",
+      "family": "axe",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "jasmin",
+      "family": "axe",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "jasmin",
+      "family": "sword",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "jasmin",
+      "family": "sword",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "jasmin",
+      "family": "tonfa",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "jasmin",
+      "family": "tonfa",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "jasmin",
+      "family": "chain",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "jasmin",
+      "family": "chain",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "jasmin",
+      "family": "spear",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "jasmin",
+      "family": "spear",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "jasmin",
+      "family": "knuckles",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "jasmin",
+      "family": "knuckles",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "jasmin",
+      "family": "blade",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "jasmin",
+      "family": "blade",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "adem",
+      "family": "bat",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "adem",
+      "family": "bat",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "adem",
+      "family": "staff",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "adem",
+      "family": "staff",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "adem",
+      "family": "hammer",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "adem",
+      "family": "hammer",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "adem",
+      "family": "axe",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "adem",
+      "family": "axe",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "adem",
+      "family": "sword",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "adem",
+      "family": "sword",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "adem",
+      "family": "tonfa",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "adem",
+      "family": "tonfa",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "adem",
+      "family": "chain",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "adem",
+      "family": "chain",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "adem",
+      "family": "spear",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "adem",
+      "family": "spear",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "adem",
+      "family": "knuckles",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "adem",
+      "family": "knuckles",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "adem",
+      "family": "blade",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "adem",
+      "family": "blade",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "marco",
+      "family": "bat",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "marco",
+      "family": "bat",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "marco",
+      "family": "staff",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "marco",
+      "family": "staff",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "marco",
+      "family": "hammer",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "marco",
+      "family": "hammer",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "marco",
+      "family": "axe",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "marco",
+      "family": "axe",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "marco",
+      "family": "sword",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "marco",
+      "family": "sword",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "marco",
+      "family": "tonfa",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "marco",
+      "family": "tonfa",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "marco",
+      "family": "chain",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "marco",
+      "family": "chain",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "marco",
+      "family": "spear",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "marco",
+      "family": "spear",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "marco",
+      "family": "knuckles",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "marco",
+      "family": "knuckles",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "marco",
+      "family": "blade",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "marco",
+      "family": "blade",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "fatima",
+      "family": "bat",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "fatima",
+      "family": "bat",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "fatima",
+      "family": "staff",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "fatima",
+      "family": "staff",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "fatima",
+      "family": "hammer",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "fatima",
+      "family": "hammer",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "fatima",
+      "family": "axe",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "fatima",
+      "family": "axe",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "fatima",
+      "family": "sword",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "fatima",
+      "family": "sword",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "fatima",
+      "family": "tonfa",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "fatima",
+      "family": "tonfa",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "fatima",
+      "family": "chain",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "fatima",
+      "family": "chain",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "fatima",
+      "family": "spear",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "fatima",
+      "family": "spear",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "fatima",
+      "family": "knuckles",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "fatima",
+      "family": "knuckles",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "fatima",
+      "family": "blade",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "fatima",
+      "family": "blade",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "danny",
+      "family": "bat",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "danny",
+      "family": "bat",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "danny",
+      "family": "staff",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "danny",
+      "family": "staff",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "danny",
+      "family": "hammer",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "danny",
+      "family": "hammer",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "danny",
+      "family": "axe",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "danny",
+      "family": "axe",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "danny",
+      "family": "sword",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "danny",
+      "family": "sword",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "danny",
+      "family": "tonfa",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "danny",
+      "family": "tonfa",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "danny",
+      "family": "chain",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "danny",
+      "family": "chain",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "danny",
+      "family": "spear",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "danny",
+      "family": "spear",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "danny",
+      "family": "knuckles",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "danny",
+      "family": "knuckles",
+      "facing": -1,
+      "hits": 3
+    },
+    {
+      "fighter": "danny",
+      "family": "blade",
+      "facing": 1,
+      "hits": 3
+    },
+    {
+      "fighter": "danny",
+      "family": "blade",
+      "facing": -1,
+      "hits": 3
+    }
+  ]
+}
