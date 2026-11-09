@@ -11,7 +11,10 @@
     --font-d: "Russo One", Impact, "Arial Black", sans-serif; --font-b: "Rubik", "Segoe UI", Arial, sans-serif;
     color-scheme: dark;
   }
-  html, body { height: 100%; }
+  html, body { height: 100%; overscroll-behavior:none; }
+  #game-view { position:fixed; inset:0 auto auto 0; width:100%; height:100%; overflow:hidden; transform:translate(0,0); transform-origin:top left; }
+  body.playing:not(.native-menu-open) #game-view { touch-action:none; }
+  body.playing:not(.native-menu-open) #mobile-toolbar button { touch-action:none; }
   body { margin: 0; background: var(--asphalt); color: var(--chalk); font-family: var(--font-b); overflow: hidden; touch-action: none; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
   #wrap { padding:env(safe-area-inset-top,0px) env(safe-area-inset-right,0px) env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px); position: fixed; inset: 0; display: grid; place-items: center; }
   #c { display: block; background: #000; image-rendering: auto; }
@@ -79,6 +82,7 @@
 <link rel="stylesheet" href="css/reforged.css?v=combo-2">
 <link rel="stylesheet" href="css/weapon-armory.css?v=combat-2">
 
+<div id="game-view">
 <div id="wrap"><canvas id="c" width="960" height="540" aria-label="Fight Now playfield" data-i18n-aria="Fight Now playfield"></canvas></div>
 <div id="loading">FIGHT NOW…<small data-i18n="Loading menu…" style="font:14px system-ui;letter-spacing:0">Loading menu…</small></div>
 <div id="touch" hidden>
@@ -98,7 +102,7 @@
 <div id="mobile-toolbar" hidden><span id="mobile-hint"></span><button id="fullscreen" data-i18n-aria="Full screen" aria-label="Full screen">⛶</button><button id="mobilePause" data-i18n-aria="Pause" aria-label="Pause" data-i18n="Pause">Pause</button></div>
 
 <nav id="language-picker" aria-label="Language"><button data-lang="de" title="Deutsch">DE</button><button data-lang="en" title="English">EN</button></nav>
-<script src="js/i18n.js?v=combo-1"></script>
+<script src="js/i18n.js?v=safari-1"></script>
 <script src="js/language.js?v=dynamic-4"></script>
 <script src="js/core.js?v=dynamic-4"></script>
 <script src="js/battle-music.js?v=dynamic-4"></script>
@@ -115,11 +119,11 @@
 <script src="js/stage-props.js?v=combat-2"></script>
 <script src="js/arenas.js?v=combat-2"></script>
 <script src="js/combat-fx.js?v=dynamic-4"></script>
-<script src="js/fight.js?v=combo-1"></script>
+<script src="js/fight.js?v=safari-1"></script>
 <script src="js/finishers.js?v=dynamic-4"></script>
-<script src="js/touch-controls.js?v=dynamic-4"></script>
-<script src="js/main.js?v=combo-1"></script>
+<script src="js/touch-controls.js?v=safari-1"></script>
+<script src="js/main.js?v=safari-1"></script>
 <script src="js/shop-ui.js?v=combat-2"></script>
-<script src="js/mobile-ui.js?v=combo-2"></script>
+<script src="js/mobile-ui.js?v=safari-1"></script>
 
 <script>I18N.mount();</script>

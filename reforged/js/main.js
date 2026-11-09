@@ -1,19 +1,22 @@
 'use strict';
 const cv = document.getElementById('c');
 const ctx = cv.getContext('2d');
+const gameView = document.getElementById('game-view'), arenaView = document.getElementById('wrap');
 const G = { screen: 'title', T: 0, sel: 0, mode: 'versus', diff: ['easy','normal','hard'].includes(store.get('diff','normal'))?store.get('diff','normal'):'normal', regions: [], prevRegions: [], mouse: null, match: null, arcade: null, pick: [0, 7], ready: [false, false], arena: -1 };
 
 // ---------- мащабиране ----------
 function fit() {
-  const viewport = window.visualViewport;
-  const width = viewport?.width || innerWidth, height = viewport?.height || innerHeight;
+  const {width, height, x, y, inverseScale} = visibleGameRect(window.visualViewport, innerWidth, innerHeight);
+  gameView.style.width = width + 'px';
+  gameView.style.height = height + 'px';
+  gameView.style.transform = `translate(${x}px, ${y}px) scale(${inverseScale})`;
   const playing = G.screen === 'fight';
   const portrait = height > width;
-  const safe=getComputedStyle(document.getElementById('wrap'));
+  const safe=getComputedStyle(arenaView);
   const left=parseFloat(safe.paddingLeft)||0,right=parseFloat(safe.paddingRight)||0,bottom=parseFloat(safe.paddingBottom)||0;
   const top = (parseFloat(safe.paddingTop) || 0) + (playing ? 44 : 0);
   const dock = playing && Touch.active && portrait ? (G.match?.mode === 'training' ? 324 : 204) : 0;
-  const areaW=Math.max(100,width-left-right),areaH=Math.max(100,height-top-bottom-dock);
+  const areaW=Math.max(1,width-left-right),areaH=Math.max(1,height-top-bottom-dock);
   const scale = Math.min(areaW / W, areaH / H);
   cv.style.width = Math.floor(W * scale) + 'px'; cv.style.height = Math.floor(H * scale) + 'px';
   cv.style.position = 'absolute';cv.style.left = Math.floor(left+(areaW-W*scale)/2)+'px';
@@ -22,7 +25,8 @@ function fit() {
   document.body.classList.toggle('portrait', portrait);
   document.body.classList.toggle('playing', playing);
 }
-addEventListener('resize', fit);window.visualViewport?.addEventListener('resize',fit);fit();
+addEventListener('resize', fit);
+
 function toCanvas(e) { const r = cv.getBoundingClientRect(); return [(e.clientX - r.left) * W / r.width, (e.clientY - r.top) * H / r.height]; }
 cv.addEventListener('pointerdown', e => { Snd.init(); const p = toCanvas(e); if(G.screen!=='fight'||G.match?.paused)MenuIn.clicks.push(p); G.mouse = p; });
 cv.addEventListener('pointermove', e => { if(e.pointerType==='touch')return;G.mouse = toCanvas(e); G.mouseMoved = true; });
@@ -30,12 +34,31 @@ cv.addEventListener('pointermove', e => { if(e.pointerType==='touch')return;G.mo
 // ---------- тъч контроли ----------
 const touchEl = document.getElementById('touch'), stick = document.getElementById('stick'), knob = document.getElementById('knob'), finBtn = document.getElementById('finBtn');
 const touchControls=bindTouchControls(stick,knob,document.querySelectorAll('#btns button, #finBtn'),()=>Snd.init());
+bindFightGestures(gameView, arenaView, touchEl, () => G.screen === 'fight' && G.match && !G.match.paused);
+let lastPageScale = window.visualViewport?.scale || 1;
+function fitVisualViewport() {
+  const pageScale = window.visualViewport?.scale || 1;
+  if (pageScale !== lastPageScale) {
+    lastPageScale = pageScale;
+    if (G.screen === 'fight') touchControls.reset();
+  }
+  fit();
+}
+window.visualViewport?.addEventListener('resize', fitVisualViewport);
+window.visualViewport?.addEventListener('scroll', fitVisualViewport);
+fit();
 addEventListener('pointerdown',e=>{if(e.pointerType==='touch'&&!Touch.active){Touch.active=true;fit();}},{passive:true});
 function suspendGame(){
   touchControls.reset();MenuIn.clicks.length=0;
   if(G.screen==='fight'&&G.match&&!G.match.paused){G.match.paused=true;G.sel=0;BattleMusic.paused=true;BattleMusic.apply();}
   acc=0;last=performance.now();
 }
+cv.addEventListener('contextlost', () => {
+  if (G.screen === 'fight') {
+    G.displayIssue = true;
+    suspendGame();
+  }
+});
 addEventListener('blur',suspendGame);addEventListener('pagehide',suspendGame);
 document.addEventListener('visibilitychange',()=>{if(document.hidden)suspendGame();});
 addEventListener('orientationchange',()=>{suspendGame();fit();});
@@ -82,7 +105,7 @@ function menuList(items, x, y, gap, inp, size = 28) {
   });
   if (inp.ok) { Snd.ok(); items[G.sel].fn(); }
 }
-function go(screen) { touchControls.reset(); MenuIn.clicks.length=0; G.screen = screen; G.sel = 0; G.T0 = G.T; if (!['fight', 'result'].includes(screen)&&!(screen==='moves'&&G.moveBack==='fight')&&!(screen==='combos'&&G.comboBack==='fight')) Snd.stopMusic(); fit(); }
+function go(screen) { if (screen === 'vs') G.displayIssue = false; touchControls.reset(); MenuIn.clicks.length=0; G.screen = screen; G.sel = 0; G.T0 = G.T; if (!['fight', 'result'].includes(screen)&&!(screen==='moves'&&G.moveBack==='fight')&&!(screen==='combos'&&G.comboBack==='fight')) Snd.stopMusic(); fit(); }
 const DIFF_NAMES = { easy: localize("EASY"), normal: localize("NORMAL"), hard: localize("HARD") };
 
 // ---------- екрани ----------
@@ -267,6 +290,11 @@ function vsScreen(inp) {
 
 function togglePause() {
   if (G.screen !== 'fight' || !G.match) return;
+  if (G.match.paused && G.displayIssue) {
+    if (ctx.isContextLost?.()) return;
+    cv.width = W;
+    G.displayIssue = false;
+  }
   touchControls.reset();G.match.paused = !G.match.paused; G.sel = 0; Snd.init();Snd.ui();
   BattleMusic.paused = G.match.paused; BattleMusic.apply();
 }
@@ -275,8 +303,15 @@ function fightScreen(inp) {
   BattleMusic.syncMatch(m, G.mode === 'arcade' && G.arcade && G.arcade.i === G.arcade.list.length - 1);
   if (Keys.pressed.has('Escape') || Keys.pressed.has('KeyP')) togglePause();
   const pad = padState(0); if (pad && pad.start && !(Pads.prev[0] || {}).start) togglePause();
-  m.update();
-  m.draw(ctx);
+  try {
+    m.update();
+    m.draw(ctx);
+  } catch (error) {
+    console.error('Fight frame failed', error);
+    G.displayIssue = true;
+    suspendGame();
+    return;
+  }
   // FINALE бутон на телефон
   const showFin = Touch.active && m.phase === 'finishPrompt' && m.winner.ctrl.type === 'human' && m.winner.side === 0;
   finBtn.hidden = !showFin;

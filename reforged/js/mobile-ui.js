@@ -74,7 +74,9 @@ const MobileUI = (()=>{
     const a=actions();back(a,()=>{G.stageCur=null;G.selStep=1;go('select');});a.append(button(localize('RANDOM'),()=>{G.stageCur=Math.random()*ARENAS.length|0;},'quiet-action','random'));primary(a,localize('FIGHT!'),()=>startFight(G.stageCur));
   }
   function renderPause(){
-    title(localize('Pause'),BattleMusic.title);const a=actions();primary(a,localize('RESUME'),()=>togglePause());
+    title(localize('Pause'),BattleMusic.title);
+    if (G.displayIssue) panel.append(el('p',localize('The playfield stopped drawing. Try resuming or restart the match.'),'asset-error'));
+    const a=actions();primary(a,localize('RESUME'),()=>togglePause());
     a.append(button(localize('Move list'),()=>{G.moveFor=G.match.p[0].c;G.moveBack='fight';go('moves');},'','moves'),button(localize('Combo list'),openCombos,'','combos'),button(localize('Restart'),()=>{touchControls.reset();startFight(G.matchOpts.arena,G.matchOpts.ctrl2.level);fit();},'','restart'));
     const settings=el('div',null,'menu-settings');settings.append(button(localize('Music: ')+(Snd.musicOn?localize('ON'):localize('OFF')),()=>Snd.toggleMusic(),'','music'),button(localize('Effects: ')+(CombatFX.full?localize('STRONG'):localize('LIGHT')),()=>CombatFX.toggle(),'','effects'));panel.append(settings);
     const links=actions();links.append(button(localize('Change fighter'),()=>startSelect(),'quiet-action','change'),button(localize('Main menu'),()=>go('title'),'quiet-action','home'));
@@ -203,9 +205,9 @@ const MobileUI = (()=>{
   }
   function syncCoach(){
     let node=document.getElementById('training-coach');
-    const match=G.match,show=Touch.active&&innerHeight>innerWidth&&G.screen==='fight'&&match?.mode==='training'&&match.phase==='play'&&!match.paused;
+    const match=G.match,show=Touch.active&&document.body.classList.contains('portrait')&&G.screen==='fight'&&match?.mode==='training'&&match.phase==='play'&&!match.paused;
     if(!show){if(node)node.hidden=true;return;}
-    if(!node){node=el('aside',null,'training-coach');node.id='training-coach';document.body.append(node);}
+    if(!node){node=el('aside',null,'training-coach');node.id='training-coach';gameView.append(node);}
     const [a,b]=match.p;
     const {routes,active,confirmed}=comboGuide(a);
     const feedback=match.comboFeedback?.life>0?match.comboFeedback.text:'';
@@ -224,9 +226,9 @@ const MobileUI = (()=>{
     const menu=ownsMenu();document.body.classList.toggle('mobile-menu-open',menu);document.body.classList.toggle('native-menu-open',menu);
     panel.hidden=!menu;document.getElementById('c').setAttribute('aria-hidden',String(menu));toolbar.hidden=!(['fight','vs'].includes(G.screen)&&!menu);
     document.getElementById('mobilePause').hidden=G.screen!=='fight';document.getElementById('fullscreen').hidden=!document.documentElement.requestFullscreen;
-    document.getElementById('mobile-hint').textContent=Touch.active?(innerHeight>innerWidth?localize('Rotate for a larger arena'):localize('Move and attack together')):localize('Esc / P to pause');
+    document.getElementById('mobile-hint').textContent=Touch.active?(document.body.classList.contains('portrait')?localize('Rotate for a larger arena'):localize('Move and attack together')):localize('Esc / P to pause');
     if(typeof Economy!=='undefined'){let coins=document.getElementById('coin-hud');if(!coins){coins=el('span',null,'coin-hud');coins.id='coin-hud';toolbar.append(coins);}coins.textContent='◈ '+(Economy.profile?.coins??'—');coins.dataset.weapon=G.match?.p?.[0]?.equipment?.weapon?.id||'';coins.title=G.match?.p?.[0]?.equipment?.weapon?.name?.[I18N.language]||'';}
-    const nextStamp=[menu,G.screen,G.mode,G.selStep,G.pick.join(','),G.stageCur,G.diff,Snd.on,Snd.musicOn,CombatFX.full,G.match?.paused,G.match?.result?.winner?.c.id,G.moveFor?.id,G.moveBack,G.arcade?.i,G.arcade?.cont,G.screen!=='combos'&&typeof Economy!=='undefined'?Economy.version:0,G.screen==='shop'&&typeof ShopUI!=='undefined'?ShopUI.version:0].join('/');
+    const nextStamp=[menu,G.screen,G.mode,G.selStep,G.pick.join(','),G.stageCur,G.diff,Snd.on,Snd.musicOn,CombatFX.full,G.match?.paused,G.displayIssue,G.match?.result?.winner?.c.id,G.moveFor?.id,G.moveBack,G.arcade?.i,G.arcade?.cont,G.screen!=='combos'&&typeof Economy!=='undefined'?Economy.version:0,G.screen==='shop'&&typeof ShopUI!=='undefined'?ShopUI.version:0].join('/');
     if(!menu||nextStamp===stamp)return;
     const oldScreen=panel.dataset.screen,oldStep=panel.dataset.step,focused=document.activeElement?.dataset?.focusKey;
     stamp=nextStamp;panel.replaceChildren();panel.className='game-menu';panel.dataset.screen=G.screen;panel.dataset.step=String(G.selStep);

@@ -925,7 +925,7 @@ class Match {
       outlineText(ctx,localize('HIT COMBO'),x,202,12,'#e2c078','center',2);
       outlineText(ctx,String(d.damage)+' '+localize('DAMAGE'),x,222,13,'#c0e9e4','center',2);ctx.restore();
     }
-    if(this.mode==='training'&&this.phase==='play'&&!(typeof Touch!=='undefined'&&Touch.active&&innerHeight>innerWidth)){
+    if(this.mode==='training'&&this.phase==='play'&&!(typeof Touch!=='undefined'&&Touch.active&&typeof document!=='undefined'&&document.body?.classList.contains('portrait'))){
       const {routes, active, confirmed: step} = comboGuide(a);
       const labels={lp:'P',hp:'HP',lk:'K',hk:'HK'};
       if(typeof Touch!=='undefined'&&!Touch.active)for(const key of Object.keys(labels))labels[key]=(MAPS[a.ctrl.map||'solo']?.[key]?.[0]||labels[key]).replace('Key','').replace('Comma',',').replace('Period','.');

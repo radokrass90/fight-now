@@ -16,6 +16,27 @@ stick.fire('lostpointercapture',1);assert.equal(sb.Touch.r,0);
 block.fire('pointerdown',3);block.fire('pointerdown',4);block.fire('pointerup',3);assert.equal(sb.Touch.bl,1,'Second finger still owns block');block.fire('pointercancel',4);assert.equal(sb.Touch.bl,0);
 stick.fire('pointerdown',5,50,0);stick.fire('pointerdown',6,0,50);assert(sb.Touch.u);assert(!sb.Touch.l,'Second finger cannot steal stick');
 sb.binding.reset();assert.equal(sb.Touch.u,0);assert.equal(sb.Touch.bl,0);assert.equal(sb.Touch.pressed.size,0);
+punch.setPointerCapture=()=>{throw new Error('Pointer no longer active');};
+punch.fire('pointerdown',7);assert.equal(sb.Touch.lp,0,'A cancelled capture cannot latch an attack');
+
+const view=new Control(),surface=new Control(),dock=new Control();
+let playing=true;
+sb.view=view;sb.surface=surface;sb.dock=dock;sb.isPlaying=()=>playing;
+vm.runInContext('bindFightGestures(view,surface,dock,isPlaying)',sb);
+function prevented(node,type,fingers=1,cancelable=true){
+ let blocked=false;
+ for(const handler of node.handlers[type]||[])handler({touches:Array(fingers),cancelable,preventDefault(){blocked=true;}});
+ return blocked;
+}
+assert(!prevented(view,'touchstart',1),'Single touch can reach gameplay');
+assert(prevented(view,'touchstart',2)&&prevented(view,'touchmove',2),'Pinch gestures are cancelled during play');
+assert(prevented(view,'gesturestart')&&prevented(view,'gesturechange'),'Safari gesture events are cancelled');
+assert(prevented(surface,'touchend')&&prevented(dock,'touchend'),'Fast taps on the arena/dock cannot zoom');
+assert(!prevented(view,'touchend'),'Toolbar clicks still work');
+playing=false;
+assert(!prevented(view,'touchmove',2)&&!prevented(dock,'touchend'),'Pause menus keep normal browser gestures');
+const rect=vm.runInContext('visibleGameRect({width:196.5,height:350,offsetLeft:42,offsetTop:90,scale:2},393,700)',sb);
+assert.deepEqual({...rect},{width:393,height:700,x:42,y:90,inverseScale:.5},'The whole game fits inside an offset, magnified viewport');
 // Only small portraits/thumbnails load at boot. Switching opponents releases
 // previous full atlases, while all thirty poses remain available for the pair.
 const urls=[];class FakeImage{set src(v){this.url=v;if(v){urls.push(v);queueMicrotask(()=>this.onload?.());}}}

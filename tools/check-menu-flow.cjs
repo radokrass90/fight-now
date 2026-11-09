@@ -16,17 +16,17 @@ class Node {
  click(){this.onclick?.();}
  get fullText(){return[this.textContent,...this.children.map(n=>n.fullText)].join(' ');}
 }
-const ids=new Map(['mobile-menu','mobile-toolbar','mobilePause','fullscreen','mobile-hint','c','wrap','touch','stick','knob','finBtn','pauseBtn','language-picker','loading'].map(id=>[id,new Node(id==='c'?'canvas':'div')]));
+const ids=new Map(['game-view','mobile-menu','mobile-toolbar','mobilePause','fullscreen','mobile-hint','c','wrap','touch','stick','knob','finBtn','pauseBtn','language-picker','loading'].map(id=>[id,new Node(id==='c'?'canvas':'div')]));
 const document={body:new Node('body'),documentElement:new Node('html'),activeElement:null,getElementById:id=>ids.get(id),createElement:tag=>new Node(tag),querySelectorAll:()=>[],addEventListener(){},hidden:false};
 ids.get('c').getContext=()=>({});
 const prepared=[];
 const sb={console,document,Image:class extends Node{constructor(){super('img');}},URL,URLSearchParams,location:{search:'?lang=en'},localStorage:{getItem(){return null;},setItem(){}},window:{},innerWidth:1200,innerHeight:800,getComputedStyle:()=>({paddingLeft:'0',paddingRight:'0',paddingTop:'0',paddingBottom:'0',gridTemplateColumns:'1fr 1fr 1fr 1fr 1fr'}),addEventListener(){},performance:{now:()=>0},requestAnimationFrame(){},setTimeout,clearTimeout,
- Snd:{on:true,musicOn:true,init(){},ok(){},ui(){},say(){},stopMusic(){},startMusic(){},toggle(){this.on=!this.on;},toggleMusic(){this.musicOn=!this.musicOn;}},BattleMusic:{title:'Test Track',apply(){}},CombatFX:{full:true,toggle(){this.full=!this.full;}},CharacterArt:{ready:Promise.resolve(),prepare(ids){prepared.push(ids);return Promise.resolve();}},ArenaArt:{ready:Promise.resolve(),prepare(){return Promise.resolve();}},bindTouchControls:()=>({reset(){}}),Touch:{active:false,pressed:new Set()},Keys:{pressed:new Set()},MenuIn:{clicks:[]},Match:class{constructor(opts){this.opts=opts;this.paused=false;}},invalidateArenas(){}};
+ Snd:{on:true,musicOn:true,init(){},ok(){},ui(){},say(){},stopMusic(){},startMusic(){},toggle(){this.on=!this.on;},toggleMusic(){this.musicOn=!this.musicOn;}},BattleMusic:{title:'Test Track',apply(){}},CombatFX:{full:true,toggle(){this.full=!this.full;}},CharacterArt:{ready:Promise.resolve(),prepare(ids){prepared.push(ids);return Promise.resolve();}},ArenaArt:{ready:Promise.resolve(),prepare(){return Promise.resolve();}},bindTouchControls:()=>({reset(){}}),Touch:{active:false,pressed:new Set()},Keys:{down:new Set(),pressed:new Set()},MenuIn:{clicks:[]},Match:class{constructor(opts){this.opts=opts;this.paused=false;}},invalidateArenas(){}};
 vm.createContext(sb);
 const core=fs.readFileSync(root+'/js/core.js','utf8');
 vm.runInContext(core.split('// ---------- синтезирани')[0],sb);
 vm.runInContext(core.slice(core.indexOf('const MAPS ='),core.indexOf('const BTN =')),sb);
-for(const file of ['i18n','language','data','weapon-data','fight','arena-art-data','arenas','main','mobile-ui'])vm.runInContext(fs.readFileSync(root+'/js/'+file+'.js','utf8'),sb,{filename:file+'.js'});
+for(const file of ['i18n','language','data','weapon-data','fight','arena-art-data','arenas','touch-controls','main','mobile-ui'])vm.runInContext(fs.readFileSync(root+'/js/'+file+'.js','utf8'),sb,{filename:file+'.js'});
 const run=code=>vm.runInContext(code,sb),panel=ids.get('mobile-menu');
 const catalog=run('I18N_DE');
 for(const file of ['main','mobile-ui'])for(const match of fs.readFileSync(root+'/js/'+file+'.js','utf8').matchAll(/localize\(((?:"(?:\\.|[^"\\])*")|(?:'(?:\\.|[^'\\])*'))\)/g)){const key=vm.runInNewContext(match[1]);assert(Object.hasOwn(catalog,key),'Missing UI German: '+key);}
@@ -54,6 +54,11 @@ click('Combo list');assert.equal(run('G.screen'),'combos');
 click('← Back');assert.equal(run('G.screen'),'fight');assert(run('G.match.paused'));
 click('Move list');assert.equal(run('G.screen'),'moves');assert(panel.fullText.includes('Chainsaw'));
 click('← Back');assert.equal(run('G.screen'),'fight');assert(run('G.match.paused'));click('RESUME');assert.equal(run('G.match.paused'),false);
+ids.get('c').listeners.contextlost();
+run('MobileUI.sync()');
+assert(run('G.match.paused'),'Canvas loss pauses the match');
+assert(panel.fullText.includes('The playfield stopped drawing.'));
+click('RESUME');assert(!run('G.match.paused'));assert(!run('G.displayIssue'));
 run('G.match.paused=true;MobileUI.sync()');click('Restart');assert.equal(run('G.screen'),'vs','Restart must prepare a fresh match and reward ticket');assert.equal(run('BattleMusic.paused'),false);
 run("go('title');MobileUI.sync()");panel.querySelectorAll('.mode-action')[3].click();assert.equal(run('G.mode'),'pvp');click('CONFIRM FIGHTER');click('CHOOSE ARENA');click('FIGHT!');assert.equal(run('G.matchOpts.ctrl1.map'),'p1');assert.equal(run('G.matchOpts.ctrl2.map'),'p2');
 run("go('title');MobileUI.sync()");panel.querySelectorAll('.mode-action')[1].click();assert.equal(run('G.mode'),'versus');click('CONFIRM FIGHTER');click('CHOOSE ARENA');click('FIGHT!');assert.equal(run('G.matchOpts.ctrl1.type'),'human');assert.equal(run('G.matchOpts.ctrl2.type'),'cpu');assert.equal(run('G.matchOpts.ctrl2.level'),run('G.diff'));

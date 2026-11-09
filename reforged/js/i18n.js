@@ -7,6 +7,7 @@ const I18N_DE = {
   "Online progress saves your equipment and rewards to a server.":"Der Online-Fortschritt speichert deine Ausrüstung und Belohnungen auf einem Server.",
   "ENABLE ONLINE PROGRESS":"ONLINE-FORTSCHRITT AKTIVIEREN",
 
+  "The playfield stopped drawing. Try resuming or restart the match.": "Das Spielfeld konnte nicht weiter angezeigt werden. Setze den Kampf fort oder starte ihn neu.",
   "Combo list": "Komboliste",
   "Show buttons for": "Tasten anzeigen für",
   "Touch controls": "Touch-Steuerung",
