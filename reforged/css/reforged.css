@@ -149,9 +149,9 @@ body.mobile.portrait.playing #touch{background:linear-gradient(transparent calc(
 /* Combo list: the same fight palette, with touch controls grouped as readable steps. */
 #mobile-menu .combo-entry{border-color:var(--amber);color:var(--amber);position:relative;z-index:2;margin-bottom:8px}
 #mobile-menu[data-screen=combos]{padding-inline:max(calc(env(safe-area-inset-left,0px) + 16px),calc((100vw - 1020px)/2)) max(calc(env(safe-area-inset-right,0px) + 16px),calc((100vw - 1020px)/2))}
-.combo-tools{position:sticky;top:calc(env(safe-area-inset-top,0px) + 49px);z-index:5;display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;padding:8px;background:#101c26;border:1px solid #40535f;margin:0 0 18px}
+.combo-tools{position:sticky;top:0;z-index:5;display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;padding:8px;background:#101c26;border:1px solid #40535f;margin:0 0 18px}
 .combo-tools label{margin-left:auto;font-size:13px;color:#c6d9e3}
-#mobile-menu .combo-tools button,#mobile-menu .combo-tools select{padding:10px 12px;min-height:46px}
+#mobile-menu .combo-tools button,#mobile-menu .combo-tools select{margin:0;padding:10px 12px;min-height:46px}
 #mobile-menu .combo-tools select{font-size:16px;min-width:0}
 .combo-jump{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px}
 #mobile-menu .combo-jump button{padding:10px 14px}
