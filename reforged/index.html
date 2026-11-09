@@ -70,6 +70,11 @@
   #language-picker button{font:bold 13px system-ui;color:#fff;background:#182130;border:1px solid #62738d;border-radius:7px;padding:8px 11px;min-height:36px;cursor:pointer}
   #language-picker button[aria-pressed="true"]{background:#ffd23d;color:#151820;border-color:#ffd23d}
   body.mobile #mobile-menu{padding-top:calc(env(safe-area-inset-top,0px) + 58px)}
+  .legal-links { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; margin: 1.5rem 0 .5rem; }
+  .legal-links a, #mobile-menu .mobile-copy a { color: #ffd46f; text-decoration: underline; text-underline-offset: .2em; }
+  .legal-links-start { gap: .4rem .65rem; margin: 0 0 .75rem; }
+  .legal-links-start a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 .7rem; border: 1px solid #51616e; border-radius: 5px; background: #101b25; font-size: .85rem; }
+  .legal-links a:focus-visible { outline: 2px solid #ffd46f; outline-offset: 4px; }
 </style>
 <link rel="stylesheet" href="css/reforged.css?v=dynamic-4">
 <link rel="stylesheet" href="css/weapon-armory.css?v=dynamic-4">
@@ -93,14 +98,14 @@
 <div id="mobile-toolbar" hidden><span id="mobile-hint"></span><button id="fullscreen" data-i18n-aria="Full screen" aria-label="Full screen">⛶</button><button id="mobilePause" data-i18n-aria="Pause" aria-label="Pause" data-i18n="Pause">Pause</button></div>
 
 <nav id="language-picker" aria-label="Language"><button data-lang="de" title="Deutsch">DE</button><button data-lang="en" title="English">EN</button></nav>
-<script src="js/i18n.js?v=dynamic-4"></script>
+<script src="js/i18n.js?v=legal-1"></script>
 <script src="js/language.js?v=dynamic-4"></script>
 <script src="js/core.js?v=dynamic-4"></script>
 <script src="js/battle-music.js?v=dynamic-4"></script>
 <script src="js/data.js?v=dynamic-4"></script>
 <script src="js/reforged-fighter-data.js?v=dynamic-4"></script>
 <script src="js/weapon-data.js?v=dynamic-4"></script>
-<script src="js/economy.js?v=dynamic-4"></script>
+<script src="js/economy.js?v=legal-1"></script>
 <script src="js/combat-motion.js?v=dynamic-4"></script>
 <script src="js/weapon-art.js?v=dynamic-4"></script>
 <script src="js/character-art.js?v=dynamic-4"></script>
@@ -114,7 +119,7 @@
 <script src="js/finishers.js?v=dynamic-4"></script>
 <script src="js/touch-controls.js?v=dynamic-4"></script>
 <script src="js/main.js?v=dynamic-4"></script>
-<script src="js/shop-ui.js?v=dynamic-4"></script>
-<script src="js/mobile-ui.js?v=dynamic-4"></script>
+<script src="js/shop-ui.js?v=legal-1"></script>
+<script src="js/mobile-ui.js?v=legal-2"></script>
 
 <script>I18N.mount();</script>

@@ -17,11 +17,19 @@ const Economy=(()=>{
    if(authenticated&&requestToken!==token)throw new Error('session_changed');online=true;return result;
   }catch(e){if(!e.status)online=false;throw e;}finally{clearTimeout(timer);}
  }
- async function connect(){
+ let connecting=null;
+ function connect(){
+  if(connecting)return connecting;
+  if(busy)return Promise.resolve(profile);
+  connecting=restoreOrCreate().finally(()=>{connecting=null;changed();});
+  changed();
+  return connecting;
+ }
+ async function restoreOrCreate(){
   try{if(token)setProfile(await request('/profile'));else{const r=await request('/guest',{},false);token=r.token;save('token',token);setProfile(r.profile);}await flush();}
   catch(e){error=e.message;changed();}return profile;
  }
- const ready=connect();
+ const ready=token?connect():Promise.resolve(null);
  async function action(path,body){if(busy)return;busy=true;error=null;changed();try{const p=await request(path,body);return setProfile(p);}catch(e){error=e.message;changed();throw e;}finally{busy=false;changed();}}
  function gear(fighter,p=profile){return{weaponId:p?.loadouts?.[fighter]||null,upgrades:{...(p?.upgrades?.[fighter]||{})}};}
  function stats(loadout){const w=weapons.get(loadout?.weaponId),u=loadout?.upgrades||{};return{weapon:w||null,power:1+.025*Math.min(5,Math.max(0,u.power||0))+(w?.damage||0),guard:1-.02*Math.min(5,Math.max(0,u.guard||0)),focus:1+.04*Math.min(5,Math.max(0,u.focus||0))+(w?.meter||0),reach:w?.reach||0};}
@@ -47,12 +55,12 @@ const Economy=(()=>{
   match.reward={amount:0,state:'pending'};
   pending.push({body:{matchId:id,won:match.result.winner.side===0,flawless:!!match.result.flawless,finisher:!!match.result.finisher},match});save('claims',pending.map(x=>({body:x.body,match:{}})));flush();
  }
- async function credentials(mode,username,password){busy=true;error=null;changed();try{
+ async function credentials(mode,username,password){if(busy||connecting)return;busy=true;error=null;changed();try{
   const r=await request('/'+mode,{username,password},mode==='register');
   if(r.token){token=r.token;save('token',token);pending.length=0;save('claims',[]);}return setProfile(r.profile||r);
  }catch(e){error=e.message;changed();throw e;}finally{busy=false;changed();}}
- async function logout(){if(busy)return;if(token)await request('/logout',{});token=null;profile=null;save('token',null);save('profile',null);pending.length=0;save('claims',[]);return connect();}
+ async function logout(){if(busy)return;if(token)await request('/logout',{});token=null;profile=null;save('token',null);save('profile',null);pending.length=0;save('claims',[]);online=false;error=null;changed();}
  function apply(match){const gearInfo=match.opts?.economy?.loadout;for(const f of match.p)f.equipment=stats(f.side===0?gearInfo:match.mode==='pvp'?match.opts?.economy?.opponentLoadout:null);}
- addEventListener('online',()=>connect());
- return{ready,connect,request,begin,finish,flush,gear,stats,apply,weapons,buy:id=>action('/buy',{weaponId:id}),equip:(fighter,weaponId)=>action('/equip',{fighter,weaponId}),upgrade:(fighter,kind)=>action('/upgrade',{fighter,kind}),credentials,logout,get profile(){return profile;},get online(){return online;},get busy(){return busy;},get error(){return error;},get version(){return version;}};
+ addEventListener('online',()=>{if(token)connect();});
+ return{ready,connect,request,begin,finish,flush,gear,stats,apply,weapons,buy:id=>action('/buy',{weaponId:id}),equip:(fighter,weaponId)=>action('/equip',{fighter,weaponId}),upgrade:(fighter,kind)=>action('/upgrade',{fighter,kind}),credentials,logout,get profile(){return profile;},get online(){return online;},get busy(){return busy||!!connecting;},get error(){return error;},get version(){return version;}};
 })();

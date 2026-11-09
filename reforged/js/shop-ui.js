@@ -9,7 +9,19 @@ const ShopUI=(()=>{
   if(!state.fighter)state.fighter=CHARS[G.pick[0]].id;
   title(localize('STREET ARMORY'),localize('Win coins. Build your fighter. Keep every weapon.'));
   const wallet=el('div',null,'armory-wallet');wallet.append(el('strong','◈ '+(p?.coins??'—')),el('span',Economy.online?localize('Cloud saved'):localize('Offline')),button(localize('ACCOUNT'),()=>{state.tab='account';version++;},'quiet-action','account'));panel.append(wallet);
-  if(!Economy.online){panel.append(el('p',localize('Offline. Owned gear remains usable. Purchases require connection.'),'mobile-copy'),button(localize('RECONNECT'),()=>{Economy.connect();},'quiet-action','reconnect'));}
+  if(!Economy.online){
+   const text=p?'Offline. Owned gear remains usable. Purchases require connection.':'Online progress saves your equipment and rewards to a server.';
+   const action=p?'RECONNECT':'ENABLE ONLINE PROGRESS';
+   const privacy=el('a',localize('Privacy notice'));
+   privacy.href=(I18N.language==='en'?'legal/en.html':'legal/')+'#datenschutz';
+   const notice=el('p',localize(text),'mobile-copy');
+   const terms=el('a',localize('Game terms'));
+   terms.href=(I18N.language==='en'?'legal/en.html':'legal/')+'#spielbedingungen';
+   notice.append(' ',privacy,' · ',terms);
+   const enable=button(localize(action),()=>Economy.connect(),'quiet-action','reconnect');
+   enable.disabled=Economy.busy;
+   panel.append(notice,enable);
+  }
   if(Economy.error){const e=el('p',message(Economy.error),'asset-error');e.setAttribute('role','alert');panel.append(e);}
   const tabs=el('nav',null,'armory-tabs');
   for(const[id,label]of [['weapons','100 WEAPONS'],['inventory','INVENTORY'],['upgrades','HERO UPGRADES']]){const b=button(localize(label),()=>{state.tab=id;state.page=0;state.family='all';version++;},state.tab===id?'selected':'','tab-'+id);b.setAttribute('aria-pressed',String(state.tab===id));tabs.append(b);}panel.append(tabs);
@@ -22,7 +34,7 @@ const ShopUI=(()=>{
     const label1=el('label',localize('Player name (3–20 letters or numbers)'));label1.append(username);const label2=el('label',localize('Password (at least 8 characters)'));label2.append(password);form.append(label1,label2);
     const submit=mode=>{if(!form.reportValidity())return;Economy.credentials(mode,username.value,password.value).catch(()=>{});};
     form.onsubmit=e=>{e.preventDefault();submit('register');};
-    const save=button(localize('SAVE THIS PROFILE'),()=>submit('register'),'mobile-primary','register'),login=button(localize('LOG IN TO ANOTHER PROFILE'),()=>submit('login'),'quiet-action','login');save.disabled=login.disabled=Economy.busy;
+    const save=button(localize('SAVE THIS PROFILE'),()=>submit('register'),'mobile-primary','register'),login=button(localize('LOG IN TO ANOTHER PROFILE'),()=>submit('login'),'quiet-action','login');save.disabled=Economy.busy||!p||!Economy.online;login.disabled=Economy.busy;
     save.type='submit';save.onclick=null;form.append(save,login);section.append(form,el('p',localize('Logging in switches profiles. Save this guest first to keep its purchases.'),'mobile-copy'));
    }
    panel.append(section);back(actions(),()=>go(state.back||'title'));return;

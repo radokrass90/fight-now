@@ -1,5 +1,12 @@
 'use strict';
 const I18N_DE = {
+  "Legal information":"Rechtliche Informationen",
+  "Legal notice":"Impressum",
+  "Privacy notice":"Datenschutz",
+  "Game terms":"Spielbedingungen",
+  "Online progress saves your equipment and rewards to a server.":"Der Online-Fortschritt speichert deine Ausrüstung und Belohnungen auf einem Server.",
+  "ENABLE ONLINE PROGRESS":"ONLINE-FORTSCHRITT AKTIVIEREN",
+
   "FLOW": "FLUSS",
   "WEAPON FLOW": "WAFFENFLUSS",
   "SIGNATURE COMBOS": "SIGNATUR-KOMBOS",

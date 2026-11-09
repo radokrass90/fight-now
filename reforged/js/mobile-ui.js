@@ -139,7 +139,20 @@ const MobileUI = (()=>{
     const oldScreen=panel.dataset.screen,oldStep=panel.dataset.step,focused=document.activeElement?.dataset?.focusKey;
     stamp=nextStamp;panel.replaceChildren();panel.className='game-menu';panel.dataset.screen=G.screen;panel.dataset.step=String(G.selStep);
     panel.style.setProperty('--menu-scene',"url('assets/arenas-hd/"+ARENA_ART_DATA[(G.screen==='stage'?G.stageCur:null)??(G.screen==='select'?CHARS[G.pick[G.selStep===1?1:0]].home:7)].id+"/thumbnail.webp')");
+    const legal=el('nav',null,'legal-links');
+    legal.setAttribute('aria-label',localize('Legal information'));
+    const legalPage=I18N.language==='en'?'legal/en.html':'legal/';
+    for(const [label,section] of [['Legal notice','impressum'],['Privacy notice','datenschutz'],['Game terms','spielbedingungen']]){
+      const link=el('a',localize(label));
+      link.href=legalPage+'#'+section;
+      legal.append(link);
+    }
+    if(G.screen==='title'){
+      legal.classList.add('legal-links-start');
+      panel.append(legal);
+    }
     ({shop:()=>ShopUI.render({panel,el,button,title,actions,back,image,portrait}),title:renderTitle,select:renderSelect,stage:renderStage,fight:renderPause,controls:renderControls,moves:renderMoves,result:renderResult}[G.screen]||renderTitle)();
+    if(G.screen!=='title')panel.append(legal);
     if(oldScreen!==G.screen||(G.screen==='select'&&oldStep!==String(G.selStep)))panel.scrollTop=0;
     const key=focusAfter||focused;focusAfter=null;
     if(key){const match=[...panel.querySelectorAll('button')].find(b=>b.dataset.focusKey===key);match?.focus({preventScroll:true});}
