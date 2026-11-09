@@ -3,7 +3,15 @@
 const MobileUI = (()=>{
   const panel=document.getElementById('mobile-menu'),toolbar=document.getElementById('mobile-toolbar');
   let stamp='',focusAfter=null;
-  const screens=['title','select','stage','controls','moves','result','shop'];
+  const screens=['title','select','stage','controls','moves','result','shop','combos'];
+  const comboLabels = {lp:'PUNCH',hp:'HEAVY PUNCH',lk:'KICK',hk:'HEAVY KICK'};
+  let comboInput;
+  function openCombos() {
+    G.comboBack = G.screen;
+    comboInput = Touch.active ? 'touch' : G.screen === 'fight' ? G.match.p[0].ctrl?.map || 'solo' : 'solo';
+    focusAfter='back';
+    go('combos');
+  }
   function ownsMenu(){return screens.includes(G.screen)||(G.screen==='fight'&&G.match?.paused);}
   function el(tag,text,cls){const n=document.createElement(tag);if(text!=null)n.textContent=text;if(cls)n.className=cls;return n;}
   function button(text,action,cls='',key=''){
@@ -38,6 +46,7 @@ const MobileUI = (()=>{
   }
   function renderTitle(){
     panel.classList.add('title-menu');
+    panel.append(button(localize('Combo list'),openCombos,'quiet-action combo-entry','combos'));
     const hero=el('div',null,'title-hero');hero.append(image(CharacterArt.heroURL?.(CHARS[0].id)||portrait(CHARS[0].id),'hero-fighter hero-left'),image(CharacterArt.heroURL?.(CHARS[7].id)||portrait(CHARS[7].id),'hero-fighter hero-right'));
     const copy=el('div',null,'title-copy');copy.append(el('p',localize('STREETS OF GERMANY'),'title-kicker'),el('h1','FIGHT\nNOW','fight-logo'),el('p',localize('Own the night. Rule the streets.'),'title-tagline'));hero.append(copy);panel.append(hero);
     const modes=el('div',null,'mode-grid');
@@ -66,7 +75,7 @@ const MobileUI = (()=>{
   }
   function renderPause(){
     title(localize('Pause'),BattleMusic.title);const a=actions();primary(a,localize('RESUME'),()=>togglePause());
-    a.append(button(localize('Move list'),()=>{G.moveFor=G.match.p[0].c;G.moveBack='fight';go('moves');},'','moves'),button(localize('Restart'),()=>{touchControls.reset();startFight(G.matchOpts.arena,G.matchOpts.ctrl2.level);fit();},'','restart'));
+    a.append(button(localize('Move list'),()=>{G.moveFor=G.match.p[0].c;G.moveBack='fight';go('moves');},'','moves'),button(localize('Combo list'),openCombos,'','combos'),button(localize('Restart'),()=>{touchControls.reset();startFight(G.matchOpts.arena,G.matchOpts.ctrl2.level);fit();},'','restart'));
     const settings=el('div',null,'menu-settings');settings.append(button(localize('Music: ')+(Snd.musicOn?localize('ON'):localize('OFF')),()=>Snd.toggleMusic(),'','music'),button(localize('Effects: ')+(CombatFX.full?localize('STRONG'):localize('LIGHT')),()=>CombatFX.toggle(),'','effects'));panel.append(settings);
     const links=actions();links.append(button(localize('Change fighter'),()=>startSelect(),'quiet-action','change'),button(localize('Main menu'),()=>go('title'),'quiet-action','home'));
     panel.append(el('p',localize('Pause any time. Your fight waits for you.'),'menu-footnote'));
@@ -102,6 +111,79 @@ const MobileUI = (()=>{
     if(gear?.weaponId)strings.append(el('p',localize('WEAPON FLOW')+': '+[labels.lp,labels.hp,labels.hp].join(' › '),'mobile-copy'));
     panel.append(strings,rows);back(panel,()=>{G.screen=G.moveBack;fit();});
   }
+  function comboKeys(route, mode, confirmed=0, active=false) {
+    const keys = el('ol',null,'combo-keys');
+    keys.setAttribute('role','list');
+    for (const [i,key] of route.buttons.entries()) {
+      const name = localize(comboLabels[key]);
+      const code = mode === 'touch' ? name : MAPS[mode][key][0].replace('Key','').replace('Comma',',').replace('Period','.');
+      const step = el('li',null,'combo-key combo-key-'+key);
+      if (i < confirmed) step.classList.add('confirmed');
+      if (active && i === confirmed) step.classList.add('next-key');
+      if (mode !== 'touch') step.title = name;
+      step.append(el('kbd',code));
+      keys.append(step);
+    }
+    return keys;
+  }
+  function renderCombos() {
+    const tools = el('div',null,'combo-tools');
+    const leave = button(localize('← Back'),()=>{focusAfter='combos';go(G.comboBack);},'mobile-back','back');
+    const label = el('label',localize('Show buttons for'));
+    const input = el('select');input.id='combo-input';label.htmlFor=input.id;
+    for (const [value,name] of [['touch','Touch controls'],['solo','Solo keyboard'],['p1','PLAYER 1'],['p2','PLAYER 2']]) {
+      const option = el('option',localize(name));option.value=value;input.append(option);
+    }
+    input.value=comboInput;
+    tools.append(leave,label,input);
+    panel.append(tools);
+    title(localize('Combo list'),localize('Land each hit, then tap the next button. Try the sequences in Training.'));
+    const fighters = el('section',null,'combo-section'), weapons = el('section',null,'combo-section');
+    function section(target, heading, intro) {
+      const h = el('h2',localize(heading));h.tabIndex=-1;target.append(h);
+      if(intro)target.append(el('p',localize(intro),'mobile-copy'));
+      return h;
+    }
+    const fightersHeading = section(fighters,'Fighter combos');
+    const weaponsHeading = section(weapons,'Weapon combos','Equip a weapon from the matching family in the Armory. Every weapon in that family uses the same sequence.');
+    const jump = el('div',null,'combo-jump');
+    for (const heading of [fightersHeading,weaponsHeading]) {
+      const link = el('button',heading.textContent,'quiet-action');link.type='button';
+      link.onclick=()=>{heading.focus({preventScroll:true});heading.scrollIntoView({block:'start'});};
+      jump.append(link);
+    }
+    panel.append(jump,fighters,weapons);
+    const fighterGrid = el('div',null,'combo-grid'), weaponGrid = el('div',null,'combo-grid');
+    fighters.append(fighterGrid);weapons.append(weaponGrid);
+    const familyNames = Object.fromEntries(WEAPON_CATALOG.weapons.map(w=>[w.family,w.familyName[I18N.language]]));
+    const strikes = {jab:'Jab',cross:'Cross',hook:'Hook',ovh:'Overhead punch',elbow:'Elbow'};
+    const rows = [];
+    function addRoute(card, route, name=route.name) {
+      const row = el('div',null,'combo-route');
+      if(name)row.append(el('strong',name));
+      rows.push([row,route]);card.append(row);
+    }
+    for (const c of CHARS) {
+      const card = el('article',null,'combo-card');
+      card.append(el('h3',c.name),el('p',STYLE_NAMES[c.style],'combo-style'));
+      c.combos.forEach(route=>addRoute(card,route));
+      fighterGrid.append(card);
+    }
+    for (const [family,route] of Object.entries(WEAPON_COMBOS)) {
+      const card = el('article',null,'combo-card');
+      const followups = WEAPON_STRINGS[family].map(move=>localize(strikes[move])).join(' → ');
+      card.append(el('h3',familyNames[family]),el('p',followups,'combo-style'));
+      addRoute(card,route,'');weaponGrid.append(card);
+    }
+    function showKeys() {
+      for (const [row,route] of rows) {
+        row.querySelector('.combo-keys')?.remove();
+        row.append(comboKeys(route,comboInput));
+      }
+    }
+    input.onchange=()=>{comboInput=input.value;showKeys();};
+    showKeys();
+  }
   function renderResult(){
     const m=G.match,r=m?.result;if(!r)return;
     title(r.winner.c.name+localize(' wins!'),r.finisher?localize('Finisher: ')+r.winner.c.finName:r.flawless?localize('FLAWLESS'):localize('Another street. Another story.'));
@@ -117,15 +199,21 @@ const MobileUI = (()=>{
   }
   function syncCoach(){
     let node=document.getElementById('training-coach');
-    const match=G.match,show=Touch.active&&innerHeight>innerWidth&&G.screen==='fight'&&match?.mode==='training'&&!match.paused;
+    const match=G.match,show=Touch.active&&innerHeight>innerWidth&&G.screen==='fight'&&match?.mode==='training'&&match.phase==='play'&&!match.paused;
     if(!show){if(node)node.hidden=true;return;}
     if(!node){node=el('aside',null,'training-coach');node.id='training-coach';document.body.append(node);}
-    node.hidden=false;const a=match.p[0],b=match.p[1],route=a.comboRoute||a.c.combos[0],step=a.comboRoute?a.comboStep+1:a.stringKeys.length;
-    const combo=b.comboHits?{hits:b.comboHits,damage:b.comboDmg}:match.trainingStats.lastCombo;
-    const next=[route.id,step,combo.hits,combo.damage].join('/');if(node.dataset.progress===next)return;node.dataset.progress=next;node.replaceChildren();
-    node.append(el('strong',route.name));const keys=el('div',null,'coach-keys'),labels={lp:localize('Punch'),hp:localize('Heavy punch'),lk:localize('Kick'),hk:localize('Heavy kick')};
-    route.buttons.forEach((key,i)=>keys.append(el('span',labels[key],i<step?'confirmed':'')));
-    node.append(keys,el('small',combo.hits+localize(' HITS')+' · '+combo.damage+' '+localize('DAMAGE')));
+    const [a,b]=match.p;
+    const {routes,active,confirmed}=comboGuide(a);
+    const feedback=match.comboFeedback?.life>0?match.comboFeedback.text:'';
+    const hits=b.comboHits||match.trainingStats.lastCombo.hits;
+    const next=[routes.map(r=>r.id).join(','),confirmed,hits,feedback].join('/');
+    node.hidden=false;
+    if(node.dataset.progress===next)return;
+    node.dataset.progress=next;node.replaceChildren();
+    // Keep the coach one row tall on phones. The full list is in Pause → Combo list.
+    const route=routes[0];
+    node.append(el('strong',route.name),comboKeys(route,'touch',confirmed,!!active),
+      el('small',feedback?localize(feedback):hits+localize(' HITS')));
   }
   function sync(){
     syncCoach();
@@ -134,7 +222,7 @@ const MobileUI = (()=>{
     document.getElementById('mobilePause').hidden=G.screen!=='fight';document.getElementById('fullscreen').hidden=!document.documentElement.requestFullscreen;
     document.getElementById('mobile-hint').textContent=Touch.active?(innerHeight>innerWidth?localize('Rotate for a larger arena'):localize('Move and attack together')):localize('Esc / P to pause');
     if(typeof Economy!=='undefined'){let coins=document.getElementById('coin-hud');if(!coins){coins=el('span',null,'coin-hud');coins.id='coin-hud';toolbar.append(coins);}coins.textContent='◈ '+(Economy.profile?.coins??'—');coins.dataset.weapon=G.match?.p?.[0]?.equipment?.weapon?.id||'';coins.title=G.match?.p?.[0]?.equipment?.weapon?.name?.[I18N.language]||'';}
-    const nextStamp=[menu,G.screen,G.mode,G.selStep,G.pick.join(','),G.stageCur,G.diff,Snd.on,Snd.musicOn,CombatFX.full,G.match?.paused,G.match?.result?.winner?.c.id,G.moveFor?.id,G.moveBack,G.arcade?.i,G.arcade?.cont,typeof Economy!=='undefined'?Economy.version:0,typeof ShopUI!=='undefined'?ShopUI.version:0].join('/');
+    const nextStamp=[menu,G.screen,G.mode,G.selStep,G.pick.join(','),G.stageCur,G.diff,Snd.on,Snd.musicOn,CombatFX.full,G.match?.paused,G.match?.result?.winner?.c.id,G.moveFor?.id,G.moveBack,G.arcade?.i,G.arcade?.cont,G.screen!=='combos'&&typeof Economy!=='undefined'?Economy.version:0,G.screen==='shop'&&typeof ShopUI!=='undefined'?ShopUI.version:0].join('/');
     if(!menu||nextStamp===stamp)return;
     const oldScreen=panel.dataset.screen,oldStep=panel.dataset.step,focused=document.activeElement?.dataset?.focusKey;
     stamp=nextStamp;panel.replaceChildren();panel.className='game-menu';panel.dataset.screen=G.screen;panel.dataset.step=String(G.selStep);
@@ -151,7 +239,7 @@ const MobileUI = (()=>{
       legal.classList.add('legal-links-start');
       panel.append(legal);
     }
-    ({shop:()=>ShopUI.render({panel,el,button,title,actions,back,image,portrait}),title:renderTitle,select:renderSelect,stage:renderStage,fight:renderPause,controls:renderControls,moves:renderMoves,result:renderResult}[G.screen]||renderTitle)();
+    ({shop:()=>ShopUI.render({panel,el,button,title,actions,back,image,portrait}),title:renderTitle,select:renderSelect,stage:renderStage,fight:renderPause,controls:renderControls,moves:renderMoves,combos:renderCombos,result:renderResult}[G.screen]||renderTitle)();
     if(G.screen!=='title')panel.append(legal);
     if(oldScreen!==G.screen||(G.screen==='select'&&oldStep!==String(G.selStep)))panel.scrollTop=0;
     const key=focusAfter||focused;focusAfter=null;
@@ -160,6 +248,7 @@ const MobileUI = (()=>{
   function handleInput(inp){
     if(!ownsMenu())return;
     if(inp.back){const backButton=panel.querySelector('.mobile-back');if(backButton)backButton.click();else if(G.screen==='fight')togglePause();return;}
+    if (G.screen==='combos' && document.activeElement?.tagName==='SELECT') return;
     if(G.screen==='fight'&&Keys.pressed.has('KeyP')){togglePause();return;}
     if(G.screen==='select'||G.screen==='stage'){
       const active=G.selStep===1&&G.mode!=='arcade'?1:0,container=panel.querySelector('.mobile-grid');
@@ -182,7 +271,7 @@ const MobileUI = (()=>{
     if(!ownsMenu())return;
     const focused=document.activeElement;
     if(e.code==='Enter'&&focused?.getAttribute('aria-pressed')==='true'&&(focused.classList.contains('fighter-card')||focused.classList.contains('arena-card'))){e.preventDefault();e.stopPropagation();panel.querySelector('.mobile-primary')?.click();return;}
-    if(e.code==='Tab'||(['Enter','Space'].includes(e.code)&&focused?.tagName==='BUTTON'))e.stopPropagation();
+    if(e.code==='Tab'||(['Enter','Space'].includes(e.code)&&['BUTTON','SELECT'].includes(focused?.tagName))||(focused?.tagName==='SELECT'&&e.code!=='Escape'))e.stopPropagation();
   },true);
   return {sync,ownsMenu,handleInput,portrait};
 })();

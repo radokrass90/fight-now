@@ -7,6 +7,15 @@ const I18N_DE = {
   "Online progress saves your equipment and rewards to a server.":"Der Online-Fortschritt speichert deine Ausrüstung und Belohnungen auf einem Server.",
   "ENABLE ONLINE PROGRESS":"ONLINE-FORTSCHRITT AKTIVIEREN",
 
+  "Combo list": "Komboliste",
+  "Show buttons for": "Tasten anzeigen für",
+  "Touch controls": "Touch-Steuerung",
+  "Solo keyboard": "Tastatur (Solo)",
+  "Land each hit, then tap the next button. Try the sequences in Training.": "Lande jeden Treffer und drücke dann die nächste Taste. Probiere die Folgen im Training aus.",
+  "Fighter combos": "Kämpfer-Kombos",
+  "Weapon combos": "Waffen-Kombos",
+  "Equip a weapon from the matching family in the Armory. Every weapon in that family uses the same sequence.": "Rüste im Arsenal eine Waffe aus der passenden Kategorie aus. Alle Waffen dieser Kategorie nutzen dieselbe Tastenfolge.",
+
   "FLOW": "FLUSS",
   "WEAPON FLOW": "WAFFENFLUSS",
   "SIGNATURE COMBOS": "SIGNATUR-KOMBOS",

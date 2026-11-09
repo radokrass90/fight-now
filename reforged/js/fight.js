@@ -101,10 +101,19 @@ function weaponNormal(f,key){
  const hit={...base,limb:POSE_LIMB[pose]||'fh',l:'m',sweepFrom:STRIKE_LOAD[pose],r:Math.max(base.r,18)};
  return f.weaponNormals[key]=N(STRIKE_LOAD[pose],pose,style[heavy?3:2],3,heavy?20:11,hit,{name:f.equipment.weapon.name?.[I18N.language]||original.name,weaponStyle:family,rank:heavy?2:1,vx:heavy?2:1.3,vxUntil:style[heavy?3:2]+2});
 }
-function fighterStrings(f){
- const family=f.equipment?.weapon?.family,p=WEAPON_STRINGS[family];
- if(!p)return f.c.combos;
- return [...f.c.combos,{id:'weapon-'+family,name:localize('WEAPON FLOW'),buttons:['lp','hp','hp'],moves:[null,stringStrike(p[0],false,false,family),stringStrike(p[1],true,false,family)]}];
+const WEAPON_COMBOS = Object.fromEntries(Object.entries(WEAPON_STRINGS).map(([family, [first, last]]) => [
+ family, {id:'weapon-'+family, name:localize('WEAPON FLOW'), buttons:['lp','hp','hp'],
+  moves:[null,stringStrike(first,false,false,family),stringStrike(last,true,false,family)]}
+]));
+function fighterStrings(f) {
+ const route = WEAPON_COMBOS[f.equipment?.weapon?.family];
+ return route ? [...f.c.combos, route] : f.c.combos;
+}
+function comboGuide(f) {
+ const routes = fighterStrings(f);
+ const active = f.comboRoute || (f.stringKeys.length && routes.find(r => f.stringKeys.every((key, i) => key === r.buttons[i])));
+ const confirmed = f.stringKeys.length - Number(!f.connected && f.stringKeys.length > 0);
+ return {routes: active ? [active] : routes, active, confirmed};
 }
 
 // ---------- боец ----------
@@ -916,14 +925,11 @@ class Match {
       outlineText(ctx,localize('HIT COMBO'),x,202,12,'#e2c078','center',2);
       outlineText(ctx,String(d.damage)+' '+localize('DAMAGE'),x,222,13,'#c0e9e4','center',2);ctx.restore();
     }
-    if(this.mode==='training'&&this.phase==='play'){
-      const routes = fighterStrings(a);
-      const active = a.comboRoute || (a.stringKeys.length && routes.find(r => a.stringKeys.every((key, i) => key === r.buttons[i])));
-      const shown = active ? [active] : routes;
-      const step = active && a.connected ? a.stringKeys.length : Math.max(0, a.stringKeys.length - 1);
+    if(this.mode==='training'&&this.phase==='play'&&!(typeof Touch!=='undefined'&&Touch.active&&innerHeight>innerWidth)){
+      const {routes, active, confirmed: step} = comboGuide(a);
       const labels={lp:'P',hp:'HP',lk:'K',hk:'HK'};
       if(typeof Touch!=='undefined'&&!Touch.active)for(const key of Object.keys(labels))labels[key]=(MAPS[a.ctrl.map||'solo']?.[key]?.[0]||labels[key]).replace('Key','').replace('Comma',',').replace('Period','.');
-      shown.forEach((route, row) => {
+      routes.forEach((route, row) => {
         const keys = route.buttons.map((key, i) => (i < step ? '✓ ' : active && i === step ? '▸ ' : '') + labels[key]).join('  ›  ');
         outlineText(ctx, route.name + '   ' + keys, W/2, 131 + row * 17, 13, '#fff1ba', 'center', 3, 520);
       });
