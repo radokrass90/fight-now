@@ -1,5 +1,12 @@
 'use strict';
 const ShopUI=(()=>{
+ const handling = {
+  bat:'Wide swings with a long windup', staff:'Fast jabs and wide follow-ups',
+  hammer:'Heavy overhead blows', axe:'Sweeping cuts and overhead blows',
+  sword:'Fast thrusts and sweeping cuts', tonfa:'Short swings and quick follow-ups',
+  chain:'Wide swings with a long recovery', spear:'Straight strikes at long range',
+  knuckles:'Fast close-range strikes', blade:'Quick cuts at close range'
+ };
  const state={tab:'weapons',fighter:null,family:'all',page:0,previewId:null},errors={not_enough_coins:'Not enough coins.',weapon_not_owned:'Buy this weapon first.',username_taken:'That player name is already used.',invalid_credentials:'Incorrect name or password.',already_registered:'This profile is already saved.',sign_in_required:'Please log in again.',session_expired:'Please log in again.',slow_down:'Please wait before trying again.',max_level:'Maximum level reached.'};
  let version=0;
  const name=w=>w.name[I18N.language]||w.name.en;
@@ -61,8 +68,8 @@ const ShopUI=(()=>{
    const selected=list.find(w=>w.id===state.previewId)||list.find(w=>w.id===load.weaponId)||list[0];
    if(selected){
     const feature=el('section',null,'armory-showcase tier-'+selected.tier);feature.dataset.family=selected.family;feature.setAttribute('aria-label',localize('Weapon details'));
-    const stage=el('div',null,'showcase-stage'),large=image(selected.art?.detail||selected.icon,'showcase-weapon');large.alt=name(selected);stage.append(el('span',localize('PERMANENT COLLECTION'),'showcase-kicker'),large);
-    const info=el('div',null,'showcase-info');info.append(el('p',selected.familyName[I18N.language]+' / '+localize('TIER ')+selected.tier,'weapon-eyebrow'),el('h2',name(selected)),el('p',localize('One purchase. Equip it whenever you fight.'),'mobile-copy'));
+    const stage=el('div',null,'showcase-stage'),large=image(selected.art?.detail||selected.icon,'showcase-weapon');large.alt=name(selected);stage.append(el('span',selected.familyName[I18N.language].toUpperCase(),'showcase-kicker'),large);
+    const info=el('div',null,'showcase-info');info.append(el('p',selected.familyName[I18N.language]+' / '+localize('TIER ')+selected.tier,'weapon-eyebrow'),el('h2',name(selected)),el('p',localize(handling[selected.family] || 'One purchase. Equip it whenever you fight.'),'mobile-copy'));
     const stats=el('dl',null,'weapon-specs');for(const [value,label]of [['+'+(Math.round(selected.damage*1000)/10)+'%',localize('damage')],['+'+selected.reach,localize('reach')],['+'+(Math.round(selected.meter*1000)/10)+'%',localize('ENERGY')]]){const item=el('div');item.append(el('dt',label),el('dd',value));stats.append(item);}info.append(stats,purchase(selected,'featured-'));
     if(p?.owned.includes(selected.id))info.append(el('span',localize('OWNED'),'ownership-note'));
     feature.append(stage,info);panel.append(feature);

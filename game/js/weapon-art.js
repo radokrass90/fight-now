@@ -12,23 +12,61 @@ const WeaponArt=(()=>{
   const b=frame.bounds,[ax,ay,angle]=anchors[index]||[.82,.22,-30],hand=handAnchors[f.c.id]?.[index];
   return{x:(b.x+b.w*(hand?.[0]??ax)-220)*size,y:(b.y+b.h*(hand?.[1]??ay)-464-airOffset)*size,angle};
  }
+ function dimensions(w, f) {
+  const design = w.art;
+  const grip = design?.grip || {x:48,y:48};
+  return {
+   grip, width:design?.width || 144, height:design?.height || 96,
+   scale:design ? w.length * f.c.h / design.bounds.w : w.length / 85 * f.c.h
+  };
+ }
+ function strike(f) {
+  const w = f.equipment?.weapon;
+  const art = typeof CharacterArt !== 'undefined' && CharacterArt.sample(f);
+  if (!w?.art || !art?.hand) return null;
+  const {grip, scale} = dimensions(w, f);
+  const {hand, motion} = art, bounds = w.art.bounds;
+  const angle = CombatMotion.weapon(f, art).angle * D2R;
+  const tipLength = (bounds.x + bounds.w - grip.x) * scale;
+  const rotation = (f.rot || 0) * D2R;
+  const cos = Math.cos(rotation), sin = Math.sin(rotation);
+  const transform = (x, y) => {
+   const localX = motion.sx * x - motion.lean * y + motion.x;
+   const localY = motion.sy * y + motion.y;
+   const facingScale = f.facing * (f.sc || 1);
+   const heightScale = (f.sc || 1) * (f.squash || 1);
+   return [f.x + (localX * cos - localY * sin) * facingScale, GROUND - f.y + (localX * sin + localY * cos) * heightScale];
+  };
+  return {
+   grip:transform(hand.x, hand.y),
+   tip:transform(hand.x + Math.cos(angle) * tipLength, hand.y + Math.sin(angle) * tipLength),
+   radius:clamp(bounds.h * scale * .38, 5, 12)
+  };
+ }
  function draw(ctx,f,art){
   const w=f.equipment?.weapon;if(!w||!art?.frame||f.vis===false||f.lying||f.script||f.noProp||['air','thrown','locked','down','ko'].includes(f.state))return;
   const image=prepare(w.id);if(!image?.complete||!image.naturalWidth)return;
   const i=art.frameIndex;if([27,28,29].includes(i))return;const hand=art.hand||handPoint(f,art.frame,i,art.size,art.airOffset),cx=hand.x,cy=hand.y,angle=hand.angle;
-  const design=w.art,grip=design?.grip||{x:48,y:48},width=design?.width||144,height=design?.height||96;
-  const scale=design?w.length*f.c.h/design.bounds.w:w.length/85*f.c.h;
+  const {grip,width,height,scale} = dimensions(w,f);
   ctx.save();ctx.globalAlpha=(f.alpha??1)*(art.alpha??1);ctx.translate(f.x,GROUND-f.y);ctx.scale(f.facing*(f.sc||1),(f.sc||1)*(f.squash||1));if(f.rot)ctx.rotate(f.rot*D2R);
   if(art.motion)CombatMotion.apply(ctx,art.motion);else{const breathing=f.state==='idle'?Math.sin((f.st||0)*.09)*.003:0;ctx.scale(1,1+breathing);}
   ctx.save();ctx.translate(cx,cy);const hanging=w.family==='chain'&&![4,5,20,21].includes(i);const flow=art.motion?CombatMotion.weapon(f,art):null,propAngle=flow?flow.angle:hanging?68+Math.sin(f.walkPh||0)*6:angle;
-  if(flow?.trail&&typeof CombatFX!=='undefined'&&CombatFX.full&&!CombatFX.reduced){
-   const length=w.length*f.c.h;ctx.save();ctx.globalAlpha*=flow.trail*.26;ctx.strokeStyle=w.family==='sword'||w.family==='blade'?'#b8f6ff':'#ffe2a2';ctx.lineCap='round';
-   for(let j=0;j<3;j++){ctx.lineWidth=2+j*2;ctx.globalAlpha*=.7;ctx.beginPath();ctx.arc(0,0,length*(.68+j*.12),(propAngle-58-j*9)*D2R,propAngle*D2R);ctx.stroke();}ctx.restore();
+  if (flow?.trail && typeof CombatFX !== 'undefined' && !CombatFX.reduced) {
+   const length = w.art ? (w.art.bounds.x + w.art.bounds.w - grip.x) * scale : w.length * f.c.h;
+   const end = propAngle * D2R, start = Math.max(flow.from, propAngle - (CombatFX.full ? 57 : 35)) * D2R;
+   if (end > start) {
+    const color = ['sword','blade','spear','axe'].includes(w.family) ? '#baf4ff' : '#ffd088';
+    ctx.save();ctx.strokeStyle=color;ctx.lineCap='round';
+    ctx.globalAlpha *= flow.trail * .36;ctx.lineWidth = 3;
+    ctx.beginPath();ctx.arc(0,0,length,start,end);ctx.stroke();
+    if (CombatFX.full) {
+     ctx.globalAlpha *= .47;ctx.lineWidth = 7;
+     ctx.beginPath();ctx.arc(0,0,length * .86,start,end);ctx.stroke();
+    }
+    ctx.restore();
+   }
   }
-  ctx.rotate(propAngle*D2R);
-  if(design&&f.state==='move'&&typeof CombatFX!=='undefined'&&CombatFX.full&&!CombatFX.reduced&&[4,5,20,21].includes(i)){
-   const len=w.length*f.c.h;ctx.save();ctx.globalAlpha*=.19;ctx.strokeStyle='#e8d39b';ctx.lineWidth=3;ctx.beginPath();ctx.moveTo(len*.30,-15);ctx.quadraticCurveTo(len*.8,-11,len,0);ctx.stroke();ctx.restore();
-  }
+  ctx.rotate(propAngle * D2R);
   ctx.drawImage(image,-grip.x*scale,-grip.y*scale,width*scale,height*scale);ctx.restore();
   // Restore the real painted fist above the grip, so the prop sits inside the hand.
   if(art.image&&i<27){
@@ -37,5 +75,5 @@ const WeaponArt=(()=>{
   }
   ctx.restore();
  }
- return{draw,prepare,handPoint,get residentImages(){return images.size;}};
+ return{draw,prepare,handPoint,strike,get residentImages(){return images.size;}};
 })();

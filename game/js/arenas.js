@@ -209,6 +209,7 @@ function invalidateArenas() { for (const k in ArenaCache) delete ArenaCache[k]; 
 const Weather = { parts: [] };
 function drawArenaBack(ctx, i, T) {
   ctx.drawImage(arenaCanvas(i), 0, 0, W, H);
+  if (typeof StageProps !== 'undefined') StageProps.signature(ctx, i, T);
   if(typeof StageProps!=='undefined')StageProps.back(ctx,i,T);
   // Generated scenes contain their own lights and props. Avoid painting the
   // old geometric signs/fixtures over them; weather still renders in front.

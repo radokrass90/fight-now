@@ -84,7 +84,7 @@ const CharacterArt = (() => {
     if (f.script || ['throwing', 'super', 'locked'].includes(f.state)) return nearestPose(f);
     if (['down', 'ko'].includes(f.state)) return 28;
     if (['air', 'thrown'].includes(f.state)) return 27;
-    if (f.state === 'hit') return f.hitLow ? 26 : 8;
+    if (f.state === 'hit') return f.reaction === 'rise' && f.st < 6 ? 27 : f.hitLow ? 26 : 8;
     if (f.state === 'dizzy') return 8;
     if (f.state === 'win') return 9;
     if (f.state === 'getup') return f.st < 10 ? 29 : f.st < 15 ? 2 : 0;
@@ -104,7 +104,7 @@ const CharacterArt = (() => {
       if (i < 0) i = f.mc.segs.length - 1;
       const seg = f.mc.segs[i];
       if (seg && typeof seg.p === 'string') {
-        if (!seg.hold && ['jab', 'palm', 'c_jab', 'jpunch'].includes(seg.p) && (typeof CombatMotion==='undefined'||(f.mt-seg.s)/Math.max(1,seg.e-seg.s)<.4)) return 16;
+        if (!seg.hold && ['jab', 'palm', 'c_jab', 'jpunch'].includes(seg.p) && (typeof CombatMotion === 'undefined' || (f.mt - seg.s) / Math.max(1, seg.e - seg.s) < .4)) return 16;
         if (Object.hasOwn(poseFrames, seg.p)) return poseFrames[seg.p];
         if (seg.p.endsWith('_c')) return f.move?.crouch ? 25 : 18;
       }
@@ -125,7 +125,7 @@ const CharacterArt = (() => {
     // height so switching from idle to a new walking strip never shrinks a fighter.
     return .47*c.h*354/Math.max(1,standingHeight);
   }
-  function draw(ctx, f, opt = {}) {
+  function sample(f) {
     const entry = entries.get(f.c.id);
     if (!entry?.imageLoaded) return false;
     let index = frameFor(f), image = entry.image;
@@ -136,7 +136,18 @@ const CharacterArt = (() => {
       index = fallback[index] ?? 0; frame = entry.data.frames[index];
     }
     const sk = skeleton(f.c, f.pose), hip = fighterHip(f, sk), size = drawScale(entry,frame,f.c);
-    const groundedArt = index === 28 || index === 29;
+    const ratio = (image.naturalWidth || 2560) / 2560;
+    const airOffset = reforged && index === 3 ? Math.min(100, Math.max(0, frame.bounds.y - entry.data.frames[0].bounds.y)) : 0;
+    const motion = typeof CombatMotion !== 'undefined' ? CombatMotion.sample(f) : null;
+    const art = {sk, hip, frameIndex: index, frame, size, airOffset, image, ratio, motion};
+    if (motion) art.hand = CombatMotion.hand(f, art);
+    return art;
+  }
+  function draw(ctx, f, opt = {}) {
+    const art = sample(f);
+    if (!art) return false;
+    const {frameIndex: index, frame, size, airOffset, image, ratio, motion} = art;
+    const groundedArt = index === 28 || index === 29 || f.reaction === 'rise' && f.state === 'hit';
     ctx.save();
     ctx.globalAlpha = (f.alpha ?? 1) * (opt.alpha ?? 1);
     // All frames use the same foot pivot. Skeleton hip movement must not move
@@ -147,14 +158,11 @@ const CharacterArt = (() => {
     if (f.flash > 0) ctx.filter = 'brightness(1.65)';
     else if (f.paint) ctx.filter = 'hue-rotate(110deg) saturate(2)';
     else if (f.strip) ctx.filter = 'brightness(1.3) saturate(0.2)';
-    const motion=typeof CombatMotion!=='undefined'?CombatMotion.sample(f):null;
     if(motion)CombatMotion.apply(ctx,motion);
     else if (f.state === 'idle') ctx.scale(1, 1 + Math.sin((f.st || 0) * .09) * .003);
     ctx.imageSmoothingEnabled = true;
-    const ratio = (image.naturalWidth || 2560) / 2560;
-    const airOffset=reforged&&index===3 ? Math.min(100,Math.max(0,frame.bounds.y-entry.data.frames[0].bounds.y)) : 0;
-    const art={sk,hip,frameIndex:index,frame,size,airOffset,image,ratio,motion,alpha:opt.alpha??1};
-    if(motion){art.hand=CombatMotion.hand(f,art);CombatMotion.paint(ctx,image,art);}
+    art.alpha = opt.alpha ?? 1;
+    if (motion) CombatMotion.paint(ctx, image, art);
     else ctx.drawImage(image,frame.x*ratio,frame.y*ratio,512*ratio,512*ratio,-220*size,-464*size-airOffset*size,512*size,512*size);
     ctx.restore();return art;
   }
@@ -184,5 +192,5 @@ const CharacterArt = (() => {
     ctx.drawImage(image,frame.x*ratio,frame.y*ratio,512*ratio,512*ratio,-220*size,-464*size,512*size,512*size);
     ctx.restore();
   }
-  return { ready, prepare, draw, portrait, portraitURL, heroURL, reflection, frameFor, entries };
+  return { ready, prepare, draw, portrait, portraitURL, heroURL, reflection, frameFor, sample, entries };
 })();

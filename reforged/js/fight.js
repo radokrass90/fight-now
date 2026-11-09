@@ -1,7 +1,7 @@
 'use strict';
 const GRAV = 0.75;
 const FREE = new Set(['idle', 'walk', 'crouch', 'block', 'cblock', 'land']);
-const POSE_LIMB = { jab: 'fh', cross: 'bh', hook: 'fh', hay: 'bh', palm: 'fh', lowkick: 'bf', knee: 'fk', shoulder: 'fsh', hb: 'head', swing: 'prop', superman: 'bh', ovh: 'bh', elbow: 'fe', teep: 'ff', rh: 'bf', hk: 'bf', upper: 'bh', lariat: 'fe' };
+const POSE_LIMB = { jab: 'fh', cross: 'bh', hook: 'fh', hay: 'bh', palm: 'fh', lowkick: 'bf', knee: 'fk', shoulder: 'fsh', hb: 'head', swing: 'prop', superman: 'bh', ovh: 'bh', elbow: 'fe', teep: 'ff', rh: 'bf', hk: 'bf', sweep: 'ff', stomp: 'ff', upper: 'bh', lariat: 'fe' };
 
 function compileMove(m) {
   if (m._c) return m._c;
@@ -79,10 +79,10 @@ const SIGNATURES = [
  ['Backstreet Tempo','Hinterhoftakt','jab','hook','lowkick','teep']
 ];
 const STRIKE_LOAD={jab:'jab_c',hook:'hook_c',hay:'hay_c',palm:'palm_c',elbow:'elbow_c',upper:'upper_c',hk:'rh_c',rh:'rh_c',knee:'knee_c',lowkick:'lk_c',stomp:'stomp_c',teep:'teep_c',hb:'hb_c',shoulder:'hay_c',ovh:'ovh_c',sweep:'sweep_c'};
-function stringStrike(pose, final, fast=false) {
+function stringStrike(pose, final, fast=false, weaponStyle) {
  const kick=['hk','rh','lowkick','stomp','teep','knee','sweep'].includes(pose);
  const hit=HT(final?68:fast?25:36, ['sweep','stomp','lowkick'].includes(pose)?'l':'m', final?24:22,final?7:1.1,POSE_LIMB[pose]||(kick?'ff':'fh'),{r:kick?23:22,sweepFrom:STRIKE_LOAD[pose],comboEnd:final?1:0,...(final?{kd:1,launch:pose==='upper'?10:5}:{})});
- return N(STRIKE_LOAD[pose]||'hook_c',pose,fast?4:final?8:5,3,26,hit,{name:pose,comboStep:1,comboEnd:final, vx:fast?2.2:final?2:3.4,vxUntil:final?7:8});
+ return N(STRIKE_LOAD[pose]||'hook_c',pose,fast?4:final?8:5,3,26,hit,{name:pose,comboStep:1,comboEnd:final,weaponStyle, vx:fast?2.2:final?2:3.4,vxUntil:final?7:8});
 }
 for(const [index,c] of CHARS.entries()){
  const [en,de,a,b,k,end]=SIGNATURES[index],name=I18N.language==='de'?de:en;
@@ -91,7 +91,7 @@ for(const [index,c] of CHARS.entries()){
   {id:c.id+'-flow',name:name+' / '+localize('FLOW'),buttons:['lk','lp','hk'],moves:[null,stringStrike(k,false),stringStrike(b,true)]}
  ];
 }
-const WEAPON_STRINGS={bat:['hook','ovh'],staff:['jab','sweep'],hammer:['hook','ovh'],axe:['elbow','ovh'],sword:['hook','upper'],tonfa:['elbow','hook'],chain:['hook','rh'],spear:['jab','teep'],knuckles:['jab','upper'],blade:['elbow','hook']};
+const WEAPON_STRINGS={bat:['hook','ovh'],staff:['jab','cross'],hammer:['hook','ovh'],axe:['elbow','ovh'],sword:['hook','ovh'],tonfa:['elbow','hook'],chain:['hook','ovh'],spear:['jab','cross'],knuckles:['jab','cross'],blade:['elbow','hook']};
 const WEAPON_NORMALS={bat:['hook','ovh',6,11],staff:['jab','cross',6,9],hammer:['hook','ovh',8,14],axe:['hook','ovh',7,12],sword:['jab','hook',5,8],tonfa:['jab','elbow',5,7],chain:['hook','hook',7,11],spear:['jab','cross',5,8],knuckles:['jab','upper',4,7],blade:['jab','cross',4,6]};
 function weaponNormal(f,key){
  const family=f.equipment?.weapon?.family,style=WEAPON_NORMALS[family];
@@ -104,7 +104,7 @@ function weaponNormal(f,key){
 function fighterStrings(f){
  const family=f.equipment?.weapon?.family,p=WEAPON_STRINGS[family];
  if(!p)return f.c.combos;
- return [...f.c.combos,{id:'weapon-'+family,name:localize('WEAPON FLOW'),buttons:['lp','hp','hp'],moves:[null,stringStrike(p[0],false),stringStrike(p[1],true)]}];
+ return [...f.c.combos,{id:'weapon-'+family,name:localize('WEAPON FLOW'),buttons:['lp','hp','hp'],moves:[null,stringStrike(p[0],false,false,family),stringStrike(p[1],true,false,family)]}];
 }
 
 // ---------- боец ----------
@@ -118,7 +118,7 @@ class Fighter {
     Object.assign(this, { x, y: 0, vx: 0, vy: 0, facing, hp: 1000, state: 'idle', st: 0, move: null, mt: 0, hitstun: 0, juggle: 0, comboHits: 0, comboDmg: 0, myCombo: 0,
       invul: 0, connected: false, chain: 0, hitIds: new Set(), airUsed: false, lying: false, rot: 0, sc: 1, vis: true, alpha: 1, flash: 0, strip: false, paint: false, squash: 1, noProp: false,
       stunUsed: false, dirHist: [], lastDir: '', thr: null, sup: null, armorHits: 0, walkPh: 0, fp: null, script: false, lastHitBy: null, pushed: 0,
-      attackBuffer: null, attackQueue: [], sampledInput: null, moveSerial: 0, moveRank: 0, guardStart: -999, blockHeld: false, stringKeys: [], stringUntil: 0, comboRoute: null, comboStep: 0, dashUntil: 0, dashCooldown: 0, lastTap: null, lastHorizontal: 0, motionTick: 0 });
+      attackBuffer: null, attackQueue: [], sampledInput: null, moveSerial: 0, moveRank: 0, guardStart: -999, blockHeld: false, stringKeys: [], stringUntil: 0, comboRoute: null, comboStep: 0, dashUntil: 0, dashCooldown: 0, lastTap: null, lastHorizontal: 0, motionTick: 0, reaction: null, hitLow: false });
     this.pose = Object.assign({}, this.c.stance);
     this.input = { P: {} };
     if (this.ai) this.ai.reset();
@@ -145,6 +145,7 @@ class Match {
   }
   startRound() {
     const [a, b] = this.p;
+    this.comboFeedback = null;
     a.reset(300, 1); b.reset(660, -1);
     this.impactFocus=null; this.cameraZoom=1.08; this.shake=0;
     if (this.round === 1) { a.meter = 0; b.meter = 0; }
@@ -169,6 +170,7 @@ class Match {
     if (this.paused) return;
     this.T++;
     if(this.comboDisplay?.life>0)this.comboDisplay.life--;
+    if (this.comboFeedback?.life > 0) this.comboFeedback.life--;
     // Sample human edges even during hitstop. The buffer expires in simulation
     // frames, so a cinematic pause never eats a deliberate follow-up input.
     for (const f of this.p) if (f.ctrl.type === 'human') {
@@ -215,6 +217,8 @@ class Match {
     }
 
     for (const f of this.p) this.stepFighter(f);
+    // Use the pose for this simulation tick before testing contact.
+    for (const f of this.p) if (f.state === 'move') f.pose = this.movePose(f);
     this.physics();
     for (const f of this.p) this.checkHits(f);
     this.updateProj();
@@ -337,6 +341,9 @@ class Match {
 
   startMove(f, m) {
     const c = compileMove(m);
+    f.startArtFrame = typeof CharacterArt !== 'undefined' ? CharacterArt.frameFor(f) : null;
+    f.startWeaponAngle = f.equipment?.weapon && typeof CombatMotion !== 'undefined'
+      ? CombatMotion.weapon(f, {motion: CombatMotion.sample(f)}).angle : null;
     f.prevState = f.state;
     f.attackQueue.shift();f.attackBuffer=f.attackQueue[0]||null;f.moveSerial++;
     f.moveRank = m.rank || (m.special || m.isSuper ? 3 : ['HP', 'HK', 'cHP', 'cHK', 'fHP'].some(k => f.c.moves[k] === m) ? 2 : 1);
@@ -348,6 +355,9 @@ class Match {
   }
   endMove(f) {
     const air = f.y > 0;
+    if (this.mode === 'training' && f.side === 0 && f.comboRoute && !f.connected && !f.hitIds.size) {
+      this.comboFeedback = { text: 'Strike missed. Move closer.', life: 100 };
+    }
     f.move = null; f.mc = null;
     if (air) { f.state = 'jump'; f.airUsed = true; } else this.setState(f, f.input.d ? 'crouch' : 'idle');
     f.chain = 0; f.comboRoute=null;f.comboStep=0;f.stringKeys=[];
@@ -357,8 +367,14 @@ class Match {
     if(!key||input.d||f.move.comboEnd||f.move.special||f.move.air||f.chain>=3||f.chain!==f.stringKeys.length-1)return false;
     const keys=[...f.stringKeys,key];
     const route=fighterStrings(f).find(r=>keys.length<=r.buttons.length&&keys.every((k,i)=>r.buttons[i]===k));
-    if(!route||keys.length<2)return false;
+    if (!route) {
+      if (this.mode === 'training' && f.side === 0 && f.comboRoute) {
+        this.comboFeedback = { text: 'Wrong input for this combo.', life: 85 };
+      }
+      return false;
+    }
     const step=keys.length-1,chain=f.chain+1;this.startMove(f,route.moves[step]);
+    if (f.side === 0) this.comboFeedback = null;
     f.chain=chain;f.stringKeys=keys;f.comboRoute=route;f.comboStep=step;f.stringUntil=this.simFrame+45;
 
     return true;
@@ -537,21 +553,50 @@ class Match {
     if (!seg || !seg.hit || A.hitIds.has(seg.hid)) return;
     if (B.invul > 0 || B.state === 'thrown' || B.state === 'locked' || B.script) return;
     const h = seg.hit;
+    if (h.l === 'h' && B.crouching && B.y === 0) return;
     const sk = skeleton(A.c, A.pose), hip = fighterHip(A, sk), pt = toWorld(A, hip, limbPoint(A.c, sk, A.pose, h.limb));
     const r = this.hurtRect(B); if (!r) return;
-    const cx = clamp(pt[0], r.x1, r.x2), cy = clamp(pt[1], r.y1, r.y2);
-    const reach=h.r+(['fh','bh','fe','prop'].includes(h.limb)?(A.equipment?.reach||0):0);
-    let contact=(pt[0]-cx)**2+(pt[1]-cy)**2<=reach*reach;
-    // Fast authored swings sweep through their loaded pose. Testing only the
-    // final fingertip made rising blows pass above an opponent between ticks.
-    if(!contact&&h.sweepFrom){
-      const pose=A.resolve(h.sweepFrom),loaded=skeleton(A.c,pose),from=toWorld(A,fighterHip(A,loaded),limbPoint(A.c,loaded,pose,h.limb));
-      for(let i=0;i<=8&&!contact;i++){const x=lerp(from[0],pt[0],i/8),y=lerp(from[1],pt[1],i/8);if((x-clamp(x,r.x1,r.x2))**2+(y-clamp(y,r.y1,r.y2))**2<=reach*reach){contact=true;pt[0]=x;pt[1]=y;}}
+    const contactAt = (x, y, radius) => {
+      const cx = clamp(x, r.x1, r.x2), cy = clamp(y, r.y1, r.y2);
+      return (x - cx) ** 2 + (y - cy) ** 2 <= radius * radius ? [cx, cy] : null;
+    };
+    const sweep = (from, to, radius) => {
+      const steps = Math.max(1, Math.ceil(Math.hypot(to[0] - from[0], to[1] - from[1]) / (radius * 0.65)));
+      for (let i = 0; i <= steps; i++) {
+        const point = contactAt(lerp(from[0], to[0], i / steps), lerp(from[1], to[1], i / steps), radius);
+        if (point) return point;
+      }
+      return null;
+    };
+    const weapon = A.move.weaponStyle && typeof WeaponArt !== 'undefined' && WeaponArt.strike(A);
+    let contact;
+    if (weapon) {
+      contact = sweep(weapon.tip, weapon.grip, weapon.radius);
+      if (!contact) {
+        const extension = A.mc.segs[A.mc.segs.indexOf(seg) - 1];
+        const previousTick = A.mt === seg.s + 1 ? extension.s : A.mt - 1;
+        const previous = WeaponArt.strike({...A, mt: previousTick});
+        if (previous) {
+          for (const u of [0, .5, 1]) {
+            const from = previous.grip.map((v, i) => lerp(v, previous.tip[i], u));
+            const to = weapon.grip.map((v, i) => lerp(v, weapon.tip[i], u));
+            contact = sweep(from, to, weapon.radius);
+            if (contact) break;
+          }
+        }
+      }
+    } else {
+      const reach = h.r + (A.move.weaponStyle ? (A.equipment?.reach || 0) : 0);
+      contact = contactAt(...pt, reach);
+      if (!contact && h.sweepFrom) {
+        const pose = A.resolve(h.sweepFrom), loaded = skeleton(A.c, pose);
+        const from = toWorld(A, fighterHip(A, loaded), limbPoint(A.c, loaded, pose, h.limb));
+        contact = sweep(pt, from, reach);
+      }
     }
-    if(!contact)return;
-    if (h.l === 'h' && B.crouching && B.y === 0) return; // високите удари минават над клекнал
+    if (!contact) return;
     A.hitIds.add(seg.hid);
-    this.resolveHit(A, B, h, pt[0], pt[1], false);
+    this.resolveHit(A, B, {...h, pose: seg.p}, contact[0], contact[1], false);
   }
 
   resolveHit(A, B, h, px, py, isProj) {
@@ -566,6 +611,8 @@ class Match {
     const canBlock = blocking && (h.l === 'm' || h.l === 'h' || (h.l === 'l' && crouchB) || (h.l === 'o' && !crouchB));
     if (canBlock) {
       A.connected = false;
+      if (this.mode === 'training' && A.side === 0) this.comboFeedback = { text: 'Blocked. Try an opening.', life: 85 };
+      B.reaction = 'guard';
       const perfect = B.state !== 'blockstun' && this.simFrame - B.guardStart <= 4;
       const chip = !perfect && h.special ? Math.round(h.d * 0.15) : 0; if (chip) B.hp = Math.max(1, B.hp - chip);
       B.wasCrouch = crouchB; B.state = 'blockstun'; B.st = 0; B.hitstun = perfect ? 3 : Math.max(6, Math.round((h.st || 18) * 0.6)); B.vx = perfect ? 0 : A.facing * (h.kb * 0.8 + 2.5);
@@ -588,6 +635,10 @@ class Match {
     const scale = Math.max(0.35, 1 - B.comboHits * 0.1);
     const dmg = this.damage(A, B, h.d * scale * (counterHit ? 1.2 : 1));
     if (counterHit) this.popText(B.x, GROUND - 190, localize("COUNTER"), '#ff5a5a', 20);
+    const upward = ['upper', 'c_up'].includes(h.pose);
+    const low = h.l === 'l' || py > GROUND - B.y - 48;
+    B.reaction = upward ? 'rise' : low ? 'low' : py > GROUND - B.y - 106 ? 'body' : 'head';
+    B.hitLow = B.reaction === 'low' || B.reaction === 'body';
     B.comboHits++; B.move = null; B.lying = false;
     this.recordCombo(B);
     if(B.comboHits>=2)this.comboDisplay={side:A.side,hits:B.comboHits,damage:B.comboDmg,life:100,name:A.move?.comboEnd?A.comboRoute?.name:null};
@@ -603,7 +654,7 @@ class Match {
       B.vy = B.juggle >= 4 ? -3 : (h.launch || (B.y > 0 ? 6 : 7)); B.vx = A.facing * (h.kb * 0.5 + 1.5); B.y = Math.max(B.y, 1);
       if (B.juggle >= 4) { B.invul = 60; this.popText(B.x, GROUND - B.y - 140, localize("AIR RECOVERY"), '#b9d9ff', 17, 36); }
     } else {
-      B.state = 'hit'; B.st = 0; B.hitstun = h.st || 16; B.vx = A.facing * h.kb; B.hitLow = A.move?.comboStep ? false : h.l === 'l' || h.l === 'm' && Math.random() < 0.4; B.rot = 0;
+      B.state = 'hit'; B.st = 0; B.hitstun = h.st || 16; B.vx = A.facing * h.kb; B.rot = 0;
       if (B.x <= LEFT + 2 || B.x >= RIGHT - 2) A.vx = -A.facing * h.kb * 0.8;
     }
   }
@@ -866,12 +917,18 @@ class Match {
       outlineText(ctx,String(d.damage)+' '+localize('DAMAGE'),x,222,13,'#c0e9e4','center',2);ctx.restore();
     }
     if(this.mode==='training'&&this.phase==='play'){
-      const route=a.comboRoute||a.c.combos[0],step=a.comboRoute?a.comboStep+1:a.stringKeys.length;
+      const routes = fighterStrings(a);
+      const active = a.comboRoute || (a.stringKeys.length && routes.find(r => a.stringKeys.every((key, i) => key === r.buttons[i])));
+      const shown = active ? [active] : routes;
+      const step = active && a.connected ? a.stringKeys.length : Math.max(0, a.stringKeys.length - 1);
       const labels={lp:'P',hp:'HP',lk:'K',hk:'HK'};
       if(typeof Touch!=='undefined'&&!Touch.active)for(const key of Object.keys(labels))labels[key]=(MAPS[a.ctrl.map||'solo']?.[key]?.[0]||labels[key]).replace('Key','').replace('Comma',',').replace('Period','.');
-      outlineText(ctx,route.name,W/2,130,13,'#a9d9d5','center',2,400);
-      outlineText(ctx,route.buttons.map((key,i)=>(i<step?'● ':'')+labels[key]).join('  ›  '),W/2,150,16,'#fff1ba','center',3,400);
-      outlineText(ctx,localize('Tap the next attack on hit. Double-tap a direction to dash.'),W/2,H-17,12,'#c1cbd5','center',2,700);
+      shown.forEach((route, row) => {
+        const keys = route.buttons.map((key, i) => (i < step ? '✓ ' : active && i === step ? '▸ ' : '') + labels[key]).join('  ›  ');
+        outlineText(ctx, route.name + '   ' + keys, W/2, 131 + row * 17, 13, '#fff1ba', 'center', 3, 520);
+      });
+      const feedback = this.comboFeedback?.life > 0 ? this.comboFeedback.text : 'Tap the next attack on hit. Double-tap a direction to dash.';
+      outlineText(ctx, localize(feedback), W/2, H-17, 12, '#c1cbd5', 'center', 2, 700);
     }
     // банер
     if (this.banner) {
