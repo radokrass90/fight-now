@@ -149,7 +149,11 @@ const MobileUI = (()=>{
     const jump = el('div',null,'combo-jump');
     for (const heading of [fightersHeading,weaponsHeading]) {
       const link = el('button',heading.textContent,'quiet-action');link.type='button';
-      link.onclick=()=>{heading.focus({preventScroll:true});heading.scrollIntoView({block:'start'});};
+      link.onclick=()=>{
+        heading.style.scrollMarginTop = (tools.getBoundingClientRect().bottom + 12) + 'px';
+        heading.focus({preventScroll:true});
+        heading.scrollIntoView({block:'start'});
+      };
       jump.append(link);
     }
     panel.append(jump,fighters,weapons);
