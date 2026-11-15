@@ -8,6 +8,8 @@ const I18N_DE = {
   "ENABLE ONLINE PROGRESS":"ONLINE-FORTSCHRITT AKTIVIEREN",
 
   "The playfield stopped drawing. Try resuming or restart the match.": "Das Spielfeld konnte nicht weiter angezeigt werden. Setze den Kampf fort oder starte ihn neu.",
+  "Fight status": "Kampfstatus",
+  "Health": "Gesundheit",
   "STORY MODE": "GESCHICHTSMODUS",
   "Three chapters. Seven rivals. Continue where you left off.": "Drei Kapitel. Sieben Rivalen. Setze deinen Weg fort.",
   "START STORY": "GESCHICHTE STARTEN",

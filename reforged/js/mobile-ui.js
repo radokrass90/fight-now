@@ -297,6 +297,73 @@ const MobileUI = (()=>{
     }else primary(a,localize('REMATCH'),()=>{startFight(G.matchOpts.arena,G.matchOpts.ctrl2.level);});
     a.append(button(localize('Change fighter'),()=>startSelect(),'','change'),button(localize('Main menu'),()=>go('title'),'quiet-action','home'));
   }
+  let portraitHUD = null, portraitStatus = null, portraitKey = '', portraitStamp = '';
+  let portraitSides = [], portraitClock = null;
+  function syncPortraitHUD() {
+    const m = G.match;
+    const show = Touch.active && document.body.classList.contains('portrait') &&
+      G.screen === 'fight' && m?.p?.length === 2 && !m.paused;
+    if (!show) {
+      if (portraitHUD) portraitHUD.hidden = true;
+      if (portraitStatus) portraitStatus.hidden = true;
+      return;
+    }
+    if (!portraitHUD) {
+      portraitHUD = el('section',null,'portrait-hud');
+      portraitHUD.id = 'portrait-hud';
+      portraitHUD.setAttribute('aria-label',localize('Fight status'));
+      portraitStatus = el('aside',null,'portrait-status');
+      portraitStatus.id = 'portrait-status';
+      gameView.append(portraitHUD,portraitStatus);
+    }
+    portraitHUD.hidden = false;
+    portraitStatus.hidden = m.mode === 'training';
+    const [a,b] = m.p, key = a.c.id + '/' + b.c.id;
+    if (portraitKey !== key) {
+      portraitKey = key;portraitStamp = '';portraitHUD.replaceChildren();portraitSides = [];
+      for (const f of [a,b]) {
+        const side = el('div',null,'portrait-hud-side side-'+f.side);
+        const health = el('div',null,'portrait-health'), fill = el('span');
+        health.setAttribute('role','meter');
+        health.setAttribute('aria-label',f.c.name+' · '+localize('Health'));
+        health.setAttribute('aria-valuemin','0');health.setAttribute('aria-valuemax','1000');
+        health.append(fill);
+        const energy = el('div',null,'portrait-energy'), charge = el('span');
+        energy.setAttribute('role','meter');
+        energy.setAttribute('aria-label',f.c.name+' · '+localize('ENERGY'));
+        energy.setAttribute('aria-valuemin','0');energy.setAttribute('aria-valuemax','1000');
+        energy.append(charge);
+        const rounds = el('small',null,'portrait-rounds');
+        side.append(el('strong',f.c.name),health,energy,rounds);
+        portraitSides.push({health,fill,energy,charge,rounds,side});
+        if (!f.side) {
+          portraitClock = el('div',null,'portrait-clock');
+          portraitHUD.append(side,portraitClock);
+        } else portraitHUD.append(side);
+      }
+    }
+    const feedback = m.comboDisplay?.life > 0 ? m.comboDisplay : null;
+    const stamp = [m.mode,m.arena,a.hp,b.hp,Math.floor(a.meter),Math.floor(b.meter),a.wins,b.wins,m.timer,m.round,m.phase,feedback?.hits,feedback?.damage].join('/');
+    if (stamp === portraitStamp) return;
+    portraitStamp = stamp;
+    [a,b].forEach((f,i)=>{
+      const nodes=portraitSides[i],hp=Math.max(0,Math.min(1000,f.hp)),meter=Math.max(0,Math.min(1000,f.meter));
+      nodes.health.setAttribute('aria-valuenow',String(hp));nodes.energy.setAttribute('aria-valuenow',String(Math.floor(meter)));
+      nodes.fill.style.transform='scaleX('+hp/1000+')';nodes.charge.style.transform='scaleX('+meter/1000+')';
+      nodes.side.dataset.ready=String(meter>=1000);
+      nodes.side.dataset.low=String(hp<250);
+      nodes.rounds.textContent=(f.wins?'●':'○')+' '+(f.wins>=2?'●':'○');
+    });
+    portraitClock.replaceChildren(el('strong',m.mode==='training'?'∞':String(m.timer)),
+      el('small',localize('ROUND ')+m.round));
+    if (feedback) {
+      portraitStatus.replaceChildren(el('strong',feedback.hits+' '+localize('HIT COMBO')),
+        el('small',feedback.damage+' '+localize('DAMAGE')));
+    } else {
+      portraitStatus.replaceChildren(el('strong',ARENAS[m.arena].name),
+        el('small',localize('Move and attack together')));
+    }
+  }
   function syncCoach(){
     let node=document.getElementById('training-coach');
     const match=G.match,show=Touch.active&&document.body.classList.contains('portrait')&&G.screen==='fight'&&match?.mode==='training'&&match.phase==='play'&&!match.paused;
@@ -316,11 +383,12 @@ const MobileUI = (()=>{
       el('small',feedback?localize(feedback):hits+localize(' HITS')));
   }
   function sync(){
+    syncPortraitHUD();
     syncCoach();
     const menu=ownsMenu();document.body.classList.toggle('mobile-menu-open',menu);document.body.classList.toggle('native-menu-open',menu);
     panel.hidden=!menu;document.getElementById('c').setAttribute('aria-hidden',String(menu));toolbar.hidden=!(['fight','vs'].includes(G.screen)&&!menu);
     document.getElementById('mobilePause').hidden=G.screen!=='fight';document.getElementById('fullscreen').hidden=!document.documentElement.requestFullscreen;
-    document.getElementById('mobile-hint').textContent=Touch.active?(document.body.classList.contains('portrait')?localize('Rotate for a larger arena'):localize('Move and attack together')):localize('Esc / P to pause');
+    document.getElementById('mobile-hint').textContent=Touch.active?(document.body.classList.contains('portrait')?localize('Move and attack together'):localize('Move and attack together')):localize('Esc / P to pause');
     if(typeof Economy!=='undefined'){let coins=document.getElementById('coin-hud');if(!coins){coins=el('span',null,'coin-hud');coins.id='coin-hud';toolbar.append(coins);}coins.textContent='◈ '+(Economy.profile?.coins??'—');coins.dataset.weapon=G.match?.p?.[0]?.equipment?.weapon?.id||'';coins.title=G.match?.p?.[0]?.equipment?.weapon?.name?.[I18N.language]||'';}
     const nextStamp=[menu,G.screen,G.mode,G.selStep,G.pick.join(','),G.stageCur,G.diff,Snd.on,Snd.musicOn,CombatFX.full,G.match?.paused,G.displayIssue,G.match?.result?.winner?.c.id,G.moveFor?.id,G.moveBack,G.arcade?.i,G.arcade?.cont,Campaign.progress?.run,Campaign.progress?.stage,Campaign.saved,!['combos','story'].includes(G.screen)&&typeof Economy!=='undefined'?Economy.version:0,G.screen==='shop'&&typeof ShopUI!=='undefined'?ShopUI.version:0].join('/');
     if(!menu||nextStamp===stamp)return;

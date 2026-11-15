@@ -2,7 +2,7 @@ const fs=require('node:fs'),vm=require('node:vm'),path=require('node:path'),asse
 const root=path.resolve(__dirname,'../game');
 // A minimal DOM checks actual menu callbacks and main.js routing without a browser dependency.
 class Node {
- constructor(tag='div'){this.tagName=tag.toUpperCase();this.children=[];this.dataset={};this.attributes={};this.className='';this.style={setProperty(){}};this.textContent='';this.hidden=false;this.scrollTop=0;this.listeners={};}
+ constructor(tag='div'){this.tagName=tag.toUpperCase();this.children=[];this.dataset={};this.attributes={};this.className='';this.style={setProperty(key,value){this[key]=value;}};this.textContent='';this.hidden=false;this.scrollTop=0;this.listeners={};}
  append(...nodes){this.children.push(...nodes);for(const n of nodes)n.parent=this;}
  replaceChildren(...nodes){this.children=[];this.append(...nodes);}
  setAttribute(k,v){this.attributes[k]=String(v);}
@@ -20,7 +20,7 @@ const ids=new Map(['game-view','mobile-menu','mobile-toolbar','mobilePause','ful
 const document={body:new Node('body'),documentElement:new Node('html'),activeElement:null,getElementById:id=>ids.get(id),createElement:tag=>new Node(tag),querySelectorAll:()=>[],addEventListener(){},hidden:false};
 ids.get('c').getContext=()=>({});
 const prepared=[],savedData=new Map();
-const sb={console,document,Image:class extends Node{constructor(){super('img');}},URL,URLSearchParams,location:{search:'?lang=en'},localStorage:{getItem(key){return savedData.get(key)??null;},setItem(key,value){savedData.set(key,value);}},window:{},innerWidth:1200,innerHeight:800,getComputedStyle:()=>({paddingLeft:'0',paddingRight:'0',paddingTop:'0',paddingBottom:'0',gridTemplateColumns:'1fr 1fr 1fr 1fr 1fr'}),addEventListener(){},performance:{now:()=>0},requestAnimationFrame(){},setTimeout,clearTimeout,
+const sb={console,document,Image:class extends Node{constructor(){super('img');}},URL,URLSearchParams,location:{search:'?lang=en'},localStorage:{getItem(key){return savedData.get(key)??null;},setItem(key,value){savedData.set(key,value);}},window:{},innerWidth:1200,innerHeight:800,getComputedStyle:()=>({paddingLeft:String(sb.safe?.left||0),paddingRight:String(sb.safe?.right||0),paddingTop:String(sb.safe?.top||0),paddingBottom:String(sb.safe?.bottom||0),gridTemplateColumns:'1fr 1fr 1fr 1fr 1fr'}),addEventListener(){},performance:{now:()=>0},requestAnimationFrame(){},setTimeout,clearTimeout,
  Snd:{on:true,musicOn:true,init(){},ok(){},ui(){},say(){},stopMusic(){},startMusic(){},toggle(){this.on=!this.on;},toggleMusic(){this.musicOn=!this.musicOn;}},BattleMusic:{title:'Test Track',apply(){}},CombatFX:{full:true,toggle(){this.full=!this.full;}},CharacterArt:{ready:Promise.resolve(),prepare(ids){prepared.push(ids);return Promise.resolve();}},ArenaArt:{ready:Promise.resolve(),prepare(){return Promise.resolve();}},bindTouchControls:()=>({reset(){}}),Touch:{active:false,pressed:new Set()},Keys:{down:new Set(),pressed:new Set()},MenuIn:{clicks:[]},Match:class{constructor(opts){this.opts=opts;this.paused=false;}},invalidateArenas(){}};
 vm.createContext(sb);
 const core=fs.readFileSync(root+'/js/core.js','utf8');
@@ -93,6 +93,37 @@ run('G.match.paused=true;MobileUI.sync()');click('Restart');assert.equal(run('G.
 run("go('title');MobileUI.sync()");panel.querySelectorAll('.mode-action').find(b=>b.dataset.focusKey==='mode-pvp').click();assert.equal(run('G.mode'),'pvp');click('CONFIRM FIGHTER');click('CHOOSE ARENA');click('FIGHT!');assert.equal(run('G.matchOpts.ctrl1.map'),'p1');assert.equal(run('G.matchOpts.ctrl2.map'),'p2');
 run("go('title');MobileUI.sync()");panel.querySelectorAll('.mode-action').find(b=>b.dataset.focusKey==='mode-versus').click();assert.equal(run('G.mode'),'versus');click('CONFIRM FIGHTER');click('CHOOSE ARENA');click('FIGHT!');assert.equal(run('G.matchOpts.ctrl1.type'),'human');assert.equal(run('G.matchOpts.ctrl2.type'),'cpu');assert.equal(run('G.matchOpts.ctrl2.level'),run('G.diff'));
 run("go('title');MobileUI.sync()");panel.querySelectorAll('.mode-action').find(b=>b.dataset.focusKey==='mode-arcade').click();click('START ARCADE');assert.equal(run('G.arcade.list.length'),7);assert.equal(run('new Set(G.arcade.list).size'),7);assert.equal(run('G.mode'),'arcade');assert.equal(run('G.screen'),'vs');
+
+// The actual fit() entry point must reserve HUD and controls on short phones.
+for (const [width,height] of [[320,568],[360,640],[393,760],[430,932]]) {
+ for (const training of [false,true]) {
+  sb.innerWidth=width;sb.innerHeight=height;sb.safe={top:20,bottom:34,left:0,right:0};
+  run("Touch.active=true;G.screen='fight';G.match={mode:'"+(training?'training':'arcade')+"'};fit()");
+  const canvas=ids.get('c').style,view=ids.get('game-view').style;
+  const left=parseFloat(canvas.left),top=parseFloat(canvas.top),w=parseFloat(canvas.width),h=parseFloat(canvas.height);
+  const dockTop=height-34-parseFloat(view['--dock-height']);
+  assert(left>=0&&left+w<=width,'Arena overflows a phone horizontally');
+  assert(top>=20+48+parseFloat(view['--portrait-hud-height']),'Arena overlaps the portrait HUD');
+  assert(top+h<dockTop,'Arena overlaps the touch dock');
+  const coachTop=parseFloat(view['--arena-bottom']);
+  assert(coachTop>top+h&&coachTop+(training?76:40)<=dockTop,'Coach cannot fit above controls');
+ }
+}
+sb.innerWidth=393;sb.innerHeight=760;sb.safe=null;
+run("Touch.active=true;G.screen='fight';G.match=new Match({mode:'training',arena:0,c1:CHARS[0],c2:CHARS[1],ctrl1:{type:'human',map:'solo'},ctrl2:{type:'dummy'}});G.match.phase='play';fit();MobileUI.sync()");
+const portraitHUD=ids.get('game-view').querySelector('.portrait-hud');
+assert(portraitHUD&&!portraitHUD.hidden,'Portrait HUD must be visible during a fight');
+assert(portraitHUD.fullText.includes('Murat')&&portraitHUD.fullText.includes('Yasmin'));
+assert(portraitHUD.fullText.includes('∞'),'Training has no round limit');
+run("G.match.p[0].hp=420;G.match.p[1].meter=1000;MobileUI.sync()");
+assert.equal(portraitHUD.querySelectorAll('.portrait-health')[0].getAttribute('aria-valuenow'),'420');
+assert.equal(portraitHUD.querySelectorAll('.portrait-energy')[1].getAttribute('aria-valuenow'),'1000');
+run("togglePause();MobileUI.sync()");
+assert(portraitHUD.hidden,'The pause menu must hide fight HUD');
+sb.innerWidth=1280;sb.innerHeight=800;sb.safe=null;
+run("Touch.active=false;G.screen='fight';G.match=null;fit()");
+assert(parseFloat(ids.get('c').style.width)>=1200,'Desktop must retain a wide playfield');
+run("go('title');MobileUI.sync()");
 console.log('PASS: native desktop and touch menu contract, 15 fighter/arena grids, keyboard selection, training flow, pause/moves/resume/restart, PvP mappings, versus CPU and 7-fight arcade.');
 
 (async()=>{

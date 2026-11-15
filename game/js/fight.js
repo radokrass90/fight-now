@@ -885,6 +885,9 @@ class Match {
   }
   drawHUD(ctx) {
     const [a, b] = this.p;
+    const portrait = typeof Touch !== 'undefined' && Touch.active &&
+      typeof document !== 'undefined' && document.body?.classList.contains('portrait');
+    if (!portrait) {
     const bar = (f, x, flip) => {
       const w = 380, h = 20, y = 28;
       ctx.fillStyle = 'rgba(8,13,24,.94)'; ctx.fillRect(x - 3, y - 3, w + 6, h + 6);
@@ -936,6 +939,7 @@ class Match {
       });
       const feedback = this.comboFeedback?.life > 0 ? this.comboFeedback.text : 'Tap the next attack on hit. Double-tap a direction to dash.';
       outlineText(ctx, localize(feedback), W/2, H-17, 12, '#c1cbd5', 'center', 2, 700);
+    }
     }
     // банер
     if (this.banner) {
