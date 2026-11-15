@@ -8,6 +8,11 @@ const I18N_DE = {
   "ENABLE ONLINE PROGRESS":"ONLINE-FORTSCHRITT AKTIVIEREN",
 
   "The playfield stopped drawing. Try resuming or restart the match.": "Das Spielfeld konnte nicht weiter angezeigt werden. Setze den Kampf fort oder starte ihn neu.",
+  "The story": "Die Geschichte",
+  "Story draft": "Geschichtsentwurf",
+  "A proposed story for the world and its fighters.": "Ein Vorschlag für die Geschichte der Welt und ihrer Kämpfer.",
+  "What they fight for": "Wofür sie kämpfen",
+  "Read the ending proposal": "Vorgeschlagenes Ende lesen",
   "Combo list": "Komboliste",
   "Show buttons for": "Tasten anzeigen für",
   "Touch controls": "Touch-Steuerung",

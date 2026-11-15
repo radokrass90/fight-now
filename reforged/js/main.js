@@ -105,7 +105,7 @@ function menuList(items, x, y, gap, inp, size = 28) {
   });
   if (inp.ok) { Snd.ok(); items[G.sel].fn(); }
 }
-function go(screen) { if (screen === 'vs') G.displayIssue = false; touchControls.reset(); MenuIn.clicks.length=0; G.screen = screen; G.sel = 0; G.T0 = G.T; if (!['fight', 'result'].includes(screen)&&!(screen==='moves'&&G.moveBack==='fight')&&!(screen==='combos'&&G.comboBack==='fight')) Snd.stopMusic(); fit(); }
+function go(screen) { if (screen === 'vs') G.displayIssue = false; touchControls.reset(); MenuIn.clicks.length=0; G.screen = screen; G.sel = 0; G.T0 = G.T; if (!['fight', 'result'].includes(screen)&&!(screen==='moves'&&G.moveBack==='fight')&&!(screen==='combos'&&G.comboBack==='fight')&&!(screen==='story'&&G.storyBack==='fight')) Snd.stopMusic(); fit(); }
 const DIFF_NAMES = { easy: localize("EASY"), normal: localize("NORMAL"), hard: localize("HARD") };
 
 // ---------- екрани ----------

@@ -185,3 +185,22 @@ body.mobile.portrait.playing #touch{background:linear-gradient(transparent calc(
   #mobile-menu .combo-tools select{flex:1 1 100%}
 }
 body.mobile #mobile-toolbar #mobilePause{min-height:44px}
+
+
+.title-guides{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px;position:relative;z-index:2}
+#mobile-menu .title-guides button{margin:0;flex:0 1 auto}
+#mobile-menu.story-menu{padding-inline:max(18px,calc((100vw - 850px)/2))}
+.story-nav{position:sticky;top:0;z-index:5;padding:6px 0 12px;background:var(--ink)}
+#mobile-menu .story-nav .mobile-back{margin:0}
+.story-banner{display:block;width:100%;height:auto;aspect-ratio:2/1;object-fit:cover;border:1px solid #3b5360;margin:14px 0 22px}
+.story-intro{font:clamp(16px,2vw,20px)/1.65 var(--font-b);color:var(--paper);max-width:64ch}
+.story-chapter{border-left:2px solid var(--amber);padding:8px 0 8px 20px;margin:28px 0}
+#mobile-menu .story-chapter h2{color:var(--amber);margin-bottom:10px}
+.story-chapter p,.story-fighter p,.story-ending p{font:16px/1.7 var(--font-b);color:#c9d6df;max-width:68ch;margin:0}
+.story-cast{margin-top:34px}
+.story-fighter,.story-ending{border-top:1px solid #3d5260;padding:4px 0}
+.story-fighter summary,.story-ending summary{cursor:pointer;padding:15px 6px;min-height:48px;box-sizing:border-box;font:16px/1.35 var(--font-b);color:var(--paper);touch-action:manipulation}
+.story-fighter summary:focus-visible,.story-ending summary:focus-visible{outline:2px solid var(--cyan);outline-offset:2px}
+.story-fighter p,.story-ending p{padding:2px 8px 20px}
+.story-ending{margin:25px 0}
+@media(max-width:700px){#mobile-menu .title-guides{display:grid;grid-template-columns:1fr 1fr}#mobile-menu .title-guides button{width:100%;padding-inline:10px}.story-chapter{padding-left:14px}}

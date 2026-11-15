@@ -26,9 +26,15 @@ vm.createContext(sb);
 const core=fs.readFileSync(root+'/js/core.js','utf8');
 vm.runInContext(core.split('// ---------- синтезирани')[0],sb);
 vm.runInContext(core.slice(core.indexOf('const MAPS ='),core.indexOf('const BTN =')),sb);
-for(const file of ['i18n','language','data','weapon-data','fight','arena-art-data','arenas','touch-controls','main','mobile-ui'])vm.runInContext(fs.readFileSync(root+'/js/'+file+'.js','utf8'),sb,{filename:file+'.js'});
+for(const file of ['i18n','language','data','story-data','weapon-data','fight','arena-art-data','arenas','touch-controls','main','mobile-ui'])vm.runInContext(fs.readFileSync(root+'/js/'+file+'.js','utf8'),sb,{filename:file+'.js'});
 const run=code=>vm.runInContext(code,sb),panel=ids.get('mobile-menu');
 const catalog=run('I18N_DE');
+assert.deepEqual(Array.from(run('Object.keys(STORY_DATA.fighters).sort()')),Array.from(run('CHARS.map(c=>c.id).sort()')));
+for(const lang of ['en','de']){
+ assert(run('STORY_DATA.title.'+lang).length>0);
+ assert(run('STORY_DATA.chapters.every(c=>c.title.'+lang+'&&c.text.'+lang+')'));
+ assert(run('Object.values(STORY_DATA.fighters).every(c=>c.'+lang+')'));
+}
 for(const file of ['main','mobile-ui'])for(const match of fs.readFileSync(root+'/js/'+file+'.js','utf8').matchAll(/localize\(((?:"(?:\\.|[^"\\])*")|(?:'(?:\\.|[^'\\])*'))\)/g)){const key=vm.runInNewContext(match[1]);assert(Object.hasOwn(catalog,key),'Missing UI German: '+key);}
 function click(text){const target=panel.querySelectorAll('button').find(b=>b.fullText.trim()===text||b.textContent===text);assert(target,'Missing button: '+text);target.click();}
 run('MobileUI.sync()');assert.equal(panel.querySelectorAll('.mode-action').length,4);assert(!panel.hidden,'Desktop menus must use native DOM');
@@ -44,6 +50,13 @@ assert.equal(panel.querySelector('kbd').textContent,'PUNCH');
 inputs.value='p2';inputs.onchange();
 assert.equal(panel.querySelector('kbd').textContent,'K');
 click('← Back');assert.equal(run('G.screen'),'title');
+click('The story');
+assert.equal(run('G.screen'),'story');
+assert.equal(panel.querySelectorAll('.story-fighter').length,15);
+assert.equal(panel.querySelectorAll('.story-chapter').length,3);
+assert(panel.fullText.includes('Story draft'));
+assert(panel.fullText.includes('The Last Shift'));
+click('← Back');assert.equal(run('G.screen'),'title');
 const training=panel.querySelectorAll('.mode-action')[2];training.click();
 assert.equal(run('G.mode'),'training');assert.equal(run('G.screen'),'select');assert.equal(panel.querySelectorAll('.fighter-card').length,15);
 run('MobileUI.handleInput({right:true})');assert.equal(run('G.pick[0]'),1,'Arrow navigation selects next fighter');
@@ -51,6 +64,8 @@ click('CONFIRM FIGHTER');assert.equal(run('G.selStep'),1);click('CHOOSE ARENA');
 click('FIGHT!');assert.equal(run('G.screen'),'vs');assert.equal(run('G.matchOpts.ctrl2.type'),'dummy');assert.equal(prepared[0].length,2);
 run("G.screen='fight';G.match={paused:true,p:[{c:CHARS[1]}]};MobileUI.sync()");
 click('Combo list');assert.equal(run('G.screen'),'combos');
+click('← Back');assert.equal(run('G.screen'),'fight');assert(run('G.match.paused'));
+click('The story');assert.equal(run('G.screen'),'story');
 click('← Back');assert.equal(run('G.screen'),'fight');assert(run('G.match.paused'));
 click('Move list');assert.equal(run('G.screen'),'moves');assert(panel.fullText.includes('Chainsaw'));
 click('← Back');assert.equal(run('G.screen'),'fight');assert(run('G.match.paused'));click('RESUME');assert.equal(run('G.match.paused'),false);
