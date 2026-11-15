@@ -1,5 +1,6 @@
 'use strict';
 const GRAV = 0.75;
+const ROUND_SECONDS = 60;
 const FREE = new Set(['idle', 'walk', 'crouch', 'block', 'cblock', 'land']);
 const POSE_LIMB = { jab: 'fh', cross: 'bh', hook: 'fh', hay: 'bh', palm: 'fh', lowkick: 'bf', knee: 'fk', shoulder: 'fsh', hb: 'head', swing: 'prop', superman: 'bh', ovh: 'bh', elbow: 'fe', teep: 'ff', rh: 'bf', hk: 'bf', sweep: 'ff', stomp: 'ff', upper: 'bh', lariat: 'fe' };
 
@@ -159,7 +160,7 @@ class Match {
     this.impactFocus=null; this.cameraZoom=1.08; this.shake=0;
     if (this.round === 1) { a.meter = 0; b.meter = 0; }
     a.x = 180; b.x = 780; a.state = b.state = 'intro';
-    this.timer = 99; this.tick = 0; this.phase = 'intro'; this.pt = 0; this.proj = []; this.fx = []; this.finisher = null; this.winner = null; this.loser = null; this.dim = 0;
+    this.timer = ROUND_SECONDS; this.tick = 0; this.phase = 'intro'; this.pt = 0; this.proj = []; this.fx = []; this.finisher = null; this.winner = null; this.loser = null; this.dim = 0;
     this.announce(localize("ROUND ") + this.round, 70, '#fff', 64); Snd.say(localize("Round ") + [localize("one"), localize("two"), localize("three"), localize("four"), localize("five")][Math.min(this.round - 1, 4)]);
   }
   announce(t, life = 60, col = '#fff', size = 60, sub) { this.banner = { t, life, max: life, col, size, sub }; }

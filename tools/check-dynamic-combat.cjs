@@ -54,4 +54,13 @@ run(`{
  for(let t=0;t<180;t++){m.inputs[0]={P:keys[t]?{[keys[t]]:true}:{}};m.update();}
  if(m.trainingStats.bestCombo.hits!==4)throw Error('Rapid four-button input was overwritten: '+JSON.stringify(m.trainingStats));
 }`);
+run(`{
+ const match=scenario(0);
+ if(match.timer!==60)throw Error('Matches must start with a 60-second round');
+ match.mode='versus';
+ for(let t=0;t<60;t++)match.update();
+ if(match.timer!==59)throw Error('Round clock must count simulation seconds');
+ const training=scenario(0);for(let t=0;t<120;t++)training.update();
+ if(training.timer!==60)throw Error('Training timer must remain unlimited');
+}`);
 fs.mkdirSync(path.resolve(root,'../review/dynamic-combat'),{recursive:true});fs.writeFileSync(path.resolve(root,'../review/dynamic-combat/logic.json'),JSON.stringify({routes:report,weapons},null,2));console.log('PASS: 60 character strings + 3,000 weapon strings using the painted weapon path, both directions, guard, dash and frozen presentation.');

@@ -3,7 +3,7 @@
 const MobileUI = (()=>{
   const panel=document.getElementById('mobile-menu'),toolbar=document.getElementById('mobile-toolbar');
   let stamp='',focusAfter=null;
-  const screens=['title','select','stage','controls','moves','result','shop','combos','story'];
+  const screens=['title','select','stage','controls','moves','result','shop','combos','story','campaign'];
   const comboLabels = {lp:'PUNCH',hp:'HEAVY PUNCH',lk:'KICK',hk:'HEAVY KICK'};
   let comboInput;
   function openCombos() {
@@ -89,11 +89,62 @@ const MobileUI = (()=>{
     const hero=el('div',null,'title-hero');hero.append(image(CharacterArt.heroURL?.(CHARS[0].id)||portrait(CHARS[0].id),'hero-fighter hero-left'),image(CharacterArt.heroURL?.(CHARS[7].id)||portrait(CHARS[7].id),'hero-fighter hero-right'));
     const copy=el('div',null,'title-copy');copy.append(el('p',localize('STREETS OF GERMANY'),'title-kicker'),el('h1','FIGHT\nNOW','fight-logo'),el('p',localize('Own the night. Rule the streets.'),'title-tagline'));hero.append(copy);panel.append(hero);
     const modes=el('div',null,'mode-grid');
-    const rows=[['arcade',localize('ARCADE'),localize("7 fights through Germany's neighborhoods"),'01'],['versus',localize('VS COMPUTER'),localize('Pick your fighter, opponent and neighborhood'),'02'],['training',localize('TRAINING'),localize('Unlimited health — try every move'),'03'],['pvp',localize('2 PLAYERS'),localize('Two players, one keyboard (or gamepads)'),'04']];
-    for(const [mode,label,description,num]of rows){const b=button('',()=>openMode(mode),'mode-action '+(mode==='arcade'?'mode-featured':''),'mode-'+mode);b.append(el('span',num,'mode-number'),el('strong',label),el('small',description),el('span','↗','mode-arrow'));modes.append(b);}
+    const rows=[
+      ['story',localize('STORY MODE'),localize('Three chapters. Seven rivals. Continue where you left off.'),'01'],
+      ['arcade',localize('ARCADE'),localize("7 fights through Germany's neighborhoods"),'02'],
+      ['versus',localize('VS COMPUTER'),localize('Pick your fighter, opponent and neighborhood'),'03'],
+      ['training',localize('TRAINING'),localize('Unlimited health — try every move'),'04'],
+      ['pvp',localize('2 PLAYERS'),localize('Two players, one keyboard (or gamepads)'),'05']
+    ];
+    for(const [mode,label,description,num]of rows){
+      const b=button('',()=>mode==='story'?openCampaign():openMode(mode),'mode-action '+(mode==='story'?'mode-featured':''),'mode-'+mode);
+      b.append(el('span',num,'mode-number'),el('strong',label),el('small',description),el('span','↗','mode-arrow'));modes.append(b);
+    }
     panel.append(modes);
     const foot=el('footer',null,'title-footer');if(typeof Economy!=='undefined')foot.append(button(localize('ARMORY')+' · ◈ '+(Economy.profile?.coins??'—'),()=>ShopUI.open(),'quiet-action armory-entry','armory'));foot.append(button(localize('How to play'),()=>go('controls'),'quiet-action','controls'));settings(foot);panel.append(foot);
     panel.append(el('p',localize('15 fighters · 15 arenas · multi-touch controls'),'title-meta'));
+  }
+  function renderCampaign() {
+    const progress = Campaign.progress;
+    const index = progress?.stage || 0;
+    const done = index >= Campaign.stages.length;
+    const stage = Campaign.stages[index];
+    const chapter = stage ? STORY_DATA.chapters[stage.chapter] : null;
+    const copy = value=>value[I18N.language];
+    title(localize('STORY MODE'),copy(STORY_DATA.title));
+    panel.append(el('p',localize('Story draft'),'menu-footnote'));
+    const rail = el('ol',null,'campaign-progress');
+    for(const [i,item] of STORY_DATA.chapters.entries()){
+      const complete = done || stage.chapter > i;
+      const current = stage?.chapter === i;
+      const step = el('li',copy(item.title),complete?'complete':current?'current':'');
+      if (current) step.setAttribute('aria-current','step');
+      rail.append(step);
+    }
+    panel.append(rail);
+    if (done) {
+      panel.append(el('h2',localize('Story complete')),el('p',copy(STORY_DATA.closing),'story-intro'));
+    } else {
+      const opponent = CHARS.find(c=>c.id===stage.opponent);
+      panel.append(el('h2',copy(chapter.title)));
+      // The chapter preview stays short. Full prose is available in The story.
+      const briefing = [
+        localize("Murat enters the night circuit to recover his crew's unpaid wages."),
+        localize('Follow the invitations through the districts. Learn who is financing the fights.'),
+        localize("Win your way to Dragan and refuse his terms.")
+      ];
+      panel.append(el('p',briefing[stage.chapter],'story-intro'));
+      const rival = el('div',null,'campaign-rival');
+      rival.append(image(portrait(opponent.id)),el('strong',opponent.full),el('span',ARENAS[opponent.home].city));
+      panel.append(rival,el('p',localize('Fight')+' '+(index+1)+' / '+Campaign.stages.length+' · '+localize('First to two round wins. 60 seconds per round.'),'mobile-copy'));
+      if (progress && Campaign.saved) panel.append(el('p',localize('Progress is saved on this device after every victory.'),'menu-footnote'));
+    }
+    if (!Campaign.saved) panel.append(el('p',localize('Saving is unavailable in this browser. Keep this tab open to continue your story.'),'asset-error'));
+    if (G.artError) {const error=el('p',G.artError,'asset-error');error.setAttribute('role','alert');panel.append(error);}
+    const a = actions();
+    back(a);
+    if (done) primary(a,localize('NEW STORY'),()=>{Campaign.restart();G.artError=null;});
+    else primary(a,localize(progress?'CONTINUE STORY':'START STORY'),()=>startCampaignFight());
   }
   function renderSelect(){
     const active=G.selStep===1&&G.mode!=='arcade'?1:0,pvp=G.mode==='pvp';
@@ -116,7 +167,7 @@ const MobileUI = (()=>{
     title(localize('Pause'),BattleMusic.title);
     if (G.displayIssue) panel.append(el('p',localize('The playfield stopped drawing. Try resuming or restart the match.'),'asset-error'));
     const a=actions();primary(a,localize('RESUME'),()=>togglePause());
-    a.append(button(localize('Move list'),()=>{G.moveFor=G.match.p[0].c;G.moveBack='fight';go('moves');},'','moves'),button(localize('Combo list'),openCombos,'','combos'),button(localize('The story'),openStory,'','story'),button(localize('Restart'),()=>{touchControls.reset();startFight(G.matchOpts.arena,G.matchOpts.ctrl2.level);fit();},'','restart'));
+    a.append(button(localize('Move list'),()=>{G.moveFor=G.match.p[0].c;G.moveBack='fight';go('moves');},'','moves'),button(localize('Combo list'),openCombos,'','combos'),button(localize('The story'),openStory,'','story'),button(localize('Restart'),()=>{touchControls.reset();if(G.mode==='story')startCampaignFight();else startFight(G.matchOpts.arena,G.matchOpts.ctrl2.level);fit();},'','restart'));
     const settings=el('div',null,'menu-settings');settings.append(button(localize('Music: ')+(Snd.musicOn?localize('ON'):localize('OFF')),()=>Snd.toggleMusic(),'','music'),button(localize('Effects: ')+(CombatFX.full?localize('STRONG'):localize('LIGHT')),()=>CombatFX.toggle(),'','effects'));panel.append(settings);
     const links=actions();links.append(button(localize('Change fighter'),()=>startSelect(),'quiet-action','change'),button(localize('Main menu'),()=>go('title'),'quiet-action','home'));
     panel.append(el('p',localize('Pause any time. Your fight waits for you.'),'menu-footnote'));
@@ -235,7 +286,11 @@ const MobileUI = (()=>{
     const winner=el('div',null,'result-hero');winner.append(image(portrait(r.winner.c.id)),el('strong',r.winner.c.full));panel.append(winner);
     if(m.reward){const labels={paid:'Coins earned',pending:'Reward syncing…',practice:'Practice match — no coin reward',offline:'Offline match — no coin reward',unavailable:'Reward unavailable'};panel.append(el('div',(m.reward.state==='paid'?'◈ +'+m.reward.amount+' · ':'')+localize(labels[m.reward.state]||'Reward syncing…'),'reward-card'));if(m.reward.state==='pending')panel.append(button(localize('RETRY SYNC'),()=>Economy.flush(),'quiet-action','sync'));}
     const a=actions();if(typeof ShopUI!=='undefined')a.append(button(localize('ARMORY'),()=>ShopUI.open(),'quiet-action','armory'));
-    if(G.mode==='arcade'){
+    if (G.mode==='story') {
+      const won = r.winner.side === 0;
+      primary(a,localize(won?'CONTINUE STORY':'RETRY FIGHT'),()=>won?openCampaign():startCampaignFight());
+      a.append(button(localize('Story chapters'),openCampaign,'quiet-action','chapters'));
+    } else if(G.mode==='arcade'){
       if(r.winner.side===0&&G.arcade.i<6)primary(a,localize('NEXT FIGHT'),()=>{G.arcade.i++;nextArcade();});
       else if(r.winner.side!==0&&G.arcade.cont>0)primary(a,localize('CONTINUE (')+G.arcade.cont+')',()=>{G.arcade.cont--;nextArcade();});
       else primary(a,localize('NEW ARCADE'),()=>startSelect());
@@ -267,7 +322,7 @@ const MobileUI = (()=>{
     document.getElementById('mobilePause').hidden=G.screen!=='fight';document.getElementById('fullscreen').hidden=!document.documentElement.requestFullscreen;
     document.getElementById('mobile-hint').textContent=Touch.active?(document.body.classList.contains('portrait')?localize('Rotate for a larger arena'):localize('Move and attack together')):localize('Esc / P to pause');
     if(typeof Economy!=='undefined'){let coins=document.getElementById('coin-hud');if(!coins){coins=el('span',null,'coin-hud');coins.id='coin-hud';toolbar.append(coins);}coins.textContent='◈ '+(Economy.profile?.coins??'—');coins.dataset.weapon=G.match?.p?.[0]?.equipment?.weapon?.id||'';coins.title=G.match?.p?.[0]?.equipment?.weapon?.name?.[I18N.language]||'';}
-    const nextStamp=[menu,G.screen,G.mode,G.selStep,G.pick.join(','),G.stageCur,G.diff,Snd.on,Snd.musicOn,CombatFX.full,G.match?.paused,G.displayIssue,G.match?.result?.winner?.c.id,G.moveFor?.id,G.moveBack,G.arcade?.i,G.arcade?.cont,!['combos','story'].includes(G.screen)&&typeof Economy!=='undefined'?Economy.version:0,G.screen==='shop'&&typeof ShopUI!=='undefined'?ShopUI.version:0].join('/');
+    const nextStamp=[menu,G.screen,G.mode,G.selStep,G.pick.join(','),G.stageCur,G.diff,Snd.on,Snd.musicOn,CombatFX.full,G.match?.paused,G.displayIssue,G.match?.result?.winner?.c.id,G.moveFor?.id,G.moveBack,G.arcade?.i,G.arcade?.cont,Campaign.progress?.run,Campaign.progress?.stage,Campaign.saved,!['combos','story'].includes(G.screen)&&typeof Economy!=='undefined'?Economy.version:0,G.screen==='shop'&&typeof ShopUI!=='undefined'?ShopUI.version:0].join('/');
     if(!menu||nextStamp===stamp)return;
     const oldScreen=panel.dataset.screen,oldStep=panel.dataset.step,focused=document.activeElement?.dataset?.focusKey;
     stamp=nextStamp;panel.replaceChildren();panel.className='game-menu';panel.dataset.screen=G.screen;panel.dataset.step=String(G.selStep);
@@ -284,7 +339,7 @@ const MobileUI = (()=>{
       legal.classList.add('legal-links-start');
       panel.append(legal);
     }
-    ({shop:()=>ShopUI.render({panel,el,button,title,actions,back,image,portrait}),title:renderTitle,select:renderSelect,stage:renderStage,fight:renderPause,controls:renderControls,moves:renderMoves,combos:renderCombos,story:renderStory,result:renderResult}[G.screen]||renderTitle)();
+    ({shop:()=>ShopUI.render({panel,el,button,title,actions,back,image,portrait}),title:renderTitle,select:renderSelect,stage:renderStage,fight:renderPause,controls:renderControls,moves:renderMoves,combos:renderCombos,story:renderStory,campaign:renderCampaign,result:renderResult}[G.screen]||renderTitle)();
     if(G.screen!=='title')panel.append(legal);
     if(oldScreen!==G.screen||(G.screen==='select'&&oldStep!==String(G.selStep)))panel.scrollTop=0;
     const key=focusAfter||focused;focusAfter=null;

@@ -19,14 +19,14 @@ class Node {
 const ids=new Map(['game-view','mobile-menu','mobile-toolbar','mobilePause','fullscreen','mobile-hint','c','wrap','touch','stick','knob','finBtn','pauseBtn','language-picker','loading'].map(id=>[id,new Node(id==='c'?'canvas':'div')]));
 const document={body:new Node('body'),documentElement:new Node('html'),activeElement:null,getElementById:id=>ids.get(id),createElement:tag=>new Node(tag),querySelectorAll:()=>[],addEventListener(){},hidden:false};
 ids.get('c').getContext=()=>({});
-const prepared=[];
-const sb={console,document,Image:class extends Node{constructor(){super('img');}},URL,URLSearchParams,location:{search:'?lang=en'},localStorage:{getItem(){return null;},setItem(){}},window:{},innerWidth:1200,innerHeight:800,getComputedStyle:()=>({paddingLeft:'0',paddingRight:'0',paddingTop:'0',paddingBottom:'0',gridTemplateColumns:'1fr 1fr 1fr 1fr 1fr'}),addEventListener(){},performance:{now:()=>0},requestAnimationFrame(){},setTimeout,clearTimeout,
+const prepared=[],savedData=new Map();
+const sb={console,document,Image:class extends Node{constructor(){super('img');}},URL,URLSearchParams,location:{search:'?lang=en'},localStorage:{getItem(key){return savedData.get(key)??null;},setItem(key,value){savedData.set(key,value);}},window:{},innerWidth:1200,innerHeight:800,getComputedStyle:()=>({paddingLeft:'0',paddingRight:'0',paddingTop:'0',paddingBottom:'0',gridTemplateColumns:'1fr 1fr 1fr 1fr 1fr'}),addEventListener(){},performance:{now:()=>0},requestAnimationFrame(){},setTimeout,clearTimeout,
  Snd:{on:true,musicOn:true,init(){},ok(){},ui(){},say(){},stopMusic(){},startMusic(){},toggle(){this.on=!this.on;},toggleMusic(){this.musicOn=!this.musicOn;}},BattleMusic:{title:'Test Track',apply(){}},CombatFX:{full:true,toggle(){this.full=!this.full;}},CharacterArt:{ready:Promise.resolve(),prepare(ids){prepared.push(ids);return Promise.resolve();}},ArenaArt:{ready:Promise.resolve(),prepare(){return Promise.resolve();}},bindTouchControls:()=>({reset(){}}),Touch:{active:false,pressed:new Set()},Keys:{down:new Set(),pressed:new Set()},MenuIn:{clicks:[]},Match:class{constructor(opts){this.opts=opts;this.paused=false;}},invalidateArenas(){}};
 vm.createContext(sb);
 const core=fs.readFileSync(root+'/js/core.js','utf8');
 vm.runInContext(core.split('// ---------- синтезирани')[0],sb);
 vm.runInContext(core.slice(core.indexOf('const MAPS ='),core.indexOf('const BTN =')),sb);
-for(const file of ['i18n','language','data','story-data','weapon-data','fight','arena-art-data','arenas','touch-controls','main','mobile-ui'])vm.runInContext(fs.readFileSync(root+'/js/'+file+'.js','utf8'),sb,{filename:file+'.js'});
+for(const file of ['i18n','language','data','story-data','campaign','weapon-data','fight','arena-art-data','arenas','touch-controls','main','mobile-ui'])vm.runInContext(fs.readFileSync(root+'/js/'+file+'.js','utf8'),sb,{filename:file+'.js'});
 const run=code=>vm.runInContext(code,sb),panel=ids.get('mobile-menu');
 const catalog=run('I18N_DE');
 assert.deepEqual(Array.from(run('Object.keys(STORY_DATA.fighters).sort()')),Array.from(run('CHARS.map(c=>c.id).sort()')));
@@ -37,7 +37,7 @@ for(const lang of ['en','de']){
 }
 for(const file of ['main','mobile-ui'])for(const match of fs.readFileSync(root+'/js/'+file+'.js','utf8').matchAll(/localize\(((?:"(?:\\.|[^"\\])*")|(?:'(?:\\.|[^'\\])*'))\)/g)){const key=vm.runInNewContext(match[1]);assert(Object.hasOwn(catalog,key),'Missing UI German: '+key);}
 function click(text){const target=panel.querySelectorAll('button').find(b=>b.fullText.trim()===text||b.textContent===text);assert(target,'Missing button: '+text);target.click();}
-run('MobileUI.sync()');assert.equal(panel.querySelectorAll('.mode-action').length,4);assert(!panel.hidden,'Desktop menus must use native DOM');
+run('MobileUI.sync()');assert.equal(panel.querySelectorAll('.mode-action').length,5);assert(!panel.hidden,'Desktop menus must use native DOM');
 click('Combo list');
 assert.equal(run('G.screen'),'combos');
 assert.equal(panel.querySelectorAll('.combo-card').length,25,'15 fighters and ten weapon families');
@@ -57,7 +57,22 @@ assert.equal(panel.querySelectorAll('.story-chapter').length,3);
 assert(panel.fullText.includes('Story draft'));
 assert(panel.fullText.includes('The Last Shift'));
 click('← Back');assert.equal(run('G.screen'),'title');
-const training=panel.querySelectorAll('.mode-action')[2];training.click();
+panel.querySelectorAll('.mode-action').find(b=>b.dataset.focusKey==='mode-story').click();
+assert.equal(run('G.screen'),'campaign');
+assert(panel.fullText.includes('60 seconds per round.'));
+click('START STORY');
+assert.equal(run('G.screen'),'vs');
+assert.equal(run('G.matchOpts.c1.id'),'murat');
+assert.equal(run('G.matchOpts.c2.id'),'yasmin');
+assert.equal(run('G.matchOpts.mode'),'arcade','Story keeps the server-supported arcade reward flow');
+assert.equal(run('G.matchOpts.campaign.stage'),0);
+run("go('title');MobileUI.sync()");
+panel.querySelectorAll('.mode-action').find(b=>b.dataset.focusKey==='mode-story').click();
+click('CONTINUE STORY');assert.equal(run('G.matchOpts.c2.id'),'yasmin');
+run("openCampaign();startSelect()");
+assert.equal(run('G.mode'),'versus','Leaving the campaign for fighter selection enters a normal match');
+run("go('title');MobileUI.sync()");
+const training=panel.querySelectorAll('.mode-action').find(b=>b.dataset.focusKey==='mode-training');training.click();
 assert.equal(run('G.mode'),'training');assert.equal(run('G.screen'),'select');assert.equal(panel.querySelectorAll('.fighter-card').length,15);
 run('MobileUI.handleInput({right:true})');assert.equal(run('G.pick[0]'),1,'Arrow navigation selects next fighter');
 click('CONFIRM FIGHTER');assert.equal(run('G.selStep'),1);click('CHOOSE ARENA');assert.equal(run('G.screen'),'stage');assert.equal(panel.querySelectorAll('.arena-card').length,15);
@@ -75,9 +90,9 @@ assert(run('G.match.paused'),'Canvas loss pauses the match');
 assert(panel.fullText.includes('The playfield stopped drawing.'));
 click('RESUME');assert(!run('G.match.paused'));assert(!run('G.displayIssue'));
 run('G.match.paused=true;MobileUI.sync()');click('Restart');assert.equal(run('G.screen'),'vs','Restart must prepare a fresh match and reward ticket');assert.equal(run('BattleMusic.paused'),false);
-run("go('title');MobileUI.sync()");panel.querySelectorAll('.mode-action')[3].click();assert.equal(run('G.mode'),'pvp');click('CONFIRM FIGHTER');click('CHOOSE ARENA');click('FIGHT!');assert.equal(run('G.matchOpts.ctrl1.map'),'p1');assert.equal(run('G.matchOpts.ctrl2.map'),'p2');
-run("go('title');MobileUI.sync()");panel.querySelectorAll('.mode-action')[1].click();assert.equal(run('G.mode'),'versus');click('CONFIRM FIGHTER');click('CHOOSE ARENA');click('FIGHT!');assert.equal(run('G.matchOpts.ctrl1.type'),'human');assert.equal(run('G.matchOpts.ctrl2.type'),'cpu');assert.equal(run('G.matchOpts.ctrl2.level'),run('G.diff'));
-run("go('title');MobileUI.sync()");panel.querySelectorAll('.mode-action')[0].click();click('START ARCADE');assert.equal(run('G.arcade.list.length'),7);assert.equal(run('new Set(G.arcade.list).size'),7);assert.equal(run('G.mode'),'arcade');assert.equal(run('G.screen'),'vs');
+run("go('title');MobileUI.sync()");panel.querySelectorAll('.mode-action').find(b=>b.dataset.focusKey==='mode-pvp').click();assert.equal(run('G.mode'),'pvp');click('CONFIRM FIGHTER');click('CHOOSE ARENA');click('FIGHT!');assert.equal(run('G.matchOpts.ctrl1.map'),'p1');assert.equal(run('G.matchOpts.ctrl2.map'),'p2');
+run("go('title');MobileUI.sync()");panel.querySelectorAll('.mode-action').find(b=>b.dataset.focusKey==='mode-versus').click();assert.equal(run('G.mode'),'versus');click('CONFIRM FIGHTER');click('CHOOSE ARENA');click('FIGHT!');assert.equal(run('G.matchOpts.ctrl1.type'),'human');assert.equal(run('G.matchOpts.ctrl2.type'),'cpu');assert.equal(run('G.matchOpts.ctrl2.level'),run('G.diff'));
+run("go('title');MobileUI.sync()");panel.querySelectorAll('.mode-action').find(b=>b.dataset.focusKey==='mode-arcade').click();click('START ARCADE');assert.equal(run('G.arcade.list.length'),7);assert.equal(run('new Set(G.arcade.list).size'),7);assert.equal(run('G.mode'),'arcade');assert.equal(run('G.screen'),'vs');
 console.log('PASS: native desktop and touch menu contract, 15 fighter/arena grids, keyboard selection, training flow, pause/moves/resume/restart, PvP mappings, versus CPU and 7-fight arcade.');
 
 (async()=>{

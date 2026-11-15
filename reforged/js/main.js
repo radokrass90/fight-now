@@ -152,7 +152,7 @@ function controlsScreen(inp) {
   if (inp.back) go('title');
 }
 
-function startSelect() { go('select'); G.ready = [false, false]; G.selStep = 0; const saved=store.get('lastPick',0),pick=Number.isInteger(saved)&&saved>=0&&saved<CHARS.length?saved:0;G.pick=[pick,(pick+7)%CHARS.length]; }
+function startSelect() { if (G.mode === 'story') G.mode = 'versus'; go('select'); G.ready = [false, false]; G.selStep = 0; const saved=store.get('lastPick',0),pick=Number.isInteger(saved)&&saved>=0&&saved<CHARS.length?saved:0;G.pick=[pick,(pick+7)%CHARS.length]; }
 
 function selectScreen(inp) {
   bg(4);
@@ -244,6 +244,21 @@ function stageScreen(inp) {
   if (inp.back) { G.stageCur = null; startSelect(); }
 }
 
+function openCampaign() {
+  Campaign.refresh();
+  G.artError = null;
+  G.mode = 'story';
+  go('campaign');
+}
+function startCampaignFight() {
+  const progress = Campaign.start();
+  const stage = Campaign.stages[progress.stage];
+  if (!stage) return;
+  G.mode = 'story';
+  G.pick = [CHARS.findIndex(c=>c.id==='murat'), CHARS.findIndex(c=>c.id===stage.opponent)];
+  const level = progress.stage < 2 && G.diff !== 'hard' ? 'easy' : G.diff;
+  startFight(CHARS[G.pick[1]].home, level);
+}
 function startArcade() {
   const others = CHARS.map((c, i) => i).filter(i => i !== G.pick[0]).sort(() => Math.random() - 0.5).slice(0, 7);
   G.arcade = { list: others, i: 0, cont: 3 };
@@ -261,14 +276,15 @@ function startFight(arena, lvl) {
   const c1 = CHARS[G.pick[0]], c2 = CHARS[G.pick[1]];
   const human1 = { type: 'human', map: G.mode === 'pvp' ? 'p1' : 'solo', touch: true, pad: 0 };
   const ctrl2 = G.mode === 'pvp' ? { type: 'human', map: 'p2', touch: false, pad: 1 } : G.mode === 'training' ? { type: 'dummy' } : { type: 'cpu', level: lvl || G.diff };
-  G.matchOpts = { mode: G.mode, arena, c1, c2, ctrl1: human1, ctrl2 };
+  G.matchOpts = { mode: G.mode === 'story' ? 'arcade' : G.mode, arena, c1, c2, ctrl1: human1, ctrl2 };
+  if (G.mode === 'story') G.matchOpts.campaign = Campaign.checkpoint();
   G.assetsReady=false;G.artError=null;const request=G.assetRequest=(G.assetRequest||0)+1;
   Promise.all([CharacterArt.prepare([c1.id,c2.id]),ArenaArt.prepare(arena),typeof Economy!=='undefined'?Economy.begin(G.matchOpts):Promise.resolve(null)]).then((results)=>{
     if(G.assetRequest!==request)return;
-    if(results.some(ready=>ready===false)){G.artError=localize('Artwork could not be loaded. Select Fight to retry.');G.stageCur=arena;go('stage');return;}
+    if(results.some(ready=>ready===false)){G.artError=localize('Artwork could not be loaded. Select Fight to retry.');G.stageCur=arena;go(G.mode==='story'?'campaign':'stage');return;}
     G.matchOpts.economy=results[2];
     G.assetsReady=true;
-  }).catch(()=>{if(G.assetRequest===request){G.artError=localize('Artwork could not be loaded. Select Fight to retry.');G.stageCur=arena;go('stage');}});
+  }).catch(()=>{if(G.assetRequest===request){G.artError=localize('Artwork could not be loaded. Select Fight to retry.');G.stageCur=arena;go(G.mode==='story'?'campaign':'stage');}});
   G.vsT = 0; go('vs'); if(Touch.active)Snd.startMusic(arena); Snd.say(c1.name + localize(' versus ') + c2.name);
 }
 
@@ -300,7 +316,7 @@ function togglePause() {
 }
 function fightScreen(inp) {
   const m = G.match;
-  BattleMusic.syncMatch(m, G.mode === 'arcade' && G.arcade && G.arcade.i === G.arcade.list.length - 1);
+  BattleMusic.syncMatch(m, (G.mode === 'arcade' && G.arcade && G.arcade.i === G.arcade.list.length - 1) || (G.mode === 'story' && G.matchOpts.campaign?.stage === Campaign.stages.length - 1));
   if (Keys.pressed.has('Escape') || Keys.pressed.has('KeyP')) togglePause();
   const pad = padState(0); if (pad && pad.start && !(Pads.prev[0] || {}).start) togglePause();
   try {
@@ -330,7 +346,7 @@ function fightScreen(inp) {
     ], W / 2, 200, 52, inp, 26);
     return;
   }
-  if (m.phase === 'matchOver') { if(typeof Economy!=='undefined')Economy.finish(m); G.resultT = G.T; go('result'); }
+  if (m.phase === 'matchOver') { if (m.opts.campaign) Campaign.complete(m); if(typeof Economy!=='undefined')Economy.finish(m); G.resultT = G.T; go('result'); }
 }
 
 function resultScreen(inp) {

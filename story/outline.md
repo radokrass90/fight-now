@@ -1,6 +1,8 @@
 # Fight Now story proposal
 
-Status: draft. This readable guide does not implement scripted arcade chapters or character-specific ending scenes.
+Status: draft. The playable Story Mode follows Murat through seven fixed rivals across three chapters. The full proposal below remains editable narrative material. Chapter screens introduce each section and the ending appears after the seventh victory.
+
+Story checkpoints are stored on this device after each victory. Story matches reuse the arcade match and reward flow. A match requires two round wins, with 60 seconds per round. The intended match duration is around two to three minutes, depending on damage, hitstop and finishers.
 
 ## The Last Shift
 
